@@ -1,0 +1,916 @@
+state_id,province_id,victory_points,source_file
+1,3838,1,1-France.txt
+10,3544,25,10-Poland.txt
+10,402,1,10-Poland.txt
+100,12674,1,100-Iceland.txt
+1000,1896,5,1000-East Azerbaijan.txt
+1001,4943,5,1001-Kurdistan.txt
+1001,5098,3,1001-Kurdistan.txt
+1002,8031,1,1002-Yazd.txt
+1003,7990,1,1003-South Khorasan.txt
+1005,10781,1,1005-Qataghan.txt
+1006,5082,1,1006-Khyber Pass.txt
+1006,12831,1,1006-Khyber Pass.txt
+1007,12248,1,1007-Maymanah.txt
+1008,5064,1,1008-Qandahar.txt
+1009,2017,1,1009-Farah.txt
+102,665,1,102-North-Eastern Slovenia.txt
+104,11899,5,104-Bosnia.txt
+104,6983,3,104-Bosnia.txt
+1046,7314,1,1046 - Yulin.txt
+105,9809,3,105-Montenegro.txt
+105,9821,1,105-Montenegro.txt
+106,3882,5,106-Macedonia.txt
+107,11586,15,107-Kosavo.txt
+108,9602,3,108-Eastern Serbia.txt
+109,11581,3,109-Eastern Croatia.txt
+11,6296,5,11-Kaunas.txt
+110,6115,13,110-Norway.txt
+110,11151,2,110-Norway.txt
+112,11805,20,112-Lisbon.txt
+112,3798,1,112-Lisbon.txt
+114,11773,3,114-Sardinia.txt
+114,9772,2,114-Sardinia.txt
+115,10074,20,115-Sicily.txt
+115,4159,5,115-Sicily.txt
+115,4014,5,115-Sicily.txt
+115,13256,1,115-Sicily.txt
+116,12003,5,116-Malta.txt
+117,819,20,117-Napoli.txt
+118,4135,10,118-Gibralter.txt
+119,3379,5,119-Northern Ireland.txt
+120,11064,1,120-Scottish Highlands.txt
+121,9392,10,121-Scottish Lowlands.txt
+121,6300,1,121-Scottish Lowlands.txt
+122,377,5,122-Wales.txt
+123,540,10,123-Cornwall.txt
+123,6526,1,123-Cornwall.txt
+124,408,1,124-Gotland.txt
+126,6103,50,126-Greater London Area.txt
+128,9297,25,128-West Midlands.txt
+130,9379,10,130-Yorkshire.txt
+130,11297,5,130-Yorkshire.txt
+130,9315,15,130-Yorkshire.txt
+131,351,8,131-Northern England.txt
+132,6384,30,132-North-west England.txt
+132,6318,5,132-North-west England.txt
+133,3273,15,133-Strathclyde.txt
+139,9329,1,139-Smaland.txt
+139,299,2,139-Smaland.txt
+139,211,1,139-Smaland.txt
+14,3552,20,14-Brittany.txt
+14,6536,5,14-Brittany.txt
+14,9495,1,14-Brittany.txt
+140,383,10,140-Vaster Gotland.txt
+142,53,3,142-Vestlandet.txt
+142,122,5,142-Vestlandet.txt
+143,3022,5,143-Midt-Noreg.txt
+144,192,5,144-Nord-Noreg.txt
+144,9126,1,144-Nord-Noreg.txt
+15,9434,10,15-Normandy.txt
+15,6449,3,15-Normandy.txt
+15,11563,5,15-Normandy.txt
+15,485,3,15-Normandy.txt
+151,658,1,151-Eastern Swiss Alps.txt
+152,688,10,152-Upper Austria.txt
+152,9665,3,152-Upper Austria.txt
+153,673,5,153-Tyrol.txt
+154,11659,3,154-Southern plain.txt
+154,11646,1,154-Southern plain.txt
+156,9990,1,156-Calabria.txt
+157,925,1,157-Abruzzo.txt
+158,6788,10,158-Piedmont.txt
+158,6780,5,158-Piedmont.txt
+162,9907,3,162-Tuscany.txt
+162,6973,1,162-Tuscany.txt
+162,11833,1,162-Tuscany.txt
+162,6946,1,162-Tuscany.txt
+164,10007,1,164-Dodecanese.txt
+165,9764,30,165-Catalonia.txt
+165,6966,1,165-Catalonia.txt
+165,6927,1,165-Catalonia.txt
+166,3816,3,166-Western Aragon.txt
+166,9840,1,166-Western Aragon.txt
+166,7213,1,166-Western Aragon.txt
+167,6906,10,167-Valencia.txt
+167,4098,3,167-Valencia.txt
+168,10024,3,168-Murcia.txt
+169,1048,3,169-Sevilla.txt
+169,7183,10,169-Sevilla.txt
+17,9642,5,17-Alcase Lorraine.txt
+17,11516,5,17-Alcase Lorraine.txt
+170,6902,1,170-Extremadura.txt
+171,758,5,171-Galicia.txt
+171,6734,3,171-Galicia.txt
+172,3933,1,172-Navarre.txt
+173,9979,5,173-Granada.txt
+173,12038,1,173-Granada.txt
+173,1176,3,173-Granada.txt
+174,726,1,174-Leon.txt
+175,6832,1,175-Ciudad Real.txt
+176,885,3,176-Burgos.txt
+177,9793,1,177-Balearic Islands.txt
+178,13071,1,178-Canary islands.txt
+179,3790,1,179-Beja.txt
+179,6880,1,179-Beja.txt
+179,6933,1,179-Beja.txt
+179,970,1,179-Beja.txt
+18,9490,5,18-Champagne.txt
+18,13011,5,18-Champagne.txt
+18,3560,1,18-Champagne.txt
+180,9817,10,180-Porto.txt
+180,11673,5,180-Porto.txt
+182,9940,5,182-Crete.txt
+182,12058,3,182-Crete.txt
+183,11984,5,183-Cyprus.txt
+183,7193,3,183-Cyprus.txt
+184,11905,1,184-Thrace.txt
+185,10203,1,185-Epirus.txt
+185,3914,3,185-Epirus.txt
+185,1205,1,185-Epirus.txt
+186,7211,5,186-Peloponnese.txt
+186,7096,1,186-Peloponnese.txt
+186,11965,1,186-Peloponnese.txt
+187,6550,1,187-Aegean Islands.txt
+187,8435,1,187-Aegean Islands.txt
+189,9483,3,189-Kaunas.txt
+189,6314,1,189-Kaunas.txt
+19,9737,20,19-Aquitaine.txt
+190,9262,3,190-Kurzeme.txt
+191,9221,1,191-Tartu.txt
+192,11670,10,192-Odessa.txt
+193,3568,3,193-Kiev.txt
+194,6232,1,194-Pinsk Marches.txt
+197,11683,3,197-Mykolaiv.txt
+198,476,3,198-Vinnytsia.txt
+199,3457,3,199-Khmelnytskyi.txt
+2,9904,40,2-Italy.txt
+2,11846,1,2-Italy.txt
+20,6613,10,20-Franche-comte.txt
+201,6593,3,201-Zhytomyr.txt
+202,525,25,202-Western Kiev.txt
+203,488,5,203-Cherkasy.txt
+204,3350,3,204-Brest.txt
+205,382,1,205-Hrodna.txt
+206,11370,20,206-Minsk.txt
+206,9289,5,206-Minsk.txt
+207,11241,5,207-Viciebsk.txt
+208,9098,1,208-Pskov.txt
+209,11202,3,209-Smolensk.txt
+21,11834,10,21-Bouches-du-Rhone.txt
+210,11234,1,210-Bryansk.txt
+213,3134,5,213-Murmansk.txt
+213,6181,1,213-Murmansk.txt
+214,3338,5,214-Arkhangelsk.txt
+218,9417,15,218-Rostov Area.txt
+219,6380,50,219-Moscow Area.txt
+22,9898,1,22-Roussillion.txt
+220,3580,5,220-Kursk Area.txt
+221,418,10,221-Kharkov.txt
+222,9355,10,222-Orel.txt
+223,6262,3,223-tula.txt
+224,3335,10,224-Bryansk.txt
+225,3520,3,225-Glukhov.txt
+225,9566,1,225-Glukhov.txt
+226,11437,10,226-Nikopol.txt
+226,11561,1,226-Nikopol.txt
+227,6474,10,227-Stalino.txt
+228,9461,1,228-Taganrog.txt
+229,7661,10,229-baku.txt
+229,11674,1,229-baku.txt
+23,6657,5,23-Poitou.txt
+230,12320,3,230-Armenia.txt
+230,12441,1,230-Armenia.txt
+231,1599,5,231-Georgia.txt
+231,3653,3,231-Georgia.txt
+233,9663,1,233-Caucasus Mountains.txt
+234,3720,1,234-Krasodar.txt
+234,719,3,234-Krasodar.txt
+234,3734,5,234-Krasodar.txt
+235,11696,3,235-Stravropol.txt
+236,9753,3,236-Astrakhan.txt
+237,11724,1,237-Elista.txt
+239,3578,5,239-Saratov.txt
+24,3671,10,24-Centre.txt
+24,512,15,24-Centre.txt
+240,9449,1,240-Voronezh.txt
+241,9288,10,241-Pochep.txt
+242,306,15,242-Smolensk.txt
+243,11336,1,243-Roslavl.txt
+246,11349,1,246-Rzhev.txt
+247,6245,10,247-Tver.txt
+248,121,5,248-Yaroslavl.txt
+249,6338,10,249-Kazan.txt
+25,620,5,25-Limousin.txt
+250,392,1,250-ulyanovsky.txt
+252,11375,10,252-Nizhny Novogrod.txt
+253,6269,3,253-Ivanovo.txt
+254,11248,1,254-Ryazan.txt
+255,9258,3,255-Penza.txt
+256,9259,1,256-Cheboksary.txt
+257,11351,1,257-Livny.txt
+258,6398,1,258-lipetsk.txt
+259,11504,3,259-Liski.txt
+26,3594,3,26-Bourgogne.txt
+260,413,5,260-Borisoglbsk.txt
+261,6855,5,261-USA.txt
+261,6890,10,261-USA.txt
+263,117,5,263-Veliky Novogrod.txt
+264,3140,1,264-Tikhvin.txt
+265,487,1,265-Mikhaylovka.txt
+266,10837,10,266-Persia.txt
+267,10737,5,267-Afghanistan.txt
+268,8124,1,268-French Somaliland.txt
+269,10833,1,269-British Somaliland.txt
+269,5068,1,269-British Somaliland.txt
+27,3652,5,27-Champagne2.txt
+271,5010,5,271-ethiopia.txt
+271,8036,1,271-ethiopia.txt
+272,4948,5,272-French Africa.txt
+275,10400,10,275-South Africa.txt
+277,1965,25,277-Mexico.txt
+277,2008,10,277-Mexico.txt
+278,12364,15,278-Argentina.txt
+278,7621,2,278-Argentina.txt
+279,650,15,279-Chile.txt
+279,8194,3,279-Chile.txt
+279,8222,5,279-Chile.txt
+279,12984,2,279-Chile.txt
+279,8251,1,279-Chile.txt
+28,6529,1,28-Alcase.txt
+28,549,1,28-Alcase.txt
+28,678,5,28-Alcase.txt
+28,9503,5,28-Alcase.txt
+28,9559,10,28-Alcase.txt
+280,2111,2,280-Brazil.txt
+281,4967,1,281-India.txt
+284,1814,10,284-New Zealand.txt
+284,4543,5,284-New Zealand.txt
+289,7408,10,289-Siam.txt
+29,575,5,29-Pas de Calais.txt
+29,11483,10,29-Pas de Calais.txt
+29,11548,15,29-Pas de Calais.txt
+290,9945,3,290-Spanish Africa.txt
+290,12100,2,290-Spanish Africa.txt
+290,12087,1,290-Spanish Africa.txt
+292,12727,5,292-Saudi Arabia.txt
+293,10840,3,293-Yemen.txt
+296,12891,1,296-Portugal Africa.txt
+297,1903,1,297-Belgian Africa.txt
+298,7959,3,298-Liberia.txt
+299,12960,1,299-Falkand Islands.txt
+3,9620,15,3-Swiss Plateau.txt
+3,663,10,3-Swiss Plateau.txt
+30,11465,5,30-Loire.txt
+300,10362,10,300-Uruguay.txt
+301,2152,10,301-paraguay.txt
+301,2194,5,301-paraguay.txt
+301,11023,1,301-paraguay.txt
+302,5230,12,302-bolivia.txt
+302,12930,10,302-bolivia.txt
+303,12997,10,303-Peru.txt
+303,2156,2,303-Peru.txt
+304,7630,5,304-Panama.txt
+304,4611,1,304-Panama.txt
+305,12798,10,305-Ecuador.txt
+305,8252,5,305-Ecuador.txt
+305,5120,2,305-Ecuador.txt
+306,10747,10,306-Colombia.txt
+307,8113,5,307-Venezuela.txt
+309,10906,1,309-Dutch SA.txt
+31,6766,5,31-Midi Pyrenees.txt
+310,12885,1,310-French SA.txt
+311,2077,1,311-BritMex.txt
+312,12865,3,312-Honduras.txt
+313,10886,3,313-Guatemala.txt
+314,12823,3,314-El Salvador.txt
+315,7622,5,315-Cuba.txt
+315,7590,1,315-Cuba.txt
+316,13087,3,316-Costa Rica.txt
+317,12738,3,317-Nicaragua.txt
+317,2075,1,317-Nicaragua.txt
+318,4641,5,318-Haiti.txt
+319,7660,5,319-Dominican Republic.txt
+319,4598,1,319-Dominican Republic.txt
+32,3768,1,32-Rhone Alpes.txt
+321,1273,1,321-Goa.txt
+323,4987,3,323-Nepal.txt
+324,8010,3,324-Bhutan.txt
+326,10062,3,326-HongKong.txt
+328,4572,1,328-Manchukuo.txt
+328,10433,1,328-Manchukuo.txt
+329,10627,3,329-Tannu Tuva.txt
+33,651,1,33-Centre sud.txt
+330,4801,10,330-Mongolia.txt
+330,7799,1,330-Mongolia.txt
+331,12505,2,331-Newfoundland.txt
+335,7381,5,335-Dutch East Indies.txt
+335,4608,3,335-Dutch East Indies.txt
+338,3369,5,338-Gloucestershire.txt
+339,4112,15,339-Izmir.txt
+339,928,5,339-Izmir.txt
+340,947,10,340-Bursa.txt
+340,9799,5,340-Bursa.txt
+341,11842,5,341-Edirne.txt
+342,1005,5,342-Antalya.txt
+343,10041,1,343-Afyon.txt
+343,9878,5,343-Afyon.txt
+343,3856,3,343-Afyon.txt
+344,9893,15,344-Adana.txt
+344,7620,10,344-Adana.txt
+344,6813,3,344-Adana.txt
+344,11746,5,344-Adana.txt
+345,10056,1,345-Mersin.txt
+345,11810,5,345-Mersin.txt
+346,9861,5,346-Konya.txt
+346,6807,3,346-Konya.txt
+346,784,1,346-Konya.txt
+347,11811,1,347-Izmit.txt
+347,904,1,347-Izmit.txt
+348,3870,5,348-Kayseri.txt
+349,9777,3,349-Silvas.txt
+35,3262,5,35-Gelderland.txt
+35,6496,3,35-Gelderland.txt
+35,11562,1,35-Gelderland.txt
+350,4512,5,350-Diyarbekir.txt
+350,9823,1,350-Diyarbekir.txt
+350,12387,1,350-Diyarbekir.txt
+351,9131,3,351-Vologda.txt
+352,12476,1,352-Hakkari.txt
+352,7530,1,352-Hakkari.txt
+352,10497,1,352-Hakkari.txt
+353,11853,3,353-Erzurum.txt
+353,9860,1,353-Erzurum.txt
+353,876,1,353-Erzurum.txt
+353,9868,1,353-Erzurum.txt
+354,9932,15,354-Trabzon.txt
+354,10472,5,354-Trabzon.txt
+354,3979,3,354-Trabzon.txt
+355,11881,10,355-Samsun.txt
+356,6938,10,356-Sinop.txt
+356,6995,3,356-Sinop.txt
+357,6732,20,357-New England.txt
+357,12459,1,357-New England.txt
+357,9832,1,357-New England.txt
+358,11654,3,358-New York.txt
+359,6882,5,359-New Jersey.txt
+36,6241,5,36-Friesland.txt
+36,9363,1,36-Friesland.txt
+36,9335,3,36-Friesland.txt
+36,6336,1,36-Friesland.txt
+360,6845,20,360-Pennsylvania.txt
+360,11800,15,360-Pennsylvania.txt
+361,3957,40,361-Maryland.txt
+361,6984,5,361-Maryland.txt
+362,788,10,362-Virginia.txt
+362,10412,15,362-Virginia.txt
+363,7138,3,363-North Carolina.txt
+364,7202,1,364-South Carolina.txt
+365,12384,10,365-Georgia.txt
+366,1843,5,366-Florida.txt
+367,7480,1,367-Alabama.txt
+367,12735,1,367-Alabama.txt
+368,12501,3,368-Tennesse.txt
+369,6696,1,369-Kentucky.txt
+37,6287,20,37-Denmark.txt
+37,6393,2,37-Denmark.txt
+370,4464,1,370-Mississippi.txt
+371,7552,10,371-Louisiana.txt
+372,12489,1,372-Arkansas.txt
+373,4569,10,373-Missouri.txt
+373,10717,10,373-Missouri.txt
+373,10370,1,373-Missouri.txt
+374,1806,1,374-Oklahoma.txt
+375,10337,10,375-Texas.txt
+375,3960,10,375-Texas.txt
+375,12782,1,375-Texas.txt
+376,4975,1,376-New Mexico.txt
+377,853,3,377-Arizona.txt
+378,9814,30,378-California.txt
+378,1562,15,378-California.txt
+378,9671,25,378-California.txt
+378,9713,1,378-California.txt
+380,4865,1,380-Utah.txt
+382,1827,5,382-Colorado.txt
+383,4740,3,383-Kansas.txt
+383,7834,1,383-Kansas.txt
+384,12586,1,384-Nebraska.txt
+385,3513,1,385-Oregon.txt
+387,9616,1,387-Idaho.txt
+389,1836,1,389-North Dakota.txt
+390,1747,1,390-South Dakota.txt
+391,1866,5,391-Minnesota.txt
+392,1770,3,392-Iowa.txt
+394,12357,5,394-Wisconsin.txt
+396,1595,5,396-Indiana.txt
+397,108,1,397-Syktyvkar.txt
+398,7375,1,398-Perm.txt
+399,6278,1,399-Izhevsk.txt
+4,11666,30,4-Austria.txt
+4,732,10,4-Austria.txt
+40,1794,1,40-USSR.txt
+400,6124,1,400-Kirov.txt
+401,6502,1,401-Engels.txt
+402,7341,1,402-Akhtubinsk.txt
+403,4824,1,403-Kharabali.txt
+404,7597,1,404-Saykhin.txt
+405,1459,3,405-Atyrau.txt
+405,10488,1,405-Atyrau.txt
+406,3618,1,406-Krasnyy Yar.txt
+407,11537,1,407-Uralsk.txt
+408,957,15,408-Vladivostok.txt
+409,12189,1,409-Khabarovsk.txt
+41,3938,30,41-Madrid.txt
+41,858,1,41-Madrid.txt
+410,10782,1,410-Sistan.txt
+411,2026,1,411-Hormozgan.txt
+411,4928,1,411-Hormozgan.txt
+412,8117,3,412-Fars.txt
+412,7982,3,412-Fars.txt
+412,12832,1,412-Fars.txt
+413,7953,1,413-Khuzestan.txt
+414,10913,1,414-Kerman.txt
+415,4893,1,415-South Khorasan.txt
+416,5029,5,416-Razavi Khorasan.txt
+417,8040,3,417-Golestan.txt
+417,2065,1,417-Golestan.txt
+418,8093,1,418-Semnan.txt
+419,7604,1,419-Azerbaijan.txt
+419,1822,2,419-Azerbaijan.txt
+420,7969,5,420-Gilan.txt
+420,4901,3,420-Gilan.txt
+422,10201,3,422-Ceylon.txt
+425,8011,10,425-Mysore.txt
+425,4315,10,425-Mysore.txt
+425,7244,1,425-Mysore.txt
+427,8087,15,427-Hyderabad.txt
+427,12114,1,427-Hyderabad.txt
+427,10311,1,427-Hyderabad.txt
+428,9975,10,428-Western Indian States.txt
+429,1349,25,429-Bombay.txt
+43,9660,20,43-Hungary.txt
+430,11929,1,430-Bangladesh.txt
+432,12366,1,432-Assam.txt
+433,1908,5,433-Rajputana.txt
+435,4516,1,435-Bihar.txt
+436,4950,5,436-Central Provinces.txt
+437,4106,5,437-Central Indian Provinces.txt
+438,1377,10,438-United Provinces.txt
+439,2086,30,439-Delhi.txt
+44,9914,5,44-Albania.txt
+44,11767,2,44-Albania.txt
+44,13255,2,44-Albania.txt
+44,6900,2,44-Albania.txt
+440,10772,15,440-West Punjab.txt
+440,10898,1,440-West Punjab.txt
+440,10173,3,440-West Punjab.txt
+441,12754,2,441-Kashmir.txt
+441,8005,1,441-Kashmir.txt
+442,12763,3,442-Peshawar.txt
+443,3456,25,443-Sind.txt
+446,12049,5,446-Cairo.txt
+446,4073,3,446-Cairo.txt
+447,4076,10,447-Alexandria.txt
+447,1071,1,447-Alexandria.txt
+448,1149,10,448-Tripoli.txt
+45,619,3,45-Yugoslavia.txt
+450,11954,3,450-Benghasi.txt
+451,1130,5,451-Derna.txt
+453,4161,3,453-Sinai.txt
+453,10099,1,453-Sinai.txt
+457,12002,1,457-Aswan.txt
+458,11969,10,458-Tunisia.txt
+458,9994,1,458-Tunisia.txt
+458,11921,1,458-Tunisia.txt
+459,1145,5,459-Western Algeria.txt
+459,7132,5,459-Western Algeria.txt
+46,9617,20,46-Romania.txt
+46,3663,5,46-Romania.txt
+460,7081,1,460-Eastern Algeria.txt
+460,12051,3,460-Eastern Algeria.txt
+463,13090,1,463-Alaska.txt
+463,13091,3,463-Alaska.txt
+464,7361,3,464-Nova Scotia.txt
+465,1424,2,465-New Brunswick.txt
+465,4285,1,465-New Brunswick.txt
+467,4872,5,467-Manitoba.txt
+468,4345,20,468-Nunavut.txt
+468,12149,3,468-Nunavut.txt
+468,10230,1,468-Nunavut.txt
+469,4739,2,469-Saskatchewan.txt
+47,4109,20,47-Greece.txt
+47,3973,3,47-Greece.txt
+47,7127,3,47-Greece.txt
+47,3988,1,47-Greece.txt
+470,3010,3,470-Alberta.txt
+473,1408,15,473-British Columbia.txt
+474,4904,1,474-Yucatan.txt
+474,4965,3,474-Yucatan.txt
+475,1900,3,475-Chiapas.txt
+476,10889,1,476-Oaxaca.txt
+476,2021,3,476-Oaxaca.txt
+477,12810,5,477-Veracruz.txt
+477,8089,10,477-Veracruz.txt
+478,13089,10,478-Nayarit.txt
+478,10172,5,478-Nayarit.txt
+478,12746,1,478-Nayarit.txt
+479,4956,10,479-Tamaulipas.txt
+479,5015,5,479-Tamaulipas.txt
+480,12835,10,480-Coahuila.txt
+480,10769,5,480-Coahuila.txt
+480,12811,1,480-Coahuila.txt
+481,7921,10,481-Sinaloa.txt
+482,8097,10,482-Chihuahua.txt
+482,10830,10,482-Chihuahua.txt
+483,10765,5,483-Sonora.txt
+484,12461,10,484-Baja California.txt
+485,10730,5,485-Guerrero.txt
+485,4887,3,485-Guerrero.txt
+485,8032,1,485-Guerrero.txt
+487,2160,5,487-Amazinas.txt
+488,10879,1,488-Bolivar.txt
+489,1944,1,489-Monagas.txt
+49,11747,15,49-Turkey.txt
+49,804,5,49-Turkey.txt
+49,3951,1,49-Turkey.txt
+490,13289,2,490-Pastaza.txt
+491,10970,1,491-Loreto.txt
+492,2210,5,492-Piura.txt
+492,13288,1,492-Piura.txt
+492,13286,1,492-Piura.txt
+493,2023,1,493-La Libertad.txt
+493,12790,5,493-La Libertad.txt
+494,8191,1,494-Ucayali.txt
+494,5166,3,494-Ucayali.txt
+494,2226,2,494-Ucayali.txt
+495,10934,1,495-Amazonas.txt
+496,7476,3,496-Para.txt
+497,12933,2,497-Maranhao.txt
+498,10933,3,498-Rio Grande.txt
+499,10946,1,499-Bahia.txt
+500,10980,10,500-Rio de Janerio.txt
+501,10513,20,501-Saol Paulo.txt
+501,5112,1,501-Saol Paulo.txt
+502,10447,3,502-Rio Grande Sul.txt
+503,4548,2,503-Santa Catarina.txt
+503,10405,1,503-Santa Catarina.txt
+504,12951,2,504-Iguacu.txt
+505,12987,3,505-Goias.txt
+506,12994,10,506-Northern Chile.txt
+507,5215,2,507-Southern Chile.txt
+507,5201,1,507-Southern Chile.txt
+508,8216,5,508-Argentine Northwest.txt
+508,13309,2,508-Argentine Northwest.txt
+509,2106,1,509-Gran Chaco.txt
+510,11007,2,510-Mesopotamia.txt
+510,12964,1,510-Mesopotamia.txt
+510,1449,3,510-Mesopotamia.txt
+511,10964,2,511-Cuyo.txt
+512,12321,2,512-Patagonia.txt
+512,12306,1,512-Patagonia.txt
+513,12034,1,513-Southern Algeria.txt
+516,4859,1,516-Northern Siberia.txt
+517,7798,20,517-Victoria.txt
+519,12910,15,519-South Australia.txt
+520,7669,5,520-Northern Territory.txt
+521,7564,15,521-Queensland.txt
+521,7566,1,521-Queensland.txt
+522,1652,10,522-Western Australia.txt
+539,5139,1,539-Gabon.txt
+541,4879,1,541-South West Africa.txt
+542,8214,1,542-Bechuana Land.txt
+543,5128,1,543-Madagascar.txt
+544,8245,1,544-East Africa.txt
+545,10929,1,545-Rhodessa.txt
+546,2196,1,546-Tanganyika.txt
+547,1939,2,547-East Africa.txt
+548,12989,1,548-Uganda.txt
+549,2096,1,549-Sudan.txt
+551,12806,3,551-Khartoum.txt
+553,792,5,553-Lebanon.txt
+556,4927,1,556-Mali.txt
+557,5034,1,557-Mauritania.txt
+559,12991,3,559-Somaliland.txt
+563,4705,1,563-TS 5.txt
+564,7835,2,564-TS 6.txt
+564,12644,1,564-TS 6.txt
+566,4797,3,566-TS 8.txt
+568,4724,1,568-TS 10.txt
+569,7757,1,569-TS 11.txt
+569,7822,1,569-TS 11.txt
+569,10580,2,569-TS 11.txt
+570,7274,3,570-TS 12.txt
+571,10696,3,571-TS 13.txt
+572,9292,5,572-TS 14.txt
+573,10329,1,573-Ts 15.txt
+574,10641,1,574-Siberia 1.txt
+578,7789,1,578-Siberia 5.txt
+579,1684,1,579-Siberia 6.txt
+580,1659,1,580-Siberia 7.txt
+583,10312,1,583-Kazakhstan.txt
+584,12333,2,584-Turkmenistan.txt
+585,1554,1,585-Uzbekistan.txt
+586,1591,3,586-Kyrgyzstan.txt
+587,1517,1,587-Western Kazakstan.txt
+589,1668,1,589-Eastern Kazakhstan.txt
+590,4333,1,590-Northern Kazakhstan.txt
+6,516,30,6-Belgium.txt
+6,6560,5,6-Belgium.txt
+6,3576,1,6-Belgium.txt
+601,10856,1,601-China 1.txt
+603,4504,3,603-China 3.txt
+618,4823,2,618-China 15.txt
+622,12356,1,622-China 19.txt
+628,12118,1,628-Cebu.txt
+629,4180,15,629-Hawaii.txt
+629,12021,3,629-Hawaii.txt
+631,13052,1,631-Midway Island.txt
+632,13047,1,632-Wake Island.txt
+633,13041,3,633-Marshall Islands.txt
+633,13046,1,633-Marshall Islands.txt
+634,1269,3,634-Solomon Islands.txt
+634,4226,1,634-Solomon Islands.txt
+635,4268,1,635-New Caledonia.txt
+635,12120,1,635-New Caledonia.txt
+636,4286,1,636-Fiji.txt
+638,12140,1,638-Guam.txt
+639,13021,1,639-Maiana.txt
+641,12148,1,641-Tahiti.txt
+644,1819,1,644-state 3.txt
+645,13025,5,645-Iwo Jima.txt
+646,3995,1,646-Saipan.txt
+649,5023,1,649-Galapagos Islands.txt
+650,13067,1,650-Attu Island.txt
+651,1278,5,651-Sov state 5.txt
+651,4354,1,651-Sov state 5.txt
+653,1821,5,653-Sov state 7.txt
+660,12830,1,660-Equatorial Africa.txt
+665,7005,1,665-Gabes.txt
+670,1464,1,670-Laos.txt
+673,10263,3,673-Sulawesi.txt
+676,10106,5,676-Mosul.txt
+676,3916,3,676-Mosul.txt
+676,6826,1,676-Mosul.txt
+677,12473,3,677-Aleppo.txt
+677,1056,1,677-Aleppo.txt
+677,1088,1,677-Aleppo.txt
+679,12758,2,679-Hejaz.txt
+680,3942,1,680-Deir-az-Zur.txt
+680,1549,1,680-Deir-az-Zur.txt
+680,6883,1,680-Deir-az-Zur.txt
+682,7899,1,682-Northern Ontario.txt
+684,2489,5,684-Caroline Islands.txt
+684,13028,1,684-Caroline Islands.txt
+685,7617,5,685-Panama Canal.txt
+686,1440,1,686-Puerto Rico.txt
+687,4982,1,687-British Guyana.txt
+688,2195,1,688-Chaco Boreal.txt
+688,5165,1,688-Chaco Boreal.txt
+689,12304,1,689-Jamaica.txt
+69,3585,3,69-Sudatenland.txt
+69,11432,1,69-Sudatenland.txt
+69,11401,3,69-Sudatenland.txt
+690,10254,1,690-Bahama Islands.txt
+691,3284,1,691-Trinidad.txt
+692,11350,1,692-Windward Islands.txt
+694,9377,1,694-French Caribbean.txt
+696,13010,1,696-Bermuda.txt
+697,3118,1,697-Madeira.txt
+698,1751,3,698-Azores.txt
+699,8038,1,699-Rio de Oro.txt
+7,391,40,7-Holland.txt
+7,3211,10,7-Holland.txt
+7,9498,20,7-Holland.txt
+700,2038,1,700-Sierra Leone.txt
+701,4989,1,701-Gambia.txt
+716,11771,3,716-Liaotung.txt
+716,11764,1,716-Liaotung.txt
+719,1468,3,719-Natal.txt
+719,4696,1,719-Natal.txt
+723,2197,1,723-Southern Island.txt
+723,2211,1,723-Southern Island.txt
+724,7236,1,724-Khorat.txt
+725,13038,1,725-Nauru.txt
+726,7290,1,726-Samoa.txt
+729,4189,1,729-Macau.txt
+731,11818,5,731-Central Macedonia.txt
+732,12583,1,732-Pamir.txt
+736,6626,3,736-Litorale.txt
+737,7251,5,737-New Britain.txt
+740,7259,2,740-Vancouver Island.txt
+741,7376,1,741-Cambodia.txt
+742,1384,1,742-Stalinabad.txt
+748,1010,3,748-Zunyi.txt
+749,12019,1,749-Huangshan.txt
+75,3569,20,75-Moravia.txt
+75,6562,5,75-Moravia.txt
+750,7101,10,750-Changde.txt
+757,5033,5,757-Shigatse.txt
+76,6711,5,76-Northern Transylvania.txt
+76,9672,2,76-Northern Transylvania.txt
+76,9670,1,76-Northern Transylvania.txt
+764,3614,1,764-West Banat.txt
+766,6727,1,766-Southern Bessarabia.txt
+768,9962,1,768-Rwanda.txt
+769,2220,1,769-Burundi.txt
+77,11597,1,77-Dobrogea.txt
+770,12986,1,770-Malawi.txt
+773,2080,1,773-Cameroon.txt
+774,2081,1,774-Chad.txt
+776,10919,1,776-Dahomey.txt
+777,1951,1,777-Togo.txt
+778,10836,1,778-Upper Volta.txt
+779,10803,1,779-Ivory Coast.txt
+78,3707,1,78-Bessarabia.txt
+780,1909,1,780-Guinea.txt
+783,12857,1,783-Sidi Ifni.txt
+784,3320,3,784-Ermland-Masuren.txt
+785,11420,5,785-Picardy.txt
+787,1910,1,787-North Kashmir.txt
+788,3874,1,788-Salamanca.txt
+789,875,3,789-Cordoba.txt
+79,9716,1,79-moldovia.txt
+79,6706,1,79-moldovia.txt
+790,11707,3,790-Asturias.txt
+791,11825,3,791-Valladolid.txt
+792,740,10,792-Basque Country.txt
+793,3945,1,793-Guadalajara.txt
+794,3954,1,794-Eastern Aragon.txt
+795,9869,1,795-Santarem.txt
+795,924,1,795-Santarem.txt
+796,2115,1,796-North Angola.txt
+797,9833,25,797-Istanbul.txt
+798,3862,3,798-Amasya.txt
+798,919,5,798-Amasya.txt
+799,12029,1,799-Hatay.txt
+80,577,1,80-Bocovina.txt
+800,6935,5,800-Van.txt
+800,12376,1,800-Van.txt
+802,6940,3,802-Kosovo.txt
+802,9849,2,802-Kosovo.txt
+803,11857,1,803-Southern Serbia.txt
+804,9894,3,804-Herzegovina.txt
+805,914,1,805-Northern Epirus.txt
+806,9710,3,806-French Basque Country.txt
+808,9340,5,808-Riga.txt
+81,6652,1,81-Oltenia.txt
+811,185,1,811-Saaremaa.txt
+812,3152,5,812-Tallinn.txt
+816,7588,3,816-West Virginia.txt
+82,9606,3,82-Banat.txt
+821,3672,5,821 - Chenchnya-Ingushetia.txt
+822,13063,1,822 - Chukotka.txt
+823,1614,1,823 - Karakalpakstan.txt
+825,105,1,825 - Nenetsia.txt
+826,11617,1,826 - Abkhazia.txt
+827,11614,1,827 - Kabardino-Balkaria.txt
+828,9628,3,828 - North Ossetia.txt
+829,11523,2,829 - Volga Germany.txt
+829,9432,1,829 - Volga Germany.txt
+83,6682,1,83-crisana.txt
+830,1573,2,830 - Bukhara.txt
+830,10671,1,830 - Bukhara.txt
+831,12465,1,831 - Khiva.txt
+832,1493,1,832 - Dashhowuz.txt
+833,9402,1,833 - Mari El.txt
+834,3757,2,834 - Balta.txt
+834,741,1,834 - Balta.txt
+835,7980,2,835-Haraghe.txt
+835,13249,3,835-Haraghe.txt
+835,12812,1,835-Haraghe.txt
+836,10775,1,836-Bale.txt
+837,8019,1,837-Sidamo.txt
+837,13246,2,837-Sidamo.txt
+837,13247,1,837-Sidamo.txt
+838,13244,2,838-Illubabor.txt
+838,7912,1,838-Illubabor.txt
+839,2009,2,839-Welega.txt
+839,13243,1,839-Welega.txt
+84,690,1,84-Transylvania.txt
+840,13242,2,840-Gojjam.txt
+841,1984,2,841-Begemder.txt
+842,2072,2,842-Tigray.txt
+842,13237,1,842-Tigray.txt
+842,13238,1,842-Tigray.txt
+843,5097,1,843-Wello.txt
+844,12941,1,844-jubaland.txt
+845,9638,5,845-Jura Mountains.txt
+845,6666,5,845-Jura Mountains.txt
+846,9600,1,846-Ticino.txt
+853,9627,3,853-Ljubljana.txt
+856,12883,1,856-Asir-Makkah.txt
+856,5037,5,856-Asir-Makkah.txt
+859,12702,1,859-Dammam.txt
+863,12223,1,863-Maurice.txt
+868,10438,1,868-Isan.txt
+869,1488,1,869-Lanna.txt
+87,9508,10,87-Lodz.txt
+874,12683,1,874-Magadan.txt
+875,13204,1,875-Chukchi Peninsulay.txt
+877,12549,1,877-Verkhoyansk.txt
+879,138,1,879-Kargopol.txt
+88,9427,20,88-Kielce.txt
+88,442,3,88-Kielce.txt
+88,9494,1,88-Kielce.txt
+880,11061,1,880-Kotlas.txt
+882,7708,1,882-Pavlodar.txt
+883,12725,1,883-Kassala.txt
+89,11411,1,89-Krakow.txt
+892,10966,1,892-South West Angola.txt
+9,11542,30,9-Czechoslovakia.txt
+9,6418,5,9-Czechoslovakia.txt
+9,9569,5,9-Czechoslovakia.txt
+9,9541,3,9-Czechoslovakia.txt
+90,11430,5,90-Lwow.txt
+90,3458,5,90-Lwow.txt
+905,5210,1,905-Mombasa.txt
+907,7011,20,907-Cairo.txt
+907,3996,5,907-Cairo.txt
+907,1068,3,907-Cairo.txt
+908,13240,2,908-Afar.txt
+91,11479,3,91-Tarnopol.txt
+911,3325,5,911-Fyn.txt
+912,13258,1,912-Sonderjylland.txt
+913,11380,1,913-Ostergotland.txt
+913,9393,2,913-Ostergotland.txt
+915,6310,1,915-Bohuslan.txt
+916,156,1,916-Dalarna.txt
+917,11148,1,917-Jamtland.txt
+918,6132,2,918-Vasterbotten.txt
+918,109,1,918-Vasterbotten.txt
+919,11114,1,919-Varmland.txt
+92,11399,1,92-Lublin.txt
+920,3136,3,920-Opplandene.txt
+921,6151,1,921-Telemark.txt
+922,9296,3,922-Agder.txt
+923,3048,1,923-Helgeland.txt
+924,11050,1,924-Troms.txt
+925,9116,1,925-Finnmark.txt
+93,6557,1,93-Volhynian.txt
+93,422,3,93-Volhynian.txt
+934,9780,3,934-Shkoder.txt
+935,5107,2,935 - Ceara.txt
+936,5168,5,936 - Pernambuco.txt
+937,5153,1,937 - Piaui.txt
+938,12853,3,938 - Para.txt
+939,5214,1,939 - Amapa.txt
+939,4980,2,939 - Amapa.txt
+94,3392,1,94-Polesie.txt
+94,560,1,94-Polesie.txt
+940,13278,2,940 - Acre.txt
+941,5151,1,941 - Tocantins.txt
+942,12939,2,942 - Rondonia.txt
+943,10999,5,943 - Espirito Santo.txt
+944,8181,2,944 - Parana.txt
+945,1641,1,945 - Cerro Largo.txt
+946,12468,2,946 - Paysandu.txt
+946,10502,1,946 - Paysandu.txt
+947,13086,2,947 - Tacna.txt
+948,13294,1,948 - Easter Island.txt
+949,2161,2,949 - Aysen.txt
+95,9304,1,95-Nowogrodek.txt
+950,5121,2,950 - Araucania.txt
+950,5169,1,950 - Araucania.txt
+951,5131,2,951 - Arica.txt
+951,8217,1,951 - Arica.txt
+952,5228,2,952 - Atacama.txt
+953,13300,1,953 - Tierra del Fuego.txt
+954,5173,1,954 - Santa Cruz.txt
+955,13307,2,955 - Chubut.txt
+955,10953,3,955 - Chubut.txt
+955,8161,1,955 - Chubut.txt
+956,7500,2,956 - Santa Fe.txt
+956,5163,1,956 - Santa Fe.txt
+957,12922,1,957 - Formosa.txt
+959,2224,2,959 - Los Andes.txt
+959,11001,1,959 - Los Andes.txt
+96,406,1,96-Wilejka.txt
+960,2136,2,960 - San Juan.txt
+960,12978,1,960 - San Juan.txt
+97,11301,3,97-Bialystok.txt
+97,3393,3,97-Bialystok.txt
+97,3254,1,97-Bialystok.txt
+970,833,2,970 - Western Macedonia.txt
+970,867,1,970 - Western Macedonia.txt
+971,657,3,971 - Northern Dobruja.txt
+972,557,1,972 - South Sudetenland.txt
+973,6670,1,973 - Bacs.txt
+973,6700,2,973 - Bacs.txt
+974,11610,5,974 - South Transdanubia.txt
+975,3700,1,975 - Burgenland.txt
+976,9648,5,976 - Steiermark Karnten.txt
+976,3673,3,976 - Steiermark Karnten.txt
+976,11612,2,976 - Steiermark Karnten.txt
+977,6598,30,977 - Antwerp.txt
+977,13068,1,977 - Antwerp.txt
+98,3230,5,98-Mazurskie.txt
+982,1321,3,982 - Madras States.txt
+986,10729,3,986 - East Punjab.txt
+986,2076,1,986 - East Punjab.txt
+99,6235,2,99-Jutland.txt
+99,6364,3,99-Jutland.txt
+99,3277,1,99-Jutland.txt
+99,399,2,99-Jutland.txt
+99,3206,1,99-Jutland.txt
+990,1553,5,990-Manipur.txt
+998,4425,1,998-Sagaing.txt

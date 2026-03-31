@@ -1,0 +1,26 @@
+# Resistance Activities
+
+Source: `common/resistance_activity/resistance_activity.txt`
+
+| activity_key | alert_text | max_amount | duration |
+|---|---|---|---|
+| sabotage_arms_factory | building_is_sabotaged |  |  |
+| sabotage_infrastructure | building_is_sabotaged |  |  |
+| sabotage_industrial_complex | building_is_sabotaged |  |  |
+| sabotage_air_base | building_is_sabotaged |  |  |
+| sabotage_dockyard | building_is_sabotaged |  |  |
+| sabotage_anti_air_building | building_is_sabotaged |  |  |
+| sabotage_synthetic_refinery | building_is_sabotaged |  |  |
+| sabotage_fuel_silo | building_is_sabotaged |  |  |
+| sabotage_radar_station | building_is_sabotaged |  |  |
+| sabotage_rocket_site | building_is_sabotaged |  |  |
+| sabotage_nuclear_reactor | building_is_sabotaged |  |  |
+| sabotage_nuclear_reactor_heavy_water | building_is_sabotaged |  |  |
+| sabotage_commercial_nuclear_reactor | building_is_sabotaged |  |  |
+| sabotage_oil | resource_is_sabotaged |  | 180 |
+| sabotage_aluminium | resource_is_sabotaged |  | 180 |
+| sabotage_rubber | resource_is_sabotaged |  | 180 |
+| sabotage_tungsten | resource_is_sabotaged |  | 180 |
+| sabotage_steel | resource_is_sabotaged |  | 180 |
+| sabotage_chromium | resource_is_sabotaged |  | 180 |
+| sabotage_coal | resource_is_sabotaged |  | 180 |

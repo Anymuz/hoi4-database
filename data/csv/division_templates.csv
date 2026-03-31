@@ -1,0 +1,798 @@
+template_name,division_names_group,source_file
+Qafar Sefari,AFA_INF_01,AFA_1936.txt
+Royal Guard,AFG_ARM_01,AFG_1936.txt
+Militia,AFG_GAR_01,AFG_1936.txt
+Royal Guard,AFG_ARM_01,AFG_1936_nsb.txt
+Ferqhah,AFG_INF_01,AFG_1936_nsb.txt
+Royal Guard,AFG_ARM_01,AFG_1939.txt
+Militia,AFG_GAR_01,AFG_1939.txt
+Këmbësori Pjesëtim,ALB_INF_01,ALB_1936.txt
+Infantry Division,BRA_INF_01,ANG_1936.txt
+División de Infanteria,SPAN_INF_02,ARG_1936.txt
+Brigada Montaña,SPAN_MNT_02,ARG_1936.txt
+División de Caballería,SPAN_CAV_01,ARG_1936.txt
+División de Infanteria,SPAN_INF_02,ARG_1939.txt
+Brigada Montaña,SPAN_MNT_02,ARG_1939.txt
+División de Caballería,SPAN_CAV_01,ARG_1939.txt
+Infantry Division,AST_INF_01,AST_1936.txt
+Cavalry Division,AST_CAV_01,AST_1936.txt
+Armoured Division,AST_ARM_01,AST_1936.txt
+Infantry Division,AST_INF_01,AST_1939.txt
+Cavalry Division,AST_CAV_01,AST_1939.txt
+Armoured Division,AST_ARM_01,AST_1939.txt
+Infanterie Division,AUS_INF_01,AUS_1936.txt
+Alpenjäger Division,AUS_MNT_01,AUS_1936.txt
+Schnelle Division,AUS_CAV_01,AUS_1936.txt
+Infanterie Division,AUS_INF_01,AUS_ww_1936.txt
+Alpenjäger Division,AUS_MNT_01,AUS_ww_1936.txt
+Schnelle Division,AUS_CAV_01,AUS_ww_1936.txt
+Division d'Infanterie,BEL_INF_01,BEL_1936.txt
+Division de Cavalerie,BEL_CAV_01,BEL_1936.txt
+Cavalerie Motorisée,BEL_MOT_01,BEL_1936.txt
+Division Coloniale,BEL_GAR_01,BEL_1936.txt
+Division d'Infanterie,BEL_INF_01,BEL_1939.txt
+Division de Cavalerie,BEL_CAV_01,BEL_1939.txt
+Cavalerie Motorisée,BEL_MOT_01,BEL_1939.txt
+Division Coloniale,BEL_GAR_01,BEL_1939.txt
+Division d'Infanterie,BEL_INF_01,BEL_WW_1936.txt
+Chasseurs Ardennais,BEL_Mnt_01,BEL_WW_1936.txt
+Division de Cavalerie,BEL_CAV_01,BEL_WW_1936.txt
+Cycliste Frontière,BEL_CYC_01,BEL_WW_1936.txt
+Force Publique,FREN_INFB_01,BEL_WW_1936.txt
+Division d'Infanterie,BEL_INF_01,BEL_WW_1936_lar.txt
+Chasseurs Ardennais,BEL_Mnt_01,BEL_WW_1936_lar.txt
+Division de Cavalerie,BEL_CAV_01,BEL_WW_1936_lar.txt
+Cycliste Frontière,BEL_CYC_01,BEL_WW_1936_lar.txt
+Force Publique,FREN_INFB_01,BEL_WW_1936_lar.txt
+Division d'Infanterie,BEL_INF_01,BEL_WW_1936_lar_ncns.txt
+Chasseurs Ardennais,BEL_Mnt_01,BEL_WW_1936_lar_ncns.txt
+Division de Cavalerie,BEL_CAV_01,BEL_WW_1936_lar_ncns.txt
+Cycliste Frontière,BEL_CYC_01,BEL_WW_1936_lar_ncns.txt
+Force Publique,FREN_INFB_01,BEL_WW_1936_lar_ncns.txt
+Division d'Infanterie,BEL_INF_01,BEL_WW_1936_ncns.txt
+Chasseurs Ardennais,BEL_Mnt_01,BEL_WW_1936_ncns.txt
+Division de Cavalerie,BEL_CAV_01,BEL_WW_1936_ncns.txt
+Cycliste Frontière,BEL_CYC_01,BEL_WW_1936_ncns.txt
+Force Publique,FREN_INFB_01,BEL_WW_1936_ncns.txt
+Division d'Infanterie,BEL_INF_01,BEL_WW_1939.txt
+Chasseurs Ardennais,BEL_Mnt_01,BEL_WW_1939.txt
+Division de Cavalerie,BEL_CAV_01,BEL_WW_1939.txt
+Cavalerie Motorisée,BEL_MOT_01,BEL_WW_1939.txt
+Cycliste Frontière,BEL_CYC_01,BEL_WW_1939.txt
+Force Publique,FREN_INFB_01,BEL_WW_1939.txt
+Infantry Division,BHU_INF_01,BHU_1936.txt
+Infantry Division,BHU_INF_01,BHU_1939.txt
+División de Infanteria,SPAN_INF_02,BOL_1936.txt
+División de Caballería,SPAN_CAV_01,BOL_1936.txt
+División de Infanteria,SPAN_INF_02,BOL_1939.txt
+División de Caballería,SPAN_CAV_01,BOL_1939.txt
+Infantry Division,BRENGL_INF_01,BOT_1936.txt
+Divisão de Infantaria,BRA_INF_01,BRA_1936.txt
+Divisão de Cavalaria,BRA_CAV_01,BRA_1936.txt
+Divisão de Infantaria,BRA_INF_01,BRA_1939.txt
+Divisão de Cavalaria,BRA_CAV_01,BRA_1939.txt
+Foghorn Leghorn,BRM_INF_01,BRM_1936.txt
+Foghorn Leghorn,BRM_INF_01,BRM_1939.txt
+Pekhotna Divizija,BUL_INF_01,BUL_1936.txt
+Konna Divizija,BUL_CAV_01,BUL_1936.txt
+Pekhotna Divizija,BUL_INF_01,BUL_1939.txt
+Konna Divizija,BUL_CAV_01,BUL_1939.txt
+Tankov Polk,BUL_ARM_01,BUL_1939.txt
+Pekhotna Divizija,BUL_INF_01,BUL_1939_nsb.txt
+Konna Divizija,BUL_CAV_01,BUL_1939_nsb.txt
+Tankov Polk,BUL_ARM_01,BUL_1939_nsb.txt
+Azad Hind Infantry Corps,,CA1.txt
+Azad Hind Infantry Corps,,CA2.txt
+District Militia,CAN_GAR_01,CAN_1936.txt
+Cavalry Militia,CAN_CAV_01,CAN_1936.txt
+Armored-Division,CAN_ARM_01,CAN_1936.txt
+District Militia,CAN_GAR_01,CAN_1936_nsb.txt
+Cavalry Militia,CAN_CAV_01,CAN_1936_nsb.txt
+Armored-Division,CAN_ARM_01,CAN_1936_nsb.txt
+Infantry Division,CAN_INF_01,CAN_1939.txt
+District Militia,CAN_GAR_01,CAN_1939.txt
+Cavalry Militia,CAN_CAV_01,CAN_1939.txt
+Armored-Division,CAN_ARM_01,CAN_1939.txt
+Juntuán,CHI_INF_01,CHI_1936.txt
+Sanjiao Jun,CHI_INF_01,CHI_1936.txt
+Qibing Jun,CHI_CAV_01,CHI_1936.txt
+Juntuán,CHI_INF_01,CHI_1936_sea.txt
+Sanjiao Jun,CHI_INF_01,CHI_1936_sea.txt
+Juntuán Reformed,CHI_INF_01,CHI_1936_sea.txt
+Qibing Jun,CHI_CAV_01,CHI_1936_sea.txt
+Juntuán,CHI_INF_01,CHI_1939.txt
+Sanjiao Jun,CHI_INF_01,CHI_1939.txt
+Motuo Hua Bubing Jun,CHI_MOT_01,CHI_1939.txt
+Qibing Jun,CHI_CAV_01,CHI_1939.txt
+Juntuán,CHI_INF_01,CHI_1939_sea.txt
+Juntuán Reformed,CHI_INF_01,CHI_1939_sea.txt
+Sanjiao Jun,CHI_INF_01,CHI_1939_sea.txt
+Motuo Hua Bubing Jun,CHI_MOT_01,CHI_1939_sea.txt
+Qibing Jun,CHI_CAV_01,CHI_1939_sea.txt
+Juntuán,CHI_INF_01,CHI_united_front.txt
+División de Infanteria,SPAN_INF_02,CHL_1936.txt
+División de Caballería,SPAN_CAV_01,CHL_1936.txt
+División de Infanteria,SPAN_INF_02,CHL_1939.txt
+División de Caballería,SPAN_CAV_01,CHL_1939.txt
+División de Infanteria,SPAN_INF_02,CHL_TOA_1936.txt
+División de Caballería,SPAN_CAV_01,CHL_TOA_1936.txt
+Regimiento Escolta Presidencial,SPAN_INF_01,CHL_TOA_1936.txt
+Regimiento de Carabineros,SPAN_INF_02,CHL_TOA_1936.txt
+Cuerpo de Gendarmería de Prisiones,SPAN_INF_01,CHL_TOA_1936.txt
+División de Infanteria,SPAN_INF_02,CHL_TOA_1939.txt
+División de Caballería,SPAN_CAV_01,CHL_TOA_1939.txt
+Regimiento Escolta Presidencial,SPAN_INF_01,CHL_TOA_1939.txt
+Regimiento de Carabineros,SPAN_INF_02,CHL_TOA_1939.txt
+Cuerpo de Gendarmería de Prisiones,SPAN_INF_01,CHL_TOA_1939.txt
+Force Publique,FREN_INFB_01,COG_1936.txt
+Troupes du Katanga,FREN_INFB_01,COG_1936.txt
+Force Publique,FREN_INFB_01,COG_1939.txt
+Troupes du Katanga,FREN_INFB_01,COG_1939.txt
+Compagnie d'Artillerie et de Génie,FREN_INFB_01,COG_1939.txt
+Brigada del Ejército,SPAN_INFB_02,COL_1936.txt
+Brigada del Ejército,SPAN_INFB_02,COL_1939.txt
+División de Infantería,SPAN_INF_01,COS_1936.txt
+División de Infantería,SPAN_INF_01,COS_1939.txt
+Cavalry Division,UKR_CAV_01,CRI_khanate_soldiers.txt
+Infantry Division,UKR_INF_01,CRI_khanate_soldiers.txt
+Pesadijska Divizija,CRO_INF_01,CRO_1936.txt
+Alpine Odred,CRO_MTN_01,CRO_1936.txt
+Konjièka Divizija,CRO_CAV_01,CRO_1936.txt
+Bataljon Bornih Kola,CRO_ARM_01,CRO_1936.txt
+Hrvatsko domobranstvo,CRO_INF_01,CRO_YUG_independence.txt
+Alpine Odred,CRO_MTN_01,CRO_YUG_independence.txt
+Konjièka Divizija,CRO_CAV_01,CRO_YUG_independence.txt
+Bataljon Bornih Kola,CRO_ARM_01,CRO_YUG_independence.txt
+Volunteer Brigade,CSA_INF_01,CSA_fascist_uprising.txt
+Volunteer Cavalry,CSA_CAV_01,CSA_fascist_uprising.txt
+Brigada de Infanteria,SPAN_INFB_02,CUB_1936.txt
+Brigada de Caballería,SPAN_CAVB_01,CUB_1936.txt
+Brigada de Infanteria,SPAN_INFB_02,CUB_1939.txt
+Brigada de Caballería,SPAN_CAVB_01,CUB_1939.txt
+Pěší divize,CZE_INF_01,CZE_1936.txt
+Horská divize,CZE_MNT_01,CZE_1936.txt
+Jezdecká brigáda,CZE_CAV_01,CZE_1936.txt
+Rychlá divize,CZE_ARM_01,CZE_1936.txt
+Pěší divize,CZE_INF_01,CZE_1936_nsb.txt
+Horská divize,CZE_MNT_01,CZE_1936_nsb.txt
+Jezdecká brigáda,CZE_CAV_01,CZE_1936_nsb.txt
+Rychlá divize,CZE_ARM_01,CZE_1936_nsb.txt
+Infanteri Division,DEN_INF_01,DEN_1936.txt
+Binær Division,DEN_INF_01,DEN_1936.txt
+Kavaleri Brigade,DEN_CAV_01,DEN_1936.txt
+Infanteri Division,DEN_INF_01,DEN_1939.txt
+Binær Division,DEN_INF_01,DEN_1939.txt
+Kavaleri Brigade,DEN_CAV_01,DEN_1939.txt
+División de Infanteria,SPAN_INF_01,DOM_1936.txt
+División de Infanteria,SPAN_INF_01,DOM_1939.txt
+Kavaleriyskaya Diviziya,SOV_CAV_01,DON_cossack_host.txt
+División de Infanteria,SPAN_INF_01,ECU_1936.txt
+División de Infanteria,SPAN_INF_01,ECU_1939.txt
+Brigada de Infanteria,SPAN_INFB_02,ELS_1936.txt
+Brigada de Infanteria,SPAN_INFB_02,ELS_1939.txt
+Infantry Division,ENG_INF_01,ENG_1936.txt
+Cavalry Brigade,ENG_CAV_02,ENG_1936.txt
+Tank Brigade,ENG_ARM_02,ENG_1936.txt
+Motorised Division,,ENG_1936.txt
+Colonial Garrison,ENG_COL_01,ENG_1936.txt
+Infantry Division,ENG_INF_01,ENG_1936_LaR.txt
+Cavalry Brigade,ENG_CAV_02,ENG_1936_LaR.txt
+Tank Brigade,ENG_ARM_02,ENG_1936_LaR.txt
+Motorised Division,,ENG_1936_LaR.txt
+Armoured Car Company,ENG_CAR_01,ENG_1936_LaR.txt
+Colonial Garrison,ENG_COL_01,ENG_1936_LaR.txt
+Infantry Division,ENG_INF_01,ENG_1936_nsb.txt
+Cavalry Brigade,ENG_CAV_02,ENG_1936_nsb.txt
+Tank Brigade,ENG_ARM_02,ENG_1936_nsb.txt
+Motorised Division,,ENG_1936_nsb.txt
+Colonial Garrison,ENG_COL_01,ENG_1936_nsb.txt
+Infantry Division,ENG_INF_01,ENG_1936_nsb_LaR.txt
+Cavalry Brigade,ENG_CAV_02,ENG_1936_nsb_LaR.txt
+Tank Brigade,ENG_ARM_02,ENG_1936_nsb_LaR.txt
+Motorised Division,,ENG_1936_nsb_LaR.txt
+Armoured Car Company,ENG_CAR_01,ENG_1936_nsb_LaR.txt
+Colonial Garrison,ENG_COL_01,ENG_1936_nsb_LaR.txt
+Infantry Division,ENG_INF_01,ENG_1939.txt
+Infantry Division (ME),ENG_INF_01,ENG_1939.txt
+Motorised Division,ENG_MOT_01,ENG_1939.txt
+Armour Division,ENG_ARM_01,ENG_1939.txt
+Tank Brigade,ENG_ARM_02,ENG_1939.txt
+Cavalry Brigade,ENG_CAV_02,ENG_1939.txt
+Colonial Garrison,ENG_COL_01,ENG_1939.txt
+Infantry Division,ENG_INF_01,ENG_1939_nsb.txt
+Infantry Division (ME),ENG_INF_01,ENG_1939_nsb.txt
+Motorised Division,ENG_MOT_01,ENG_1939_nsb.txt
+Armour Division,ENG_ARM_01,ENG_1939_nsb.txt
+Tank Brigade,ENG_ARM_02,ENG_1939_nsb.txt
+Cavalry Brigade,ENG_CAV_02,ENG_1939_nsb.txt
+Colonial Garrison,ENG_COL_01,ENG_1939_nsb.txt
+Motorised Division,,ENG_LAR_Motorized.txt
+Armoured Car Company,ENG_CAR_01,ENG_LAR_Motorized.txt
+Motorised Division,,ENG_Motorized.txt
+Jalaväediviisi,EST_INF_01,EST_1936.txt
+Ratsavägi,EST_INF_01,EST_1936.txt
+Jalaväediviisi,EST_INF_01,EST_1939.txt
+Kebur Zabagna,ETH_INF_01,ETH_1936.txt
+Infantry Division,ETH_INF_01,ETH_1936.txt
+Mountain Division,ETH_MNT_01,ETH_1936.txt
+Kebur Zabagna,ETH_INF_IG,ETH_1936_bba.txt
+Mehal Sefari,ETH_INF_02,ETH_1936_bba.txt
+Chitet Sefari,ETH_INF_03,ETH_1936_bba.txt
+Mountain Division,ETH_INF_02,ETH_1936_bba.txt
+Jalkaväkidivisioona,FIN_INF_01,FIN_1936.txt
+Erillinen Prikaati,FIN_GAR_01,FIN_1936.txt
+Ratsuväkiprikaati,FIN_CAV_01,FIN_1936.txt
+Jalkaväkidivisioona,FIN_INF_01,FIN_1939.txt
+Erillinen Prikaati,FIN_GAR_01,FIN_1939.txt
+Ratsuväkiprikaati,FIN_CAV_01,FIN_1939.txt
+Division d'Infanterie,FRA_INF_01,FRA_1936.txt
+Division Coloniale,FRA_COL_01,FRA_1936.txt
+Division d'Infanterie Motorisée,FRA_MOT_01,FRA_1936.txt
+Division d'Infanterie Alpine,FRA_MNT_01,FRA_1936.txt
+Division de Cavalerie,FRA_CAV_01,FRA_1936.txt
+Division Légère Mécanique,FRA_MEC_01,FRA_1936.txt
+Brigade de Chars de Combat,FRA_ARM_01,FRA_1936.txt
+Brigade Coloniale,FRA_COL_01,FRA_1936.txt
+Division d'Infanterie,FRA_INF_01,FRA_1936_nsb.txt
+Division Coloniale,FRA_COL_01,FRA_1936_nsb.txt
+Division d'Infanterie Motorisée,FRA_MOT_01,FRA_1936_nsb.txt
+Division d'Infanterie Alpine,FRA_MNT_01,FRA_1936_nsb.txt
+Division de Cavalerie,FRA_CAV_01,FRA_1936_nsb.txt
+Division Légère Mécanique,FRA_MEC_01,FRA_1936_nsb.txt
+Brigade de Chars de Combat,FRA_ARM_01,FRA_1936_nsb.txt
+Brigade Coloniale,FRA_COL_01,FRA_1936_nsb.txt
+Division d'Infanterie,FRA_INF_01,FRA_1939.txt
+Division Coloniale,FRA_COL_01,FRA_1939.txt
+Division Forteresse,FRA_GAR_01,FRA_1939.txt
+Division d'Infanterie Alpine,FRA_MNT_01,FRA_1939.txt
+Division d'Infanterie Motorisée,FRA_MOT_01,FRA_1939.txt
+Division de Cavalerie,FRA_CAV_01,FRA_1939.txt
+Division Légère Mécanique,FRA_MEC_01,FRA_1939.txt
+Brigade de Chars de Combat,FRA_ARM_02,FRA_1939.txt
+Brigade Cuirassée,FRA_ARM_02,FRA_1939.txt
+Brigade Coloniale,FRA_COL_01,FRA_1939.txt
+Division d'Infanterie,FRA_INF_01,FRA_1939_nsb.txt
+Division Coloniale,FRA_COL_01,FRA_1939_nsb.txt
+Division Forteresse,FRA_GAR_01,FRA_1939_nsb.txt
+Division d'Infanterie Alpine,FRA_MNT_01,FRA_1939_nsb.txt
+Division d'Infanterie Motorisée,FRA_MOT_01,FRA_1939_nsb.txt
+Division de Cavalerie,FRA_CAV_01,FRA_1939_nsb.txt
+Division Légère Mécanique,FRA_MEC_01,FRA_1939_nsb.txt
+Brigade de Chars de Combat,FRA_ARM_02,FRA_1939_nsb.txt
+Brigade Cuirassée,FRA_ARM_02,FRA_1939_nsb.txt
+Brigade Coloniale,FRA_COL_01,FRA_1939_nsb.txt
+Juntuán,CHI_INF_01,GDC_1936_sea.txt
+Sanjiao Jun,CHI_INF_01,GDC_1936_sea.txt
+Infanterie-Division,GER_Inf_01,GER_1936.txt
+Panzer-Division,GER_Arm_01,GER_1936.txt
+Infanterie-Division (mot.),GER_MOT_02,GER_1936.txt
+Gebirgs-Brigade,GER_Mnt_01,GER_1936.txt
+Kavallerie-Brigade,GER_Cav_01,GER_1936.txt
+Infanterie-Division,GER_Inf_01,GER_1936_nsb.txt
+Panzer-Division,GER_Arm_01,GER_1936_nsb.txt
+Infanterie-Division (mot.),GER_MOT_02,GER_1936_nsb.txt
+Gebirgs-Brigade,GER_Mnt_01,GER_1936_nsb.txt
+Kavallerie-Brigade,GER_Cav_01,GER_1936_nsb.txt
+Infanterie-Division,GER_Inf_01,GER_1939.txt
+Gebirgs-Division,GER_Mnt_01,GER_1939.txt
+Fallschirmjäger-Division,GER_PAR_01,GER_1939.txt
+Infanterie-Division (mot.),GER_MOT_02,GER_1939.txt
+Leichte Division,GER_LTARM_01,GER_1939.txt
+Panzer-Division,GER_Arm_01,GER_1939.txt
+SS-Regiment,GER_SS_01,GER_1939.txt
+Kavallerie-Brigade,GER_Cav_01,GER_1939.txt
+Sicherungs-Division,GER_GAR_01,GER_1939.txt
+Infanterie-Division,GER_Inf_01,GER_1939_nsb.txt
+Gebirgs-Division,GER_Mnt_01,GER_1939_nsb.txt
+Fallschirmjäger-Division,GER_PAR_01,GER_1939_nsb.txt
+Infanterie-Division (mot.),GER_MOT_02,GER_1939_nsb.txt
+Leichte Division,GER_LTARM_01,GER_1939_nsb.txt
+Panzer-Division,GER_Arm_01,GER_1939_nsb.txt
+SS-Regiment,GER_SS_01,GER_1939_nsb.txt
+Kavallerie-Brigade,GER_Cav_01,GER_1939_nsb.txt
+Sicherungs-Division,GER_GAR_01,GER_1939_nsb.txt
+SS-Sturmbrigade,GER_Inf_01,GER_German_Civil_War_fascist.txt
+Landsturmregiment,GER_Inf_01,GER_German_Civil_War_neutrality.txt
+Trigonikó Pezikoú,GRE_INF_01,GRE_1936.txt
+Tetrágono Pezikoú,GRE_MNT_01,GRE_1936.txt
+Merarchía Ippikoú,GRE_CAV_01,GRE_1936.txt
+Trigonikó Pezikoú,GRE_INF_01,GRE_1939.txt
+Tetrágono Pezikoú,GRE_MNT_01,GRE_1939.txt
+Merarchía Ippikoú,GRE_CAV_01,GRE_1939.txt
+Juntuán,XSM_INF_01,GSM_1936_sea.txt
+Juntuán Reformed,XSM_INF_01,GSM_1936_sea.txt
+Qibing Jun,XSM_CAV_01,GSM_1936_sea.txt
+Brigada de Infanteria,SPAN_INFB_01,GUA_1936.txt
+Brigada de Infanteria,SPAN_INFB_01,GUA_1939.txt
+Juntuán,GXC_INF_01,GXC_1936.txt
+Sanjiao Jun,GXC_INF_01,GXC_1936_sea.txt
+Binary Infantry,GXC_INF_01,GXC_1939.txt
+Triangular Infantry,GXC_INF_01,GXC_1939.txt
+Brigade de Infanterie,FREN_INFB_01,HAI_1936.txt
+Brigade de Infanterie,FREN_INFB_01,HAI_1939.txt
+Juntuán,CHI_INF_01,HBC_1936_sea.txt
+Sanjiao Jun,CHI_INF_01,HBC_1936_sea.txt
+Qibing Jun,CHI_CAV_01,HBC_1936_sea.txt
+Infanterie Divisie,HOL_INF_01,HOL_1936.txt
+Koloniaal Garnizoen,INS_GAR_01,HOL_1936.txt
+Mariniersdivisie,HOL_MAR_01,HOL_1936.txt
+Infanterie Divisie,HOL_INF_01,HOL_1939.txt
+Lichte Divisie,HOL_INF_01,HOL_1939.txt
+Koloniaal Garnizoen,INS_GAR_01,HOL_1939.txt
+Mariniersdivisie,HOL_MAR_01,HOL_1939.txt
+Brigada de Infanteria,SPAN_INFB_01,HON_1936.txt
+Brigada de Infanteria,SPAN_INFB_01,HON_1939.txt
+Gyalogdandár,HUN_INF_02,HUN_1936.txt
+Huszár Dandár,HUN_CAV_01,HUN_1936.txt
+Gyalogdandár,HUN_INF_02,HUN_1939.txt
+Huszár Dandár,HUN_CAV_01,HUN_1939.txt
+Motorizált Dandár,HUN_MOT_01,HUN_1939.txt
+Gyalogdandár,HUN_INF_02,HUN_1939_nsb.txt
+Huszár Dandár,HUN_CAV_01,HUN_1939_nsb.txt
+Motorizált Dandár,HUN_MOT_01,HUN_1939_nsb.txt
+Gyalogdandár,HUN_INF_02,HUN_wuw_1936.txt
+Huszár Dandár,HUN_CAV_01,HUN_wuw_1936.txt
+Lovassági Társaság,HUN_CAV_01,HUN_wuw_1936.txt
+Ríkislögreglan,,ICE_1936.txt
+Ríkislögreglan,,ICE_1939.txt
+Infanterie Divisie,INS_INF_01,INS_1936.txt
+KNIL Koloniaal Garnizoen,INS_GAR_01,INS_1936.txt
+Infanterie Divisie,INS_INF_01,INS_1939.txt
+KNIL Koloniaal Garnizoen,INS_GAR_01,INS_1939.txt
+Infantry Division,IRE_INF_01,IRE_1936.txt
+Infantry Division,IRE_INF_01,IRE_1939.txt
+Firqat Mushaa,IRQ_INF_01,IRQ_1936.txt
+Silah Alfursan,IRQ_CAV_01,IRQ_1936.txt
+Alfurqat Almasha,IRQ_INF_01,IRQ_1939.txt
+Alfurqat Aljabalia,IRQ_MTN_01,IRQ_1939.txt
+Divisione di Fanteria,ITA_INF_01,ITA_1936.txt
+Divisione Alpina,ITA_MNT_01,ITA_1936.txt
+Camicie Nere,ITA_INF_02,ITA_1936.txt
+Divisione Celere,ITA_CAV_02,ITA_1936.txt
+Reggimento di Cavalleria,ITA_CAV_01,ITA_1936.txt
+Divisione Coloniale,ITA_COL_01,ITA_1936.txt
+Divisione Ascari Libica,ITA_COL_01,ITA_1936.txt
+Divisione Ascari Eritrea,ITA_COL_01,ITA_1936.txt
+Divisione Ascari Somala,ITA_COL_01,ITA_1936.txt
+Banda Indigena Irregolare,ITA_COL_02,ITA_1936.txt
+Truppe Irregolari a Cavallo,ITA_CAV_05,ITA_1936.txt
+Banda Irregolare Libica,ITA_COL_02,ITA_1936.txt
+Banda Irregolare Eritrea,ITA_COL_02,ITA_1936.txt
+Banda Irregolare Somala,ITA_COL_03,ITA_1936.txt
+Camicie Nere,ITA_INF_02,ITA_1936_african_oob_for_fragmentation.txt
+Divisione Coloniale,ITA_COL_01,ITA_1936_african_oob_for_fragmentation.txt
+Divisione Ascari Libica,ITA_COL_01,ITA_1936_african_oob_for_fragmentation.txt
+Divisione Ascari Eritrea,ITA_COL_01,ITA_1936_african_oob_for_fragmentation.txt
+Divisione Ascari Somala,ITA_COL_01,ITA_1936_african_oob_for_fragmentation.txt
+Banda Indigena Irregolare,ITA_COL_02,ITA_1936_african_oob_for_fragmentation.txt
+Truppe Irregolari a Cavallo,ITA_CAV_05,ITA_1936_african_oob_for_fragmentation.txt
+Banda Irregolare Libica,ITA_COL_02,ITA_1936_african_oob_for_fragmentation.txt
+Banda Irregolare Eritrea,ITA_COL_02,ITA_1936_african_oob_for_fragmentation.txt
+Banda Irregolare Somala,ITA_COL_03,ITA_1936_african_oob_for_fragmentation.txt
+Divisione di Fanteria,ITA_INF_01,ITA_1936_nsb.txt
+Divisione Alpina,ITA_MNT_01,ITA_1936_nsb.txt
+Camicie Nere,ITA_INF_02,ITA_1936_nsb.txt
+Divisione Celere,ITA_CAV_02,ITA_1936_nsb.txt
+Reggimento di Cavalleria,ITA_CAV_01,ITA_1936_nsb.txt
+Divisione Coloniale,ITA_COL_01,ITA_1936_nsb.txt
+Divisione Ascari Libica,ITA_COL_01,ITA_1936_nsb.txt
+Divisione Ascari Eritrea,ITA_COL_01,ITA_1936_nsb.txt
+Divisione Ascari Somala,ITA_COL_01,ITA_1936_nsb.txt
+Banda Indigena Irregolare,ITA_COL_02,ITA_1936_nsb.txt
+Truppe Irregolari a Cavallo,ITA_CAV_05,ITA_1936_nsb.txt
+Banda Irregolare Libica,ITA_COL_02,ITA_1936_nsb.txt
+Banda Irregolare Eritrea,ITA_COL_02,ITA_1936_nsb.txt
+Banda Irregolare Somala,ITA_COL_03,ITA_1936_nsb.txt
+Divisione di Fanteria,ITA_INF_01,ITA_1939.txt
+Divisione Alpina,ITA_MNT_01,ITA_1939.txt
+Divisione Autotrasportabile,ITA_MOT_01,ITA_1939.txt
+Divisione Motorizzata,ITA_MOT_01,ITA_1939.txt
+Divisione Celere,ITA_CAV_02,ITA_1939.txt
+Divisione Corazzata,ITA_ARM_01,ITA_1939.txt
+Raggruppamento Celere,ITA_CAV_02,ITA_1939.txt
+Camicie Nere,ITA_INF_02,ITA_1939.txt
+Divisione Coloniale,ITA_COL_01,ITA_1939.txt
+Divisione Ascari Libica,ITA_COL_01,ITA_1939.txt
+Divisione Ascari Eritrea,ITA_COL_01,ITA_1939.txt
+Divisione Ascari Somala,ITA_COL_01,ITA_1939.txt
+Banda Indigena Irregolare,ITA_COL_02,ITA_1939.txt
+Truppe Irregolari a Cavallo,ITA_CAV_05,ITA_1939.txt
+Banda Irregolare Libica,ITA_COL_02,ITA_1939.txt
+Banda Irregolare Eritrea,ITA_COL_02,ITA_1939.txt
+Banda Irregolare Somala,ITA_COL_03,ITA_1939.txt
+Divisione di Fanteria,ITA_INF_01,ITA_1939_nsb.txt
+Divisione Alpina,ITA_MNT_01,ITA_1939_nsb.txt
+Divisione Autotrasportabile,ITA_MOT_01,ITA_1939_nsb.txt
+Divisione Motorizzata,ITA_MOT_01,ITA_1939_nsb.txt
+Divisione Celere,ITA_CAV_02,ITA_1939_nsb.txt
+Divisione Corazzata,ITA_ARM_01,ITA_1939_nsb.txt
+Raggruppamento Celere,ITA_CAV_02,ITA_1939_nsb.txt
+Camicie Nere,ITA_INF_02,ITA_1939_nsb.txt
+Divisione Coloniale,ITA_COL_01,ITA_1939_nsb.txt
+Divisione Ascari Libica,ITA_COL_01,ITA_1939_nsb.txt
+Divisione Ascari Eritrea,ITA_COL_01,ITA_1939_nsb.txt
+Divisione Ascari Somala,ITA_COL_01,ITA_1939_nsb.txt
+Banda Indigena Irregolare,ITA_COL_02,ITA_1939_nsb.txt
+Truppe Irregolari a Cavallo,ITA_CAV_05,ITA_1939_nsb.txt
+Banda Irregolare Libica,ITA_COL_02,ITA_1939_nsb.txt
+Banda Irregolare Eritrea,ITA_COL_02,ITA_1939_nsb.txt
+Banda Irregolare Somala,ITA_COL_03,ITA_1939_nsb.txt
+Hohei Shidan,JAP_INF_01,JAP_1936.txt
+Dokuritsu Konsei Ryodan,JAP_IMB_01,JAP_1936.txt
+Kihei Shidan,JAP_CAV_01,JAP_1936.txt
+Jidousha Shidan,JAP_MOT_01,JAP_1936.txt
+Rikusentai,JAP_MAR_01,JAP_1936.txt
+Chuton-chi Shidan,JAP_GAR_01,JAP_1936.txt
+Ginrinbutai,JAP_BIC_01,JAP_1936.txt
+Kutei Shidan,JAP_PAR_01,JAP_1936.txt
+Hohei Shidan,JAP_INF_01,JAP_1936_nsb.txt
+Dokuritsu Konsei Ryodan,JAP_IMB_01,JAP_1936_nsb.txt
+Kihei Shidan,JAP_CAV_01,JAP_1936_nsb.txt
+Jidousha Shidan,JAP_MOT_01,JAP_1936_nsb.txt
+Rikusentai,JAP_MAR_01,JAP_1936_nsb.txt
+Chuton-chi Shidan,JAP_GAR_01,JAP_1936_nsb.txt
+Ginrinbutai,JAP_BIC_01,JAP_1936_nsb.txt
+Kutei Shidan,JAP_PAR_01,JAP_1936_nsb.txt
+Hohei Shidan,JAP_INF_01,JAP_1939.txt
+Chugata Hohei Shidan,JAP_INF_01,JAP_1939.txt
+Dokuritsu Konsei Ryodan,JAP_IMB_01,JAP_1939.txt
+Kihei Shidan,JAP_CAV_01,JAP_1939.txt
+Jidousha Shidan,JAP_MOT_01,JAP_1939.txt
+Senshadan,JAP_ARM_01,JAP_1939.txt
+Rikusentai,JAP_MAR_01,JAP_1939.txt
+Chuton-chi Shidan,JAP_GAR_01,JAP_1939.txt
+Ginrinbutai,JAP_BIC_01,JAP_1939.txt
+Kutei Shidan,JAP_PAR_01,JAP_1939.txt
+Hohei Shidan,JAP_INF_01,JAP_1939_nsb.txt
+Chugata Hohei Shidan,JAP_INF_01,JAP_1939_nsb.txt
+Dokuritsu Konsei Ryodan,JAP_IMB_01,JAP_1939_nsb.txt
+Kihei Shidan,JAP_CAV_01,JAP_1939_nsb.txt
+Jidousha Shidan,JAP_MOT_01,JAP_1939_nsb.txt
+Senshadan,JAP_ARM_01,JAP_1939_nsb.txt
+Rikusentai,JAP_MAR_01,JAP_1939_nsb.txt
+Chuton-chi Shidan,JAP_GAR_01,JAP_1939_nsb.txt
+Ginrinbutai,JAP_BIC_01,JAP_1939_nsb.txt
+Kutei Shidan,JAP_PAR_01,JAP_1939_nsb.txt
+Azad Hind Infantry Corps,,JAP_Indian_National_Army_reinforcement.txt
+Morit Diviziin,MON_CAV_01,KAL_khanate_battalions.txt
+Khalimagiin Khaadyn Kharuuluud,MON_INF_01,KAL_khanate_battalions.txt
+Infantry Division,BRENGL_INF_01,KEN_1936.txt
+Cavalry Division,BRENGL_CAV_01,KEN_1936.txt
+Sanjiao Jun,XSM_INF_01,KHM_1936_sea.txt
+Qibing Jun,XSM_CAV_01,KHM_1936_sea.txt
+Daehanminguk Yuk-gun,KOR_INF_01,KOR_1936.txt
+Binary Infantry,KOR_INF_01,KOR_1939.txt
+Triangular Infantry,KOR_INF_01,KOR_1939.txt
+Kavaleriyskaya Diviziya,SOV_CAV_01,KUB_cossack_host.txt
+Kumullik Militia,XSM_INF_01,KUM_uprising.txt
+Uyghur Regiment,XSM_CAV_01,KUM_uprising_2.txt
+Dabeşa siwarî,TUR_CAV_01,KUR_liberation_troops.txt
+Peyayên Kurd,TUR_INF_01,KUR_liberation_troops.txt
+Kajnieku Divizija,LAT_INF_01,LAT_1936.txt
+Artilerijas Pulks,LAT_INF_01,LAT_1936.txt
+Aizsargi,LAT_INF_01,LAT_1936.txt
+Kajnieku Divizija,LAT_INF_01,LAT_1939.txt
+Infantry Brigade,BRENGL_INFB_01,LIB_1936.txt
+Infantry Brigade,BRENGL_INFB_01,LIB_1939.txt
+Pestininku Divizija,LIT_INF_01,LIT_1936.txt
+Artilerija Divizija,LIT_INF_01,LIT_1936.txt
+Valstybės Sienos Apsaugos Skyrius,LIT_INF_01,LIT_1936.txt
+Pestininku Divizija,LIT_INF_01,LIT_1939.txt
+Kavalerijos Brigados,LIT_CAV_01,LIT_1939.txt
+Public Force,LUX_INF_01,LUX_1936.txt
+Public Force,LUX_INF_01,LUX_1939.txt
+Malaya Infantry Brigade,BRENGL_INFB_01,MAL_1936.txt
+Huncheng Lu,MAN_INF_01,MAN_1936.txt
+Bubing Shi,MAN_INF_02,MAN_1936.txt
+Qu Jun,MAN_GAR_01,MAN_1936.txt
+Qibing Shi,MAN_CAV_02,MAN_1936.txt
+Bubing Shi,MAN_INF_01,MAN_1939.txt
+Qu Jun,MAN_GAR_01,MAN_1939.txt
+Qibing Shi,MAN_CAV_01,MAN_1939.txt
+Juntuán,MEN_INF_01,MEN_1936.txt
+Morit Diviziin,MEN_CAV_02,MEN_1936.txt
+Qibing Jun,MEN_CAV_01,MEN_1936.txt
+Juntuán,MEN_INF_01,MEN_1939.txt
+Qibing Jun,MEN_CAV_01,MEN_1939.txt
+División de Infanteria,SPAN_INF_01,MEX_1936.txt
+Brigada Agrarista,MEX_INF_02,MEX_1936.txt
+División de Caballería,SPAN_CAV_01,MEX_1936.txt
+División de Infanteria,SPAN_INF_01,MEX_1939.txt
+Brigada Agrarista,MEX_INF_02,MEX_1939.txt
+División de Caballería,SPAN_CAV_01,MEX_1939.txt
+Morit Diviziin,MON_CAV_01,MON_1936.txt
+Morit Diviziin,MON_CAV_01,MON_1939.txt
+Infantry Division,BRA_INF_01,MZB_1936.txt
+Paidala Dibhijana,NEP_MTN_01,NEP_1936.txt
+Royal Nepalese Division,NEP_INF_01,NEP_1936.txt
+Paidala Dibhijana,NEP_MTN_01,NEP_1939.txt
+Royal Nepalese Division,NEP_INF_01,NEP_1939.txt
+Brigada de Infanteria,SPAN_INFB_01,NIC_1936.txt
+Brigada de Infanteria,SPAN_INFB_01,NIC_1939.txt
+Infanteridivisjon,NOR_INF_01,NOR_1936.txt
+Binærdivisjon,NOR_INF_01,NOR_1936.txt
+Dragonregiment,NOR_CAV_01,NOR_1936.txt
+Infanteridivisjon,NOR_INF_01,NOR_1939.txt
+Binærdivisjon,NOR_INF_01,NOR_1939.txt
+Dragonregiment,NOR_CAV_01,NOR_1939.txt
+Juntuán Reformed,XSM_INF_01,NXM_1936_sea.txt
+Qibing Jun,XSM_CAV_01,NXM_1936_sea.txt
+District Force,NZL_MIL_01,NZL_1936.txt
+Armoured Division,NZL_ARM_01,NZL_1936.txt
+Infantry Division,NZL_INF_01,NZL_1939.txt
+District Force,NZL_MIL_01,NZL_1939.txt
+Armored-Division,NZL_ARM_01,NZL_1939.txt
+Alfurqat Almasha,OMA_INF_01,OMA_1936.txt
+Alfurqat Almasha,OMA_INF_01,OMA_1939.txt
+Infantry Division,BRENGL_INF_01,PAK_1936.txt
+Armoured Division,BRENGL_ARM_01,PAK_1936.txt
+División de Infanteria,SPAN_INF_01,PAN_1936.txt
+División de Infanteria,SPAN_INF_01,PAN_1939.txt
+División de Infanteria,SPAN_INF_01,PAR_1936.txt
+División de Infanteria,SPAN_INF_01,PAR_1939.txt
+Infantry Division,PER_INF_01,PER_1936.txt
+Cavalry Division,PER_CAV_01,PER_1936.txt
+Iranian Gendarmerie,PER_GAR_01,PER_1936.txt
+Mixed Division,PER_INF_01,PER_1939.txt
+Infantry Group,PER_GAR_01,PER_1939.txt
+Infantry Division,PHI_INF_01,PHI_1936.txt
+Infantry Division,PHI_INF_01,PHI_1936_ncns.txt
+Philippine Scouts Division,PHI_RAN_01,PHI_1936_ncns.txt
+Infantry Division,PHI_INF_01,PHI_1939.txt
+Philippine Scouts Division,PHI_RAN_01,PHI_1939.txt
+Dywizja Piechoty,POL_INF_01,POL_1936.txt
+Dywizja Piechoty Górskiej,POL_MNT_01,POL_1936.txt
+Brygada Kawalerii,POL_CAV_01,POL_1936.txt
+Dywizja Piechoty,POL_INF_01,POL_1939.txt
+Dywizja Piechoty Górskiej,POL_MNT_01,POL_1939.txt
+Brygada Piechoty Górskiej,POL_MNT_01,POL_1939.txt
+Brygada Kawalerii,POL_CAV_01,POL_1939.txt
+Brygada Motorowej,POL_MOT_01,POL_1939.txt
+Grupa Pancerna,POL_CAV_01,POL_1939.txt
+Brygada Ochrony Pogranicza,POL_GAR_01,POL_1939.txt
+Dywizja Piechoty,POL_INF_01,POL_1939_nsb.txt
+Dywizja Piechoty Górskiej,POL_MNT_01,POL_1939_nsb.txt
+Brygada Piechoty Górskiej,POL_MNT_01,POL_1939_nsb.txt
+Brygada Kawalerii,POL_CAV_01,POL_1939_nsb.txt
+Brygada Motorowej,POL_MOT_01,POL_1939_nsb.txt
+Grupa Pancerna,POL_CAV_01,POL_1939_nsb.txt
+Brygada Ochrony Pogranicza,POL_GAR_01,POL_1939_nsb.txt
+Divisão de Infantaria,POR_INF_01,POR_1936.txt
+Força de Caçadores,POR_CAC_01,POR_1936.txt
+Brigada de Cavalaria,POR_CAV_01,POR_1936.txt
+Divisão de Infantaria,POR_INF_01,POR_1939.txt
+Força de Caçadores,POR_CAC_01,POR_1939.txt
+Brigada de Cavalaria,POR_CAV_01,POR_1939.txt
+Juntuán,PRC_INF_01,PRC_1936.txt
+Renmin Jundui,PRC_GAR_01,PRC_1936.txt
+Juntuán,PRC_INF_01,PRC_1936_TSR.txt
+Renmin Jundui,PRC_MIL_01,PRC_1936_TSR.txt
+Juntuán,PRC_INF_01,PRC_1939.txt
+Renmin Jundui,PRC_GAR_01,PRC_1939.txt
+Juntuán,PRC_INF_01,PRC_1939_TSR.txt
+Renmin Jundui,PRC_MIL_01,PRC_1939_TSR.txt
+Erjinzhi Juntuán,,PRC_SOV_reinforcements.txt
+Erjinzhi Juntuán,,PRC_SOV_reinforcements_2.txt
+División de Infanteria,SPAN_INF_01,PRU_1936.txt
+División de Caballería,SPAN_CAV_01,PRU_1936.txt
+División de Infanteria,SPAN_INF_01,PRU_1939.txt
+División de Caballería,SPAN_CAV_01,PRU_1939.txt
+Infantry Division,RAJ_GAR_01,RAJ_1936.txt
+District Garrison,RAJ_GAR_01,RAJ_1936.txt
+Armored-Division,RAJ_ARM_01,RAJ_1936.txt
+Infantry Division,RAJ_GAR_01,RAJ_1936_GOE.txt
+Rajput Regiment,RAJ_GAR_01,RAJ_1936_GOE.txt
+District Garrison,RAJ_GAR_01,RAJ_1936_GOE.txt
+Armored-Division,RAJ_ARM_01,RAJ_1936_GOE.txt
+Infantry Division,RAJ_INF_01,RAJ_1939.txt
+District Garrison,RAJ_GAR_01,RAJ_1939.txt
+Colonial Garrison,RAJ_GAR_01,RAJ_1939.txt
+Armoured Division,RAJ_ARM_01,RAJ_1939.txt
+Berittene Militärpolizei,GER_Cav_01,RK_OOB.txt
+Militärpolizei,GER_Cav_01,RK_OOB.txt
+Divizia de Infanterie,ROM_INF_01,ROM_1936.txt
+Brigada de Munte,ROM_MTN_01,ROM_1936.txt
+Brigada de Cavalerie,ROM_CAV_01,ROM_1936.txt
+Regimentul de Blindate,ROM_ARM_01,ROM_1936.txt
+Divizia de Infanterie,ROM_INF_01,ROM_1936_nsb.txt
+Brigada de Munte,ROM_MTN_01,ROM_1936_nsb.txt
+Brigada de Cavalerie,ROM_CAV_01,ROM_1936_nsb.txt
+Regimentul de Blindate,ROM_ARM_01,ROM_1936_nsb.txt
+Divizia de Infanterie,ROM_INF_01,ROM_1939.txt
+Brigada de Munte,ROM_MTN_01,ROM_1939.txt
+Brigada de Cavalerie,ROM_CAV_01,ROM_1939.txt
+Blindata Brigada,ROM_ARM_01,ROM_1939.txt
+Divizia de Infanterie,ROM_INF_01,ROM_1939_nsb.txt
+Brigada de Munte,ROM_MTN_01,ROM_1939_nsb.txt
+Brigada de Cavalerie,ROM_CAV_01,ROM_1939_nsb.txt
+Blindata Brigada,ROM_ARM_01,ROM_1939_nsb.txt
+District Force,SAF_GAR_01,SAF_1936.txt
+District Brigade,SAF_GAR_01,SAF_1936.txt
+Armored-Division,SAF_ARM_01,SAF_1936.txt
+District Force,SAF_GAR_01,SAF_1939.txt
+District Brigade,SAF_GAR_01,SAF_1939.txt
+Armored-Division,SAF_ARM_01,SAF_1939.txt
+Democratic Defense Brigade,,SAF_D_civil_war.txt
+Nationalist Partisans,,SAF_F_civil_war.txt
+Alfurqat Almasha,SAU_INF_01,SAU_1936.txt
+Alfurqat Alfursan,SAU_CAV_01,SAU_1936.txt
+Alfurqat Almasha,SAU_INF_01,SAU_1939.txt
+Alfurqat Alfursan,SAU_CAV_01,SAU_1939.txt
+Juntuán,SHX_INF_01,SHX_1936.txt
+Juntuán,SHX_INF_01,SHX_1936_sea.txt
+Qibing Jun,SHX_CAV_01,SHX_1936_sea.txt
+Sanjiao Jun,SHX_INF_01,SHX_1936_sea.txt
+Infantry Division,SIA_INF_01,SIA_1936.txt
+Infantry Division,SIA_INF_01,SIA_1939.txt
+Juntuán,CHI_INF_01,SIC_1936_sea.txt
+Sanjiao Jun,CHI_INF_01,SIC_1936_sea.txt
+Juntuán,SIK_INF_01,SIK_1936.txt
+Juntuán,SIK_INF_01,SIK_1936_sea.txt
+Juntuán,SIK_INF_01,SIK_1939.txt
+Pesi Divize,SLO_INF_01,SLO_1939.txt
+Mobilná Skupina,SLO_CAV_01,SLO_1939.txt
+Pesi Divize,SLO_INF_01,SLO_1939_nsb.txt
+Mobilná Skupina,SLO_CAV_01,SLO_1939_nsb.txt
+Pesi Divize,SLO_INF_01,SLO_independence.txt
+Mobilná Skupina,,SLO_independence.txt
+Puska Brigáda,SLO_INF_02,SLO_independence.txt
+Pesi Divize,SLO_INF_01,SLO_independence_nsb.txt
+Mobilná Skupina,,SLO_independence_nsb.txt
+Puska Brigáda,SLO_INF_02,SLO_independence_nsb.txt
+Sanjiao Jun,CHI_INF_01,SND_1936_sea.txt
+Qibing Jun,CHI_CAV_01,SND_1936_sea.txt
+Strelkovaya Diviziya,SOV_INF_01,SOV_1936.txt
+Gornostrelkovaya Diviziya,SOV_MNT_01,SOV_1936.txt
+Motostrelkovaya Diviziya,SOV_MOT_01,SOV_1936.txt
+Kavaleriyskaya Diviziya,SOV_CAV_01,SOV_1936.txt
+NKVD Pogranichnaya Diviziya,SOV_GAR_01,SOV_1936.txt
+Mekhanizirovaniy Korpus,SOV_MEC_01,SOV_1936.txt
+Vozdushno-Desantnaya Brigada,SOV_PAR_01,SOV_1936.txt
+Strelkovaya Diviziya,SOV_INF_01,SOV_1936_nsb.txt
+Gornostrelkovaya Diviziya,SOV_MNT_01,SOV_1936_nsb.txt
+Motostrelkovaya Diviziya,SOV_MOT_01,SOV_1936_nsb.txt
+Kavaleriyskaya Diviziya,SOV_CAV_01,SOV_1936_nsb.txt
+NKVD Pogranichnaya Diviziya,SOV_GAR_01,SOV_1936_nsb.txt
+Mekhanizirovaniy Korpus,SOV_MEC_01,SOV_1936_nsb.txt
+Vozdushno-Desantnaya Brigada,SOV_PAR_01,SOV_1936_nsb.txt
+Strelkovaya Diviziya,SOV_INF_01,SOV_1939.txt
+Gornostrelkovaya Diviziya,SOV_MNT_01,SOV_1939.txt
+Motostrelkovaya Diviziya,SOV_MOT_01,SOV_1939.txt
+Kavaleriyskaya Diviziya,SOV_CAV_01,SOV_1939.txt
+NKVD Pogranichnaya Diviziya,SOV_GAR_01,SOV_1939.txt
+Vozdushno-Desantnaya,SOV_PAR_01,SOV_1939.txt
+Tankovaya Korpus,SOV_ARM_02,SOV_1939.txt
+Legko-Tankovaya Brigada,SOV_ARM_04,SOV_1939.txt
+Tankovaya Brigada,SOV_ARM_04,SOV_1939.txt
+Tyazolaya-Tankovaya Brigada,SOV_ARM_04,SOV_1939.txt
+Kazachya Kavaleryskaya Diviziya,SOV_CAV_02,SOV_1939.txt
+Strelkovaya Diviziya,SOV_INF_01,SOV_1939_nsb.txt
+Gornostrelkovaya Diviziya,SOV_MNT_01,SOV_1939_nsb.txt
+Motostrelkovaya Diviziya,SOV_MOT_01,SOV_1939_nsb.txt
+Kavaleriyskaya Diviziya,SOV_CAV_01,SOV_1939_nsb.txt
+NKVD Pogranichnaya Diviziya,SOV_GAR_01,SOV_1939_nsb.txt
+Vozdushno-Desantnaya,SOV_PAR_01,SOV_1939_nsb.txt
+Tankovaya Korpus,SOV_ARM_02,SOV_1939_nsb.txt
+Legko-Tankovaya Brigada,SOV_ARM_04,SOV_1939_nsb.txt
+Tankovaya Brigada,SOV_ARM_04,SOV_1939_nsb.txt
+Tyazolaya-Tankovaya Brigada,SOV_ARM_04,SOV_1939_nsb.txt
+Kazachya Kavaleryskaya Diviziya,SOV_CAV_02,SOV_1939_nsb.txt
+División de Infantería,SPA_INF_01,SPA_1939.txt
+División de Caballería,SPR_CAV_01,SPA_1939.txt
+Fuerza Colonial,SPR_GAR_01,SPA_1939.txt
+Brigada Legionario,SPAN_INF_01,SPA_Civil_War.txt
+División de Infantería,SPR_INF_01,SPR_1936.txt
+División de Caballería,SPR_CAV_01,SPR_1936.txt
+Brigada Montaña,SPR_MNT_01,SPR_1936.txt
+Brigada de Infantería,SPR_GAR_01,SPR_1936.txt
+Brigada Internacionales,SPR_INF_01,SPR_Civil_War.txt
+German Expatriates,,SPR_German_Expatriates_Barcelona.txt
+German Expatriates,,SPR_German_Expatriates_Madrid.txt
+Arméfördelning,SWE_INF_01,SWE_1936.txt
+Kavalleribrigaden,SWE_CAV_01,SWE_1936.txt
+Pansarregemente,SWE_ARM_01,SWE_1936.txt
+Militärområde,SWE_GAR_01,SWE_1936.txt
+Arméfördelning,SWE_INF_01,SWE_1939.txt
+Kavalleribrigaden,SWE_CAV_01,SWE_1939.txt
+Pansarregemente,SWE_ARM_01,SWE_1939.txt
+Militärområde,SWE_GAR_01,SWE_1939.txt
+Infanterie-Division,SWI_INF_01,SWI_1936.txt
+Gebirgs-Division,SWI_MNT_01,SWI_1936.txt
+Gebirgsbrigade,SWI_MNT_01,SWI_1936.txt
+Grenzbrigade,SWI_GAR_01,SWI_1936.txt
+Leichte-Brigade,SWI_CAV_01,SWI_1936.txt
+Gebirgsinfanterie,SWI_MNT_01,SWI_1936_BBA.txt
+Infanterie de montagne,SWI_MNT_01,SWI_1936_BBA.txt
+Fanteria di montagna,SWI_MNT_01,SWI_1936_BBA.txt
+Leichte-Brigade,SWI_CAV_01,SWI_1936_BBA.txt
+Infanterie-Division,SWI_INF_01,SWI_1939.txt
+Gebirgs-Division,SWI_MNT_01,SWI_1939.txt
+Gebirgsbrigade,SWI_MNT_01,SWI_1939.txt
+Grenzbrigade,SWI_GAR_01,SWI_1939.txt
+Leichte-Brigade,SWI_CAV_01,SWI_1939.txt
+Gebirgsinfanterie,SWI_MNT_01,SWI_1939_BBA.txt
+Infanterie de montagne,SWI_MNT_01,SWI_1939_BBA.txt
+Fanteria di montagna,SWI_MNT_01,SWI_1939_BBA.txt
+Leichte-Brigade,SWI_CAV_01,SWI_1939_BBA.txt
+Strelkovaya Polk,TAN_INF_01,TAN_1936.txt
+Strelkovaya Polk,TAN_INF_01,TAN_1939.txt
+Juntuan,TIB_GAR_01,TIB_1936.txt
+Juntuan,TIB_GAR_01,TIB_1939.txt
+Piyade Tümeni,TUR_INF_01,TUR_1936.txt
+Dag Tugayi,TUR_MTN_01,TUR_1936.txt
+Bogazi Tugay,TUR_GAR_01,TUR_1936.txt
+Süvari Tümeni,TUR_CAV_01,TUR_1936.txt
+Zirhli Tümeni,TUR_ARM_01,TUR_1936.txt
+Piyade Tümeni,TUR_INF_01,TUR_1936_nsb.txt
+Dag Tugayi,TUR_MTN_01,TUR_1936_nsb.txt
+Bogazi Tugay,TUR_GAR_01,TUR_1936_nsb.txt
+Süvari Tümeni,TUR_CAV_01,TUR_1936_nsb.txt
+Zirhli Tümeni,TUR_ARM_01,TUR_1936_nsb.txt
+Piyade Tümeni,TUR_INF_01,TUR_1939.txt
+Dag Tugayi,TUR_MTN_01,TUR_1939.txt
+Bogazi Tugay,TUR_GAR_01,TUR_1939.txt
+Süvari Tümeni,TUR_CAV_01,TUR_1939.txt
+Zirhli Tümeni,TUR_ARM_01,TUR_1939.txt
+Marines,,unlock_marines.txt
+Motorized-Division,,unlock_motorized.txt
+Mountaineer-Division,,unlock_mountineers.txt
+Paratroopers,,unlock_paratroopers.txt
+Rangers,,unlock_rangers.txt
+Armored-Division,,unlock_tanks.txt
+Armored-Division,,unlock_tanks_mot.txt
+División de Infanteria,SPAN_INF_01,URG_1936.txt
+División de Infanteria,SPAN_INF_01,URG_1939.txt
+Infantry Division,USA_INF_01,USA_1936.txt
+National Guard Division,USA_INF_01,USA_1936.txt
+Cavalry Division,USA_CAV_01,USA_1936.txt
+Garrison Brigade,USA_GAR_01,USA_1936.txt
+Marine Brigade,USA_MAR_01,USA_1936.txt
+Infantry Division,USA_INF_01,USA_1939.txt
+National Guard Division,USA_INF_01,USA_1939.txt
+Cavalry Division,USA_CAV_01,USA_1939.txt
+Mechanized Cavalry,USA_CAV_01,USA_1939.txt
+Marine Brigade,USA_MAR_01,USA_1939.txt
+Garrison Brigade,USA_GAR_01,USA_1939.txt
+Local Defense Volunteers,USA_INF_01,USB_defense_force.txt
+State Defense Force,USA_INF_01,USB_defense_force.txt
+División de Infanteria,SPAN_INF_01,VEN_1936.txt
+División de Caballería,SPAN_CAV_01,VEN_1936.txt
+División de Infanteria,SPAN_INF_01,VEN_1939.txt
+División de Caballería,SPAN_CAV_01,VEN_1939.txt
+Infantry Division,ENG_INF_01,WLA_1936.txt
+Cavalry Division,ENG_CAV_02,WLA_1936.txt
+Sanjiao Jun,CHI_INF_01,XIC_1936_sea.txt
+Qibing Jun,CHI_CAV_01,XIC_1936_sea.txt
+Juntuán,XSM_INF_01,XSM_1936.txt
+Qibing Jun,XSM_CAV_01,XSM_1936.txt
+Juntuán,XSM_INF_01,XSM_1936_sea.txt
+Juntuán Reformed,XSM_INF_01,XSM_1936_sea.txt
+Qibing Jun,XSM_CAV_01,XSM_1936_sea.txt
+Binary Infantry,XSM_INF_01,XSM_1939.txt
+Triangular Infantry,XSM_INF_01,XSM_1939.txt
+Triangular Cavalry,XSM_CAV_01,XSM_1939.txt
+Alfurqat Almasha,YEM_INF_01,YEM_1936.txt
+Alfurqat Alfursan,YEM_CAV_01,YEM_1936.txt
+Alfurqat Almasha,YEM_INF_01,YEM_1939.txt
+Alfurqat Alfursan,YEM_CAV_01,YEM_1939.txt
+Pesadijska Divizija,YUG_INF_01,YUG_1936.txt
+Gorska Pesadija,YUG_MTN_01,YUG_1936.txt
+Konjička Divizija,YUG_CAV_01,YUG_1936.txt
+Tenkovski Bataljon,YUG_ARM_01,YUG_1936.txt
+Pesadijska Divizija,YUG_INF_01,YUG_1936_nsb.txt
+Gorska Pesadija,YUG_MTN_01,YUG_1936_nsb.txt
+Konjička Divizija,YUG_CAV_01,YUG_1936_nsb.txt
+Tenkovski Bataljon,YUG_ARM_01,YUG_1936_nsb.txt
+Pesadijska Divizija,YUG_INF_01,YUG_1939.txt
+Gorska Pesadija,YUG_MTN_01,YUG_1939.txt
+Konjička Divizija,YUG_CAV_01,YUG_1939.txt
+Tenkovski Bataljon,YUG_ARM_01,YUG_1939.txt
+Pesadijska Divizija,YUG_INF_01,YUG_1939_nsb.txt
+Gorska Pesadija,YUG_MTN_01,YUG_1939_nsb.txt
+Konjička Divizija,YUG_CAV_01,YUG_1939_nsb.txt
+Tenkovski Bataljon,YUG_ARM_01,YUG_1939_nsb.txt
+Juntuán,YUN_INF_01,YUN_1936.txt
+Juntuán,YUN_INF_01,YUN_1936_sea.txt
+Binary Infantry,YUN_INF_01,YUN_1939.txt
+Triangular Infantry,YUN_INF_01,YUN_1939.txt
+Infantry Division,BRENGL_INF_01,ZIM_1936.txt

@@ -1,0 +1,28 @@
+# Occupation Laws
+
+Source: `common/occupation_laws/occupation_laws.txt`
+
+| occupation_law_key | icon | sound_effect | gui_order | main_fallback_law | fallback_law_key |
+|---|---|---|---|---|---|
+| missing_garrison_scaled_effect | 1 | "Martial_Law_Interface_No_Garrison" |  | no |  |
+| no_garrison | 1 | "Martial_Law_Interface_No_Garrison" |  | no |  |
+| autonomous_occupation | 2 | "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM" |  | no |  |
+| foreign_civilian_oversight | 3 | "Martial_Law_Interface_Foreign_Cvilian_Oversight" |  | no |  |
+| local_police_force_garrison | 11 | "Martial_Law_Interface_Local_Police_Force_Garrison" |  | no |  |
+| secret_police_oversight | 4 | "Martial_Law_Interface_Secret_Police_Oversight" |  | no |  |
+| liberate_workers_occupation | 5 | "Martial_Law_Interface_Liberate_Workers_Occupation_Unique_COM" |  | no |  |
+| military_governor_occupation | 6 | "Martial_Law_Interface_Military_Governor_Occupation" |  | no |  |
+| martial_law_occupation | 7 | "Martial_Law_Interface_Martial_Law_Occupation_Default" |  | no |  |
+| forced_labor_occupation | 8 | "Martial_Law_Interface_Forced_Labor_Occupation" |  | no |  |
+| harsh_quotas_occupation | 9 | "Martial_Law_Interface_Harsh_Quotas_Occupation" |  | no |  |
+| brutally_oppressive_occupation | 10 | "Martial_Law_Interface_Brutally_Oppressive_Occupation_Unique_FAS" |  | no |  |
+| reconciliation | 12 | "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM" |  | no |  |
+| colonial_police | 13 | "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM" |  | no | colonial_police_improved |
+| colonial_police_improved | 13 | "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM" |  | no | colonial_police_final |
+| colonial_police_final | 13 | "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM" |  | no | foreign_civilian_oversight |
+| secretaries_general | 13 | "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM" |  | no | military_governor_occupation |
+| independent_rule | 15 | "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM" |  | no | foreign_civilian_oversight |
+| princely_subjugation | 14 | "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM" |  | no | military_governor_occupation |
+| senbu_occupation_law | 16 | "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM" |  | no | foreign_civilian_oversight |
+| GEACPS_exploitation_occupation_law | 17 | "Martial_Law_Interface_Harsh_Quotas_Occupation" |  | no | harsh_quotas_occupation |
+| GEACPS_prosperity_occupation_law | 17 | "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM" |  | no | foreign_civilian_oversight |

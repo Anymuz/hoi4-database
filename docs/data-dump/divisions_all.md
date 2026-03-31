@@ -1,0 +1,4997 @@
+# Divisions (All Land OOB Files)
+
+Source: `history/units/*.txt excluding _naval_/_air_`
+
+| division_template | location_province | start_experience_factor | source_file |
+|---|---|---|---|
+|  |  |  | AFA_1936.txt |
+|  |  |  | AFA_1936.txt |
+|  |  |  | AFA_1936.txt |
+|  |  |  | AFA_1936.txt |
+| Royal Guard | 10737 | 0.3 | AFG_1936.txt |
+|  |  |  | AFG_1936.txt |
+|  |  |  | AFG_1936.txt |
+|  |  |  | AFG_1936.txt |
+|  |  |  | AFG_1936.txt |
+|  |  |  | AFG_1936.txt |
+|  |  |  | AFG_1936.txt |
+|  |  |  | AFG_1936.txt |
+|  |  |  | AFG_1936.txt |
+| Royal Guard | 10737 | 0.3 | AFG_1936_nsb.txt |
+|  |  |  | AFG_1936_nsb.txt |
+|  |  |  | AFG_1936_nsb.txt |
+|  |  |  | AFG_1936_nsb.txt |
+|  |  |  | AFG_1936_nsb.txt |
+|  |  |  | AFG_1936_nsb.txt |
+|  |  |  | AFG_1936_nsb.txt |
+|  |  |  | AFG_1936_nsb.txt |
+|  |  |  | AFG_1936_nsb.txt |
+|  |  |  | AFG_1936_nsb.txt |
+| Royal Guard | 10737 | 0.3 | AFG_1939.txt |
+|  |  |  | AFG_1939.txt |
+|  |  |  | AFG_1939.txt |
+|  |  |  | AFG_1939.txt |
+|  |  |  | AFG_1939.txt |
+|  |  |  | AFG_1939.txt |
+|  |  |  | AFG_1939.txt |
+|  |  |  | AFG_1939.txt |
+|  |  |  | AFG_1939.txt |
+|  |  |  | ALB_1936.txt |
+|  |  |  | ARG_1936.txt |
+|  |  |  | ARG_1936.txt |
+|  |  |  | ARG_1936.txt |
+|  |  |  | ARG_1936.txt |
+|  |  |  | ARG_1936.txt |
+| División de Caballería | 12364 | 0.1 | ARG_1936.txt |
+| Brigada Montaña | 10992 | 0.1 | ARG_1936.txt |
+| Brigada Montaña | 8216 | 0.1 | ARG_1936.txt |
+|  |  |  | ARG_1939.txt |
+|  |  |  | ARG_1939.txt |
+|  |  |  | ARG_1939.txt |
+|  |  |  | ARG_1939.txt |
+|  |  |  | ARG_1939.txt |
+| División de Caballería | 12364 | 0.1 | ARG_1939.txt |
+| Brigada Montaña | 10992 | 0.1 | ARG_1939.txt |
+| Brigada Montaña | 8216 | 0.1 | ARG_1939.txt |
+|  |  |  | AST_1936.txt |
+|  |  |  | AST_1936.txt |
+|  |  |  | AST_1936.txt |
+|  |  |  | AST_1936.txt |
+|  |  |  | AST_1936.txt |
+|  |  |  | AST_1936.txt |
+|  |  |  | AST_1936.txt |
+|  |  |  | AST_1939.txt |
+|  |  |  | AST_1939.txt |
+|  |  |  | AST_1939.txt |
+|  |  |  | AST_1939.txt |
+|  |  |  | AST_1939.txt |
+|  |  |  | AST_1939.txt |
+|  |  |  | AST_1939.txt |
+|  |  |  | AST_1939.txt |
+| Rats of Tobruk | 1130 | 0.3 | AST_TFV_rats_africa.txt |
+| Rats of Tobruk | 12406 | 0.3 | AST_TFV_rats_australia.txt |
+| Schnelle Division | 11666 | 0.1 | AUS_1936.txt |
+|  |  |  | AUS_1936.txt |
+|  |  |  | AUS_1936.txt |
+|  |  |  | AUS_1936.txt |
+|  |  |  | AUS_1936.txt |
+|  |  |  | AUS_1936.txt |
+| Schnelle Division | 11666 | 0.1 | AUS_ww_1936.txt |
+|  |  |  | AUS_ww_1936.txt |
+|  |  |  | AUS_ww_1936.txt |
+|  |  |  | AUS_ww_1936.txt |
+|  |  |  | AUS_ww_1936.txt |
+|  |  |  | AUS_ww_1936.txt |
+|  |  |  | BEL_1936.txt |
+|  |  |  | BEL_1936.txt |
+|  |  |  | BEL_1936.txt |
+|  |  |  | BEL_1936.txt |
+|  |  |  | BEL_1936.txt |
+|  |  |  | BEL_1936.txt |
+|  |  |  | BEL_1936.txt |
+| Cavalerie Motorisée | 13068 | 0.3 | BEL_1936.txt |
+|  |  |  | BEL_1936.txt |
+|  |  |  | BEL_1936.txt |
+| Division Coloniale | 10968 | 0.1 | BEL_1936.txt |
+|  |  |  | BEL_1939.txt |
+|  |  |  | BEL_1939.txt |
+|  |  |  | BEL_1939.txt |
+|  |  |  | BEL_1939.txt |
+|  |  |  | BEL_1939.txt |
+|  |  |  | BEL_1939.txt |
+|  |  |  | BEL_1939.txt |
+|  |  |  | BEL_1939.txt |
+|  |  |  | BEL_1939.txt |
+|  |  |  | BEL_1939.txt |
+|  |  |  | BEL_1939.txt |
+|  |  |  | BEL_1939.txt |
+|  |  |  | BEL_1939.txt |
+|  |  |  | BEL_1939.txt |
+| Cavalerie Motorisée | 6537 | 0.3 | BEL_1939.txt |
+|  |  |  | BEL_1939.txt |
+|  |  |  | BEL_1939.txt |
+| Division Coloniale | 10968 | 0.1 | BEL_1939.txt |
+|  |  |  | BEL_WW_1936.txt |
+|  |  |  | BEL_WW_1936.txt |
+|  |  |  | BEL_WW_1936.txt |
+|  |  |  | BEL_WW_1936.txt |
+|  |  |  | BEL_WW_1936.txt |
+|  |  |  | BEL_WW_1936.txt |
+|  |  |  | BEL_WW_1936.txt |
+|  |  |  | BEL_WW_1936.txt |
+|  |  |  | BEL_WW_1936.txt |
+|  |  |  | BEL_WW_1936.txt |
+|  |  |  | BEL_WW_1936.txt |
+|  |  |  | BEL_WW_1936.txt |
+|  |  |  | BEL_WW_1936.txt |
+|  |  |  | BEL_WW_1936_lar.txt |
+|  |  |  | BEL_WW_1936_lar.txt |
+|  |  |  | BEL_WW_1936_lar.txt |
+|  |  |  | BEL_WW_1936_lar.txt |
+|  |  |  | BEL_WW_1936_lar.txt |
+|  |  |  | BEL_WW_1936_lar.txt |
+|  |  |  | BEL_WW_1936_lar.txt |
+|  |  |  | BEL_WW_1936_lar.txt |
+|  |  |  | BEL_WW_1936_lar.txt |
+|  |  |  | BEL_WW_1936_lar.txt |
+|  |  |  | BEL_WW_1936_lar.txt |
+|  |  |  | BEL_WW_1936_lar.txt |
+|  |  |  | BEL_WW_1936_lar.txt |
+|  |  |  | BEL_WW_1936_lar_ncns.txt |
+|  |  |  | BEL_WW_1936_lar_ncns.txt |
+|  |  |  | BEL_WW_1936_lar_ncns.txt |
+|  |  |  | BEL_WW_1936_lar_ncns.txt |
+|  |  |  | BEL_WW_1936_lar_ncns.txt |
+|  |  |  | BEL_WW_1936_lar_ncns.txt |
+|  |  |  | BEL_WW_1936_lar_ncns.txt |
+|  |  |  | BEL_WW_1936_lar_ncns.txt |
+|  |  |  | BEL_WW_1936_lar_ncns.txt |
+|  |  |  | BEL_WW_1936_lar_ncns.txt |
+|  |  |  | BEL_WW_1936_lar_ncns.txt |
+|  |  |  | BEL_WW_1936_lar_ncns.txt |
+|  |  |  | BEL_WW_1936_lar_ncns.txt |
+|  |  |  | BEL_WW_1936_ncns.txt |
+|  |  |  | BEL_WW_1936_ncns.txt |
+|  |  |  | BEL_WW_1936_ncns.txt |
+|  |  |  | BEL_WW_1936_ncns.txt |
+|  |  |  | BEL_WW_1936_ncns.txt |
+|  |  |  | BEL_WW_1936_ncns.txt |
+|  |  |  | BEL_WW_1936_ncns.txt |
+|  |  |  | BEL_WW_1936_ncns.txt |
+|  |  |  | BEL_WW_1936_ncns.txt |
+|  |  |  | BEL_WW_1936_ncns.txt |
+|  |  |  | BEL_WW_1936_ncns.txt |
+|  |  |  | BEL_WW_1936_ncns.txt |
+|  |  |  | BEL_WW_1936_ncns.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+| Cavalerie Motorisée | 6537 | 0.3 | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BEL_WW_1939.txt |
+|  |  |  | BOL_1936.txt |
+|  |  |  | BOL_1936.txt |
+|  |  |  | BOL_1936.txt |
+|  |  |  | BOL_1936.txt |
+| División de Caballería | 5230 | 0.1 | BOL_1936.txt |
+|  |  |  | BOL_1939.txt |
+|  |  |  | BOL_1939.txt |
+|  |  |  | BOL_1939.txt |
+|  |  |  | BOL_1939.txt |
+| División de Caballería | 5230 | 0.1 | BOL_1939.txt |
+|  |  |  | BRA_1936.txt |
+|  |  |  | BRA_1936.txt |
+|  |  |  | BRA_1936.txt |
+|  |  |  | BRA_1936.txt |
+|  |  |  | BRA_1936.txt |
+|  |  |  | BRA_1936.txt |
+|  |  |  | BRA_1936.txt |
+|  |  |  | BRA_1936.txt |
+|  |  |  | BRA_1939.txt |
+|  |  |  | BRA_1939.txt |
+|  |  |  | BRA_1939.txt |
+|  |  |  | BRA_1939.txt |
+|  |  |  | BRA_1939.txt |
+|  |  |  | BRA_1939.txt |
+|  |  |  | BRA_1939.txt |
+|  |  |  | BRM_1936.txt |
+|  |  |  | BRM_1936.txt |
+|  |  |  | BRM_1939.txt |
+|  |  |  | BRM_1939.txt |
+|  |  |  | BRM_1939.txt |
+|  |  |  | BRM_1939.txt |
+|  |  |  | BUL_1936.txt |
+|  |  |  | BUL_1936.txt |
+|  |  |  | BUL_1936.txt |
+|  |  |  | BUL_1936.txt |
+|  |  |  | BUL_1936.txt |
+|  |  |  | BUL_1936.txt |
+|  |  |  | BUL_1936.txt |
+|  |  |  | BUL_1936.txt |
+|  |  |  | BUL_1936.txt |
+|  |  |  | BUL_1936.txt |
+|  |  |  | BUL_1936.txt |
+|  |  |  | BUL_1936.txt |
+|  |  |  | BUL_1939.txt |
+|  |  |  | BUL_1939.txt |
+| Tankov Polk | 949 | 0.2 | BUL_1939.txt |
+|  |  |  | BUL_1939.txt |
+|  |  |  | BUL_1939.txt |
+|  |  |  | BUL_1939.txt |
+|  |  |  | BUL_1939.txt |
+|  |  |  | BUL_1939.txt |
+|  |  |  | BUL_1939.txt |
+|  |  |  | BUL_1939.txt |
+|  |  |  | BUL_1939.txt |
+|  |  |  | BUL_1939.txt |
+|  |  |  | BUL_1939.txt |
+|  |  |  | BUL_1939_nsb.txt |
+|  |  |  | BUL_1939_nsb.txt |
+| Tankov Polk | 949 | 0.2 | BUL_1939_nsb.txt |
+|  |  |  | BUL_1939_nsb.txt |
+|  |  |  | BUL_1939_nsb.txt |
+|  |  |  | BUL_1939_nsb.txt |
+|  |  |  | BUL_1939_nsb.txt |
+|  |  |  | BUL_1939_nsb.txt |
+|  |  |  | BUL_1939_nsb.txt |
+|  |  |  | BUL_1939_nsb.txt |
+|  |  |  | BUL_1939_nsb.txt |
+|  |  |  | BUL_1939_nsb.txt |
+|  |  |  | BUL_1939_nsb.txt |
+| Azad Hind Infantry Corps | 11260 |  | CA1.txt |
+| Azad Hind Infantry Corps | 11260 |  | CA1.txt |
+| Azad Hind Infantry Corps | 11260 |  | CA1.txt |
+| Azad Hind Infantry Corps | 279 |  | CA2.txt |
+| Azad Hind Infantry Corps | 279 |  | CA2.txt |
+| Azad Hind Infantry Corps | 279 |  | CA2.txt |
+|  |  |  | CAN_1936.txt |
+|  |  |  | CAN_1936.txt |
+|  |  |  | CAN_1936.txt |
+|  |  |  | CAN_1936.txt |
+|  |  |  | CAN_1936.txt |
+|  |  |  | CAN_1936.txt |
+|  |  |  | CAN_1936.txt |
+|  |  |  | CAN_1936.txt |
+|  |  |  | CAN_1936.txt |
+|  |  |  | CAN_1936.txt |
+|  |  |  | CAN_1936.txt |
+|  |  |  | CAN_1936.txt |
+|  |  |  | CAN_1936.txt |
+|  |  |  | CAN_1936_nsb.txt |
+|  |  |  | CAN_1936_nsb.txt |
+|  |  |  | CAN_1936_nsb.txt |
+|  |  |  | CAN_1936_nsb.txt |
+|  |  |  | CAN_1936_nsb.txt |
+|  |  |  | CAN_1936_nsb.txt |
+|  |  |  | CAN_1936_nsb.txt |
+|  |  |  | CAN_1936_nsb.txt |
+|  |  |  | CAN_1936_nsb.txt |
+|  |  |  | CAN_1936_nsb.txt |
+|  |  |  | CAN_1936_nsb.txt |
+|  |  |  | CAN_1936_nsb.txt |
+|  |  |  | CAN_1936_nsb.txt |
+|  |  |  | CAN_1939.txt |
+|  |  |  | CAN_1939.txt |
+|  |  |  | CAN_1939.txt |
+|  |  |  | CAN_1939.txt |
+|  |  |  | CAN_1939.txt |
+|  |  |  | CAN_1939.txt |
+|  |  |  | CAN_1939.txt |
+|  |  |  | CAN_1939.txt |
+|  |  |  | CAN_1939.txt |
+|  |  |  | CAN_1939.txt |
+|  |  |  | CAN_1939.txt |
+|  |  |  | CAN_1939.txt |
+|  |  |  | CAN_1939.txt |
+|  |  |  | CAN_1939.txt |
+| Sanjiao Jun | 9843 | 0.2 | CHI_1936.txt |
+| Sanjiao Jun | 10068 | 0.2 | CHI_1936.txt |
+| Sanjiao Jun | 11761 | 0.2 | CHI_1936.txt |
+| Sanjiao Jun | 4140 | 0.2 | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+| Juntuán | 8072 | 0.1 | CHI_1936.txt |
+| Sanjiao Jun | 10144 | 0.1 | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+| Juntuán | 9974 | 0.1 | CHI_1936.txt |
+| Juntuán | 4169 | 0.1 | CHI_1936.txt |
+| Juntuán | 4196 | 0.1 | CHI_1936.txt |
+| Juntuán | 7014 | 0.1 | CHI_1936.txt |
+| Juntuán | 7014 | 0.1 | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+| Juntuán | 4925 | 0.1 | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+| Juntuán | 10076 | 0.1 | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+| Juntuán | 4619 | 0.1 | CHI_1936.txt |
+| Juntuán | 1036 | 0.1 | CHI_1936.txt |
+| Juntuán | 7637 | 0.1 | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+| Juntuán | 11913 | 0.1 | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+| Juntuán | 11913 | 0.1 | CHI_1936.txt |
+| Juntuán | 11913 | 0.1 | CHI_1936.txt |
+| Juntuán | 11913 | 0.1 | CHI_1936.txt |
+| Juntuán | 11913 | 0.1 | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+| Juntuán | 10000 | 0.1 | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1936_sea.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+| Juntuán | 10446 |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+| Sanjiao Jun | 1166 |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+| Juntuán | 12789 |  | CHI_1939.txt |
+| Juntuán | 10346 |  | CHI_1939.txt |
+| Juntuán | 10346 |  | CHI_1939.txt |
+| Juntuán | 10404 |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+| Juntuán | 12846 |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+| Juntuán | 10446 |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+| Sanjiao Jun | 1166 |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+| Juntuán | 12789 |  | CHI_1939_sea.txt |
+| Juntuán | 10346 |  | CHI_1939_sea.txt |
+| Juntuán | 10346 |  | CHI_1939_sea.txt |
+| Juntuán | 10404 |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+| Juntuán | 12846 |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_1939_sea.txt |
+|  |  |  | CHI_united_front.txt |
+|  |  |  | CHI_united_front.txt |
+|  |  |  | CHI_united_front.txt |
+|  |  |  | CHI_united_front.txt |
+|  |  |  | CHI_united_front.txt |
+|  |  |  | CHI_united_front.txt |
+|  |  |  | CHI_united_front.txt |
+|  |  |  | CHL_1936.txt |
+|  |  |  | CHL_1936.txt |
+|  |  |  | CHL_1936.txt |
+| División de Caballería | 8194 | 0.1 | CHL_1936.txt |
+|  |  |  | CHL_1939.txt |
+|  |  |  | CHL_1939.txt |
+|  |  |  | CHL_1939.txt |
+| División de Caballería | 8194 | 0.1 | CHL_1939.txt |
+|  |  |  | CHL_TOA_1936.txt |
+|  |  |  | CHL_TOA_1936.txt |
+|  |  |  | CHL_TOA_1936.txt |
+| División de Caballería | 8194 | 0.1 | CHL_TOA_1936.txt |
+| Regimiento Escolta Presidencial | 650 | 0.1 | CHL_TOA_1936.txt |
+| Regimiento de Carabineros | 5131 | 0.1 | CHL_TOA_1936.txt |
+| Cuerpo de Gendarmería de Prisiones | 5169 | 0.1 | CHL_TOA_1936.txt |
+|  |  |  | CHL_TOA_1939.txt |
+|  |  |  | CHL_TOA_1939.txt |
+|  |  |  | CHL_TOA_1939.txt |
+| División de Caballería | 8194 | 0.1 | CHL_TOA_1939.txt |
+| Regimiento Escolta Presidencial | 650 | 0.1 | CHL_TOA_1939.txt |
+| Regimiento de Carabineros | 5131 | 0.1 | CHL_TOA_1939.txt |
+| Cuerpo de Gendarmería de Prisiones | 5169 | 0.1 | CHL_TOA_1939.txt |
+| Force Publique | 1950 | 0.1 | COG_1936.txt |
+| Troupes du Katanga | 191 | 0.1 | COG_1936.txt |
+| Force Publique | 1950 | 0.1 | COG_1939.txt |
+| Force Publique | 5117 | 0.1 | COG_1939.txt |
+| Troupes du Katanga | 191 | 0.1 | COG_1939.txt |
+| Compagnie d'Artillerie et de Génie | 10968 | 0.1 | COG_1939.txt |
+|  |  |  | COL_1936.txt |
+|  |  |  | COL_1936.txt |
+|  |  |  | COL_1936.txt |
+|  |  |  | COL_1936.txt |
+|  |  |  | COL_1936.txt |
+|  |  |  | COL_1936.txt |
+| Brigada del Ejército | 12790 | 0.1 | COL_1939.txt |
+| Brigada del Ejército | 8056 | 0.1 | COL_1939.txt |
+| Brigada del Ejército | 2007 | 0.1 | COL_1939.txt |
+| Brigada del Ejército | 1887 | 0.1 | COL_1939.txt |
+| Brigada del Ejército | 10747 | 0.1 | COL_1939.txt |
+| Brigada del Ejército | 2023 | 0.1 | COL_1939.txt |
+|  |  |  | CRI_khanate_soldiers.txt |
+|  |  |  | CRI_khanate_soldiers.txt |
+|  |  |  | CRI_khanate_soldiers.txt |
+|  |  |  | CRI_khanate_soldiers.txt |
+|  |  |  | CRI_khanate_soldiers.txt |
+|  |  |  | CRI_khanate_soldiers.txt |
+|  |  |  | CRI_khanate_soldiers.txt |
+|  |  |  | CRI_khanate_soldiers.txt |
+|  |  |  | CRO_YUG_independence.txt |
+|  |  |  | CRO_YUG_independence.txt |
+|  |  |  | CRO_YUG_independence.txt |
+|  |  |  | CRO_YUG_independence.txt |
+|  |  |  | CRO_YUG_independence.txt |
+|  |  |  | CRO_YUG_independence.txt |
+| Volunteer Brigade | 10412 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 10412 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 10412 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 788 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 788 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 788 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 7558 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 7558 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 7558 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 7138 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 7138 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 7138 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 12501 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 12501 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 12501 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 10657 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 10657 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 10657 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 12353 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 12353 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 12353 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 12735 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 12735 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 12735 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 12384 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 12384 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 12384 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 4464 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 4464 |  | CSA_fascist_uprising.txt |
+| Volunteer Brigade | 4464 |  | CSA_fascist_uprising.txt |
+| Volunteer Cavalry | 3960 |  | CSA_fascist_uprising.txt |
+| Volunteer Cavalry | 3960 |  | CSA_fascist_uprising.txt |
+| Volunteer Cavalry | 3960 |  | CSA_fascist_uprising.txt |
+| Volunteer Cavalry | 12489 |  | CSA_fascist_uprising.txt |
+| Volunteer Cavalry | 12489 |  | CSA_fascist_uprising.txt |
+| Volunteer Cavalry | 12489 |  | CSA_fascist_uprising.txt |
+|  |  |  | CUB_1936.txt |
+|  |  |  | CUB_1936.txt |
+|  |  |  | CUB_1939.txt |
+|  |  |  | CUB_1939.txt |
+| Jezdecká brigáda | 11542 | 0.2 | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+| Jezdecká brigáda | 6604 | 0.2 | CZE_1936.txt |
+| Jezdecká brigáda | 6418 | 0.2 | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+|  |  |  | CZE_1936.txt |
+| Jezdecká brigáda | 9539 | 0.2 | CZE_1936.txt |
+| Jezdecká brigáda | 11542 | 0.2 | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+| Jezdecká brigáda | 6604 | 0.2 | CZE_1936_nsb.txt |
+| Jezdecká brigáda | 6418 | 0.2 | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+|  |  |  | CZE_1936_nsb.txt |
+| Jezdecká brigáda | 9539 | 0.2 | CZE_1936_nsb.txt |
+| Infanteri Division | 6287 | 0.2 | DEN_1936.txt |
+|  |  |  | DEN_1936.txt |
+|  |  |  | DEN_1936.txt |
+| Binær Division | 11251 | 0.2 | DEN_1936.txt |
+| Kavaleri Brigade | 6364 | 0.2 | DEN_1936.txt |
+| Infanteri Division | 6287 | 0.2 | DEN_1939.txt |
+|  |  |  | DEN_1939.txt |
+|  |  |  | DEN_1939.txt |
+| Binær Division | 11251 | 0.2 | DEN_1939.txt |
+| Kavaleri Brigade | 6364 | 0.2 | DEN_1939.txt |
+| División de Infanteria | 7660 |  | DOM_1936.txt |
+| División de Infanteria | 7660 |  | DOM_1939.txt |
+|  |  |  | DON_cossack_host.txt |
+|  |  |  | DON_cossack_host.txt |
+|  |  |  | DON_cossack_host.txt |
+|  |  |  | DON_cossack_host.txt |
+|  |  |  | DON_cossack_host.txt |
+|  |  |  | DON_cossack_host.txt |
+|  |  |  | DON_cossack_host.txt |
+|  |  |  | DON_cossack_host.txt |
+|  |  |  | DON_cossack_host.txt |
+|  |  |  | DON_cossack_host.txt |
+|  |  |  | DON_cossack_host.txt |
+|  |  |  | DON_cossack_host.txt |
+|  |  |  | DON_cossack_host.txt |
+|  |  |  | DON_cossack_host.txt |
+|  |  |  | DON_cossack_host.txt |
+|  |  |  | ECU_1936.txt |
+|  |  |  | ECU_1939.txt |
+|  |  |  | ELS_1936.txt |
+|  |  |  | ELS_1936.txt |
+|  |  |  | ELS_1936.txt |
+|  |  |  | ELS_1939.txt |
+|  |  |  | ELS_1939.txt |
+|  |  |  | ELS_1939.txt |
+|  |  |  | ENG_1936.txt |
+|  |  |  | ENG_1936.txt |
+|  |  |  | ENG_1936.txt |
+|  |  |  | ENG_1936.txt |
+| Cavalry Brigade | 11297 | 0.2 | ENG_1936.txt |
+|  |  |  | ENG_1936.txt |
+|  |  |  | ENG_1936.txt |
+|  |  |  | ENG_1936.txt |
+|  |  |  | ENG_1936.txt |
+|  |  |  | ENG_1936.txt |
+|  |  |  | ENG_1936.txt |
+| Cavalry Brigade | 407 | 0.2 | ENG_1936.txt |
+|  |  |  | ENG_1936.txt |
+|  |  |  | ENG_1936.txt |
+|  |  |  | ENG_1936.txt |
+| Tank Brigade | 9239 | 0.3 | ENG_1936.txt |
+|  |  |  | ENG_1936.txt |
+|  |  |  | ENG_1936.txt |
+|  |  |  | ENG_1936.txt |
+| Colonial Garrison | 12806 | 0.2 | ENG_1936.txt |
+| Colonial Garrison | 4206 | 0.1 | ENG_1936.txt |
+| Colonial Garrison | 12821 | 0.1 | ENG_1936.txt |
+| Colonial Garrison | 7011 | 0.1 | ENG_1936.txt |
+| Colonial Garrison | 1155 | 0.1 | ENG_1936.txt |
+| Cavalry Brigade | 4076 | 0.1 | ENG_1936.txt |
+| Colonial Garrison | 4135 | 0.2 | ENG_1936.txt |
+| Colonial Garrison | 12003 | 0.2 | ENG_1936.txt |
+| Colonial Garrison | 1939 | 0.2 | ENG_1936.txt |
+| Colonial Garrison | 12911 | 0.2 | ENG_1936.txt |
+| Colonial Garrison | 1939 |  | ENG_1936.txt |
+| Colonial Garrison | 2050 |  | ENG_1936.txt |
+| Colonial Garrison | 10862 |  | ENG_1936.txt |
+| Colonial Garrison | 10062 | 0.2 | ENG_1936.txt |
+| Colonial Garrison | 12299 | 0.2 | ENG_1936.txt |
+| Colonial Garrison | 12215 | 0.2 | ENG_1936.txt |
+| Colonial Garrison | 7260 | 0.1 | ENG_1936.txt |
+|  |  |  | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_LaR.txt |
+| Cavalry Brigade | 11297 | 0.2 | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_LaR.txt |
+| Cavalry Brigade | 407 | 0.2 | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_LaR.txt |
+| Tank Brigade | 9239 | 0.3 | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_LaR.txt |
+| Colonial Garrison | 12806 | 0.2 | ENG_1936_LaR.txt |
+| Colonial Garrison | 4206 | 0.1 | ENG_1936_LaR.txt |
+| Colonial Garrison | 12821 | 0.1 | ENG_1936_LaR.txt |
+| Colonial Garrison | 7011 | 0.1 | ENG_1936_LaR.txt |
+| Colonial Garrison | 1155 | 0.1 | ENG_1936_LaR.txt |
+| Cavalry Brigade | 4076 | 0.1 | ENG_1936_LaR.txt |
+| Colonial Garrison | 4135 | 0.2 | ENG_1936_LaR.txt |
+| Colonial Garrison | 12003 | 0.2 | ENG_1936_LaR.txt |
+| Colonial Garrison | 1939 | 0.2 | ENG_1936_LaR.txt |
+| Colonial Garrison | 12911 | 0.2 | ENG_1936_LaR.txt |
+| Colonial Garrison | 1939 |  | ENG_1936_LaR.txt |
+| Colonial Garrison | 2050 |  | ENG_1936_LaR.txt |
+| Colonial Garrison | 10862 |  | ENG_1936_LaR.txt |
+| Colonial Garrison | 10062 | 0.2 | ENG_1936_LaR.txt |
+| Colonial Garrison | 12299 | 0.2 | ENG_1936_LaR.txt |
+| Colonial Garrison | 12215 | 0.2 | ENG_1936_LaR.txt |
+| Colonial Garrison | 7260 | 0.1 | ENG_1936_LaR.txt |
+| Armoured Car Company | 12046 | 0.1 | ENG_1936_LaR.txt |
+| Armoured Car Company | 7151 | 0.1 | ENG_1936_LaR.txt |
+|  |  |  | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb.txt |
+| Cavalry Brigade | 11297 | 0.2 | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb.txt |
+| Cavalry Brigade | 407 | 0.2 | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb.txt |
+| Tank Brigade | 9239 | 0.3 | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb.txt |
+| Colonial Garrison | 12806 | 0.2 | ENG_1936_nsb.txt |
+| Colonial Garrison | 4206 | 0.1 | ENG_1936_nsb.txt |
+| Colonial Garrison | 12821 | 0.1 | ENG_1936_nsb.txt |
+| Colonial Garrison | 7011 | 0.1 | ENG_1936_nsb.txt |
+| Colonial Garrison | 1155 | 0.1 | ENG_1936_nsb.txt |
+| Cavalry Brigade | 4076 | 0.1 | ENG_1936_nsb.txt |
+| Colonial Garrison | 4135 | 0.2 | ENG_1936_nsb.txt |
+| Colonial Garrison | 12003 | 0.2 | ENG_1936_nsb.txt |
+| Colonial Garrison | 1939 | 0.2 | ENG_1936_nsb.txt |
+| Colonial Garrison | 12911 | 0.2 | ENG_1936_nsb.txt |
+| Colonial Garrison | 1939 |  | ENG_1936_nsb.txt |
+| Colonial Garrison | 2050 |  | ENG_1936_nsb.txt |
+| Colonial Garrison | 10862 |  | ENG_1936_nsb.txt |
+| Colonial Garrison | 10062 | 0.2 | ENG_1936_nsb.txt |
+| Colonial Garrison | 12299 | 0.2 | ENG_1936_nsb.txt |
+| Colonial Garrison | 12215 | 0.2 | ENG_1936_nsb.txt |
+| Colonial Garrison | 7260 | 0.1 | ENG_1936_nsb.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+| Cavalry Brigade | 11297 | 0.2 | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+| Cavalry Brigade | 407 | 0.2 | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+| Tank Brigade | 9239 | 0.3 | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 12806 | 0.2 | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 4206 | 0.1 | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 12821 | 0.1 | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 7011 | 0.1 | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 1155 | 0.1 | ENG_1936_nsb_LaR.txt |
+| Cavalry Brigade | 4076 | 0.1 | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 4135 | 0.2 | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 12003 | 0.2 | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 1939 | 0.2 | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 12911 | 0.2 | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 1939 |  | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 2050 |  | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 10862 |  | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 10062 | 0.2 | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 12299 | 0.2 | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 12215 | 0.2 | ENG_1936_nsb_LaR.txt |
+| Colonial Garrison | 7260 | 0.1 | ENG_1936_nsb_LaR.txt |
+| Armoured Car Company | 12046 | 0.1 | ENG_1936_nsb_LaR.txt |
+| Armoured Car Company | 7151 | 0.1 | ENG_1936_nsb_LaR.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+| Tank Brigade | 9397 | 0.2 | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+| Cavalry Brigade | 11297 | 0.2 | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+| Tank Brigade | 11374 | 0.2 | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+| Tank Brigade | 6384 | 0.2 | ENG_1939.txt |
+| Cavalry Brigade | 407 | 0.2 | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+| Tank Brigade | 6318 | 0.2 | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+| Tank Brigade | 9239 | 0.2 | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+| Tank Brigade | 9458 | 0.3 | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+| Motorised Division | 6103 | 0.1 | ENG_1939.txt |
+| Motorised Division | 6103 | 0.1 | ENG_1939.txt |
+| Colonial Garrison | 3379 | 0.1 | ENG_1939.txt |
+| Colonial Garrison | 4135 | 0.2 | ENG_1939.txt |
+| Colonial Garrison | 12003 | 0.2 | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+| Colonial Garrison | 7011 | 0.1 | ENG_1939.txt |
+| Colonial Garrison | 1155 | 0.1 | ENG_1939.txt |
+|  |  |  | ENG_1939.txt |
+| Colonial Garrison | 4206 | 0.1 | ENG_1939.txt |
+| Colonial Garrison | 12821 | 0.1 | ENG_1939.txt |
+| Colonial Garrison | 12806 | 0.2 | ENG_1939.txt |
+| Colonial Garrison | 1939 |  | ENG_1939.txt |
+| Colonial Garrison | 10929 |  | ENG_1939.txt |
+| Colonial Garrison | 2050 |  | ENG_1939.txt |
+| Colonial Garrison | 10862 |  | ENG_1939.txt |
+| Colonial Garrison | 7260 | 0.2 | ENG_1939.txt |
+| Colonial Garrison | 12299 | 0.2 | ENG_1939.txt |
+| Colonial Garrison | 12215 | 0.2 | ENG_1939.txt |
+| Colonial Garrison | 10062 | 0.2 | ENG_1939.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+| Tank Brigade | 9397 | 0.2 | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+| Cavalry Brigade | 11297 | 0.2 | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+| Tank Brigade | 11374 | 0.2 | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+| Tank Brigade | 6384 | 0.2 | ENG_1939_nsb.txt |
+| Cavalry Brigade | 407 | 0.2 | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+| Tank Brigade | 6318 | 0.2 | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+| Tank Brigade | 9239 | 0.2 | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+| Tank Brigade | 9458 | 0.3 | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+| Motorised Division | 6103 | 0.1 | ENG_1939_nsb.txt |
+| Motorised Division | 6103 | 0.1 | ENG_1939_nsb.txt |
+| Colonial Garrison | 3379 | 0.1 | ENG_1939_nsb.txt |
+| Colonial Garrison | 4135 | 0.2 | ENG_1939_nsb.txt |
+| Colonial Garrison | 12003 | 0.2 | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+| Colonial Garrison | 7011 | 0.1 | ENG_1939_nsb.txt |
+| Colonial Garrison | 1155 | 0.1 | ENG_1939_nsb.txt |
+|  |  |  | ENG_1939_nsb.txt |
+| Colonial Garrison | 4206 | 0.1 | ENG_1939_nsb.txt |
+| Colonial Garrison | 12821 | 0.1 | ENG_1939_nsb.txt |
+| Colonial Garrison | 12806 | 0.2 | ENG_1939_nsb.txt |
+| Colonial Garrison | 1939 |  | ENG_1939_nsb.txt |
+| Colonial Garrison | 10929 |  | ENG_1939_nsb.txt |
+| Colonial Garrison | 2050 |  | ENG_1939_nsb.txt |
+| Colonial Garrison | 10862 |  | ENG_1939_nsb.txt |
+| Colonial Garrison | 7260 | 0.2 | ENG_1939_nsb.txt |
+| Colonial Garrison | 12299 | 0.2 | ENG_1939_nsb.txt |
+| Colonial Garrison | 12215 | 0.2 | ENG_1939_nsb.txt |
+| Colonial Garrison | 10062 | 0.2 | ENG_1939_nsb.txt |
+|  |  |  | EST_1936.txt |
+|  |  |  | EST_1936.txt |
+|  |  |  | EST_1936.txt |
+|  |  |  | EST_1936.txt |
+|  |  |  | EST_1936.txt |
+|  |  |  | EST_1936.txt |
+|  |  |  | EST_1936.txt |
+|  |  |  | EST_1936.txt |
+|  |  |  | EST_1936.txt |
+|  |  |  | EST_1939.txt |
+|  |  |  | EST_1939.txt |
+|  |  |  | EST_1939.txt |
+|  |  |  | ETH_1936.txt |
+|  |  |  | ETH_1936.txt |
+|  |  |  | ETH_1936.txt |
+|  |  |  | ETH_1936.txt |
+|  |  |  | ETH_1936.txt |
+|  |  |  | ETH_1936.txt |
+|  |  |  | ETH_1936.txt |
+|  |  |  | ETH_1936.txt |
+|  |  |  | ETH_1936.txt |
+|  |  |  | ETH_1936.txt |
+|  |  |  | ETH_1936.txt |
+|  |  |  | ETH_1936.txt |
+|  |  |  | ETH_1936.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | ETH_1936_bba.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1936.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FIN_1939.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+| Brigade de Chars de Combat | 11502 | 0.2 | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+| Brigade de Chars de Combat | 11516 | 0.2 | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+| Brigade de Chars de Combat | 11465 | 0.2 | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+| Brigade de Chars de Combat | 11506 | 0.2 | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+| Brigade Coloniale | 5291 | 0.1 | FRA_1936.txt |
+| Brigade Coloniale | 11502 | 0.1 | FRA_1936.txt |
+| Brigade Coloniale | 3629 | 0.1 | FRA_1936.txt |
+| Brigade Coloniale | 9503 | 0.1 | FRA_1936.txt |
+| Brigade Coloniale | 678 | 0.1 | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+| Brigade de Chars de Combat | 6613 | 0.2 | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+| Brigade Coloniale | 9909 | 0.1 | FRA_1936.txt |
+| Brigade Coloniale | 1145 | 0.1 | FRA_1936.txt |
+| Brigade Coloniale | 1145 | 0.1 | FRA_1936.txt |
+| Brigade Coloniale | 1145 | 0.1 | FRA_1936.txt |
+| Brigade Coloniale | 1145 | 0.1 | FRA_1936.txt |
+| Brigade Coloniale | 7132 | 0.1 | FRA_1936.txt |
+| Brigade Coloniale | 7132 | 0.1 | FRA_1936.txt |
+| Division de Cavalerie | 7132 | 0.1 | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+| Division de Cavalerie | 7100 | 0.1 | FRA_1936.txt |
+| Brigade Coloniale | 792 | 0.1 | FRA_1936.txt |
+| Brigade Coloniale | 5222 |  | FRA_1936.txt |
+| Brigade Coloniale | 4948 |  | FRA_1936.txt |
+| Brigade Coloniale | 5139 |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+|  |  |  | FRA_1936.txt |
+| Brigade Coloniale | 7376 | 0.1 | FRA_1936.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+| Brigade de Chars de Combat | 11502 | 0.2 | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+| Brigade de Chars de Combat | 11516 | 0.2 | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+| Brigade de Chars de Combat | 11465 | 0.2 | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+| Brigade de Chars de Combat | 11506 | 0.2 | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+| Brigade Coloniale | 5291 | 0.1 | FRA_1936_nsb.txt |
+| Brigade Coloniale | 11502 | 0.1 | FRA_1936_nsb.txt |
+| Brigade Coloniale | 3629 | 0.1 | FRA_1936_nsb.txt |
+| Brigade Coloniale | 9503 | 0.1 | FRA_1936_nsb.txt |
+| Brigade Coloniale | 678 | 0.1 | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+| Brigade de Chars de Combat | 6613 | 0.2 | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+| Brigade Coloniale | 9909 | 0.1 | FRA_1936_nsb.txt |
+| Brigade Coloniale | 1145 | 0.1 | FRA_1936_nsb.txt |
+| Brigade Coloniale | 1145 | 0.1 | FRA_1936_nsb.txt |
+| Brigade Coloniale | 1145 | 0.1 | FRA_1936_nsb.txt |
+| Brigade Coloniale | 1145 | 0.1 | FRA_1936_nsb.txt |
+| Brigade Coloniale | 7132 | 0.1 | FRA_1936_nsb.txt |
+| Brigade Coloniale | 7132 | 0.1 | FRA_1936_nsb.txt |
+| Division de Cavalerie | 7132 | 0.1 | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+| Division de Cavalerie | 7100 | 0.1 | FRA_1936_nsb.txt |
+| Brigade Coloniale | 792 | 0.1 | FRA_1936_nsb.txt |
+| Brigade Coloniale | 5222 |  | FRA_1936_nsb.txt |
+| Brigade Coloniale | 4948 |  | FRA_1936_nsb.txt |
+| Brigade Coloniale | 5139 |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+|  |  |  | FRA_1936_nsb.txt |
+| Brigade Coloniale | 7376 | 0.1 | FRA_1936_nsb.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Brigade de Chars de Combat | 698 | 0.2 | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Brigade de Chars de Combat | 11606 | 0.2 | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Brigade de Chars de Combat | 3560 | 0.2 | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Brigade de Chars de Combat | 5291 | 0.2 | FRA_1939.txt |
+| Brigade de Chars de Combat | 9559 | 0.2 | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Brigade Cuirassée | 11516 | 0.2 | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Brigade de Chars de Combat | 3629 | 0.2 | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Brigade de Chars de Combat | 698 | 0.2 | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Brigade de Chars de Combat | 6529 | 0.2 | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Brigade Cuirassée | 9523 | 0.2 | FRA_1939.txt |
+| Brigade Cuirassée | 9523 | 0.2 | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Brigade de Chars de Combat | 454 | 0.2 | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Brigade de Chars de Combat | 6975 | 0.2 | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Brigade Coloniale | 7132 | 0.1 | FRA_1939.txt |
+| Brigade Coloniale | 1145 | 0.1 | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Division de Cavalerie | 1145 | 0.1 | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Division de Cavalerie | 11969 | 0.1 | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Brigade Coloniale | 11957 | 0.1 | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Brigade Coloniale | 5222 |  | FRA_1939.txt |
+| Brigade Coloniale | 4948 |  | FRA_1939.txt |
+| Brigade Coloniale | 5139 |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+|  |  |  | FRA_1939.txt |
+| Brigade Coloniale | 7376 | 0.1 | FRA_1939.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Brigade de Chars de Combat | 698 | 0.2 | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Brigade de Chars de Combat | 11606 | 0.2 | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Brigade Cuirassée | 3560 | 0.2 | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Brigade de Chars de Combat | 5291 | 0.2 | FRA_1939_nsb.txt |
+| Brigade de Chars de Combat | 9559 | 0.2 | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Brigade Cuirassée | 11516 | 0.2 | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Brigade de Chars de Combat | 3629 | 0.2 | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Brigade de Chars de Combat | 698 | 0.2 | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Brigade de Chars de Combat | 6529 | 0.2 | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Brigade Cuirassée | 9523 | 0.2 | FRA_1939_nsb.txt |
+| Brigade Cuirassée | 9523 | 0.2 | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Brigade de Chars de Combat | 454 | 0.2 | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Brigade de Chars de Combat | 6975 | 0.2 | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Brigade Coloniale | 7132 | 0.1 | FRA_1939_nsb.txt |
+| Brigade Coloniale | 1145 | 0.1 | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Division de Cavalerie | 1145 | 0.1 | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Division de Cavalerie | 11969 | 0.1 | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Brigade Coloniale | 11957 | 0.1 | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Brigade Coloniale | 5222 |  | FRA_1939_nsb.txt |
+| Brigade Coloniale | 4948 |  | FRA_1939_nsb.txt |
+| Brigade Coloniale | 5139 |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+|  |  |  | FRA_1939_nsb.txt |
+| Brigade Coloniale | 7376 | 0.1 | FRA_1939_nsb.txt |
+| Sanjiao Jun | 1047 |  | GDC_1936_sea.txt |
+| Sanjiao Jun | 1047 |  | GDC_1936_sea.txt |
+| Sanjiao Jun | 9970 |  | GDC_1936_sea.txt |
+| Sanjiao Jun | 9970 |  | GDC_1936_sea.txt |
+| Sanjiao Jun | 1047 |  | GDC_1936_sea.txt |
+| Sanjiao Jun | 1047 |  | GDC_1936_sea.txt |
+| Sanjiao Jun | 9938 |  | GDC_1936_sea.txt |
+| Sanjiao Jun | 12077 |  | GDC_1936_sea.txt |
+| Sanjiao Jun | 1047 |  | GDC_1936_sea.txt |
+| Juntuán | 1047 |  | GDC_1936_sea.txt |
+| Juntuán | 10004 |  | GDC_1936_sea.txt |
+| Juntuán | 1070 |  | GDC_1936_sea.txt |
+| Juntuán | 994 |  | GDC_1936_sea.txt |
+| Juntuán | 12077 |  | GDC_1936_sea.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+| Kavallerie-Brigade | 281 | 0.3 | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+|  |  |  | GER_1936.txt |
+| Gebirgs-Brigade | 692 | 0.3 | GER_1936.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+| Kavallerie-Brigade | 281 | 0.3 | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+|  |  |  | GER_1936_nsb.txt |
+| Gebirgs-Brigade | 692 | 0.3 | GER_1936_nsb.txt |
+| Fallschirmjäger-Division | 6521 | 0.3 | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+| Sicherungs-Division | 563 | 0.1 | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+| Sicherungs-Division | 241 | 0.1 | GER_1939.txt |
+| Sicherungs-Division | 3444 | 0.1 | GER_1939.txt |
+| Sicherungs-Division | 3512 | 0.1 | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+| SS-Regiment | 11640 | 0.4 | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+| Sicherungs-Division | 11640 | 0.1 | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+| Kavallerie-Brigade | 11386 | 0.2 | GER_1939.txt |
+| Sicherungs-Division | 11386 | 0.1 | GER_1939.txt |
+| Sicherungs-Division | 3380 | 0.1 | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+| Panzer-Division | 6375 | 0.2 | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+| Sicherungs-Division | 6332 | 0.1 | GER_1939.txt |
+| Sicherungs-Division | 9327 | 0.1 | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+| Sicherungs-Division | 11343 | 0.1 | GER_1939.txt |
+| Sicherungs-Division | 9387 | 0.1 | GER_1939.txt |
+| Sicherungs-Division | 6236 | 0.1 | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+| Sicherungs-Division | 11478 | 0.1 | GER_1939.txt |
+| Sicherungs-Division | 444 | 0.1 | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+| SS-Regiment | 3283 | 0.4 | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+| Sicherungs-Division | 3581 | 0.1 | GER_1939.txt |
+| SS-Regiment | 6590 | 0.4 | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+| Sicherungs-Division | 3484 | 0.1 | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+|  |  |  | GER_1939.txt |
+| Fallschirmjäger-Division | 6521 | 0.3 | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+| Sicherungs-Division | 563 | 0.1 | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+| Sicherungs-Division | 241 | 0.1 | GER_1939_nsb.txt |
+| Sicherungs-Division | 3444 | 0.1 | GER_1939_nsb.txt |
+| Sicherungs-Division | 3512 | 0.1 | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+| SS-Regiment | 11640 | 0.4 | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+| Sicherungs-Division | 11640 | 0.1 | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+| Kavallerie-Brigade | 11386 | 0.2 | GER_1939_nsb.txt |
+| Sicherungs-Division | 11386 | 0.1 | GER_1939_nsb.txt |
+| Sicherungs-Division | 3380 | 0.1 | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+| Panzer-Division | 6375 | 0.2 | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+| Sicherungs-Division | 6332 | 0.1 | GER_1939_nsb.txt |
+| Sicherungs-Division | 9327 | 0.1 | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+| Sicherungs-Division | 11343 | 0.1 | GER_1939_nsb.txt |
+| Sicherungs-Division | 9387 | 0.1 | GER_1939_nsb.txt |
+| Sicherungs-Division | 6236 | 0.1 | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+| Sicherungs-Division | 11478 | 0.1 | GER_1939_nsb.txt |
+| Sicherungs-Division | 444 | 0.1 | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+| SS-Regiment | 3283 | 0.4 | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+| Sicherungs-Division | 3581 | 0.1 | GER_1939_nsb.txt |
+| SS-Regiment | 6590 | 0.4 | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+| Sicherungs-Division | 3484 | 0.1 | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+|  |  |  | GER_1939_nsb.txt |
+| SS-Sturmbrigade | 11638 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 9666 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 708 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 6540 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 692 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 692 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 11544 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 11529 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 9557 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 6594 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 11417 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 13116 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 6521 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 3500 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 3561 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 3561 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 425 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 425 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 6487 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 3522 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 11359 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 11219 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 9294 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 11305 |  | GER_German_Civil_War_fascist.txt |
+| SS-Sturmbrigade | 9471 |  | GER_German_Civil_War_fascist.txt |
+| Landsturmregiment | 9655 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 3690 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 11499 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 9545 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 6555 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 6581 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 3574 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 589 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 6488 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 3397 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 11445 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 9524 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 6513 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 11402 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 11468 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 9375 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 9238 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 9264 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 6298 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 9320 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 11331 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 9347 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 6488 |  | GER_German_Civil_War_neutrality.txt |
+| Landsturmregiment | 9517 |  | GER_German_Civil_War_neutrality.txt |
+|  |  |  | GRE_1936.txt |
+|  |  |  | GRE_1936.txt |
+| Merarchía Ippikoú | 11818 | 0.2 | GRE_1936.txt |
+|  |  |  | GRE_1936.txt |
+|  |  |  | GRE_1936.txt |
+|  |  |  | GRE_1936.txt |
+|  |  |  | GRE_1936.txt |
+|  |  |  | GRE_1936.txt |
+|  |  |  | GRE_1936.txt |
+|  |  |  | GRE_1936.txt |
+|  |  |  | GRE_1936.txt |
+|  |  |  | GRE_1936.txt |
+|  |  |  | GRE_1936.txt |
+|  |  |  | GRE_1939.txt |
+|  |  |  | GRE_1939.txt |
+| Merarchía Ippikoú | 11818 | 0.2 | GRE_1939.txt |
+|  |  |  | GRE_1939.txt |
+|  |  |  | GRE_1939.txt |
+|  |  |  | GRE_1939.txt |
+|  |  |  | GRE_1939.txt |
+|  |  |  | GRE_1939.txt |
+|  |  |  | GRE_1939.txt |
+|  |  |  | GRE_1939.txt |
+|  |  |  | GRE_1939.txt |
+|  |  |  | GRE_1939.txt |
+|  |  |  | GRE_1939.txt |
+| Juntuán Reformed | 5100 |  | GSM_1936_sea.txt |
+| Juntuán | 5100 |  | GSM_1936_sea.txt |
+| Juntuán | 7971 |  | GSM_1936_sea.txt |
+| Qibing Jun | 1630 |  | GSM_1936_sea.txt |
+| Qibing Jun | 5100 |  | GSM_1936_sea.txt |
+| Brigada de Infanteria | 10886 | 0.1 | GUA_1936.txt |
+| Brigada de Infanteria | 10886 | 0.1 | GUA_1939.txt |
+|  |  |  | GXC_1936.txt |
+|  |  |  | GXC_1936.txt |
+|  |  |  | GXC_1936.txt |
+|  |  |  | GXC_1936.txt |
+|  |  |  | GXC_1936.txt |
+|  |  |  | GXC_1936.txt |
+| Juntuán | 1047 |  | GXC_1936.txt |
+| Juntuán | 994 |  | GXC_1936.txt |
+| Juntuán | 10404 |  | GXC_1936.txt |
+|  |  |  | GXC_1936_sea.txt |
+|  |  |  | GXC_1936_sea.txt |
+|  |  |  | GXC_1936_sea.txt |
+|  |  |  | GXC_1936_sea.txt |
+|  |  |  | GXC_1936_sea.txt |
+|  |  |  | GXC_1936_sea.txt |
+| Binary Infantry | 10404 |  | GXC_1939.txt |
+| Brigade de Infanterie | 4641 |  | HAI_1936.txt |
+| Brigade de Infanterie | 4641 |  | HAI_1939.txt |
+| Sanjiao Jun | 9843 |  | HBC_1936_sea.txt |
+| Sanjiao Jun | 10068 |  | HBC_1936_sea.txt |
+| Sanjiao Jun | 9843 |  | HBC_1936_sea.txt |
+| Sanjiao Jun | 6904 |  | HBC_1936_sea.txt |
+| Juntuán | 9843 |  | HBC_1936_sea.txt |
+| Juntuán | 9843 |  | HBC_1936_sea.txt |
+| Qibing Jun | 7109 |  | HBC_1936_sea.txt |
+| Qibing Jun | 6904 |  | HBC_1936_sea.txt |
+| Qibing Jun | 12026 |  | HBC_1936_sea.txt |
+| Sanjiao Jun | 9843 |  | HBC_1936_sea.txt |
+| Sanjiao Jun | 12026 |  | HBC_1936_sea.txt |
+| Sanjiao Jun | 12026 |  | HBC_1936_sea.txt |
+| Sanjiao Jun | 12026 |  | HBC_1936_sea.txt |
+| Sanjiao Jun | 4190 |  | HBC_1936_sea.txt |
+|  |  |  | HOL_1936.txt |
+|  |  |  | HOL_1936.txt |
+|  |  |  | HOL_1936.txt |
+|  |  |  | HOL_1936.txt |
+|  |  |  | HOL_1936.txt |
+|  |  |  | HOL_1936.txt |
+|  |  |  | HOL_1936.txt |
+|  |  |  | HOL_1936.txt |
+|  |  |  | HOL_1939.txt |
+|  |  |  | HOL_1939.txt |
+|  |  |  | HOL_1939.txt |
+|  |  |  | HOL_1939.txt |
+|  |  |  | HOL_1939.txt |
+|  |  |  | HOL_1939.txt |
+|  |  |  | HOL_1939.txt |
+|  |  |  | HOL_1939.txt |
+|  |  |  | HOL_1939.txt |
+|  |  |  | HOL_1939.txt |
+| Infanterie Divisie | 391 |  | HOL_1939.txt |
+| Infanterie Divisie | 3211 |  | HOL_1939.txt |
+| Infanterie Divisie | 391 |  | HOL_1939.txt |
+| Brigada de Infanteria | 12865 | 0.1 | HON_1936.txt |
+| Brigada de Infanteria | 12865 | 0.1 | HON_1939.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1936.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_1939_nsb.txt |
+|  |  |  | HUN_wuw_1936.txt |
+|  |  |  | HUN_wuw_1936.txt |
+|  |  |  | HUN_wuw_1936.txt |
+|  |  |  | HUN_wuw_1936.txt |
+|  |  |  | HUN_wuw_1936.txt |
+|  |  |  | HUN_wuw_1936.txt |
+|  |  |  | HUN_wuw_1936.txt |
+|  |  |  | HUN_wuw_1936.txt |
+|  |  |  | HUN_wuw_1936.txt |
+|  |  |  | INS_1936.txt |
+|  |  |  | INS_1936.txt |
+|  |  |  | INS_1936.txt |
+|  |  |  | INS_1936.txt |
+|  |  |  | INS_1936.txt |
+|  |  |  | INS_1936.txt |
+|  |  |  | INS_1936.txt |
+|  |  |  | INS_1939.txt |
+|  |  |  | INS_1939.txt |
+|  |  |  | INS_1939.txt |
+|  |  |  | INS_1939.txt |
+|  |  |  | INS_1939.txt |
+|  |  |  | INS_1939.txt |
+|  |  |  | INS_1939.txt |
+| Infantry Division | 11293 | 0.2 | IRE_1936.txt |
+| Infantry Division | 11293 | 0.2 | IRE_1939.txt |
+|  |  |  | IRQ_1936.txt |
+|  |  |  | IRQ_1936.txt |
+|  |  |  | IRQ_1936.txt |
+|  |  |  | IRQ_1939.txt |
+|  |  |  | IRQ_1939.txt |
+|  |  |  | IRQ_1939.txt |
+|  |  |  | IRQ_1939.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+| Camicie Nere | 1130 |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+| Camicie Nere | 12723 | 0.15 | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+| Camicie Nere | 13250 | 0.15 | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+| Camicie Nere | 12766 | 0.15 | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+| Camicie Nere | 8043 | 0.15 | ITA_1936.txt |
+| Camicie Nere | 8043 | 0.15 | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+| Divisione Ascari Somala | 2020 |  | ITA_1936.txt |
+| Camicie Nere | 2063 | 0.15 | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+|  |  |  | ITA_1936.txt |
+| Camicie Nere | 1130 |  | ITA_1936_african_oob_for_fragmentation.txt |
+|  |  |  | ITA_1936_african_oob_for_fragmentation.txt |
+| Camicie Nere | 12723 | 0.15 | ITA_1936_african_oob_for_fragmentation.txt |
+| Camicie Nere | 13250 | 0.15 | ITA_1936_african_oob_for_fragmentation.txt |
+| Camicie Nere | 12766 | 0.15 | ITA_1936_african_oob_for_fragmentation.txt |
+| Camicie Nere | 8043 | 0.15 | ITA_1936_african_oob_for_fragmentation.txt |
+| Camicie Nere | 8043 | 0.15 | ITA_1936_african_oob_for_fragmentation.txt |
+|  |  |  | ITA_1936_african_oob_for_fragmentation.txt |
+|  |  |  | ITA_1936_african_oob_for_fragmentation.txt |
+|  |  |  | ITA_1936_african_oob_for_fragmentation.txt |
+| Divisione Ascari Somala | 2020 |  | ITA_1936_african_oob_for_fragmentation.txt |
+| Camicie Nere | 2063 | 0.15 | ITA_1936_african_oob_for_fragmentation.txt |
+|  |  |  | ITA_1936_african_oob_for_fragmentation.txt |
+|  |  |  | ITA_1936_african_oob_for_fragmentation.txt |
+|  |  |  | ITA_1936_african_oob_for_fragmentation.txt |
+|  |  |  | ITA_1936_african_oob_for_fragmentation.txt |
+|  |  |  | ITA_1936_african_oob_for_fragmentation.txt |
+|  |  |  | ITA_1936_african_oob_for_fragmentation.txt |
+|  |  |  | ITA_1936_african_oob_for_fragmentation.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+| Camicie Nere | 1130 |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+| Camicie Nere | 12723 | 0.15 | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+| Camicie Nere | 13250 | 0.15 | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+| Camicie Nere | 12766 | 0.15 | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+| Camicie Nere | 8043 | 0.15 | ITA_1936_nsb.txt |
+| Camicie Nere | 8043 | 0.15 | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+| Divisione Ascari Somala | 2020 |  | ITA_1936_nsb.txt |
+| Camicie Nere | 2063 | 0.15 | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1936_nsb.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+| Raggruppamento Celere | 770 | 0.2 | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+| Raggruppamento Celere | 9613 | 0.2 | ITA_1939.txt |
+| Divisione Alpina | 9613 | 0.3 | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+| Raggruppamento Celere | 3604 | 0.2 | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+| Divisione Ascari Libica | 1130 |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+| Divisione di Fanteria | 1149 | 0.1 | ITA_1939.txt |
+| Divisione di Fanteria | 1149 | 0.1 | ITA_1939.txt |
+| Divisione di Fanteria | 1149 | 0.1 | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+| Divisione Ascari Libica | 1130 |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+| Divisione di Fanteria | 11954 | 0.1 | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+| Divisione Coloniale | 1984 |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+| Divisione Coloniale | 5010 |  | ITA_1939.txt |
+| Divisione Coloniale | 8062 |  | ITA_1939.txt |
+| Divisione Ascari Somala | 12991 |  | ITA_1939.txt |
+| Divisione Ascari Somala | 12991 |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+| Raggruppamento Celere | 770 | 0.2 | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+| Raggruppamento Celere | 9613 | 0.2 | ITA_1939_nsb.txt |
+| Divisione Alpina | 9613 | 0.3 | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+| Raggruppamento Celere | 3604 | 0.2 | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+| Divisione Ascari Libica | 1130 |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+| Divisione di Fanteria | 1149 | 0.1 | ITA_1939_nsb.txt |
+| Divisione di Fanteria | 1149 | 0.1 | ITA_1939_nsb.txt |
+| Divisione di Fanteria | 1149 | 0.1 | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+| Divisione Ascari Libica | 1130 |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+| Divisione di Fanteria | 11954 | 0.1 | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+| Divisione Coloniale | 1984 |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+| Divisione Coloniale | 5010 |  | ITA_1939_nsb.txt |
+| Divisione Coloniale | 8062 |  | ITA_1939_nsb.txt |
+| Divisione Ascari Somala | 12991 |  | ITA_1939_nsb.txt |
+| Divisione Ascari Somala | 12991 |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | ITA_1939_nsb.txt |
+|  |  |  | JAP_1936.txt |
+| Chuton-chi Shidan | 9859 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 1399 | 0.1 | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+| Chuton-chi Shidan | 7072 | 0.1 | JAP_1936.txt |
+| Rikusentai | 9998 | 0.3 | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+| Chuton-chi Shidan | 1092 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 9950 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 7186 | 0.1 | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+| Chuton-chi Shidan | 4056 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 11932 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 3995 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 13025 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 13026 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 13028 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 4357 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 2489 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 13035 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 13029 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 13041 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 13046 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 13036 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 13040 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 13043 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 11771 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 4572 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 1150 | 0.1 | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+| Chuton-chi Shidan | 7743 |  | JAP_1936.txt |
+| Chuton-chi Shidan | 10541 | 0.1 | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+| Chuton-chi Shidan | 10521 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 10368 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 10698 | 0.1 | JAP_1936.txt |
+| Chuton-chi Shidan | 12500 | 0.1 | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936.txt |
+|  |  |  | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 9859 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 1399 | 0.1 | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 7072 | 0.1 | JAP_1936_nsb.txt |
+| Rikusentai | 9998 | 0.3 | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 1092 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 9950 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 7186 | 0.1 | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 4056 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 11932 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 3995 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 13025 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 13026 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 13028 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 4357 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 2489 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 13035 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 13029 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 13041 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 13046 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 13036 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 13040 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 13043 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 11771 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 4572 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 1150 | 0.1 | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 7743 |  | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 10541 | 0.1 | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 10521 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 10368 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 10698 | 0.1 | JAP_1936_nsb.txt |
+| Chuton-chi Shidan | 12500 | 0.1 | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1936_nsb.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+| Chuton-chi Shidan | 9859 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 4196 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 1055 | 0.1 | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+| Chuton-chi Shidan | 9998 | 0.1 | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+| Chuton-chi Shidan | 1092 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 9950 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 12068 | 0.1 | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+| Chuton-chi Shidan | 4056 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 11932 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 3995 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 13025 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 4357 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 2489 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 13028 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 13035 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 13041 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 13046 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 13036 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 13040 | 0.1 | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+| Chuton-chi Shidan | 1150 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 11771 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 4572 | 0.1 | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+| Senshadan | 10698 | 0.3 | JAP_1939.txt |
+| Chuton-chi Shidan | 1732 | 0.1 | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+| Senshadan | 10541 | 0.2 | JAP_1939.txt |
+| Chuton-chi Shidan | 10675 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 7848 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 7832 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 1693 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 12548 | 0.1 | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+| Senshadan | 3944 | 0.2 | JAP_1939.txt |
+| Chuton-chi Shidan | 6806 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 783 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 6811 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 6863 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 9798 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 12500 | 0.1 | JAP_1939.txt |
+| Chuton-chi Shidan | 10521 | 0.1 | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+| Chuton-chi Shidan | 4619 | 0.1 | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+| Chuton-chi Shidan | 7014 | 0.1 | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+| Rikusentai | 4023 | 0.5 | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+|  |  |  | JAP_1939.txt |
+| Ginrinbutai | 10004 | 0.3 | JAP_1939.txt |
+| Ginrinbutai | 1070 | 0.3 | JAP_1939.txt |
+| Ginrinbutai | 1047 | 0.3 | JAP_1939.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 9859 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 4196 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 1055 | 0.1 | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 9998 | 0.1 | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 1092 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 9950 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 12068 | 0.1 | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 4056 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 11932 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 3995 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 13025 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 4357 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 2489 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 13028 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 13035 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 13041 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 13046 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 13036 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 13040 | 0.1 | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 1150 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 11771 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 4572 | 0.1 | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+| Senshadan | 10698 | 0.3 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 1732 | 0.1 | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+| Senshadan | 10541 | 0.2 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 10675 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 7848 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 7832 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 1693 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 12548 | 0.1 | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+| Senshadan | 3944 | 0.2 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 6806 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 783 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 6811 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 6863 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 9798 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 12500 | 0.1 | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 10521 | 0.1 | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 4619 | 0.1 | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+| Chuton-chi Shidan | 7014 | 0.1 | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+| Rikusentai | 4023 | 0.5 | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+|  |  |  | JAP_1939_nsb.txt |
+| Ginrinbutai | 10004 | 0.3 | JAP_1939_nsb.txt |
+| Ginrinbutai | 1070 | 0.3 | JAP_1939_nsb.txt |
+| Ginrinbutai | 1047 | 0.3 | JAP_1939_nsb.txt |
+| Azad Hind Infantry Corps | 12299 |  | JAP_Indian_National_Army_reinforcement.txt |
+| Azad Hind Infantry Corps | 12299 |  | JAP_Indian_National_Army_reinforcement.txt |
+|  |  |  | KAL_khanate_battalions.txt |
+|  |  |  | KAL_khanate_battalions.txt |
+|  |  |  | KAL_khanate_battalions.txt |
+|  |  |  | KAL_khanate_battalions.txt |
+|  |  |  | KAL_khanate_battalions.txt |
+|  |  |  | KAL_khanate_battalions.txt |
+|  |  |  | KAL_khanate_battalions.txt |
+| Sanjiao Jun | 4973 |  | KHM_1936_sea.txt |
+| Qibing Jun | 1970 |  | KHM_1936_sea.txt |
+| Qibing Jun | 1970 |  | KHM_1936_sea.txt |
+| Binary Infantry | 10404 |  | KOR_1939.txt |
+|  |  |  | KUB_cossack_host.txt |
+|  |  |  | KUB_cossack_host.txt |
+|  |  |  | KUB_cossack_host.txt |
+|  |  |  | KUB_cossack_host.txt |
+|  |  |  | KUB_cossack_host.txt |
+|  |  |  | KUB_cossack_host.txt |
+|  |  |  | KUB_cossack_host.txt |
+|  |  |  | KUB_cossack_host.txt |
+|  |  |  | KUB_cossack_host.txt |
+|  |  |  | KUB_cossack_host.txt |
+|  |  |  | KUB_cossack_host.txt |
+|  |  |  | KUB_cossack_host.txt |
+|  |  |  | KUB_cossack_host.txt |
+|  |  |  | KUB_cossack_host.txt |
+|  |  |  | KUB_cossack_host.txt |
+| Kumullik Militia | 7732 |  | KUM_uprising.txt |
+| Kumullik Militia | 4704 |  | KUM_uprising.txt |
+| Uyghur Regiment | 10839 |  | KUM_uprising_2.txt |
+| Uyghur Regiment | 12524 |  | KUM_uprising_2.txt |
+|  |  |  | KUR_liberation_troops.txt |
+|  |  |  | KUR_liberation_troops.txt |
+|  |  |  | KUR_liberation_troops.txt |
+|  |  |  | KUR_liberation_troops.txt |
+|  |  |  | KUR_liberation_troops.txt |
+|  |  |  | KUR_liberation_troops.txt |
+|  |  |  | KUR_liberation_troops.txt |
+|  |  |  | KUR_liberation_troops.txt |
+|  |  |  | LAT_1936.txt |
+|  |  |  | LAT_1936.txt |
+|  |  |  | LAT_1936.txt |
+|  |  |  | LAT_1936.txt |
+| Aizsargi | 3194 | 0.1 | LAT_1936.txt |
+| Aizsargi | 10493 | 0.1 | LAT_1936.txt |
+| Aizsargi | 9275 | 0.1 | LAT_1936.txt |
+| Aizsargi | 3255 | 0.1 | LAT_1936.txt |
+| Aizsargi | 9340 | 0.1 | LAT_1936.txt |
+|  |  |  | LAT_1936.txt |
+|  |  |  | LAT_1939.txt |
+|  |  |  | LAT_1939.txt |
+|  |  |  | LAT_1939.txt |
+|  |  |  | LAT_1939.txt |
+| Infantry Brigade | 7959 | 0.1 | LIB_1936.txt |
+| Infantry Brigade | 7959 | 0.1 | LIB_1939.txt |
+|  |  |  | LIT_1936.txt |
+|  |  |  | LIT_1936.txt |
+|  |  |  | LIT_1936.txt |
+| Valstybės Sienos Apsaugos Skyrius | 327 | 0.1 | LIT_1936.txt |
+| Valstybės Sienos Apsaugos Skyrius | 6281 | 0.1 | LIT_1936.txt |
+| Valstybės Sienos Apsaugos Skyrius | 9404 | 0.1 | LIT_1936.txt |
+| Valstybės Sienos Apsaugos Skyrius | 11498 | 0.1 | LIT_1936.txt |
+| Valstybės Sienos Apsaugos Skyrius | 3288 | 0.1 | LIT_1936.txt |
+|  |  |  | LIT_1936.txt |
+|  |  |  | LIT_1939.txt |
+|  |  |  | LIT_1939.txt |
+|  |  |  | LIT_1939.txt |
+| Kavalerijos Brigados | 6296 | 0.1 | LIT_1939.txt |
+|  |  |  | MAL_1936.txt |
+|  |  |  | MAL_1936.txt |
+| Huncheng Lu | 4572 | 0.1 | MAN_1936.txt |
+| Huncheng Lu | 4572 |  | MAN_1936.txt |
+|  |  |  | MAN_1936.txt |
+|  |  |  | MAN_1936.txt |
+|  |  |  | MAN_1936.txt |
+|  |  |  | MAN_1936.txt |
+|  |  |  | MAN_1936.txt |
+|  |  |  | MAN_1936.txt |
+|  |  |  | MAN_1936.txt |
+|  |  |  | MAN_1936.txt |
+|  |  |  | MAN_1936.txt |
+|  |  |  | MAN_1939.txt |
+|  |  |  | MAN_1939.txt |
+|  |  |  | MAN_1939.txt |
+|  |  |  | MAN_1939.txt |
+|  |  |  | MAN_1939.txt |
+|  |  |  | MAN_1939.txt |
+|  |  |  | MAN_1939.txt |
+|  |  |  | MAN_1939.txt |
+|  |  |  | MAN_1939.txt |
+|  |  |  | MEN_1936.txt |
+|  |  |  | MEN_1936.txt |
+|  |  |  | MEN_1936.txt |
+|  |  |  | MEN_1936.txt |
+|  |  |  | MEN_1936.txt |
+|  |  |  | MEN_1936.txt |
+|  |  |  | MEN_1939.txt |
+|  |  |  | MEN_1939.txt |
+|  |  |  | MEN_1939.txt |
+|  |  |  | MEX_1936.txt |
+|  |  |  | MEX_1936.txt |
+|  |  |  | MEX_1936.txt |
+| División de Infanteria | 1965 | 0.3 | MEX_1936.txt |
+|  |  |  | MEX_1936.txt |
+|  |  |  | MEX_1936.txt |
+| Brigada Agrarista | 1965 | 0.1 | MEX_1936.txt |
+| Brigada Agrarista | 1965 | 0.1 | MEX_1936.txt |
+| Brigada Agrarista | 1965 | 0.1 | MEX_1936.txt |
+| Brigada Agrarista | 1900 | 0.1 | MEX_1936.txt |
+| Brigada Agrarista | 2021 | 0.1 | MEX_1936.txt |
+| Brigada Agrarista | 10889 | 0.1 | MEX_1936.txt |
+| Brigada Agrarista | 12715 | 0.1 | MEX_1936.txt |
+| Brigada Agrarista | 8032 | 0.1 | MEX_1936.txt |
+| Brigada Agrarista | 12461 | 0.1 | MEX_1936.txt |
+| Brigada Agrarista | 10765 | 0.1 | MEX_1936.txt |
+| Brigada Agrarista | 4908 | 0.1 | MEX_1936.txt |
+| Brigada Agrarista | 4977 | 0.1 | MEX_1936.txt |
+| Brigada Agrarista | 10730 | 0.1 | MEX_1936.txt |
+| Brigada Agrarista | 2051 | 0.1 | MEX_1936.txt |
+| Brigada Agrarista | 5015 | 0.1 | MEX_1936.txt |
+|  |  |  | MEX_1939.txt |
+|  |  |  | MEX_1939.txt |
+|  |  |  | MEX_1939.txt |
+| División de Infanteria | 1965 | 0.3 | MEX_1939.txt |
+|  |  |  | MEX_1939.txt |
+|  |  |  | MEX_1939.txt |
+| Brigada Agrarista | 1965 | 0.1 | MEX_1939.txt |
+| Brigada Agrarista | 1965 | 0.1 | MEX_1939.txt |
+| Brigada Agrarista | 1965 | 0.1 | MEX_1939.txt |
+| Brigada Agrarista | 1900 | 0.1 | MEX_1939.txt |
+| Brigada Agrarista | 2021 | 0.1 | MEX_1939.txt |
+| Brigada Agrarista | 10889 | 0.1 | MEX_1939.txt |
+| Brigada Agrarista | 12715 | 0.1 | MEX_1939.txt |
+| Brigada Agrarista | 8032 | 0.1 | MEX_1939.txt |
+| Brigada Agrarista | 12461 | 0.1 | MEX_1939.txt |
+| Brigada Agrarista | 10765 | 0.1 | MEX_1939.txt |
+| Brigada Agrarista | 4908 | 0.1 | MEX_1939.txt |
+| Brigada Agrarista | 4977 | 0.1 | MEX_1939.txt |
+| Brigada Agrarista | 10730 | 0.1 | MEX_1939.txt |
+| Brigada Agrarista | 2051 | 0.1 | MEX_1939.txt |
+| Brigada Agrarista | 5015 | 0.1 | MEX_1939.txt |
+|  |  |  | MON_1936.txt |
+|  |  |  | MON_1936.txt |
+|  |  |  | MON_1936.txt |
+|  |  |  | MON_1936.txt |
+|  |  |  | MON_1936.txt |
+|  |  |  | MON_1939.txt |
+|  |  |  | MON_1939.txt |
+|  |  |  | MON_1939.txt |
+|  |  |  | MON_1939.txt |
+|  |  |  | MON_1939.txt |
+|  |  |  | MON_1939.txt |
+|  |  |  | NEP_1936.txt |
+|  |  |  | NEP_1936.txt |
+|  |  |  | NEP_1939.txt |
+|  |  |  | NEP_1939.txt |
+| Brigada de Infanteria | 12738 | 0.2 | NIC_1936.txt |
+| Brigada de Infanteria | 12738 | 0.2 | NIC_1939.txt |
+|  |  |  | NOR_1936.txt |
+| Dragonregiment | 6115 | 0.2 | NOR_1936.txt |
+|  |  |  | NOR_1936.txt |
+| Dragonregiment | 9157 | 0.2 | NOR_1936.txt |
+|  |  |  | NOR_1936.txt |
+|  |  |  | NOR_1936.txt |
+|  |  |  | NOR_1936.txt |
+| Dragonregiment | 3022 | 0.2 | NOR_1936.txt |
+|  |  |  | NOR_1936.txt |
+| Binærdivisjon | 9116 | 0.2 | NOR_1936.txt |
+|  |  |  | NOR_1939.txt |
+| Dragonregiment | 6115 | 0.2 | NOR_1939.txt |
+|  |  |  | NOR_1939.txt |
+|  |  |  | NOR_1939.txt |
+|  |  |  | NOR_1939.txt |
+|  |  |  | NOR_1939.txt |
+|  |  |  | NOR_1939.txt |
+| Dragonregiment | 3022 | 0.2 | NOR_1939.txt |
+|  |  |  | NOR_1939.txt |
+| Binærdivisjon | 9116 | 0.2 | NOR_1939.txt |
+| Juntuán Reformed | 8127 |  | NXM_1936_sea.txt |
+| Qibing Jun | 5031 |  | NXM_1936_sea.txt |
+| Qibing Jun | 4783 |  | NXM_1936_sea.txt |
+| Qibing Jun | 8081 |  | NXM_1936_sea.txt |
+| Juntuán Reformed | 5025 |  | NXM_1936_sea.txt |
+|  |  |  | NZL_1936.txt |
+|  |  |  | NZL_1936.txt |
+|  |  |  | NZL_1936.txt |
+|  |  |  | NZL_1939.txt |
+|  |  |  | NZL_1939.txt |
+|  |  |  | NZL_1939.txt |
+|  |  |  | NZL_1939.txt |
+|  |  |  | OMA_1936.txt |
+|  |  |  | OMA_1939.txt |
+|  |  |  | PAR_1936.txt |
+|  |  |  | PAR_1936.txt |
+|  |  |  | PAR_1939.txt |
+|  |  |  | PAR_1939.txt |
+| Cavalry Division | 1896 | 0.2 | PER_1936.txt |
+| Cavalry Division | 1896 | 0.2 | PER_1936.txt |
+| Infantry Division | 10913 | 0.2 | PER_1936.txt |
+| Infantry Division | 10913 | 0.2 | PER_1936.txt |
+| Infantry Division | 10913 | 0.2 | PER_1936.txt |
+| Iranian Gendarmerie | 10837 | 0.2 | PER_1936.txt |
+|  |  |  | PER_1939.txt |
+|  |  |  | PER_1939.txt |
+|  |  |  | PER_1939.txt |
+|  |  |  | PER_1939.txt |
+|  |  |  | PER_1939.txt |
+|  |  |  | PER_1939.txt |
+|  |  |  | PER_1939.txt |
+|  |  |  | PER_1939.txt |
+|  |  |  | PER_1939.txt |
+| Infantry Group | 1896 | 0.2 | PER_1939.txt |
+| Infantry Group | 10837 | 0.2 | PER_1939.txt |
+| Infantry Division | 10265 | 0.1 | PHI_1936.txt |
+|  |  |  | PHI_1936_ncns.txt |
+|  |  |  | PHI_1939.txt |
+|  |  |  | PHI_1939.txt |
+|  |  |  | PHI_1939.txt |
+|  |  |  | PHI_1939.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+|  |  |  | POL_1936.txt |
+| Dywizja Piechoty | 362 | 0.2 | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+| Brygada Motorowej | 11398 | 0.3 | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+| Brygada Piechoty Górskiej | 9551 | 0.2 | POL_1939.txt |
+| Brygada Piechoty Górskiej | 417 | 0.2 | POL_1939.txt |
+| Brygada Piechoty Górskiej | 3410 | 0.2 | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+| Grupa Pancerna | 11532 | 0.3 | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+| Brygada Motorowej | 3544 | 0.3 | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+|  |  |  | POL_1939.txt |
+| Dywizja Piechoty | 362 | 0.2 | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+| Brygada Motorowej | 11398 | 0.3 | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+| Brygada Piechoty Górskiej | 9551 | 0.2 | POL_1939_nsb.txt |
+| Brygada Piechoty Górskiej | 417 | 0.2 | POL_1939_nsb.txt |
+| Brygada Piechoty Górskiej | 3410 | 0.2 | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+| Grupa Pancerna | 11532 | 0.3 | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+| Brygada Motorowej | 3544 | 0.3 | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+|  |  |  | POL_1939_nsb.txt |
+| Divisão de Infantaria | 11805 | 0.2 | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+|  |  |  | POR_1936.txt |
+| Divisão de Infantaria | 11805 | 0.2 | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+|  |  |  | POR_1939.txt |
+| Juntuán | 5007 | 0.3 | PRC_1936.txt |
+| Juntuán | 7208 | 0.3 | PRC_1936.txt |
+| Juntuán | 517 | 0.3 | PRC_1936.txt |
+|  |  |  | PRC_1936.txt |
+|  |  |  | PRC_1936.txt |
+|  |  |  | PRC_1936.txt |
+|  |  |  | PRC_1936.txt |
+|  |  |  | PRC_1936.txt |
+| Juntuán | 12356 | 0.3 | PRC_1936_TSR.txt |
+|  |  |  | PRC_1936_TSR.txt |
+|  |  |  | PRC_1936_TSR.txt |
+|  |  |  | PRC_1936_TSR.txt |
+|  |  |  | PRC_1936_TSR.txt |
+|  |  |  | PRC_1936_TSR.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+|  |  |  | PRC_1939_TSR.txt |
+| Erjinzhi Juntuán | 10629 |  | PRC_SOV_reinforcements.txt |
+| Erjinzhi Juntuán | 10629 |  | PRC_SOV_reinforcements.txt |
+| Erjinzhi Juntuán | 10629 |  | PRC_SOV_reinforcements.txt |
+| Erjinzhi Juntuán | 12609 |  | PRC_SOV_reinforcements.txt |
+| Erjinzhi Juntuán | 12609 |  | PRC_SOV_reinforcements.txt |
+| Erjinzhi Juntuán | 12609 |  | PRC_SOV_reinforcements.txt |
+| Erjinzhi Juntuán | 12880 |  | PRC_SOV_reinforcements.txt |
+| Erjinzhi Juntuán | 12880 |  | PRC_SOV_reinforcements.txt |
+| Erjinzhi Juntuán | 12880 |  | PRC_SOV_reinforcements.txt |
+| Erjinzhi Juntuán | 12880 |  | PRC_SOV_reinforcements.txt |
+| Erjinzhi Juntuán | 10629 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 10629 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 10629 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 12609 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 12609 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 12609 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 12331 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 12331 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 12331 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 12331 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 10629 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 10629 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 10629 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 12609 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 12609 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 12609 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 12331 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 12331 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 12331 |  | PRC_SOV_reinforcements_2.txt |
+| Erjinzhi Juntuán | 12331 |  | PRC_SOV_reinforcements_2.txt |
+|  |  |  | PRU_1936.txt |
+|  |  |  | PRU_1936.txt |
+|  |  |  | PRU_1936.txt |
+|  |  |  | PRU_1936.txt |
+| División de Caballería | 12997 | 0.1 | PRU_1936.txt |
+|  |  |  | PRU_1939.txt |
+|  |  |  | PRU_1939.txt |
+|  |  |  | PRU_1939.txt |
+|  |  |  | PRU_1939.txt |
+| División de Caballería | 12997 | 0.1 | PRU_1939.txt |
+|  |  |  | RAJ_1936.txt |
+|  |  |  | RAJ_1936.txt |
+|  |  |  | RAJ_1936.txt |
+|  |  |  | RAJ_1936.txt |
+|  |  |  | RAJ_1936.txt |
+|  |  |  | RAJ_1936.txt |
+|  |  |  | RAJ_1936.txt |
+| Infantry Division | 1497 | 0.1 | RAJ_1936.txt |
+|  |  |  | RAJ_1936.txt |
+|  |  |  | RAJ_1936.txt |
+|  |  |  | RAJ_1936.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+| Infantry Division | 1497 | 0.1 | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1936_GOE.txt |
+|  |  |  | RAJ_1939.txt |
+|  |  |  | RAJ_1939.txt |
+|  |  |  | RAJ_1939.txt |
+|  |  |  | RAJ_1939.txt |
+|  |  |  | RAJ_1939.txt |
+|  |  |  | RAJ_1939.txt |
+|  |  |  | RAJ_1939.txt |
+|  |  |  | RAJ_1939.txt |
+|  |  |  | RAJ_1939.txt |
+| District Garrison | 1497 | 0.1 | RAJ_1939.txt |
+|  |  |  | RAJ_1939.txt |
+|  |  |  | RAJ_1939.txt |
+|  |  |  | RAJ_1939.txt |
+|  |  |  | RAJ_1939.txt |
+| Colonial Garrison | 1330 | 0.1 | RAJ_1939.txt |
+| Colonial Garrison | 1492 | 0.1 | RAJ_1939.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+| Regimentul de Blindate | 9617 | 0.3 | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+| Regimentul de Blindate | 9617 | 0.3 | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1936_nsb.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+| Blindata Brigada | 9617 | 0.3 | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+| Blindata Brigada | 9617 | 0.3 | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | ROM_1939_nsb.txt |
+|  |  |  | SAF_1936.txt |
+|  |  |  | SAF_1936.txt |
+|  |  |  | SAF_1936.txt |
+|  |  |  | SAF_1936.txt |
+|  |  |  | SAF_1936.txt |
+|  |  |  | SAF_1936.txt |
+|  |  |  | SAF_1939.txt |
+|  |  |  | SAF_1939.txt |
+|  |  |  | SAF_1939.txt |
+|  |  |  | SAF_1939.txt |
+|  |  |  | SAF_1939.txt |
+|  |  |  | SAF_1939.txt |
+| Democratic Defense Brigade | 12587 |  | SAF_D_civil_war.txt |
+| Democratic Defense Brigade | 10415 |  | SAF_D_civil_war.txt |
+| Democratic Defense Brigade | 1468 |  | SAF_D_civil_war.txt |
+| Democratic Defense Brigade | 10442 |  | SAF_D_civil_war.txt |
+| Democratic Defense Brigade | 12419 |  | SAF_D_civil_war.txt |
+| Democratic Defense Brigade | 5231 |  | SAF_D_civil_war.txt |
+| Democratic Defense Brigade | 8178 |  | SAF_D_civil_war.txt |
+| Nationalist Partisans | 5154 |  | SAF_F_civil_war.txt |
+| Nationalist Partisans | 5189 |  | SAF_F_civil_war.txt |
+| Nationalist Partisans | 7605 |  | SAF_F_civil_war.txt |
+|  |  |  | SAU_1936.txt |
+|  |  |  | SAU_1936.txt |
+|  |  |  | SAU_1936.txt |
+|  |  |  | SAU_1939.txt |
+|  |  |  | SAU_1939.txt |
+|  |  |  | SAU_1939.txt |
+| Juntuán | 4174 |  | SHX_1936.txt |
+| Juntuán | 7158 |  | SHX_1936.txt |
+| Sanjiao Jun | 4174 |  | SHX_1936_sea.txt |
+| Sanjiao Jun | 4174 |  | SHX_1936_sea.txt |
+| Sanjiao Jun | 4174 |  | SHX_1936_sea.txt |
+| Sanjiao Jun | 4174 |  | SHX_1936_sea.txt |
+| Sanjiao Jun | 3427 |  | SHX_1936_sea.txt |
+| Sanjiao Jun | 3427 |  | SHX_1936_sea.txt |
+| Sanjiao Jun | 7631 |  | SHX_1936_sea.txt |
+| Sanjiao Jun | 7631 |  | SHX_1936_sea.txt |
+| Juntuán | 7158 |  | SHX_1936_sea.txt |
+| Juntuán | 7158 |  | SHX_1936_sea.txt |
+| Juntuán | 12432 |  | SHX_1936_sea.txt |
+| Qibing Jun | 1180 |  | SHX_1936_sea.txt |
+| Qibing Jun | 1519 |  | SHX_1936_sea.txt |
+|  |  |  | SIA_1936.txt |
+|  |  |  | SIA_1936.txt |
+|  |  |  | SIA_1936.txt |
+|  |  |  | SIA_1936.txt |
+|  |  |  | SIA_1939.txt |
+|  |  |  | SIA_1939.txt |
+|  |  |  | SIA_1939.txt |
+|  |  |  | SIA_1939.txt |
+|  |  |  | SIA_1939.txt |
+| Sanjiao Jun | 7948 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 7948 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 7948 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 6999 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 6999 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 6999 |  | SIC_1936_sea.txt |
+| Juntuán | 6999 |  | SIC_1936_sea.txt |
+| Juntuán | 6999 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 4925 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 4925 |  | SIC_1936_sea.txt |
+| Juntuán | 4925 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 6999 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 6999 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 6999 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 4375 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 12141 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 12141 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 12141 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 1367 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 1367 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 1367 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 6999 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 6999 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 10903 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 10903 |  | SIC_1936_sea.txt |
+| Juntuán | 9966 |  | SIC_1936_sea.txt |
+| Juntuán | 9966 |  | SIC_1936_sea.txt |
+| Juntuán | 11865 |  | SIC_1936_sea.txt |
+| Juntuán | 11865 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 6999 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 11972 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 11972 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 4999 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 4999 |  | SIC_1936_sea.txt |
+| Sanjiao Jun | 12724 |  | SIC_1936_sea.txt |
+|  |  |  | SIK_1936.txt |
+|  |  |  | SIK_1936.txt |
+|  |  |  | SIK_1936.txt |
+|  |  |  | SIK_1936_sea.txt |
+|  |  |  | SIK_1936_sea.txt |
+|  |  |  | SIK_1936_sea.txt |
+|  |  |  | SIK_1939.txt |
+|  |  |  | SIK_1939.txt |
+|  |  |  | SIK_1939.txt |
+|  |  |  | SLO_1939.txt |
+|  |  |  | SLO_1939.txt |
+|  |  |  | SLO_1939.txt |
+| Mobilná Skupina | 9692 | 0.2 | SLO_1939.txt |
+|  |  |  | SLO_1939_nsb.txt |
+|  |  |  | SLO_1939_nsb.txt |
+|  |  |  | SLO_1939_nsb.txt |
+| Mobilná Skupina | 9692 | 0.2 | SLO_1939_nsb.txt |
+|  |  |  | SLO_independence.txt |
+|  |  |  | SLO_independence.txt |
+|  |  |  | SLO_independence.txt |
+|  |  |  | SLO_independence.txt |
+|  |  |  | SLO_independence.txt |
+|  |  |  | SLO_independence.txt |
+|  |  |  | SLO_independence.txt |
+|  |  |  | SLO_independence.txt |
+|  |  |  | SLO_independence.txt |
+|  |  |  | SLO_independence.txt |
+|  |  |  | SLO_independence.txt |
+| Mobilná Skupina | 9692 | 0.2 | SLO_independence.txt |
+|  |  |  | SLO_independence.txt |
+|  |  |  | SLO_independence.txt |
+|  |  |  | SLO_independence_nsb.txt |
+|  |  |  | SLO_independence_nsb.txt |
+|  |  |  | SLO_independence_nsb.txt |
+|  |  |  | SLO_independence_nsb.txt |
+|  |  |  | SLO_independence_nsb.txt |
+|  |  |  | SLO_independence_nsb.txt |
+|  |  |  | SLO_independence_nsb.txt |
+|  |  |  | SLO_independence_nsb.txt |
+|  |  |  | SLO_independence_nsb.txt |
+|  |  |  | SLO_independence_nsb.txt |
+|  |  |  | SLO_independence_nsb.txt |
+| Mobilná Skupina | 9692 | 0.2 | SLO_independence_nsb.txt |
+|  |  |  | SLO_independence_nsb.txt |
+|  |  |  | SLO_independence_nsb.txt |
+| Sanjiao Jun | 1069 |  | SND_1936_sea.txt |
+| Sanjiao Jun | 1069 |  | SND_1936_sea.txt |
+| Sanjiao Jun | 1104 |  | SND_1936_sea.txt |
+| Sanjiao Jun | 1104 |  | SND_1936_sea.txt |
+| Sanjiao Jun | 4181 |  | SND_1936_sea.txt |
+| Sanjiao Jun | 4205 |  | SND_1936_sea.txt |
+| Sanjiao Jun | 1069 |  | SND_1936_sea.txt |
+| Qibing Jun | 1069 |  | SND_1936_sea.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+| Mekhanizirovaniy Korpus | 3151 | 0.2 | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+| Mekhanizirovaniy Korpus | 6174 | 0.3 | SOV_1936.txt |
+| Mekhanizirovaniy Korpus | 149 | 0.3 | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+| Mekhanizirovaniy Korpus | 126 | 0.2 | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+| Mekhanizirovaniy Korpus | 11202 | 0.2 | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+| Mekhanizirovaniy Korpus | 6380 | 0.2 | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+| Mekhanizirovaniy Korpus | 6380 | 0.3 | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+| Mekhanizirovaniy Korpus | 525 | 0.2 | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+| Mekhanizirovaniy Korpus | 11670 | 0.2 | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+| Mekhanizirovaniy Korpus | 11437 | 0.3 | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+| Mekhanizirovaniy Korpus | 12189 | 0.2 | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+| Mekhanizirovaniy Korpus | 3151 | 0.2 | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+| Mekhanizirovaniy Korpus | 6174 | 0.3 | SOV_1936_nsb.txt |
+| Mekhanizirovaniy Korpus | 149 | 0.3 | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+| Mekhanizirovaniy Korpus | 126 | 0.2 | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+| Mekhanizirovaniy Korpus | 11202 | 0.2 | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+| Mekhanizirovaniy Korpus | 6380 | 0.2 | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+| Mekhanizirovaniy Korpus | 6380 | 0.3 | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+| Mekhanizirovaniy Korpus | 525 | 0.2 | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+| Mekhanizirovaniy Korpus | 11670 | 0.2 | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+| Mekhanizirovaniy Korpus | 11437 | 0.3 | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+| Mekhanizirovaniy Korpus | 12189 | 0.2 | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1936_nsb.txt |
+|  |  |  | SOV_1939.txt |
+| Vozdushno-Desantnaya | 6174 | 0.3 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Tankovaya Korpus | 6174 | 0.3 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Tyazolaya-Tankovaya Brigada | 149 | 0.2 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Legko-Tankovaya Brigada | 104 | 0.2 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Vozdushno-Desantnaya | 11370 | 0.3 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Tankovaya Brigada | 11313 | 0.2 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| NKVD Pogranichnaya Diviziya | 11322 | 0.1 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Legko-Tankovaya Brigada | 11370 | 0.2 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Legko-Tankovaya Brigada | 3759 | 0.2 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Tankovaya Korpus | 9353 | 0.3 | SOV_1939.txt |
+| Tankovaya Brigada | 9353 | 0.2 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Tankovaya Brigada | 306 | 0.2 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Legko-Tankovaya Brigada | 9355 | 0.2 | SOV_1939.txt |
+| Vozdushno-Desantnaya | 6380 | 0.3 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Vozdushno-Desantnaya | 525 | 0.3 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Legko-Tankovaya Brigada | 525 | 0.2 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Legko-Tankovaya Brigada | 9554 | 0.2 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Tyazolaya-Tankovaya Brigada | 3511 | 0.2 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Tankovaya Korpus | 476 | 0.3 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Legko-Tankovaya Brigada | 6455 | 0.2 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Vozdushno-Desantnaya | 3686 | 0.3 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Tyazolaya-Tankovaya Brigada | 6474 | 0.2 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Legko-Tankovaya Brigada | 12189 | 0.2 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Tankovaya Korpus | 10559 | 0.3 | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+|  |  |  | SOV_1939.txt |
+| Strelkovaya Diviziya | 3358 | 0.7 | SOV_1939.txt |
+| Kazachya Kavaleryskaya Diviziya | 9302 | 0.8 | SOV_1939.txt |
+| Kazachya Kavaleryskaya Diviziya | 6380 | 0.8 | SOV_1939.txt |
+| Kazachya Kavaleryskaya Diviziya | 6380 | 0.8 | SOV_1939.txt |
+| Kazachya Kavaleryskaya Diviziya | 6380 | 0.8 | SOV_1939.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Vozdushno-Desantnaya | 6174 | 0.3 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Tankovaya Korpus | 6174 | 0.3 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Tyazolaya-Tankovaya Brigada | 149 | 0.2 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Legko-Tankovaya Brigada | 104 | 0.2 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Vozdushno-Desantnaya | 11370 | 0.3 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Tankovaya Brigada | 11313 | 0.2 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| NKVD Pogranichnaya Diviziya | 11322 | 0.1 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Legko-Tankovaya Brigada | 11370 | 0.2 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Legko-Tankovaya Brigada | 3759 | 0.2 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Tankovaya Korpus | 9353 | 0.3 | SOV_1939_nsb.txt |
+| Tankovaya Brigada | 9353 | 0.2 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Tankovaya Brigada | 306 | 0.2 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Legko-Tankovaya Brigada | 9355 | 0.2 | SOV_1939_nsb.txt |
+| Vozdushno-Desantnaya | 6380 | 0.3 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Vozdushno-Desantnaya | 525 | 0.3 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Legko-Tankovaya Brigada | 525 | 0.2 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Legko-Tankovaya Brigada | 9554 | 0.2 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Tyazolaya-Tankovaya Brigada | 3511 | 0.2 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Tankovaya Korpus | 476 | 0.3 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Legko-Tankovaya Brigada | 6455 | 0.2 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Vozdushno-Desantnaya | 3686 | 0.3 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Tyazolaya-Tankovaya Brigada | 6474 | 0.2 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Legko-Tankovaya Brigada | 12189 | 0.2 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Tankovaya Korpus | 10559 | 0.3 | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+|  |  |  | SOV_1939_nsb.txt |
+| Strelkovaya Diviziya | 3358 | 0.7 | SOV_1939_nsb.txt |
+| Kazachya Kavaleryskaya Diviziya | 9302 | 0.8 | SOV_1939_nsb.txt |
+| Kazachya Kavaleryskaya Diviziya | 6380 | 0.8 | SOV_1939_nsb.txt |
+| Kazachya Kavaleryskaya Diviziya | 6380 | 0.8 | SOV_1939_nsb.txt |
+| Kazachya Kavaleryskaya Diviziya | 6380 | 0.8 | SOV_1939_nsb.txt |
+| División de Caballería | 3938 | 0.2 | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+|  |  |  | SPA_1939.txt |
+| Brigada Legionario | 11838 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 9840 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 9840 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 6901 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 3816 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 3816 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 11737 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 7213 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 7213 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 9812 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 948 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 813 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 11766 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 3859 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 11806 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 13227 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 3820 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 9827 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 9846 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 3874 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 3874 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 794 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 11756 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 9917 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 11780 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 985 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 6948 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 3810 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 3871 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 950 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 12083 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 1192 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 4095 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 1090 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 7198 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 4182 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 13231 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 10094 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 3737 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 3933 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 932 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 3902 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 11852 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 13220 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 11854 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 9700 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 11684 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 9699 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 726 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 13219 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 11843 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 729 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 6764 |  | SPA_Civil_War.txt |
+| Brigada Legionario | 7183 |  | SPA_Civil_War.txt |
+|  |  |  | SPR_1936.txt |
+|  |  |  | SPR_1936.txt |
+|  |  |  | SPR_1936.txt |
+|  |  |  | SPR_1936.txt |
+|  |  |  | SPR_1936.txt |
+|  |  |  | SPR_1936.txt |
+|  |  |  | SPR_1936.txt |
+|  |  |  | SPR_1936.txt |
+|  |  |  | SPR_1936.txt |
+| Brigada Montaña | 13071 | 0.2 | SPR_1936.txt |
+| Brigada Montaña | 740 | 0.2 | SPR_1936.txt |
+| Brigada Montaña | 11707 | 0.2 | SPR_1936.txt |
+| Brigada de Infantería | 1048 | 0.2 | SPR_1936.txt |
+|  |  |  | SPR_1936.txt |
+|  |  |  | SPR_1936.txt |
+| División de Infantería | 9945 | 0.1 | SPR_1936.txt |
+| División de Infantería | 12100 | 0.1 | SPR_1936.txt |
+| Brigada Internacionales | 3938 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 3938 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 3938 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 3938 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 3938 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9764 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9764 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9764 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 6906 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 6906 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 6906 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 10024 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 10024 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 10024 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9979 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9979 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9979 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 3735 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 13233 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 740 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 3938 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9764 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9764 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9764 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9764 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 6906 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 6906 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 3794 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9767 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 3954 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 3954 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 3954 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 3945 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 3945 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 3945 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9903 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9903 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9903 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 6832 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 6832 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 6832 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 1176 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 1176 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 1176 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 6756 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 11688 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 738 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9703 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 6749 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 3729 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 3744 |  | SPR_Civil_War.txt |
+| Brigada Internacionales | 9719 |  | SPR_Civil_War.txt |
+| German Expatriates | 9764 |  | SPR_German_Expatriates_Barcelona.txt |
+| German Expatriates | 9764 |  | SPR_German_Expatriates_Barcelona.txt |
+| German Expatriates | 9764 |  | SPR_German_Expatriates_Barcelona.txt |
+| German Expatriates | 3938 |  | SPR_German_Expatriates_Madrid.txt |
+| German Expatriates | 3938 |  | SPR_German_Expatriates_Madrid.txt |
+| German Expatriates | 3938 |  | SPR_German_Expatriates_Madrid.txt |
+|  |  |  | SWE_1936.txt |
+| Militärområde | 11160 | 0.2 | SWE_1936.txt |
+|  |  |  | SWE_1936.txt |
+| Militärområde | 11148 | 0.2 | SWE_1936.txt |
+|  |  |  | SWE_1936.txt |
+| Militärområde | 3375 | 0.2 | SWE_1936.txt |
+|  |  |  | SWE_1936.txt |
+| Kavalleribrigaden | 6050 | 0.3 | SWE_1936.txt |
+| Militärområde | 6050 | 0.2 | SWE_1936.txt |
+|  |  |  | SWE_1936.txt |
+| Militärområde | 9186 | 0.2 | SWE_1936.txt |
+| Militärområde | 408 | 0.2 | SWE_1936.txt |
+|  |  |  | SWE_1939.txt |
+| Militärområde | 11160 | 0.2 | SWE_1939.txt |
+|  |  |  | SWE_1939.txt |
+| Militärområde | 11148 | 0.2 | SWE_1939.txt |
+|  |  |  | SWE_1939.txt |
+| Militärområde | 3375 | 0.2 | SWE_1939.txt |
+|  |  |  | SWE_1939.txt |
+| Kavalleribrigaden | 6050 | 0.3 | SWE_1939.txt |
+| Militärområde | 6050 | 0.2 | SWE_1939.txt |
+|  |  |  | SWE_1939.txt |
+| Militärområde | 9186 | 0.2 | SWE_1939.txt |
+| Militärområde | 408 | 0.2 | SWE_1939.txt |
+| Gebirgsbrigade | 11590 | 0.2 | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+| Gebirgsbrigade | 11604 | 0.2 | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+| Gebirgsbrigade | 658 | 0.2 | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+|  |  |  | SWI_1936.txt |
+| Infanterie de montagne | 11590 | 0.2 | SWI_1936_BBA.txt |
+|  |  |  | SWI_1936_BBA.txt |
+|  |  |  | SWI_1936_BBA.txt |
+|  |  |  | SWI_1936_BBA.txt |
+|  |  |  | SWI_1936_BBA.txt |
+| Gebirgsinfanterie | 11604 | 0.2 | SWI_1936_BBA.txt |
+|  |  |  | SWI_1936_BBA.txt |
+|  |  |  | SWI_1936_BBA.txt |
+|  |  |  | SWI_1936_BBA.txt |
+| Gebirgsinfanterie | 658 | 0.2 | SWI_1936_BBA.txt |
+|  |  |  | SWI_1936_BBA.txt |
+|  |  |  | SWI_1936_BBA.txt |
+|  |  |  | SWI_1936_BBA.txt |
+| Gebirgsbrigade | 11590 | 0.2 | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+|  | 9622 |  | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+| Gebirgsbrigade | 11604 | 0.2 | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+| Gebirgsbrigade | 636 | 0.2 | SWI_1939.txt |
+| Gebirgsbrigade | 658 | 0.2 | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+|  |  |  | SWI_1939.txt |
+| Infanterie de montagne | 11590 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 11590 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 11590 | 0.2 | SWI_1939_BBA.txt |
+|  |  |  | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 3612 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 3612 | 0.2 | SWI_1939_BBA.txt |
+|  |  |  | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 6666 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 6666 | 0.2 | SWI_1939_BBA.txt |
+|  |  |  | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 9622 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 9622 | 0.2 | SWI_1939_BBA.txt |
+|  |  |  | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 9620 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 9620 | 0.2 | SWI_1939_BBA.txt |
+| Gebirgsinfanterie | 11604 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 11604 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 11604 | 0.2 | SWI_1939_BBA.txt |
+|  |  |  | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 9638 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 9638 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 9638 | 0.2 | SWI_1939_BBA.txt |
+|  |  |  | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 663 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 663 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 9638 | 0.2 | SWI_1939_BBA.txt |
+|  |  |  | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 663 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 663 | 0.2 | SWI_1939_BBA.txt |
+| Gebirgsinfanterie | 658 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 658 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 658 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 658 | 0.2 | SWI_1939_BBA.txt |
+|  |  |  | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 11623 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 11623 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 11623 | 0.2 | SWI_1939_BBA.txt |
+|  |  |  | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 661 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 661 | 0.2 | SWI_1939_BBA.txt |
+|  |  |  | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 9600 | 0.2 | SWI_1939_BBA.txt |
+| Swiss Citizen Militia | 9600 | 0.2 | SWI_1939_BBA.txt |
+| Strelkovaya Polk | 10627 |  | TAN_1936.txt |
+| Strelkovaya Polk | 10627 |  | TAN_1939.txt |
+|  |  |  | TIB_1936.txt |
+|  |  |  | TIB_1936.txt |
+|  |  |  | TIB_1939.txt |
+|  |  |  | TIB_1939.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1936_nsb.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | TUR_1939.txt |
+|  |  |  | URG_1936.txt |
+|  |  |  | URG_1936.txt |
+|  |  |  | URG_1939.txt |
+|  |  |  | URG_1939.txt |
+| Infantry Division | 1440 | 0.2 | USA_1936.txt |
+| Infantry Division | 7617 | 0.2 | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+|  |  |  | USA_1936.txt |
+| Infantry Division | 13091 | 0.2 | USA_1936.txt |
+| Garrison Brigade | 13067 | 0.1 | USA_1936.txt |
+| National Guard Division | 4180 | 0.2 | USA_1936.txt |
+| Garrison Brigade | 13052 | 0.1 | USA_1936.txt |
+| Garrison Brigade | 13047 | 0.1 | USA_1936.txt |
+| Garrison Brigade | 12140 | 0.1 | USA_1936.txt |
+| Garrison Brigade | 13048 | 0.1 | USA_1936.txt |
+| Garrison Brigade | 13049 | 0.1 | USA_1936.txt |
+| Garrison Brigade | 13050 | 0.1 | USA_1936.txt |
+| Garrison Brigade | 13053 | 0.1 | USA_1936.txt |
+| Garrison Brigade | 13051 | 0.1 | USA_1936.txt |
+| Infantry Division | 10265 | 0.2 | USA_1936.txt |
+| Infantry Division | 1440 | 0.2 | USA_1939.txt |
+| Infantry Division | 7617 | 0.2 | USA_1939.txt |
+| Mechanized Cavalry | 6696 | 0.3 | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+|  |  |  | USA_1939.txt |
+| Marine Brigade | 6846 | 0.3 | USA_1939.txt |
+| Marine Brigade | 1562 | 0.3 | USA_1939.txt |
+| Infantry Division | 13091 | 0.2 | USA_1939.txt |
+| Garrison Brigade | 13067 | 0.1 | USA_1939.txt |
+| National Guard Division | 4180 | 0.2 | USA_1939.txt |
+| Garrison Brigade | 13052 | 0.1 | USA_1939.txt |
+| Garrison Brigade | 13047 | 0.1 | USA_1939.txt |
+| Garrison Brigade | 12140 | 0.1 | USA_1939.txt |
+| Garrison Brigade | 13048 | 0.1 | USA_1939.txt |
+| Garrison Brigade | 13049 | 0.1 | USA_1939.txt |
+| Garrison Brigade | 13050 | 0.1 | USA_1939.txt |
+| Garrison Brigade | 13053 | 0.1 | USA_1939.txt |
+| Garrison Brigade | 13051 | 0.1 | USA_1939.txt |
+| Infantry Division | 10265 | 0.2 | USA_1939.txt |
+| Local Defense Volunteers | 12357 |  | USB_defense_force.txt |
+| Local Defense Volunteers | 12357 |  | USB_defense_force.txt |
+| Local Defense Volunteers | 12357 |  | USB_defense_force.txt |
+| State Defense Force | 12357 |  | USB_defense_force.txt |
+| Local Defense Volunteers | 1770 |  | USB_defense_force.txt |
+| Local Defense Volunteers | 1770 |  | USB_defense_force.txt |
+| Local Defense Volunteers | 1770 |  | USB_defense_force.txt |
+| State Defense Force | 1770 |  | USB_defense_force.txt |
+| Local Defense Volunteers | 695 |  | USB_defense_force.txt |
+| Local Defense Volunteers | 695 |  | USB_defense_force.txt |
+| Local Defense Volunteers | 695 |  | USB_defense_force.txt |
+| State Defense Force | 6710 |  | USB_defense_force.txt |
+| Local Defense Volunteers | 7626 |  | USB_defense_force.txt |
+| Local Defense Volunteers | 7626 |  | USB_defense_force.txt |
+| Local Defense Volunteers | 7626 |  | USB_defense_force.txt |
+| State Defense Force | 9450 |  | USB_defense_force.txt |
+| Local Defense Volunteers | 1881 |  | USB_defense_force.txt |
+| Local Defense Volunteers | 1881 |  | USB_defense_force.txt |
+| Local Defense Volunteers | 1881 |  | USB_defense_force.txt |
+| State Defense Force | 1595 |  | USB_defense_force.txt |
+|  |  |  | VEN_1936.txt |
+| División de Caballería | 8113 | 0.1 | VEN_1936.txt |
+|  |  |  | VEN_1939.txt |
+| División de Caballería | 8113 | 0.1 | VEN_1939.txt |
+| Sanjiao Jun | 2022 |  | XIC_1936_sea.txt |
+| Sanjiao Jun | 2022 |  | XIC_1936_sea.txt |
+| Sanjiao Jun | 2022 |  | XIC_1936_sea.txt |
+| Sanjiao Jun | 7208 |  | XIC_1936_sea.txt |
+| Sanjiao Jun | 7208 |  | XIC_1936_sea.txt |
+| Sanjiao Jun | 8049 |  | XIC_1936_sea.txt |
+| Sanjiao Jun | 8049 |  | XIC_1936_sea.txt |
+| Sanjiao Jun | 8049 |  | XIC_1936_sea.txt |
+| Sanjiao Jun | 517 |  | XIC_1936_sea.txt |
+| Sanjiao Jun | 517 |  | XIC_1936_sea.txt |
+| Sanjiao Jun | 7418 |  | XIC_1936_sea.txt |
+| Sanjiao Jun | 7208 |  | XIC_1936_sea.txt |
+| Sanjiao Jun | 10257 |  | XIC_1936_sea.txt |
+| Qibing Jun | 1647 |  | XIC_1936_sea.txt |
+| Qibing Jun | 2022 |  | XIC_1936_sea.txt |
+| Qibing Jun | 7911 |  | XIC_1936_sea.txt |
+| Qibing Jun | 7911 |  | XIC_1936_sea.txt |
+|  |  |  | XSM_1936.txt |
+|  |  |  | XSM_1936.txt |
+|  |  |  | XSM_1936.txt |
+|  |  |  | XSM_1936.txt |
+|  |  |  | XSM_1936.txt |
+|  |  |  | XSM_1936.txt |
+| Juntuán | 12846 |  | XSM_1936.txt |
+| Juntuán | 8018 | 0.1 | XSM_1936_sea.txt |
+| Juntuán | 10750 | 0.1 | XSM_1936_sea.txt |
+| Juntuán | 11448 | 0.1 | XSM_1936_sea.txt |
+| Juntuán | 12732 |  | XSM_1936_sea.txt |
+| Juntuán Reformed | 8018 |  | XSM_1936_sea.txt |
+| Qibing Jun | 8018 | 0.1 | XSM_1936_sea.txt |
+| Qibing Jun | 12732 | 0.1 | XSM_1936_sea.txt |
+| Binary Infantry | 8081 |  | XSM_1939.txt |
+| Binary Infantry | 3745 |  | XSM_1939.txt |
+| Binary Infantry | 1647 |  | XSM_1939.txt |
+| Triangular Cavalry | 8081 |  | XSM_1939.txt |
+| Binary Infantry | 12846 |  | XSM_1939.txt |
+| Binary Infantry | 10724 |  | XSM_1939.txt |
+| Triangular Cavalry | 8055 |  | XSM_1939.txt |
+| Triangular Cavalry | 7803 |  | XSM_1939.txt |
+|  |  |  | YEM_1936.txt |
+|  |  |  | YEM_1936.txt |
+|  |  |  | YEM_1939.txt |
+|  |  |  | YEM_1939.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+| Tenkovski Bataljon | 11586 | 0.3 | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+| Tenkovski Bataljon | 11586 | 0.3 | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1936_nsb.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+| Tenkovski Bataljon | 11586 | 0.3 | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+| Tenkovski Bataljon | 11586 | 0.3 | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+|  |  |  | YUG_1939_nsb.txt |
+| Juntuán | 12789 |  | YUN_1936.txt |
+| Juntuán | 10346 |  | YUN_1936.txt |
+| Juntuán | 10346 |  | YUN_1936.txt |
+| Juntuán | 1319 |  | YUN_1936_sea.txt |
+| Juntuán | 1319 |  | YUN_1936_sea.txt |
+| Juntuán | 4501 |  | YUN_1936_sea.txt |
+| Juntuán | 12262 |  | YUN_1936_sea.txt |
+| Juntuán | 7965 |  | YUN_1936_sea.txt |
+| Juntuán | 7965 |  | YUN_1936_sea.txt |
+| Binary Infantry | 12789 |  | YUN_1939.txt |
+| Binary Infantry | 10346 |  | YUN_1939.txt |
+| Binary Infantry | 10346 |  | YUN_1939.txt |

@@ -1,0 +1,13 @@
+track_key,folder_key,name_loc,mastery_multiplier
+fighter_aircraft,air,DOCTRINE_TRACK_FIGHTER_AIRCRAFT,8.0
+strike_aircraft,air,DOCTRINE_TRACK_STRIKE_AIRCRAFT,8.0
+medium_aircraft,air,DOCTRINE_TRACK_MEDIUM_AIRCRAFT,8.0
+heavy_aircraft,air,DOCTRINE_TRACK_HEAVY_AIRCRAFT,8.0
+infantry,land,DOCTRINE_TRACK_INFANTRY,1.0
+combat_support,land,DOCTRINE_TRACK_COMBAT_SUPPORT,8.0
+armor,land,DOCTRINE_TRACK_ARMOR,10.0
+operations,land,DOCTRINE_TRACK_OPERATIONS,0.7
+capital_ships,naval,DOCTRINE_TRACK_CAPITAL_SHIPS,2.0
+carriers,naval,DOCTRINE_TRACK_CARRIERS,5.0
+screens,naval,DOCTRINE_TRACK_SCREENS,1.0
+submarines,naval,DOCTRINE_TRACK_SUBMARINES,3.0

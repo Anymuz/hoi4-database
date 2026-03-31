@@ -1,0 +1,13 @@
+# Resistance Modifier Effects
+
+Source: `common/resistance_compliance_modifiers/resistance_modifiers.txt`
+
+| modifier_key | effect_key | effect_value |
+|---|---|---|
+| resistance_25 | resistance_garrison_penetration_chance | 0.5 |
+| resistance_50 | resistance_damage_to_garrison | 1 |
+| resistance_75 | army_speed_factor_for_controller | -0.5 |
+| resistance_75 | local_supplies_for_controller | -0.5 |
+| resistance_75 | attrition_for_controller | 0.3 |
+| resistance_75 | disable_strategic_redeployment_for_controller | 1 |
+| resistance_90 | local_factories | -0.03 |

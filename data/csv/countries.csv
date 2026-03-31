@@ -1,0 +1,353 @@
+tag,country_file_path,graphical_culture,graphical_culture_2d,color_r,color_g,color_b,capital_state_id,stability,war_support
+ABK,countries/Abkhazia.txt,eastern_european_gfx,eastern_european_2d,51,204,51,826,,
+ADU,countries/Andalusia.txt,middle_eastern_gfx,middle_eastern_2d,,,,789,,
+AFA,countries/Afar.txt,african_gfx,african_2d,,,,908,,
+AFG,countries/Afghanistan.txt,middle_eastern_gfx,middle_eastern_2d,64,160,167,267,0.0,0.1
+ALB,countries/Albania.txt,eastern_european_gfx,eastern_european_2d,149,45,102,44,,
+ALG,countries/Algeria.txt,middle_eastern_gfx,middle_eastern_2d,,,,459,,
+ALT,countries/Altay.txt,asian_gfx,asian_2d,204,255,255,654,,
+ANG,countries/Angola.txt,african_gfx,african_2d,155,135,195,540,,
+ANU,countries/Ainu.txt,asian_gfx,asian_2d,128,191,255,536,,
+AOI,countries/Italian East Africa.txt,western_european_gfx,western_european_2d,0,153,51,271,0.4,0.3
+ARG,countries/Argentina.txt,southamerican_gfx,southamerican_2d,145,157,236,278,,
+ARM,countries/Armenia.txt,eastern_european_gfx,eastern_european_2d,176,102,136,230,,
+AST,countries/Australia.txt,commonwealth_gfx,commonwealth_2d,57,143,97,285,0.8,0.3
+ASY,countries/Assyria.txt,middle_eastern_gfx,middle_eastern_2d,128,0,96,676,,
+AUS,countries/Austria.txt,western_european_gfx,western_european_2d,224,228,255,4,0.50,
+AZR,countries/Azerbaijan.txt,eastern_european_gfx,eastern_european_2d,69,151,49,229,,
+BAH,countries/Bahamas.txt,african_gfx,african_2d,,,,690,,
+BAN,countries/Bangladesh.txt,asian_gfx,asian_2d,,,,430,,
+BAR,countries/Barotseland.txt,african_gfx,african_2d,,,,981,,
+BAS,countries/British Antilles.txt,african_gfx,african_2d,,,,692,,
+BAY,countries/Bavaria.txt,western_european_gfx,western_european_2d,233,231,246,52,0.75,
+BEG,countries/Benishangul-Gumuz.txt,african_gfx,african_2d,,,,840,,
+BEL,countries/Belgium.txt,western_european_gfx,western_european_2d,193,171,8,6,0.7,0.3
+BHR,countries/Bahrain.txt,middle_eastern_gfx,middle_eastern_2d,,,,1014,,
+BHU,countries/Bhutan.txt,asian_gfx,asian_2d,152,130,191,324,0.8,0.1
+BIA,countries/Biafra.txt,african_gfx,african_2d,0,153,51,900,,
+BLC,countries/Balochistan.txt,middle_eastern_gfx,middle_eastern_2d,77,153,0,988,,
+BLR,countries/Belarus.txt,eastern_european_gfx,eastern_european_2d,180,220,190,206,,
+BLZ,countries/Belize.txt,african_gfx,african_2d,,,,311,,
+BOL,countries/Bolivia.txt,southamerican_gfx,southamerican_2d,255,180,136,302,,
+BOS,countries/Bosnia.txt,eastern_european_gfx,eastern_european_2d,,,,104,,
+BOT,countries/Botswana.txt,african_gfx,commonwealth_2d,55,235,95,542,,
+BRA,countries/Brazil.txt,southamerican_gfx,southamerican_2d,76,145,63,500,,
+BRD,countries/Burundi.txt,african_gfx,african_2d,,,,769,,
+BRI,countries/Brittany.txt,western_european_gfx,western_european_2d,,,,14,,
+BRM,countries/Burma.txt,asian_gfx,asian_2d,,,,995,,
+BRN,countries/Brunei.txt,asian_gfx,asian_2d,230,230,0,1023,,
+BSK,countries/Bashkortostan.txt,eastern_european_gfx,eastern_european_2d,51,204,51,651,,
+BUK,countries/Bukharan Republic.txt,asian_gfx,asian_2d,204,153,102,830,,
+BUL,countries/Bulgaria.txt,eastern_european_gfx,eastern_european_2d,66,113,69,48,,
+BYA,countries/Buryatia.txt,asian_gfx,asian_2d,0,64,255,564,,
+CAM,countries/Cambodia.txt,asian_gfx,asian_2d,160,71,102,741,,
+CAN,countries/Canada.txt,commonwealth_gfx,commonwealth_2d,233,59,59,276,0.8,0.1
+CAR,countries/Central African Republic.txt,african_gfx,african_2d,,,,660,,
+CAT,countries/Catalonia.txt,southamerican_gfx,southamerican_2d,,,,165,,
+CAY,countries/Cayenne.txt,african_gfx,african_2d,,,,310,,
+CBV,countries/Cabo Verde.txt,southamerican_gfx,southamerican_2d,0,102,204,702,,
+CHA,countries/Chad.txt,african_gfx,african_2d,,,,774,,
+CHI,countries/China.txt,asian_gfx,asian_2d,40,40,140,1035,0.2,0.32
+CHL,countries/Chile.txt,southamerican_gfx,southamerican_2d,155,101,107,279,0.40,0.25
+CHM,countries/Champa.txt,asian_gfx,asian_2d,46,46,184,286,,
+CHR,countries/Charrua.txt,southamerican_gfx,southamerican_2d,204,122,0,300,,
+CHU,countries/Chuvashia.txt,eastern_european_gfx,eastern_european_2d,191,128,64,256,,
+CIN,countries/Chechnya Ingushetia.txt,eastern_european_gfx,eastern_european_2d,0,204,0,821,,
+CIP,countries/Central Indian Provinces.txt,commonwealth_gfx,commonwealth_2d,,,,437,,
+CKK,countries/Chukotka.txt,asian_gfx,asian_2d,179,179,0,822,,
+CMR,countries/Cameroon.txt,african_gfx,african_2d,,,,773,,
+COG,countries/Congo.txt,african_gfx,african_2d,155,135,255,295,0.35,0.4
+COL,countries/Colombia.txt,southamerican_gfx,southamerican_2d,222,187,91,306,,
+COR,countries/Corsica.txt,western_european_gfx,western_european_2d,,,,1,,
+COS,countries/Costa Rica.txt,southamerican_gfx,southamerican_2d,152,130,191,316,,0.1
+CRC,countries/Curacao.txt,southamerican_gfx,southamerican_2d,,,,695,,
+CRI,countries/Crimea.txt,eastern_european_gfx,eastern_european_2d,255,80,80,137,,
+CRO,countries/Croatia.txt,eastern_european_gfx,eastern_european_2d,245,70,70,109,,
+CSA,countries/CSA.txt,western_european_gfx,western_european_2d,145,163,176,361,0.75,0
+CUB,countries/Cuba.txt,southamerican_gfx,southamerican_2d,152,130,191,315,,0.1
+CYP,countries/Cyprus.txt,middle_eastern_gfx,middle_eastern_2d,,,,183,,
+CZE,countries/Czechoslovakia.txt,eastern_european_gfx,eastern_european_2d,54,167,156,9,,
+DAG,countries/Dagestan.txt,eastern_european_gfx,eastern_european_2d,0,204,255,232,,
+DAH,countries/Dahomey.txt,african_gfx,african_2d,,,,776,,
+DDR,countries/East Germany.txt,western_european_gfx,western_european_2d,106,100,95,64,0.75,
+DEN,countries/Denmark.txt,western_european_gfx,western_european_2d,153,116,93,37,0.9,0.1
+DIP,countries/Partisans.txt,asian_gfx,asian_2d,,,,430,,
+DJI,countries/Djibouti.txt,african_gfx,african_2d,,,,268,,
+DNZ,countries/Danzig.txt,western_european_gfx,western_european_2d,,,,85,,
+DOM,countries/Dominican Republic.txt,southamerican_gfx,southamerican_2d,152,130,191,319,,0.1
+DON,countries/Don Republic.txt,eastern_european_gfx,eastern_european_2d,,,,218,,
+ECU,countries/Ecuador.txt,southamerican_gfx,southamerican_2d,249,146,98,305,,0.1
+EGY,countries/Egypt.txt,middle_eastern_gfx,middle_eastern_2d,230,230,70,907,,
+ELS,countries/El Salvador.txt,southamerican_gfx,southamerican_2d,152,130,191,314,,0.1
+ENG,countries/United Kingdom.txt,commonwealth_gfx,commonwealth_2d,201,56,93,126,0.6,0.1
+EQG,countries/Equatorial Guinea.txt,african_gfx,african_2d,,,,297,,
+ERI,countries/Eritrea.txt,african_gfx,african_2d,,,,550,,
+EST,countries/Estonia.txt,eastern_european_gfx,eastern_european_2d,76,157,195,812,,
+ETH,countries/Ethiopia.txt,african_gfx,african_2d,152,130,191,271,,0.30
+EVE,countries/Evenkia.txt,asian_gfx,asian_2d,153,221,255,576,,
+EZO,countries/Ezo Republic.txt,asian_gfx,asian_2d,102,102,153,536,,
+FER,countries/Fareastern Republic.txt,eastern_european_gfx,eastern_european_2d,179,45,0,563,,
+FIJ,countries/Fiji.txt,asian_gfx,asian_2d,,,,636,,
+FIN,countries/Finland.txt,western_european_gfx,western_european_2d,205,212,228,111,,
+FOR,countries/Formosa.txt,asian_gfx,asian_2d,0,128,128,524,,
+FRA,countries/France.txt,western_european_gfx,western_european_2d,57,113,228,16,0.45,0.1
+FSA,countries/Federation of South Arabia.txt,middle_eastern_gfx,middle_eastern_2d,0,179,60,992,,
+FSM,countries/Micronesia.txt,asian_gfx,asian_2d,,,,684,,
+GAB,countries/Gabon.txt,african_gfx,african_2d,,,,539,,
+GAM,countries/Gambia.txt,african_gfx,african_2d,,,,701,,
+GAR,countries/Guarani.txt,southamerican_gfx,southamerican_2d,128,128,255,301,,
+GBA,countries/Gambela.txt,african_gfx,african_2d,,,,838,,
+GDC,countries/Guangdong.txt,asian_gfx,asian_2d,45,134,89,592,0.6,0.4
+GDL,countries/Guadeloupe.txt,african_gfx,african_2d,,,,694,,
+GEN,countries/Generalgouvernement.txt,eastern_european_gfx,eastern_european_2d,115,115,115,88,0.4,0.7
+GEO,countries/Georgia.txt,eastern_european_gfx,eastern_european_2d,255,204,204,231,,
+GER,countries/Germany.txt,western_european_gfx,western_european_2d,106,119,89,64,0.7,0.3
+GHA,countries/Ghana.txt,african_gfx,african_2d,,,,274,,
+GLC,countries/Galicia.txt,southamerican_gfx,southamerican_2d,,,,171,,
+GNA,countries/Guinea.txt,african_gfx,african_2d,,,,780,,
+GNB,countries/Guinea-Bissau.txt,african_gfx,african_2d,,,,296,,
+GRE,countries/Greece.txt,western_european_gfx,western_european_2d,93,181,227,47,0.72,0.23
+GRN,countries/Greenland.txt,western_european_gfx,western_european_2d,255,80,80,101,,
+GSM,countries/Gansu Ma.txt,asian_gfx,asian_2d,105,100,140,1044,0.5,0.3
+GUA,countries/Guatemla.txt,southamerican_gfx,southamerican_2d,152,130,191,313,,0.1
+GUM,countries/Guam.txt,asian_gfx,asian_2d,,,,638,,
+GXC,countries/Guangxi.txt,asian_european_gfx,asian_2d,0,204,153,594,0.5,0.55
+GYA,countries/Guyana.txt,african_gfx,african_2d,,,,687,,
+HAI,countries/Haiti.txt,african_gfx,african_2d,152,130,191,318,,0.1
+HAN,countries/Hanover.txt,western_european_gfx,western_european_2d,255,0,0,59,0.75,
+HAR,countries/Harar.txt,african_gfx,african_2d,,,,835,,
+HAW,countries/Hawaii.txt,asian_gfx,asian_2d,,,,629,,
+HBC,countries/Hebei-Chahar.txt,asian_gfx,asian_2d,156,27,22,608,0.6,0.35
+HES,countries/Hesse.txt,western_european_gfx,western_european_2d,255,179,179,55,0.75,
+HOL,countries/Holland.txt,western_european_gfx,western_european_2d,203,138,74,7,0.75,0
+HON,countries/Honduras.txt,southamerican_gfx,southamerican_2d,152,130,191,312,,0.1
+HRZ,countries/Herzegovina.txt,eastern_european_gfx,eastern_european_2d,,,,804,,
+HUN,countries/Hungary.txt,eastern_european_gfx,eastern_european_2d,249,126,98,43,0.7,0.6
+HYD,countries/Hyderabad.txt,asian_gfx,asian_2d,,,,427,,
+IAS,countries/Isthmo Amerindia.txt,southamerican_gfx,southamerican_2d,0,153,51,493,,
+ICE,countries/Iceland.txt,western_european_gfx,western_european_2d,100,125,175,100,0.65,0.15
+IMO,countries/Omani Imamate.txt,middle_eastern_gfx,middle_eastern_2d,242,242,242,1015,,
+INC,countries/Inca.txt,southamerican_gfx,southamerican_2d,255,204,0,494,,
+INS,countries/Indonesia.txt,asian_gfx,asian_2d,249,208,213,335,,
+INU,countries/Inuit.txt,southamerican_gfx,southamerican_2d,51,204,204,463,,
+IRE,countries/Ireland.txt,western_european_gfx,western_european_2d,80,159,90,113,,
+IRQ,countries/Iraq.txt,middle_eastern_gfx,middle_eastern_2d,178,114,99,291,,
+ISR,countries/Israel.txt,western_european_gfx,western_european_2d,152,130,191,454,,
+ITA,countries/Italy.txt,western_european_gfx,western_european_2d,67,127,63,2,0.6,0.65
+ITZ,countries/Itza.txt,southamerican_gfx,southamerican_2d,204,204,0,311,,
+IVO,countries/Ivory Coast.txt,african_gfx,african_2d,,,,779,,
+JAM,countries/Jamaica.txt,african_gfx,african_2d,,,,689,,
+JAN,countries/Jan Mayen.txt,western_european_gfx,western_european_2d,255,255,255,914,,
+JAP,countries/Japan.txt,asian_gfx,asian_2d,255,191,191,282,0.2,0.6
+JOR,countries/Jordan.txt,middle_eastern_gfx,middle_eastern_2d,111,55,78,455,,
+KAL,countries/Kalmykia.txt,asian_gfx,asian_2d,255,204,0,237,,
+KAR,countries/Karelia.txt,western_european_gfx,western_european_2d,0,153,51,216,,
+KAS,countries/Kashmir.txt,commonwealth_gfx,commonwealth_2d,,,,441,,
+KAT,countries/Katanga.txt,african_gfx,african_2d,204,41,0,889,,
+KAZ,countries/Kazakhstan.txt,eastern_european_gfx,eastern_european_2d,75,184,203,586,,
+KBK,countries/Kabardino Balkaria.txt,eastern_european_gfx,eastern_european_2d,255,71,26,827,,
+KEN,countries/Kenya.txt,african_gfx,commonwealth_2d,255,57,195,547,,
+KHA,countries/Khakassia.txt,asian_gfx,asian_2d,51,204,51,569,,
+KHI,countries/Khiva.txt,asian_gfx,asian_2d,51,204,255,831,,
+KHL,countries/Khalistan.txt,commonwealth_gfx,commonwealth_2d,,,,440,,
+KHM,countries/Khotan Ma.txt,asian_gfx,asian_2d,153,102,51,1042,0.5,0.4
+KKP,countries/Karakalpakstan.txt,asian_gfx,asian_2d,255,128,0,823,,
+KLT,countries/Kalat.txt,middle_eastern_gfx,middle_eastern_2d,0,171,0,1012,,
+KOL,countries/Kolhapur and Deccan States.txt,commonwealth_gfx,commonwealth_2d,,,,983,,
+KOM,countries/Komi.txt,eastern_european_gfx,eastern_european_2d,0,230,184,397,,
+KOR,countries/Korea.txt,asian_gfx,asian_2d,255,240,195,525,,
+KOS,countries/Kosovo.txt,eastern_european_gfx,eastern_european_2d,,,,802,,
+KSH,countries/Kashubia.txt,western_european_gfx,western_european_2d,,,,807,,
+KUB,countries/Kuban Republic.txt,eastern_european_gfx,eastern_european_2d,,,,234,,
+KUM,countries/Kumul Khanate.txt,asian_gfx,asian_2d,255,230,128,760,,
+KUR,countries/Kurdistan.txt,middle_eastern_gfx,middle_eastern_2d,,,,800,,
+KUW,countries/Kuwait.txt,middle_eastern_gfx,middle_eastern_2d,,,,656,,
+KYR,countries/Kyrgyzstan.txt,asian_gfx,asian_2d,,,,732,,
+LAO,countries/Laos.txt,asian_gfx,asian_2d,30,71,190,670,,
+LAT,countries/Latvia.txt,eastern_european_gfx,eastern_european_2d,112,90,87,808,,
+LBA,countries/Libya.txt,middle_eastern_gfx,middle_eastern_2d,200,180,90,448,,
+LBV,countries/Lombardy Venetia.txt,western_european_gfx,western_european_2d,179,11,0,160,0.5,0.5
+LEB,countries/Lebanon.txt,middle_eastern_gfx,middle_eastern_2d,130,150,60,553,,
+LIB,countries/Liberia.txt,african_gfx,african_2d,152,130,191,298,,
+LIT,countries/Lithuania.txt,eastern_european_gfx,eastern_european_2d,219,219,119,11,,
+LUX,countries/Luxemburg.txt,western_european_gfx,western_european_2d,65,175,179,8,0.7,0.15
+MAC,countries/Macedonia.txt,eastern_european_gfx,eastern_european_2d,,,,106,,
+MAD,countries/Madagascar.txt,african_gfx,african_2d,,,,543,,
+MAL,countries/Malaysia.txt,asian_gfx,commonwealth_2d,100,96,197,336,,
+MAN,countries/Manchukou.txt,asian_gfx,asian_2d,215,172,52,328,,
+MAY,countries/Maya.txt,southamerican_gfx,southamerican_2d,255,80,80,475,,
+MEK,countries/Mecklenburg.txt,western_european_gfx,western_european_2d,186,245,86,61,0.75,
+MEL,countries/Mariel.txt,eastern_european_gfx,eastern_european_2d,255,230,230,833,,
+MEN,countries/Mengkukuo.txt,asian_gfx,asian_2d,165,102,152,1043,,
+MEX,countries/Mexico.txt,southamerican_gfx,southamerican_2d,104,152,83,277,0.2,0.1
+MIS,countries/Miskito.txt,southamerican_gfx,southamerican_2d,255,51,0,317,,
+MLD,countries/Maldives.txt,asian_gfx,asian_2d,,,,281,,
+MLI,countries/Mali.txt,african_gfx,african_2d,,,,556,,
+MLT,countries/Malta.txt,middle_eastern_gfx,middle_eastern_2d,,,,116,,
+MLW,countries/Malawi.txt,african_gfx,african_2d,,,,770,,
+MNT,countries/Montenegro.txt,eastern_european_gfx,eastern_european_2d,171,107,109,105,,
+MOL,countries/Moldova.txt,eastern_european_gfx,eastern_european_2d,,,,78,,
+MON,countries/Mongolia.txt,asian_gfx,asian_2d,161,190,102,330,,
+MOR,countries/Morocco.txt,middle_eastern_gfx,middle_eastern_2d,,,,461,,
+MPU,countries/Manipur.txt,commonwealth_gfx,commonwealth_2d,,,,990,,
+MRT,countries/Mauritania.txt,african_gfx,african_2d,,,,557,,
+MYS,countries/Mysore.txt,commonwealth_gfx,commonwealth_2d,,,,425,,
+MZB,countries/Mozambique.txt,african_gfx,african_2d,255,135,195,544,,
+NAH,countries/Nahua.txt,southamerican_gfx,southamerican_2d,51,153,102,314,,
+NAV,countries/Navarra.txt,southamerican_gfx,southamerican_2d,,,,792,,
+NEN,countries/Nenetsia.txt,eastern_european_gfx,eastern_european_2d,204,255,204,825,,
+NEP,countries/Nepal.txt,asian_gfx,asian_2d,152,130,191,323,0.8,0.1
+NGA,countries/Nigeria.txt,african_gfx,african_2d,,,,558,,
+NGR,countries/Niger.txt,african_gfx,african_2d,,,,781,,
+NIC,countries/Nicaragua.txt,southamerican_gfx,southamerican_2d,152,130,191,317,,0.1
+NIR,countries/Northern Ireland.txt,commonwealth_gfx,commonwealth_2d,,,,119,,
+NMB,countries/Namibia.txt,african_gfx,african_2d,,,,541,,
+NOA,countries/North Ossetia.txt,eastern_european_gfx,eastern_european_2d,255,170,0,828,,
+NOR,countries/Norway.txt,western_european_gfx,western_european_2d,111,71,71,110,0.60,0.1
+NWF,countries/North Western Frontier States.txt,commonwealth_gfx,commonwealth_2d,,,,442,,
+NXM,countries/Ningxia Ma.txt,asian_gfx,asian_2d,105,115,145,616,0.5,0.5
+NZL,countries/New Zealand.txt,commonwealth_gfx,commonwealth_2d,152,130,191,284,0.8,0.3
+OCC,countries/Occitania.txt,western_european_gfx,western_european_2d,,,,31,,
+OKN,countries/Okinawa.txt,asian_gfx,asian_2d,255,140,26,526,,
+OMA,countries/Oman.txt,middle_eastern_gfx,middle_eastern_2d,155,101,107,294,0.8,0.1
+ORO,countries/Oromo.txt,african_gfx,african_2d,,,,836,,
+OVO,countries/Ostyak Vogulia.txt,asian_gfx,asian_2d,0,153,51,580,,
+PAK,countries/Pakistan.txt,western_european_gfx,commonwealth_2d,0,102,0,443,,
+PAL,countries/Palestine.txt,middle_eastern_gfx,middle_eastern_2d,170,125,80,454,,
+PAN,countries/Panama.txt,southamerican_gfx,southamerican_2d,152,130,191,304,,0.1
+PAP,countries/Papal States.txt,western_european_gfx,western_european_2d,255,255,204,2,0.5,0.5
+PAR,countries/Paraguay.txt,southamerican_gfx,southamerican_2d,57,113,228,301,0.26,
+PER,countries/Persia.txt,middle_eastern_gfx,middle_eastern_2d,71,113,97,266,,
+PHI,countries/Philippines.txt,asian_gfx,asian_2d,0,40,195,327,0.50,0.15
+PLU,countries/Palau.txt,asian_gfx,asian_2d,151,153,255,647,,
+PNG,countries/Papua New Guinea.txt,african_gfx,african_2d,,,,523,,
+POL,countries/Poland.txt,eastern_european_gfx,eastern_european_2d,150,23,23,10,,
+POR,countries/Portugal.txt,southamerican_gfx,southamerican_2d,39,116,70,112,0.60,0.15
+PRC,countries/ComChina.txt,asian_gfx,asian_2d,82,2,15,,0.43,0.5
+PRE,countries/Prussia.txt,western_european_gfx,western_european_2d,160,160,160,64,0.75,
+PRU,countries/Peru.txt,southamerican_gfx,southamerican_2d,196,189,204,303,,
+PSH,countries/Pashtunistan.txt,middle_eastern_gfx,middle_eastern_2d,31,138,31,459,,
+PSR,countries/Philippine Second Republic.txt,asian_gfx,asian_2d,31,31,122,327,0.4,0.4
+PUE,countries/Puerto Rico.txt,southamerican_gfx,southamerican_2d,,,,686,,
+QAT,countries/Qatar.txt,middle_eastern_gfx,middle_eastern_2d,,,,765,,
+QEM,countries/Qemant.txt,african_gfx,african_2d,,,,841,,
+QUE,countries/Quebec.txt,commonwealth_gfx,commonwealth_2d,0,102,255,468,,
+RAA,countries/Reichskommisariat Australasien.txt,asian_gfx,asian_2d,115,115,115,979,0.4,0.7
+RAJ,countries/British Raj.txt,commonwealth_gfx,commonwealth_2d,170,10,10,439,0.6,0.1
+RAN,countries/Reichskommisariat Anden.txt,western_european_gfx,western_european_2d,115,115,115,494,0.4,0.7
+RAP,countries/Rapa Nui.txt,asian_gfx,asian_2d,,,,948,,
+RAR,countries/Reichskommisariat Arabien.txt,middle_eastern_gfx,middle_eastern_2d,115,115,115,291,0.4,0.7
+RAS,countries/Madras States.txt,commonwealth_gfx,commonwealth_2d,,,,982,,
+RCG,countries/Republic of Congo.txt,african_gfx,african_2d,,,,772,,
+RCO,countries/Reichskommisariat Kolumbus.txt,western_european_gfx,western_european_2d,115,115,115,695,0.4,0.7
+RGB,countries/Reichskommisariat Grossbritannien.txt,western_european_gfx,western_european_2d,115,115,115,126,0.4,0.7
+RHD,countries/Reichskommisariat Grosshindustan.txt,middle_eastern_gfx,middle_eastern_2d,115,115,115,439,0.4,0.7
+RHI,countries/Rhineland.txt,western_european_gfx,western_european_2d,0,153,51,51,0.75,
+RIF,countries/Rif.txt,middle_eastern_gfx,middle_eastern_2d,,,,290,,
+RIG,countries/Rio Grande.txt,southamerican_gfx,southamerican_2d,0,0,128,480,,
+RJP,countries/Rajputana.txt,commonwealth_gfx,commonwealth_2d,,,,433,,
+RKA,countries/Reichskommisariat Mittelafrika.txt,eastern_european_gfx,eastern_european_2d,115,115,115,546,0.4,0.7
+RKB,countries/Reichskommisariat Belgien.txt,western_european_gfx,western_european_2d,115,115,115,6,0.4,0.7
+RKC,countries/Reichskommisariat Balkan.txt,western_european_gfx,western_european_2d,115,115,115,109,0.4,0.7
+RKG,countries/Reichskommisariat Norwegen.txt,western_european_gfx,western_european_2d,115,115,115,110,0.4,0.7
+RKH,countries/Bohmen Mahren.txt,western_european_gfx,western_european_2d,115,115,115,9,0.4,0.7
+RKI,countries/Reichskommisariat Iberien.txt,western_european_gfx,western_european_2d,115,115,115,41,0.4,0.7
+RKK,countries/Reichskommisariat Kaukasien.txt,eastern_european_gfx,eastern_european_2d,115,115,115,231,0.4,0.7
+RKL,countries/Reichskommisariat Urals.txt,eastern_european_gfx,eastern_european_2d,115,115,115,251,0.4,0.7
+RKM,countries/Reichskommisariat Moskowien.txt,eastern_european_gfx,eastern_european_2d,115,115,115,219,0.4,0.7
+RKN,countries/Reichskommisariat Niederlande.txt,western_european_gfx,western_european_2d,115,115,115,7,0.4,0.7
+RKO,countries/Reichskommisariat Ostland.txt,eastern_european_gfx,eastern_european_2d,115,115,115,808,0.4,0.7
+RKT,countries/Reichskommisariat Turkestan.txt,eastern_european_gfx,eastern_european_2d,115,115,115,405,0.4,0.7
+RKU,countries/Reichskommisariat Ukraine.txt,eastern_european_gfx,eastern_european_2d,115,115,115,202,0.4,0.7
+RKV,countries/Reichskommisariat Klein Venedig.txt,western_european_gfx,western_european_2d,115,115,115,489,0.4,0.7
+RNA,countries/Reichskommisariat Nordafrika.txt,eastern_european_gfx,eastern_european_2d,115,115,115,458,0.4,0.7
+RNG,countries/Reorganized National Government.txt,asian_gfx,asian_2d,255,191,0,613,0.4,0.4
+ROA,countries/Reichskommisariat Ostasien.txt,asian_gfx,asian_2d,115,115,115,743,0.4,0.7
+ROM,countries/Romania.txt,eastern_european_gfx,eastern_european_2d,235,216,92,46,0.6,0.6
+RUS,countries/Reichskommisariat Nordamerika.txt,western_european_gfx,western_european_2d,115,115,115,395,0.4,0.7
+RWA,countries/Rwanda.txt,african_gfx,african_2d,,,,768,,
+SAB,countries/Sabah.txt,asian_gfx,asian_2d,0,172,230,1024,,
+SAF,countries/South Africa.txt,commonwealth_gfx,commonwealth_2d,,,,275,0.6,0.1
+SAM,countries/Samoa.txt,asian_gfx,asian_2d,,,,726,,
+SAR,countries/Sarawak.txt,asian_gfx,asian_2d,230,184,0,333,,
+SAU,countries/Saudi Arabia.txt,middle_eastern_gfx,middle_eastern_2d,171,190,152,292,,
+SAX,countries/Saxony.txt,western_european_gfx,western_european_2d,102,102,0,65,0.75,
+SCO,countries/Scotland.txt,commonwealth_gfx,commonwealth_2d,,,,121,,
+SEN,countries/Senegal.txt,african_gfx,african_2d,,,,272,,
+SER,countries/Serbia.txt,eastern_european_gfx,eastern_european_2d,,,,107,0.6,
+SHL,countries/Schleswig-Holstein.txt,western_european_gfx,western_european_2d,51,51,255,58,0.75,
+SHX,countries/Shanxi.txt,asian_gfx,asian_2d,9,171,190,615,0.65,0.4
+SIA,countries/Siam.txt,asian_gfx,asian_2d,171,190,152,289,,
+SIC,countries/Sichuan.txt,asian_gfx,asian_2d,0,96,128,1037,0.5,0.4
+SID,countries/Sidamo.txt,african_gfx,african_2d,,,,837,,
+SIE,countries/Sierra Leone.txt,african_gfx,african_2d,,,,700,,
+SIK,countries/Sinkiang.txt,asian_gfx,asian_2d,171,190,152,617,,
+SIL,countries/Silesia.txt,western_european_gfx,western_european_2d,,,,66,,
+SIN,countries/Sindh.txt,commonwealth_gfx,commonwealth_2d,,,,443,,
+SKK,countries/Sikkim.txt,asian_gfx,asian_2d,255,245,107,985,,
+SLO,countries/Slovakia.txt,eastern_european_gfx,eastern_european_2d,54,167,156,70,,
+SLV,countries/Slovenia.txt,eastern_european_gfx,eastern_european_2d,,,,853,,
+SMI,countries/Sami.txt,sami_gfx,sami_2d,,,,148,,
+SND,countries/Shandong.txt,asian_gfx,asian_2d,230,92,0,1038,0.5,0.4
+SNG,countries/Singapore.txt,asian_gfx,asian_2d,204,0,0,1021,,
+SOK,countries/Sokoto.txt,african_gfx,african_2d,,,,902,,
+SOL,countries/Solomon.txt,asian_gfx,asian_2d,,,,634,,
+SOM,countries/Somalia.txt,african_gfx,african_2d,,,,559,,
+SOV,countries/Soviet Union.txt,eastern_european_gfx,eastern_european_2d,125,13,24,219,0.5,0.3
+SPM,countries/Sardinia Piedmont.txt,western_european_gfx,western_european_2d,0,255,255,158,0.5,0.5
+SPR,countries/Spain.txt,southamerican_gfx,southamerican_2d,242,205,94,41,0.5,
+SRL,countries/Sri Lanka.txt,asian_gfx,asian_2d,,,,422,,
+SUD,countries/Sudan.txt,african_gfx,african_2d,,,,551,,
+SUR,countries/Suriname.txt,african_gfx,african_2d,,,,309,,
+SWE,countries/Sweden.txt,western_european_gfx,western_european_2d,36,132,247,141,0.47,0.05
+SWI,countries/Switzerland.txt,western_european_gfx,western_european_2d,33,14,19,3,0.85,
+SYR,countries/Syria.txt,middle_eastern_gfx,middle_eastern_2d,100,100,150,554,,
+TAH,countries/Tahiti.txt,asian_gfx,asian_2d,,,,641,,
+TAJ,countries/Tajikistan.txt,asian_gfx,asian_2d,,,,742,,
+TAN,countries/Tannu Tuva.txt,asian_gfx,asian_2d,152,130,191,329,,
+TAT,countries/Tatarstan.txt,eastern_european_gfx,eastern_european_2d,255,51,0,249,,
+TAY,countries/Taymyria.txt,asian_gfx,asian_2d,0,102,153,516,,
+THU,countries/Thuringia.txt,western_european_gfx,western_european_2d,102,153,255,60,0.75,
+TIB,countries/Tibet.txt,asian_gfx,asian_2d,171,190,152,757,,
+TIG,countries/Tigray.txt,african_gfx,african_2d,,,,842,,
+TML,countries/Timor Leste.txt,asian_gfx,asian_2d,128,0,0,721,,
+TMS,countries/Turkmenistan.txt,asian_gfx,asian_2d,,,,584,,
+TOG,countries/Togo.txt,african_gfx,african_2d,,,,777,,
+TOS,countries/Tuscany.txt,western_european_gfx,western_european_2d,255,128,128,162,0.5,0.5
+TRA,countries/Transylvania.txt,eastern_european_gfx,eastern_european_2d,,,,84,,
+TRI,countries/Trinidad and Tobago.txt,african_gfx,african_2d,,,,691,,
+TTS,countries/The Two Sicilies.txt,western_european_gfx,western_european_2d,230,230,0,117,0.5,0.5
+TUN,countries/Tunisia.txt,middle_eastern_gfx,middle_eastern_2d,,,,458,,
+TUR,countries/Turkey.txt,eastern_european_gfx,eastern_european_2d,171,190,152,49,0.5,0.3
+TZN,countries/Tanzania.txt,african_gfx,african_2d,,,,546,,
+UAE,countries/United Arab Emirates.txt,middle_eastern_gfx,middle_eastern_2d,,,,658,,
+UBD,countries/United Baltic Duchy.txt,eastern_european_gfx,eastern_european_2d,92,92,138,808,0.75,
+UDM,countries/Udmurtia.txt,eastern_european_gfx,eastern_european_2d,64,64,64,399,,
+UGA,countries/Uganda.txt,african_gfx,african_2d,,,,548,,
+UKR,countries/Ukraine.txt,eastern_european_gfx,eastern_european_2d,255,255,95,202,,
+URG,countries/Uruguay.txt,southamerican_gfx,southamerican_2d,171,190,152,300,0.39,0.12
+USA,countries/USA.txt,western_european_gfx,western_european_2d,67,123,237,361,0.75,0
+USB,countries/USB.txt,western_european_gfx,western_european_2d,167,123,237,361,0.75,0.5
+UZB,countries/Uzbekistan.txt,asian_gfx,asian_2d,,,,405,,
+VEN,countries/Venezula.txt,southamerican_gfx,southamerican_2d,171,190,152,307,,
+VGE,countries/Volga Germany.txt,western_european_gfx,western_european_2d,153,153,153,829,,
+VIN,countries/Vietnam.txt,asian_gfx,asian_2d,230,223,50,671,,
+VLA,countries/Vladivostok.txt,eastern_european_gfx,eastern_european_2d,255,204,0,408,,
+VOL,countries/Upper Volta.txt,african_gfx,african_2d,,,,778,,
+WES,countries/Western Sahara.txt,african_gfx,african_2d,,,,699,,
+WGR,countries/West Germany.txt,western_european_gfx,western_european_2d,120,110,89,64,0.7,
+WIS,countries/Western Indian States.txt,commonwealth_gfx,commonwealth_2d,,,,428,,
+WLA,countries/Welsh Argentina.txt,commonwealth_gfx,commonwealth_2d,,,,955,,
+WLS,countries/Wales.txt,commonwealth_gfx,commonwealth_2d,,,,122,,
+WPG,countries/West Papua.txt,asian_gfx,asian_2d,172,57,57,669,,
+WUR,countries/Wurtemberg.txt,western_european_gfx,western_european_2d,255,204,153,50,0.75,
+XIC,countries/Xian.txt,asian_gfx,asian_2d,43,92,181,744,0.5,0.45
+XSM,countries/Xibei San Ma.txt,asian_gfx,asian_2d,9,171,190,754,0.5,0.5
+YAK,countries/Yakutia.txt,asian_gfx,asian_2d,0,255,255,574,,
+YAM,countries/Yamalia.txt,asian_gfx,asian_2d,204,153,0,579,,
+YEM,countries/Yeman.txt,middle_eastern_gfx,middle_eastern_2d,155,101,107,293,0.8,0.1
+YUC,countries/Yucatan.txt,southamerican_gfx,southamerican_2d,255,26,26,474,,
+YUG,countries/Yugoslavia.txt,eastern_european_gfx,eastern_european_2d,72,73,126,107,0.6,
+YUN,countries/Yunnan.txt,asian_gfx,asian_2d,171,190,152,325,0.5,0.35
+ZAM,countries/Zambia.txt,african_gfx,african_2d,,,,771,,
+ZIM,countries/Zimbabwe.txt,african_gfx,commonwealth_2d,155,255,195,545,,

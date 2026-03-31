@@ -1,0 +1,64 @@
+# Operation Phase Equipment
+
+Source: `common/operation_phases/*.txt`
+
+| phase_key | equipment_key | amount |
+|---|---|---|
+| phase_1 | infantry_equipment | 1000 |
+| capture_cyphers_bribe | amount | 3 |
+| capture_cyphers_bribe | days | 30 |
+| capture_cyphers_raid | infantry_equipment | 500 |
+| capture_cyphers_raid | support_equipment | 100 |
+| capture_cyphers_smuggle | amount | 3 |
+| capture_cyphers_smuggle | days | 30 |
+| capture_cyphers_reverse_engineer | amount | 3 |
+| capture_cyphers_reverse_engineer | days | 30 |
+| collaboration_government_set_up_planning_committees | amount | 3 |
+| collaboration_government_set_up_planning_committees | days | 90 |
+| collaboration_government_train_paramilitary_forces | infantry_equipment | 1000 |
+| collaboration_government_contact_military_officers | amount | 3 |
+| collaboration_government_contact_military_officers | days | 30 |
+| coordinated_strike_scout_target | support_equipment | 100 |
+| coordinate_strike_mark_targets | support_equipment | 100 |
+| coordinated_strike_sabotage_communications | support_equipment | 100 |
+| coordinated_strike_direct_units | support_equipment | 100 |
+| coordinated_strike_occupy_bridges | infantry_equipment | 1000 |
+| exfiltration_air_pickup | transport_plane_equipment | 1 |
+| fake_intel_decoy_tanks | support_equipment | 500 |
+| fake_intel_radio_deception | support_equipment | 500 |
+| fake_intel_press_releases | amount | 3 |
+| fake_intel_press_releases | days | 30 |
+| fake_intel_utilize_double_agents | amount | 3 |
+| fake_intel_utilize_double_agents | days | 30 |
+| fake_intel_plant_evidence | support_equipment | 250 |
+| free_operative_free_in_transit | infantry_equipment | 200 |
+| free_operative_liberate_camp | infantry_equipment | 200 |
+| free_operative_smuggle_in_escape_gear | support_equipment | 50 |
+| heavy_water_infiltration | transport_plane_equipment | 2 |
+| bruneval_infiltration | transport_plane_equipment | 2 |
+| capture_tito_infiltration | transport_plane_equipment | 2 |
+| rescue_mussolini_infiltration | transport_plane_equipment | 2 |
+| infiltrate_military_bribe | amount | 3 |
+| infiltrate_military_bribe | days | 30 |
+| infiltration_paradrop | transport_plane_equipment | 1 |
+| infiltration_diplomatic | amount | 1 |
+| infiltration_diplomatic | days | 15 |
+| resistance_contacts_radio_circuits | support_equipment | 150 |
+| resistance_support_pidgeons | support_equipment | 50 |
+| resistance_support_arms_depots | support_equipment | 300 |
+| resistance_support_arms_depots | infantry_equipment | 2000 |
+| resistance_support_distribute_weapons | infantry_equipment | 5000 |
+| resistance_support_organize_training | amount | 2 |
+| resistance_support_organize_training | days | 45 |
+| resistance_support_coordinate_groups | amount | 2 |
+| resistance_support_coordinate_groups | days | 45 |
+| steal_blueprints_bribe | amount | 3 |
+| steal_blueprints_bribe | days | 30 |
+| steal_blueprints_steal_prototype | small_plane_airframe | 10 |
+| targeted_sabotage_plant_explosives | support_equipment | 500 |
+| targeted_sabotage_destroy_bridge | support_equipment | 500 |
+| targeted_sabotage_collapse_tunnel | support_equipment | 500 |
+| targeted_sabotage_remove_roadsigns | support_equipment | 50 |
+| targeted_sabotage_immobilize_rolling_stock | support_equipment | 250 |
+| targeted_sabotage_burn_storage | support_equipment | 250 |
+| targeted_sabotage_destroy_mining_equipment | support_equipment | 250 |
