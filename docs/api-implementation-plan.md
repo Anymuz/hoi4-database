@@ -24,14 +24,14 @@ Five issues identified during the design-vs-database audit:
 ## Progress Tracker
 
 ### Phase 0: Pre-Flight — SQL & Docs Fixes
-- [ ] 0.1 — Add `user_annotations` table to schema
-- [ ] 0.2 — Convert date-sensitive views to PostgreSQL functions
-- [ ] 0.3 — Update runbook spot-check counts
-- [ ] 0.4 — Verify SQL changes
+- [x] 0.1 — Add `user_annotations` table to schema
+- [x] 0.2 — Convert date-sensitive views to PostgreSQL functions
+- [x] 0.3 — Update runbook spot-check counts
+- [x] 0.4 — Verify SQL changes
 
 ### Phase 1: Project Scaffold & Core Infrastructure
-- [ ] 1.1 — Create directory structure
-- [ ] 1.2 — `requirements.txt`
+- [X] 1.1 — Create directory structure
+- [x] 1.2 — `requirements.txt`
 - [ ] 1.3 — `config.py`
 - [ ] 1.4 — `database.py`
 - [ ] 1.5 — `dependencies.py`
@@ -101,18 +101,20 @@ CREATE INDEX idx_annotations_entity
 
 Apply to live DB: `ALTER TABLE` or full reload.
 
-### Step 0.2 — Convert date-sensitive views to PostgreSQL functions
+### Step 0.2 — Convert 2 date-sensitive views to PostgreSQL functions
 
 **Design ref:** §5 (The Solution: PostgreSQL Functions)
 
-Convert these 3 views to `FUNCTION ... RETURNS TABLE` with `p_date DATE DEFAULT '1936-01-01'`:
+Convert these 2 views to `FUNCTION ... RETURNS TABLE` with `p_date DATE DEFAULT '1936-01-01'`:
 - `api_country_detail` — parameterise the `ownership_1936` and `tech_1936` CTEs
 - `api_state_detail` — parameterise `ownership_1936`, `resources_1936`, `state_buildings_1936`, `province_buildings_1936`
-- `api_country_technologies` — **keep as view** (already exposes `effective_date` as a column; routers will `WHERE effective_date <= $date`)
 
-The 3 military views (`api_country_divisions`, `api_country_naval`, `api_country_air`) are indirectly date-sensitive via the `oob_file` column — they stay as views. The API router filters by `oob_file LIKE '%_1936%'` (design §6.5).
+The remaining 12 views stay as views:
+- `api_country_technologies` already exposes `effective_date` as a column — the API router filters with `WHERE effective_date <= $date`
+- `api_country_divisions`, `api_country_naval`, `api_country_air` are filtered by `oob_file` name in the API router (design §6.5)
+- The other 8 views have no date sensitivity at all
 
-**Net change:** 2 views become functions, 1 view stays as-is with deviation documented, 11 views unchanged.
+**Net change:** 2 views become functions, 12 views unchanged.
 
 Update `sql/views.sql` accordingly, replacing the `CREATE OR REPLACE VIEW` statements with `CREATE OR REPLACE FUNCTION` for the two converted views.
 

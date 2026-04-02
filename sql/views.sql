@@ -1,6 +1,9 @@
--- HOI4 PostgreSQL API Views — 14 Views across 3 Slices
+-- HOI4 PostgreSQL API Views & Functions
 --
--- Slice A — Country & State:   api_country_detail, api_state_detail
+-- 2 functions (date-parameterised) + 12 views across 3 slices.
+--
+-- Slice A — Country & State:   api_country_detail (function),
+--                              api_state_detail (function)
 -- Slice B — Domain Catalogs:   api_country_technologies, api_technology_tree,
 --                              api_country_characters, api_country_divisions,
 --                              api_country_naval, api_country_air,
@@ -13,124 +16,172 @@
 -- Slice A — Country & State Detail
 -- ============================================================
 
-CREATE OR REPLACE VIEW api_country_detail AS
-WITH ownership_1936 AS (
-    SELECT soh.state_id, soh.owner_tag, COALESCE(soh.controller_tag, soh.owner_tag) AS controller_tag
-    FROM state_ownership_history soh
-    WHERE soh.effective_date = DATE '1936-01-01'
-),
-tech_1936 AS (
-    SELECT cst.country_tag, cst.technology_key, cst.dlc_source
-    FROM country_starting_technologies cst
-    WHERE cst.effective_date = DATE '1936-01-01'
-)
-SELECT
-    c.tag,
-    c.capital_state_id,
-    c.stability,
-    c.war_support,
-    c.graphical_culture,
-    c.graphical_culture_2d,
-    jsonb_build_object('r', c.color_r, 'g', c.color_g, 'b', c.color_b) AS color_rgb,
-    COALESCE((
-        SELECT jsonb_agg(
-            jsonb_build_object(
-                'state_id', o.state_id,
-                'state_name_key', s.state_name_key,
-                'controller_tag', o.controller_tag
-            )
-            ORDER BY o.state_id
-        )
-        FROM ownership_1936 o
-        JOIN states s ON s.state_id = o.state_id
-        WHERE o.owner_tag = c.tag
-    ), '[]'::jsonb) AS owned_states,
-    COALESCE((
-        SELECT jsonb_agg(
-            jsonb_build_object(
-                'technology_key', t.technology_key,
-                'dlc_source', t.dlc_source
-            )
-            ORDER BY t.technology_key, t.dlc_source
-        )
-        FROM tech_1936 t
-        WHERE t.country_tag = c.tag
-    ), '[]'::jsonb) AS starting_technologies
-FROM countries c;
+-- This is a FUNCTION, not a view. The difference:
+--   VIEW  = a saved query, always runs the same way, no parameters.
+--   FUNCTION = a saved query that accepts parameters (like a date).
+--
+-- p_date is the parameter. DEFAULT means "use 1936-01-01 if nothing is passed".
+-- RETURNS TABLE lists every column the function outputs (same columns the old view had).
+-- LANGUAGE sql means the body is plain SQL (not a different language).
+-- STABLE tells PostgreSQL "this function only reads data, never changes it"
+--    (helps the query planner optimise).
+-- $$ ... $$ is just the way PostgreSQL wraps the function body — think of $$
+--    as opening and closing quotes around the SQL.
+--
+-- How to call it:
+--   SELECT * FROM api_country_detail('1936-01-01');       -- 1936 start
+--   SELECT * FROM api_country_detail('1939-08-14');       -- 1939 start
+--   SELECT * FROM api_country_detail();                   -- defaults to 1936
 
-CREATE OR REPLACE VIEW api_state_detail AS
-WITH ownership_1936 AS (
-    SELECT soh.state_id, soh.owner_tag, COALESCE(soh.controller_tag, soh.owner_tag) AS controller_tag
-    FROM state_ownership_history soh
-    WHERE soh.effective_date = DATE '1936-01-01'
-),
-resources_1936 AS (
-    SELECT sr.state_id,
-           jsonb_agg(
-               jsonb_build_object('resource_key', sr.resource_key, 'amount', sr.amount)
-               ORDER BY sr.resource_key
-           ) AS resources
-    FROM state_resources sr
-    WHERE sr.effective_date = DATE '1936-01-01'
-    GROUP BY sr.state_id
-),
-state_buildings_1936 AS (
-    SELECT sb.state_id,
-           jsonb_agg(
-               jsonb_build_object('building_key', sb.building_key, 'level', sb.level)
-               ORDER BY sb.building_key
-           ) AS buildings
-    FROM state_buildings sb
-    WHERE sb.effective_date = DATE '1936-01-01'
-    GROUP BY sb.state_id
-),
-province_buildings_1936 AS (
-    SELECT pb.state_id,
-           jsonb_agg(
-               jsonb_build_object(
-                   'province_id', pb.province_id,
-                   'building_key', pb.building_key,
-                   'level', pb.level
-               )
-               ORDER BY pb.province_id, pb.building_key
-           ) AS province_buildings
-    FROM province_buildings pb
-    WHERE pb.effective_date = DATE '1936-01-01'
-    GROUP BY pb.state_id
-),
-state_province_list AS (
-    SELECT sp.state_id,
-           jsonb_agg(
-               jsonb_build_object(
-                   'province_id', p.province_id,
-                   'terrain', p.terrain,
-                   'is_coastal', p.is_coastal,
-                   'continent_id', p.continent_id
-               )
-               ORDER BY p.province_id
-           ) AS provinces
-    FROM state_provinces sp
-    JOIN provinces p ON p.province_id = sp.province_id
-    GROUP BY sp.state_id
+CREATE OR REPLACE FUNCTION api_country_detail(p_date DATE DEFAULT '1936-01-01')
+RETURNS TABLE (
+    tag              CHAR(3),
+    capital_state_id INT,
+    stability        NUMERIC,
+    war_support      NUMERIC,
+    graphical_culture    VARCHAR,
+    graphical_culture_2d VARCHAR,
+    color_rgb            JSONB,
+    owned_states         JSONB,
+    starting_technologies JSONB
 )
-SELECT
-    s.state_id,
-    s.state_name_key,
-    s.state_category,
-    s.manpower,
-    s.local_supplies,
-    o.owner_tag,
-    o.controller_tag,
-    COALESCE(r.resources, '[]'::jsonb) AS resources,
-    COALESCE(sb.buildings, '[]'::jsonb) AS state_buildings,
-    COALESCE(pb.province_buildings, '[]'::jsonb) AS province_buildings,
-    COALESCE(pl.provinces, '[]'::jsonb) AS provinces
-FROM states s
-LEFT JOIN ownership_1936 o ON o.state_id = s.state_id
-LEFT JOIN resources_1936 r ON r.state_id = s.state_id
-LEFT JOIN state_buildings_1936 sb ON sb.state_id = s.state_id
-LEFT JOIN province_buildings_1936 pb ON pb.state_id = s.state_id
-LEFT JOIN state_province_list pl ON pl.state_id = s.state_id;
+LANGUAGE sql STABLE AS $$
+    WITH ownership AS (
+        SELECT soh.state_id, soh.owner_tag, COALESCE(soh.controller_tag, soh.owner_tag) AS controller_tag
+        FROM state_ownership_history soh
+        WHERE soh.effective_date <= p_date
+    ),
+    tech AS (
+        SELECT cst.country_tag, cst.technology_key, cst.dlc_source
+        FROM country_starting_technologies cst
+        WHERE cst.effective_date <= p_date
+    )
+    SELECT
+        c.tag,
+        c.capital_state_id,
+        c.stability,
+        c.war_support,
+        c.graphical_culture,
+        c.graphical_culture_2d,
+        jsonb_build_object('r', c.color_r, 'g', c.color_g, 'b', c.color_b) AS color_rgb,
+        COALESCE((
+            SELECT jsonb_agg(
+                jsonb_build_object(
+                    'state_id', o.state_id,
+                    'state_name_key', s.state_name_key,
+                    'controller_tag', o.controller_tag
+                )
+                ORDER BY o.state_id
+            )
+            FROM ownership o
+            JOIN states s ON s.state_id = o.state_id
+            WHERE o.owner_tag = c.tag
+        ), '[]'::jsonb) AS owned_states,
+        COALESCE((
+            SELECT jsonb_agg(
+                jsonb_build_object(
+                    'technology_key', t.technology_key,
+                    'dlc_source', t.dlc_source
+                )
+                ORDER BY t.technology_key, t.dlc_source
+            )
+            FROM tech t
+            WHERE t.country_tag = c.tag
+        ), '[]'::jsonb) AS starting_technologies
+    FROM countries c;
+$$;
+
+-- Same pattern as api_country_detail above — function with a date parameter.
+-- See the comments on that function for explanation of the syntax.
+
+CREATE OR REPLACE FUNCTION api_state_detail(p_date DATE DEFAULT '1936-01-01')
+RETURNS TABLE (
+    state_id           INT,
+    state_name_key     VARCHAR,
+    state_category     VARCHAR,
+    manpower           INT,
+    local_supplies     NUMERIC,
+    owner_tag          CHAR(3),
+    controller_tag     CHAR(3),
+    resources          JSONB,
+    state_buildings    JSONB,
+    province_buildings JSONB,
+    provinces          JSONB
+)
+LANGUAGE sql STABLE AS $$
+    WITH ownership AS (
+        SELECT soh.state_id, soh.owner_tag, COALESCE(soh.controller_tag, soh.owner_tag) AS controller_tag
+        FROM state_ownership_history soh
+        WHERE soh.effective_date <= p_date
+    ),
+    resources_at_date AS (
+        SELECT sr.state_id,
+               jsonb_agg(
+                   jsonb_build_object('resource_key', sr.resource_key, 'amount', sr.amount)
+                   ORDER BY sr.resource_key
+               ) AS resources
+        FROM state_resources sr
+        WHERE sr.effective_date <= p_date
+        GROUP BY sr.state_id
+    ),
+    state_buildings_at_date AS (
+        SELECT sb.state_id,
+               jsonb_agg(
+                   jsonb_build_object('building_key', sb.building_key, 'level', sb.level)
+                   ORDER BY sb.building_key
+               ) AS buildings
+        FROM state_buildings sb
+        WHERE sb.effective_date <= p_date
+        GROUP BY sb.state_id
+    ),
+    province_buildings_at_date AS (
+        SELECT pb.state_id,
+               jsonb_agg(
+                   jsonb_build_object(
+                       'province_id', pb.province_id,
+                       'building_key', pb.building_key,
+                       'level', pb.level
+                   )
+                   ORDER BY pb.province_id, pb.building_key
+               ) AS province_buildings
+        FROM province_buildings pb
+        WHERE pb.effective_date <= p_date
+        GROUP BY pb.state_id
+    ),
+    state_province_list AS (
+        SELECT sp.state_id,
+               jsonb_agg(
+                   jsonb_build_object(
+                       'province_id', p.province_id,
+                       'terrain', p.terrain,
+                       'is_coastal', p.is_coastal,
+                       'continent_id', p.continent_id
+                   )
+                   ORDER BY p.province_id
+               ) AS provinces
+        FROM state_provinces sp
+        JOIN provinces p ON p.province_id = sp.province_id
+        GROUP BY sp.state_id
+    )
+    SELECT
+        s.state_id,
+        s.state_name_key,
+        s.state_category,
+        s.manpower,
+        s.local_supplies,
+        o.owner_tag,
+        o.controller_tag,
+        COALESCE(r.resources, '[]'::jsonb) AS resources,
+        COALESCE(sb.buildings, '[]'::jsonb) AS state_buildings,
+        COALESCE(pb.province_buildings, '[]'::jsonb) AS province_buildings,
+        COALESCE(pl.provinces, '[]'::jsonb) AS provinces
+    FROM states s
+    LEFT JOIN ownership o ON o.state_id = s.state_id
+    LEFT JOIN resources_at_date r ON r.state_id = s.state_id
+    LEFT JOIN state_buildings_at_date sb ON sb.state_id = s.state_id
+    LEFT JOIN province_buildings_at_date pb ON pb.state_id = s.state_id
+    LEFT JOIN state_province_list pl ON pl.state_id = s.state_id;
+$$;
 
 -- ============================================================
 -- Slice B — Technologies

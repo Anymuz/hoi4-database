@@ -1533,4 +1533,17 @@ CREATE INDEX ix_grand_doctrines_folder ON grand_doctrines (folder_key);
 CREATE INDEX ix_subdoctrines_track ON subdoctrines (track_key);
 CREATE INDEX ix_country_starting_doctrines_country ON country_starting_doctrines (country_tag);
 
+-- ============================================================
+-- User annotation table and index (as per design recommendations)
+-- ============================================================
+CREATE TABLE user_annotations (
+    annotation_id  SERIAL PRIMARY KEY,
+    entity_type    VARCHAR(50)  NOT NULL,
+    entity_key     VARCHAR(200) NOT NULL,
+    note           TEXT         NOT NULL,
+    created_at     TIMESTAMPTZ  NOT NULL DEFAULT now()
+);
+CREATE INDEX ix_user_annotations_entity ON user_annotations (entity_type, entity_key);
+
+-- End of schema definition
 COMMIT;

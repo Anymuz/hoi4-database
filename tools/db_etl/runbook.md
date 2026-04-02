@@ -177,11 +177,11 @@ psql -d hoi4 -c "
   FROM pg_stat_user_tables;" 
 
 # Spot-check key tables
-psql -d hoi4 -c "SELECT count(*) FROM countries;"       -- ~352
+psql -d hoi4 -c "SELECT count(*) FROM countries;"       -- ~428
 psql -d hoi4 -c "SELECT count(*) FROM states;"          -- ~1046
-psql -d hoi4 -c "SELECT count(*) FROM technologies;"    -- ~569
-psql -d hoi4 -c "SELECT count(*) FROM characters;"      -- ~5160
-psql -d hoi4 -c "SELECT count(*) FROM focuses;"         -- ~8900
+psql -d hoi4 -c "SELECT count(*) FROM technologies;"    -- ~574
+psql -d hoi4 -c "SELECT count(*) FROM characters;"      -- ~5138
+psql -d hoi4 -c "SELECT count(*) FROM focuses;"         -- ~9906
 
 # FK integrity check (all should return rows)
 psql -d hoi4 -c "
