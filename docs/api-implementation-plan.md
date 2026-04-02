@@ -37,14 +37,14 @@ Five issues identified during the design-vs-database audit:
 - [ ] 1.5 — `dependencies.py`
 - [ ] 1.6 — `main.py`
 - [ ] 1.7 — `.env.example`
-- [ ] 🧪 Test gate: health, openapi, date validation
+- [ ] Test gate: health, openapi, date validation
 
 ### Phase 2: Slice A — Countries & States (Date-Sensitive)
 - [ ] 2.1 — Pydantic schemas (country, state)
 - [ ] 2.2 — Countries router
 - [ ] 2.3 — States router
 - [ ] 2.4 — Register routers in `main.py`
-- [ ] 🧪 Test gate: list, detail, 404, pagination, date filtering
+- [ ] Test gate: list, detail, 404, pagination, date filtering
 
 ### Phase 3: Slice B — Domain Catalogs (8 routers)
 - [ ] 3.1 — Technologies (schemas + router)
@@ -54,25 +54,25 @@ Five issues identified during the design-vs-database audit:
 - [ ] 3.5 — Equipment (schemas + router)
 - [ ] 3.6 — Ideas (schemas + router)
 - [ ] 3.7 — Register all Phase 3 routers
-- [ ] 🧪 Test gate: all 8 routers with filters and nested models
+- [ ] Test gate: all 8 routers with filters and nested models
 
 ### Phase 4: Slice C — DLC Systems + Annotations (Read/Write)
 - [ ] 4.1 — DLC router (MIOs, operations, BoP)
 - [ ] 4.2 — Annotations router (CRUD)
 - [ ] 4.3 — Register routers in `main.py`
-- [ ] 🧪 Test gate: DLC reads + annotation CRUD lifecycle
+- [ ] Test gate: DLC reads + annotation CRUD lifecycle
 
 ### Phase 5: GraphQL Layer
 - [ ] 5.1 — Strawberry types
 - [ ] 5.2 — Resolvers
 - [ ] 5.3 — Schema & mount
-- [ ] 🧪 Test gate: all queries, field selection, date params
+- [ ] Test gate: all queries, field selection, date params
 
 ### Phase 6: Polish & Integration Testing
 - [ ] 6.1 — CORS configuration
 - [ ] 6.2 — API README
 - [ ] 6.3 — Update repo-level docs
-- [ ] 🧪 Final test gate: full suite + manual smoke
+- [ ] Final test gate: full suite + manual smoke
 
 ---
 
@@ -219,7 +219,7 @@ pytest-asyncio>=0.24
 DATABASE_URL=postgresql://hoi4:hoi4pass@localhost:5432/hoi4
 ```
 
-### 🧪 Test Gate: Phase 1
+### Test Gate: Phase 1
 
 **Scope:** Infrastructure boots correctly, pool connects, health check responds.
 
@@ -295,7 +295,7 @@ app.include_router(countries.router)
 app.include_router(states.router)
 ```
 
-### 🧪 Test Gate: Phase 2
+### Test Gate: Phase 2
 
 **Scope:** Date-sensitive endpoints work correctly with both bookmarks.
 
@@ -410,7 +410,7 @@ Router (`routers/ideas.py`):
 
 ### Step 3.7 — Register all Phase 3 routers in `main.py`
 
-### 🧪 Test Gate: Phase 3
+### Test Gate: Phase 3
 
 **Scope:** All Slice B endpoints return correct data.
 
@@ -479,7 +479,7 @@ Router (`routers/annotations.py`):
 
 ### Step 4.3 — Register routers in `main.py`
 
-### 🧪 Test Gate: Phase 4
+### Test Gate: Phase 4
 
 ```
 tests/
@@ -564,7 +564,7 @@ graphql_app = GraphQLRouter(schema)
 app.include_router(graphql_app, prefix="/graphql")
 ```
 
-### 🧪 Test Gate: Phase 5
+### Test Gate: Phase 5
 
 ```
 tests/
@@ -623,7 +623,7 @@ Update the following to reflect the API's existence:
 - `.github/copilot-instructions.md` — update "NOT YET DONE" section, add API paths to repository structure
 - `tools/db_etl/runbook.md` — mention API views → functions change
 
-### 🧪 Final Test Gate: Full Integration
+### Final Test Gate: Full Integration
 
 Run the complete test suite:
 
