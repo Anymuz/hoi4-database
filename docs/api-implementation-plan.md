@@ -21,15 +21,58 @@ Five issues identified during the design-vs-database audit:
 
 ---
 
-## Implementation Phases
+## Progress Tracker
 
 ### Phase 0: Pre-Flight — SQL & Docs Fixes
+- [ ] 0.1 — Add `user_annotations` table to schema
+- [ ] 0.2 — Convert date-sensitive views to PostgreSQL functions
+- [ ] 0.3 — Update runbook spot-check counts
+- [ ] 0.4 — Verify SQL changes
+
 ### Phase 1: Project Scaffold & Core Infrastructure
+- [ ] 1.1 — Create directory structure
+- [ ] 1.2 — `requirements.txt`
+- [ ] 1.3 — `config.py`
+- [ ] 1.4 — `database.py`
+- [ ] 1.5 — `dependencies.py`
+- [ ] 1.6 — `main.py`
+- [ ] 1.7 — `.env.example`
+- [ ] 🧪 Test gate: health, openapi, date validation
+
 ### Phase 2: Slice A — Countries & States (Date-Sensitive)
+- [ ] 2.1 — Pydantic schemas (country, state)
+- [ ] 2.2 — Countries router
+- [ ] 2.3 — States router
+- [ ] 2.4 — Register routers in `main.py`
+- [ ] 🧪 Test gate: list, detail, 404, pagination, date filtering
+
 ### Phase 3: Slice B — Domain Catalogs (8 routers)
+- [ ] 3.1 — Technologies (schemas + router)
+- [ ] 3.2 — Characters (schemas + router)
+- [ ] 3.3 — Military — land / naval / air (schemas + router)
+- [ ] 3.4 — Focus Trees (schemas + router)
+- [ ] 3.5 — Equipment (schemas + router)
+- [ ] 3.6 — Ideas (schemas + router)
+- [ ] 3.7 — Register all Phase 3 routers
+- [ ] 🧪 Test gate: all 8 routers with filters and nested models
+
 ### Phase 4: Slice C — DLC Systems + Annotations (Read/Write)
+- [ ] 4.1 — DLC router (MIOs, operations, BoP)
+- [ ] 4.2 — Annotations router (CRUD)
+- [ ] 4.3 — Register routers in `main.py`
+- [ ] 🧪 Test gate: DLC reads + annotation CRUD lifecycle
+
 ### Phase 5: GraphQL Layer
+- [ ] 5.1 — Strawberry types
+- [ ] 5.2 — Resolvers
+- [ ] 5.3 — Schema & mount
+- [ ] 🧪 Test gate: all queries, field selection, date params
+
 ### Phase 6: Polish & Integration Testing
+- [ ] 6.1 — CORS configuration
+- [ ] 6.2 — API README
+- [ ] 6.3 — Update repo-level docs
+- [ ] 🧪 Final test gate: full suite + manual smoke
 
 ---
 
