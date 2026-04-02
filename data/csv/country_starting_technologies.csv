@@ -78,10 +78,8 @@ AFG,gwtank,AFG - Afghanistan.txt
 AFG,basic_light_tank,AFG - Afghanistan.txt
 AFG,gwtank_chassis,AFG - Afghanistan.txt
 AFG,gw_artillery,AFG - Afghanistan.txt
-AFG,gw_artillery,AFG - Afghanistan.txt
 AFG,early_fighter,AFG - Afghanistan.txt
 AFG,CAS1,AFG - Afghanistan.txt
-AFG,gw_artillery,AFG - Afghanistan.txt
 AFG,electronic_mechanical_engineering,AFG - Afghanistan.txt
 AFG,radio,AFG - Afghanistan.txt
 AFG,mechanical_computing,AFG - Afghanistan.txt
@@ -401,7 +399,6 @@ ASY,tech_support,ASY - Assyria.txt
 ASY,tech_recon,ASY - Assyria.txt
 ASY,infantry_weapons2,ASY - Assyria.txt
 ASY,support_weapons,ASY - Assyria.txt
-ASY,gw_artillery,ASY - Assyria.txt
 ASY,electronic_mechanical_engineering,ASY - Assyria.txt
 ASY,radio,ASY - Assyria.txt
 ASY,mechanical_computing,ASY - Assyria.txt
@@ -595,10 +592,6 @@ BEG,dispersed_industry2,BEG - Benishangul-Gumuz.txt
 BEL,armored_car1,BEL - Belgium.txt
 BEL,rangers_tech,BEL - Belgium.txt
 BEL,BEL_chasseurs_ardennais_ncns,BEL - Belgium.txt
-BEL,rangers_tech,BEL - Belgium.txt
-BEL,BEL_chasseurs_ardennais_ncns,BEL - Belgium.txt
-BEL,armored_car1,BEL - Belgium.txt
-BEL,BEL_chasseurs_ardennais,BEL - Belgium.txt
 BEL,BEL_chasseurs_ardennais,BEL - Belgium.txt
 BEL,bicycle_infantry,BEL - Belgium.txt
 BEL,early_fighter,BEL - Belgium.txt
@@ -631,7 +624,6 @@ BEL,iw_small_airframe,BEL - Belgium.txt
 BEL,iw_medium_airframe,BEL - Belgium.txt
 BEL,iw_large_airframe,BEL - Belgium.txt
 BEL,bba_early_transport_plane,BEL - Belgium.txt
-BEL,early_fighter,BEL - Belgium.txt
 BEL,cv_early_fighter,BEL - Belgium.txt
 BEL,cv_naval_bomber1,BEL - Belgium.txt
 BEL,naval_bomber1,BEL - Belgium.txt
@@ -639,9 +631,7 @@ BEL,early_bomber,BEL - Belgium.txt
 BEL,CAS1,BEL - Belgium.txt
 BEL,early_transport_plane,BEL - Belgium.txt
 BEL,fighter1,BEL - Belgium.txt
-BEL,gw_artillery,BEL - Belgium.txt
 BEL,interwar_artillery,BEL - Belgium.txt
-BEL,interwar_antitank,BEL - Belgium.txt
 BEL,interwar_antiair,BEL - Belgium.txt
 BEL,infantry_weapons2,BEL - Belgium.txt
 BEL,support_weapons,BEL - Belgium.txt
@@ -671,8 +661,6 @@ BHR,construction1,BHR - Bahrain.txt
 BHR,construction2,BHR - Bahrain.txt
 BHR,dispersed_industry,BHR - Bahrain.txt
 BHR,dispersed_industry2,BHR - Bahrain.txt
-BHU,infantry_weapons,BHU - Bhutan.txt
-BHU,tech_mountaineers,BHU - Bhutan.txt
 BHU,infantry_weapons,BHU - Bhutan.txt
 BHU,tech_mountaineers,BHU - Bhutan.txt
 BHU,electronic_mechanical_engineering,BHU - Bhutan.txt
@@ -954,11 +942,9 @@ BRI,tactical_bomber2,BRI - Brittany.txt
 BRI,strategic_bomber1,BRI - Brittany.txt
 BRI,cv_fighter1,BRI - Brittany.txt
 BRI,cv_CAS1,BRI - Brittany.txt
-BRI,improved_light_tank,BRI - Brittany.txt
 BRI,basic_medium_tank,BRI - Brittany.txt
 BRI,basic_heavy_tank,BRI - Brittany.txt
 BRI,basic_battleship,BRI - Brittany.txt
-BRI,basic_battlecruiser,BRI - Brittany.txt
 BRI,improved_ship_hull_light,BRI - Brittany.txt
 BRI,improved_ship_hull_heavy,BRI - Brittany.txt
 BRI,basic_ship_hull_carrier,BRI - Brittany.txt
@@ -1215,12 +1201,8 @@ CAN,basic_light_battery,CAN - Canada.txt
 CAN,basic_torpedo,CAN - Canada.txt
 CAN,basic_depth_charges,CAN - Canada.txt
 CAN,mtg_transport,CAN - Canada.txt
-CAN,iw_small_airframe,CAN - Canada.txt
 CAN,iw_medium_airframe,CAN - Canada.txt
-CAN,aa_lmg,CAN - Canada.txt
 CAN,early_bombs,CAN - Canada.txt
-CAN,engines_1,CAN - Canada.txt
-CAN,bba_early_transport_plane,CAN - Canada.txt
 CAN,fighter1,CAN - Canada.txt
 CAN,interwar_artillery,CAN - Canada.txt
 CAN,interwar_antitank,CAN - Canada.txt
@@ -1244,7 +1226,6 @@ CAN,construction3,CAN - Canada.txt
 CAN,dispersed_industry,CAN - Canada.txt
 CAN,dispersed_industry2,CAN - Canada.txt
 CAN,dispersed_industry3,CAN - Canada.txt
-CAN,basic_light_battery,CAN - Canada.txt
 CAN,sonar,CAN - Canada.txt
 CAN,improved_sonar,CAN - Canada.txt
 CAN,improved_depth_charges,CAN - Canada.txt
@@ -1363,10 +1344,8 @@ CHI,coastal_defense_ships,CHI - China.txt
 CHI,tech_support,CHI - China.txt
 CHI,tech_trucks,CHI - China.txt
 CHI,motorised_infantry,CHI - China.txt
-CHI,tech_support,CHI - China.txt
 CHI,tech_recon,CHI - China.txt
 CHI,tech_engineers,CHI - China.txt
-CHI,tech_trucks,CHI - China.txt
 CHI,electronic_mechanical_engineering,CHI - China.txt
 CHI,radio,CHI - China.txt
 CHI,mechanical_computing,CHI - China.txt
@@ -1753,14 +1732,11 @@ COR,tactical_bomber2,COR - Corsica.txt
 COR,strategic_bomber1,COR - Corsica.txt
 COR,cv_fighter1,COR - Corsica.txt
 COR,cv_CAS1,COR - Corsica.txt
-COR,improved_light_tank,COR - Corsica.txt
 COR,basic_medium_tank,COR - Corsica.txt
 COR,basic_heavy_tank,COR - Corsica.txt
-COR,improved_light_tank_chassis,COR - Corsica.txt
 COR,basic_medium_tank_chassis,COR - Corsica.txt
 COR,basic_heavy_tank_chassis,COR - Corsica.txt
 COR,basic_battleship,COR - Corsica.txt
-COR,basic_battlecruiser,COR - Corsica.txt
 COR,improved_ship_hull_light,COR - Corsica.txt
 COR,improved_ship_hull_heavy,COR - Corsica.txt
 COR,basic_ship_hull_carrier,COR - Corsica.txt
@@ -2134,7 +2110,6 @@ DEN,basic_torpedo,DEN - Denmark.txt
 DEN,coastal_defense_ships,DEN - Denmark.txt
 DEN,mtg_transport,DEN - Denmark.txt
 DEN,early_bomber,DEN - Denmark.txt
-DEN,gw_artillery,DEN - Denmark.txt
 DEN,interwar_artillery,DEN - Denmark.txt
 DEN,infantry_weapons2,DEN - Denmark.txt
 DEN,support_weapons,DEN - Denmark.txt
@@ -2384,14 +2359,11 @@ ENG,mtg_transport,ENG - Britain.txt
 ENG,basic_fire_control_system,ENG - Britain.txt
 ENG,basic_dp_light_battery,ENG - Britain.txt
 ENG,coastal_defense_ships,ENG - Britain.txt
-ENG,basic_small_airframe,ENG - Britain.txt
 ENG,improved_small_airframe,ENG - Britain.txt
-ENG,basic_medium_airframe,ENG - Britain.txt
 ENG,basic_large_airframe,ENG - Britain.txt
 ENG,aa_cannon_1,ENG - Britain.txt
 ENG,engines_3,ENG - Britain.txt
 ENG,range_improvements,ENG - Britain.txt
-ENG,air_torpedoe_1,ENG - Britain.txt
 ENG,fighter1,ENG - Britain.txt
 ENG,fighter2,ENG - Britain.txt
 ENG,heavy_fighter1,ENG - Britain.txt
@@ -2408,8 +2380,6 @@ ENG,interwar_antitank,ENG - Britain.txt
 ENG,infantry_weapons2,ENG - Britain.txt
 ENG,support_weapons,ENG - Britain.txt
 ENG,support_weapons2,ENG - Britain.txt
-ENG,electronic_mechanical_engineering,ENG - Britain.txt
-ENG,radio,ENG - Britain.txt
 ENG,cavity_magnatron,ENG - Britain.txt
 ENG,centimetric_radar,ENG - Britain.txt
 ENG,mechanical_computing,ENG - Britain.txt
@@ -2448,7 +2418,6 @@ ENG,basic_ship_hull_submarine,ENG - Britain.txt
 ENG,improved_ship_hull_submarine,ENG - Britain.txt
 ENG,improved_ship_hull_light,ENG - Britain.txt
 ENG,improved_ship_hull_cruiser,ENG - Britain.txt
-ENG,basic_ship_hull_heavy,ENG - Britain.txt
 ENG,improved_ship_hull_carrier,ENG - Britain.txt
 ENG,advanced_dp_light_battery,ENG - Britain.txt
 ENG,improved_sonar,ENG - Britain.txt
@@ -2822,20 +2791,14 @@ FRA,construction3,FRA - France.txt
 FRA,dispersed_industry,FRA - France.txt
 FRA,dispersed_industry2,FRA - France.txt
 FRA,dispersed_industry3,FRA - France.txt
-FRA,improved_light_tank,FRA - France.txt
 FRA,basic_medium_tank,FRA - France.txt
-FRA,basic_heavy_tank,FRA - France.txt
-FRA,improved_light_tank_chassis,FRA - France.txt
 FRA,basic_medium_tank_chassis,FRA - France.txt
-FRA,basic_heavy_tank_chassis,FRA - France.txt
 FRA,basic_battleship,FRA - France.txt
-FRA,basic_battlecruiser,FRA - France.txt
 FRA,improved_ship_hull_light,FRA - France.txt
 FRA,improved_ship_hull_heavy,FRA - France.txt
 FRA,basic_ship_hull_carrier,FRA - France.txt
 FRA,improved_heavy_armor_scheme,FRA - France.txt
 FRA,improved_light_battery,FRA - France.txt
-FRA,basic_heavy_battery,FRA - France.txt
 FRA,improved_ship_torpedo_launcher,FRA - France.txt
 FSA,infantry_weapons,FSA - Federation of South Arabia.txt
 FSM,infantry_weapons,FSM - Micronesia.txt
@@ -3138,14 +3101,12 @@ GER,dispersed_industry4,GER - Germany.txt
 GER,basic_fortification_tech,GER - Germany.txt
 GER,basic_medium_tank,GER - Germany.txt
 GER,basic_medium_tank_chassis,GER - Germany.txt
-GER,basic_heavy_cruiser,GER - Germany.txt
 GER,improved_heavy_cruiser,GER - Germany.txt
 GER,improved_battleship,GER - Germany.txt
 GER,early_carrier,GER - Germany.txt
 GER,basic_carrier,GER - Germany.txt
 GER,improved_carrier,GER - Germany.txt
 GER,improved_ship_hull_cruiser,GER - Germany.txt
-GER,basic_ship_hull_heavy,GER - Germany.txt
 GER,early_ship_hull_carrier,GER - Germany.txt
 GER,basic_ship_hull_carrier,GER - Germany.txt
 GER,improved_heavy_battery,GER - Germany.txt
@@ -3254,13 +3215,9 @@ GRE,basic_torpedo,GRE - Greece.txt
 GRE,coastal_defense_ships,GRE - Greece.txt
 GRE,pre_dreadnoughts,GRE - Greece.txt
 GRE,mtg_transport,GRE - Greece.txt
-GRE,early_fighter,GRE - Greece.txt
-GRE,early_bomber,GRE - Greece.txt
 GRE,CAS1,GRE - Greece.txt
 GRE,naval_bomber1,GRE - Greece.txt
-GRE,tech_support,GRE - Greece.txt
 GRE,tech_engineers2,GRE - Greece.txt
-GRE,tech_recon,GRE - Greece.txt
 GRE,interwar_artillery,GRE - Greece.txt
 GRE,interwar_antitank,GRE - Greece.txt
 GRE,infantry_weapons1,GRE - Greece.txt
@@ -3273,8 +3230,6 @@ GRE,computing_machine,GRE - Greece.txt
 GRE,basic_machine_tools,GRE - Greece.txt
 GRE,improved_machine_tools,GRE - Greece.txt
 GRE,advanced_machine_tools,GRE - Greece.txt
-GRE,synth_oil_experiments,GRE - Greece.txt
-GRE,fuel_silos,GRE - Greece.txt
 GRE,oil_processing,GRE - Greece.txt
 GRE,improved_oil_processing,GRE - Greece.txt
 GRE,construction1,GRE - Greece.txt
@@ -3402,7 +3357,6 @@ HAN,improved_light_tank_chassis,HAN - Hanover.txt
 HAN,basic_heavy_tank_chassis,HAN - Hanover.txt
 HAN,transport,HAN - Hanover.txt
 HAN,mtg_transport,HAN - Hanover.txt
-HAN,improved_light_tank,HAN - Hanover.txt
 HAN,basic_medium_tank,HAN - Hanover.txt
 HAN,CAS2,HAN - Hanover.txt
 HAN,heavy_fighter1,HAN - Hanover.txt
@@ -3574,7 +3528,6 @@ HOL,interwar_artillery,HOL - Holland.txt
 HOL,interwar_antitank,HOL - Holland.txt
 HOL,infantry_weapons2,HOL - Holland.txt
 HOL,support_weapons,HOL - Holland.txt
-HOL,marines,HOL - Holland.txt
 HOL,electronic_mechanical_engineering,HOL - Holland.txt
 HOL,radio,HOL - Holland.txt
 HOL,mechanical_computing,HOL - Holland.txt
@@ -3646,14 +3599,6 @@ HUN,fuel_silos,HUN - Hungary.txt
 HUN,basic_train,HUN - Hungary.txt
 HUN,gwtank,HUN - Hungary.txt
 HUN,gwtank_chassis,HUN - Hungary.txt
-HUN,infantry_weapons,HUN - Hungary.txt
-HUN,infantry_weapons1,HUN - Hungary.txt
-HUN,tech_support,HUN - Hungary.txt
-HUN,tech_recon,HUN - Hungary.txt
-HUN,tech_trucks,HUN - Hungary.txt
-HUN,gw_artillery,HUN - Hungary.txt
-HUN,fuel_silos,HUN - Hungary.txt
-HUN,basic_train,HUN - Hungary.txt
 HUN,interwar_artillery,HUN - Hungary.txt
 HUN,interwar_antitank,HUN - Hungary.txt
 HUN,interwar_antiair,HUN - Hungary.txt
@@ -3680,21 +3625,13 @@ HUN,dispersed_industry,HUN - Hungary.txt
 HUN,dispersed_industry2,HUN - Hungary.txt
 HUN,fuel_refining,HUN - Hungary.txt
 HUN,armored_car1,HUN - Hungary.txt
-HUN,iw_small_airframe,HUN - Hungary.txt
 HUN,basic_small_airframe,HUN - Hungary.txt
 HUN,aircraft_construction,HUN - Hungary.txt
 HUN,engines_2,HUN - Hungary.txt
-HUN,engines_1,HUN - Hungary.txt
-HUN,early_bombs,HUN - Hungary.txt
-HUN,aa_lmg,HUN - Hungary.txt
 HUN,fighter1,HUN - Hungary.txt
 HUN,early_bomber,HUN - Hungary.txt
 HUN,tactical_bomber1,HUN - Hungary.txt
-HUN,CAS1,HUN - Hungary.txt
-HUN,photo_reconnaisance,HUN - Hungary.txt
 HUN,basic_light_tank,HUN - Hungary.txt
-HUN,gwtank,HUN - Hungary.txt
-HUN,gwtank_chassis,HUN - Hungary.txt
 HUN,basic_light_tank_chassis,HUN - Hungary.txt
 HYD,infantry_weapons,HYD - Hyderabad.txt
 HYD,infantry_weapons1,HYD - Hyderabad.txt
@@ -3780,24 +3717,6 @@ ICE,construction1,ICE - Iceland.txt
 ICE,construction2,ICE - Iceland.txt
 ICE,dispersed_industry,ICE - Iceland.txt
 ICE,dispersed_industry2,ICE - Iceland.txt
-ICE,gw_artillery,ICE - Iceland.txt
-ICE,interwar_artillery,ICE - Iceland.txt
-ICE,interwar_antiair,ICE - Iceland.txt
-ICE,infantry_weapons2,ICE - Iceland.txt
-ICE,support_weapons,ICE - Iceland.txt
-ICE,tech_trucks,ICE - Iceland.txt
-ICE,electronic_mechanical_engineering,ICE - Iceland.txt
-ICE,radio,ICE - Iceland.txt
-ICE,mechanical_computing,ICE - Iceland.txt
-ICE,computing_machine,ICE - Iceland.txt
-ICE,basic_machine_tools,ICE - Iceland.txt
-ICE,improved_machine_tools,ICE - Iceland.txt
-ICE,advanced_machine_tools,ICE - Iceland.txt
-ICE,fuel_silos,ICE - Iceland.txt
-ICE,construction1,ICE - Iceland.txt
-ICE,construction2,ICE - Iceland.txt
-ICE,dispersed_industry,ICE - Iceland.txt
-ICE,dispersed_industry2,ICE - Iceland.txt
 IMO,infantry_weapons,IMO - Omani Imamate.txt
 IMO,tech_trucks,IMO - Omani Imamate.txt
 IMO,camelry,IMO - Omani Imamate.txt
@@ -3848,7 +3767,6 @@ INS,basic_ship_hull_cruiser,INS - Indonesia.txt
 INS,basic_battery,INS - Indonesia.txt
 INS,interwar_artillery,INS - Indonesia.txt
 INS,interwar_antiair,INS - Indonesia.txt
-INS,tech_recon,INS - Indonesia.txt
 INS,infantry_weapons2,INS - Indonesia.txt
 INS,support_weapons,INS - Indonesia.txt
 INS,electronic_mechanical_engineering,INS - Indonesia.txt
@@ -3913,7 +3831,6 @@ IRQ,tech_support,IRQ - Iraq.txt
 IRQ,tech_recon,IRQ - Iraq.txt
 IRQ,infantry_weapons2,IRQ - Iraq.txt
 IRQ,support_weapons,IRQ - Iraq.txt
-IRQ,gw_artillery,IRQ - Iraq.txt
 IRQ,electronic_mechanical_engineering,IRQ - Iraq.txt
 IRQ,radio,IRQ - Iraq.txt
 IRQ,mechanical_computing,IRQ - Iraq.txt
@@ -4042,7 +3959,6 @@ ITA,basic_submarine,ITA - Italy.txt
 ITA,basic_destroyer,ITA - Italy.txt
 ITA,improved_destroyer,ITA - Italy.txt
 ITA,basic_light_cruiser,ITA - Italy.txt
-ITA,basic_battleship,ITA - Italy.txt
 ITA,improved_battleship,ITA - Italy.txt
 ITZ,early_fighter,ITZ - Itza.txt
 ITZ,cv_early_fighter,ITZ - Itza.txt
@@ -4199,12 +4115,10 @@ JAP,concentrated_industry,JAP - Japan.txt
 JAP,concentrated_industry2,JAP - Japan.txt
 JAP,concentrated_industry3,JAP - Japan.txt
 JAP,improved_ship_hull_submarine,JAP - Japan.txt
-JAP,basic_ship_hull_light,JAP - Japan.txt
 JAP,improved_ship_hull_light,JAP - Japan.txt
 JAP,improved_ship_hull_cruiser,JAP - Japan.txt
 JAP,improved_ship_hull_carrier,JAP - Japan.txt
 JAP,improved_submarine,JAP - Japan.txt
-JAP,basic_destroyer,JAP - Japan.txt
 JAP,improved_destroyer,JAP - Japan.txt
 JAP,improved_heavy_cruiser,JAP - Japan.txt
 JAP,improved_carrier,JAP - Japan.txt
@@ -4602,7 +4516,6 @@ KOM,early_fighter,KOM - Komi Republic.txt
 KOM,fighter1,KOM - Komi Republic.txt
 KOM,early_bomber,KOM - Komi Republic.txt
 KOM,strategic_bomber1,KOM - Komi Republic.txt
-KOM,naval_bomber1,KOM - Komi Republic.txt
 KOM,gwtank,KOM - Komi Republic.txt
 KOM,basic_light_tank,KOM - Komi Republic.txt
 KOM,gwtank_chassis,KOM - Komi Republic.txt
@@ -4727,14 +4640,11 @@ KSH,tactical_bomber2,KSH - Kashubia.txt
 KSH,strategic_bomber1,KSH - Kashubia.txt
 KSH,cv_fighter1,KSH - Kashubia.txt
 KSH,cv_CAS1,KSH - Kashubia.txt
-KSH,improved_light_tank,KSH - Kashubia.txt
 KSH,basic_medium_tank,KSH - Kashubia.txt
 KSH,basic_heavy_tank,KSH - Kashubia.txt
-KSH,improved_light_tank_chassis,KSH - Kashubia.txt
 KSH,basic_medium_tank_chassis,KSH - Kashubia.txt
 KSH,basic_heavy_tank_chassis,KSH - Kashubia.txt
 KSH,basic_battleship,KSH - Kashubia.txt
-KSH,basic_battlecruiser,KSH - Kashubia.txt
 KSH,improved_ship_hull_light,KSH - Kashubia.txt
 KSH,improved_ship_hull_heavy,KSH - Kashubia.txt
 KSH,basic_ship_hull_carrier,KSH - Kashubia.txt
@@ -5039,7 +4949,6 @@ LIT,aa_lmg,LIT - Lithuania.txt
 LIT,early_bombs,LIT - Lithuania.txt
 LIT,early_bomber,LIT - Lithuania.txt
 LIT,tech_engineers,LIT - Lithuania.txt
-LIT,gw_artillery,LIT - Lithuania.txt
 LIT,interwar_artillery,LIT - Lithuania.txt
 LIT,interwar_antiair,LIT - Lithuania.txt
 LIT,support_weapons,LIT - Lithuania.txt
@@ -5151,12 +5060,8 @@ MAL,early_ship_hull_heavy,MAL - Malaysia.txt
 MAL,early_ship_hull_carrier,MAL - Malaysia.txt
 MAL,basic_battery,MAL - Malaysia.txt
 MAL,interwar_artillery,MAL - Malaysia.txt
-MAL,interwar_antiair,MAL - Malaysia.txt
-MAL,tech_recon,MAL - Malaysia.txt
 MAL,infantry_weapons2,MAL - Malaysia.txt
 MAL,support_weapons,MAL - Malaysia.txt
-MAL,electronic_mechanical_engineering,MAL - Malaysia.txt
-MAL,radio,MAL - Malaysia.txt
 MAL,mechanical_computing,MAL - Malaysia.txt
 MAL,basic_machine_tools,MAL - Malaysia.txt
 MAL,improved_machine_tools,MAL - Malaysia.txt
@@ -5958,7 +5863,6 @@ OCC,strategic_bomber1,OCC - Occitania.txt
 OCC,cv_fighter1,OCC - Occitania.txt
 OCC,cv_CAS1,OCC - Occitania.txt
 OCC,basic_battleship,OCC - Occitania.txt
-OCC,basic_battlecruiser,OCC - Occitania.txt
 OCC,improved_ship_hull_light,OCC - Occitania.txt
 OCC,improved_ship_hull_heavy,OCC - Occitania.txt
 OCC,basic_ship_hull_carrier,OCC - Occitania.txt
@@ -6073,7 +5977,6 @@ PAK,construction3,PAK - Pakistan.txt
 PAK,dispersed_industry,PAK - Pakistan.txt
 PAK,dispersed_industry2,PAK - Pakistan.txt
 PAK,dispersed_industry3,PAK - Pakistan.txt
-PAK,early_fighter,PAK - Pakistan.txt
 PAK,fighter1,PAK - Pakistan.txt
 PAL,infantry_weapons,PAL - Palestine.txt
 PAL,tech_trucks,PAL - Palestine.txt
@@ -6188,16 +6091,9 @@ PER,tech_support,PER - Persia.txt
 PER,gw_artillery,PER - Persia.txt
 PER,tech_military_police,PER - Persia.txt
 PER,tech_engineers,PER - Persia.txt
-PER,infantry_weapons,PER - Persia.txt
-PER,infantry_weapons1,PER - Persia.txt
-PER,tech_trucks,PER - Persia.txt
-PER,tech_support,PER - Persia.txt
-PER,gw_artillery,PER - Persia.txt
-PER,tech_support,PER - Persia.txt
 PER,tech_recon,PER - Persia.txt
 PER,infantry_weapons2,PER - Persia.txt
 PER,support_weapons,PER - Persia.txt
-PER,gw_artillery,PER - Persia.txt
 PER,interwar_antiair,PER - Persia.txt
 PER,interwar_artillery,PER - Persia.txt
 PER,electronic_mechanical_engineering,PER - Persia.txt
@@ -6317,8 +6213,6 @@ POL,computing_machine,POL - Poland.txt
 POL,basic_machine_tools,POL - Poland.txt
 POL,improved_machine_tools,POL - Poland.txt
 POL,advanced_machine_tools,POL - Poland.txt
-POL,synth_oil_experiments,POL - Poland.txt
-POL,fuel_silos,POL - Poland.txt
 POL,oil_processing,POL - Poland.txt
 POL,improved_oil_processing,POL - Poland.txt
 POL,construction1,POL - Poland.txt
@@ -6431,7 +6325,6 @@ PRE,improved_light_tank_chassis,PRE - Prussia.txt
 PRE,basic_heavy_tank_chassis,PRE - Prussia.txt
 PRE,transport,PRE - Prussia.txt
 PRE,mtg_transport,PRE - Prussia.txt
-PRE,improved_light_tank,PRE - Prussia.txt
 PRE,basic_medium_tank,PRE - Prussia.txt
 PRE,CAS2,PRE - Prussia.txt
 PRE,heavy_fighter1,PRE - Prussia.txt
@@ -6678,7 +6571,6 @@ RAJ,mtg_transport,RAJ - British Raj.txt
 RAJ,camelry,RAJ - British Raj.txt
 RAJ,gwtank,RAJ - British Raj.txt
 RAJ,gwtank_chassis,RAJ - British Raj.txt
-RAJ,early_fighter,RAJ - British Raj.txt
 RAJ,fighter1,RAJ - British Raj.txt
 RAJ,electronic_mechanical_engineering,RAJ - British Raj.txt
 RAJ,radio,RAJ - British Raj.txt
@@ -8769,7 +8661,6 @@ SIL,strategic_bomber1,SIL - Silesia.txt
 SIL,cv_fighter1,SIL - Silesia.txt
 SIL,cv_CAS1,SIL - Silesia.txt
 SIL,basic_battleship,SIL - Silesia.txt
-SIL,basic_battlecruiser,SIL - Silesia.txt
 SIL,improved_ship_hull_light,SIL - Silesia.txt
 SIL,improved_ship_hull_heavy,SIL - Silesia.txt
 SIL,basic_ship_hull_carrier,SIL - Silesia.txt
@@ -8987,7 +8878,6 @@ SOV,interwar_antitank,SOV - Soviet union.txt
 SOV,infantry_weapons2,SOV - Soviet union.txt
 SOV,support_weapons,SOV - Soviet union.txt
 SOV,support_weapons2,SOV - Soviet union.txt
-SOV,paratroopers,SOV - Soviet union.txt
 SOV,electronic_mechanical_engineering,SOV - Soviet union.txt
 SOV,radio,SOV - Soviet union.txt
 SOV,mechanical_computing,SOV - Soviet union.txt
@@ -8997,7 +8887,6 @@ SOV,basic_decryption,SOV - Soviet union.txt
 SOV,basic_machine_tools,SOV - Soviet union.txt
 SOV,improved_machine_tools,SOV - Soviet union.txt
 SOV,advanced_machine_tools,SOV - Soviet union.txt
-SOV,synth_oil_experiments,SOV - Soviet union.txt
 SOV,oil_processing,SOV - Soviet union.txt
 SOV,fuel_refining2,SOV - Soviet union.txt
 SOV,construction1,SOV - Soviet union.txt
@@ -9009,15 +8898,12 @@ SOV,concentrated_industry3,SOV - Soviet union.txt
 SOV,improved_light_tank,SOV - Soviet union.txt
 SOV,basic_heavy_tank,SOV - Soviet union.txt
 SOV,basic_medium_tank,SOV - Soviet union.txt
-SOV,improved_light_tank_chassis,SOV - Soviet union.txt
 SOV,basic_heavy_tank_chassis,SOV - Soviet union.txt
 SOV,basic_medium_tank_chassis,SOV - Soviet union.txt
-SOV,basic_submarine,SOV - Soviet union.txt
 SOV,basic_destroyer,SOV - Soviet union.txt
 SOV,basic_heavy_cruiser,SOV - Soviet union.txt
 SOV,improved_ship_hull_light,SOV - Soviet union.txt
 SOV,improved_ship_hull_submarine,SOV - Soviet union.txt
-SOV,basic_ship_hull_cruiser,SOV - Soviet union.txt
 SPM,infantry_weapons,SPM - Sardinia Piedmont.txt
 SPM,infantry_weapons1,SPM - Sardinia Piedmont.txt
 SPM,tech_support,SPM - Sardinia Piedmont.txt
@@ -9219,9 +9105,7 @@ SWE,mtg_transport,SWE - Sweden.txt
 SWE,early_ship_hull_carrier,SWE - Sweden.txt
 SWE,early_ship_hull_heavy,SWE - Sweden.txt
 SWE,armored_car1,SWE - Sweden.txt
-SWE,early_bomber,SWE - Sweden.txt
 SWE,tactical_bomber1,SWE - Sweden.txt
-SWE,gw_artillery,SWE - Sweden.txt
 SWE,interwar_artillery,SWE - Sweden.txt
 SWE,infantry_weapons2,SWE - Sweden.txt
 SWE,support_weapons,SWE - Sweden.txt
@@ -9247,7 +9131,6 @@ SWE,basic_medium_tank_chassis,SWE - Sweden.txt
 SWE,basic_submarine,SWE - Sweden.txt
 SWE,early_carrier,SWE - Sweden.txt
 SWE,basic_ship_hull_cruiser,SWE - Sweden.txt
-SWE,early_ship_hull_carrier,SWE - Sweden.txt
 SWI,early_fighter,SWI - Switzerland.txt
 SWI,CAS1,SWI - Switzerland.txt
 SWI,infantry_weapons,SWI - Switzerland.txt
@@ -9317,7 +9200,6 @@ TAJ,construction1,TAJ - Tajikistan.txt
 TAJ,construction2,TAJ - Tajikistan.txt
 TAJ,dispersed_industry,TAJ - Tajikistan.txt
 TAJ,dispersed_industry2,TAJ - Tajikistan.txt
-TAN,infantry_weapons,TAN - Tannu Tuva.txt
 TAN,infantry_weapons,TAN - Tannu Tuva.txt
 TAN,electronic_mechanical_engineering,TAN - Tannu Tuva.txt
 TAN,radio,TAN - Tannu Tuva.txt
@@ -9708,7 +9590,6 @@ TUR,basic_torpedo,TUR - Turkey.txt
 TUR,coastal_defense_ships,TUR - Turkey.txt
 TUR,mtg_transport,TUR - Turkey.txt
 TUR,fighter1,TUR - Turkey.txt
-TUR,early_bomber,TUR - Turkey.txt
 TUR,tactical_bomber1,TUR - Turkey.txt
 TUR,interwar_artillery,TUR - Turkey.txt
 TUR,infantry_weapons2,TUR - Turkey.txt
@@ -10001,7 +9882,6 @@ USA,iw_large_airframe,USA - USA.txt
 USA,basic_large_airframe,USA - USA.txt
 USA,improved_small_airframe,USA - USA.txt
 USA,aa_hmg,USA - USA.txt
-USA,air_torpedoe_1,USA - USA.txt
 USA,fighter1,USA - USA.txt
 USA,cv_fighter1,USA - USA.txt
 USA,heavy_fighter1,USA - USA.txt
@@ -10013,7 +9893,6 @@ USA,interwar_antitank,USA - USA.txt
 USA,infantry_weapons2,USA - USA.txt
 USA,support_weapons,USA - USA.txt
 USA,support_weapons2,USA - USA.txt
-USA,marines,USA - USA.txt
 USA,electronic_mechanical_engineering,USA - USA.txt
 USA,radio,USA - USA.txt
 USA,mechanical_computing,USA - USA.txt
@@ -10496,7 +10375,6 @@ WUR,improved_light_tank_chassis,WUR - Wurtemberg.txt
 WUR,basic_heavy_tank_chassis,WUR - Wurtemberg.txt
 WUR,transport,WUR - Wurtemberg.txt
 WUR,mtg_transport,WUR - Wurtemberg.txt
-WUR,improved_light_tank,WUR - Wurtemberg.txt
 WUR,basic_medium_tank,WUR - Wurtemberg.txt
 WUR,CAS2,WUR - Wurtemberg.txt
 WUR,heavy_fighter1,WUR - Wurtemberg.txt

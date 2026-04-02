@@ -17,7 +17,7 @@ BEGIN;
 -- 1) Root reference tables
 CREATE TABLE countries (
     tag                         CHAR(3) PRIMARY KEY,
-    country_file_path           TEXT NOT NULL,
+    country_file_path           TEXT,
     history_file_path           TEXT,
     graphical_culture           VARCHAR(80),
     graphical_culture_2d        VARCHAR(80),
@@ -132,7 +132,7 @@ CREATE UNIQUE INDEX uq_state_ownership_history
 
 CREATE TABLE province_controller_history (
     province_controller_history_id BIGSERIAL PRIMARY KEY,
-    province_id                 INT NOT NULL REFERENCES provinces(province_id),
+    province_id                 INT REFERENCES provinces(province_id),
     state_id                    INT NOT NULL REFERENCES states(state_id) ON DELETE CASCADE,
     effective_date              DATE NOT NULL,
     controller_tag              CHAR(3) NOT NULL REFERENCES countries(tag),
@@ -321,8 +321,8 @@ CREATE TABLE unit_types (
 CREATE TABLE equipment_definitions (
     equipment_key               VARCHAR(120) PRIMARY KEY,
     is_archetype                BOOLEAN NOT NULL,
-    archetype_key               VARCHAR(120) REFERENCES equipment_definitions(equipment_key),
-    parent_key                  VARCHAR(120) REFERENCES equipment_definitions(equipment_key),
+    archetype_key               VARCHAR(120) REFERENCES equipment_definitions(equipment_key) DEFERRABLE INITIALLY DEFERRED,
+    parent_key                  VARCHAR(120) REFERENCES equipment_definitions(equipment_key) DEFERRABLE INITIALLY DEFERRED,
     year                        SMALLINT,
     build_cost_ic               NUMERIC(8,2),
     reliability                 NUMERIC(5,2),
@@ -403,7 +403,7 @@ CREATE TABLE province_adjacencies (
     id                          BIGSERIAL PRIMARY KEY,
     from_province_id            INT NOT NULL REFERENCES provinces(province_id),
     to_province_id              INT NOT NULL REFERENCES provinces(province_id),
-    adjacency_type              VARCHAR(20) NOT NULL,
+    adjacency_type              VARCHAR(20),
     through_province_id         INT REFERENCES provinces(province_id),
     start_x                     NUMERIC(8,1),
     start_y                     NUMERIC(8,1),
@@ -543,9 +543,10 @@ CREATE TABLE idea_modifiers (
 -- ============================================================
 
 -- FK build order #39 → countries, ideas
+-- NOTE: idea_key is polymorphic — add_ideas can reference ideas, laws, or character advisors
 CREATE TABLE country_starting_ideas (
     country_tag                 CHAR(3) NOT NULL REFERENCES countries(tag),
-    idea_key                    VARCHAR(120) NOT NULL REFERENCES ideas(idea_key),
+    idea_key                    VARCHAR(120) NOT NULL,
     effective_date              DATE NOT NULL,
     source_file                 TEXT NOT NULL,
     dlc_source                  VARCHAR(50),
@@ -590,7 +591,7 @@ CREATE TABLE divisions (
     division_id                 SERIAL PRIMARY KEY,
     country_tag                 CHAR(3) REFERENCES countries(tag),
     division_template_id        INT REFERENCES division_templates(division_template_id),
-    template_name               VARCHAR(120) NOT NULL,
+    template_name               VARCHAR(120),
     location_province_id        INT REFERENCES provinces(province_id),
     start_experience_factor     NUMERIC(4,2),
     oob_file                    VARCHAR(120),
@@ -609,7 +610,7 @@ CREATE TABLE equipment_variants (
     equipment_variant_id        SERIAL PRIMARY KEY,
     owner_tag                   CHAR(3) NOT NULL REFERENCES countries(tag),
     base_equipment_key          VARCHAR(120) NOT NULL REFERENCES equipment_definitions(equipment_key),
-    version_name                VARCHAR(120) NOT NULL,
+    version_name                VARCHAR(120),
     source_file                 TEXT NOT NULL,
     UNIQUE (owner_tag, base_equipment_key, version_name)
 );
@@ -761,7 +762,7 @@ COMMENT ON COLUMN occupation_law_modifiers.is_suppressed IS 'false = state_modif
 -- FK build order #57 → countries
 CREATE TABLE country_visual_definitions (
     country_tag                 CHAR(3) PRIMARY KEY REFERENCES countries(tag),
-    graphical_culture           VARCHAR(80) NOT NULL,
+    graphical_culture           VARCHAR(80),
     graphical_culture_2d        VARCHAR(80)
 );
 
@@ -828,7 +829,7 @@ CREATE TABLE decisions (
 CREATE TABLE operation_tokens (
     token_key                   VARCHAR(60) PRIMARY KEY,
     name                        VARCHAR(120),
-    desc                        VARCHAR(200),
+    "desc"                        VARCHAR(200),
     icon                        VARCHAR(120),
     text_icon                   VARCHAR(120),
     intel_source                VARCHAR(30),
@@ -839,7 +840,7 @@ CREATE TABLE operation_tokens (
 CREATE TABLE operation_phase_definitions (
     phase_key                   VARCHAR(120) PRIMARY KEY,
     name                        VARCHAR(120),
-    desc                        VARCHAR(200),
+    "desc"                        VARCHAR(200),
     outcome                     VARCHAR(120),
     icon                        VARCHAR(120),
     picture                     VARCHAR(120),
@@ -860,7 +861,7 @@ CREATE TABLE operation_phase_equipment (
 CREATE TABLE operations (
     operation_key               VARCHAR(120) PRIMARY KEY,
     name                        VARCHAR(120),
-    desc                        VARCHAR(120),
+    "desc"                        VARCHAR(120),
     icon                        VARCHAR(120),
     map_icon                    VARCHAR(120),
     priority                    INT,
@@ -868,7 +869,7 @@ CREATE TABLE operations (
     network_strength            INT,
     operatives                  INT,
     risk_chance                 NUMERIC(4,3),
-    experience                  INT,
+    experience                  NUMERIC(5,2),
     cost_multiplier             NUMERIC(5,3),
     outcome_extra_chance        NUMERIC(4,3),
     prevent_captured_operative_to_die BOOLEAN,
@@ -1031,7 +1032,7 @@ COMMENT ON COLUMN mio_organizations.template_key IS 'FK to generic template via 
 CREATE TABLE mio_organization_equipment_types (
     id                          SERIAL PRIMARY KEY,
     owner_key                   VARCHAR(120) NOT NULL,
-    owner_type                  VARCHAR(10),
+    owner_type                  VARCHAR(15),
     equipment_type              VARCHAR(120) NOT NULL
 );
 
@@ -1041,7 +1042,7 @@ COMMENT ON COLUMN mio_organization_equipment_types.owner_type IS '''template'' o
 CREATE TABLE mio_initial_traits (
     id                          SERIAL PRIMARY KEY,
     owner_key                   VARCHAR(120) NOT NULL,
-    owner_type                  VARCHAR(10) NOT NULL,
+    owner_type                  VARCHAR(15) NOT NULL,
     name                        VARCHAR(120)
 );
 
@@ -1051,7 +1052,7 @@ COMMENT ON COLUMN mio_initial_traits.owner_type IS '''template'' or ''organizati
 CREATE TABLE mio_traits (
     trait_token                 VARCHAR(120) PRIMARY KEY,
     owner_key                   VARCHAR(120) NOT NULL,
-    owner_type                  VARCHAR(10) NOT NULL,
+    owner_type                  VARCHAR(15) NOT NULL,
     trait_type                  VARCHAR(20) NOT NULL,
     name                        VARCHAR(120),
     icon                        VARCHAR(120),
@@ -1168,8 +1169,8 @@ CREATE TABLE medals (
 CREATE TABLE medal_tiers (
     medal_key                   VARCHAR(80) NOT NULL REFERENCES medals(medal_key),
     tier                        VARCHAR(10) NOT NULL,
-    variable                    VARCHAR(80) NOT NULL,
-    threshold_value             INT NOT NULL,
+    variable                    VARCHAR(80),
+    threshold_value             INT,
     compare                     VARCHAR(40),
     PRIMARY KEY (medal_key, tier)
 );
@@ -1303,7 +1304,7 @@ CREATE TABLE continuous_focus_modifiers (
 CREATE TABLE technology_sharing_groups (
     group_id                    VARCHAR(80) PRIMARY KEY,
     name                        VARCHAR(120),
-    desc                        VARCHAR(200),
+    "desc"                        VARCHAR(200),
     picture                     VARCHAR(120),
     research_sharing_per_country_bonus NUMERIC(5,3),
     source_file                 TEXT NOT NULL,
@@ -1325,7 +1326,7 @@ CREATE TABLE dynamic_modifier_effects (
     modifier_key                VARCHAR(120) NOT NULL REFERENCES dynamic_modifiers(modifier_key),
     effect_key                  VARCHAR(120) NOT NULL,
     effect_value_static         NUMERIC(10,4),
-    effect_value_variable       VARCHAR(80)
+    effect_value_variable       VARCHAR(120)
 );
 
 COMMENT ON COLUMN dynamic_modifier_effects.effect_value_static IS 'Static numeric value; NULL if value is a variable reference';
@@ -1356,7 +1357,7 @@ CREATE TABLE peace_action_categories (
 -- FK build order #117 → peace_action_categories
 CREATE TABLE peace_cost_modifiers (
     modifier_key                VARCHAR(120) PRIMARY KEY,
-    category_key                VARCHAR(60) NOT NULL REFERENCES peace_action_categories(category_key),
+    category_key                VARCHAR(60) REFERENCES peace_action_categories(category_key),
     peace_action_type           VARCHAR(200),
     cost_multiplier             NUMERIC(6,3),
     source_file                 TEXT NOT NULL,

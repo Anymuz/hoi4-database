@@ -129,9 +129,4 @@ These source paths exist but are **not modeled** in the starting-state database 
 | `common/on_actions/*.txt` | Event triggers, not data |
 | `events/*.txt` | Event scripts, not starting state |
 | `common/ai_strategy/*.txt` | AI behavior, not game data |
-| `common/doctrines/folders/*.txt` | **Phase 23** — `doctrine_folders` |
-| `common/doctrines/tracks/*.txt` | **Phase 23** — `doctrine_tracks` |
-| `common/doctrines/grand_doctrines/*.txt` | **Phase 23** — `grand_doctrines`, `grand_doctrine_tracks` |
-| `common/doctrines/subdoctrines/**/*.txt` | **Phase 23** — `subdoctrines` |
-| `history/countries/*.txt` (doctrines) | **Phase 23** — `country_starting_doctrines` |
 | `common/names/*.txt` | Name generation lists, not starting state |

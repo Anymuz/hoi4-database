@@ -31,7 +31,6 @@ CHI_re_re_organization,events_or_focuses,take_states,0.75,,CHI_peace.txt
 DEN_puppet_former_overlord,events_or_focuses,puppet,0.75,,DEN_peace.txt
 DEN_take_former_overlords_state,events_or_focuses,take_states,0.75,,DEN_peace.txt
 DEN_topple_former_overlords_government,events_or_focuses,force_government liberate,0.7,,DEN_peace.txt
-DEN_take_former_overlords_state,events_or_focuses,take_states,0.75,,DEN_peace.txt
 ENG_operation_fork,,puppet,0.15,,ENG_peace.txt
 ETH_agreed_state_peace_cost_modifier,treaties_or_conferences,take_states,0.55,,ETH_peace.txt
 ETH_end_of_civil_war_cost_modifier_low,treaties_or_conferences,take_states,0.2,,ETH_peace.txt

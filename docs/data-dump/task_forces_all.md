@@ -6,14 +6,9 @@ Source: `history/units/*naval*.txt excluding legacy`
 |---|---|---|---|---|
 | ARG | Armada Argentina | Armada Argentina | 12364 | ARG_1936_naval_mtg.txt |
 | ARG | Armada Argentina | Flotilla de Submarinos | 12364 | ARG_1936_naval_mtg.txt |
-| ARG | Armada Argentina | Armada Argentina | 12364 | ARG_1939_naval_mtg.txt |
-| ARG | Armada Argentina | Flotilla de Submarinos | 12364 | ARG_1939_naval_mtg.txt |
 | AST | Royal Australian Navy | Australian Squadron | 12406 | AST_1936_naval.txt |
-| AST | Royal Australian Navy | Australian Squadron | 12406 | AST_1939_naval.txt |
 | BRA | Marinha do Brasil | Marinha do Brasil | 10980 | BRA_1936_naval.txt |
 | BRA | Marinha do Brasil | Flotilha de Submarinos | 10980 | BRA_1936_naval.txt |
-| BRA | Marinha do Brasil | Marinha do Brasil | 10980 | BRA_1939_naval.txt |
-| BRA | Marinha do Brasil | Flotilha de Submarinos | 10980 | BRA_1939_naval.txt |
 | CAN | Royal Canadian Navy | Atlantic Squadron | 7361 | CAN_1936_naval_mtg.txt |
 | CAN | Royal Canadian Atlantic Squadron | Atlantic Squadron | 7361 | CAN_1939_naval_mtg.txt |
 | CAN | Royal Canadian Pacific Squadron | Pacific Squadron | 1408 | CAN_1939_naval_mtg.txt |
@@ -21,13 +16,8 @@ Source: `history/units/*naval*.txt excluding legacy`
 | CHL | Armada de Chile | Armada de Chile | 8222 | CHL_1936_naval_mtg.txt |
 | CHL | Armada de Chile | Flotilla de Submarinos nro. 1 | 8222 | CHL_1936_naval_mtg.txt |
 | CHL | Armada de Chile | Flotilla de Submarinos nro. 2 | 5228 | CHL_1936_naval_mtg.txt |
-| CHL | Armada de Chile | Armada de Chile | 8222 | CHL_1939_naval_mtg.txt |
-| CHL | Armada de Chile | Flotilla de Submarinos nro. 1 | 8222 | CHL_1939_naval_mtg.txt |
-| CHL | Armada de Chile | Flotilla de Submarinos nro. 2 | 5228 | CHL_1939_naval_mtg.txt |
 | COL | Armada Nacional | Armada Nacional | 12790 | COL_1936_naval_mtg.txt |
-| COL | Armada Nacional | Armada Nacional | 12790 | COL_1939_naval_mtg.txt |
 | DEN | Den Danske Flåde | Den Danske Flåde | 6287 | DEN_1936_naval_mtg.txt |
-| DEN | Den Danske Flåde | Den Danske Flåde | 6287 | DEN_1939_naval_mtg.txt |
 | ENG | Home Command | Home Fleet | 11064 | ENG_1936_Naval.txt |
 | ENG | Home Command | Reserve Fleet | 9458 | ENG_1936_Naval.txt |
 | ENG | Home Command | Channel Force | 9458 | ENG_1936_Naval.txt |
@@ -50,37 +40,22 @@ Source: `history/units/*naval*.txt excluding legacy`
 | ENG | Far East Command | China Fleet | 10062 | ENG_1936_Naval.txt |
 | ENG | Far East Command | New Zealand Division | 13056 | ENG_1936_Naval.txt |
 | ENG | Far East Command | 4th Submarine Flotilla | 12299 | ENG_1936_Naval.txt |
-| ENG | Home Command | Home Fleet | 11064 | ENG_1939_Naval.txt |
-| ENG | Home Command | Northern Patrol | 11064 | ENG_1939_Naval.txt |
 | ENG | Home Command | Rosyth Command | 6300 | ENG_1939_Naval.txt |
-| ENG | Home Command | Humber Force | 11297 | ENG_1939_Naval.txt |
 | ENG | Home Command | Nore Command | 3501 | ENG_1939_Naval.txt |
 | ENG | Home Command | Portsmouth Command | 9458 | ENG_1939_Naval.txt |
-| ENG | Home Command | Channel Force | 9458 | ENG_1939_Naval.txt |
 | ENG | Home Command | Western Approaches Command | 540 | ENG_1939_Naval.txt |
 | ENG | Home Command | Plymouth Squadron | 540 | ENG_1939_Naval.txt |
 | ENG | Home Command | Portland Squadron | 9458 | ENG_1939_Naval.txt |
-| ENG | Home Command | Reserve Fleet | 9458 | ENG_1939_Naval.txt |
-| ENG | Home Command | 2nd Submarine Flotilla | 11064 | ENG_1939_Naval.txt |
-| ENG | Home Command | 5th Submarine Flotilla | 9458 | ENG_1939_Naval.txt |
 | ENG | Home Command | 6th Submarine Flotilla | 11297 | ENG_1939_Naval.txt |
 | ENG | Foreign Stations Command | North Atlantic Fleet | 4135 | ENG_1939_Naval.txt |
-| ENG | Mediterranean Command | Mediterranean Fleet | 4076 | ENG_1939_Naval.txt |
-| ENG | Mediterranean Command | 1st Submarine Flotilla | 4076 | ENG_1939_Naval.txt |
 | ENG | North and South Americas Command | West Indies Command | 13010 | ENG_1939_Naval.txt |
-| ENG | North and South Americas Command | South Atlantic Fleet | 2038 | ENG_1939_Naval.txt |
-| ENG | North and South Americas Command | South America Squadron | 12960 | ENG_1939_Naval.txt |
 | ENG | North and South Americas Command | 7th Submarine Flotilla | 2038 | ENG_1939_Naval.txt |
-| ENG | Far East Command | East Indies Fleet | 10201 | ENG_1939_Naval.txt |
 | ENG | Far East Command | Hong Kong Destroyer Division | 10062 | ENG_1939_Naval.txt |
 | ENG | Far East Command | Singapore Squadron | 12299 | ENG_1939_Naval.txt |
-| ENG | Far East Command | 4th Submarine Flotilla | 12299 | ENG_1939_Naval.txt |
 | ENG | Far East Command | Submarine Division 43 | 10062 | ENG_1939_Naval.txt |
 | EST | Eesti Sojalaevastikl | Eesti Sojalaevastikl | 3152 | EST_1939_naval_mtg.txt |
 | FIN | Suomen Merivoimat | Rannikkolaivue | 11105 | FIN_1936_naval_mtg.txt |
 | FIN | Suomen Merivoimat | Sukellusvenelaivue | 11105 | FIN_1936_naval_mtg.txt |
-| FIN | Suomen Merivoimat | Rannikkolaivue | 11105 | FIN_1939_naval_mtg.txt |
-| FIN | Suomen Merivoimat | Sukellusvenelaivue | 11105 | FIN_1939_naval_mtg.txt |
 | FRA | Amiral Nord | 1ère Région Navale | 575 | FRA_1936_naval_mtg.txt |
 | FRA | Amiral Nord | Sous-Marins Force du Nord | 575 | FRA_1936_naval_mtg.txt |
 | FRA | Amiral Ouest | 2ème Région Navale | 3552 | FRA_1936_naval_mtg.txt |
@@ -95,26 +70,15 @@ Source: `history/units/*naval*.txt excluding legacy`
 | FRA | Amiral Afrique | 6ème Escadron Sous-Marins | 9994 | FRA_1936_naval_mtg.txt |
 | FRA | Amiral Afrique | Sous-Marins Force de Levant | 792 | FRA_1936_naval_mtg.txt |
 | FRA | Flotte d'Extrême Orient | Flotte d'Extrême Orient | 4401 | FRA_1936_naval_mtg.txt |
-| FRA | Amiral Nord | 1ère Région Navale | 575 | FRA_1939_naval_mtg.txt |
-| FRA | Amiral Nord | Sous-Marins Force du Nord | 575 | FRA_1939_naval_mtg.txt |
-| FRA | Amiral Ouest | 2ème Région Navale | 3552 | FRA_1939_naval_mtg.txt |
 | FRA | Amiral Ouest | 5ème Région Navale | 6536 | FRA_1939_naval_mtg.txt |
 | FRA | Amiral Ouest | Force de Raid | 3552 | FRA_1939_naval_mtg.txt |
-| FRA | Amiral Ouest | 4ème Escadron Sous-Marins | 3552 | FRA_1939_naval_mtg.txt |
-| FRA | Amiral Sud | 3ème Région Navale | 911 | FRA_1939_naval_mtg.txt |
 | FRA | Amiral Sud | 3ème Flottille de Haute Mers | 911 | FRA_1939_naval_mtg.txt |
-| FRA | Amiral Sud | 3ème Escadron Sous-Marins | 911 | FRA_1939_naval_mtg.txt |
-| FRA | Amiral Sud | 5ème Escadron Sous-Marins | 911 | FRA_1939_naval_mtg.txt |
 | FRA | Amiral Sud | Sous-Marins Force du Sud | 911 | FRA_1939_naval_mtg.txt |
 | FRA | Amiral Afrique | 4ème Région Navale | 9994 | FRA_1939_naval_mtg.txt |
 | FRA | Amiral Afrique | 2ème Flottille de Haute Mers | 7132 | FRA_1939_naval_mtg.txt |
 | FRA | Amiral Afrique | Force du Oran | 7132 | FRA_1939_naval_mtg.txt |
 | FRA | Amiral Afrique | Force du Maroc | 7069 | FRA_1939_naval_mtg.txt |
 | FRA | Amiral Afrique | Attack Force Légère | 9994 | FRA_1939_naval_mtg.txt |
-| FRA | Amiral Afrique | Flotte d'Afrique de l'Ouest | 4948 | FRA_1939_naval_mtg.txt |
-| FRA | Amiral Afrique | 2ème Escadron Sous-Marins | 7132 | FRA_1939_naval_mtg.txt |
-| FRA | Amiral Afrique | 6ème Escadron Sous-Marins | 9994 | FRA_1939_naval_mtg.txt |
-| FRA | Amiral Afrique | Sous-Marins Force de Levant | 792 | FRA_1939_naval_mtg.txt |
 | FRA | Amiral Afrique | Sous-Marins Force du Maroc | 7069 | FRA_1939_naval_mtg.txt |
 | FRA | Flotte d'Extrême Orient | Flotte du Extrême Orient | 4401 | FRA_1939_naval_mtg.txt |
 | GER | Kriegsmarine | Hochseeflotte | 241 | GER_1936_naval_mtg.txt |
@@ -122,11 +86,8 @@ Source: `history/units/*naval*.txt excluding legacy`
 | GER | Kriegsmarine | Marineschule Kiel | 6389 | GER_1936_naval_mtg.txt |
 | GER | Unterseeboots-Flotte  | I. U-Boots Flottille Weddigen | 6389 | GER_1936_naval_mtg.txt |
 | GER | Unterseeboots-Flotte  | II. U-Boots-Ausbildungs-Gruppe | 241 | GER_1936_naval_mtg.txt |
-| GER | Kriegsmarine | Hochseeflotte | 241 | GER_1939_naval_mtg.txt |
 | GER | Kriegsmarine | Aufklärungsflotte | 241 | GER_1939_naval_mtg.txt |
 | GER | Kriegsmarine | Zerstörerflotte | 6389 | GER_1939_naval_mtg.txt |
-| GER | Kriegsmarine | Ostseeflotte | 6332 | GER_1939_naval_mtg.txt |
-| GER | Kriegsmarine | Marineschule Kiel | 6389 | GER_1939_naval_mtg.txt |
 | GER | Unterseeboots Flotte | I. U-Boots-Flot. Weddigen | 6389 | GER_1939_naval_mtg.txt |
 | GER | Unterseeboots Flotte | II. U-Boots-Flot. Saltzwedel | 241 | GER_1939_naval_mtg.txt |
 | GER | Unterseeboots Flotte | III. U-Boots-Flot. Lohs | 6389 | GER_1939_naval_mtg.txt |
@@ -136,16 +97,10 @@ Source: `history/units/*naval*.txt excluding legacy`
 | GER | Unterseeboots Flotte | Ausbildungs-Flottille | 6389 | GER_1939_naval_mtg.txt |
 | GRE | Vasilikó Polemikó Naftikó | Vasilikós Stólos | 4109 | GRE_1936_naval_mtg.txt |
 | GRE | Vasilikó Polemikó Naftikó | Stolískou Ypovrychíon | 4109 | GRE_1936_naval_mtg.txt |
-| GRE | Vasilikó Polemikó Naftikó | Vasilikós Stólos | 4109 | GRE_1939_naval_mtg.txt |
-| GRE | Vasilikó Polemikó Naftikó | Stolískou Ypovrychíon | 4109 | GRE_1939_naval_mtg.txt |
 | HOL | Koninklijke Marine | Koninklijke Vloot | 3314 | HOL_1936_naval_mtg.txt |
 | HOL | Koninklijke Marine | Koninklijke Onderzeeboot Smaldeel | 3314 | HOL_1936_naval_mtg.txt |
 | HOL | Nederlands-Indië Marine | Nederlands-Indië Eskader | 7381 | HOL_1936_naval_mtg.txt |
 | HOL | Nederlands-Indië Marine | Nederlands-Indië Onderzeeboot Smaldeel | 4608 | HOL_1936_naval_mtg.txt |
-| HOL | Koninklijke Marine | Koninklijke Vloot | 3314 | HOL_1939_naval_mtg.txt |
-| HOL | Koninklijke Marine | Koninklijke Onderzeeboot Smaldeel | 3314 | HOL_1939_naval_mtg.txt |
-| HOL | Nederlands-Indië Marine | Nederlands-Indië Eskader | 7381 | HOL_1939_naval_mtg.txt |
-| HOL | Nederlands-Indië Marine | Nederlands-Indië Onderzeeboot Smaldeel | 4608 | HOL_1939_naval_mtg.txt |
 | ITA | Comando Navale Ionio e Basso Adriatico | I Squadra Navale | 11837 | ITA_1936_naval_mtg.txt |
 | ITA | Comando Navale Ionio e Basso Adriatico | IV Gruppo Sommergibili | 11837 | ITA_1936_naval_mtg.txt |
 | ITA | Comando Navale Alto Tirreno | II Squadra Navale | 6973 | ITA_1936_naval_mtg.txt |
@@ -183,10 +138,7 @@ Source: `history/units/*naval*.txt excluding legacy`
 | ITA | Flotta Sommergibili | IV Gruppo Sommergibili | 11837 | ITA_1939_naval_mtg.txt |
 | ITA | Flotta Sommergibili | V Gruppo Sommergibili | 10007 | ITA_1939_naval_mtg.txt |
 | ITA | Flotta Sommergibili | VII Gruppo Sommergibili | 6891 | ITA_1939_naval_mtg.txt |
-| ITA | Comando Navale Libia | Squadra di Libia | 1130 | ITA_1939_naval_mtg.txt |
 | ITA | Comando Navale Libia | VI Gruppo Sommergibili | 1130 | ITA_1939_naval_mtg.txt |
-| ITA | Comando Navale Mar Rosso | Squadra di Mar Rosso | 12766 | ITA_1939_naval_mtg.txt |
-| ITA | Comando Navale Mar Rosso | VIII Gruppo Sommergibili | 12766 | ITA_1939_naval_mtg.txt |
 | JAP | Dai 1 Kantai | 1 Kantai | 9998 | JAP_1936_naval.txt |
 | JAP | Dai 1 Kantai | 1 Suirai Sentai | 9998 | JAP_1936_naval.txt |
 | JAP | Dai 1 Kantai | 1 Sensui Sentai | 9998 | JAP_1936_naval.txt |
@@ -224,13 +176,9 @@ Source: `history/units/*naval*.txt excluding legacy`
 | LAT | Latvijas Kara Flote | Latvijas Kara Flote | 9340 | LAT_1936_naval_mtg.txt |
 | LAT | Latvijas Juras Speki | Latvijas Juras Speki | 9340 | LAT_1939_naval_mtg.txt |
 | MEX | Armada de México | Armada de México | 12810 | MEX_1936_naval_mtg.txt |
-| MEX | Armada de México | Armada de México | 12810 | MEX_1939_naval_mtg.txt |
 | NOR | Kongelige Norske Marine | 1. Sjøforsvarsdistrikt | 9296 | NOR_1936_naval_mtg.txt |
 | NOR | Kongelige Norske Marine | 2. Sjøforsvarsdistrikt | 122 | NOR_1936_naval_mtg.txt |
 | NOR | Kongelige Norske Marine | 3. Sjøforsvarsdistrikt | 11050 | NOR_1936_naval_mtg.txt |
-| NOR | Kongelige Norske Marine | 1. Sjøforsvarsdistrikt | 9296 | NOR_1939_naval_mtg.txt |
-| NOR | Kongelige Norske Marine | 2. Sjøforsvarsdistrikt | 122 | NOR_1939_naval_mtg.txt |
-| NOR | Kongelige Norske Marine | 3. Sjøforsvarsdistrikt | 11050 | NOR_1939_naval_mtg.txt |
 | NZL | Royal New Zealand Navy | New Zealand Division | 4543 | NZL_1939_naval_mtg.txt |
 | PHI | United States Army Forces in the Far East | Offshore Patrol | 10265 | PHI_1939_naval_mtg.txt |
 | POL | Polska Flota Niszczycieli | Polska Flota Niszczycieli | 362 | POL_1936_naval_mtg.txt |
@@ -239,14 +187,9 @@ Source: `history/units/*naval*.txt excluding legacy`
 | POL | Polskie Sily Morskie | Dywizjon Okretów Podwodnych | 362 | POL_1939_naval_mtg.txt |
 | POR | Marinha de Portugal | Flotilha 'Viana do Castelo' | 11805 | POR_1936_naval_mtg.txt |
 | POR | Marinha de Portugal | Flotilha Delfim | 11805 | POR_1936_naval_mtg.txt |
-| POR | Marinha de Portugal | Flotilha 'Viana do Castelo' | 11805 | POR_1939_naval_mtg.txt |
-| POR | Marinha de Portugal | Flotilha Delfim | 11805 | POR_1939_naval_mtg.txt |
 | PRU | Marina de Guerra | Escuadrón Naval | 12997 | PRU_1936_naval_mtg.txt |
 | PRU | Marina de Guerra | Flotilla de Submarinos | 12997 | PRU_1936_naval_mtg.txt |
-| PRU | Marina de Guerra | Escuadrón Naval | 12997 | PRU_1939_naval_mtg.txt |
-| PRU | Marina de Guerra | Flotilla de Submarinos | 12997 | PRU_1939_naval_mtg.txt |
 | ROM | Flota Romania de Mare | Flota Romania de Mare | 657 | ROM_1936_naval_mtg.txt |
-| ROM | Flota Romania de Mare | Flota Romania de Mare | 657 | ROM_1939_naval_mtg.txt |
 | SIA | Royal Siamese Navy | Royal Siamese Navy | 7408 | SIA_1936_naval_mtg.txt |
 | SIA | Royal Siamese Navy | Royal Fleet | 7408 | SIA_1939_naval_mtg.txt |
 | SIA | Royal Siamese Navy | 1st Submarine Division | 7408 | SIA_1939_naval_mtg.txt |
@@ -258,14 +201,7 @@ Source: `history/units/*naval*.txt excluding legacy`
 | SOV | Chernomorskiy Flot | Chernomorskiy Podvodniy Flot | 3686 | SOV_1936_naval_mtg.txt |
 | SOV | Tikhookeanskiy Flot | Tikhookeanskiy Flot | 957 | SOV_1936_naval_mtg.txt |
 | SOV | Tikhookeanskiy Flot | Tihookyeanskiy Podvodniy Flot | 957 | SOV_1936_naval_mtg.txt |
-| SOV | Severnyy Flot | Severnyy Flot | 3134 | SOV_1939_naval_mtg.txt |
 | SOV | Severnyy Flot | Severniy Podvodniy Flot | 3134 | SOV_1939_naval_mtg.txt |
-| SOV | Baltiyskiy Flot | Baltiyskiy Flot | 3151 | SOV_1939_naval_mtg.txt |
-| SOV | Baltiyskiy Flot | Baltiyskiy Podvodniy Flot | 3151 | SOV_1939_naval_mtg.txt |
-| SOV | Chernomorskiy Flot | Chernomorskiy Flot | 3686 | SOV_1939_naval_mtg.txt |
-| SOV | Chernomorskiy Flot | Chernomorskiy Podvodniy Flot | 3686 | SOV_1939_naval_mtg.txt |
-| SOV | Tikhookeanskiy Flot | Tikhookeanskiy Flot | 957 | SOV_1939_naval_mtg.txt |
-| SOV | Tikhookeanskiy Flot | Tihookyeanskiy Podvodniy Flot | 957 | SOV_1939_naval_mtg.txt |
 | SPA | Base Naval El Ferrol | Escuadrón de El Ferrol | 758 | SPA_1939_naval_mtg.txt |
 | SPA | Base Naval Cádiz | Escuadrón de Cádiz | 1048 | SPA_1939_naval_mtg.txt |
 | SPA | Base Naval Cádiz | Grupo de Cádiz | 1048 | SPA_1939_naval_mtg.txt |
@@ -281,17 +217,9 @@ Source: `history/units/*naval*.txt excluding legacy`
 | SWE | Kungliga Svenska Marinen | Ålandshavseskader | 408 | SWE_1936_naval_mtg.txt |
 | SWE | Kungliga Svenska Marinen | Karlskrona Avdelningen | 11215 | SWE_1936_naval_mtg.txt |
 | SWE | Kungliga Svenska Marinen | Göteborgs Eskadern | 383 | SWE_1936_naval_mtg.txt |
-| SWE | Kungliga Svenska Marinen | Kustflottan | 6050 | SWE_1939_naval_mtg.txt |
-| SWE | Kungliga Svenska Marinen | 1a Eskadern | 11215 | SWE_1939_naval_mtg.txt |
-| SWE | Kungliga Svenska Marinen | Ålandshavseskader | 408 | SWE_1939_naval_mtg.txt |
-| SWE | Kungliga Svenska Marinen | Karlskrona Avdelningen | 11215 | SWE_1939_naval_mtg.txt |
-| SWE | Kungliga Svenska Marinen | Göteborgs Eskadern | 383 | SWE_1939_naval_mtg.txt |
 | TUR | Türk Donanmasi | Türk Donanmasi | 4112 | TUR_1936_naval_mtg.txt |
 | TUR | Türk Donanmasi | Filotilla Denizalti Kücük | 11881 | TUR_1936_naval_mtg.txt |
-| TUR | Türk Donanmasi | Türk Donanmasi | 4112 | TUR_1939_naval_mtg.txt |
-| TUR | Türk Donanmasi | Filotilla Denizalti Kücük | 11881 | TUR_1939_naval_mtg.txt |
 | URG | Armada Nacional | Armada Nacional | 10362 | URG_1936_naval_mtg.txt |
-| URG | Armada Nacional | Armada Nacional | 10362 | URG_1939_naval_mtg.txt |
 | USA | Battle Force | Battleships, Battle Force | 1562 | USA_1936_naval_mtg.txt |
 | USA | Battle Force | Carrier Division, Battle Force | 1562 | USA_1936_naval_mtg.txt |
 | USA | Battle Force | Cruisers, Battle Force | 9814 | USA_1936_naval_mtg.txt |
@@ -313,30 +241,13 @@ Source: `history/units/*naval*.txt excluding legacy`
 | USA | Special Assignment Forces | 3rd Submarine Squadron | 7617 | USA_1936_naval_mtg.txt |
 | USA | Asiatic Fleet | Asiatic Fleet | 10265 | USA_1936_naval_mtg.txt |
 | USA | Asiatic Fleet | 5th Submarine Squadron | 10265 | USA_1936_naval_mtg.txt |
-| USA | Battle Force | Battleships, Battle Force | 9814 | USA_1939_naval_mtg.txt |
 | USA | Battle Force | Carrier Division 1 | 9814 | USA_1939_naval_mtg.txt |
 | USA | Battle Force | Carrier Division 2 | 1562 | USA_1939_naval_mtg.txt |
-| USA | Battle Force | Cruisers, Battle Force | 9814 | USA_1939_naval_mtg.txt |
-| USA | Battle Force | Cruiser Division 3 | 1562 | USA_1939_naval_mtg.txt |
-| USA | Battle Force | Destroyer Flotilla 1 | 1562 | USA_1939_naval_mtg.txt |
-| USA | Battle Force | Destroyer Flotilla 2 | 1562 | USA_1939_naval_mtg.txt |
 | USA | Battle Force | Destroyer Squadron  31 | 9671 | USA_1939_naval_mtg.txt |
-| USA | Scouting Force | Scouting Force | 9814 | USA_1939_naval_mtg.txt |
-| USA | Submarine Base Force | Submarine Base Force | 1562 | USA_1939_naval_mtg.txt |
-| USA | Submarine Base Force | 4th Submarine Squadron | 4180 | USA_1939_naval_mtg.txt |
-| USA | Submarine Base Force | 6th Submarine Squadron | 1562 | USA_1939_naval_mtg.txt |
-| USA | Pacific Reserve Fleet | Pacific Reserve Destroyers | 1562 | USA_1939_naval_mtg.txt |
 | USA | Atlantic Fleet | Atlantic Squadron | 788 | USA_1939_naval_mtg.txt |
-| USA | Atlantic Fleet | Destroyer Squadron 12 | 3878 | USA_1939_naval_mtg.txt |
 | USA | Atlantic Fleet | Destroyer Squadron 30 | 6845 | USA_1939_naval_mtg.txt |
 | USA | Atlantic Fleet | Destroyer Squadron 41 | 6845 | USA_1939_naval_mtg.txt |
-| USA | Atlantic Fleet | 2nd Submarine Squadron | 9832 | USA_1939_naval_mtg.txt |
 | USA | Special Assignment Forces | Squadron 40-T | 6732 | USA_1939_naval_mtg.txt |
-| USA | Special Assignment Forces | Special Service Squadron | 7617 | USA_1939_naval_mtg.txt |
-| USA | Special Assignment Forces | 3rd Submarine Squadron | 7617 | USA_1939_naval_mtg.txt |
 | USA | Atlantic Reserve Fleet | Atlantic Reserve Destroyers | 6845 | USA_1939_naval_mtg.txt |
 | USA | Atlantic Reserve Fleet | Reserve Submarine Squadron | 6845 | USA_1939_naval_mtg.txt |
-| USA | Asiatic Fleet | Asiatic Fleet | 10265 | USA_1939_naval_mtg.txt |
-| USA | Asiatic Fleet | 5th Submarine Squadron | 10265 | USA_1939_naval_mtg.txt |
 | YUG | Kraljevska Mornarica | Kraljevska Mornarica | 3924 | YUG_1936_naval_mtg.txt |
-| YUG | Kraljevska Mornarica | Kraljevska Mornarica | 3924 | YUG_1939_naval_mtg.txt |

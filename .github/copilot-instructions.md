@@ -8,26 +8,26 @@ To point at the game install, use `--hoi4-root <path>`, the `HOI4_ROOT` env var,
 
 ---
 
-## Current Project Status (as of March 2026)
+## Current Project Status (as of April 2026)
 
 ### COMPLETED — Design Phase
-- **127-table schema** designed across **23 phases** (66 core + 55 DLC + 6 Doctrines)
+- **127-table schema** designed across **23 phases** (66 core + 61 DLC)
 - **ER diagram**: `docs/hoi4-er-diagram.mmd` — 127 entities, 133 relationships (Mermaid format)
 - **Table catalog**: `docs/hoi4-table-catalog.md` — ~1,900 lines, full column specs for every table
 - **Design document**: `docs/hoi4-database-design.md` — ~420 lines, phases, FK build order (123 steps), DLC register (38 entries)
 - **Source mapping**: `docs/hoi4-source-to-table-map.md` — all 23 phases mapped including DLC paths
 
 ### COMPLETED — Implementation
-- **SQL DDL**: `sql/schema.sql` has **all 127 tables** (127 CREATE TABLE, 4 ALTER TABLE, 50 CREATE INDEX)
-- **Data extraction**: 137 markdown data-dump files in `docs/data-dump/` (~221K rows total) covering all 23 phases including DLC and doctrines
-- **Markdown → CSV conversion**: `tools/db_etl/md_to_csv.py` produces 127 PostgreSQL-ready CSVs in `data/csv/` (~221K rows)
+- **SQL DDL**: `sql/schema.sql` has **all 127 tables** (127 CREATE TABLE, 4 ALTER TABLE, 50 CREATE INDEX) with all FK constraints enforced
+- **Data extraction**: 137 markdown data-dump files in `docs/data-dump/` covering all 23 phases including DLC and doctrines
+- **Markdown → CSV conversion**: `tools/db_etl/md_to_csv.py` produces 127 PostgreSQL-ready CSVs in `data/csv/` (~218K rows)
 - **API views**: `sql/views.sql` has 14 API views across 3 slices
-- **Seed-load-order**: `sql/seed-load-order.sql` has live `\copy` commands for all 127 tables in 7 FK-safe tiers, wrapped in a transaction
+- **Seed loading**: `sql/seed-load-order.sql` (native) and `sql/seed-docker.sql` (Docker) load all 127 tables in 7 FK-safe tiers
+- **Database loaded**: PostgreSQL 16 with 127 tables, ~218K rows, 0 errors
 - **Data validation**: `tools/db_etl/validate_data.py` runs FK, PK, NOT NULL checks — 0 errors, 0 warnings
 
 ### NOT YET DONE
-- Stand up PostgreSQL and load data (see `tools/db_etl/runbook.md` for steps)
-- REST API implementation (FastAPI planned)
+- REST API implementation (FastAPI + Strawberry GraphQL — see `docs/api-design.md`)
 
 ---
 
@@ -127,18 +127,23 @@ Game data files (`.txt` under `common/`, `history/`, `events/`, etc. **inside th
 
 | Purpose | Path (in this repo) |
 |---|---|
-| Master guide (start here) | `docs/PROJECT-GUIDE.md` |
 | Design document | `docs/hoi4-database-design.md` |
 | ER diagram (Mermaid) | `docs/hoi4-er-diagram.mmd` |
 | Table catalog (column specs) | `docs/hoi4-table-catalog.md` |
+| Source → table mapping | `docs/hoi4-source-to-table-map.md` |
+| Sample data rows | `docs/hoi4-data-snapshots.md` |
+| API design | `docs/api-design.md` |
 | Extracted data dumps | `docs/data-dump/` (137 files + SUMMARY.md) |
-| PostgreSQL-ready CSVs | `data/csv/` (127 files) |
+| PostgreSQL-ready CSVs | `data/csv/` (127 files, gitignored) |
 | SQL DDL / views / seed | `sql/` |
+| SQL design rationale | `sql/README.md` |
 | Extraction script | `tools/db_etl/export_markdown_dump.py` |
 | MD → CSV converter | `tools/db_etl/md_to_csv.py` |
-| Seed SQL generator | `tools/db_etl/gen_seed_sql.py` |
+
+| Seed SQL generator (native) | `tools/db_etl/gen_seed_sql.py` |
+| Seed SQL generator (Docker) | `tools/db_etl/gen_seed_docker.py` |
 | Data validator | `tools/db_etl/validate_data.py` |
-| ETL runbook | `tools/db_etl/runbook.md` |
+| Deployment & ETL guide | `tools/db_etl/runbook.md` |
 | ETL module manifest | `tools/db_etl/manifest.md` |
 | Copilot agent | `.github/agents/hoi4-db-architect.agent.md` |
 | Prompt templates | `.github/prompts/` |

@@ -361,9 +361,6 @@ Source: `history/units/*_air_bba.txt`
 | ROM | 46 |  | small_plane_airframe_0 | 60 | PZL P.24 | ROM_1939_air_bba.txt |
 | ROM | 46 |  | small_plane_airframe_1 | 12 | Hawker Hurricane | ROM_1939_air_bba.txt |
 | ROM | 46 |  | medium_plane_airframe_1 | 48 | SM.79 | ROM_1939_air_bba.txt |
-| ROM | 79 |  | small_plane_airframe_0 |  |  | ROM_1939_air_bba.txt |
-| ROM | 79 |  | small_plane_airframe_0 |  |  | ROM_1939_air_bba.txt |
-| ROM | 79 |  | small_plane_airframe_1 |  |  | ROM_1939_air_bba.txt |
 | SAF | 275 |  | small_plane_airframe_0 | 30 | Hawker Fury | SAF_1936_air_bba.txt |
 | SAF | 275 |  | small_plane_airframe_0 | 45 | Hawker Fury | SAF_1939_air_bba.txt |
 | SAF | 275 |  | small_plane_airframe_1 | 30 | Hawker Hurricane | SAF_1939_air_bba.txt |

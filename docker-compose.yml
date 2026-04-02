@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: hoi4-db
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-hoi4}
+      POSTGRES_USER: ${POSTGRES_USER:-hoi4}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-hoi4pass}
+    volumes:
+      - hoi4_pgdata:/var/lib/postgresql/data
+
+volumes:
+  hoi4_pgdata:

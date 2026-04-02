@@ -359,10 +359,6 @@ Source: `common/characters/*.txt`
 | BEL_dieudonne_salve | BEL_dieudonne_salve | male | BEL.txt |
 | BEL_prudent_nuyten | BEL_prudent_nuyten | male | BEL.txt |
 | BEL_albert_deveze |  | male | BEL.txt |
-| BEL_albert_deveze |  | male | BEL.txt |
-| BEL_albert_deveze | BEL_albert_deveze | male | BEL.txt |
-| BEL_prudent_nuyten |  | male | BEL.txt |
-| BEL_prudent_nuyten |  | male | BEL.txt |
 | BEL_edouard_van_den_burgen | BEL_edouard_van_den_burgen | male | BEL.txt |
 | BEL_camille_gutt | BEL_camille_gutt | male | BEL.txt |
 | BEL_camille_huysmans | BEL_camille_huysmans | male | BEL.txt |
@@ -1777,15 +1773,11 @@ Source: `common/characters/*.txt`
 | GER_albert_speer | GER_albert_speer | male | GER.txt |
 | GER_hjalmar_schacht | GER_hjalmar_schacht | male | GER.txt |
 | GER_walther_funk |  | male | GER.txt |
-| GER_walther_funk | GER_walther_funk | male | GER.txt |
-| GER_hjalmar_schacht |  | male | GER.txt |
 | GER_ludwig_erhard |  | male | GER.txt |
 | GER_joseph_goebbels | GER_joseph_goebbels | male | GER.txt |
 | GER_rudolf_hess | GER_rudolf_hess | male | GER.txt |
 | GER_martin_bormann |  | male | GER.txt |
 | GER_heinrich_himmler | GER_heinrich_himmler | male | GER.txt |
-| GER_martin_bormann | GER_martin_bormann | male | GER.txt |
-| GER_rudolf_hess |  | male | GER.txt |
 | GER_leni_riefenstahl | GER_leni_riefenstahl | female | GER.txt |
 | GER_franz_seldte | GER_franz_seldte | male | GER.txt |
 | GER_hanns_kerrl | GER_hanns_kerrl | male | GER.txt |
@@ -1799,8 +1791,6 @@ Source: `common/characters/*.txt`
 | GER_theodor_heuss | GER_theodor_heuss | male | GER.txt |
 | GER_alfred_rosenberg | GER_alfred_rosenberg | male | GER.txt |
 | GER_hans_luther | GER_hans_luther | male | GER.txt |
-| GER_ludwig_erhard | GER_ludwig_erhard | male | GER.txt |
-| GER_walther_funk |  | male | GER.txt |
 | GER_hermann_erhardt | GER_hermann_erhardt | male | GER.txt |
 | GER_adolf_friedrich_von_mecklenburg | GER_adolf_friedrich_von_mecklenburg | male | GER.txt |
 | GER_wilhelm_von_gayl | GER_wilhelm_von_gayl | male | GER.txt |
@@ -2196,10 +2186,6 @@ Source: `common/characters/*.txt`
 | IRQ_ghazi_i | IRQ_ghazi_i | male | IRQ.txt |
 | IRQ_faisal_ii |  | male | IRQ.txt |
 | IRQ_abd_al_ilah |  | male | IRQ.txt |
-| IRQ_faisal_ii | IRQ_faisal_ii | male | IRQ.txt |
-| IRQ_ghazi_i |  | male | IRQ.txt |
-| IRQ_abd_al_ilah |  | male | IRQ.txt |
-| IRQ_abd_al_ilah | IRQ_abd_al_ilah | male | IRQ.txt |
 | IRQ_ahmed_barzani | IRQ_ahmed_barzani | male | IRQ.txt |
 | IRQ_mustafa_barzani | IRQ_mustafa_barzani | male | IRQ.txt |
 | IRQ_rashid_ali_algaylani | IRQ_rashid_ali_algaylani | male | IRQ.txt |
@@ -3670,9 +3656,6 @@ Source: `common/characters/*.txt`
 | PRC_wu_han | PRC_wu_han | male | PRC.txt |
 | PRC_xu_teli | PRC_xu_teli | male | PRC.txt |
 | PRC_chen_changhao | PRC_chen_changhao | male | PRC.txt |
-| PRC_kang_sheng | PRC_kang_sheng | male | PRC.txt |
-| PRC_zhou_enlai |  | male | PRC.txt |
-| PRC_zhou_enlai |  | male | PRC.txt |
 | PRC_lin_bojiu | PRC_lin_bojiu | male | PRC.txt |
 | PRC_he_yuandang | PRC_he_yuandang | male | PRC.txt |
 | PRC_cai_chang | PRC_cai_chang | male | PRC.txt |
@@ -4406,15 +4389,10 @@ Source: `common/characters/*.txt`
 | SWE_natanael_beskow | SWE_natanael_beskow | male | SWE.txt |
 | SWE_herman_eriksson | SWE_herman_eriksson | male | SWE.txt |
 | SWE_ebba_palmstierna | SWE_ebba_palmstierna | male | SWE.txt |
-| SWE_ebba_palmstierna |  | male | SWE.txt |
 | SWE_christian_gunter | SWE_christian_gunter | male | SWE.txt |
 | SWE_rickard_sandler | SWE_rickard_sandler | male | SWE.txt |
 | SWE_alva_myrdal | SWE_alva_myrdal | male | SWE.txt |
 | SWE_gunnar_myrdal |  | male | SWE.txt |
-| SWE_gunnar_myrdal |  | male | SWE.txt |
-| SWE_gunnar_myrdal | SWE_gunnar_myrdal | male | SWE.txt |
-| SWE_alva_myrdal |  | male | SWE.txt |
-| SWE_alva_myrdal |  | male | SWE.txt |
 | SWE_per_edvin_skold | SWE_per_edvin_skold | male | SWE.txt |
 | SWE_birger_furugard | SWE_birger_furugard | male | SWE.txt |
 | SWE_karl_kilbom | SWE_karl_kilbom | male | SWE.txt |

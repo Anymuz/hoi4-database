@@ -1,7 +1,7 @@
 # HOI4 Database Design — Complete Schema
 
-Status: **COMPLETE** (All Phases 1–23, including DLC)
-Total tables: **127** (66 core + 61 DLC)
+Status: **COMPLETE** — Schema designed, implemented, and loaded into PostgreSQL 16
+Total tables: **127** (66 core + 61 DLC) · **~218K rows loaded** · **14 API views**
 
 ---
 

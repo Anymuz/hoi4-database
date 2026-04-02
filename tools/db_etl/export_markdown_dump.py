@@ -71,18 +71,35 @@ def write_text(path: Path, title: str, body: str) -> None:
 
 
 def parse_country_tags() -> int:
-    p = ROOT / "common" / "country_tags" / "00_countries.txt"
+    d = ROOT / "common" / "country_tags"
     rows: List[List[str]] = []
-    if not p.exists():
+    if not d.exists():
         return 0
-    for ln in p.read_text(encoding="utf-8", errors="ignore").splitlines():
-        line = ln.strip()
-        if not line or line.startswith("#"):
-            continue
-        m = re.match(r'^([A-Z0-9_]+)\s*=\s*"([^"]+)"', line)
-        if m:
-            rows.append([m.group(1), m.group(2)])
-    write_md(OUT / "country_tags.md", "Country Tags", ["tag", "country_file"], rows, "common/country_tags/00_countries.txt")
+    for fp in sorted(d.glob("*.txt")):
+        for ln in fp.read_text(encoding="utf-8", errors="ignore").splitlines():
+            line = ln.strip()
+            if not line or line.startswith("#"):
+                continue
+            m = re.match(r'^([A-Z0-9_]+)\s*=\s*"([^"]+)"', line)
+            if m:
+                rows.append([m.group(1), m.group(2)])
+
+    # Discover event-spawned tags that have OOB files but no country_tags entry.
+    # e.g. SPA (Republican Spain) is created by the Spanish Civil War event.
+    # Only include tags that have standard OOB files (TAG_YYYY*.txt), not test files.
+    declared_tags = {r[0] for r in rows}
+    units_dir = ROOT / "history" / "units"
+    if units_dir.exists():
+        oob_tags: set = set()
+        for fp in units_dir.glob("*.txt"):
+            m = re.match(r'^([A-Z]{3})_\d{4}', fp.name)
+            if m:
+                oob_tags.add(m.group(1))
+        for tag in sorted(oob_tags - declared_tags):
+            rows.append([tag, ""])
+
+    rows = dedup_rows(rows, [0])  # dedup by tag
+    write_md(OUT / "country_tags.md", "Country Tags", ["tag", "country_file"], rows, "common/country_tags/*.txt")
     return len(rows)
 
 
@@ -160,14 +177,25 @@ def parse_states() -> Tuple[int, int, int, int, int]:
             for rm in re.finditer(r"([a-zA-Z0-9_]+)\s*=\s*([0-9.]+)", res_block.group(1)):
                 res_rows.append([state_id, rm.group(1), rm.group(2), fp.name])
 
-        bld_block = re.search(r"\bbuildings\s*=\s*\{([\s\S]*?)\n\s*\}", txt)
-        if bld_block:
-            for bm in re.finditer(r"\b([a-zA-Z_]+)\s*=\s*([0-9]+)", bld_block.group(1)):
-                building_rows.append([state_id, "state", "state", bm.group(1), bm.group(2), fp.name])
-            for pb in re.finditer(r"\b([0-9]+)\s*=\s*\{([^{}]*)\}", bld_block.group(1), flags=re.S):
+        bld_m = re.search(r"\bbuildings\s*=\s*\{", txt)
+        if bld_m:
+            bld_body = extract_block(txt, bld_m.start())
+            # Province sub-blocks: "12345 = { ... }" — extract them first
+            # and remove them from the body to avoid cross-matching
+            prov_blocks: List[Tuple[str, str]] = []
+            for pb in re.finditer(r"\b([0-9]+)\s*=\s*\{", bld_body):
                 prov_id = pb.group(1)
-                for bm in re.finditer(r"\b([a-zA-Z_]+)\s*=\s*([0-9]+)", pb.group(2)):
+                prov_body = extract_block(bld_body, pb.start())
+                prov_blocks.append((prov_id, prov_body))
+                for bm in re.finditer(r"\b([a-zA-Z_]+)\s*=\s*([0-9]+)", prov_body):
                     building_rows.append([state_id, "province", prov_id, bm.group(1), bm.group(2), fp.name])
+            # Remove province blocks from bld_body for safe state-level extraction
+            state_only = bld_body
+            for prov_id, prov_body in prov_blocks:
+                state_only = state_only.replace(f"{prov_id} = {{{prov_body}}}", "", 1)
+            # State-level buildings from the remaining text (no province blocks)
+            for bm in re.finditer(r"\b([a-zA-Z_]+)\s*=\s*([0-9]+)", state_only):
+                building_rows.append([state_id, "state", "state", bm.group(1), bm.group(2), fp.name])
 
         for vpm in re.finditer(r"victory_points\s*=\s*\{\s*([0-9]+)\s+([0-9]+)\s*\}", txt):
             vp_rows.append([state_id, vpm.group(1), vpm.group(2), fp.name])
@@ -216,6 +244,8 @@ def parse_country_history() -> Tuple[int, int]:
             for tm in re.finditer(r"\b([a-zA-Z0-9_]+)\s*=\s*([0-9]+)", b):
                 tech_rows.append([tag, tm.group(1), tm.group(2), fp.name])
 
+    rows = dedup_rows(rows, [0])
+    tech_rows = dedup_rows(tech_rows, [0, 1])
     write_md(OUT / "country_history.md", "Country History", ["country_tag", "capital_state_id", "starting_train_buffer", "fuel_ratio", "research_slots", "stability", "war_support", "oob_key", "source_file"], rows, "history/countries/*.txt")
     write_md(OUT / "country_starting_technologies.md", "Country Starting Technologies", ["country_tag", "technology_key", "enabled", "source_file"], tech_rows, "history/countries/*.txt")
     return len(rows), len(tech_rows)
@@ -259,36 +289,42 @@ def parse_strategic_regions() -> Tuple[int, int]:
 
 
 def parse_ideologies() -> Tuple[int, int]:
-    p = ROOT / "common" / "ideologies" / "00_ideologies.txt"
-    txt = p.read_text(encoding="utf-8", errors="ignore") if p.exists() else ""
+    d = ROOT / "common" / "ideologies"
     ideos: List[List[str]] = []
     sub: List[List[str]] = []
-    names = ["democratic", "communism", "fascism", "neutrality"]
-    positions: List[Tuple[str, int]] = []
-    for n in names:
-        m = re.search(rf"\n\s*{n}\s*=\s*\{{", txt)
-        if m:
-            positions.append((n, m.start()))
-    positions.sort(key=lambda x: x[1])
-    for i, (name, pos) in enumerate(positions):
-        end = positions[i + 1][1] if i + 1 < len(positions) else len(txt)
-        body = txt[pos:end]
-        color = re.search(r"color\s*=\s*\{\s*([0-9]+)\s+([0-9]+)\s+([0-9]+)\s*\}", body)
-        ai = re.search(r"\b(ai_[a-zA-Z_]+)\s*=\s*yes", body)
-        ideos.append([
-            name,
-            color.group(1) if color else "",
-            color.group(2) if color else "",
-            color.group(3) if color else "",
-            ai.group(1) if ai else "",
-        ])
-        types = re.search(r"types\s*=\s*\{([\s\S]*?)\n\s*\}\s*\n", body)
-        if types:
-            for sm in re.finditer(r"\b([a-zA-Z0-9_]+)\s*=\s*\{", types.group(1)):
-                sub.append([name, sm.group(1)])
+    if not d.exists():
+        return 0, 0
+    for fp in sorted(d.glob("*.txt")):
+        txt = fp.read_text(encoding="utf-8", errors="ignore")
+        names = ["democratic", "communism", "fascism", "neutrality"]
+        positions: List[Tuple[str, int]] = []
+        for n in names:
+            m = re.search(rf"\n\s*{n}\s*=\s*\{{", txt)
+            if m:
+                positions.append((n, m.start()))
+        positions.sort(key=lambda x: x[1])
+        for i, (name, pos) in enumerate(positions):
+            end = positions[i + 1][1] if i + 1 < len(positions) else len(txt)
+            body = txt[pos:end]
+            color = re.search(r"color\s*=\s*\{\s*([0-9]+)\s+([0-9]+)\s+([0-9]+)\s*\}", body)
+            ai = re.search(r"\b(ai_[a-zA-Z_]+)\s*=\s*yes", body)
+            ideos.append([
+                name,
+                color.group(1) if color else "",
+                color.group(2) if color else "",
+                color.group(3) if color else "",
+                ai.group(1) if ai else "",
+            ])
+            types = re.search(r"types\s*=\s*\{", body)
+            if types:
+                types_body = extract_block(body, types.start())
+                for sm in re.finditer(r"\b([a-zA-Z0-9_]+)\s*=\s*\{", types_body):
+                    sub.append([name, sm.group(1)])
 
-    write_md(OUT / "ideologies.md", "Ideologies", ["ideology", "color_r", "color_g", "color_b", "ai_flag"], ideos, "common/ideologies/00_ideologies.txt")
-    write_md(OUT / "sub_ideologies.md", "Sub Ideologies", ["ideology", "sub_ideology"], sub, "common/ideologies/00_ideologies.txt")
+    ideos = dedup_rows(ideos, [0])  # dedup by ideology name
+    sub = dedup_rows(sub, [0, 1])  # dedup by (ideology, sub_ideology)
+    write_md(OUT / "ideologies.md", "Ideologies", ["ideology", "color_r", "color_g", "color_b", "ai_flag"], ideos, "common/ideologies/*.txt")
+    write_md(OUT / "sub_ideologies.md", "Sub Ideologies", ["ideology", "sub_ideology"], sub, "common/ideologies/*.txt")
     return len(ideos), len(sub)
 
 
@@ -627,6 +663,9 @@ def parse_naval_oob_all() -> Tuple[int, int, int]:
                 in_fleet = False
                 continue
 
+    fleet_rows = dedup_rows(fleet_rows, [0, 1])
+    tf_rows = dedup_rows(tf_rows, [0, 1, 2])
+    ship_rows = dedup_rows(ship_rows, [0, 1, 2, 3])
     write_md(OUT / "fleets_all.md", "Fleets (All Naval OOB Files)",
         ["country_tag", "fleet_name", "naval_base_province", "source_file"],
         fleet_rows, "history/units/*naval*.txt excluding legacy")
@@ -713,6 +752,8 @@ def parse_air_oob_all() -> int:
             if in_air and not in_wing and line == "}":
                 in_air = False
                 continue
+    # Filter out rows with empty amount (junk from parser state issues)
+    rows = [r for r in rows if r[4]]
     write_md(OUT / "air_wings_all.md", "Air Wings (All BBA OOB Files)",
         ["country_tag", "location_state_id", "wing_name", "equipment_type", "amount", "version_name", "source_file"],
         rows, "history/units/*_air_bba.txt")
@@ -722,7 +763,7 @@ def parse_air_oob_all() -> int:
 def parse_continents() -> int:
     p = ROOT / "map" / "continent.txt"
     txt = p.read_text(encoding="utf-8", errors="ignore") if p.exists() else ""
-    rows: List[List[str]] = []
+    rows: List[List[str]] = [["0", "unknown"]]  # continent_id=0 for sea/lake provinces
     i = 1
     for c in re.findall(r"\b([a-z_]+)\b", txt):
         if c in {"continents"}:
@@ -734,27 +775,31 @@ def parse_continents() -> int:
 
 
 def parse_building_types() -> int:
-    p = ROOT / "common" / "buildings" / "00_buildings.txt"
-    txt = p.read_text(encoding="utf-8", errors="ignore") if p.exists() else ""
+    d = ROOT / "common" / "buildings"
     rows: List[List[str]] = []
-    for bm in re.finditer(r"\n\s*([a-z_]+)\s*=\s*\{([\s\S]*?)\n\s*\}", txt):
-        key = bm.group(1)
-        body = bm.group(2)
-        bc = re.search(r"base_cost\s*=\s*([0-9.]+)", body)
-        som = re.search(r"show_on_map\s*=\s*([0-9.]+)", body)
-        stmax = re.search(r"state_max\s*=\s*([0-9.]+)", body)
-        prmax = re.search(r"province_max\s*=\s*([0-9.]+)", body)
-        shares = "yes" if "shares_slots = yes" in body else "no"
-        rows.append([
-            key,
-            bc.group(1) if bc else "",
-            som.group(1) if som else "",
-            stmax.group(1) if stmax else "",
-            prmax.group(1) if prmax else "",
-            shares,
-            "00_buildings.txt",
-        ])
-    write_md(OUT / "building_types.md", "Building Types", ["building_type", "base_cost", "show_on_map", "state_max", "province_max", "shares_slots", "source_file"], rows, "common/buildings/00_buildings.txt")
+    if not d.exists():
+        return 0
+    for fp in sorted(d.glob("*.txt")):
+        txt = fp.read_text(encoding="utf-8", errors="ignore")
+        for bm in re.finditer(r"\n\s*([a-z_]+)\s*=\s*\{([\s\S]*?)\n\s*\}", txt):
+            key = bm.group(1)
+            body = bm.group(2)
+            bc = re.search(r"base_cost\s*=\s*([0-9.]+)", body)
+            som = re.search(r"show_on_map\s*=\s*([0-9.]+)", body)
+            stmax = re.search(r"state_max\s*=\s*([0-9.]+)", body)
+            prmax = re.search(r"province_max\s*=\s*([0-9.]+)", body)
+            shares = "yes" if "shares_slots = yes" in body else "no"
+            rows.append([
+                key,
+                bc.group(1) if bc else "",
+                som.group(1) if som else "",
+                stmax.group(1) if stmax else "",
+                prmax.group(1) if prmax else "",
+                shares,
+                fp.name,
+            ])
+    rows = dedup_rows(rows, [0])  # dedup by building_type
+    write_md(OUT / "building_types.md", "Building Types", ["building_type", "base_cost", "show_on_map", "state_max", "province_max", "shares_slots", "source_file"], rows, "common/buildings/*.txt")
     return len(rows)
 
 
@@ -862,6 +907,61 @@ def find_top_level_blocks(text: str, wrapper: str = "") -> list:
     return results
 
 
+def dedup_rows(rows: list, key_indices: list) -> list:
+    """Keep first occurrence by composite key."""
+    seen: set = set()
+    result: list = []
+    for row in rows:
+        key = tuple(row[i] for i in key_indices)
+        if key in seen:
+            continue
+        seen.add(key)
+        result.append(row)
+    return result
+
+
+def _pdx_date_to_iso(date_str: str) -> str:
+    """Convert Paradox date 'YYYY.M.D' or 'YYYY.M.D.H' to ISO 'YYYY-MM-DD'."""
+    parts = date_str.split(".")
+    if len(parts) >= 3:
+        try:
+            return f"{int(parts[0]):04d}-{int(parts[1]):02d}-{int(parts[2]):02d}"
+        except ValueError:
+            return date_str
+    return date_str
+
+
+# Paradox Script keywords to ignore when extracting entity identifiers
+_PDX_KEYWORDS = frozenset({
+    "if", "else", "else_if", "NOT", "AND", "OR", "limit",
+    "has_dlc", "tooltip", "custom_effect_tooltip", "hidden_effect",
+    "yes", "no", "always", "original_tag", "tag", "is_ai",
+    "set_technology", "has_tech", "is_owned_by", "owner",
+})
+
+
+def find_game_blocks(text: str, skip_keys: set = frozenset()) -> list:
+    """Like find_top_level_blocks but recursively unwraps if/else/else_if
+    conditional blocks so DLC-guarded content is found."""
+    results = []
+    for key, body, pos in find_top_level_blocks(text):
+        if key in ('if', 'else', 'else_if', 'IF', 'ELSE', 'ELSE_IF'):
+            results.extend(find_game_blocks(body, skip_keys))
+        elif key not in skip_keys:
+            results.append((key, body, pos))
+    return results
+
+
+def _extract_equipment_tokens(block_body: str) -> List[str]:
+    """Extract equipment/subunit identifiers from an enable_equipments or
+    enable_subunits block, properly skipping DLC conditional wrappers and
+    quoted strings."""
+    # Remove quoted strings to avoid capturing "By Blood Alone" etc.
+    cleaned = re.sub(r'"[^"]*"', '', block_body)
+    tokens = re.findall(r'\b([a-zA-Z_][a-zA-Z0-9_]*)\b', cleaned)
+    return [t for t in tokens if t not in _PDX_KEYWORDS and len(t) > 1]
+
+
 def parse_country_visuals_all() -> int:
     d = ROOT / "common" / "countries"
     rows: List[List[str]] = []
@@ -905,9 +1005,9 @@ def parse_technologies_all() -> Tuple[int, int, int]:
         if not wrapper_m:
             continue
         wrapper_body = extract_block(txt, wrapper_m.start())
-        # Parse each top-level block inside the wrapper
-        for key, body, _ in find_top_level_blocks(wrapper_body):
-            if key in skip_keys or key.startswith("@"):
+        # Parse each top-level block inside the wrapper, unwrapping DLC conditionals
+        for key, body, _ in find_game_blocks(wrapper_body, skip_keys):
+            if key.startswith("@"):
                 continue
             rc = re.search(r"\bresearch_cost\s*=\s*([0-9.]+)", body)
             sy = re.search(r"\bstart_year\s*=\s*([0-9]+)", body)
@@ -919,31 +1019,37 @@ def parse_technologies_all() -> Tuple[int, int, int]:
             if cat:
                 cats = re.findall(r"\b([a-zA-Z0-9_]+)\b", cat.group(1))
                 cat_first = cats[0] if cats else ""
-            if rc or sy or fn or cat_first:
-                tech_rows.append([
-                    key,
-                    rc.group(1) if rc else "",
-                    sy.group(1) if sy else "",
-                    fn.group(1) if fn else "",
-                    fx.group(1) if fx else "",
-                    fy.group(1) if fy else "",
-                    cat_first,
-                    fp.name,
-                ])
+            # Always emit — some techs (e.g. militia_tech) have no metadata
+            tech_rows.append([
+                key,
+                rc.group(1) if rc else "",
+                sy.group(1) if sy else "",
+                fn.group(1) if fn else "",
+                fx.group(1) if fx else "",
+                fy.group(1) if fy else "",
+                cat_first,
+                fp.name,
+            ])
             for lm in re.finditer(r"leads_to_tech\s*=\s*([a-zA-Z0-9_]+)", body):
-                # find research_cost_coeff near this path block
                 coeff = re.search(r"\bresearch_cost_coeff\s*=\s*([0-9.]+)", body)
                 link_rows.append([key, lm.group(1), coeff.group(1) if coeff else "", fp.name])
-            for um in re.finditer(r"\benable_equipments\s*=\s*\{([^}]*)\}", body, flags=re.S):
-                for eq in re.findall(r"\b([a-zA-Z0-9_]+)\b", um.group(1)):
+            # enable_equipments — use extract_block to handle nested DLC guards
+            for um in re.finditer(r"\benable_equipments\s*=\s*\{", body):
+                eq_body = extract_block(body, um.start())
+                for eq in _extract_equipment_tokens(eq_body):
                     unlock_rows.append([key, "equipment", eq, fp.name])
-            for um in re.finditer(r"\benable_subunits\s*=\s*\{([^}]*)\}", body, flags=re.S):
-                for su in re.findall(r"\b([a-zA-Z0-9_]+)\b", um.group(1)):
+            for um in re.finditer(r"\benable_subunits\s*=\s*\{", body):
+                su_body = extract_block(body, um.start())
+                for su in _extract_equipment_tokens(su_body):
                     unlock_rows.append([key, "subunit", su, fp.name])
-            for um in re.finditer(r"\benable_equipment_modules\s*=\s*\{([^}]*)\}", body, flags=re.S):
-                for eq in re.findall(r"\b([a-zA-Z0-9_]+)\b", um.group(1)):
+            for um in re.finditer(r"\benable_equipment_modules\s*=\s*\{", body):
+                mod_body = extract_block(body, um.start())
+                for eq in _extract_equipment_tokens(mod_body):
                     unlock_rows.append([key, "module", eq, fp.name])
 
+    tech_rows = dedup_rows(tech_rows, [0])
+    link_rows = dedup_rows(link_rows, [0, 1])
+    unlock_rows = dedup_rows(unlock_rows, [0, 1, 2])
     write_md(OUT / "technologies_all.md", "Technologies (All Files)", ["technology_key", "research_cost", "start_year", "folder_name", "folder_x", "folder_y", "category", "source_file"], tech_rows, "common/technologies/*.txt")
     write_md(OUT / "technology_links_all.md", "Technology Links (All Files)", ["from_technology", "to_technology", "research_cost_coeff", "source_file"], link_rows, "common/technologies/*.txt")
     write_md(OUT / "technology_unlocks_all.md", "Technology Unlocks (All Files)", ["technology_key", "unlock_type", "unlock_key", "source_file"], unlock_rows, "common/technologies/*.txt")
@@ -957,27 +1063,64 @@ def parse_focuses_all() -> Tuple[int, int, int]:
     link_rows: List[List[str]] = []
     for fp in sorted(d.glob("*.txt")):
         txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
-        for tm in re.finditer(r"focus_tree\s*=\s*\{([\s\S]*?)\n\}", txt):
-            tb = tm.group(1)
-            tid = re.search(r"\bid\s*=\s*([a-zA-Z0-9_-]+)", tb)
+        # Find focus_tree blocks, unwrapping DLC conditionals
+        for tree_key, tree_body, _ in find_game_blocks(txt):
+            if tree_key != "focus_tree":
+                continue
+            tid = re.search(r"\bid\s*=\s*([a-zA-Z0-9_-]+)", tree_body)
             if not tid:
                 continue
-            init = re.search(r"initial_show_position\s*=\s*\{\s*x\s*=\s*([\-0-9]+)\s*y\s*=\s*([\-0-9]+)", tb)
-            tree_rows.append([tid.group(1), init.group(1) if init else "", init.group(2) if init else "", fp.name])
-            for fm in re.finditer(r"\bfocus\s*=\s*\{([\s\S]*?)\n\s*\}", tb):
-                b = fm.group(1)
-                fid = re.search(r"\bid\s*=\s*([a-zA-Z0-9_-]+)", b)
+            tree_id = tid.group(1)
+            init = re.search(r"initial_show_position\s*=\s*\{\s*x\s*=\s*([\-0-9]+)\s*y\s*=\s*([\-0-9]+)", tree_body)
+            tree_rows.append([tree_id, init.group(1) if init else "", init.group(2) if init else "", fp.name])
+            # Find focus blocks inside tree, unwrapping if/else DLC guards
+            for fkey, fbody, _ in find_game_blocks(tree_body):
+                if fkey != "focus":
+                    continue
+                fid = re.search(r"\bid\s*=\s*([a-zA-Z0-9_-]+)", fbody)
                 if not fid:
                     continue
-                x = re.search(r"\bx\s*=\s*([\-0-9]+)", b)
-                y = re.search(r"\by\s*=\s*([\-0-9]+)", b)
-                cost = re.search(r"\bcost\s*=\s*([0-9]+)", b)
-                icon = re.search(r"\bicon\s*=\s*([A-Za-z0-9_]+)", b)
-                focus_rows.append([fid.group(1), tid.group(1), x.group(1) if x else "", y.group(1) if y else "", cost.group(1) if cost else "", icon.group(1) if icon else "", fp.name])
-                for pr in re.finditer(r"prerequisite\s*=\s*\{\s*focus\s*=\s*([a-zA-Z0-9_-]+)", b):
-                    link_rows.append([fid.group(1), "prerequisite", pr.group(1), fp.name])
-                for mx in re.finditer(r"mutually_exclusive\s*=\s*\{\s*focus\s*=\s*([a-zA-Z0-9_-]+)", b):
-                    link_rows.append([fid.group(1), "mutually_exclusive", mx.group(1), fp.name])
+                focus_id = fid.group(1)
+                x = re.search(r"\bx\s*=\s*([\-0-9]+)", fbody)
+                y = re.search(r"\by\s*=\s*([\-0-9]+)", fbody)
+                cost = re.search(r"\bcost\s*=\s*([0-9]+)", fbody)
+                icon = re.search(r"\bicon\s*=\s*([A-Za-z0-9_]+)", fbody)
+                focus_rows.append([focus_id, tree_id, x.group(1) if x else "", y.group(1) if y else "", cost.group(1) if cost else "", icon.group(1) if icon else "", fp.name])
+                for pr in re.finditer(r"prerequisite\s*=\s*\{\s*focus\s*=\s*([a-zA-Z0-9_-]+)", fbody):
+                    link_rows.append([focus_id, "prerequisite", pr.group(1), fp.name])
+                for mx in re.finditer(r"mutually_exclusive\s*=\s*\{\s*focus\s*=\s*([a-zA-Z0-9_-]+)", fbody):
+                    # Normalize: always store (min, max) to avoid bidirectional duplicates
+                    a, b = focus_id, mx.group(1)
+                    norm_a, norm_b = (a, b) if a < b else (b, a)
+                    link_rows.append([norm_a, "mutually_exclusive", norm_b, fp.name])
+
+        # ── Handle shared_focus and joint_focus blocks (not inside a focus_tree) ──
+        shared_tree_id = None
+        for skey, sbody, _ in find_game_blocks(txt):
+            if skey not in ("shared_focus", "joint_focus"):
+                continue
+            fid = re.search(r"\bid\s*=\s*([a-zA-Z0-9_-]+)", sbody)
+            if not fid:
+                continue
+            # Create a synthetic tree entry per source file (once)
+            if shared_tree_id is None:
+                shared_tree_id = fp.stem + "_shared"
+                tree_rows.append([shared_tree_id, "", "", fp.name])
+            focus_id = fid.group(1)
+            x = re.search(r"\bx\s*=\s*([\-0-9]+)", sbody)
+            y = re.search(r"\by\s*=\s*([\-0-9]+)", sbody)
+            cost = re.search(r"\bcost\s*=\s*([0-9]+)", sbody)
+            icon = re.search(r"\bicon\s*=\s*([A-Za-z0-9_]+)", sbody)
+            focus_rows.append([focus_id, shared_tree_id, x.group(1) if x else "", y.group(1) if y else "", cost.group(1) if cost else "", icon.group(1) if icon else "", fp.name])
+            for pr in re.finditer(r"prerequisite\s*=\s*\{\s*focus\s*=\s*([a-zA-Z0-9_-]+)", sbody):
+                link_rows.append([focus_id, "prerequisite", pr.group(1), fp.name])
+            for mx in re.finditer(r"mutually_exclusive\s*=\s*\{\s*focus\s*=\s*([a-zA-Z0-9_-]+)", sbody):
+                a, b = focus_id, mx.group(1)
+                norm_a, norm_b = (a, b) if a < b else (b, a)
+                link_rows.append([norm_a, "mutually_exclusive", norm_b, fp.name])
+    tree_rows = dedup_rows(tree_rows, [0])
+    focus_rows = dedup_rows(focus_rows, [0])
+    link_rows = dedup_rows(link_rows, [0, 1, 2])
     write_md(OUT / "focus_trees_all.md", "Focus Trees (All Files)", ["focus_tree_id", "initial_x", "initial_y", "source_file"], tree_rows, "common/national_focus/*.txt")
     write_md(OUT / "focuses_all.md", "Focuses (All Files)", ["focus_id", "focus_tree_id", "x", "y", "cost", "icon", "source_file"], focus_rows, "common/national_focus/*.txt")
     write_md(OUT / "focus_links_all.md", "Focus Links (All Files)", ["focus_id", "link_type", "linked_focus_id", "source_file"], link_rows, "common/national_focus/*.txt")
@@ -1008,6 +1151,8 @@ def parse_characters_all() -> Tuple[int, int]:
                 rrows.append([cid, "corps_commander", "", fp.name])
             if "advisor" in blk:
                 rrows.append([cid, "advisor", "", fp.name])
+    crows = dedup_rows(crows, [0])
+    rrows = dedup_rows(rrows, [0, 1])
     write_md(OUT / "characters_all.md", "Characters (All Files)", ["character_id", "name_key", "gender", "source_file"], crows, "common/characters/*.txt")
     write_md(OUT / "character_roles_all.md", "Character Roles (All Files)", ["character_id", "role_type", "ideology", "source_file"], rrows, "common/characters/*.txt")
     return len(crows), len(rrows)
@@ -1042,6 +1187,8 @@ def parse_ideas_all() -> Tuple[int, int]:
             is_law = "law = yes" in first_lines
             _parse_idea_entries(slot_key, slot_body, fp.name, irows, mrows, skip_keys, is_law_slot=is_law)
 
+    irows = dedup_rows(irows, [0])
+    mrows = dedup_rows(mrows, [0, 1])
     write_md(OUT / "ideas_all.md", "Ideas (All Files)", ["idea_key", "slot", "is_law", "cost", "removal_cost", "is_default", "source_file"], irows, "common/ideas/*.txt")
     write_md(OUT / "idea_modifiers_all.md", "Idea Modifiers (All Files)", ["idea_key", "modifier_key", "modifier_value", "source_file"], mrows, "common/ideas/*.txt")
     return len(irows), len(mrows)
@@ -1087,26 +1234,42 @@ def parse_land_oob_all() -> Tuple[int, int, int, int]:
         if "_naval_" in name or "_air_" in name:
             continue
         txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
-        for tm in re.finditer(r"division_template\s*=\s*\{([\s\S]*?)\n\}", txt):
-            b = tm.group(1)
+        # Division templates — use extract_block for proper nested parsing
+        for tm in re.finditer(r"division_template\s*=\s*\{", txt):
+            b = extract_block(txt, tm.start())
+            if not b:
+                continue
             nm = re.search(r"\bname\s*=\s*\"([^\"]+)\"", b)
             grp = re.search(r"division_names_group\s*=\s*([A-Za-z0-9_]+)", b)
             tname = nm.group(1) if nm else ""
+            if not tname:
+                continue
             trows.append([tname, grp.group(1) if grp else "", fp.name])
-            reg = re.search(r"regiments\s*=\s*\{([\s\S]*?)\n\s*\}", b)
-            if reg:
-                for rm in re.finditer(r"([a-zA-Z0-9_]+)\s*=\s*\{\s*x\s*=\s*([0-9]+)\s*y\s*=\s*([0-9]+)", reg.group(1)):
+            reg_m = re.search(r"regiments\s*=\s*\{", b)
+            if reg_m:
+                reg_body = extract_block(b, reg_m.start())
+                for rm in re.finditer(r"([a-zA-Z0-9_]+)\s*=\s*\{\s*x\s*=\s*([0-9]+)\s*y\s*=\s*([0-9]+)", reg_body):
                     rrows.append([tname, rm.group(1), rm.group(2), rm.group(3), fp.name])
-            sup = re.search(r"support\s*=\s*\{([\s\S]*?)\n\s*\}", b)
-            if sup:
-                for sm in re.finditer(r"([a-zA-Z0-9_]+)\s*=\s*\{\s*x\s*=\s*([0-9]+)\s*y\s*=\s*([0-9]+)\s*\}", sup.group(1)):
+            sup_m = re.search(r"support\s*=\s*\{", b)
+            if sup_m:
+                sup_body = extract_block(b, sup_m.start())
+                for sm in re.finditer(r"([a-zA-Z0-9_]+)\s*=\s*\{\s*x\s*=\s*([0-9]+)\s*y\s*=\s*([0-9]+)\s*\}", sup_body):
                     srows.append([tname, sm.group(1), sm.group(2), sm.group(3), fp.name])
-        for dm in re.finditer(r"\bdivision\s*=\s*\{([\s\S]*?)\n\s*\}", txt):
-            b = dm.group(1)
+        # Divisions — use extract_block for proper nested parsing
+        for dm in re.finditer(r"\bdivision\s*=\s*\{", txt):
+            b = extract_block(txt, dm.start())
+            if not b:
+                continue
             loc = re.search(r"\blocation\s*=\s*([0-9]+)", b)
             tmp = re.search(r"division_template\s*=\s*\"([^\"]+)\"", b)
             exp = re.search(r"start_experience_factor\s*=\s*([0-9.]+)", b)
-            drows.append([tmp.group(1) if tmp else "", loc.group(1) if loc else "", exp.group(1) if exp else "", fp.name])
+            template_name = tmp.group(1) if tmp else ""
+            if not template_name:
+                continue
+            drows.append([template_name, loc.group(1) if loc else "", exp.group(1) if exp else "", fp.name])
+    trows = dedup_rows(trows, [0])
+    rrows = dedup_rows(rrows, [0, 2, 3])
+    srows = dedup_rows(srows, [0, 2, 3])
     write_md(OUT / "division_templates_all.md", "Division Templates (All Land OOB Files)", ["template_name", "division_names_group", "source_file"], trows, "history/units/*.txt excluding _naval_/_air_")
     write_md(OUT / "division_template_regiments_all.md", "Division Template Regiments (All Land OOB Files)", ["template_name", "unit_type", "x", "y", "source_file"], rrows, "history/units/*.txt excluding _naval_/_air_")
     write_md(OUT / "division_template_support_all.md", "Division Template Support (All Land OOB Files)", ["template_name", "support_unit", "x", "y", "source_file"], srows, "history/units/*.txt excluding _naval_/_air_")
@@ -1155,6 +1318,7 @@ def parse_unit_types_all() -> int:
                 sc.group(1) if sc else "",
                 fp.name,
             ])
+    rows = dedup_rows(rows, [0])
     write_md(
         OUT / "unit_types_all.md", "Unit Types (All Files)",
         ["unit_type", "abbreviation", "group", "combat_width", "max_strength",
@@ -1179,12 +1343,44 @@ def parse_equipment_all() -> Tuple[int, int]:
         if fp.name.startswith("_") or "filter" in fp.name.lower():
             continue
         txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+
+        # ── Handle duplicate_archetypes blocks (x_tank_chassis, x_plane_airframes) ──
+        dup_m = re.search(r"\bduplicate_archetypes\s*=\s*\{", txt)
+        if dup_m:
+            dup_body = extract_block(txt, dup_m.start())
+            dup_skip = {"for_each", "limit", "OR", "AND", "NOT",
+                        "IF", "ELSE", "module_slots", "default_modules", "type"}
+            for key, body, _ in find_game_blocks(dup_body, dup_skip):
+                if key.startswith("@") or key == "duplicate_archetypes":
+                    continue
+                archetype = re.search(r"\barchetype\s*=\s*([a-zA-Z0-9_]+)", body)
+                arch_key = archetype.group(1) if archetype else ""
+                equip_rows.append([
+                    key, "yes",
+                    arch_key, "",  # archetype, parent
+                    "", "", "", "", "", "", "", "", "", "", "", "", "",  # stats — inherited
+                    fp.name,
+                ])
+                # Generate derived version entries from variant_name blocks
+                vn_m = re.search(r"\bvariant_name\s*=\s*\{", body)
+                if vn_m:
+                    vn_body = extract_block(body, vn_m.start())
+                    for vm in re.finditer(r"\b([a-zA-Z0-9_]+)\s*=", vn_body):
+                        derived = vm.group(1)
+                        if derived != "variant_name" and derived != "find_and_replace":
+                            equip_rows.append([
+                                derived, "no",
+                                key, "",  # archetype = the duplicate archetype, no parent
+                                "", "", "", "", "", "", "", "", "", "", "", "", "",
+                                fp.name,
+                            ])
+
         wrapper_m = re.search(r"\bequipments\s*=\s*\{", txt)
         if not wrapper_m:
             continue
         wrapper_body = extract_block(txt, wrapper_m.start())
-        for key, body, _ in find_top_level_blocks(wrapper_body):
-            if key in skip_keys or key.startswith("@"):
+        for key, body, _ in find_game_blocks(wrapper_body, skip_keys):
+            if key.startswith("@"):
                 continue
             is_archetype = "is_archetype = yes" in body
             year = re.search(r"\byear\s*=\s*([0-9]+)", body)
@@ -1229,6 +1425,34 @@ def parse_equipment_all() -> Tuple[int, int]:
                 for rm in re.finditer(r"\b([a-zA-Z_]+)\s*=\s*([0-9]+)", res_body):
                     res_rows.append([key, rm.group(1), rm.group(2), fp.name])
 
+    equip_rows = dedup_rows(equip_rows, [0])
+    res_rows = dedup_rows(res_rows, [0, 1])
+
+    # ── Synthesize auto-generated versioned entries from duplicate_archetypes ──
+    # Build map: archetype_key → set of version numbers from extracted rows
+    existing_keys = {r[0] for r in equip_rows}
+    arch_versions: dict = {}  # archetype → [0, 1, 2, ...]
+    for r in equip_rows:
+        m = re.match(r"^(.+?)_(\d+)$", r[0])
+        if m:
+            arch_versions.setdefault(m.group(1), set()).add(int(m.group(2)))
+    # For each duplicate archetype, generate missing versioned entries
+    dup_archetypes = [(r[0], r[2]) for r in equip_rows if r[1] == "yes" and r[2]]
+    for dup_key, parent_key in dup_archetypes:
+        parent_versions = arch_versions.get(parent_key, set())
+        if not parent_versions:
+            continue
+        for ver in sorted(parent_versions):
+            derived = f"{dup_key}_{ver}"
+            if derived not in existing_keys:
+                equip_rows.append([
+                    derived, "no", dup_key, "",
+                    "", "", "", "", "", "", "", "", "", "", "", "", "",
+                    "auto-generated",
+                ])
+                existing_keys.add(derived)
+
+    equip_rows = dedup_rows(equip_rows, [0])
     write_md(
         OUT / "equipment_all.md", "Equipment Definitions (All Files)",
         ["equipment_key", "is_archetype", "archetype", "parent", "year", "build_cost_ic",
@@ -1259,18 +1483,39 @@ def parse_state_categories() -> int:
 
 
 def parse_terrain_types() -> int:
-    """Extract distinct terrain values from map/definition.csv column 5."""
-    p = ROOT / "map" / "definition.csv"
+    """Extract terrain category keys from common/terrain/*.txt and province
+    terrain values from map/definition.csv.
+
+    The categories block defines gameplay terrain types (ocean, forest, hills …).
+    The definition.csv column 5 contains province-level type markers (lake,
+    land, sea) that are also valid terrain_type values.
+    """
     terrains: set = set()
-    if not p.exists():
-        return 0
-    with p.open("r", encoding="utf-8", errors="ignore") as f:
-        for raw in f:
-            parts = raw.strip().split(";")
-            if len(parts) >= 5 and parts[4]:
-                terrains.add(parts[4])
+
+    # Source 1: common/terrain/*.txt — gameplay terrain categories
+    d = ROOT / "common" / "terrain"
+    if d.exists():
+        for fp in sorted(d.glob("*.txt")):
+            txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+            m = re.search(r"\bcategories\s*=\s*\{", txt)
+            if not m:
+                continue
+            body = extract_block(txt, m.start())
+            for key, _body, _pos in find_top_level_blocks(body):
+                terrains.add(key)
+
+    # Source 2: map/definition.csv column 5 — province terrain markers
+    defn = ROOT / "map" / "definition.csv"
+    if defn.exists():
+        with defn.open("r", encoding="utf-8", errors="ignore") as f:
+            for raw in f:
+                parts = raw.strip().split(";")
+                if len(parts) >= 5 and parts[4]:
+                    terrains.add(parts[4])
+
     rows = [[t] for t in sorted(terrains)]
-    write_md(OUT / "terrain_types.md", "Terrain Types (distinct)", ["terrain_type"], rows, "map/definition.csv")
+    write_md(OUT / "terrain_types.md", "Terrain Types", ["terrain_type"], rows,
+             "common/terrain/*.txt + map/definition.csv")
     return len(rows)
 
 
@@ -1356,6 +1601,9 @@ def parse_state_history_extended() -> Tuple[int, int, int, int]:
                         prov_bld_rows.append([prov_id, state_id, bm.group(1), iso_date,
                                               bm.group(2), fp.name, dlc])
 
+    core_rows = dedup_rows(core_rows, [0, 1, 2])
+    own_rows = dedup_rows(own_rows, [0, 1])
+    prov_bld_rows = dedup_rows(prov_bld_rows, [0, 2, 3])
     write_md(OUT / "state_cores.md", "State Cores",
         ["state_id", "country_tag", "effective_date", "source_file", "dlc_source"],
         core_rows, "history/states/*.txt")
@@ -1398,6 +1646,7 @@ def parse_technology_categories_all() -> Tuple[int, int]:
                     junc_rows.append([key, c])
 
     cat_rows = [[c] for c in sorted(all_cats)]
+    junc_rows = dedup_rows(junc_rows, [0, 1])
     write_md(OUT / "technology_categories.md", "Technology Categories",
         ["category_key"], cat_rows, "common/technologies/*.txt")
     write_md(OUT / "technology_categories_junction.md", "Technology Categories Junction",
@@ -1453,7 +1702,13 @@ def parse_character_traits_all() -> Tuple[int, int]:
                             role_trait_rows.append([cid, role_name, tk, fp.name])
                     role_pos = role_pos + rm.start() + len(role_body) + 2
 
-    trait_rows = [[tk, tt] for tk, tt in sorted(all_traits)]
+    # Deduplicate traits by trait_key (PK); keep first trait_type seen
+    seen_traits: dict = {}
+    for tk, tt in sorted(all_traits):
+        if tk not in seen_traits:
+            seen_traits[tk] = tt
+    trait_rows = [[tk, tt] for tk, tt in sorted(seen_traits.items())]
+    role_trait_rows = dedup_rows(role_trait_rows, [0, 1, 2])
     write_md(OUT / "character_traits.md", "Character Traits",
         ["trait_key", "trait_type"], trait_rows, "common/characters/*.txt")
     write_md(OUT / "character_role_traits.md", "Character Role Traits",
@@ -1537,6 +1792,7 @@ def parse_country_starting_ideas_all() -> int:
             for idea in re.findall(r"\b([a-zA-Z_][a-zA-Z0-9_]+)\b", ideas_body):
                 rows.append([tag, idea, eff_date, fp.name, dlc_ctx])
 
+    rows = dedup_rows(rows, [0, 1, 2])
     write_md(OUT / "country_starting_ideas.md", "Country Starting Ideas",
         ["country_tag", "idea_key", "effective_date", "source_file", "dlc_source"],
         rows, "history/countries/*.txt")
@@ -1571,6 +1827,7 @@ def parse_equipment_variants_all() -> int:
             ])
             pos = pos + m.start() + len(body) + 2
 
+    rows = dedup_rows(rows, [0, 1, 2])
     write_md(OUT / "equipment_variants.md", "Equipment Variants",
         ["owner_tag", "base_equipment_key", "version_name", "source_file"],
         rows, "history/countries/*.txt")
@@ -1657,6 +1914,9 @@ def parse_mio_traits_all() -> Tuple[int, int, int, int]:
 
     excl_rows = [[a, b] for a, b in sorted(excl_set)]
 
+    trait_rows = dedup_rows(trait_rows, [0])
+    bonus_rows = dedup_rows(bonus_rows, [0, 1, 2])
+    prereq_rows = dedup_rows(prereq_rows, [0, 1])
     write_md(OUT / "mio_traits.md", "MIO Traits",
         ["trait_token", "owner_key", "owner_type", "trait_type", "name", "icon",
          "special_trait_background", "position_x", "position_y", "relative_position_id"],
@@ -1748,7 +2008,11 @@ def parse_province_adjacencies() -> int:
                 continue
             if parts[0] == "-1":
                 continue
-            rows.append(parts[:10])
+            row = parts[:10]
+            # Convert -1 sentinel in through_province_id to empty string
+            if len(row) > 3 and row[3] == "-1":
+                row[3] = ""
+            rows.append(row)
     write_md(
         OUT / "province_adjacencies.md", "Province Adjacencies",
         ["from_province_id", "to_province_id", "adjacency_type", "through_province_id",
@@ -1893,36 +2157,38 @@ def parse_bookmarks_all() -> Tuple[int, int]:
         if not outer_m:
             continue
         outer_body = extract_block(txt, outer_m.start())
-        # find bookmark = { ... } blocks inside
-        bm_m = re.search(r"\bbookmark\s*=\s*\{", outer_body)
-        if not bm_m:
-            continue
-        bm_body = extract_block(outer_body, bm_m.start())
-        name = re.search(r'\bname\s*=\s*"([^"]+)"', bm_body)
-        desc = re.search(r'\bdesc\s*=\s*"([^"]+)"', bm_body)
-        date = re.search(r'\bdate\s*=\s*"?([0-9.]+)"?', bm_body)
-        pic = re.search(r'\bpicture\s*=\s*"?([^"\s]+)"?', bm_body)
-        default_c = re.search(r'\bdefault_country\s*=\s*"?([A-Z0-9_]+)"?', bm_body)
-        is_default = "yes" if re.search(r'\bdefault\s*=\s*yes', bm_body) else "no"
-        bm_rows.append([
-            name.group(1) if name else "",
-            date.group(1) if date else "",
-            pic.group(1) if pic else "",
-            default_c.group(1) if default_c else "",
-            is_default,
-            fp.name,
-        ])
-        # country entries: "TAG" = { ... } — quoted tags
-        for cm in re.finditer(r'"([A-Z0-9_]+)"\s*=\s*\{', bm_body):
-            tag = cm.group(1)
-            c_body = extract_block(bm_body, cm.start())
-            ide = re.search(r'\bideology\s*=\s*([a-zA-Z0-9_]+)', c_body)
-            bc_rows.append([
+        # find all bookmark = { ... } blocks inside (may be multiple per file)
+        for bm_key, bm_body, _ in find_top_level_blocks(outer_body):
+            if bm_key != "bookmark":
+                continue
+            name = re.search(r'\bname\s*=\s*"([^"]+)"', bm_body)
+            desc = re.search(r'\bdesc\s*=\s*"([^"]+)"', bm_body)
+            date = re.search(r'\bdate\s*=\s*"?([0-9.]+)"?', bm_body)
+            pic = re.search(r'\bpicture\s*=\s*"?([^"\s]+)"?', bm_body)
+            default_c = re.search(r'\bdefault_country\s*=\s*"?([A-Z0-9_]+)"?', bm_body)
+            is_default = "yes" if re.search(r'\bdefault\s*=\s*yes', bm_body) else "no"
+            date_val = _pdx_date_to_iso(date.group(1)) if date else ""
+            bm_rows.append([
                 name.group(1) if name else "",
-                tag,
-                ide.group(1) if ide else "",
+                date_val,
+                pic.group(1) if pic else "",
+                default_c.group(1) if default_c else "",
+                is_default,
                 fp.name,
             ])
+            # country entries: "TAG" = { ... } — quoted tags
+            for cm in re.finditer(r'"([A-Z0-9_]+)"\s*=\s*\{', bm_body):
+                tag = cm.group(1)
+                c_body = extract_block(bm_body, cm.start())
+                ide = re.search(r'\bideology\s*=\s*([a-zA-Z0-9_]+)', c_body)
+                bc_rows.append([
+                    name.group(1) if name else "",
+                    tag,
+                    ide.group(1) if ide else "",
+                    fp.name,
+                ])
+    bm_rows = dedup_rows(bm_rows, [0])
+    bc_rows = dedup_rows(bc_rows, [0, 1])
     write_md(
         OUT / "bookmarks.md", "Bookmarks",
         ["bookmark_name", "bookmark_date", "picture_gfx", "default_country_tag", "is_default", "source_file"],
@@ -2672,6 +2938,8 @@ def parse_bop_all() -> Tuple[int, int, int, int]:
             right = re.search(r'\bright_side\s*=\s*(\S+)', bop_body)
             dec_cat = re.search(r'\bdecision_category\s*=\s*(\S+)', bop_body)
             bop_rows.append([bop_key, init_val.group(1) if init_val else "", left.group(1) if left else "", right.group(1) if right else "", dec_cat.group(1) if dec_cat else "", fp.name])
+            # Always emit a neutral pseudo-side for root-level ranges
+            side_rows.append([bop_key, "neutral", "neutral", ""])
             # Neutral ranges at root level
             _parse_bop_ranges(bop_key, "neutral", bop_body, range_rows, rmod_rows)
             # Side blocks
@@ -2694,6 +2962,9 @@ def parse_bop_all() -> Tuple[int, int, int, int]:
                 side_rows.append([bop_key, side_id, pos_label, s_icon.group(1) if s_icon else ""])
                 _parse_bop_ranges(bop_key, side_id, s_body, range_rows, rmod_rows)
                 side_pos = side_pos + sm.start() + len(s_body) + 2
+    bop_rows = dedup_rows(bop_rows, [0])
+    side_rows = dedup_rows(side_rows, [0, 1])
+    range_rows = dedup_rows(range_rows, [0])
     write_md(OUT / "balance_of_power_definitions.md", "Balance of Power Definitions",
         ["bop_key", "initial_value", "left_side", "right_side", "decision_category", "source_file"],
         bop_rows, "common/bop/*.txt")
@@ -2934,6 +3205,7 @@ def parse_peace_cost_modifiers_all() -> int:
             cost = re.search(r'\bcost_multiplier\s*=\s*([0-9.\-]+)', body)
             dlc = re.search(r'has_dlc\s*=\s*"([^"]+)"', body)
             rows.append([key, cat.group(1) if cat else "", pat, cost.group(1) if cost else "", dlc.group(1) if dlc else "", fp.name])
+    rows = dedup_rows(rows, [0])
     write_md(OUT / "peace_cost_modifiers.md", "Peace Cost Modifiers",
         ["modifier_key", "category_key", "peace_action_type", "cost_multiplier", "dlc_source", "source_file"],
         rows, "common/peace_conference/cost_modifiers/*.txt")

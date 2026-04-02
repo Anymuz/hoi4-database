@@ -302,6 +302,7 @@ Source: `common/technologies/*.txt`
 | armored_car_at_upgrade | 1 | 1942 |  |  |  | motorized_equipment | infantry.txt |
 | SWE_lynx_armored_car | 1 | 1942 |  |  |  | motorized_equipment | infantry.txt |
 | mechanised_infantry | 2 | 1940 | infantry_folder | 0 | @1940 | motorized_equipment | infantry.txt |
+| militia_tech |  |  |  |  |  |  | infantry.txt |
 | amphibious_mechanized_infantry | 2 | 1941 | infantry_folder | 2 | @1941 | motorized_equipment | infantry.txt |
 | amphibious_mechanized_infantry_2 | 2 | 1943 | infantry_folder | 2 | @1943 | motorized_equipment | infantry.txt |
 | mechanised_infantry2 | 2 | 1942 | infantry_folder | 0 | @1942 | motorized_equipment | infantry.txt |
@@ -329,6 +330,7 @@ Source: `common/technologies/*.txt`
 | BEL_chasseurs_ardennais_ncns | 1 | 1936 |  |  |  |  | infantry.txt |
 | uranium_tipped_bullets | 1 | 1947 |  |  |  |  | infantry.txt |
 | PHI_battalion_combat_teams | 1 |  |  |  |  |  | infantry.txt |
+| revolutionary_mass_assault |  |  |  |  |  |  | infantry.txt |
 | early_ship_hull_light | 1.5 | 1922 | mtgnavalfolder | 0 | 2 | naval_equipment | MTG_naval.txt |
 | basic_ship_hull_light | 1.5 | 1936 | mtgnavalfolder | 0 | 8 | naval_equipment | MTG_naval.txt |
 | improved_ship_hull_light | 1.5 | 1939 | mtgnavalfolder | 0 | 14 | naval_equipment | MTG_naval.txt |
@@ -458,6 +460,7 @@ Source: `common/technologies/*.txt`
 | improved_submarine | 2 | 1940 | naval_folder | 0 | 13 | naval_equipment | naval.txt |
 | advanced_submarine | 2 | 1944 | naval_folder | 0 | 19 | naval_equipment | naval.txt |
 | torpedo_cruiser | 1 | 1936 |  |  |  |  | naval.txt |
+| fleet_submarines |  |  |  |  |  |  | naval.txt |
 | gwtank_chassis | 2 | 1918 | nsb_armour_folder | 2 | 0 | armor | NSB_armor.txt |
 | basic_light_tank_chassis | 2 | 1934 | nsb_armour_folder | -1 | 2 | armor | NSB_armor.txt |
 | improved_light_tank_chassis | 2 | 1936 | nsb_armour_folder | -1 | 4 | armor | NSB_armor.txt |
@@ -553,6 +556,8 @@ Source: `common/technologies/*.txt`
 | tech_field_hospital2 | 1.5 | 1939 | support_folder | @field_hospital_x | @1939 | support_tech | support.txt |
 | tech_field_hospital3 | 2.0 | 1942 | support_folder | @field_hospital_x | @1942 | support_tech | support.txt |
 | tech_field_hospital4 | 2.0 | 1945 | support_folder | @field_hospital_x | @1945 | support_tech | support.txt |
+| SWI_saint_bernard_tech |  |  |  |  |  |  | support.txt |
+| NORDIC_supportCollaboration_tech |  |  |  |  |  |  | support.txt |
 | tech_logistics_company | 1.25 | 1936 | support_folder | @logistic_x | @1936 | support_tech | support.txt |
 | tech_logistics_company2 | 1.5 | 1939 | support_folder | @logistic_x | @1939 | support_tech | support.txt |
 | tech_logistics_company3 | 2.0 | 1942 | support_folder | @logistic_x | @1942 | support_tech | support.txt |

@@ -20,3 +20,4 @@ Thumbs.db
 # Project
 *.bak
 redundant-docs/
+.env

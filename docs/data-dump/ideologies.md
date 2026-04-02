@@ -1,6 +1,6 @@
 # Ideologies
 
-Source: `common/ideologies/00_ideologies.txt`
+Source: `common/ideologies/*.txt`
 
 | ideology | color_r | color_g | color_b | ai_flag |
 |---|---|---|---|---|

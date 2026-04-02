@@ -395,10 +395,6 @@ Source: `common/characters/*.txt`
 | BEL_dieudonne_salve | advisor |  | BEL.txt |
 | BEL_prudent_nuyten | advisor |  | BEL.txt |
 | BEL_albert_deveze | advisor |  | BEL.txt |
-| BEL_albert_deveze | advisor |  | BEL.txt |
-| BEL_albert_deveze | advisor |  | BEL.txt |
-| BEL_prudent_nuyten | advisor |  | BEL.txt |
-| BEL_prudent_nuyten | advisor |  | BEL.txt |
 | BEL_edouard_van_den_burgen | advisor |  | BEL.txt |
 | BEL_camille_gutt | advisor |  | BEL.txt |
 | BEL_camille_huysmans | advisor |  | BEL.txt |
@@ -1904,15 +1900,11 @@ Source: `common/characters/*.txt`
 | GER_albert_speer | advisor |  | GER.txt |
 | GER_hjalmar_schacht | advisor |  | GER.txt |
 | GER_walther_funk | advisor |  | GER.txt |
-| GER_walther_funk | advisor |  | GER.txt |
-| GER_hjalmar_schacht | advisor |  | GER.txt |
 | GER_ludwig_erhard | advisor |  | GER.txt |
 | GER_joseph_goebbels | advisor |  | GER.txt |
 | GER_rudolf_hess | advisor |  | GER.txt |
 | GER_martin_bormann | advisor |  | GER.txt |
 | GER_heinrich_himmler | advisor |  | GER.txt |
-| GER_martin_bormann | advisor |  | GER.txt |
-| GER_rudolf_hess | advisor |  | GER.txt |
 | GER_leni_riefenstahl | advisor |  | GER.txt |
 | GER_franz_seldte | advisor |  | GER.txt |
 | GER_hanns_kerrl | advisor |  | GER.txt |
@@ -1925,8 +1917,6 @@ Source: `common/characters/*.txt`
 | GER_kurt_schumacher | advisor |  | GER.txt |
 | GER_theodor_heuss | advisor |  | GER.txt |
 | GER_hans_luther | advisor |  | GER.txt |
-| GER_ludwig_erhard | advisor |  | GER.txt |
-| GER_walther_funk | advisor |  | GER.txt |
 | GER_hermann_erhardt | corps_commander |  | GER.txt |
 | GER_hermann_erhardt | advisor |  | GER.txt |
 | GER_adolf_friedrich_von_mecklenburg | advisor |  | GER.txt |
@@ -2332,12 +2322,8 @@ Source: `common/characters/*.txt`
 | IRQ_faisal_ii | advisor |  | IRQ.txt |
 | IRQ_abd_al_ilah | advisor |  | IRQ.txt |
 | IRQ_faisal_ii | country_leader | despotism | IRQ.txt |
-| IRQ_faisal_ii | advisor |  | IRQ.txt |
-| IRQ_ghazi_i | advisor |  | IRQ.txt |
-| IRQ_abd_al_ilah | advisor |  | IRQ.txt |
 | IRQ_abd_al_ilah | country_leader |  | IRQ.txt |
 | IRQ_abd_al_ilah | field_marshal |  | IRQ.txt |
-| IRQ_abd_al_ilah | advisor |  | IRQ.txt |
 | IRQ_ahmed_barzani | field_marshal |  | IRQ.txt |
 | IRQ_mustafa_barzani | corps_commander |  | IRQ.txt |
 | IRQ_rashid_ali_algaylani | country_leader | fascism_ideology | IRQ.txt |
@@ -3871,9 +3857,6 @@ Source: `common/characters/*.txt`
 | PRC_wu_han | advisor |  | PRC.txt |
 | PRC_xu_teli | advisor |  | PRC.txt |
 | PRC_chen_changhao | advisor |  | PRC.txt |
-| PRC_kang_sheng | advisor |  | PRC.txt |
-| PRC_zhou_enlai | advisor |  | PRC.txt |
-| PRC_zhou_enlai | advisor |  | PRC.txt |
 | PRC_lin_bojiu | advisor |  | PRC.txt |
 | PRC_he_yuandang | advisor |  | PRC.txt |
 | PRC_cai_chang | advisor |  | PRC.txt |
@@ -4675,10 +4658,6 @@ Source: `common/characters/*.txt`
 | SWE_rickard_sandler | advisor |  | SWE.txt |
 | SWE_alva_myrdal | advisor |  | SWE.txt |
 | SWE_gunnar_myrdal | advisor |  | SWE.txt |
-| SWE_gunnar_myrdal | advisor |  | SWE.txt |
-| SWE_gunnar_myrdal | advisor |  | SWE.txt |
-| SWE_alva_myrdal | advisor |  | SWE.txt |
-| SWE_alva_myrdal | advisor |  | SWE.txt |
 | SWE_per_edvin_skold | advisor |  | SWE.txt |
 | SWE_birger_furugard | country_leader |  | SWE.txt |
 | SWE_birger_furugard | advisor |  | SWE.txt |

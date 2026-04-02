@@ -297,6 +297,7 @@ armored_car3,2,1942,infantry_folder,infantry.txt
 armored_car_at_upgrade,1,1942,,infantry.txt
 SWE_lynx_armored_car,1,1942,,infantry.txt
 mechanised_infantry,2,1940,infantry_folder,infantry.txt
+militia_tech,,,,infantry.txt
 amphibious_mechanized_infantry,2,1941,infantry_folder,infantry.txt
 amphibious_mechanized_infantry_2,2,1943,infantry_folder,infantry.txt
 mechanised_infantry2,2,1942,infantry_folder,infantry.txt
@@ -324,6 +325,7 @@ BEL_chasseurs_ardennais,1,1936,,infantry.txt
 BEL_chasseurs_ardennais_ncns,1,1936,,infantry.txt
 uranium_tipped_bullets,1,1947,,infantry.txt
 PHI_battalion_combat_teams,1,,,infantry.txt
+revolutionary_mass_assault,,,,infantry.txt
 early_ship_hull_light,1.5,1922,mtgnavalfolder,MTG_naval.txt
 basic_ship_hull_light,1.5,1936,mtgnavalfolder,MTG_naval.txt
 improved_ship_hull_light,1.5,1939,mtgnavalfolder,MTG_naval.txt
@@ -453,6 +455,7 @@ basic_submarine,2,1936,naval_folder,naval.txt
 improved_submarine,2,1940,naval_folder,naval.txt
 advanced_submarine,2,1944,naval_folder,naval.txt
 torpedo_cruiser,1,1936,,naval.txt
+fleet_submarines,,,,naval.txt
 gwtank_chassis,2,1918,nsb_armour_folder,NSB_armor.txt
 basic_light_tank_chassis,2,1934,nsb_armour_folder,NSB_armor.txt
 improved_light_tank_chassis,2,1936,nsb_armour_folder,NSB_armor.txt
@@ -548,6 +551,8 @@ tech_field_hospital,1.25,1936,support_folder,support.txt
 tech_field_hospital2,1.5,1939,support_folder,support.txt
 tech_field_hospital3,2.0,1942,support_folder,support.txt
 tech_field_hospital4,2.0,1945,support_folder,support.txt
+SWI_saint_bernard_tech,,,,support.txt
+NORDIC_supportCollaboration_tech,,,,support.txt
 tech_logistics_company,1.25,1936,support_folder,support.txt
 tech_logistics_company2,1.5,1939,support_folder,support.txt
 tech_logistics_company3,2.0,1942,support_folder,support.txt

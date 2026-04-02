@@ -1,3 +1,4 @@
+```mermaid
 erDiagram
     %% ============================================================
     %% HOI4 Complete ER Diagram — 127 tables (66 base + 61 DLC)
@@ -1212,3 +1213,4 @@ erDiagram
     doctrine_tracks ||--o{ grand_doctrine_tracks : "used_by"
     doctrine_tracks ||--o{ subdoctrines : "has_subdoctrine"
     countries ||--o{ country_starting_doctrines : "starts_with"
+```

@@ -4,6 +4,7 @@ Source: `map/continent.txt`
 
 | continent_id_order | continent_key |
 |---|---|
+| 0 | unknown |
 | 1 | europe |
 | 2 | north_america |
 | 3 | south_america |

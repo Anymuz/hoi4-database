@@ -31,13 +31,9 @@ Source: `common/bookmarks/*.txt`
 | BLITZKRIEG_NAME | SWI | democratic | blitzkrieg.txt |
 | BLITZKRIEG_NAME | AFG | neutrality | blitzkrieg.txt |
 | GATHERING_STORM_NAME | FRA | democratic | the_gathering_storm.txt |
-| GATHERING_STORM_NAME | FRA | democratic | the_gathering_storm.txt |
 | GATHERING_STORM_NAME | USA | democratic | the_gathering_storm.txt |
 | GATHERING_STORM_NAME | ENG | democratic | the_gathering_storm.txt |
-| GATHERING_STORM_NAME | ENG | democratic | the_gathering_storm.txt |
 | GATHERING_STORM_NAME | ITA | fascism | the_gathering_storm.txt |
-| GATHERING_STORM_NAME | ITA | fascism | the_gathering_storm.txt |
-| GATHERING_STORM_NAME | SOV | communism | the_gathering_storm.txt |
 | GATHERING_STORM_NAME | SOV | communism | the_gathering_storm.txt |
 | GATHERING_STORM_NAME | CAN | democratic | the_gathering_storm.txt |
 | GATHERING_STORM_NAME | AST | democratic | the_gathering_storm.txt |

@@ -9,7 +9,7 @@ Source: `common/national_focus/*.txt`
 | AFG_fruit_packing | afghanistan_tree | -1 | 1 | 10 | GFX_focus_AFG_fruit_processing | afghanistan.txt |
 | AFG_clear_malarial_swamps | afghanistan_tree | -8 | 1 | 5 | GFX_focus_AFG_anti_malaria | afghanistan.txt |
 | AFG_qargha_dam | afghanistan_tree | 0 | 1 | 10 | GFX_focus_generic_hydroelectric_energy | afghanistan.txt |
-| AFG_kajaki_dam | afghanistan_tree |  |  |  |  | afghanistan.txt |
+| AFG_kajaki_dam | afghanistan_tree | 0 | 1 | 10 |  | afghanistan.txt |
 | AFG_iron_mines | afghanistan_tree | -1 | 1 | 10 | GFX_focus_generic_steel | afghanistan.txt |
 | AFG_chromite_mines | afghanistan_tree | 1 | 1 | 10 | GFX_focus_generic_chromium | afghanistan.txt |
 | AFG_modern_economy | afghanistan_tree | 1 | 1 | 10 | GFX_focus_AFG_a_modern_economy | afghanistan.txt |
@@ -29,7 +29,7 @@ Source: `common/national_focus/*.txt`
 | AFG_rail_construction | afghanistan_tree | 0 | 1 | 5 | GFX_focus_generic_railroad | afghanistan.txt |
 | AFG_expand_kabul_university | afghanistan_tree | 1 | 1 | 5 | GFX_focus_AFG_research | afghanistan.txt |
 | AFG_state_industries | afghanistan_tree | 0 | 1 | 5 | GFX_focus_generic_military_industry | afghanistan.txt |
-| AFG_maintain_quami | afghanistan_tree | 25 | 0 |  | GFX_focus_AFG_quami | afghanistan.txt |
+| AFG_maintain_quami | afghanistan_tree | 25 | 0 | 5 | GFX_focus_AFG_quami | afghanistan.txt |
 | AFG_asymmetric_warfare | afghanistan_tree | 0 | 1 | 5 | GFX_focus_ETH_freedom_at_gunpoint | afghanistan.txt |
 | AFG_expand_quami_template | afghanistan_tree | -2 | 1 | 5 | GFX_focus_generic_manpower | afghanistan.txt |
 | AFG_khyber_pass_riflining | afghanistan_tree | 0 | 1 | 10 | GFX_focus_focus_fra_maquis | afghanistan.txt |
@@ -61,9 +61,9 @@ Source: `common/national_focus/*.txt`
 | AFG_purchase_destroyers | afghanistan_tree | 0 | 1 | 5 | GFX_focus_SWE_italian_destroyers | afghanistan.txt |
 | AFG_research_bonus_2 | afghanistan_tree | 0 | 1 | 10 | GFX_focus_generic_navy_battleship2 | afghanistan.txt |
 | AFG_purchase_capital_ships | afghanistan_tree | 0 | 1 | 5 | GFX_goal_generic_navy_battleship | afghanistan.txt |
-| AFG_against_kabul | afghanistan_tree | 6 | 0 |  | GFX_focus_AFG_against_kabul | afghanistan.txt |
-| AFG_contact_amanullah_loyalists | afghanistan_tree | -6 | 1 |  | GFX_focus_AFG_contact_amanullah_loyalists_alt | afghanistan.txt |
-| AFG_remember_the_khost_rebellion | afghanistan_tree | 6 | 1 |  | GFX_focus_PER_recruit_bakhtiari | afghanistan.txt |
+| AFG_against_kabul | afghanistan_tree | 6 | 0 | 5 | GFX_focus_AFG_against_kabul | afghanistan.txt |
+| AFG_contact_amanullah_loyalists | afghanistan_tree | -6 | 1 | 5 | GFX_focus_AFG_contact_amanullah_loyalists_alt | afghanistan.txt |
+| AFG_remember_the_khost_rebellion | afghanistan_tree | 6 | 1 | 5 | GFX_focus_PER_recruit_bakhtiari | afghanistan.txt |
 | AFG_secure_army_support | afghanistan_tree | 0 | 1 | 10 | GFX_focus_AFG_contact_amanullah_loyalists | afghanistan.txt |
 | AFG_contact_rural_loyalists | afghanistan_tree | 6 | 1 | 10 | GFX_focus_AFG_contact_rural_loyalists | afghanistan.txt |
 | AFG_hold_a_loya_jirga | afghanistan_tree | 0 | 1 | 5 | GFX_focus_ETH_re | afghanistan.txt |
@@ -156,8 +156,8 @@ Source: `common/national_focus/*.txt`
 | AFG_seek_british_investment | afghanistan_tree | 1 | 2 | 10 | GFX_focus_chi_british_cooperation | afghanistan.txt |
 | AFG_reform_2 | afghanistan_tree | 1 | 1 | 10 | GFX_focus_generic_hydroelectric_energy | afghanistan.txt |
 | AFG_secure_dynasty | afghanistan_tree | 0 | 1 | 5 | GFX_focus_AFG_secure_dynasty | afghanistan.txt |
-| AFG_maintain_neutrality | afghanistan_tree |  |  |  | GFX_goal_generic_neutrality_focus | afghanistan.txt |
-| AFG_expel_axis_nationals | afghanistan_tree |  |  |  | GFX_focus_generic_anti_fascist_diplomacy | afghanistan.txt |
+| AFG_maintain_neutrality | afghanistan_tree | 0 | 1 | 5 | GFX_goal_generic_neutrality_focus | afghanistan.txt |
+| AFG_expel_axis_nationals | afghanistan_tree | -1 | 1 | 5 | GFX_focus_generic_anti_fascist_diplomacy | afghanistan.txt |
 | AFG_expel_allied_nationals | afghanistan_tree | 1 | 1 | 5 | GFX_focus_ARG_cut_ties_with_britain | afghanistan.txt |
 | AFG_pursue_our_own_agenda | afghanistan_tree | -5 | 0 | 10 | GFX_goal_generic_neutrality_focus | afghanistan.txt |
 | AFG_align_with_the_allies | afghanistan_tree | -5 | 0 | 5 | GFX_focus_ARG_join_the_allies | afghanistan.txt |
@@ -229,6 +229,132 @@ Source: `common/national_focus/*.txt`
 | ARG_support_radical_nationalism | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_ARG_support_radical_nationalism | argentina.txt |
 | ARG_corporatism | argentine_focus_tree | 8 | 1 | 5 | GFX_focus_ICE_state_corporatism | argentina.txt |
 | ARG_reestablish_ligas_patrioticas | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_ARG_reestablish_ligas_patrioticas | argentina.txt |
+| ARG_fascist_researchers | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_ARG_fascist_researchers | argentina.txt |
+| ARG_hitler_1 | argentine_focus_tree | 0 | 2 | 5 | GFX_focus_ARG_accept_german_advisors | argentina.txt |
+| ARG_hitler_2 | argentine_focus_tree | -2 | 1 | 10 | GFX_goal_generic_army_tanks | argentina.txt |
+| ARG_hitler_3 | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_wonderweapons | argentina.txt |
+| ARG_hitler_4 | argentine_focus_tree | 2 | 1 | 5 | GFX_focus_ARG_study_the_battle_of_the_river_plate | argentina.txt |
+| ARG_support_the_spanish_coup | argentine_focus_tree | 10 | 1 | 5 | GFX_focus_intervention_spain_nationalists | argentina.txt |
+| ARG_demand_spanish_compensation | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_ARG_demand_spanish_compensation | argentina.txt |
+| ARG_invite_spanish_nationalists | argentine_focus_tree | 2 | 1 | 5 | GFX_focus_ARG_invite_spanish_nationalists | argentina.txt |
+| ARG_encourage_german_investments | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_chi_mission_to_germany | argentina.txt |
+| ARG_encourage_italian_argentine_diplomacy | argentine_focus_tree | 2 | 1 | 10 | GFX_focus_befriend_italy | argentina.txt |
+| ARG_guardia_nacional | argentine_focus_tree | 0 | 2 | 10 | GFX_focus_ARG_guardia_nacional | argentina.txt |
+| ARG_union_nacional_fascista | argentine_focus_tree | 0 | 2 | 10 | GFX_focus_ARG_union_nacional_fascista | argentina.txt |
+| ARG_rapid_militirization | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_SOV_mobilization_plan | argentina.txt |
+| ARG_argentine_nationalism | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_ARG_argentine_nationalism | argentina.txt |
+| ARG_war_division | argentine_focus_tree | 1 | 1 | 5 | GFX_goal_generic_major_war | argentina.txt |
+| ARG_argentina_first | argentine_focus_tree | -2 | 2 | 10 | GFX_focus_ARG_argentina_first | argentina.txt |
+| ARG_join_the_axis | argentine_focus_tree | 2 | 2 | 10 | GFX_focus_ger_reichskommisariats | argentina.txt |
+| ARG_our_own_path | argentine_focus_tree | 1 | 1 | 10 | GFX_focus_ARG_our_own_path | argentina.txt |
+| ARG_dominate_the_south | argentine_focus_tree | 2 | 2 | 10 | GFX_focus_por_recover_latin_america | argentina.txt |
+| ARG_preparations_for_war | argentine_focus_tree | 4 | 1 | 5 | GFX_focus_ARG_preparations_for_war | argentina.txt |
+| ARG_conquer_paraguay | argentine_focus_tree | -2 | 1 | 10 | GFX_focus_generic_attack_paraguay | argentina.txt |
+| ARG_paraguayan_ultimatum | argentine_focus_tree | 2 | 1 | 10 | GFX_focus_ARG_paraguayan_ultimatum | argentina.txt |
+| ARG_revive_the_colonial_plan | argentine_focus_tree | 4 | 1 | 10 | GFX_focus_ARG_revive_the_colonial_plan | argentina.txt |
+| ARG_conquer_uruguay | argentine_focus_tree | 6 | 1 | 10 | GFX_focus_generic_attack_uruguay | argentina.txt |
+| ARG_reach_out_to_chile | argentine_focus_tree | -3 | 1 | 10 | GFX_focus_generic_befriend_chile | argentina.txt |
+| ARG_chilean_ultimatum | argentine_focus_tree | 1 | 2 | 10 | GFX_focus_ARG_chilean_ultimatum | argentina.txt |
+| ARG_the_old_enemy | argentine_focus_tree | 1 | 1 | 10 | GFX_focus_ARG_the_old_enemy | argentina.txt |
+| ARG_south_american_unity | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_ARG_south_american_unity | argentina.txt |
+| ARG_integrate_operation_bolivar | argentine_focus_tree | -6 | 1 | 5 | GFX_focus_BRA_expand_bolivar | argentina.txt |
+| ARG_release_hellmuth | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_ARG_release_hellmuth | argentina.txt |
+| ARG_anti_american_propaganda | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_ARG_anti_american_propaganda | argentina.txt |
+| ARG_the_war_machine | argentine_focus_tree | 6 | 1 | 5 | GFX_focus_ARG_the_war_machine | argentina.txt |
+| ARG_secure_the_borders | argentine_focus_tree | 0 | 1 | 10 | GFX_goal_fortify_the_westwall | argentina.txt |
+| ARG_argentine_island_sovereignty | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_ARG_argentine_island_sovereignty | argentina.txt |
+| ARG_the_clean_election | argentine_focus_tree | 0 | 0 | 10 | GFX_focus_ARG_the_clean_election | argentina.txt |
+| ARG_in_memory_of_yrigoyen | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_ARG_in_memory_of_yrigoyen | argentina.txt |
+| ARG_anti_corruption_policies | argentine_focus_tree | -1 | 1 | 10 | GFX_focus_ARG_anti_corruption_policies | argentina.txt |
+| ARG_promote_urbanization | argentine_focus_tree | 1 | 1 | 10 | GFX_focus_generic_industry_2 | argentina.txt |
+| ARG_a_true_democracy | argentine_focus_tree | 0 | 1 | 10 | GFX_goal_support_democracy | argentina.txt |
+| ARG_secure_the_opposition | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_generic_support_the_left_right | argentina.txt |
+| ARG_argentina_for_all | argentine_focus_tree | 1 | 2 | 10 | GFX_focus_ARG_argentina_for_all | argentina.txt |
+| ARG_reinforce_the_education_system | argentine_focus_tree | -2 | 1 | 10 | GFX_focus_generic_university_1 | argentina.txt |
+| ARG_university_reforms | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_research | argentina.txt |
+| ARG_regulated_national_salaries | argentine_focus_tree | 2 | 1 | 10 | GFX_focus_hol_the_foundations_of_defense | argentina.txt |
+| ARG_social_welfare_fund | argentine_focus_tree | 0 | 1 | 10 | GFX_goal_generic_national_unity | argentina.txt |
+| ARG_internal_focus | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_ARG_strengthening_the_concordancia | argentina.txt |
+| ARG_alvears_democracy | argentine_focus_tree | 0 | 2 | 5 | GFX_focus_ARG_alvears_democracy | argentina.txt |
+| ARG_british_gaurantee | argentine_focus_tree | 3 | 1 | 5 | GFX_focus_chi_british_cooperation | argentina.txt |
+| ARG_seek_american_support | argentine_focus_tree | -3 | 1 | 5 | GFX_focus_generic_befriend_usa | argentina.txt |
+| ARG_royal_airforce_influence | argentine_focus_tree | -1 | 1 | 5 | GFX_focus_generic_multi_role_aircraft | argentina.txt |
+| ARG_royal_navy_influence | argentine_focus_tree | 1 | 1 | 5 | GFX_focus_generic_navy_battleship2 | argentina.txt |
+| ARG_reinforced_alliance | argentine_focus_tree | 1 | 1 | 10 | GFX_focus_generic_diplomatic_treaty | argentina.txt |
+| ARG_us_army_training | argentine_focus_tree | -1 | 1 | 10 | GFX_focus_usa_recruit_the_free_corps | argentina.txt |
+| ARG_american_defense_investments | argentine_focus_tree | 1 | 1 | 10 | GFX_focus_FIN_coastal_defense | argentina.txt |
+| ARG_joint_military_exercises | argentine_focus_tree | 1 | 1 | 10 | GFX_focus_generic_military_academy | argentina.txt |
+| ARG_join_the_allies | argentine_focus_tree | -1 | 3 | 10 | GFX_focus_ARG_help_the_allies | argentina.txt |
+| ARG_bastion_of_democracy | argentine_focus_tree | 1 | 3 | 10 | GFX_focus_ARG_bastion_of_peace | argentina.txt |
+| ARG_align_with_the_monroe_doctrine | argentine_focus_tree | -2 | 1 | 5 | GFX_focus_ARG_align_with_the_monroe_doctrine | argentina.txt |
+| ARG_south_american_alliance | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_ARG_pan_american_cooperation | argentina.txt |
+| ARG_bolstering_the_army | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_ARG_recruitment_drive | argentina.txt |
+| ARG_the_second_argentine_republic | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_ARG_the_second_argentine_republic | argentina.txt |
+| ARG_envoy_to_london | argentine_focus_tree | 2 | 1 | 10 | GFX_focus_ARG_envoy_to_london | argentina.txt |
+| ARG_study_the_battle_of_the_river_plate | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_ARG_study_the_battle_of_the_river_plate | argentina.txt |
+| ARG_islas_del_atlantico_sur | argentine_focus_tree | 2 | 1 | 10 | GFX_focus_ARG_islas_del_atlantico_sur | argentina.txt |
+| ARG_improving_the_islands | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_ARG_improving_the_islands | argentina.txt |
+| ARG_firmes_volamos | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_ARG_firmes_volamos | argentina.txt |
+| ARG_extinguish_south_american_fascism | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_generic_anti_fascist_diplomacy | argentina.txt |
+| ARG_american_allyship | argentine_focus_tree | -2 | 1 | 10 | GFX_focus_ARG_american_allyship | argentina.txt |
+| ARG_us_marine_program | argentine_focus_tree | 0 | 1 | 5 | GFX_goal_generic_special_forces | argentina.txt |
+| ARG_counter_intelligence_program | argentine_focus_tree | -2 | 1 | 5 | GFX_focus_SWI_embrace_rote_drei | argentina.txt |
+| ARG_end_operation_bolivar | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_ARG_end_operation_bolivar | argentina.txt |
+| ARG_encourage_the_red_scare | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_SOV_builder_of_the_red_army | argentina.txt |
+| ARG_extinguish_south_american_communism | argentine_focus_tree | 0 | 1 | 10 | GFX_goal_anti_comintern_pact | argentina.txt |
+| ARG_a_call_to_reform | argentine_focus_tree | -12 | 0 | 10 | GFX_focus_SWE_socialist_reforms | argentina.txt |
+| ARG_invite_ghioldi_back_to_argentina | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_ARG_invite_ghioldi_back_to_argentina | argentina.txt |
+| ARG_support_the_spanish_republicans | argentine_focus_tree | 2 | 1 | 5 | GFX_focus_generic_befriend_republican_spain_focus | argentina.txt |
+| ARG_legitimize_the_PCA | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_ARG_legitimize_the_PCA | argentina.txt |
+| ARG_reach_out_to_the_soviet_union | argentine_focus_tree | -1 | 1 | 5 | GFX_focus_chi_mission_to_the_soviet_union | argentina.txt |
+| ARG_unite_the_workers_of_argentina | argentine_focus_tree | 1 | 1 | 5 | GFX_focus_generic_workers_and_farmers_rise | argentina.txt |
+| ARG_viva_la_revolucion | argentine_focus_tree | 1 | 1 | 10 | GFX_focus_SWE_refuge_for_revolutionaries | argentina.txt |
+| ARG_forge_our_own_future | argentine_focus_tree | 4 | 1 | 10 | GFX_focus_ARG_forge_our_own_future | argentina.txt |
+| ARG_women_in_industry | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_ARG_women_in_industry | argentina.txt |
+| ARG_support_the_farmers | argentine_focus_tree | -1 | 1 | 5 | GFX_focus_prc_agrarian_socialism | argentina.txt |
+| ARG_socialist_volunteers | argentine_focus_tree | 1 | 1 | 5 | GFX_focus_generic_limited_social_mobilization | argentina.txt |
+| ARG_the_buenos_aires_conference | argentine_focus_tree | 1 | 3 | 5 | GFX_focus_ARG_the_buenos_aires_conference | argentina.txt |
+| ARG_align_with_the_soviets | argentine_focus_tree | -4 | 1 | 10 | GFX_focus_generic_join_comintern | argentina.txt |
+| ARG_soviet_industrial_model | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_SOV_organize_wreckers | argentina.txt |
+| ARG_committee_of_state_security | argentine_focus_tree | -1 | 1 | 10 | GFX_focus_generic_secret_service_agency | argentina.txt |
+| ARG_russian_manufacturers | argentine_focus_tree | 1 | 1 | 10 | GFX_focus_generic_communist_industry | argentina.txt |
+| ARG_centralize_power | argentine_focus_tree | 1 | 3 | 10 | GFX_focus_ARG_centralize_power | argentina.txt |
+| ARG_workers_rights | argentine_focus_tree | 4 | 1 | 10 | GFX_focus_generic_full_employment | argentina.txt |
+| ARG_reform_our_industry | argentine_focus_tree | 0 | 1 | 10 | GFX_goal_generic_soviet_construction | argentina.txt |
+| ARG_empower_the_fjc | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_ARG_empower_the_fjc | argentina.txt |
+| ARG_state_atheism | argentine_focus_tree | -1 | 1 | 5 | GFX_focus_ARG_state_atheism | argentina.txt |
+| ARG_liberation_theology | argentine_focus_tree | 1 | 1 | 5 | GFX_focus_ARG_liberation_theology | argentina.txt |
+| ARG_socialist_researchers | argentine_focus_tree | 1 | 1 | 10 | GFX_focus_generic_socialist_science | argentina.txt |
+| ARG_conquer_south_america | argentine_focus_tree | 2 | 1 | 10 | GFX_focus_ARG_conquer_the_continent | argentina.txt |
+| ARG_integrate_the_motherland | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_por_latin_american_communism | argentina.txt |
+| ARG_unify_south_america | argentine_focus_tree | -2 | 1 | 10 | GFX_focus_ARG_unify_south_america | argentina.txt |
+| ARG_a_red_south_america | argentine_focus_tree | 2 | 1 | 10 | GFX_focus_BRA_create_faction | argentina.txt |
+| ARG_improve_patagonia | argentine_focus_tree | 0 | 2 | 10 | GFX_focus_ARG_improve_patagonia | argentina.txt |
+| ARG_establish_the_free_association | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_ARG_establish_the_free_association | argentina.txt |
+| ARG_no_gods_no_masters | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_ARG_no_gods_no_masters | argentina.txt |
+| ARG_banco_central_de_la_republica_argentina | argentine_focus_tree | 34 | 0 | 10 | GFX_focus_ARG_banco_central_de_la_republica_argentina | argentina.txt |
+| ARG_reach_out_to_the_great_powers | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_ARG_reach_out_to_the_great_powers | argentina.txt |
+| ARG_industrial_expansion | argentine_focus_tree | -2 | 1 | 10 | GFX_focus_generic_industry_3 | argentina.txt |
+| ARG_production_initiative | argentine_focus_tree | -5 | 1 | 10 | GFX_goal_generic_production | argentina.txt |
+| ARG_economic_tax_reforms | argentine_focus_tree | 2 | 1 | 5 | GFX_focus_generic_treaty | argentina.txt |
+| ARG_economic_reactivation_act | argentine_focus_tree | 5 | 1 | 5 | GFX_focus_ARG_economic_reactivation_act | argentina.txt |
+| ARG_immigration_wave | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_ARG_immigration_wave | argentina.txt |
+| ARG_develop_civilian_economy | argentine_focus_tree | 0 | 1 | 10 | GFX_goal_generic_construct_civ_factory | argentina.txt |
+| ARG_the_argentinian_metropole | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_generic_industry_3 | argentina.txt |
+| ARG_invest_in_the_roads | argentine_focus_tree | -1 | 1 | 5 | GFX_focus_generic_improve_roads | argentina.txt |
+| ARG_invest_in_the_railways | argentine_focus_tree | 1 | 1 | 5 | GFX_focus_generic_railroad | argentina.txt |
+| ARG_expand_steel_extraction | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_generic_steel | argentina.txt |
+| ARG_expand_aluminum_extraction | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_generic_aluminum | argentina.txt |
+| ARG_yacimientos_petroliferos_fiscales | argentine_focus_tree | 1 | 1 | 10 | GFX_focus_ARG_yacimientos_petroliferos_fiscales | argentina.txt |
+| ARG_rapid_urbanization | argentine_focus_tree | -1 | 1 | 10 | GFX_focus_ARG_rapid_urbanization | argentina.txt |
+| ARG_agricultural_improvements | argentine_focus_tree | 1 | 1 | 10 | GFX_focus_generic_agricultural_subsidies | argentina.txt |
+| ARG_military_production_lines | argentine_focus_tree | 0 | 1 | 10 | GFX_goal_generic_construct_mil_factory | argentina.txt |
+| ARG_capitalize_the_beef_industry | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_ARG_capitalize_the_beef_industry | argentina.txt |
+| ARG_revisit_the_roca_runciman_treaty | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_ARG_revisit_the_roca_runciman_treaty | argentina.txt |
+| ARG_a_new_trading_partner | argentine_focus_tree | 2 | 1 | 10 | GFX_focus_ARG_a_new_trading_partner | argentina.txt |
+| ARG_develop_the_electricity_sector | argentine_focus_tree | 0 | 1 | 5 | GFX_focus_ARG_develop_the_electricity_sector | argentina.txt |
+| ARG_invest_in_construction_guilds | argentine_focus_tree | 0 | 1 | 5 | GFX_goal_generic_construction2 | argentina.txt |
+| ARG_technical_schools | argentine_focus_tree | 0 | 1 | 10 | GFX_focus_generic_university_3 | argentina.txt |
 | AST_additional_militia_training | australian_focus | 2 | 0 | 10 | GFX_goal_generic_allies_build_infantry | australia.txt |
 | AST_royal_australian_artillery | australian_focus | -1 | 1 | 10 | GFX_goal_generic_army_artillery2 | australia.txt |
 | AST_promote_reservists | australian_focus | 1 | 1 | 10 | GFX_goal_generic_army_doctrines | australia.txt |
@@ -323,7 +449,7 @@ Source: `common/national_focus/*.txt`
 | AST_research_city_excursions | australian_focus | -1 | 5 | 10 | GFX_goal_tfv_generic_tech_sharing | australia.txt |
 | AST_nz_puppet | australian_focus | 1 | 5 | 10 | GFX_goal_generic_position_armies | australia.txt |
 | AST_the_threat_against_the_people | australian_focus | 3 | 5 | 10 | GFX_goal_generic_major_war | australia.txt |
-| AUS_repeal_the_may_constitution | austria_focus_tree | 16 | 0 |  | GFX_focus_AUS_disregard_the_treaties | austria.txt |
+| AUS_repeal_the_may_constitution | austria_focus_tree | 16 | 0 | 5 | GFX_focus_AUS_disregard_the_treaties | austria.txt |
 | AUS_release_imprisoned_leaders | austria_focus_tree | -7 | 1 | 5 | GFX_focus_AUS_release_imprisoned_leaders | austria.txt |
 | AUS_austria_against_fascism | austria_focus_tree | 5 | 1 | 10 | GFX_focus_generic_workers | austria.txt |
 | AUS_austromarxism_focus | austria_focus_tree | -9 | 1 | 10 | GFX_focus_AUS_austromarxism | austria.txt |
@@ -344,7 +470,7 @@ Source: `common/national_focus/*.txt`
 | AUS_properly_trained_militias | austria_focus_tree | 0 | 1 | 5 | GFX_focus_AUS_properly_trained_militias | austria.txt |
 | AUS_a_new_beginning | austria_focus_tree | 0 | 3 | 10 | GFX_focus_generic_soviet_politics | austria.txt |
 | AUS_a_safe_harbor_for_dissidents | austria_focus_tree | 1 | 1 | 10 | GFX_focus_SWE_refuge_for_revolutionaries | austria.txt |
-| AUS_universitat_wien | austria_focus_tree | 2 | 1 |  | GFX_focus_research | austria.txt |
+| AUS_universitat_wien | austria_focus_tree | 2 | 1 | 10 | GFX_focus_research | austria.txt |
 | AUS_womens_education_initiative | austria_focus_tree | -1 | 1 | 5 | GFX_focus_AUS_womens_education_initiative | austria.txt |
 | AUS_scientific_grants | austria_focus_tree | 1 | 1 | 5 | GFX_focus_generic_university_3 | austria.txt |
 | AUS_danubian_socialist_communes | austria_focus_tree | 1 | 1 | 10 | GFX_focus_AUS_danubian_socialist_communes | austria.txt |
@@ -418,8 +544,8 @@ Source: `common/national_focus/*.txt`
 | AUS_subjugate_lands_of_old | austria_focus_tree | -3 | 1 | 10 | GFX_goal_generic_demand_territory | austria.txt |
 | AUS_the_silesian_question | austria_focus_tree | -1 | 1 | 10 | GFX_focus_POL_reassert_silesian_claims | austria.txt |
 | AUS_tighten_control_of_subjects | austria_focus_tree | 1 | 1 | 5 | GFX_focus_eng_move_to_secure_the_dominions | austria.txt |
-| AUS_reclaim_habsburg | austria_focus_tree | 3 | 2 |  | GFX_focus_AUS_reclaim_habsburg | austria.txt |
-| AUS_war_against_guarantors | austria_focus_tree | 2 | 0 |  | GFX_focus_generic_strike_at_democracy1 | austria.txt |
+| AUS_reclaim_habsburg | austria_focus_tree | 3 | 2 | 10 | GFX_focus_AUS_reclaim_habsburg | austria.txt |
+| AUS_war_against_guarantors | austria_focus_tree | 2 | 0 | 10 | GFX_focus_generic_strike_at_democracy1 | austria.txt |
 | AUS_renew_claims_in_italy | austria_focus_tree | -2 | 2 | 10 | GFX_focus_attack_italy | austria.txt |
 | AUS_extend_italian_claims | austria_focus_tree | 1 | 1 | 10 | GFX_goal_generic_more_territorial_claims | austria.txt |
 | AUS_strike_deal_with_italy | austria_focus_tree | 0 | 2 | 10 | GFX_focus_befriend_italy | austria.txt |
@@ -458,8 +584,8 @@ Source: `common/national_focus/*.txt`
 | AUS_heritage_of_an_empire | austria_focus_tree | 2 | 2 | 10 | GFX_focus_AUS_heritage_of_an_empire | austria.txt |
 | AUS_second_brothers_war | austria_focus_tree | 0 | 2 | 10 | GFX_focus_attack_germany | austria.txt |
 | AUS_an_improved_german_state | austria_focus_tree | 0 | 1 | 10 | GFX_focus_AUS_an_improved_german_state | austria.txt |
-| AUS_restoring_our_rightful_flag | austria_focus_tree | -2 | 1 |  | GFX_focus_generic_attack_haiti | austria.txt |
-| AUS_seek_to_purchase_alaska | austria_focus_tree | 2 | 1 |  | GFX_focus_AUS_seek_to_purchase_alaska | austria.txt |
+| AUS_restoring_our_rightful_flag | austria_focus_tree | -2 | 1 | 10 | GFX_focus_generic_attack_haiti | austria.txt |
+| AUS_seek_to_purchase_alaska | austria_focus_tree | 2 | 1 | 10 | GFX_focus_AUS_seek_to_purchase_alaska | austria.txt |
 | AUS_regulate_austrian_finance_sector | austria_focus_tree | 12 | 0 | 5 | GFX_focus_generic_improve_the_administration | austria.txt |
 | AUS_seek_papal_support | austria_focus_tree | 0 | 1 | 5 | GFX_focus_generic_pope | austria.txt |
 | AUS_invest_in_erzberg_steel_mines | austria_focus_tree | -6 | 1 | 10 | GFX_focus_generic_mining_industry | austria.txt |
@@ -572,13 +698,13 @@ Source: `common/national_focus/*.txt`
 | ah_construction_effort_3 | austro_hungarian_releasable_focus | 2 | 1 | 10 | GFX_goal_generic_construct_civ_factory | austro_hungarian_releasable_shared.txt |
 | ah_nuclear_effort | austro_hungarian_releasable_focus | -2 | 1 | 10 | GFX_focus_wonderweapons | austro_hungarian_releasable_shared.txt |
 | ah_extra_tech_slot | austro_hungarian_releasable_focus | 0 | 1 | 10 | GFX_focus_research | austro_hungarian_releasable_shared.txt |
-| ah_extra_tech_slot_2 | austro_hungarian_releasable_focus |  |  |  | GFX_focus_research | austro_hungarian_releasable_shared.txt |
+| ah_extra_tech_slot_2 | austro_hungarian_releasable_focus | 0 | 1 | 10 | GFX_focus_research | austro_hungarian_releasable_shared.txt |
 | ah_secret_weapons | austro_hungarian_releasable_focus | 2 | 1 | 10 | GFX_goal_generic_secret_weapon | austro_hungarian_releasable_shared.txt |
 | ah_political_effort | austro_hungarian_releasable_focus | 19 | 0 | 10 | GFX_goal_generic_demand_territory | austro_hungarian_releasable_shared.txt |
-| ah_collectivist_ethos | austro_hungarian_releasable_focus |  |  |  | GFX_goal_generic_national_unity | austro_hungarian_releasable_shared.txt |
-| ah_nationalism_focus | austro_hungarian_releasable_focus |  |  |  | GFX_goal_support_fascism | austro_hungarian_releasable_shared.txt |
-| ah_internationalism_focus | austro_hungarian_releasable_focus |  |  |  | GFX_goal_support_communism | austro_hungarian_releasable_shared.txt |
-| ah_liberty_ethos | austro_hungarian_releasable_focus |  |  |  | GFX_goal_support_democracy | austro_hungarian_releasable_shared.txt |
+| ah_collectivist_ethos | austro_hungarian_releasable_focus | -1 | 1 | 10 | GFX_goal_generic_national_unity | austro_hungarian_releasable_shared.txt |
+| ah_nationalism_focus | austro_hungarian_releasable_focus | -2 | 1 | 10 | GFX_goal_support_fascism | austro_hungarian_releasable_shared.txt |
+| ah_internationalism_focus | austro_hungarian_releasable_focus | 0 | 1 | 10 | GFX_goal_support_communism | austro_hungarian_releasable_shared.txt |
+| ah_liberty_ethos | austro_hungarian_releasable_focus | 1 | 1 | 10 | GFX_goal_support_democracy | austro_hungarian_releasable_shared.txt |
 | ah_militarism | austro_hungarian_releasable_focus | 0 | 1 | 10 | GFX_goal_generic_political_pressure | austro_hungarian_releasable_shared.txt |
 | ah_political_correctness | austro_hungarian_releasable_focus | 0 | 1 | 10 | GFX_goal_generic_dangerous_deal | austro_hungarian_releasable_shared.txt |
 | ah_neutrality_focus | austro_hungarian_releasable_focus | 0 | 1 | 10 | GFX_goal_generic_neutrality_focus | austro_hungarian_releasable_shared.txt |
@@ -589,10 +715,70 @@ Source: `common/national_focus/*.txt`
 | ah_paramilitarism | austro_hungarian_releasable_focus | 0 | 1 | 10 | GFX_goal_generic_military_sphere | austro_hungarian_releasable_shared.txt |
 | ah_indoctrination_focus | austro_hungarian_releasable_focus | 0 | 1 | 10 | GFX_goal_generic_propaganda | austro_hungarian_releasable_shared.txt |
 | ah_foreign_expeditions | austro_hungarian_releasable_focus | 0 | 1 | 10 | GFX_goal_generic_more_territorial_claims | austro_hungarian_releasable_shared.txt |
-| ah_why_we_fight | austro_hungarian_releasable_focus |  |  |  | GFX_goal_generic_propaganda | austro_hungarian_releasable_shared.txt |
-| ah_political_commissars | austro_hungarian_releasable_focus |  |  |  | GFX_goal_generic_forceful_treaty | austro_hungarian_releasable_shared.txt |
+| ah_why_we_fight | austro_hungarian_releasable_focus | -2 | 1 | 10 | GFX_goal_generic_propaganda | austro_hungarian_releasable_shared.txt |
+| ah_political_commissars | austro_hungarian_releasable_focus | 0 | 1 | 10 | GFX_goal_generic_forceful_treaty | austro_hungarian_releasable_shared.txt |
 | ah_ideological_fanaticism | austro_hungarian_releasable_focus | 1 | 1 | 10 | GFX_goal_generic_demand_territory | austro_hungarian_releasable_shared.txt |
-| ah_technology_sharing | austro_hungarian_releasable_focus |  |  |  | GFX_goal_generic_scientific_exchange | austro_hungarian_releasable_shared.txt |
+| ah_technology_sharing | austro_hungarian_releasable_focus | 2 | 1 | 10 | GFX_goal_generic_scientific_exchange | austro_hungarian_releasable_shared.txt |
+| BALTIC_rejoin_the_railways | baltic_shared_shared | 10 | 0 | 5 | GFX_goal_generic_construct_infrastructure | baltic_shared.txt |
+| BALTIC_axis_investments | baltic_shared_shared | -7 | 1 | 10 | GFX_focus_chi_mission_to_germany | baltic_shared.txt |
+| BALTIC_german_war_economics | baltic_shared_shared | -1 | 1 | 10 | GFX_goal_generic_production | baltic_shared.txt |
+| BALTIC_autobahn | baltic_shared_shared | 0 | 1 | 10 | GFX_goal_reichsautobahn | baltic_shared.txt |
+| BALTIC_eastwall | baltic_shared_shared | -2 | 1 | 10 | GFX_goal_fortify_the_westwall | baltic_shared.txt |
+| BALTIC_balticwall | baltic_shared_shared | 0 | 1 | 10 | GFX_focus_generic_coastal_fort | baltic_shared.txt |
+| BALTIC_german_tank_licences | baltic_shared_shared | 1 | 1 | 10 | GFX_goal_generic_army_tanks | baltic_shared.txt |
+| BALTIC_german_baltic_industry | baltic_shared_shared | 0 | 1 | 10 | GFX_goal_generic_production2 | baltic_shared.txt |
+| BALTIC_request_german_support | baltic_shared_shared | 0 | 1 | 10 | GFX_goal_generic_trade | baltic_shared.txt |
+| BALTIC_renew_allied_trade | baltic_shared_shared | -3 | 1 | 10 | GFX_focus_chi_british_cooperation | baltic_shared.txt |
+| BALTIC_ford_motors | baltic_shared_shared | -1 | 1 | 10 | GFX_goal_generic_army_motorized | baltic_shared.txt |
+| BALTIC_crossley_motors | baltic_shared_shared | 0 | 1 | 10 | GFX_goal_generic_army_motorized | baltic_shared.txt |
+| BALTIC_british_designers | baltic_shared_shared | 0 | 1 | 10 | GFX_goal_generic_major_alliance | baltic_shared.txt |
+| BALTIC_british_aircraft | baltic_shared_shared | 1 | 1 | 10 | GFX_goal_generic_air_fighter | baltic_shared.txt |
+| BALTIC_allied_shipments | baltic_shared_shared | 0 | 1 | 10 | GFX_goal_generic_small_arms | baltic_shared.txt |
+| BALTIC_baltic_fleet | baltic_shared_shared | 0 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | baltic_shared.txt |
+| BALTIC_attract_workers_to_capital | baltic_shared_shared | 0 | 1 | 10 | GFX_goal_generic_construct_civilian | baltic_shared.txt |
+| BALTIC_rebuild_forts | baltic_shared_shared | 0 | 1 | 10 | GFX_goal_generic_fortify_city | baltic_shared.txt |
+| BALTIC_arm_the_nation | baltic_shared_shared | 0 | 1 | 10 | GFX_goal_generic_construct_mil_factory | baltic_shared.txt |
+| BALTIC_unchain_education | baltic_shared_shared | 2 | 1 | 10 | GFX_focus_research | baltic_shared.txt |
+| BALTIC_technology_sharing | baltic_shared_shared | 0 | 1 | 10 | GFX_goal_tfv_generic_tech_sharing | baltic_shared.txt |
+| BALTIC_defence_of_our_nation | baltic_shared_shared | 0 | 1 | 10 | GFX_goal_generic_defence | baltic_shared.txt |
+| BALTIC_modernize_industry | baltic_shared_shared | 4 | 1 | 10 | GFX_focus_generic_industry_1 | baltic_shared.txt |
+| BALTIC_domestic_motors | baltic_shared_shared | -1 | 1 | 10 | GFX_goal_generic_army_tanks | baltic_shared.txt |
+| BALTIC_school_of_aviation | baltic_shared_shared | 1 | 1 | 10 | GFX_goal_generic_air_fighter2 | baltic_shared.txt |
+| BALTIC_original_designs | baltic_shared_shared | 1 | 1 | 10 | GFX_goal_generic_small_arms | baltic_shared.txt |
+| BALTIC_arms_industry | baltic_shared_shared | 0 | 2 | 10 | GFX_goal_generic_construct_mil_factory | baltic_shared.txt |
+| BALTIC_natural_resources | baltic_shared_shared | 3 | 1 | 10 |  | baltic_shared.txt |
+| BALTIC_trade_with_neighbors | baltic_shared_shared | -1 | 1 | 10 | GFX_goal_generic_positive_trade_relations | baltic_shared.txt |
+| BALTIC_invest_in_baltic_trade | baltic_shared_shared | 1 | 1 | 10 | GFX_goal_generic_trade | baltic_shared.txt |
+| BALTIC_restore_workers_republic | baltic_shared_shared | 25 | 0 | 10 | GFX_goal_support_communism | baltic_shared.txt |
+| BALTIC_seek_support_of_soviets | baltic_shared_shared | -3 | 1 | 10 | GFX_focus_chi_mission_to_the_soviet_union | baltic_shared.txt |
+| BALTIC_soviet_equipment | baltic_shared_shared | -2 | 1 | 5 | GFX_focus_generic_combined_arms | baltic_shared.txt |
+| BALTIC_soviet_volunteer_forces | baltic_shared_shared | 0 | 1 | 5 | GFX_focus_generic_manpower | baltic_shared.txt |
+| BALTIC_soviet_military_staff | baltic_shared_shared | 2 | 1 | 5 | GFX_focus_generic_military_academy | baltic_shared.txt |
+| BALTIC_communist_opposition | baltic_shared_shared | 3 | 1 | 10 | GFX_goal_generic_war_with_comintern | baltic_shared.txt |
+| BALTIC_forment_disloyalty | baltic_shared_shared | -2 | 1 | 5 | GFX_goal_tfv_sever_ties_with_uk | baltic_shared.txt |
+| BALTIC_concessions_for_catholics | baltic_shared_shared | 0 | 1 | 5 | GFX_focus_mex_restore_the_army_of_christ | baltic_shared.txt |
+| BALTIC_secure_military_support | baltic_shared_shared | 2 | 1 | 5 | GFX_focus_generic_support_the_left_right | baltic_shared.txt |
+| BALTIC_overthrow_the_government | baltic_shared_shared | 0 | 3 | 10 | GFX_goal_generic_war_with_comintern | baltic_shared.txt |
+| BALTIC_sieze_the_means_of_production | baltic_shared_shared | 2 | 1 | 10 | GFX_focus_prc_agrarian_socialism | baltic_shared.txt |
+| BALTIC_revolutionary_cabinet | baltic_shared_shared | 0 | 1 | 5 | GFX_goal_generic_national_unity | baltic_shared.txt |
+| BALTIC_direct_intervention | baltic_shared_shared | -2 | 1 | 10 | GFX_goal_molotov_ribbentrop_pact | baltic_shared.txt |
+| BALTIC_squash_resistance | baltic_shared_shared | -4 | 1 | 10 | GFX_focus_spr_crush_the_revolution | baltic_shared.txt |
+| BALTIC_purge_of_our_own | baltic_shared_shared | -2 | 1 | 5 | GFX_focus_generic_join_comintern | baltic_shared.txt |
+| BALTIC_crush_forest_brothers | baltic_shared_shared | 0 | 1 | 5 | GFX_focus_generic_forest_brothers | baltic_shared.txt |
+| BALTIC_red_army | baltic_shared_shared | 0 | 1 | 10 | GFX_focus_generic_manpower | baltic_shared.txt |
+| BALTIC_align_paramilitarists | baltic_shared_shared | 0 | 1 | 10 | GFX_focus_eng_concessions_to_the_trade_unions | baltic_shared.txt |
+| BALTIC_influence_neighbours | baltic_shared_shared | -2 | 1 | 10 | GFX_goal_support_communism | baltic_shared.txt |
+| BALTIC_arm_baltic_reds | baltic_shared_shared | 0 | 1 | 10 | GFX_focus_generic_join_comintern | baltic_shared.txt |
+| BALTIC_belarus_ssr | baltic_shared_shared | 0 | 1 | 10 | GFX_goal_anschluss | baltic_shared.txt |
+| BALTIC_end_bourgeouis_dictatorships | baltic_shared_shared | 0 | 1 | 10 | GFX_goal_generic_major_war | baltic_shared.txt |
+| BALTIC_focus_on_the_interior | baltic_shared_shared | 2 | 1 | 10 | GFX_focus_generic_self_management | baltic_shared.txt |
+| BALTIC_focus_on_the_interior_2 | baltic_shared_shared | -1 | 2 | 10 | GFX_focus_attack_germany | baltic_shared.txt |
+| BALTIC_united_baltic_ssr | baltic_shared_shared | 1 | 1 | 10 | GFX_goal_anschluss | baltic_shared.txt |
+| BALTIC_western_revolution | baltic_shared_shared | 0 | 1 | 10 | GFX_goal_generic_major_war | baltic_shared.txt |
+| BALTIC_finnish_invasion | baltic_shared_shared | -2 | 1 | 10 | GFX_focus_invite_finland | baltic_shared.txt |
+| BALTIC_path_to_the_north_sea | baltic_shared_shared | 0 | 1 | 10 | GFX_focus_generic_attack_denmark | baltic_shared.txt |
+| BALTIC_end_swedish_neutrality | baltic_shared_shared | 1 | 1 | 10 | GFX_focus_generic_attack_sweden | baltic_shared.txt |
+| BALTIC_free_the_workers_of_poland | baltic_shared_shared | 2 | 1 | 10 | GFX_goal_generic_war_with_comintern | baltic_shared.txt |
 | BEL_perpetual_neutrality | belgium_focus | 18 | 0 | 10 | GFX_goal_generic_neutrality_focus | belgium.txt |
 | BEL_independent_neutral_and_loyal | belgium_focus | 0 | 1 | 10 | GFX_focus_BEL_independent_neutral_and_loyal | belgium.txt |
 | BEL_defensive_neutrality | belgium_focus | -15 | 1 | 5 | GFX_focus_BEL_defensive_neutrality | belgium.txt |
@@ -656,6 +842,116 @@ Source: `common/national_focus/*.txt`
 | BEL_the_walloon_legion | belgium_focus | 0 | 1 | 10 | GFX_focus_BEL_the_walloon_legion | belgium.txt |
 | BEL_the_new_ruhr | belgium_focus | 0 | 2 | 10 | GFX_focus_BEL_the_new_ruhr | belgium.txt |
 | BEL_abandon_neutrality | belgium_focus | 3 | 1 | 10 | GFX_focus_BEL_broken_neutrality | belgium.txt |
+| BEL_the_french_horse_and_the_red_rider | belgium_focus | 2 | 0 | 10 | GFX_focus_BEL_the_french_horse_and_the_red_rider | belgium.txt |
+| BEL_nationalize_the_banks | belgium_focus | -1 | 1 | 10 | GFX_focus_generic_self_management | belgium.txt |
+| BEL_royal_commander_in_chief | belgium_focus | 1 | 1 | 10 | GFX_focus_BEL_royal_commander_in_chief | belgium.txt |
+| BEL_international_stipend | belgium_focus | 3 | 1 | 10 | GFX_focus_mex_privatisation | belgium.txt |
+| BEL_civil_service_purge | belgium_focus | 1 | 1 | 10 | GFX_focus_generic_conspiracy | belgium.txt |
+| BEL_traditional_family_values | belgium_focus | 3 | 1 | 10 | GFX_focus_generic_population_growth | belgium.txt |
+| BEL_the_european_crusade | belgium_focus | 1 | 1 | 10 | GFX_focus_BEL_the_european_crusade | belgium.txt |
+| BEL_belgian_renaissance | belgium_focus | 0 | 1 | 10 | GFX_focus_BEL_belgian_renaissance | belgium.txt |
+| BEL_support_the_vnv | belgium_focus | 8 | 1 | 5 | GFX_focus_BEL_support_the_vnv | belgium.txt |
+| BEL_revitalize_nederlands | belgium_focus | 0 | 1 | 10 | GFX_focus_hol_oranje_boven | belgium.txt |
+| BEL_flanders_ascendant | belgium_focus | 0 | 1 | 10 | GFX_focus_BEL_flanders_ascendant | belgium.txt |
+| BEL_dietsland | belgium_focus | 0 | 1 | 10 | GFX_focus_BEL_dietsland | belgium.txt |
+| BEL_demand_calais | belgium_focus | 0 | 1 | 10 | GFX_goal_demand_sudetenland | belgium.txt |
+| BEL_belgian_east_indies | belgium_focus | -2 | 1 | 10 | GFX_focus_generic_annex_country_2 | belgium.txt |
+| BEL_burgundy_rising | belgium_focus | 0 | 1 | 10 | GFX_focus_BEL_burgundy_rising | belgium.txt |
+| BEL_join_axis | belgium_focus | -6 | 1 | 5 | GFX_focus_chi_mission_to_germany | belgium.txt |
+| BEL_strength_and_brotherhood | belgium_focus | -2 | 1 | 5 | GFX_focus_BEL_order_of_the_golden_lion | belgium.txt |
+| BEL_demand_further_gallic_concessions | belgium_focus | 0 | 1 | 10 | GFX_focus_attack_france | belgium.txt |
+| BEL_belgica | belgium_focus | 0 | 2 | 10 | GFX_focus_BEL_belgica | belgium.txt |
+| BEL_constitutional_crisis | belgium_focus | 13 | 1 | 5 | GFX_focus_BEL_consitutional_crisis | belgium.txt |
+| BEL_kings_abdication | belgium_focus | 0 | 1 | 5 | GFX_focus_NOR_send_the_king_back_to_denmark | belgium.txt |
+| BEL_snap_election | belgium_focus | 0 | 1 | 5 | GFX_goal_support_democracy | belgium.txt |
+| BEL_liberal_victory | belgium_focus | -2 | 1 | 0 | GFX_focus_generic_blue_flags | belgium.txt |
+| BEL_socialist_victory | belgium_focus | 2 | 1 | 0 | GFX_focus_generic_red_flags | belgium.txt |
+| BEL_expression_of_belgian_unity | belgium_focus | 1 | 1 | 10 | GFX_focus_BEL_expression_of_belgian_unity | belgium.txt |
+| BEL_anti_corruption_taskforce | belgium_focus | 3 | 1 | 5 | GFX_focus_ARG_anti_corruption_policies | belgium.txt |
+| BEL_diplomatic_rapprochment | belgium_focus | 0 | 2 | 10 | GFX_focus_generic_diplomatic_treaty | belgium.txt |
+| BEL_belgian_maginot | belgium_focus | 1 | 1 | 5 | GFX_focus_SWE_hedgehog_defense | belgium.txt |
+| BEL_soviet_guarantee | belgium_focus | -18 | 0 | 5 | GFX_focus_chi_mission_to_the_soviet_union | belgium.txt |
+| BEL_expedite_fort_construction | belgium_focus | -1 | 1 | 5 | GFX_goal_fortify_the_westwall | belgium.txt |
+| BEL_democratization_of_education | belgium_focus | 1 | 1 | 10 | GFX_focus_generic_university_2 | belgium.txt |
+| BEL_invite_soviet_tank_makers | belgium_focus | 1 | 1 | 5 | GFX_focus_SOV_the_glory_of_the_red_army_communism | belgium.txt |
+| BEL_join_allies | belgium_focus | 0 | 2 | 5 | GFX_focus_chi_british_cooperation | belgium.txt |
+| BEL_unity_makes_strength | belgium_focus | 1 | 1 | 10 | GFX_focus_generic_workers | belgium.txt |
+| BEL_join_comintern | belgium_focus | 0 | 2 | 5 | GFX_focus_generic_join_comintern | belgium.txt |
+| BEL_better_than_maginot | belgium_focus | 0 | 1 | 10 | GFX_focus_BEL_better_than_maginot | belgium.txt |
+| BEL_vandervelde_minority | belgium_focus | 23 | 1 | 0 | GFX_goal_generic_forceful_treaty | belgium.txt |
+| BEL_problem_of_language | belgium_focus | 0 | 1 | 10 | GFX_focus_BEL_multi_language_courses | belgium.txt |
+| BEL_trade_union_support | belgium_focus | -1 | 1 | 5 | GFX_focus_eng_concessions_to_the_trade_unions | belgium.txt |
+| BEL_cooperative_cooperation | belgium_focus | 1 | 1 | 10 | GFX_goal_generic_national_unity | belgium.txt |
+| BEL_aid_for_spain | belgium_focus | -1 | 1 | 5 | GFX_focus_intervention_spain_republic | belgium.txt |
+| BEL_the_grand_place | belgium_focus | 1 | 1 | 5 | GFX_focus_BEL_the_grand_place | belgium.txt |
+| BEL_la_belgique_et_le_congo | belgium_focus | 1 | 1 | 10 | GFX_focus_BEL_la_belgique_et_le_congo | belgium.txt |
+| BEL_spanish_intervention | belgium_focus | 0 | 1 | 5 | GFX_focus_ETH_freedom_at_gunpoint | belgium.txt |
+| BEL_contradictions_in_socialism | belgium_focus | 0 | 1 | 10 | GFX_focus_generic_annex_country_2 | belgium.txt |
+| BEL_growing_threat_of_fascism | belgium_focus | 0 | 2 | 10 | GFX_focus_focus_fra_fascist_threat | belgium.txt |
+| BEL_peacekeeping_missions | belgium_focus | -1 | 1 | 10 | GFX_focus_ETH_peacekeeping_forces | belgium.txt |
+| BEL_international_socialist_bureau | belgium_focus | 0 | 2 | 10 | GFX_focus_generic_socialist_science | belgium.txt |
+| BEL_raise_the_red_flag | belgium_focus | -2 | 1 | 5 | GFX_focus_generic_printing_press | belgium.txt |
+| BEL_support_the_european_project | belgium_focus | 0 | 2 | 10 | GFX_goal_generic_major_alliance | belgium.txt |
+| BEL_european_community | belgium_focus | 0 | 3 | 10 | GFX_focus_generic_the_council_of_europe | belgium.txt |
+| BEL_the_king_surrenders | belgium_focus | 13 | 11 | 0 | GFX_focus_generic_surrender | belgium.txt |
+| BEL_unfit_to_reign | belgium_focus | -2 | 1 | 5 | GFX_focus_BEL_unfit_to_reign | belgium.txt |
+| BEL_prisoner_king | belgium_focus | 2 | 1 | 5 | GFX_focus_BEL_prisoner_king | belgium.txt |
+| BEL_government_in_exile | belgium_focus | -1 | 1 | 5 | GFX_focus_generic_government_in_exile | belgium.txt |
+| BEL_la_dame_blanche | belgium_focus | 0 | 1 | 5 | GFX_focus_BEL_la_dame_blanche | belgium.txt |
+| BEL_moi_dabord | belgium_focus | -2 | 1 | 5 | GFX_goal_generic_political_pressure | belgium.txt |
+| BEL_v_for_victory | belgium_focus | -1 | 1 | 5 | GFX_focus_BEL_v_for_victory | belgium.txt |
+| BEL_democratic_homecoming | belgium_focus | -2 | 1 | 5 | GFX_goal_support_democracy | belgium.txt |
+| BEL_charles_count_of_flanders | belgium_focus | 0 | 1 | 5 | GFX_focus_BEL_charles_count_of_flanders | belgium.txt |
+| BEL_leopolds_return | belgium_focus | 2 | 1 | 5 | GFX_focus_BEL_leopolds_return | belgium.txt |
+| BEL_secretaries_general | belgium_focus | 2 | 1 | 5 | GFX_focus_generic_self_management | belgium.txt |
+| BEL_the_secret_army | belgium_focus | -1 | 1 | 5 | GFX_focus_generic_support_the_left_right | belgium.txt |
+| BEL_the_belgian_legion | belgium_focus | 1 | 1 | 5 | GFX_focus_generic_home_defense | belgium.txt |
+| BEL_develop_home_support | belgium_focus | 1 | 1 | 5 | GFX_goal_generic_propaganda | belgium.txt |
+| BEL_military_service_for_all_in_exile | belgium_focus | -1 | 2 | 5 | GFX_focus_generic_manpower | belgium.txt |
+| BEL_consolidate_resistance_groups | belgium_focus | 0 | 1 | 5 | GFX_focus_ETH_freedom_at_gunpoint | belgium.txt |
+| BEL_free_belgian_forces | belgium_focus | 0 | 1 | 5 | GFX_focus_BEL_free_belgian_forces | belgium.txt |
+| BEL_king_law_freedom | belgium_focus | 1 | 1 | 5 | GFX_focus_generic_monarchy_1 | belgium.txt |
+| BEL_king_of_the_belgians | belgium_focus | 0 | 1 | 5 | GFX_focus_BEL_king_of_the_belgians | belgium.txt |
+| BEL_rally_to_the_king | belgium_focus | 1 | 1 | 5 | GFX_focus_generic_monarchy_2 | belgium.txt |
+| BEL_van_overstraeten_on_the_home_front | belgium_focus | 1 | 1 | 5 | GFX_focus_generic_military_mission | belgium.txt |
+| BEL_expand_the_belgian_legion | belgium_focus | 0 | 1 | 5 | GFX_focus_generic_little_entente | belgium.txt |
+| BEL_monetary_reconstruction | belgium_focus | 29 | 0 | 10 | GFX_focus_hol_abandon_the_gold_standard | belgium.txt |
+| BEL_rebuild_wallonian_industry | belgium_focus | 1 | 1 | 10 | GFX_focus_generic_industry_2 | belgium.txt |
+| BEL_gold_reserves | belgium_focus | -1 | 1 | 5 | GFX_focus_usa_reestablish_the_gold_standard | belgium.txt |
+| BEL_social_partners | belgium_focus | -1 | 1 | 10 | GFX_goal_generic_improve_relations | belgium.txt |
+| BEL_revive_coal_mining | belgium_focus | 1 | 1 | 5 | GFX_focus_generic_coal_mining | belgium.txt |
+| BEL_40_hour_workweek | belgium_focus | -2 | 1 | 10 | GFX_focus_generic_workers | belgium.txt |
+| BEL_cockerill | belgium_focus | 0 | 1 | 10 | GFX_focus_BEL_cockerill | belgium.txt |
+| BEL_railway_expansion | belgium_focus | 0 | 1 | 10 | GFX_goal_generic_construct_infrastructure | belgium.txt |
+| BEL_corporate_social_responsibility | belgium_focus | 0 | 1 | 10 | GFX_goal_generic_intelligence_exchange | belgium.txt |
+| BEL_val_benoit_institutes | belgium_focus | 0 | 1 | 10 | GFX_goal_generic_scientific_exchange | belgium.txt |
+| BEL_stk | belgium_focus | 1 | 1 | 10 | GFX_focus_BEL_stk | belgium.txt |
+| BEL_embrace_export_economy | belgium_focus | 0 | 1 | 10 | GFX_goal_generic_positive_trade_relations | belgium.txt |
+| BEL_engine_of_the_economy | belgium_focus | 0 | 2 | 10 | GFX_focus_BEL_engine_of_the_economy | belgium.txt |
+| BEL_belgian_miracle | belgium_focus | 0 | 8 | 10 | GFX_focus_BEL_belgian_miracle | belgium.txt |
+| BEL_belgian_air_force | belgium_focus | 34 | 0 | 5 | GFX_goal_generic_air_fighter | belgium.txt |
+| BEL_develop_belgian_air_industry | belgium_focus | -4 | 1 | 10 | GFX_focus_generic_aircraft_production | belgium.txt |
+| BEL_renard_constructions_aeronautiques | belgium_focus | -1 | 1 | 5 | GFX_focus_BEL_renard_constructions_aeronautiques | belgium.txt |
+| BEL_stampe_et_vertrongen | belgium_focus | 1 | 1 | 5 | GFX_focus_BEL_stampe_et_vertrongen | belgium.txt |
+| BEL_relocate_air_production | belgium_focus | 1 | 1 | 5 | GFX_goal_reichsautobahn | belgium.txt |
+| BEL_pressurized_cabin_development | belgium_focus | 0 | 4 | 10 | GFX_goal_generic_air_fighter2 | belgium.txt |
+| BEL_foreign_plane_purchases | belgium_focus | 2 | 1 | 5 | GFX_focus_SMB_purchase_aircraft | belgium.txt |
+| BEL_aviation_school | belgium_focus | -2 | 1 | 5 | GFX_focus_FIN_expand_air_force_academy | belgium.txt |
+| BEL_polish_licences | belgium_focus | 1 | 1 | 5 | GFX_focus_BEL_polish_licences | belgium.txt |
+| BEL_early_helicopters | belgium_focus | -1 | 1 | 10 | GFX_focus_BEL_early_helicopters | belgium.txt |
+| BEL_air_doctrine | belgium_focus | 1 | 1 | 5 | GFX_goal_generic_air_doctrine | belgium.txt |
+| BEL_legacy_of_the_belgian_airforce | belgium_focus | 0 | 2 | 10 | GFX_focus_BEL_legacy_of_the_belgian_airforce | belgium.txt |
+| BEL_re_establish_belgian_navy | belgium_focus | 7 | 0 | 5 | GFX_focus_BEL_re_establish_belgian_navy | belgium.txt |
+| BEL_re_build_the_fleet | belgium_focus | 0 | 1 | 5 | GFX_goal_generic_build_navy | belgium.txt |
+| BEL_allied_donations | belgium_focus | 2 | 1 | 5 | GFX_goal_generic_positive_trade_relations | belgium.txt |
+| BEL_port_of_antwerp | belgium_focus | 0 | 1 | 10 | GFX_focus_POL_develop_polish_shipbuilding | belgium.txt |
+| BEL_corvette_fleet | belgium_focus | 4 | 1 | 5 | GFX_focus_generic_destroyer | belgium.txt |
+| BEL_boelwerf | belgium_focus | -2 | 1 | 5 | GFX_focus_generic_refit_civilian_ships | belgium.txt |
+| BEL_cockerill_shipyards | belgium_focus | 0 | 1 | 10 | GFX_focus_BEL_cockerill_shipyards | belgium.txt |
+| BEL_antwerp_maritime_academy | belgium_focus | 2 | 1 | 10 | GFX_focus_BEL_antwerp_maritime_academy | belgium.txt |
+| BEL_naval_doctrine | belgium_focus | 0 | 1 | 5 | GFX_goal_generic_navy_doctrines_tactics | belgium.txt |
+| BEL_convoy_protection_duties | belgium_focus | 0 | 1 | 10 | GFX_goal_generic_navy_cruiser | belgium.txt |
+| BEL_maritime_phoenix | belgium_focus | 1 | 1 | 10 | GFX_focus_BEL_maritime_phoenix | belgium.txt |
 | BRA_tribunal_de_seguranca_nacional | brazil_tree | 0 | 0 | 5 | GFX_focus_BRA_tribunal | brazil.txt |
 | BRA_ensure_continued_military_support | brazil_tree | -2 | 1 | 5 | GFX_focus_generic_military_dictatorship | brazil.txt |
 | BRA_work_with_the_integralists | brazil_tree | 2 | 1 | 5 | GFX_focus_BRA_work_with_the_integralists | brazil.txt |
@@ -703,45 +999,45 @@ Source: `common/national_focus/*.txt`
 | BRA_fabrica_nacional_de_motores | brazil_tree | -1 | 2 | 10 | GFX_focus_BRA_fabrica_national_de_motores | brazil.txt |
 | BRA_expand_fordlandia | brazil_tree | 1 | 2 | 10 | GFX_focus_SWE_lynx_armored_car | brazil.txt |
 | BRA_bonus_tech_slot | brazil_tree | 0 | 1 | 10 | GFX_focus_research | brazil.txt |
-| BRA_banco_do_brasil | brazil_tree |  |  |  | GFX_focus_BRA_banco_do_brasil | brazil.txt |
+| BRA_banco_do_brasil | brazil_tree | 0 | 1 | 5 | GFX_focus_BRA_banco_do_brasil | brazil.txt |
 | BRA_federal_development | brazil_tree | -1 | 1 | 5 | GFX_focus_generic_agricultural_subsidies | brazil.txt |
 | BRA_centralize_development | brazil_tree | 1 | 1 | 5 | GFX_focus_BRA_new_capital | brazil.txt |
 | BRA_financial_stimulation | brazil_tree | 0 | 2 | 5 | GFX_focus_BRA_growth | brazil.txt |
-| BRA_cooperation_in_the_americas | brazil_tree |  |  |  | GFX_focus_BRA_good_neighbor_policy | brazil.txt |
-| BRA_defense_spending | brazil_tree |  |  |  | GFX_focus_BRA_for_the_fatherland | brazil.txt |
-| BRA_reach_out_to_our_neighbors | brazil_tree |  |  |  | GFX_focus_BRA_north_and_south_america | brazil.txt |
-| BRA_south_american_defense_cooperation | brazil_tree |  |  |  | GFX_focus_generic_little_entente | brazil.txt |
-| BRA_foreign_legion | brazil_tree |  |  |  | GFX_focus_generic_manpower | brazil.txt |
-| BRA_south_american_research_cooperation | brazil_tree |  |  |  | GFX_goal_tfv_generic_tech_sharing | brazil.txt |
-| BRA_washington_accords | brazil_tree |  |  |  | GFX_focus_chi_mission_to_the_us | brazil.txt |
-| BRA_disrupt_operation_bolivar | brazil_tree |  |  |  | GFX_focus_BRA_disrupt_bolivar | brazil.txt |
-| BRA_potenji_river_conference | brazil_tree |  |  |  | GFX_focus_BRA_rio_protocol | brazil.txt |
-| BRA_natal_naval_base | brazil_tree |  |  |  | GFX_focus_generic_air_bases | brazil.txt |
-| BRA_smoking_cobras | brazil_tree |  |  |  | GFX_focus_BRA_cobras_fumantes | brazil.txt |
-| BRA_no_fascism_in_south_america | brazil_tree |  |  |  | GFX_focus_generic_anti_fascist_diplomacy | brazil.txt |
-| BRA_senta_a_pua | brazil_tree |  |  |  | GFX_focus_BRA_senta_a_pua | brazil.txt |
-| BRA_no_communism_in_south_america | brazil_tree |  |  |  | GFX_goal_generic_war_with_comintern | brazil.txt |
-| BRA_us_brazil_technology_exchange | brazil_tree |  |  |  | GFX_goal_tfv_generic_tech_sharing | brazil.txt |
-| BRA_domination_of_the_americas | brazil_tree |  |  |  | GFX_focus_por_recover_latin_america | brazil.txt |
-| BRA_berlin_accords | brazil_tree |  |  |  | GFX_focus_chi_mission_to_germany | brazil.txt |
-| BRA_expand_operation_bolivar | brazil_tree |  |  |  | GFX_focus_BRA_expand_bolivar | brazil.txt |
-| BRA_german_tanks | brazil_tree |  |  |  | GFX_focus_BRA_acquire_german_tanks | brazil.txt |
-| BRA_german_subs | brazil_tree |  |  |  | GFX_focus_BRA_german_submarine_development | brazil.txt |
-| BRA_german_cooperation | brazil_tree |  |  |  | GFX_focus_ger_reichskommisariats | brazil.txt |
-| BRA_guyana_crisis | brazil_tree |  |  |  | GFX_focus_generic_attack_the_guyanas | brazil.txt |
-| BRA_defense_of_the_fatherland | brazil_tree |  |  |  | GFX_focus_BRA_for_the_fatherland | brazil.txt |
-| BRA_uruguay_ultimatum | brazil_tree |  |  |  | GFX_focus_generic_attack_uruguay | brazil.txt |
-| BRA_rome_accords | brazil_tree |  |  |  | GFX_focus_befriend_italy | brazil.txt |
-| BRA_italian_car_industry | brazil_tree |  |  |  | GFX_focus_ITA_redirect_alfa_romeo_production | brazil.txt |
-| BRA_italian_aircraft | brazil_tree |  |  |  | GFX_focus_BRA_italian_aircraft_development | brazil.txt |
-| BRA_italian_trucks | brazil_tree |  |  |  | GFX_focus_BRA_joint_italian_motor_development | brazil.txt |
-| BRA_italian_cooperation | brazil_tree |  |  |  | GFX_focus_ITA_ministry_of_italian_africa | brazil.txt |
-| BRA_attack_bolivia | brazil_tree |  |  |  | GFX_focus_generic_attack_bolivia | brazil.txt |
-| BRA_paraguay_intervention | brazil_tree |  |  |  | GFX_focus_generic_attack_paraguay | brazil.txt |
-| BRA_provoke_argentina | brazil_tree |  |  |  | GFX_focus_generic_attack_argentina | brazil.txt |
-| BRA_attack_chile | brazil_tree |  |  |  | GFX_focus_generic_attack_chile | brazil.txt |
-| BRA_panama_push | brazil_tree |  |  |  | GFX_goal_generic_attack_allies | brazil.txt |
-| BRA_form_mercosul | brazil_tree |  |  |  | GFX_focus_BRA_form_mercosul | brazil.txt |
+| BRA_cooperation_in_the_americas | brazil_tree | -10 | 1 | 5 | GFX_focus_BRA_good_neighbor_policy | brazil.txt |
+| BRA_defense_spending | brazil_tree | 0 | 1 | 10 | GFX_focus_BRA_for_the_fatherland | brazil.txt |
+| BRA_reach_out_to_our_neighbors | brazil_tree | 2 | 1 | 5 | GFX_focus_BRA_north_and_south_america | brazil.txt |
+| BRA_south_american_defense_cooperation | brazil_tree | 0 | 1 | 5 | GFX_focus_generic_little_entente | brazil.txt |
+| BRA_foreign_legion | brazil_tree | 2 | 1 | 5 | GFX_focus_generic_manpower | brazil.txt |
+| BRA_south_american_research_cooperation | brazil_tree | 0 | 1 | 5 | GFX_goal_tfv_generic_tech_sharing | brazil.txt |
+| BRA_washington_accords | brazil_tree | -2 | 1 | 5 | GFX_focus_chi_mission_to_the_us | brazil.txt |
+| BRA_disrupt_operation_bolivar | brazil_tree | 0 | 1 | 10 | GFX_focus_BRA_disrupt_bolivar | brazil.txt |
+| BRA_potenji_river_conference | brazil_tree | 0 | 1 | 10 | GFX_focus_BRA_rio_protocol | brazil.txt |
+| BRA_natal_naval_base | brazil_tree | -2 | 1 | 5 | GFX_focus_generic_air_bases | brazil.txt |
+| BRA_smoking_cobras | brazil_tree | -4 | 1 | 5 | GFX_focus_BRA_cobras_fumantes | brazil.txt |
+| BRA_no_fascism_in_south_america | brazil_tree | -4 | 1 | 10 | GFX_focus_generic_anti_fascist_diplomacy | brazil.txt |
+| BRA_senta_a_pua | brazil_tree | 0 | 1 | 5 | GFX_focus_BRA_senta_a_pua | brazil.txt |
+| BRA_no_communism_in_south_america | brazil_tree | 4 | 1 | 10 | GFX_goal_generic_war_with_comintern | brazil.txt |
+| BRA_us_brazil_technology_exchange | brazil_tree | 0 | 1 | 5 | GFX_goal_tfv_generic_tech_sharing | brazil.txt |
+| BRA_domination_of_the_americas | brazil_tree | 5 | 1 | 10 | GFX_focus_por_recover_latin_america | brazil.txt |
+| BRA_berlin_accords | brazil_tree | -4 | 1 | 5 | GFX_focus_chi_mission_to_germany | brazil.txt |
+| BRA_expand_operation_bolivar | brazil_tree | 0 | 1 | 10 | GFX_focus_BRA_expand_bolivar | brazil.txt |
+| BRA_german_tanks | brazil_tree | -1 | 1 | 5 | GFX_focus_BRA_acquire_german_tanks | brazil.txt |
+| BRA_german_subs | brazil_tree | 1 | 1 | 5 | GFX_focus_BRA_german_submarine_development | brazil.txt |
+| BRA_german_cooperation | brazil_tree | -1 | 1 | 10 | GFX_focus_ger_reichskommisariats | brazil.txt |
+| BRA_guyana_crisis | brazil_tree | 4 | 1 | 5 | GFX_focus_generic_attack_the_guyanas | brazil.txt |
+| BRA_defense_of_the_fatherland | brazil_tree | -2 | 1 | 10 | GFX_focus_BRA_for_the_fatherland | brazil.txt |
+| BRA_uruguay_ultimatum | brazil_tree | -2 | 1 | 5 | GFX_focus_generic_attack_uruguay | brazil.txt |
+| BRA_rome_accords | brazil_tree | 0 | 1 | 5 | GFX_focus_befriend_italy | brazil.txt |
+| BRA_italian_car_industry | brazil_tree | 0 | 1 | 10 | GFX_focus_ITA_redirect_alfa_romeo_production | brazil.txt |
+| BRA_italian_aircraft | brazil_tree | -1 | 1 | 5 | GFX_focus_BRA_italian_aircraft_development | brazil.txt |
+| BRA_italian_trucks | brazil_tree | 1 | 1 | 5 | GFX_focus_BRA_joint_italian_motor_development | brazil.txt |
+| BRA_italian_cooperation | brazil_tree | -1 | 1 | 10 | GFX_focus_ITA_ministry_of_italian_africa | brazil.txt |
+| BRA_attack_bolivia | brazil_tree | -1 | 1 | 5 | GFX_focus_generic_attack_bolivia | brazil.txt |
+| BRA_paraguay_intervention | brazil_tree | 1 | 1 | 5 | GFX_focus_generic_attack_paraguay | brazil.txt |
+| BRA_provoke_argentina | brazil_tree | 0 | 1 | 5 | GFX_focus_generic_attack_argentina | brazil.txt |
+| BRA_attack_chile | brazil_tree | 0 | 1 | 5 | GFX_focus_generic_attack_chile | brazil.txt |
+| BRA_panama_push | brazil_tree | 1 | 1 | 10 | GFX_goal_generic_attack_allies | brazil.txt |
+| BRA_form_mercosul | brazil_tree | 2 | 1 | 5 | GFX_focus_BRA_form_mercosul | brazil.txt |
 | BRA_end_the_state_of_emergency | brazil_tree | -15 | 0 | 5 | GFX_focus_BRA_end_the_state_of_emergency | brazil.txt |
 | BRA_repeal_the_national_security_law | brazil_tree | -4 | 1 | 5 | GFX_focus_BRA_repeale_national_security_law | brazil.txt |
 | BRA_greater_federalism | brazil_tree | -1 | 1 | 5 | GFX_focus_BRA_greater_federalism | brazil.txt |
@@ -749,11 +1045,11 @@ Source: `common/national_focus/*.txt`
 | BRA_court_the_military | brazil_tree | 0 | 2 | 10 | GFX_focus_BRA_reach_out_to_military_dem | brazil.txt |
 | BRA_implement_a_national_guard | brazil_tree | 0 | 2 | 10 | GFX_focus_BRA_national_guard | brazil.txt |
 | BRA_nationalize_the_banks | brazil_tree | 0 | 1 | 5 | GFX_focus_BRA_nationalize_banks | brazil.txt |
-| BRA_establish_the_brazilian_investment_bank | brazil_tree | 0 | 1 |  | GFX_focus_BRA_pro_business_taxes | brazil.txt |
+| BRA_establish_the_brazilian_investment_bank | brazil_tree | 0 | 1 | 5 | GFX_focus_BRA_pro_business_taxes | brazil.txt |
 | BRA_church | brazil_tree | 0 | 1 | 10 | GFX_focus_por_concordat | brazil.txt |
 | BRA_implement_article_138 | brazil_tree | 0 | 1 | 10 | GFX_focus_generic_population_growth | brazil.txt |
 | BRA_tech_slot_2 | brazil_tree | 1 | 1 | 10 | GFX_focus_BRA_university_of_sao_paulo | brazil.txt |
-| BRA_ban_the_communist_party | brazil_tree | 2 | 1 |  | GFX_focus_BRA_ban_communist_party | brazil.txt |
+| BRA_ban_the_communist_party | brazil_tree | 2 | 1 | 5 | GFX_focus_BRA_ban_communist_party | brazil.txt |
 | BRA_posts_for_generals | brazil_tree | 0 | 2 | 10 | GFX_focus_generic_military_mission | brazil.txt |
 | BRA_third_republic | brazil_tree | 0 | 1 | 5 | GFX_focus_BRA_third_republic | brazil.txt |
 | BRA_end_military_interference | brazil_tree | -2 | 1 | 10 | GFX_focus_NOR_broken_gun_policies | brazil.txt |
@@ -763,7 +1059,7 @@ Source: `common/national_focus/*.txt`
 | BRA_address_labor_disputes | brazil_tree | 0 | 1 | 5 | GFX_focus_generic_workers | brazil.txt |
 | BRA_combat_separatism | brazil_tree | -2 | 2 | 5 | GFX_goal_generic_national_unity | brazil.txt |
 | BRA_war_bonds | brazil_tree | 2 | 2 | 5 | GFX_focus_SWI_issue_war_bonds | brazil.txt |
-| BRA_invite_foreign_companies | brazil_tree |  |  |  | GFX_focus_generic_american_investments | brazil.txt |
+| BRA_invite_foreign_companies | brazil_tree | 1 | 1 | 5 | GFX_focus_generic_american_investments | brazil.txt |
 | BRA_the_international_crisis | brazil_tree | 0 | 4 | 10 | GFX_focus_BRA_international_crisis | brazil.txt |
 | BRA_prepare_for_second_intentona | brazil_tree | -15 | 0 | 5 | GFX_focus_por_workers_of_iberia | brazil.txt |
 | BRA_infilitrate_the_military | brazil_tree | -1 | 1 | 10 | GFX_focus_SOV_military_purge | brazil.txt |
@@ -825,7 +1121,7 @@ Source: `common/national_focus/*.txt`
 | BRA_support_industrialists | brazil_tree | 2 | 1 | 10 | GFX_focus_generic_industrialists | brazil.txt |
 | BRA_consolidation_of_labor_laws | brazil_tree | 0 | 1 | 10 | GFX_focus_generic_workers | brazil.txt |
 | BRA_establish_caloi | brazil_tree | 2 | 1 | 5 | GFX_focus_SWE_bicycle | brazil.txt |
-| BRA_unify_south_america | brazil_tree |  |  |  | GFX_focus_generic_south_america | brazil.txt |
+| BRA_unify_south_america | brazil_tree | 0 | 1 | 10 | GFX_focus_generic_south_america | brazil.txt |
 | BUL_acquire_modern_tools | bulgarian_focus | 12 | 0 | 5 | GFX_goal_generic_production2 | bulgaria.txt |
 | BUL_improve_the_road_system | bulgarian_focus | -11 | 1 | 10 | GFX_goal_generic_construction | bulgaria.txt |
 | BUL_attract_foreign_capitals | bulgarian_focus | -2 | 1 | 10 | GFX_goal_generic_intelligence_exchange | bulgaria.txt |
@@ -889,7 +1185,7 @@ Source: `common/national_focus/*.txt`
 | BUL_joint_research_effort | bulgarian_focus | -1 | 1 | 10 | GFX_focus_generic_socialist_science | bulgaria.txt |
 | BUL_soviet_military_exercises | bulgarian_focus | 0 | 1 | 10 | GFX_focus_generic_military_mission | bulgaria.txt |
 | BUL_soviet_bulgarian_war_industry | bulgarian_focus | 0 | 1 | 10 | GFX_goal_generic_army_tanks | bulgaria.txt |
-| BUL_carry_the_revolution_abroad | bulgarian_focus |  |  |  |  | bulgaria.txt |
+| BUL_carry_the_revolution_abroad | bulgarian_focus | 1 | 1 | 10 | GFX_focus_spr_masters_of_our_own_fate | bulgaria.txt |
 | BUL_liberation_of_the_proletariat | bulgarian_focus | 0 | 1 | 10 | GFX_focus_ger_great_red_menace | bulgaria.txt |
 | BUL_the_anti_capitalist_fight | bulgarian_focus | 0 | 1 | 10 | GFX_focus_generic_strike_at_democracy3 | bulgaria.txt |
 | BUL_united_we_shall_prevail | bulgarian_focus | 2 | 1 | 10 | GFX_goal_generic_military_deal | bulgaria.txt |
@@ -903,7 +1199,7 @@ Source: `common/national_focus/*.txt`
 | BUL_balkan_federation_of_socialist_republics | bulgarian_focus | 0 | 4 | 5 | GFX_focus_BUL_balkan_federation_of_socialist_republics | bulgaria.txt |
 | BUL_bury_the_grudges_of_the_past | bulgarian_focus | 1 | 1 | 10 | GFX_goal_generic_major_alliance | bulgaria.txt |
 | BUL_balkan_trade_union_secretariat | bulgarian_focus | 0 | 1 | 10 | GFX_goal_generic_positive_trade_relations | bulgaria.txt |
-| BUL_defy_moscow | bulgarian_focus |  |  |  |  | bulgaria.txt |
+| BUL_defy_moscow | bulgarian_focus | 0 | 1 | 10 | GFX_focus_ger_strike_at_the_source | bulgaria.txt |
 | BUL_balkan_research_cooperation | bulgarian_focus | -2 | 1 | 10 | GFX_focus_research2 | bulgaria.txt |
 | BUL_recover_italian_territories | bulgarian_focus | 2 | 1 | 10 | GFX_focus_attack_italy | bulgaria.txt |
 | BUL_democratic_principles | bulgarian_focus | 3 | 2 | 10 | GFX_goal_support_democracy | bulgaria.txt |
@@ -922,10 +1218,10 @@ Source: `common/national_focus/*.txt`
 | BUL_join_the_allies | bulgarian_focus | 0 | 4 | 5 | GFX_goal_generic_alliance | bulgaria.txt |
 | BUL_consolidate_the_third_bulgarian_state | bulgarian_focus | -3 | 1 | 10 | GFX_focus_BUL_consolidate_the_third_bulgarian_state | bulgaria.txt |
 | BUL_free_balkan_states | bulgarian_focus | 0 | 3 | 10 | GFX_focus_BUL_free_balkan_states | bulgaria.txt |
-| BUL_fight_tyranny | bulgarian_focus |  |  |  |  | bulgaria.txt |
+| BUL_fight_tyranny | bulgarian_focus | 1 | 1 | 10 | GFX_focus_generic_anti_fascist_diplomacy | bulgaria.txt |
 | BUL_assert_our_claims | bulgarian_focus | -1 | 1 | 10 | GFX_goal_generic_more_territorial_claims | bulgaria.txt |
 | BUL_appeal_to_european_capitalists | bulgarian_focus | 0 | 2 | 10 | GFX_focus_mex_privatisation | bulgaria.txt |
-| BUL_obliterate_the_bolshevik_threat | bulgarian_focus |  |  |  |  | bulgaria.txt |
+| BUL_obliterate_the_bolshevik_threat | bulgarian_focus | -1 | 1 | 10 | GFX_focus_ger_bulwark_against_bolshevism | bulgaria.txt |
 | BUL_research_sharing | bulgarian_focus | 1 | 1 | 10 | GFX_goal_generic_scientific_exchange | bulgaria.txt |
 | BUL_power_to_the_tsar | bulgarian_focus | 16 | 0 | 10 | GFX_focus_BUL_power_to_the_tsar | bulgaria.txt |
 | BUL_condemn_macedonian_organizations | bulgarian_focus | -11 | 1 | 5 | GFX_focus_BUL_condemn_macedonian_organizations | bulgaria.txt |
@@ -952,7 +1248,7 @@ Source: `common/national_focus/*.txt`
 | BUL_form_a_regency_council | bulgarian_focus | 1 | 2 | 10 | GFX_focus_BUL_form_a_regency_council | bulgaria.txt |
 | BUL_the_fate_of_the_balkans | bulgarian_focus | 0 | 2 | 5 | GFX_focus_BUL_the_fate_of_the_balkans | bulgaria.txt |
 | BUL_nationalist_propaganda | bulgarian_focus | 1 | 1 | 10 | GFX_goal_generic_propaganda | bulgaria.txt |
-| BUL_toppling_giants | bulgarian_focus |  |  |  |  | bulgaria.txt |
+| BUL_toppling_giants | bulgarian_focus | -1 | 1 | 10 | GFX_goal_generic_major_war | bulgaria.txt |
 | BUL_bulgarian_academy_of_sciences | bulgarian_focus | 3 | 1 | 10 | GFX_focus_research2 | bulgaria.txt |
 | BUL_guardians_of_the_balkans | bulgarian_focus | 0 | 1 | 10 | GFX_focus_BUL_guardians_of_the_balkans | bulgaria.txt |
 | BUL_consolidate_dominance_of_the_seas | bulgarian_focus | -3 | 1 | 10 | GFX_goal_generic_navy_battleship | bulgaria.txt |
@@ -973,9 +1269,9 @@ Source: `common/national_focus/*.txt`
 | BUL_military_secrets_sharing | bulgarian_focus | -2 | 1 | 10 | GFX_goal_tfv_generic_tech_sharing | bulgaria.txt |
 | BUL_bulgarian_administration_of_the_balkans | bulgarian_focus | -4 | 2 | 20 | GFX_focus_BUL_bulgarian_administration_of_the_balkans | bulgaria.txt |
 | BUL_restore_the_bulgarian_patriarchate | bulgarian_focus | 0 | 1 | 10 | GFX_focus_BUL_restore_the_bulgarian_patriarchate | bulgaria.txt |
-| BUL_total_war | bulgarian_focus |  |  |  |  | bulgaria.txt |
-| BUL_the_eastern_front | bulgarian_focus |  |  |  |  | bulgaria.txt |
-| BUL_the_third_bulgarian_empire | bulgarian_focus |  |  |  |  | bulgaria.txt |
+| BUL_total_war | bulgarian_focus | 2 | 1 | 10 | GFX_goal_generic_attack_allies | bulgaria.txt |
+| BUL_the_eastern_front | bulgarian_focus | 1 | 1 | 10 | GFX_focus_attack_soviet | bulgaria.txt |
+| BUL_the_third_bulgarian_empire | bulgarian_focus | -1 | 2 | 10 | GFX_focus_BUL_the_third_bulgarian_empire | bulgaria.txt |
 | CAN_rowell_sirois_commission | canadian_focus | 0 | 0 | 10 | GFX_goal_generic_consumer_goods | canada.txt |
 | CAN_crown_corporations | canadian_focus | 3 | 0 | 5 | GFX_goal_generic_construct_civ_factory | canada.txt |
 | CAN_national_housing_act | canadian_focus | 2 | 1 | 10 | GFX_goal_generic_construct_civilian | canada.txt |
@@ -1136,7 +1432,7 @@ Source: `common/national_focus/*.txt`
 | CHL_silverworking | chilean_focus_tree | 2 | 1 | 5 | GFX_focus_CHL_silverworking | chile.txt |
 | CHL_incorporate_machi_into_the_army | chilean_focus_tree | -2 | 1 | 5 | GFX_focus_CHL_incorporate_machi_into_the_army | chile.txt |
 | CHL_the_patagonian_giants | chilean_focus_tree | -5 | 1 | 10 | GFX_focus_CHL_the_patagonian_giants | chile.txt |
-| CHL_taking_back_patagonia | chilean_focus_tree |  |  |  |  | chile.txt |
+| CHL_taking_back_patagonia | chilean_focus_tree | 0 | 1 | 10 |  | chile.txt |
 | CHL_satellite_kingdoms | chilean_focus_tree | -1 | 1 | 5 | GFX_goal_tfv_strengthen_commonwealth_ties | chile.txt |
 | CHL_secure_the_brazilian_border | chilean_focus_tree | 1 | 1 | 5 | GFX_goal_generic_territory_or_war | chile.txt |
 | CHL_a_new_empire_of_brazil | chilean_focus_tree | -1 | 1 | 10 | GFX_focus_CHL_a_new_empire_of_brazil | chile.txt |
@@ -1166,7 +1462,7 @@ Source: `common/national_focus/*.txt`
 | CHL_privatize_national_industries | chilean_focus_tree | 4 | 1 | 10 | GFX_focus_generic_industry_2 | chile.txt |
 | CHL_strengthen_instituto_nacional | chilean_focus_tree | 2 | 1 | 10 | GFX_focus_CHL_strengthen_instituto_nacional | chile.txt |
 | CHL_enact_universal_suffrage | chilean_focus_tree | -1 | 1 | 10 | GFX_focus_generic_universal_suffrage | chile.txt |
-| CHL_host_spanish_refugees | chilean_focus_tree |  |  |  |  | chile.txt |
+| CHL_host_spanish_refugees | chilean_focus_tree | 5 | 1 | 5 |  | chile.txt |
 | CHL_expand_the_investigations_police | chilean_focus_tree | 3 | 1 | 5 | GFX_focus_generic_secret_service_agency | chile.txt |
 | CHL_increase_presidential_powers | chilean_focus_tree | -3 | 1 | 5 | GFX_focus_usa_voter_registration_act | chile.txt |
 | CHL_reapproach_america | chilean_focus_tree | 0 | 1 | 5 | GFX_focus_chi_mission_to_the_us | chile.txt |
@@ -1320,16 +1616,16 @@ Source: `common/national_focus/*.txt`
 | PRC_china_medical_university | china_communist_focus | 0 | 1 | 10 | GFX_focus_research | china_communist.txt |
 | PRC_form_the_academy_of_sciences | china_communist_focus | 0 | 2 | 10 | GFX_goal_generic_scientific_exchange | china_communist.txt |
 | PRC_put_an_end_to_the_sufan | china_communist_focus_sea | 39 | 0 | 5 | GFX_focus_PRC_the_central_committee | china_communist_sea.txt |
-| PRC_know_the_enemy | china_communist_focus_sea | -24 | 1 |  | GFX_goal_generic_position_armies | china_communist_sea.txt |
+| PRC_know_the_enemy | china_communist_focus_sea | -24 | 1 | 5 | GFX_goal_generic_position_armies | china_communist_sea.txt |
 | PRC_the_westward_expedition | china_communist_focus_sea | -2 | 1 | 5 | GFX_focus_PRC_westward_expansion | china_communist_sea.txt |
 | PRC_the_eastward_expedition | china_communist_focus_sea | 2 | 1 | 5 | GFX_focus_PRC_eastward_expansion | china_communist_sea.txt |
 | PRC_develop_yanan_soviet | china_communist_focus_sea | 1 | 1 | 5 | GFX_focus_PRC_develop_yanan_soviet | china_communist_sea.txt |
 | PRC_the_internal_enemy | china_communist_focus_sea | 3 | 1 | 10 | GFX_focus_CHI_protracted_warfare | china_communist_sea.txt |
-| PRC_burn_the_paper_tigers | china_communist_focus_sea | -11 | 3 |  | GFX_focus_PRC_burn_the_paper_tigers | china_communist_sea.txt |
+| PRC_burn_the_paper_tigers | china_communist_focus_sea | -11 | 3 | 5 | GFX_focus_PRC_burn_the_paper_tigers | china_communist_sea.txt |
 | PRC_rally_the_peasants | china_communist_focus_sea | -1 | 1 | 5 | GFX_focus_generic_workers_and_farmers_rise | china_communist_sea.txt |
 | PRC_rally_the_28_bolsheviks | china_communist_focus_sea | 1 | 1 | 5 | GFX_focus_PRC_rally_the_28_bolsheviks | china_communist_sea.txt |
 | PRC_guide_central_committee | china_communist_focus_sea | 0 | 2 | 5 | GFX_focus_SWE_refuge_for_revolutionaries | china_communist_sea.txt |
-| PRC_leadership_of_mao | china_communist_focus_sea | -7 | 1 |  | GFX_focus_PRC_embrace_change_in_leadership | china_communist_sea.txt |
+| PRC_leadership_of_mao | china_communist_focus_sea | -7 | 1 | 10 | GFX_focus_PRC_embrace_change_in_leadership | china_communist_sea.txt |
 | PRC_on_guerilla_warfare | china_communist_focus_sea | -1 | 1 | 10 | GFX_focus_CHI_guerrilla_warfare | china_communist_sea.txt |
 | PRC_secure_the_peoples_support | china_communist_focus_sea | 1 | 1 | 10 | GFX_focus_prc_infiltration | china_communist_sea.txt |
 | PRC_propaganda_efforts | china_communist_focus_sea | 1 | 1 | 10 | GFX_goal_generic_propaganda | china_communist_sea.txt |
@@ -1353,8 +1649,8 @@ Source: `common/national_focus/*.txt`
 | PRC_the_end_of_capitalism | china_communist_focus_sea | 0 | 1 | 10 | GFX_focus_generic_crush_capitalism | china_communist_sea.txt |
 | PRC_purge_the_world_of_fascism | china_communist_focus_sea | 1 | 1 | 10 | GFX_focus_generic_communism_anti_fascism | china_communist_sea.txt |
 | PRC_establish_yanan_university | china_communist_focus_sea | 1 | 1 | 10 | GFX_focus_research | china_communist_sea.txt |
-| PRC_reclaim_the_grasp_of_power | china_communist_focus_sea | 7 | 1 |  | GFX_focus_PRC_recaim_the_grasp_of_power | china_communist_sea.txt |
-| PRC_seek_support_from_ussr | china_communist_focus_sea | 0 | 3 |  | GFX_focus_chi_mission_to_the_soviet_union | china_communist_sea.txt |
+| PRC_reclaim_the_grasp_of_power | china_communist_focus_sea | 7 | 1 | 10 | GFX_focus_PRC_recaim_the_grasp_of_power | china_communist_sea.txt |
+| PRC_seek_support_from_ussr | china_communist_focus_sea | 0 | 3 | 5 | GFX_focus_chi_mission_to_the_soviet_union | china_communist_sea.txt |
 | PRC_ask_for_soviet_lend_lease | china_communist_focus_sea | 0 | 1 | 10 | GFX_focus_SOV_the_road_of_life | china_communist_sea.txt |
 | PRC_request_guarantees | china_communist_focus_sea | 0 | 1 | 10 | GFX_goal_generic_major_alliance | china_communist_sea.txt |
 | PRC_bolshevik_aid | china_communist_focus_sea | 0 | 1 | 10 | GFX_focus_generic_communist_industry | china_communist_sea.txt |
@@ -1417,7 +1713,7 @@ Source: `common/national_focus/*.txt`
 | PRC_the_long_march_towards_progress | china_communist_focus_sea | 0 | 1 | 10 | GFX_focus_research | china_communist_sea.txt |
 | PRC_every_peasant_a_soldier | china_communist_focus_sea | 2 | 2 | 10 | GFX_focus_JAP_the_modern_ashigaru | china_communist_sea.txt |
 | PRC_the_march_to_victory | china_communist_focus_sea | 0 | 1 | 10 | GFX_focus_PRC_hundred_regiments_offensive | china_communist_sea.txt |
-| PRC_towards_one_china | china_communist_focus_sea | 9 | 1 |  | GFX_focus_PRC_towards_one_china | china_communist_sea.txt |
+| PRC_towards_one_china | china_communist_focus_sea | 9 | 1 | 10 | GFX_focus_PRC_towards_one_china | china_communist_sea.txt |
 | PRC_allow_autonomous_regions | china_communist_focus_sea | 2 | 0 | 10 | GFX_focus_PRC_autonomous_regions | china_communist_sea.txt |
 | PRC_peaceful_reunification | china_communist_focus_sea | 4 | 0 | 10 | GFX_focus_PRC_peaceful_reunification | china_communist_sea.txt |
 | PRC_the_peoples_republic | china_communist_focus_sea | 2 | 1 | 5 | GFX_focus_prc_proclaim_the_peoples_republic | china_communist_sea.txt |
@@ -1435,9 +1731,9 @@ Source: `common/national_focus/*.txt`
 | PRC_the_chinese_century | china_communist_focus_sea | 5 | 1 | 10 | GFX_focus_PRC_the_chinese_century | china_communist_sea.txt |
 | PRC_asian_democratic_union | china_communist_focus_sea | 7 | 1 | 10 | GFX_focus_generic_democratic_asia | china_communist_sea.txt |
 | PRC_usurp_control_over_yanan | china_communist_focus_sea | 10 | 1 | 5 | GFX_focus_PRC_usurp_control_over_yanan | china_communist_sea.txt |
-| PRC_eight_points_for_attention | china_communist_focus_sea | 8 | 1 |  | GFX_focus_PRC_eight_points_for_attention | china_communist_sea.txt |
+| PRC_eight_points_for_attention | china_communist_focus_sea | 8 | 1 | 5 | GFX_focus_PRC_eight_points_for_attention | china_communist_sea.txt |
 | PRC_expel_the_occupiers | china_communist_focus_sea | 12 | 1 | 5 | GFX_focus_AST_war_japan | china_communist_sea.txt |
-| PRC_restore_territorial_integrity | china_communist_focus_sea | 14 | 1 |  | GFX_focus_PRC_restore_territorial_integrity | china_communist_sea.txt |
+| PRC_restore_territorial_integrity | china_communist_focus_sea | 14 | 1 | 5 | GFX_focus_PRC_restore_territorial_integrity | china_communist_sea.txt |
 | PRC_rally_the_industry | china_communist_focus_sea | 0 | 1 | 5 | GFX_focus_generic_communist_industry | china_communist_sea.txt |
 | PRC_expedite_land_revolution | china_communist_focus_sea | -1 | 1 | 5 | GFX_focus_PRC_land_revolution_expedited | china_communist_sea.txt |
 | PRC_halt_land_revolution | china_communist_focus_sea | 1 | 1 | 5 | GFX_focus_PRC_land_revolution_halted | china_communist_sea.txt |
@@ -1475,7 +1771,7 @@ Source: `common/national_focus/*.txt`
 | PRC_he_long_second_army | china_communist_focus_sea | -7 | 1 | 5 | GFX_focus_PRC_he_long_second_army | china_communist_sea.txt |
 | PRC_master_the_terrain | china_communist_focus_sea | 2 | 1 | 10 | GFX_focus_generic_mountain_training | china_communist_sea.txt |
 | PRC_reinforce_base_area | china_communist_focus_sea | -2 | 1 | 5 | GFX_focus_generic_mountain_fortification | china_communist_sea.txt |
-| PRC_to_steal_an_army | china_communist_focus_sea | -1 | 2 |  | GFX_focus_CONGO_copper_cartridges | china_communist_sea.txt |
+| PRC_to_steal_an_army | china_communist_focus_sea | -1 | 2 | 5 | GFX_focus_CONGO_copper_cartridges | china_communist_sea.txt |
 | PRC_revolutionary_war_of_the_masses | china_communist_focus_sea | 1 | 2 | 5 | GFX_focus_generic_limited_social_mobilization | china_communist_sea.txt |
 | PRC_cooperate_ulanhu | china_communist_focus_sea | 0 | 1 | 5 | GFX_focus_PRC_cooperate_with_ulanhu | china_communist_sea.txt |
 | PRC_lessons_learnt | china_communist_focus_sea | 0 | 2 | 10 | GFX_focus_PRC_immediate_response_to_lack_of_army | china_communist_sea.txt |
@@ -1653,8 +1949,8 @@ Source: `common/national_focus/*.txt`
 | CHI_correct_a_historical_wrong | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_focus_RAJ_union_busting | china_nationalist_sea.txt |
 | CHI_championing_the_cause_of_liberty | china_nationalist_sea_focus | 1 | 1 | 10 | GFX_focus_ARG_defense_and_democracy | china_nationalist_sea.txt |
 | CHI_dang_guo | china_nationalist_sea_focus | 30 | 0 | 5 | GFX_focus_CHI_dang_guo | china_nationalist_sea.txt |
-| CHI_prepare_for_a_change_in_leadership | china_nationalist_sea_focus | -11 | 1 |  | GFX_focus_CHI_change_in_leadership | china_nationalist_sea.txt |
-| CHI_avoid_another_crisis | china_nationalist_sea_focus | -6 | 1 |  | GFX_focus_CHI_avoid_another_crisis | china_nationalist_sea.txt |
+| CHI_prepare_for_a_change_in_leadership | china_nationalist_sea_focus | -11 | 1 | 10 | GFX_focus_CHI_change_in_leadership | china_nationalist_sea.txt |
+| CHI_avoid_another_crisis | china_nationalist_sea_focus | -6 | 1 | 5 | GFX_focus_CHI_avoid_another_crisis | china_nationalist_sea.txt |
 | CHI_lay_the_foundation_for_a_united_china | china_nationalist_sea_focus | 0 | 2 | 10 | GFX_focus_CHI_lay_the_foundation_for_a_united_china | china_nationalist_sea.txt |
 | CHI_preempt_the_inevitable | china_nationalist_sea_focus | -1 | 1 | 10 | GFX_focus_AST_war_japan | china_nationalist_sea.txt |
 | CHI_utilize_german_contacts | china_nationalist_sea_focus | 1 | 1 | 5 | GFX_focus_CHI_utilize_german_contacts | china_nationalist_sea.txt |
@@ -1674,20 +1970,20 @@ Source: `common/national_focus/*.txt`
 | CHI_extend_jurisdiction_to_the_provinces | china_nationalist_sea_focus | 3 | 2 | 10 | GFX_focus_JAP_remove_the_weeds_from_the_crop | china_nationalist_sea.txt |
 | CHI_affirm_civilian_primacy | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_focus_generic_improve_the_administration | china_nationalist_sea.txt |
 | CHI_proclaim_a_new_chapter | china_nationalist_sea_focus | 9 | 1 | 10 | GFX_focus_generic_china1 | china_nationalist_sea.txt |
-| CHI_victory_over_the_invaders | china_nationalist_sea_focus | 8 | 1 |  | GFX_focus_CHI_victory_over_the_invaders | china_nationalist_sea.txt |
+| CHI_victory_over_the_invaders | china_nationalist_sea_focus | 8 | 1 | 5 | GFX_focus_CHI_victory_over_the_invaders | china_nationalist_sea.txt |
 | CHI_petition_territorial_restoration | china_nationalist_sea_focus | -2 | 1 | 5 | GFX_focus_PRC_restore_territorial_integrity | china_nationalist_sea.txt |
 | CHI_crush_the_communists | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_focus_GER_end_european_communism | china_nationalist_sea.txt |
 | CHI_request_handover_of_coastal_cities | china_nationalist_sea_focus | 2 | 1 | 5 | GFX_focus_PRC_dare_to_struggle | china_nationalist_sea.txt |
-| CHI_negotiate_the_nine_powers_treaty | china_nationalist_sea_focus | -1 | 1 |  | GFX_focus_CHI_negotiate_the_nine_powers_treaty | china_nationalist_sea.txt |
-| CHI_start_looking_outwards | china_nationalist_sea_focus | 1 | 1 |  | GFX_focus_CHI_start_looking_outwards | china_nationalist_sea.txt |
+| CHI_negotiate_the_nine_powers_treaty | china_nationalist_sea_focus | -1 | 1 | 10 | GFX_focus_CHI_negotiate_the_nine_powers_treaty | china_nationalist_sea.txt |
+| CHI_start_looking_outwards | china_nationalist_sea_focus | 1 | 1 | 10 | GFX_focus_CHI_start_looking_outwards | china_nationalist_sea.txt |
 | CHI_liberate_the_peoples_of_asia | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_focus_generic_asia_liberation | china_nationalist_sea.txt |
 | CHI_punish_the_signatories | china_nationalist_sea_focus | -1 | 1 | 10 | GFX_focus_CHI_punish_the_signatories | china_nationalist_sea.txt |
 | CHI_bring_the_revolution_further | china_nationalist_sea_focus | 1 | 1 | 10 | GFX_focus_PHI_war_for_oceania | china_nationalist_sea.txt |
 | CHI_end_the_humiliation | china_nationalist_sea_focus | 1 | 1 | 10 | GFX_focus_usa_focus_on_europe | china_nationalist_sea.txt |
-| CHI_denounce_feudalism | china_nationalist_sea_focus | 6 | 1 |  | GFX_focus_CHI_denounce_feudalism | china_nationalist_sea.txt |
+| CHI_denounce_feudalism | china_nationalist_sea_focus | 6 | 1 | 5 | GFX_focus_CHI_denounce_feudalism | china_nationalist_sea.txt |
 | CHI_one_nation_undivided | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_focus_chi_cooperation_with_the_nationalists | china_nationalist_sea.txt |
-| CHI_decree_the_end_to_corruption | china_nationalist_sea_focus | -4 | 1 |  | GFX_focus_ARG_crackdown_on_corruption | china_nationalist_sea.txt |
-| CHI_reinforce_connections_with_shanghai_elites | china_nationalist_sea_focus | -11 | 1 |  | GFX_focus_CHI_connections_with_shanghai_elites | china_nationalist_sea.txt |
+| CHI_decree_the_end_to_corruption | china_nationalist_sea_focus | -4 | 1 | 5 | GFX_focus_ARG_crackdown_on_corruption | china_nationalist_sea.txt |
+| CHI_reinforce_connections_with_shanghai_elites | china_nationalist_sea_focus | -11 | 1 | 5 | GFX_focus_CHI_connections_with_shanghai_elites | china_nationalist_sea.txt |
 | CHI_introduce_the_baojia_system | china_nationalist_sea_focus | -1 | 1 | 10 | GFX_focus_CHI_baojia_system | china_nationalist_sea.txt |
 | CHI_expand_the_tongzi_jun | china_nationalist_sea_focus | 1 | 1 | 10 | GFX_focus_CHI_tongzi_jun | china_nationalist_sea.txt |
 | CHI_demonstrate_our_resolve | china_nationalist_sea_focus | 8 | 1 | 5 | GFX_focus_CHI_demonstrate_our_resolve | china_nationalist_sea.txt |
@@ -1708,45 +2004,45 @@ Source: `common/national_focus/*.txt`
 | CHI_request_soviet_advisors | china_nationalist_sea_focus | -1 | 1 | 10 | GFX_focus_SOV_the_glory_of_the_red_army_communism | china_nationalist_sea.txt |
 | CHI_the_northwest_highway | china_nationalist_sea_focus | 1 | 1 | 10 | GFX_focus_generic_supply_line | china_nationalist_sea.txt |
 | CHI_collaborate_with_allied_forces | china_nationalist_sea_focus | -2 | 2 | 5 | GFX_focus_generic_provoke_border_clashes | china_nationalist_sea.txt |
-| CHI_scout_for_air_experts | china_nationalist_sea_focus |  |  |  | GFX_focus_generic_air_partners | china_nationalist_sea.txt |
+| CHI_scout_for_air_experts | china_nationalist_sea_focus | 3 | 1 | 5 | GFX_focus_generic_air_partners | china_nationalist_sea.txt |
 | CHI_sell_lend_lease | china_nationalist_sea_focus | 3 | 0 | 10 | GFX_focus_generic_money_for_equipment | china_nationalist_sea.txt |
 | CHI_international_instructors | china_nationalist_sea_focus | 1 | 1 | 5 | GFX_focus_generic_flight_instructors | china_nationalist_sea.txt |
 | CHI_allocate_lend_lease | china_nationalist_sea_focus | 5 | 0 | 10 | GFX_focus_generic_reinforcing_the_supply_network | china_nationalist_sea.txt |
-| CHI_burma_campaign | china_nationalist_sea_focus |  |  |  | GFX_focus_generic_jungle_training | china_nationalist_sea.txt |
+| CHI_burma_campaign | china_nationalist_sea_focus | -1 | 1 | 5 | GFX_focus_generic_jungle_training | china_nationalist_sea.txt |
 | CHI_indo_chinese_campaign | china_nationalist_sea_focus | 1 | 1 | 5 | GFX_focus_generic_attack_indochina | china_nationalist_sea.txt |
 | CHI_international_squadron | china_nationalist_sea_focus | -1 | 1 | 5 | GFX_focus_chi_flying_tigers | china_nationalist_sea.txt |
-| CHI_form_the_chinese_womens_national_war_relief_society | china_nationalist_sea_focus | -6 | 2 |  | GFX_goal_generic_national_unity | china_nationalist_sea.txt |
+| CHI_form_the_chinese_womens_national_war_relief_society | china_nationalist_sea_focus | -6 | 2 | 10 | GFX_goal_generic_national_unity | china_nationalist_sea.txt |
 | CHI_towards_a_professional_army | china_nationalist_sea_focus | -1 | 1 | 10 | GFX_focus_chi_army_reform | china_nationalist_sea.txt |
 | CHI_towards_a_popular_army | china_nationalist_sea_focus | 1 | 1 | 10 | GFX_focus_CHI_popular_army | china_nationalist_sea.txt |
 | CHI_the_hanoi_route | china_nationalist_sea_focus | -1 | 1 | 5 | GFX_focus_generic_truck | china_nationalist_sea.txt |
-| CHI_form_saco | china_nationalist_sea_focus |  |  |  | GFX_focus_SWI_embrace_rote_drei | china_nationalist_sea.txt |
-| CHI_the_burma_road | china_nationalist_sea_focus |  |  |  | GFX_goal_generic_army_motorized | china_nationalist_sea.txt |
-| CHI_the_hump_sea | china_nationalist_sea_focus |  |  |  | GFX_focus_CHI_the_hump | china_nationalist_sea.txt |
+| CHI_form_saco | china_nationalist_sea_focus | 1 | 1 | 5 | GFX_focus_SWI_embrace_rote_drei | china_nationalist_sea.txt |
+| CHI_the_burma_road | china_nationalist_sea_focus | 0 | 2 | 5 | GFX_goal_generic_army_motorized | china_nationalist_sea.txt |
+| CHI_the_hump_sea | china_nationalist_sea_focus | 1 | 1 | 5 | GFX_focus_CHI_the_hump | china_nationalist_sea.txt |
 | CHI_women_in_the_war_effort | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_focus_SOV_womens_fascist_movement | china_nationalist_sea.txt |
 | CHI_the_sky_cannot_have_two_suns | china_nationalist_sea_focus | 1 | 1 | 5 | GFX_focus_chi_united_front | china_nationalist_sea.txt |
-| CHI_preemptive_strike | china_nationalist_sea_focus | -7 | 1 |  | GFX_focus_chi_one_china_policy | china_nationalist_sea.txt |
+| CHI_preemptive_strike | china_nationalist_sea_focus | -7 | 1 | 10 | GFX_focus_chi_one_china_policy | china_nationalist_sea.txt |
 | CHI_tour_the_north | china_nationalist_sea_focus | -2 | 1 | 5 | GFX_focus_CHI_tour_the_north | china_nationalist_sea.txt |
 | CHI_tour_the_west | china_nationalist_sea_focus | 0 | 1 | 5 | GFX_focus_CHI_tour_the_west | china_nationalist_sea.txt |
 | CHI_tour_the_south | china_nationalist_sea_focus | 2 | 1 | 5 | GFX_focus_CHI_tour_the_south | china_nationalist_sea.txt |
-| CHI_a_generalissimo_for_all_of_china | china_nationalist_sea_focus | 2 | 1 |  | GFX_focus_CHI_generalissimo_for_all_of_china | china_nationalist_sea.txt |
-| CHI_empower_the_mtac | china_nationalist_sea_focus | 3 | 1 |  | GFX_focus_CHI_empower_mtac | china_nationalist_sea.txt |
-| CHI_unify_the_admissions_process | china_nationalist_sea_focus | 1 | 1 |  | GFX_focus_generic_university_2 | china_nationalist_sea.txt |
-| CHI_retreat_to_taiwan | china_nationalist_sea_focus | 0 | 2 |  | GFX_focus_CZE_german_puppet | china_nationalist_sea.txt |
+| CHI_a_generalissimo_for_all_of_china | china_nationalist_sea_focus | 2 | 1 | 10 | GFX_focus_CHI_generalissimo_for_all_of_china | china_nationalist_sea.txt |
+| CHI_empower_the_mtac | china_nationalist_sea_focus | 3 | 1 | 10 | GFX_focus_CHI_empower_mtac | china_nationalist_sea.txt |
+| CHI_unify_the_admissions_process | china_nationalist_sea_focus | 1 | 1 | 10 | GFX_focus_generic_university_2 | china_nationalist_sea.txt |
+| CHI_retreat_to_taiwan | china_nationalist_sea_focus | 0 | 2 | 5 | GFX_focus_CZE_german_puppet | china_nationalist_sea.txt |
 | CHI_joining_the_international_community | china_nationalist_sea_focus | -1 | 1 | 5 | GFX_focus_ARG_join_the_allies | china_nationalist_sea.txt |
 | CHI_a_world_freed_from_communism | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_goal_anti_comintern_pact | china_nationalist_sea.txt |
 | CHI_subjugate_korea | china_nationalist_sea_focus | 1 | 1 | 10 | GFX_focus_generic_invade_korea | china_nationalist_sea.txt |
 | CHI_reclaim_the_north | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_focus_PRC_dare_to_win | china_nationalist_sea.txt |
 | CHI_strengthening_our_resolve | china_nationalist_sea_focus | 39 | 0 | 5 | GFX_focus_CHI_strengthening_our_resolve | china_nationalist_sea.txt |
-| CHI_china_reborn | china_nationalist_sea_focus | -14 | 2 |  | GFX_focus_GER_ally_chiang_kai_shek | china_nationalist_sea.txt |
+| CHI_china_reborn | china_nationalist_sea_focus | -14 | 2 | 5 | GFX_focus_GER_ally_chiang_kai_shek | china_nationalist_sea.txt |
 | CHI_co_opt_the_koh_hsin_movement | china_nationalist_sea_focus | -2 | 1 | 5 | GFX_focus_CHI_co_opt_the_koh_hsin_movement | china_nationalist_sea.txt |
 | CHI_mend_the_rift_with_hu | china_nationalist_sea_focus | 0 | 1 | 5 | GFX_focus_CHI_mend_the_rift_with_hu | china_nationalist_sea.txt |
 | CHI_revive_the_western_hills_group | china_nationalist_sea_focus | 2 | 1 | 5 | GFX_focus_CHI_revive_the_western_hills_group | china_nationalist_sea.txt |
-| CHI_reform_the_blue_shirts | china_nationalist_sea_focus | 5 | 1 |  | GFX_focus_generic_infiltration | china_nationalist_sea.txt |
+| CHI_reform_the_blue_shirts | china_nationalist_sea_focus | 5 | 1 | 5 | GFX_focus_generic_infiltration | china_nationalist_sea.txt |
 | CHI_empower_the_bureau_of_investigation_and_statistics | china_nationalist_sea_focus | -2 | 1 | 10 | GFX_focus_generic_secret_service_agency | china_nationalist_sea.txt |
 | CHI_revise_the_national_curriculum | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_focus_CHI_revise_the_national_curriculum | china_nationalist_sea.txt |
 | CHI_target_upper_society | china_nationalist_sea_focus | 2 | 1 | 10 | GFX_focus_generic_expropriate_industrialist | china_nationalist_sea.txt |
 | CHI_outlaw_opposition_parties | china_nationalist_sea_focus | 0 | 1 | 5 | GFX_focus_ARG_keep_it_in_the_party | china_nationalist_sea.txt |
-| CHI_seek_out_western_fascist_cooperation | china_nationalist_sea_focus |  |  |  |  | china_nationalist_sea.txt |
+| CHI_seek_out_western_fascist_cooperation | china_nationalist_sea_focus | -5 | 1 | 5 |  | china_nationalist_sea.txt |
 | CHI_a_chapter_in_every_village | china_nationalist_sea_focus | 4 | 1 | 10 | GFX_focus_CHI_a_chapter_in_every_village | china_nationalist_sea.txt |
 | CHI_secure_the_northern_front | china_nationalist_sea_focus | -2 | 1 | 10 | GFX_focus_PRC_restore_territorial_integrity | china_nationalist_sea.txt |
 | CHI_a_party_unified | china_nationalist_sea_focus | 0 | 1 | 5 | GFX_focus_ITA_generic_fascist_workers | china_nationalist_sea.txt |
@@ -1761,7 +2057,7 @@ Source: `common/national_focus/*.txt`
 | CHI_enforce__virtues | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_focus_CHI_enforce_virtues | china_nationalist_sea.txt |
 | CHI_whampoa_ideological_primacy | china_nationalist_sea_focus | 1 | 1 | 5 | GFX_focus_chi_whampoa_military_academy | china_nationalist_sea.txt |
 | CHI_postpone_the_tutelage | china_nationalist_sea_focus | -2 | 1 | 5 | GFX_focus_chi_one_china_policy | china_nationalist_sea.txt |
-| CHI_expel_the_occupiers | china_nationalist_sea_focus | 0 | 1 |  | GFX_focus_CHI_victory_over_the_invaders | china_nationalist_sea.txt |
+| CHI_expel_the_occupiers | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_focus_CHI_victory_over_the_invaders | china_nationalist_sea.txt |
 | CHI_put_an_end_to_PRC | china_nationalist_sea_focus | 2 | 1 | 10 | GFX_focus_SWE_attack_landsorganisationen | china_nationalist_sea.txt |
 | CHI_second_father_of_the_nation | china_nationalist_sea_focus | 2 | 1 | 10 | GFX_focus_CHI_second_father_of_the_nation | china_nationalist_sea.txt |
 | CHI_weaponise_the_faithful | china_nationalist_sea_focus | -1 | 1 | 5 | GFX_focus_CHI_weaponise_the_faithful | china_nationalist_sea.txt |
@@ -1778,7 +2074,7 @@ Source: `common/national_focus/*.txt`
 | CHI_the_northern_mandate | china_nationalist_sea_focus | -2 | 1 | 10 | GFX_focus_CHI_the_northern_mandate | china_nationalist_sea.txt |
 | CHI_the_greater_game | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_focus_CHI_the_greater_game | china_nationalist_sea.txt |
 | CHI_cradle_of_civilization | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_focus_CHI_cradle_of_civilization | china_nationalist_sea.txt |
-| CHI_promote_the_national_currency | china_nationalist_sea_focus | 12 | 0 |  | GFX_focus_CHI_promote_national_currency | china_nationalist_sea.txt |
+| CHI_promote_the_national_currency | china_nationalist_sea_focus | 12 | 0 | 5 | GFX_focus_CHI_promote_national_currency | china_nationalist_sea.txt |
 | CHI_military_affairs_commission_sea | china_nationalist_sea_focus | 20 | 0 | 5 | GFX_focus_CHI_military_affairs_commission | china_nationalist_sea.txt |
 | CHI_set_up_an_nco_school | china_nationalist_sea_focus | -1 | 1 | 10 | GFX_focus_chi_whampoa_military_academy | china_nationalist_sea.txt |
 | CHI_formalize_field_promotions | china_nationalist_sea_focus | 1 | 1 | 10 | GFX_focus_CHI_military_mission | china_nationalist_sea.txt |
@@ -1828,15 +2124,15 @@ Source: `common/national_focus/*.txt`
 | CHI_coordinate_with_the_army | china_nationalist_sea_focus | 0 | 2 | 10 | GFX_goal_generic_air_doctrine | china_nationalist_sea.txt |
 | CHI_officialize_the_rocaf | china_nationalist_sea_focus | -2 | 1 | 10 | GFX_goal_generic_build_airforce | china_nationalist_sea.txt |
 | CHI_hongxiang_force | china_nationalist_sea_focus | 2 | 1 | 5 | GFX_focus_generic_paratrooper | china_nationalist_sea.txt |
-| CHI_an_appropriate_design | china_nationalist_sea_focus | 0 | 2 |  | GFX_focus_CHI_appropriate_design | china_nationalist_sea.txt |
+| CHI_an_appropriate_design | china_nationalist_sea_focus | 0 | 2 | 10 | GFX_focus_CHI_appropriate_design | china_nationalist_sea.txt |
 | CHI_reorganise_the_central_armys_academy_aviation_corps | china_nationalist_sea_focus | 5 | 1 | 10 | GFX_focus_generic_military_academy | china_nationalist_sea.txt |
 | CHI_formalise_training_regime | china_nationalist_sea_focus | -3 | 1 | 10 | GFX_focus_CHI_formalise_training_regime | china_nationalist_sea.txt |
 | CHI_conserve_our_pilots | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_focus_generic_pilot_training | china_nationalist_sea.txt |
 | CHI_camco_primacy | china_nationalist_sea_focus | -1 | 1 | 10 | GFX_focus_CHI_camco_primacy | china_nationalist_sea.txt |
 | CHI_SINAW_primacy | china_nationalist_sea_focus | 1 | 1 | 10 | GFX_focus_BRA_italian_aircraft_development | china_nationalist_sea.txt |
-| CHI_initiate_the_sky_projects | china_nationalist_sea_focus |  |  |  | GFX_focus_rocketry | china_nationalist_sea.txt |
-| CHI_focus_on_the_Tianlong_project | china_nationalist_sea_focus |  |  |  | GFX_focus_generic_jet_planes | china_nationalist_sea.txt |
-| CHI_VTOL_experiments | china_nationalist_sea_focus |  |  |  | GFX_focus_CHI_vtol_experiments | china_nationalist_sea.txt |
+| CHI_initiate_the_sky_projects | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_focus_rocketry | china_nationalist_sea.txt |
+| CHI_focus_on_the_Tianlong_project | china_nationalist_sea_focus | -2 | 1 | 10 | GFX_focus_generic_jet_planes | china_nationalist_sea.txt |
+| CHI_VTOL_experiments | china_nationalist_sea_focus | 0 | 5 | 10 | GFX_focus_CHI_vtol_experiments | china_nationalist_sea.txt |
 | CHI_republic_of_china_navy | china_nationalist_sea_focus | 16 | 0 | 5 | GFX_focus_CHI_Republic_of_china_navy | china_nationalist_sea.txt |
 | CHI_develop_northern_naval_logistics | china_nationalist_sea_focus | -1 | 2 | 10 | GFX_focus_CHI_northern_naval_logistics | china_nationalist_sea.txt |
 | CHI_develop_southern_naval_logistics | china_nationalist_sea_focus | 1 | 2 | 10 | GFX_focus_CHI_southern_naval_logistics | china_nationalist_sea.txt |
@@ -1888,7 +2184,7 @@ Source: `common/national_focus/*.txt`
 | CHI_import_fertilisers | china_nationalist_sea_focus | 1 | 1 | 10 | GFX_focus_CHI_import_fertilisers | china_nationalist_sea.txt |
 | CHI_construct_the_banqiao_dam | china_nationalist_sea_focus | 1 | 1 | 10 | GFX_focus_generic_hydroelectric_energy | china_nationalist_sea.txt |
 | CHI_expand_national_sun_yat_sen_university | china_nationalist_sea_focus | 0 | 1 | 10 | GFX_focus_PRC_reestablish_moscow_sun_yat_sen_university | china_nationalist_sea.txt |
-| CHI_tsr_repoen_the_natioal_assembly | china_nationalist_warlord_focus | 10 | 0 |  | GFX_focus_CHI_lay_the_foundation_for_a_united_china | china_nationalist_warlord_TSR.txt |
+| CHI_tsr_repoen_the_natioal_assembly | china_nationalist_warlord_focus | 10 | 0 | 5 | GFX_focus_CHI_lay_the_foundation_for_a_united_china | china_nationalist_warlord_TSR.txt |
 | CHI_sea_three_principles_of_the_people | china_nationalist_warlord_focus | 0 | 1 | 5 | GFX_focus_CHI_unify_as_the_china_democratic_league | china_nationalist_warlord_TSR.txt |
 | CHI_sea_welfare | china_nationalist_warlord_focus | -4 | 1 | 10 | GFX_focus_generic_welfare | china_nationalist_warlord_TSR.txt |
 | CHI_sea_refugee_relief_agency | china_nationalist_warlord_focus | -1 | 1 | 10 | GFX_focus_generic_self_management | china_nationalist_warlord_TSR.txt |
@@ -1918,11 +2214,11 @@ Source: `common/national_focus/*.txt`
 | CHI_sea_war_of_anti_imperialism | china_nationalist_warlord_focus | 0 | 1 | 10 | GFX_focus_CHI_clear_out_sycophants | china_nationalist_warlord_TSR.txt |
 | CHI_sea_forced_conscription | china_nationalist_warlord_focus | 0 | 1 | 10 | GFX_focus_CHI_baojia_system | china_nationalist_warlord_TSR.txt |
 | CHI_sea_dare_to_die_corps | china_nationalist_warlord_focus | 0 | 2 | 10 | GFX_focus_generic_total_war | china_nationalist_warlord_TSR.txt |
-| CHI_tsr_form_a_preparatory_committee | china_nationalist_warlord_focus | 11 | 0 |  | GFX_focus_generic_self_management | china_nationalist_warlord_TSR.txt |
+| CHI_tsr_form_a_preparatory_committee | china_nationalist_warlord_focus | 11 | 0 | 5 | GFX_focus_generic_self_management | china_nationalist_warlord_TSR.txt |
 | CHI_tsr_legacy_of_the_hongxian_emperor | china_nationalist_warlord_focus | -2 | 1 | 10 | GFX_focus_generic_monarchist_sentiment | china_nationalist_warlord_TSR.txt |
 | CHI_tsr_coronation_at_the_temple_of_heaven | china_nationalist_warlord_focus | 0 | 1 | 5 | GFX_focus_CHI_a_new_middle_kingdom | china_nationalist_warlord_TSR.txt |
 | CHI_tsr_outlaw_the_kmt_and_cpc | china_nationalist_warlord_focus | 2 | 1 | 5 | GFX_focus_generic_treaty | china_nationalist_warlord_TSR.txt |
-| CHI_tsr_restoration_of_the_chinese_empire | china_nationalist_warlord_focus |  |  |  |  | china_nationalist_warlord_TSR.txt |
+| CHI_tsr_restoration_of_the_chinese_empire | china_nationalist_warlord_focus | -2 | 2 | 10 |  | china_nationalist_warlord_TSR.txt |
 | CHI_tsr_adopt_the_twelve_symbols | china_nationalist_warlord_focus | -2 | 1 | 5 | GFX_goal_generic_political_pressure | china_nationalist_warlord_TSR.txt |
 | CHI_tsr_reinstate_the_new_imperial_code | china_nationalist_warlord_focus | 0 | 1 | 5 | GFX_focus_generic_monarchy_1 | china_nationalist_warlord_TSR.txt |
 | CHI_tsr_reestablish_xinhua_palace | china_nationalist_warlord_focus | 2 | 1 | 5 | GFX_focus_CHI_an_alternative_rooted_in_tradition | china_nationalist_warlord_TSR.txt |
@@ -1943,9 +2239,9 @@ Source: `common/national_focus/*.txt`
 | CHI_tsr_national_construction | china_nationalist_warlord_focus | 2 | 1 | 5 | GFX_focus_JAP_foreign_exchange_allocation_policy | china_nationalist_warlord_TSR.txt |
 | CHI_tsr_pan_asianism | china_nationalist_warlord_focus | -2 | 1 | 5 | GFX_focus_JAP_promote_pan_asianism | china_nationalist_warlord_TSR.txt |
 | CHI_tsr_establish_the_tewu | china_nationalist_warlord_focus | 0 | 1 | 5 | GFX_goal_generic_intelligence_exchange | china_nationalist_warlord_TSR.txt |
-| CHI_tsr_embrace_japanese_cultural_institutions | china_nationalist_warlord_focus | -1 | 1 |  | GFX_focus_jap_spiritual_mobilization | china_nationalist_warlord_TSR.txt |
+| CHI_tsr_embrace_japanese_cultural_institutions | china_nationalist_warlord_focus | -1 | 1 | 10 | GFX_focus_jap_spiritual_mobilization | china_nationalist_warlord_TSR.txt |
 | CHI_tsr_deepen_our_collaboration | china_nationalist_warlord_focus | 0 | 1 | 10 | GFX_focus_JAP_promote_japanese_settlement | china_nationalist_warlord_TSR.txt |
-| CHI_tsr_a_new_chinese_identity | china_nationalist_warlord_focus | 1 | 1 |  | GFX_focus_CHI_strengthening_our_resolve | china_nationalist_warlord_TSR.txt |
+| CHI_tsr_a_new_chinese_identity | china_nationalist_warlord_focus | 1 | 1 | 10 | GFX_focus_CHI_strengthening_our_resolve | china_nationalist_warlord_TSR.txt |
 | CHI_tsr_our_place_in_the_sphere | china_nationalist_warlord_focus | 0 | 1 | 10 | GFX_focus_JAP_greater_east_asian_co_properity_sphere | china_nationalist_warlord_TSR.txt |
 | CHI_sea_military_affairs_commission | china_nationalist_warlord_focus | 18 | 0 | 10 | GFX_focus_CHI_military_affairs_commission | china_nationalist_warlord_TSR.txt |
 | CHI_sea_fortify_shanghai | china_nationalist_warlord_focus | -2 | 1 | 10 | GFX_goal_generic_fortify_city | china_nationalist_warlord_TSR.txt |
@@ -1966,6 +2262,140 @@ Source: `common/national_focus/*.txt`
 | CHI_sea_grain_tax | china_nationalist_warlord_focus | 2 | 1 | 10 | GFX_goal_generic_trade | china_nationalist_warlord_TSR.txt |
 | CHI_sea_reform_the_national_bank | china_nationalist_warlord_focus | 0 | 1 | 10 | GFX_goal_generic_improve_relations | china_nationalist_warlord_TSR.txt |
 | CHI_sea_forced_loans | china_nationalist_warlord_focus | 0 | 1 | 10 | GFX_goal_generic_forceful_treaty | china_nationalist_warlord_TSR.txt |
+| CHI_invite_foreign_investors | china_shared_shared | 40 | 0 | 10 | GFX_focus_generic_concessions | china_shared.txt |
+| CHI_mission_to_germany | china_shared_shared | -10 | 1 | 5 | GFX_focus_chi_mission_to_germany | china_shared.txt |
+| CHI_give_falkenhausen_citizenship | china_shared_shared | -1 | 1 | 5 | GFX_focus_generic_diplomatic_treaty | china_shared.txt |
+| CHI_chinese_general_staff | china_shared_shared | 0 | 1 | 10 | GFX_goal_generic_axis_build_infantry | china_shared.txt |
+| CHI_wargaming_division | china_shared_shared | -1 | 1 | 10 | GFX_goal_generic_position_armies | china_shared.txt |
+| CHI_closer_ties_with_germany | china_shared_shared | 1 | 1 | 10 | GFX_goal_generic_improve_relations | china_shared.txt |
+| CHI_purchase_tanks | china_shared_shared | 1 | 1 | 10 | GFX_goal_generic_army_tanks | china_shared.txt |
+| CHI_chinese_panzers | china_shared_shared | -2 | 1 | 10 | GFX_goal_generic_production2 | china_shared.txt |
+| CHI_tank_plant | china_shared_shared | -2 | 3 | 10 | GFX_goal_generic_construct_mil_factory | china_shared.txt |
+| CHI_experimental_mechanised_unit | china_shared_shared | 0 | 2 | 10 | GFX_goal_generic_cavalry | china_shared.txt |
+| CHI_combined_arms_warfare | china_shared_shared | 0 | 4 | 10 | GFX_goal_generic_army_doctrines | china_shared.txt |
+| CHI_hire_soviet_designer | china_shared_shared | 2 | 1 | 10 | GFX_goal_generic_soviet_construction | china_shared.txt |
+| CHI_joint_tank_development | china_shared_shared | 2 | 3 | 10 | GFX_goal_generic_scientific_exchange | china_shared.txt |
+| CHI_mission_to_the_soviet_union | china_shared_shared | 4 | 0 | 5 | GFX_focus_chi_mission_to_the_soviet_union | china_shared.txt |
+| CHI_rapprochement_with_soviet_union | china_shared_shared | -1 | 1 | 5 | GFX_goal_support_communism | china_shared.txt |
+| CHI_invite_soviet_advisers | china_shared_shared | 1 | 1 | 5 | GFX_focus_generic_soviet_politics | china_shared.txt |
+| CHI_the_soviet_volunteer_group | china_shared_shared | 0 | 1 | 10 | GFX_goal_demand_sudetenland | china_shared.txt |
+| CHI_reach_out_to_france | china_shared_shared | 5 | 0 | 5 | GFX_focus_chi_reach_out_to_france | china_shared.txt |
+| CHI_small_arms_expertise | china_shared_shared | -2 | 1 | 10 | GFX_focus_secret_rearmament | china_shared.txt |
+| CHI_elite_mountaineers | china_shared_shared | 0 | 1 | 10 | GFX_goal_generic_allies_build_infantry | china_shared.txt |
+| CHI_heavy_weapons | china_shared_shared | 0 | 2 | 10 | GFX_goal_generic_army_artillery2 | china_shared.txt |
+| CHI_guarantee_the_hanoi_route | china_shared_shared | 0 | 1 | 10 | GFX_goal_generic_intelligence_exchange | china_shared.txt |
+| CHI_construction_battalions | china_shared_shared | 1 | 1 | 10 | GFX_goal_generic_construction2 | china_shared.txt |
+| CHI_french_military_mission | china_shared_shared | 0 | 3 | 10 | GFX_goal_generic_defence | china_shared.txt |
+| CHI_french_drill | china_shared_shared | 0 | 5 | 10 | GFX_goal_generic_build_tank | china_shared.txt |
+| CHI_modern_logistics | china_shared_shared | 1 | 1 | 10 | GFX_goal_generic_army_motorized | china_shared.txt |
+| CHI_renegotiate_the_unequal_treaties | china_shared_shared | 0 | 1 | 10 | GFX_focus_renounce_the_treaty_of_trianon | china_shared.txt |
+| CHI_one_china_policy | china_shared_shared | -3 | 1 | 10 | GFX_focus_chi_one_china_policy | china_shared.txt |
+| CHI_integrate_tibet | china_shared_shared | -1 | 1 | 10 | GFX_goal_generic_improve_relations | china_shared.txt |
+| CHI_conquer_tibet | china_shared_shared | 1 | 1 | 10 | GFX_goal_generic_demand_territory | china_shared.txt |
+| CHI_renounce_the_mcmahon_line | china_shared_shared | 0 | 2 | 10 | GFX_goal_generic_major_war | china_shared.txt |
+| CHI_demand_mongolia | china_shared_shared | 0 | 3 | 10 | GFX_goal_generic_air_doctrine | china_shared.txt |
+| CHI_anti_imperialism | china_shared_shared | 0 | 1 | 10 | GFX_goal_generic_military_deal | china_shared.txt |
+| CHI_guidance_and_support | china_shared_shared | 1 | 1 | 10 | GFX_goal_generic_forceful_treaty | china_shared.txt |
+| CHI_commit_to_korean_independence | china_shared_shared | 1 | 2 | 10 | GFX_goal_generic_national_unity | china_shared.txt |
+| CHI_indian_cooperation | china_shared_shared | -1 | 2 | 10 | GFX_goal_generic_improve_relations | china_shared.txt |
+| CHI_influence_mongolia | china_shared_shared | 0 | 1 | 10 | GFX_goal_generic_neutrality_focus | china_shared.txt |
+| CHI_imperial_legacy | china_shared_shared | 3 | 1 | 10 | GFX_focus_generic_support_the_left_right | china_shared.txt |
+| CHI_overlordship_over_indochina | china_shared_shared | 0 | 1 | 10 | GFX_goal_generic_position_armies | china_shared.txt |
+| CHI_dominate_japan | china_shared_shared | 2 | 1 | 10 | GFX_focus_AST_war_japan | china_shared.txt |
+| CHI_secure_the_peninsula | china_shared_shared | 0 | 2 | 10 | GFX_focus_generic_strike_at_democracy1 | china_shared.txt |
+| CHI_british_cooperation | china_shared_shared | 2 | 0 | 5 | GFX_focus_chi_british_cooperation | china_shared.txt |
+| CHI_burma_road | china_shared_shared | 0 | 1 | 10 | GFX_goal_generic_army_motorized | china_shared.txt |
+| CHI_ledo_road | china_shared_shared | 0 | 5 | 10 | GFX_goal_generic_construction2 | china_shared.txt |
+| CHI_fighter_purchases | china_shared_shared | 3 | 1 | 10 | GFX_goal_generic_build_airforce | china_shared.txt |
+| CHI_camco | china_shared_shared | 0 | 1 | 10 | GFX_goal_generic_construct_mil_factory | china_shared.txt |
+| CHI_local_fighter_production | china_shared_shared | -2 | 2 | 10 | GFX_goal_generic_air_fighter2 | china_shared.txt |
+| CHI_local_bomber_production | china_shared_shared | 0 | 1 | 10 | GFX_goal_generic_air_bomber | china_shared.txt |
+| CHI_the_hump | china_shared_shared | 1 | 3 | 10 | GFX_goal_generic_air_production | china_shared.txt |
+| CHI_chinese_expeditionary_force | china_shared_shared | 0 | 1 | 10 | GFX_goal_generic_alliance | china_shared.txt |
+| CHI_the_chu_x_po | china_shared_shared | 0 | 1 | 10 | GFX_goal_generic_air_fighter | china_shared.txt |
+| CHI_mission_to_the_us | china_shared_shared | 8 | 0 | 5 | GFX_focus_chi_mission_to_the_us | china_shared.txt |
+| CHI_hire_chennault | china_shared_shared | -3 | 3 | 5 | GFX_focus_generic_military_mission | china_shared.txt |
+| CHI_invite_the_flying_tigers | china_shared_shared | 1 | 1 | 10 | GFX_focus_chi_flying_tigers | china_shared.txt |
+| CHI_sino_american_cooperative_organization | china_shared_shared | 1 | 2 | 10 | GFX_focus_generic_paratrooper | china_shared.txt |
+| CHI_light_cruiser_project | china_shared_shared | 0 | 3 | 10 | GFX_goal_generic_navy_cruiser | china_shared.txt |
+| CHI_heavy_cruiser_project | china_shared_shared | 0 | 2 | 10 | GFX_goal_generic_navy_battleship | china_shared.txt |
+| CHI_naval_aviation | china_shared_shared | 1 | 1 | 10 | GFX_goal_generic_navy_carrier | china_shared.txt |
+| CHI_carrier_air_wing | china_shared_shared | 0 | 1 | 10 | GFX_goal_generic_occupy_start_war | china_shared.txt |
+| CHI_investment_into_shipbuilding | china_shared_shared | 1 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | china_shared.txt |
+| CHI_order_destroyers | china_shared_shared | 0 | 1 | 10 | GFX_goal_generic_navy_anti_submarine | china_shared.txt |
+| CHI_train_marines | china_shared_shared | 0 | 3 | 10 | GFX_goal_generic_amphibious_assault | china_shared.txt |
+| CHI_collaboration_with_the_japanese | china_shared_shared | 2 | 0 | 5 | GFX_focus_chi_collaboration_with_the_japanese | china_shared.txt |
+| CHI_modern_submarines | china_shared_shared | 0 | 3 | 10 | GFX_goal_generic_navy_submarine | china_shared.txt |
+| CHI_coastal_patrol_planes | china_shared_shared | 0 | 2 | 10 | GFX_goal_generic_air_naval_bomber | china_shared.txt |
+| CHI_sea_invite_foreign_investors | china_shared_TSR_shared | 40 | 0 | 10 | GFX_focus_generic_concessions | china_shared_TSR.txt |
+| CHI_sea_mission_to_germany | china_shared_TSR_shared | -10 | 1 | 5 | GFX_focus_chi_mission_to_germany | china_shared_TSR.txt |
+| CHI_sea_give_falkenhausen_citizenship | china_shared_TSR_shared | -1 | 1 | 5 | GFX_focus_generic_diplomatic_treaty | china_shared_TSR.txt |
+| CHI_sea_chinese_general_staff | china_shared_TSR_shared | 0 | 1 | 10 | GFX_goal_generic_axis_build_infantry | china_shared_TSR.txt |
+| CHI_sea_wargaming_division | china_shared_TSR_shared | -1 | 1 | 10 | GFX_goal_generic_position_armies | china_shared_TSR.txt |
+| CHI_sea_closer_ties_with_germany | china_shared_TSR_shared | 1 | 1 | 10 | GFX_goal_generic_improve_relations | china_shared_TSR.txt |
+| CHI_sea_purchase_tanks | china_shared_TSR_shared | 1 | 1 | 10 | GFX_goal_generic_army_tanks | china_shared_TSR.txt |
+| CHI_sea_chinese_panzers | china_shared_TSR_shared | -2 | 1 | 10 | GFX_goal_generic_production2 | china_shared_TSR.txt |
+| CHI_sea_tank_plant | china_shared_TSR_shared | -2 | 3 | 10 | GFX_goal_generic_construct_mil_factory | china_shared_TSR.txt |
+| CHI_sea_experimental_mechanised_unit | china_shared_TSR_shared | 0 | 2 | 10 | GFX_goal_generic_cavalry | china_shared_TSR.txt |
+| CHI_sea_combined_arms_warfare | china_shared_TSR_shared | 0 | 4 | 10 | GFX_goal_generic_army_doctrines | china_shared_TSR.txt |
+| CHI_sea_hire_soviet_designer | china_shared_TSR_shared | 2 | 1 | 10 | GFX_goal_generic_soviet_construction | china_shared_TSR.txt |
+| CHI_sea_joint_tank_development | china_shared_TSR_shared | 2 | 3 | 10 | GFX_goal_generic_scientific_exchange | china_shared_TSR.txt |
+| CHI_sea_mission_to_the_soviet_union | china_shared_TSR_shared | 4 | 0 | 5 | GFX_focus_chi_mission_to_the_soviet_union | china_shared_TSR.txt |
+| CHI_sea_rapprochement_with_soviet_union | china_shared_TSR_shared | -1 | 1 | 5 | GFX_goal_support_communism | china_shared_TSR.txt |
+| CHI_sea_invite_soviet_advisers | china_shared_TSR_shared | 1 | 1 | 5 | GFX_focus_generic_soviet_politics | china_shared_TSR.txt |
+| CHI_sea_the_soviet_volunteer_group | china_shared_TSR_shared | 0 | 1 | 10 | GFX_goal_demand_sudetenland | china_shared_TSR.txt |
+| CHI_sea_reach_out_to_france | china_shared_TSR_shared | 5 | 0 | 5 | GFX_focus_chi_reach_out_to_france | china_shared_TSR.txt |
+| CHI_sea_small_arms_expertise | china_shared_TSR_shared | -2 | 1 | 10 | GFX_focus_secret_rearmament | china_shared_TSR.txt |
+| CHI_sea_elite_mountaineers | china_shared_TSR_shared | 0 | 1 | 10 | GFX_goal_generic_allies_build_infantry | china_shared_TSR.txt |
+| CHI_sea_heavy_weapons | china_shared_TSR_shared | 0 | 2 | 10 | GFX_goal_generic_army_artillery2 | china_shared_TSR.txt |
+| CHI_sea_guarantee_the_hanoi_route | china_shared_TSR_shared | 0 | 1 | 10 | GFX_goal_generic_intelligence_exchange | china_shared_TSR.txt |
+| CHI_sea_construction_battalions | china_shared_TSR_shared | 1 | 1 | 10 | GFX_goal_generic_construction2 | china_shared_TSR.txt |
+| CHI_sea_french_military_mission | china_shared_TSR_shared | 0 | 3 | 10 | GFX_goal_generic_defence | china_shared_TSR.txt |
+| CHI_sea_french_drill | china_shared_TSR_shared | 0 | 5 | 10 | GFX_goal_generic_build_tank | china_shared_TSR.txt |
+| CHI_sea_modern_logistics | china_shared_TSR_shared | 1 | 1 | 10 | GFX_goal_generic_army_motorized | china_shared_TSR.txt |
+| CHI_sea_renegotiate_the_unequal_treaties | china_shared_TSR_shared | 0 | 1 | 10 | GFX_focus_renounce_the_treaty_of_trianon | china_shared_TSR.txt |
+| CHI_sea_one_china_policy | china_shared_TSR_shared | -3 | 1 | 10 | GFX_focus_chi_one_china_policy | china_shared_TSR.txt |
+| CHI_ncns_request_handover_of_coastal_cities | china_shared_TSR_shared | -2 | 2 | 10 | GFX_focus_PRC_dare_to_struggle | china_shared_TSR.txt |
+| CHI_sea_integrate_tibet | china_shared_TSR_shared | -1 | 1 | 10 | GFX_focus_PRC_reclaim_tibet | china_shared_TSR.txt |
+| CHI_sea_conquer_tibet | china_shared_TSR_shared | 1 | 1 | 10 | GFX_focus_CHI_empower_mtac | china_shared_TSR.txt |
+| CHI_sea_renounce_the_mcmahon_line | china_shared_TSR_shared | 0 | 2 | 10 | GFX_focus_RAJ_clamp_down_on_corruption | china_shared_TSR.txt |
+| CHI_sea_demand_mongolia | china_shared_TSR_shared | 0 | 3 | 10 | GFX_focus_generic_attack_mongolia | china_shared_TSR.txt |
+| CHI_sea_annex_tuva | china_shared_TSR_shared | 0 | 1 | 5 | GFX_focus_generic_annex_country_2 | china_shared_TSR.txt |
+| CHI_sea_anti_imperialism | china_shared_TSR_shared | 0 | 1 | 10 | GFX_goal_generic_military_deal | china_shared_TSR.txt |
+| CHI_sea_guidance_and_support | china_shared_TSR_shared | 1 | 1 | 10 | GFX_goal_generic_forceful_treaty | china_shared_TSR.txt |
+| CHI_sea_commit_to_korean_independence | china_shared_TSR_shared | 1 | 2 | 10 | GFX_focus_JAP_build_up_korean_industries | china_shared_TSR.txt |
+| CHI_sea_indian_cooperation | china_shared_TSR_shared | -1 | 2 | 10 | GFX_focus_RAJ_a_congress_resurgent | china_shared_TSR.txt |
+| CHI_sea_influence_mongolia | china_shared_TSR_shared | 0 | 1 | 10 | GFX_goal_generic_neutrality_focus | china_shared_TSR.txt |
+| CHI_sea_imperial_legacy | china_shared_TSR_shared | 3 | 1 | 10 | GFX_focus_CHI_the_southern_mandate | china_shared_TSR.txt |
+| CHI_sea_overlordship_over_indochina | china_shared_TSR_shared | 0 | 1 | 10 | GFX_focus_JAP_occupy_indochina | china_shared_TSR.txt |
+| CHI_sea_dominate_japan | china_shared_TSR_shared | 2 | 1 | 10 | GFX_focus_AST_war_japan | china_shared_TSR.txt |
+| CHI_sea_secure_the_peninsula | china_shared_TSR_shared | 0 | 2 | 10 | GFX_focus_generic_invade_korea | china_shared_TSR.txt |
+| CHI_sea_push_into_manchuria | china_shared_TSR_shared | 0 | 1 | 10 | GFX_focus_CHI_the_northern_mandate | china_shared_TSR.txt |
+| CHI_sea_dominate_siam | china_shared_TSR_shared | 2 | 1 | 10 | GFX_focus_generic_attack_siam | china_shared_TSR.txt |
+| CHI_sea_british_cooperation | china_shared_TSR_shared | 2 | 0 | 5 | GFX_focus_chi_british_cooperation | china_shared_TSR.txt |
+| CHI_sea_burma_road | china_shared_TSR_shared | 0 | 1 | 10 | GFX_goal_generic_army_motorized | china_shared_TSR.txt |
+| CHI_sea_ledo_road | china_shared_TSR_shared | 0 | 5 | 10 | GFX_goal_generic_construction2 | china_shared_TSR.txt |
+| CHI_sea_fighter_purchases | china_shared_TSR_shared | 3 | 1 | 10 | GFX_goal_generic_build_airforce | china_shared_TSR.txt |
+| CHI_sea_camco | china_shared_TSR_shared | 0 | 1 | 10 | GFX_goal_generic_construct_mil_factory | china_shared_TSR.txt |
+| CHI_sea_local_fighter_production | china_shared_TSR_shared | -2 | 2 | 10 | GFX_goal_generic_air_fighter2 | china_shared_TSR.txt |
+| CHI_sea_local_bomber_production | china_shared_TSR_shared | 0 | 1 | 10 | GFX_goal_generic_air_bomber | china_shared_TSR.txt |
+| CHI_sea_the_hump | china_shared_TSR_shared | 1 | 3 | 10 | GFX_goal_generic_air_production | china_shared_TSR.txt |
+| CHI_sea_chinese_expeditionary_force | china_shared_TSR_shared | 0 | 1 | 10 | GFX_goal_generic_alliance | china_shared_TSR.txt |
+| CHI_sea_the_chu_x_po | china_shared_TSR_shared | 0 | 1 | 10 | GFX_goal_generic_air_fighter | china_shared_TSR.txt |
+| CHI_sea_mission_to_the_us | china_shared_TSR_shared | 8 | 0 | 5 | GFX_focus_chi_mission_to_the_us | china_shared_TSR.txt |
+| CHI_sea_hire_chennault | china_shared_TSR_shared | -3 | 3 | 5 | GFX_focus_generic_military_mission | china_shared_TSR.txt |
+| CHI_sea_invite_the_flying_tigers | china_shared_TSR_shared | 1 | 1 | 10 | GFX_focus_chi_flying_tigers | china_shared_TSR.txt |
+| CHI_sea_sino_american_cooperative_organization | china_shared_TSR_shared | 1 | 2 | 10 | GFX_focus_generic_paratrooper | china_shared_TSR.txt |
+| CHI_sea_light_cruiser_project | china_shared_TSR_shared | 0 | 3 | 10 | GFX_goal_generic_navy_cruiser | china_shared_TSR.txt |
+| CHI_sea_heavy_cruiser_project | china_shared_TSR_shared | 0 | 2 | 10 | GFX_goal_generic_navy_battleship | china_shared_TSR.txt |
+| CHI_sea_naval_aviation | china_shared_TSR_shared | 1 | 1 | 10 | GFX_goal_generic_navy_carrier | china_shared_TSR.txt |
+| CHI_sea_carrier_air_wing | china_shared_TSR_shared | 0 | 1 | 10 | GFX_goal_generic_occupy_start_war | china_shared_TSR.txt |
+| CHI_sea_investment_into_shipbuilding | china_shared_TSR_shared | 1 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | china_shared_TSR.txt |
+| CHI_sea_order_destroyers | china_shared_TSR_shared | 0 | 1 | 10 | GFX_goal_generic_navy_anti_submarine | china_shared_TSR.txt |
+| CHI_sea_train_marines | china_shared_TSR_shared | 0 | 3 | 10 | GFX_goal_generic_amphibious_assault | china_shared_TSR.txt |
+| CHI_sea_collaboration_with_the_japanese | china_shared_TSR_shared | 2 | 0 | 5 | GFX_focus_chi_collaboration_with_the_japanese | china_shared_TSR.txt |
+| CHI_sea_modern_submarines | china_shared_TSR_shared | 0 | 3 | 10 | GFX_goal_generic_navy_submarine | china_shared_TSR.txt |
+| CHI_sea_coastal_patrol_planes | china_shared_TSR_shared | 0 | 2 | 10 | GFX_goal_generic_air_naval_bomber | china_shared_TSR.txt |
 | CHI_secure_internal_politics | china_warlord_focus | 6 | 0 | 10 | GFX_goal_generic_major_alliance | china_warlord.txt |
 | CHI_cooperation_with_the_nationalists | china_warlord_focus | -5 | 1 | 10 | GFX_focus_chi_cooperation_with_the_nationalists | china_warlord.txt |
 | CHI_anti_opposition_campaigns | china_warlord_focus | 3 | 1 | 10 | GFX_focus_generic_provoke_border_clashes | china_warlord.txt |
@@ -2054,8 +2484,8 @@ Source: `common/national_focus/*.txt`
 | CHI_sea_industrial_research_projects | china_warlord_sea_focus | 0 | 1 | 5 | GFX_focus_generic_industrialists | china_warlord_sea.txt |
 | CHI_sea_expand_public_education | china_warlord_sea_focus | 1 | 1 | 10 | GFX_focus_research | china_warlord_sea.txt |
 | CHI_sea_fund_research_projects | china_warlord_sea_focus | 0 | 1 | 5 | GFX_focus_research2 | china_warlord_sea.txt |
-| CHI_sea_rely_on_our_infantry | china_warlord_sea_focus | -1 | 1 |  | GFX_focus_generic_little_entente | china_warlord_sea.txt |
-| CHI_sea_modern_warfare | china_warlord_sea_focus | 1 | 1 |  | GFX_goal_generic_army_tanks | china_warlord_sea.txt |
+| CHI_sea_rely_on_our_infantry | china_warlord_sea_focus | -1 | 1 | 10 | GFX_focus_generic_little_entente | china_warlord_sea.txt |
+| CHI_sea_modern_warfare | china_warlord_sea_focus | 1 | 1 | 10 | GFX_goal_generic_army_tanks | china_warlord_sea.txt |
 | CHI_sea_strenghten_warlord_authority | china_warlord_sea_focus | 20 | 0 | 10 | GFX_focus_generic_military_dictatorship | china_warlord_sea.txt |
 | CHI_sea_uplift_the_cavalry_regiments | china_warlord_sea_focus | -1 | 1 | 5 | GFX_goal_generic_cavalry | china_warlord_sea.txt |
 | CHI_sea_uplift_the_mountain_brigades | china_warlord_sea_focus | 1 | 1 | 5 | GFX_focus_secret_rearmament | china_warlord_sea.txt |
@@ -2106,8 +2536,8 @@ Source: `common/national_focus/*.txt`
 | XSM_recruit_salar_officers | china_warlord_sea_focus | 0 | 1 | 10 | GFX_focus_generic_islamic_propaganda | china_warlord_sea.txt |
 | XSM_solidifying_control | china_warlord_sea_focus | 1 | 2 | 10 | GFX_focus_generic_support_the_left_right | china_warlord_sea.txt |
 | XSM_rebuild_the_ninghai_army | china_warlord_sea_focus | 0 | 1 | 5 | GFX_focus_CHI_meritocratic_principles | china_warlord_sea.txt |
-| KHM_undermine_kmt_rule | china_warlord_sea_focus | 31 | 0 |  | GFX_focus_GER_support_the_proletarian_uprising | china_warlord_sea.txt |
-| XSM_sideline_family_conflicts | china_warlord_sea_focus | 0 | 0 |  | GFX_focus_generic_subjugation | china_warlord_sea.txt |
+| KHM_undermine_kmt_rule | china_warlord_sea_focus | 31 | 0 | 5 | GFX_focus_GER_support_the_proletarian_uprising | china_warlord_sea.txt |
+| XSM_sideline_family_conflicts | china_warlord_sea_focus | 0 | 0 | 5 | GFX_focus_generic_subjugation | china_warlord_sea.txt |
 | KHM_establish_the_kashgar_clique | china_warlord_sea_focus | 0 | 1 | 5 | GFX_focus_TUR_turanist_ambition | china_warlord_sea.txt |
 | KHM_shizangs_coup | china_warlord_sea_focus | 0 | 1 | 10 | GFX_focus_IRQ_attempted_assasination_of_sidqi | china_warlord_sea.txt |
 | KHM_take_control_of_zakat_and_waqf | china_warlord_sea_focus | -1 | 1 | 5 | GFX_focus_generic_monetary_union | china_warlord_sea.txt |
@@ -2115,15 +2545,15 @@ Source: `common/national_focus/*.txt`
 | KHM_promote_jadidism | china_warlord_sea_focus | 1 | 1 | 5 | GFX_focus_PER_islamic_solidarity | china_warlord_sea.txt |
 | KHM_revive_the_basmachi_movement | china_warlord_sea_focus | 0 | 2 | 5 | GFX_focus_generic_befriend_basmachi | china_warlord_sea.txt |
 | KHM_rally_the_faithful | china_warlord_sea_focus | 0 | 2 | 10 | GFX_focus_TUR_loosen_the_laws_on_secularism | china_warlord_sea.txt |
-| KHM_indian_expeditionary_forces_plan | china_warlord_sea_focus | 2 | 1 |  | GFX_focus_generic_commonwealth_build_infantry | china_warlord_sea.txt |
-| KHM_expand_the_madrasas | china_warlord_sea_focus | 4 | 1 |  | GFX_focus_PER_university_of_isfahan | china_warlord_sea.txt |
+| KHM_indian_expeditionary_forces_plan | china_warlord_sea_focus | 2 | 1 | 5 | GFX_focus_generic_commonwealth_build_infantry | china_warlord_sea.txt |
+| KHM_expand_the_madrasas | china_warlord_sea_focus | 4 | 1 | 5 | GFX_focus_PER_university_of_isfahan | china_warlord_sea.txt |
 | KHM_promote_anti_communism | china_warlord_sea_focus | 0 | 1 | 5 | GFX_goal_anti_comintern_pact | china_warlord_sea.txt |
 | KHM_raise_additional_dungan_regiments | china_warlord_sea_focus | 0 | 1 | 10 | GFX_focus_PER_desert_training | china_warlord_sea.txt |
 | XSM_strengthening_our_position | china_warlord_sea_focus | 0 | 1 | 5 | GFX_focus_generic_horse_studs | china_warlord_sea.txt |
 | XSM_demand_submission | china_warlord_sea_focus | -1 | 1 | 10 | GFX_goal_demand_sudetenland | china_warlord_sea.txt |
 | XSM_strike_at_the_detractors | china_warlord_sea_focus | 1 | 1 | 10 | GFX_focus_CHI_decisive_battles | china_warlord_sea.txt |
 | XSM_a_united_ma_state | china_warlord_sea_focus | -1 | 1 | 10 | GFX_goal_generic_national_unity | china_warlord_sea.txt |
-| KUM_victory_in_tihwa | china_warlord_sea_focus | 0 | 0 |  | GFX_focus_generic_attack_sinkiang | china_warlord_sea.txt |
+| KUM_victory_in_tihwa | china_warlord_sea_focus | 0 | 0 | 5 | GFX_focus_generic_attack_sinkiang | china_warlord_sea.txt |
 | KUM_restore_yettishar | china_warlord_sea_focus | 0 | 1 | 10 | GFX_focus_generic_islamic_propaganda | china_warlord_sea.txt |
 | SIC_the_sichuan_clique | china_warlord_sea_focus | 32 | 0 | 5 | GFX_focus_CHI_military_mission | china_warlord_sea.txt |
 | SIC_the_domain_of_liu_wenhui | china_warlord_sea_focus | -2 | 1 | 10 | GFX_focus_PRC_reorganize_divisions | china_warlord_sea.txt |
@@ -2314,6 +2744,78 @@ Source: `common/national_focus/*.txt`
 | COG_german_west_africa | congo_focus | -1 | 1 | 10 | GFX_focus_generic_annex_country | congo.txt |
 | COG_german_east_africa | congo_focus | 1 | 1 | 10 | GFX_goal_demand_sudetenland | congo.txt |
 | COG_german_south_west_africa | congo_focus | 0 | 2 | 10 | GFX_focus_generic_annex_country_2 | congo.txt |
+| CONGO_belgian_congo | congo_shared_shared | -52 | 0 | 5 | GFX_focus_CONGO_belgian_congo | congo_shared.txt |
+| CONGO_expand_villages | congo_shared_shared | -3 | 1 | 10 | GFX_goal_reichsautobahn | congo_shared.txt |
+| CONGO_free_enterprise_fund | congo_shared_shared | -1 | 1 | 10 | GFX_focus_mex_privatisation | congo_shared.txt |
+| CONGO_secure_international_funding | congo_shared_shared | 1 | 1 | 5 | GFX_goal_generic_intelligence_exchange | congo_shared.txt |
+| CONGO_weapon_repair_workshops | congo_shared_shared | 3 | 1 | 10 | GFX_goal_generic_production | congo_shared.txt |
+| CONGO_rawji_group | congo_shared_shared | -2 | 2 | 5 | GFX_goal_generic_construction | congo_shared.txt |
+| CONGO_the_heart_of_africa | congo_shared_shared | 0 | 3 | 10 | GFX_focus_COG_heart_of_africa | congo_shared.txt |
+| CONGO_establish_university_of_louvain | congo_shared_shared | 2 | 2 | 10 | GFX_focus_research | congo_shared.txt |
+| CONGO_congo_investments | congo_shared_shared | -8 | 2 | 5 | GFX_focus_CONGO_congo_investments | congo_shared.txt |
+| CONGO_societe_generale_de_belgique | congo_shared_shared | 0 | 1 | 10 | GFX_focus_CONGO_societe_generale_de_belgique | congo_shared.txt |
+| CONGO_ccci | congo_shared_shared | -6 | 1 | 10 | GFX_focus_CONGO_ccci | congo_shared.txt |
+| CONGO_forminiere | congo_shared_shared | -4 | 1 | 10 | GFX_goal_generic_construction2 | congo_shared.txt |
+| CONGO_ruanda_urundi | congo_shared_shared | -2 | 1 | 10 | GFX_focus_CONGO_ruanda_urundi | congo_shared.txt |
+| CONGO_jungle_industry | congo_shared_shared | 2 | 1 | 10 | GFX_focus_BRA_amazon_colonization | congo_shared.txt |
+| CONGO_belgian_devaluation | congo_shared_shared | 4 | 1 | 5 | GFX_focus_ITA_devaluate_the_lire | congo_shared.txt |
+| CONGO_french_congo | congo_shared_shared | 6 | 1 | 5 | GFX_focus_generic_annex_country_2 | congo_shared.txt |
+| CONGO_force_publique | congo_shared_shared | 9 | 1 | 10 | GFX_focus_CONGO_force_publique | congo_shared.txt |
+| CONGO_symbiotic_industrialization | congo_shared_shared | -1 | 1 | 10 | GFX_goal_generic_construct_civ_factory | congo_shared.txt |
+| CONGO_prince_leopold_mine | congo_shared_shared | -0 | 1 | 10 | GFX_focus_generic_mining_industry | congo_shared.txt |
+| CONGO_bakwanga_mine | congo_shared_shared | 0 | 1 | 10 | GFX_focus_CONGO_bakwanga_mine | congo_shared.txt |
+| CONGO_expand_tungsten_mines | congo_shared_shared | 0 | 1 | 10 | GFX_focus_generic_tungsten | congo_shared.txt |
+| CONGO_rubber_plantations | congo_shared_shared | 0 | 1 | 10 | GFX_focus_generic_rubber_plantations | congo_shared.txt |
+| CONGO_interfaith_school_subsidies | congo_shared_shared | 0 | 1 | 5 | GFX_focus_generic_university_1 | congo_shared.txt |
+| CONGO_colonial_ambitions | congo_shared_shared | 0 | 1 | 10 | GFX_goal_generic_position_armies | congo_shared.txt |
+| CONGO_congo_army | congo_shared_shared | 0 | 1 | 10 | GFX_focus_CONGO_congo_army | congo_shared.txt |
+| CONGO_modernize_force_publique | congo_shared_shared | 2 | 1 | 10 | GFX_goal_generic_small_arms | congo_shared.txt |
+| CONGO_aviation_militaire_de_la_force_publique | congo_shared_shared | 4 | 1 | 10 | GFX_goal_generic_build_airforce | congo_shared.txt |
+| CONGO_expand_ndolo_and_elisabethville_airports | congo_shared_shared | 4 | 2 | 10 | GFX_focus_generic_air_bases | congo_shared.txt |
+| CONGO_cheap_labor | congo_shared_shared | 0 | 2 | 10 | GFX_focus_generic_full_employment | congo_shared.txt |
+| CONGO_societe_miniere_de_bakwanga | congo_shared_shared | 1 | 2 | 10 | GFX_goal_generic_production2 | congo_shared.txt |
+| CONGO_kasai_secessionist_state | congo_shared_shared | 1 | 2 | 10 | GFX_focus_CONGO_kasai_secessionist_state | congo_shared.txt |
+| CONGO_regional_specialization | congo_shared_shared | 0 | 3 | 12 | GFX_focus_CONGO_regional_specialization | congo_shared.txt |
+| CONGO_expanded_rubber_plantations | congo_shared_shared | 0 | 2 | 10 | GFX_focus_generic_rubber | congo_shared.txt |
+| CONGO_separate_corporations_from_politics | congo_shared_shared | 0 | 2 | 5 | GFX_focus_DEN_limited_regulations | congo_shared.txt |
+| CONGO_belgian_officer_corps | congo_shared_shared | -1 | 2 | 10 | GFX_focus_generic_military_academy | congo_shared.txt |
+| CONGO_appoint_van_overstraeten | congo_shared_shared | 1 | 2 | 10 | GFX_focus_generic_military_mission | congo_shared.txt |
+| CONGO_fuel_for_belgium | congo_shared_shared | -1 | 3 | 10 | GFX_focus_generic_stockpile_fuel | congo_shared.txt |
+| CONGO_antwerp_diamond_district | congo_shared_shared | 0 | 1 | 10 | GFX_focus_CONGO_antwerp_diamond_district | congo_shared.txt |
+| CONGO_shinkolobwe_mine | congo_shared_shared | -2 | 1 | 10 | GFX_focus_generic_uranium_extraction | congo_shared.txt |
+| CONGO_chefs_coutumiers | congo_shared_shared | 2 | 1 | 10 | GFX_focus_CONGO_chefs_coutumiers | congo_shared.txt |
+| CONGO_humanitarian_aid | congo_shared_shared | 4 | 1 | 5 | GFX_focus_generic_concessions | congo_shared.txt |
+| CONGO_purchasing_commission | congo_shared_shared | 6 | 1 | 10 | GFX_focus_eng_concessions_to_the_trade_unions | congo_shared.txt |
+| CONGO_expand_force_publique_recruitment | congo_shared_shared | 0 | 3 | 10 | GFX_focus_SOV_mobilization_plan | congo_shared.txt |
+| CONGO_jungle_fighting | congo_shared_shared | 2 | 3 | 10 | GFX_focus_por_luso_tropicalism | congo_shared.txt |
+| CONGO_requisition_funds | congo_shared_shared | 1 | 3 | 10 | GFX_focus_generic_industrialists | congo_shared.txt |
+| CONGO_gold_and_diamonds | congo_shared_shared | 0 | 2 | 10 | GFX_focus_CONGO_gold_and_diamonds | congo_shared.txt |
+| CONGO_uranium_development_trust | congo_shared_shared | -1 | 1 | 10 | GFX_focus_generic_nuclear_development | congo_shared.txt |
+| CONGO_smuggle_uranium | congo_shared_shared | 1 | 1 | 10 | GFX_goal_generic_dangerous_deal | congo_shared.txt |
+| CONGO_develop_infrastructure | congo_shared_shared | 1 | 1 | 10 | GFX_focus_generic_africa_infrastructure | congo_shared.txt |
+| CONGO_new_vegetable_produce_markets | congo_shared_shared | 3 | 1 | 10 | GFX_focus_generic_agricultural_subsidies | congo_shared.txt |
+| CONGO_congolese_generals | congo_shared_shared | -1 | 4 | 10 | GFX_focus_CONGO_congolese_generals | congo_shared.txt |
+| CONGO_even_a_hospital_can_do_better | congo_shared_shared | 0 | 5 | 10 | GFX_focus_generic_field_hostpital | congo_shared.txt |
+| CONGO_expand_metallurgical_industry | congo_shared_shared | 0 | 5 | 10 | GFX_focus_generic_steel | congo_shared.txt |
+| CONGO_smuggle_diamonds | congo_shared_shared | 0 | 5 | 10 | GFX_focus_prc_infiltration | congo_shared.txt |
+| CONGO_office_des_transports_coloniaux | congo_shared_shared | 0 | 2 | 10 | GFX_goal_generic_construct_infrastructure | congo_shared.txt |
+| CONGO_improved_employment_contracts | congo_shared_shared | 2 | 2 | 10 | GFX_focus_generic_treaty | congo_shared.txt |
+| CONGO_compagnie_belge_maritime_du_congo | congo_shared_shared | 4 | 2 | 10 | GFX_focus_generic_africa_naval | congo_shared.txt |
+| CONGO_heat_resistant_cobalt | congo_shared_shared | -2 | 6 | 10 | GFX_focus_generic_chromium | congo_shared.txt |
+| CONGO_copper_cartridges | congo_shared_shared | 0 | 6 | 10 | GFX_focus_CONGO_copper_cartridges | congo_shared.txt |
+| CONGO_research_grants | congo_shared_shared | 0 | 6 | 10 | GFX_goal_generic_scientific_exchange | congo_shared.txt |
+| CONGO_congos_place_in_the_world | congo_shared_shared | 0 | 4 | 12 | GFX_focus_CONGO_place_in_the_world | congo_shared.txt |
+| CONGO_legacy_of_lake_tanganyika | congo_shared_shared | 5 | 3 | 10 | GFX_focus_CONGO_legacy_of_lake_tanganyika | congo_shared.txt |
+| CONGO_expand_matadi_seaport | congo_shared_shared | 3 | 3 | 10 | GFX_focus_POL_develop_polish_shipbuilding | congo_shared.txt |
+| CONGO_soviet_interest | congo_shared_shared | -2 | 1 | 10 | GFX_focus_generic_soviet_politics | congo_shared.txt |
+| CONGO_whispers_of_independence | congo_shared_shared | 3 | 1 | 10 | GFX_focus_generic_whispers | congo_shared.txt |
+| CONGO_congo_free_state | congo_shared_shared | -3 | 2 | 10 | GFX_focus_CONGO_congo_free_state | congo_shared.txt |
+| CONGO_overseas_department_of_belgium | congo_shared_shared | -1 | 2 | 10 | GFX_focus_CONGO_overseas_department_of_belgium | congo_shared.txt |
+| CONGO_dominion_of_congo | congo_shared_shared | 1 | 2 | 10 | GFX_focus_CONGO_dominion_of_congo | congo_shared.txt |
+| CONGO_republic_of_congo | congo_shared_shared | 3 | 2 | 10 | GFX_focus_CONGO_republic_of_congo | congo_shared.txt |
+| CONGO_establish_cometro | congo_shared_shared | 0 | 1 | 10 | GFX_goal_generic_construct_military | congo_shared.txt |
+| CONGO_african_union | congo_shared_shared | 2 | 3 | 10 | GFX_focus_ETH_the_african_union | congo_shared.txt |
+| CONGO_great_war_of_africa | congo_shared_shared | 4 | 3 | 10 | GFX_goal_generic_occupy_states_ongoing_war | congo_shared.txt |
 | CZE_fortification_studies | czech_focus | 3 | 0 | 10 | GFX_focus_hol_the_foundations_of_defense | czechoslovakia.txt |
 | CZE_fallback_line | czech_focus | -2 | 1 | 10 | GFX_focus_SWE_hedgehog_defense | czechoslovakia.txt |
 | CZE_sudeten_1 | czech_focus | 0 | 1 | 10 | GFX_goal_generic_construct_military | czechoslovakia.txt |
@@ -2430,7 +2932,7 @@ Source: `common/national_focus/*.txt`
 | DEN_strengthen_military_industries | danish_focus | 1 | 1 | 10 | GFX_goal_generic_construct_mil_factory | denmark.txt |
 | DEN_protect_the_faroe_islands | danish_focus | -1 | 2 | 10 | GFX_focus_DEN_protect_faroes | denmark.txt |
 | DEN_protect_bornholm | danish_focus | 1 | 2 | 10 | GFX_focus_DEN_protect_bornholm | denmark.txt |
-| DEN_collaboration_government | danish_focus | 18 | 0 |  | GFX_goal_generic_alliance | denmark.txt |
+| DEN_collaboration_government | danish_focus | 18 | 0 | 5 | GFX_goal_generic_alliance | denmark.txt |
 | DEN_seek_independence | danish_focus | -3 | 1 | 5 | GFX_focus_spr_masters_of_our_own_fate | denmark.txt |
 | DEN_sanction_sabotages | danish_focus | 0 | 3 | 10 | GFX_focus_DEN_civilian_preparations | denmark.txt |
 | DEN_form_the_danish_freedom_council | danish_focus | 0 | 1 | 5 | GFX_focus_generic_freedom_council | denmark.txt |
@@ -2465,7 +2967,7 @@ Source: `common/national_focus/*.txt`
 | DEN_reclaim_atlantic_islands | danish_focus | -1 | 2 | 10 | GFX_focus_generic_north_atlantic_fleet | denmark.txt |
 | DEN_claim_sweden | danish_focus | 1 | 1 | 10 | GFX_focus_generic_invade_sweden | denmark.txt |
 | DEN_safeguard_the_eastern_front | danish_focus | 1 | 2 | 10 | GFX_focus_generic_invade_finland | denmark.txt |
-| DEN_declare_neutrality | danish_focus | 30 | 0 |  | GFX_goal_generic_alliance | denmark.txt |
+| DEN_declare_neutrality | danish_focus | 30 | 0 | 5 | GFX_goal_generic_alliance | denmark.txt |
 | DEN_political_unity | danish_focus | -10 | 1 | 5 | GFX_goal_generic_major_alliance | denmark.txt |
 | DEN_policy_of_disarmament | danish_focus | -4 | 1 | 5 | GFX_goal_generic_neutrality_focus | denmark.txt |
 | DEN_import_machinery_and_material | danish_focus | -3 | 2 | 5 | GFX_goal_generic_production | denmark.txt |
@@ -2543,7 +3045,7 @@ Source: `common/national_focus/*.txt`
 | DEN_avenging_1864 | danish_focus | -4 | 1 | 10 | GFX_focus_DEN_avenging_1864 | denmark.txt |
 | DEN_dominium_maris_baltici | danish_focus | 0 | 1 | 10 | GFX_focus_generic_baltic_sea_empire | denmark.txt |
 | DEN_establish_the_danelaw | danish_focus | 4 | 1 | 10 | GFX_focus_DEN_danelaw | denmark.txt |
-| DEN_sign_forsvarsforliget | danish_focus | 28 | 0 |  | GFX_focus_generic_treaty | denmark.txt |
+| DEN_sign_forsvarsforliget | danish_focus | 28 | 0 | 5 | GFX_focus_generic_treaty | denmark.txt |
 | DEN_stockpile_oil | danish_focus | -2 | 1 | 10 | GFX_focus_generic_stockpile_fuel | denmark.txt |
 | DEN_sikkerhedspolitiet | danish_focus | 2 | 1 | 10 | GFX_goal_generic_intelligence_exchange | denmark.txt |
 | DEN_expand_vaernepligten | danish_focus | 0 | 1 | 5 | GFX_focus_generic_little_entente | denmark.txt |
@@ -2577,7 +3079,7 @@ Source: `common/national_focus/*.txt`
 | DEN_luftstotte | danish_focus | 2 | 4 | 10 | GFX_focus_generic_cas_aircraft | denmark.txt |
 | DEN_bombefly | danish_focus | 4 | 4 | 10 | GFX_focus_generic_long_range_aircraft | denmark.txt |
 | DEN_advanced_flight | danish_focus | 1 | 5 | 10 | GFX_focus_rocketry | denmark.txt |
-| EST_era_of_silence | estonia_tree | 34 | 0 |  | GFX_focus_EST_era_of_silence | estonia.txt |
+| EST_era_of_silence | estonia_tree | 34 | 0 | 10 | GFX_focus_EST_era_of_silence | estonia.txt |
 | EST_ismaaliit | estonia_tree | 1 | 1 | 10 | GFX_goal_generic_demand_territory | estonia.txt |
 | EST_establish_the_rahvuskogu | estonia_tree | -2 | 1 | 10 | GFX_goal_support_democracy | estonia.txt |
 | EST_chamber_of_deputies | estonia_tree | 0 | 1 | 10 | GFX_goal_generic_consumer_goods | estonia.txt |
@@ -2686,7 +3188,7 @@ Source: `common/national_focus/*.txt`
 | ETH_develop_the_horn_of_africa | ethiopia_tree | 1 | 1 | 10 | GFX_focus_ETH_develop_the_horn_of_africa | ethiopia.txt |
 | ETH_invest_in_the_north | ethiopia_tree | 1 | 1 | 10 | GFX_focus_ETH_invest_in_the_north | ethiopia.txt |
 | ETH_invest_in_the_east | ethiopia_tree | 3 | 1 | 10 | GFX_focus_ETH_invest_in_the_east | ethiopia.txt |
-| ETH_invest_in_the_west | ethiopia_tree |  |  |  | GFX_focus_ETH_invest_in_the_west | ethiopia.txt |
+| ETH_invest_in_the_west | ethiopia_tree | -1 | 1 | 10 | GFX_focus_ETH_invest_in_the_west | ethiopia.txt |
 | ETH_expand_the_coffee_industry | ethiopia_tree | 0 | 1 | 10 | GFX_focus_generic_coffee | ethiopia.txt |
 | ETH_modernizing_the_industry | ethiopia_tree | 0 | 1 | 10 | GFX_focus_generic_industry_3 | ethiopia.txt |
 | ETH_animal_husbandry | ethiopia_tree | 0 | 1 | 5 | GFX_focus_generic_horse_studs | ethiopia.txt |
@@ -2745,11 +3247,11 @@ Source: `common/national_focus/*.txt`
 | ETH_pan-africanism | ethiopia_tree | 3 | 1 | 10 | GFX_focus_ETH_pan_africanism | ethiopia.txt |
 | ETH_the_one_true_heir_of_solomon | ethiopia_tree | 0 | 1 | 10 | GFX_focus_ETH_the_one_true_heir_of_solomon | ethiopia.txt |
 | ETH_jah | ethiopia_tree | -2 | 1 | 10 | GFX_focus_ETH_jah | ethiopia.txt |
-| ETH_the_lion_and_the_sun | ethiopia_tree |  |  |  | GFX_focus_ETH_the_lion_and_the_sun | ethiopia.txt |
+| ETH_the_lion_and_the_sun | ethiopia_tree | 7 | 1 | 10 | GFX_focus_ETH_the_lion_and_the_sun | ethiopia.txt |
 | ETH_an_ethiopian_navy_in_exile | ethiopia_tree | 0 | 1 | 10 | GFX_focus_ETH_an_ethiopian_navy_in_exile | ethiopia.txt |
 | ETH_an_arabic_base | ethiopia_tree | -1 | 1 | 10 | GFX_focus_ETH_an_arabic_base | ethiopia.txt |
 | ETH_an_empire_in_the_shade_of_the_sun | ethiopia_tree | 1 | 1 | 10 | GFX_focus_ETH_an_empire_in_the_shade_of_the_sun | ethiopia.txt |
-| ETH_an_audience_with_countryleadertitle | ethiopia_tree |  |  |  | GFX_focus_ger_reichskommisariats | ethiopia.txt |
+| ETH_an_audience_with_countryleadertitle | ethiopia_tree | 8 | 1 | 10 | GFX_focus_ger_reichskommisariats | ethiopia.txt |
 | ETH_befriend_goring | ethiopia_tree | -1 | 1 | 10 | GFX_focus_chi_flying_tigers | ethiopia.txt |
 | ETH_steel_lions | ethiopia_tree | 1 | 1 | 10 | GFX_focus_generic_tank_production | ethiopia.txt |
 | ETH_german_mediation | ethiopia_tree | 0 | 1 | 10 | GFX_focus_chi_mission_to_germany | ethiopia.txt |
@@ -2758,7 +3260,7 @@ Source: `common/national_focus/*.txt`
 | ETH_anti-tank_guns | ethiopia_tree | 1 | 1 | 10 | GFX_goal_generic_army_artillery2 | ethiopia.txt |
 | ETH_a_libyan_revolt | ethiopia_tree | 0 | 1 | 10 | GFX_focus_spr_masters_of_our_own_fate | ethiopia.txt |
 | ETH_ethiopias_cause_is_ours | ethiopia_tree | 0 | 1 | 10 | GFX_goal_tripartite_pact | ethiopia.txt |
-| ETH_military_communism | ethiopia_tree | 69 | 0 |  |  | ethiopia.txt |
+| ETH_military_communism | ethiopia_tree | 69 | 0 | 5 | GFX_focus_generic_join_comintern | ethiopia.txt |
 | ETH_defending_our_homes | ethiopia_tree | -2 | 1 | 5 | GFX_focus_generic_manpower | ethiopia.txt |
 | ETH_anti_imperialist_agitation | ethiopia_tree | 2 | 1 | 5 | GFX_focus_spr_masters_of_our_own_fate | ethiopia.txt |
 | ETH_in_the_name_of_the_people | ethiopia_tree | 2 | 1 | 5 | GFX_focus_ETH_in_the_name_of_the_people | ethiopia.txt |
@@ -2783,7 +3285,7 @@ Source: `common/national_focus/*.txt`
 | ETH_transformation_of_nature | ethiopia_tree | -4 | 1 | 10 | GFX_focus_generic_africa_factory | ethiopia.txt |
 | ETH_a_guiding_hand | ethiopia_tree | 0 | 1 | 10 | GFX_focus_generic_self_management | ethiopia.txt |
 | ETH_local_committees | ethiopia_tree | -2 | 1 | 10 | GFX_goal_generic_national_unity | ethiopia.txt |
-| ETH_support_spain | ethiopia_tree |  |  |  |  | ethiopia.txt |
+| ETH_support_spain | ethiopia_tree | -5 | 1 | 5 | GFX_focus_intervention_spain_republic | ethiopia.txt |
 | ETH_the_rif | ethiopia_tree | -1 | 1 | 10 | GFX_focus_ETH_the_rif | ethiopia.txt |
 | ETH_refuge_for_the_spanish_exiles | ethiopia_tree | 1 | 1 | 10 | GFX_focus_spr_anarchism_knows_no_borders | ethiopia.txt |
 | ETH_communal_education | ethiopia_tree | 0 | 1 | 10 | GFX_focus_research | ethiopia.txt |
@@ -2799,7 +3301,7 @@ Source: `common/national_focus/*.txt`
 | ETH_send_home_advisors | ethiopia_tree | 1 | 1 | 10 | GFX_focus_renounce_the_treaty_of_trianon | ethiopia.txt |
 | ETH_soviet-ethiopian_trade_agreement | ethiopia_tree | 0 | 1 | 10 | GFX_focus_ETH_soviet | ethiopia.txt |
 | ETH_seek_new_trading_partners | ethiopia_tree | 0 | 1 | 10 | GFX_goal_generic_positive_trade_relations | ethiopia.txt |
-| ETH_our_own_path | ethiopia_tree |  |  |  | GFX_goal_anti_comintern_pact | ethiopia.txt |
+| ETH_our_own_path | ethiopia_tree | 1 | 1 | 10 | GFX_goal_anti_comintern_pact | ethiopia.txt |
 | ETH_freedom_at_gunpoint | ethiopia_tree | 1 | 1 | 10 | GFX_focus_ETH_freedom_at_gunpoint | ethiopia.txt |
 | ETH_boots_on_the_shore | ethiopia_tree | 0 | 1 | 10 | GFX_focus_ETH_boots_on_the_shore | ethiopia.txt |
 | ETH_request_soviet_hulls | ethiopia_tree | -1 | 1 | 10 | GFX_focus_generic_africa_naval | ethiopia.txt |
@@ -2808,7 +3310,7 @@ Source: `common/national_focus/*.txt`
 | ETH_african_central_bank | ethiopia_tree | 1 | 1 | 5 | GFX_focus_usa_reestablish_the_gold_standard | ethiopia.txt |
 | ETH_executive_council | ethiopia_tree | 1 | 1 | 10 | GFX_goal_generic_improve_relations | ethiopia.txt |
 | ETH_african_union | ethiopia_tree | 0 | 1 | 10 | GFX_focus_ETH_african_union | ethiopia.txt |
-| ETH_reach_out_to_the_italians | ethiopia_tree | 53 | 0 |  | GFX_focus_ETH_reach_out_to_the_italians | ethiopia.txt |
+| ETH_reach_out_to_the_italians | ethiopia_tree | 53 | 0 | 5 | GFX_focus_ETH_reach_out_to_the_italians | ethiopia.txt |
 | ETH_sway_the_warlords | ethiopia_tree | -1 | 1 | 5 | GFX_focus_ETH_sway_the_warlords | ethiopia.txt |
 | ETH_expand_the_bodyguard | ethiopia_tree | 1 | 1 | 5 | GFX_focus_generic_little_entente | ethiopia.txt |
 | ETH_declare_for_italy | ethiopia_tree | 1 | 1 | 5 | GFX_focus_befriend_italy | ethiopia.txt |
@@ -2840,7 +3342,7 @@ Source: `common/national_focus/*.txt`
 | ETH_reclaim_the_empire | ethiopia_tree | 0 | 1 | 10 | GFX_goal_generic_major_war | ethiopia.txt |
 | ETH_the_liberator_of_country_short | ethiopia_tree | 2 | 1 | 10 | GFX_focus_hol_united_netherlands | ethiopia.txt |
 | ETH_consolidate_east_africa | ethiopia_tree | 0 | 1 | 10 | GFX_focus_ETH_consolidate_east_africa | ethiopia.txt |
-| FIN_suomalainen_sosialismi | finnish_focus |  |  |  | GFX_focus_FIN_suomalainen_sosialismi | finland.txt |
+| FIN_suomalainen_sosialismi | finnish_focus | 7 | 0 | 5 | GFX_focus_FIN_suomalainen_sosialismi | finland.txt |
 | FIN_towards_a_red_government | finnish_focus | -3 | 1 | 5 | GFX_focus_generic_join_comintern | finland.txt |
 | FIN_the_second_finnish_civil_war | finnish_focus | -6 | 2 | 5 | GFX_focus_FIN_the_second_finnish_civil_war | finland.txt |
 | FIN_the_peoples_democratic_league | finnish_focus | -1 | 1 | 5 | GFX_focus_FIN_the_peoples_democratic_league | finland.txt |
@@ -2863,7 +3365,7 @@ Source: `common/national_focus/*.txt`
 | FIN_mineral_wealth | finnish_focus | 0 | 2 | 10 | GFX_focus_generic_mining_industry | finland.txt |
 | FIN_funds_from_kalevala_koru_oy | finnish_focus | 0 | 2 | 5 | GFX_focus_FIN_funds_from_kalevala_koru_oy | finland.txt |
 | FIN_join_the_comintern | finnish_focus | 2 | 3 | 5 | GFX_goal_support_communism | finland.txt |
-| FIN_united_under_the_north_star | finnish_focus | 0 | 1 |  | GFX_focus_FIN_united_under_the_north_star | finland.txt |
+| FIN_united_under_the_north_star | finnish_focus | 0 | 1 | 10 | GFX_focus_FIN_united_under_the_north_star | finland.txt |
 | FIN_approach_major_democracies | finnish_focus | -1 | 3 | 5 | GFX_goal_support_democracy | finland.txt |
 | FIN_finnish_autonomy | finnish_focus | -2 | 1 | 10 | GFX_focus_generic_develop_finland_silhouette | finland.txt |
 | FIN_integrate_kola_and_karelia | finnish_focus | 0 | 1 | 10 | GFX_focus_FIN_integrate_kola_and_karelia | finland.txt |
@@ -2880,7 +3382,7 @@ Source: `common/national_focus/*.txt`
 | FIN_soviet_threat | finnish_focus | 1 | 1 | 10 | GFX_focus_attack_soviet | finland.txt |
 | FIN_proclaim_greater_finland | finnish_focus | 0 | 3 | 10 | GFX_focus_FIN_a_cry_for_help_2 | finland.txt |
 | FIN_control_the_flux_of_iron_ore | finnish_focus | 1 | 1 | 10 | GFX_focus_generic_invade_sweden | finland.txt |
-| FIN_finnish_neutrality | finnish_focus |  |  |  | GFX_focus_FIN_finnish_neutrality | finland.txt |
+| FIN_finnish_neutrality | finnish_focus | 16 | 0 | 5 | GFX_focus_FIN_finnish_neutrality | finland.txt |
 | FIN_political_unity | finnish_focus | -5 | 1 | 10 | GFX_focus_generic_self_management | finland.txt |
 | FIN_align_the_agrarian_league | finnish_focus | -3 | 1 | 5 | GFX_focus_generic_workers | finland.txt |
 | FIN_the_finnish_swedish_peoples_party | finnish_focus | 2 | 0 | 5 | GFX_focus_generic_industrialists | finland.txt |
@@ -2908,7 +3410,7 @@ Source: `common/national_focus/*.txt`
 | FIN_joint_scientific_program | finnish_focus | 0 | 2 | 10 | GFX_focus_research | finland.txt |
 | FIN_modernize_the_industry | finnish_focus | -1 | 1 | 10 | GFX_focus_generic_modernize_industry | finland.txt |
 | FIN_modernize_the_army | finnish_focus | 1 | 1 | 10 | GFX_goal_generic_axis_build_infantry | finland.txt |
-| FIN_weapon_caches | finnish_focus | 3 | 0 |  | GFX_focus_FIN_weapon_caches | finland.txt |
+| FIN_weapon_caches | finnish_focus | 3 | 0 | 5 | GFX_focus_FIN_weapon_caches | finland.txt |
 | FIN_national_unity | finnish_focus | 3 | 0 | 10 | GFX_focus_EST_national_pride_in_finland | finland.txt |
 | FIN_viron_kansa | finnish_focus | -1 | 2 | 10 | GFX_focus_FIN_viron_kansa | finland.txt |
 | FIN_ambitions_in_the_south | finnish_focus | 0 | 2 | 10 | GFX_focus_SOV_baltic_security | finland.txt |
@@ -2918,7 +3420,7 @@ Source: `common/national_focus/*.txt`
 | FIN_militarized_society | finnish_focus | 0 | 2 | 10 | GFX_focus_generic_limited_social_mobilization | finland.txt |
 | FIN_a_cry_for_help | finnish_focus | 1 | 2 | 5 | GFX_focus_FIN_a_cry_for_help | finland.txt |
 | FIN_greater_finland | finnish_focus | 0 | 1 | 10 | GFX_focus_FIN_greater_finland | finland.txt |
-| FIN_right_wing_policies | finnish_focus |  |  |  | GFX_focus_FIN_right_wing_policies | finland.txt |
+| FIN_right_wing_policies | finnish_focus | 13 | 0 | 5 | GFX_focus_FIN_right_wing_policies | finland.txt |
 | FIN_discredit_the_democratic_system | finnish_focus | -1 | 1 | 5 | GFX_focus_usa_voter_registration_act | finland.txt |
 | FIN_prepare_a_military_coup | finnish_focus | 1 | 1 | 5 | GFX_goal_generic_more_territorial_claims | finland.txt |
 | FIN_a_fascist_regime | finnish_focus | 1 | 1 | 5 | GFX_focus_generic_strike_at_democracy1 | finland.txt |
@@ -2943,7 +3445,7 @@ Source: `common/national_focus/*.txt`
 | FIN_military_promotions | finnish_focus | 0 | 1 | 10 | GFX_focus_generic_military_mission | finland.txt |
 | FIN_indoctrinate_the_workers | finnish_focus | 0 | 1 | 10 | GFX_focus_generic_full_employment | finland.txt |
 | FIN_intellectual_elite | finnish_focus | 1 | 1 | 10 | GFX_focus_research | finland.txt |
-| FIN_enhance_southern_infrastructure | finnish_focus | 13 | 0 |  | GFX_goal_generic_construct_infrastructure | finland.txt |
+| FIN_enhance_southern_infrastructure | finnish_focus | 13 | 0 | 10 | GFX_goal_generic_construct_infrastructure | finland.txt |
 | FIN_industrial_development | finnish_focus | 0 | 1 | 10 | GFX_goal_generic_construct_civ_factory | finland.txt |
 | FIN_bank_of_aland | finnish_focus | -2 | 1 | 10 | GFX_focus_usa_reestablish_the_gold_standard | finland.txt |
 | FIN_suomen_akatemia | finnish_focus | 0 | 1 | 10 | GFX_focus_research | finland.txt |
@@ -3009,17 +3511,17 @@ Source: `common/national_focus/*.txt`
 | FRA_devalue_the_franc | french_focus | 0 | 0 | 10 | GFX_focus_fra_devalue_the_franc | france.txt |
 | FRA_autoroutes | french_focus | 2 | 1 | 10 | GFX_goal_generic_construct_infrastructure | france.txt |
 | FRA_invest_in_the_metropole | french_focus | 0 | 1 | 10 | GFX_goal_generic_construct_civilian | france.txt |
-| FRA_metropolitan_france | french_focus |  |  |  | GFX_focus_generic_industry_1 | france.txt |
-| FRA_industrial_expansion | french_focus |  |  |  | GFX_focus_generic_industry_3 | france.txt |
-| FRA_military_factories | french_focus |  |  |  | GFX_goal_generic_construct_mil_factory | france.txt |
-| FRA_algerie_france | french_focus |  |  |  | GFX_focus_generic_industry_1 | france.txt |
+| FRA_metropolitan_france | french_focus | 0 | 2 | 10 | GFX_focus_generic_industry_1 | france.txt |
+| FRA_industrial_expansion | french_focus | 0 | 1 | 10 | GFX_focus_generic_industry_3 | france.txt |
+| FRA_military_factories | french_focus | 2 | 1 | 10 | GFX_goal_generic_construct_mil_factory | france.txt |
+| FRA_algerie_france | french_focus | 2 | 1 | 10 | GFX_focus_generic_industry_1 | france.txt |
 | FRA_invest_in_the_colonies | french_focus | 4 | 1 | 10 | GFX_goal_generic_construct_civilian | france.txt |
 | FRA_invest_in_west_africa | french_focus | 0 | 1 | 10 | GFX_focus_generic_industry_1 | france.txt |
 | FRA_invest_in_indochina | french_focus | 2 | 1 | 10 | GFX_focus_generic_industry_1 | france.txt |
 | FRA_invest_in_syria | french_focus | 4 | 1 | 10 | GFX_focus_generic_industry_1 | france.txt |
-| FRA_colonial_industry | french_focus |  |  |  | GFX_focus_generic_industry_3 | france.txt |
-| FRA_extra_research_slot | french_focus |  |  |  | GFX_focus_research | france.txt |
-| FRA_extra_research_slot_2 | french_focus |  |  |  | GFX_focus_research | france.txt |
+| FRA_colonial_industry | french_focus | 2 | 1 | 10 | GFX_focus_generic_industry_3 | france.txt |
+| FRA_extra_research_slot | french_focus | 0 | 1 | 10 | GFX_focus_research | france.txt |
+| FRA_extra_research_slot_2 | french_focus | 0 | 1 | 10 | GFX_focus_research | france.txt |
 | FRA_global_integration | french_focus | 2 | 1 | 10 | GFX_goal_generic_construction | france.txt |
 | FRA_begin_rearmament | french_focus | 15 | 0 | 10 | GFX_goal_generic_construct_mil_factory | france.txt |
 | FRA_defensive_focus | french_focus | -2 | 1 | 10 | GFX_goal_generic_defence | france.txt |
@@ -3041,136 +3543,136 @@ Source: `common/national_focus/*.txt`
 | FRA_mechanized_focus | french_focus | 0 | 1 | 10 | GFX_goal_generic_build_tank | france.txt |
 | FRA_light_medium_armor | french_focus | 0 | 1 | 10 | GFX_goal_generic_army_tanks | france.txt |
 | FRA_air_dominance | french_focus | 2 | 1 | 10 | GFX_goal_generic_air_fighter2 | france.txt |
-| FRA_cas_focus | french_focus |  |  |  | GFX_goal_generic_CAS | france.txt |
+| FRA_cas_focus | french_focus | 0 | 1 | 10 | GFX_goal_generic_CAS | france.txt |
 | FRA_air_ground_cooperation | french_focus | 0 | 2 | 10 | GFX_goal_generic_air_bomber | france.txt |
 | FRA_flying_artillery | french_focus | 0 | 3 | 10 | GFX_goal_poland_goal | france.txt |
-| FRA_army_reform | french_focus |  |  |  | GFX_goal_generic_army_doctrines | france.txt |
-| FRA_form_the_popular_front | french_focus | 26 | 0 |  | GFX_goal_generic_intelligence_exchange | france.txt |
-| FRA_invite_communist_ministers | french_focus | -3 | 1 |  | GFX_goal_support_communism | france.txt |
+| FRA_army_reform | french_focus | -2 | 1 | 10 | GFX_goal_generic_army_doctrines | france.txt |
+| FRA_form_the_popular_front | french_focus | 26 | 0 | 10 | GFX_goal_generic_intelligence_exchange | france.txt |
+| FRA_invite_communist_ministers | french_focus | -3 | 1 | 10 | GFX_goal_support_communism | france.txt |
 | FRA_strengthen_the_unions | french_focus | -1 | 1 | 10 | GFX_goal_generic_demand_territory | france.txt |
 | FRA_celebrate_the_commune | french_focus | -1 | 4 | 5 | GFX_goal_generic_propaganda | france.txt |
 | FRA_womens_suffrage | french_focus | 1 | 1 | 10 | GFX_focus_generic_treaty | france.txt |
 | FRA_legal_equality | french_focus | 1 | 4 | 5 | GFX_goal_generic_major_alliance | france.txt |
 | FRA_industrial_collectivization | french_focus | 0 | 2 | 10 | GFX_goal_generic_construct_civ_factory | france.txt |
 | FRA_agricultural_collectivization | french_focus | 0 | 3 | 10 | GFX_focus_prc_agrarian_socialism | france.txt |
-| FRA_force_the_issue | french_focus | 1 | 1 |  | GFX_goal_demand_sudetenland | france.txt |
-| FRA_reconciliation | french_focus | -2 | 1 |  | GFX_goal_generic_improve_relations | france.txt |
-| FRA_constitutional_convention | french_focus | 0 | 1 |  | GFX_focus_generic_treaty | france.txt |
-| FRA_anti_fascist_coalition | french_focus | -1 | 2 |  | GFX_goal_generic_military_deal | france.txt |
-| FRA_invite_anti_fascist_emigrants | french_focus | -1 | 3 |  | GFX_goal_generic_national_unity | france.txt |
-| FRA_reconnect_to_the_balkans | french_focus | -1 | 4 |  | GFX_goal_generic_military_sphere | france.txt |
-| FRA_pre_empt_the_fascist_attack | french_focus | 0 | 5 |  | GFX_focus_focus_fra_fascist_threat | france.txt |
-| FRA_loyalty_to_moscow | french_focus | 2 | 2 |  | GFX_goal_support_communism | france.txt |
-| FRA_league_of_french_bolshevist_volunteers | french_focus | 0 | 1 |  | GFX_focus_YUG_pan_slavic_congress | france.txt |
-| FRA_host_the_german_exiles | french_focus | 0 | 2 |  | GFX_focus_generic_self_management | france.txt |
-| FRA_revolution_to_the_utmost | french_focus | 2 | 1 |  | GFX_focus_focus_fra_revolution_utmost | france.txt |
-| FRA_destroy_the_counter_revolution | french_focus | 0 | 1 |  | GFX_goal_generic_secret_weapon | france.txt |
-| FRA_revolutionary_zeal | french_focus | 3 | 1 |  | GFX_goal_generic_war_with_comintern | france.txt |
-| FRA_loyalty_to_the_cause | french_focus | 1 | 2 |  | GFX_goal_generic_demand_territory | france.txt |
-| FRA_carry_the_revolution_north | french_focus | 0 | 1 |  | GFX_goal_generic_position_armies | france.txt |
-| FRA_carry_the_revolution_west | french_focus | -1 | 1 |  | GFX_goal_generic_territory_or_war | france.txt |
-| FRA_carry_the_revolution_east | french_focus | 1 | 1 |  | GFX_goal_generic_occupy_states_ongoing_war | france.txt |
-| FRA_carry_the_revolution_south | french_focus | 0 | 2 |  | GFX_goal_generic_major_war | france.txt |
-| FRA_egalite_liberte_solidarite | french_focus | 0 | 3 |  | GFX_focus_focus_fra_liberte_egalite_solidarite | france.txt |
-| FRA_reform_the_labour_laws | french_focus | 0 | 2 |  | GFX_goal_generic_production | france.txt |
-| FRA_nationalize_key_industry | french_focus | 0 | 1 |  | GFX_goal_generic_construct_civ_factory | france.txt |
-| FRA_reorganize_the_aviation_industry | french_focus | -1 | 1 |  | GFX_goal_generic_air_production | france.txt |
-| FRA_form_the_state_arsenals | french_focus | 1 | 1 |  | GFX_goal_generic_construct_mil_factory | france.txt |
-| FRA_general_work_council | french_focus | 0 | 2 |  | GFX_goal_generic_construction | france.txt |
-| FRA_dirigisme | french_focus | -1 | 1 |  | GFX_focus_generic_the_giant_wakes | france.txt |
-| FRA_national_champions | french_focus | 1 | 1 |  | GFX_focus_generic_industry_3 | france.txt |
-| FRA_ban_the_leagues | french_focus | 1 | 1 |  | GFX_goal_generic_forceful_treaty | france.txt |
-| FRA_the_blum_viollette_proposal | french_focus | 4 | 1 |  | GFX_goal_generic_improve_relations | france.txt |
-| FRA_expand_the_citizenship | french_focus | 0 | 1 |  | GFX_goal_generic_national_unity | france.txt |
-| FRA_france_undividable | french_focus | -1 | 1 |  | GFX_focus_chi_reach_out_to_france | france.txt |
-| FRA_french_union | french_focus | 0 | 1 |  | GFX_focus_fra_french_union | france.txt |
-| FRA_encourage_immigration | french_focus | 1 | 1 |  | GFX_goal_generic_national_unity | france.txt |
-| FRA_review_foreign_policy | french_focus | 10 | 1 |  | GFX_goal_support_democracy | france.txt |
-| FRA_intervention_in_spain | french_focus | 7 | 2 |  | GFX_focus_focus_fra_intervention_spain | france.txt |
-| FRA_support_the_finns | french_focus | 2 | 1 |  | GFX_focus_invite_finland | france.txt |
-| FRA_confirm_eastern_commitments | french_focus | -2 | 2 |  | GFX_goal_tripartite_pact | france.txt |
-| FRA_strengthen_the_little_entente | french_focus | -1 | 1 |  | GFX_focus_generic_little_entente | france.txt |
-| FRA_invite_yugoslavia | french_focus |  |  |  | GFX_focus_invite_yugoslavia | france.txt |
-| FRA_invite_romania | french_focus |  |  |  | GFX_focus_invite_romania | france.txt |
-| FRA_invest_in_our_weaker_allies | french_focus | 0 | 1 |  | GFX_goal_generic_build_tank | france.txt |
-| FRA_coordinate_rearmament | french_focus | 0 | 1 |  | GFX_goal_generic_position_armies | france.txt |
-| FRA_foreign_guest_workers | french_focus | 3 | 1 |  | GFX_focus_generic_manpower | france.txt |
-| FRA_join_the_ententes | french_focus | 1 | 1 |  | GFX_focus_chi_british_cooperation | france.txt |
-| FRA_revive_the_franco_polish_alliance | french_focus | 1 | 1 |  | GFX_focus_generic_polish_deal | france.txt |
-| FRA_buy_time | french_focus | 4 | 2 |  | GFX_goal_generic_neutrality_focus | france.txt |
-| FRA_strengthen_government_support | french_focus |  |  |  | GFX_goal_generic_demand_territory | france.txt |
-| FRA_defensive_strategems | french_focus |  |  |  | GFX_goal_generic_fortify_city | france.txt |
-| FRA_go_with_britain | french_focus |  |  |  | GFX_focus_chi_british_cooperation | france.txt |
-| FRA_arms_purchases_in_the_us | french_focus | 0 | 1 |  | GFX_goal_generic_build_tank | france.txt |
-| FRA_france_leads | french_focus | 2 | 1 |  | GFX_goal_generic_demand_territory | france.txt |
-| FRA_concessions_to_italy | french_focus | 0 | 1 |  | GFX_focus_befriend_italy | france.txt |
-| FRA_ratify_the_stresa_front | french_focus | 0 | 1 |  | GFX_focus_focus_fra_ratify_stresa | france.txt |
-| FRA_franco_soviet_treaty | french_focus | 2 | 1 |  | GFX_focus_chi_mission_to_the_soviet_union | france.txt |
-| FRA_leftist_rhetoric | french_focus |  |  |  | GFX_goal_generic_propaganda | france.txt |
-| FRA_national_mobilization | french_focus |  |  |  | GFX_goal_generic_allies_build_infantry | france.txt |
-| FRA_join_comintern | french_focus |  |  |  | GFX_goal_support_communism | france.txt |
-| FRA_humanite_unie | french_focus |  |  |  | GFX_goal_generic_dangerous_deal | france.txt |
-| FRA_revive_the_national_bloc | french_focus | 42 | 0 |  | GFX_focus_generic_strike_at_democracy2 | france.txt |
-| FRA_laissez_faire | french_focus | -1 | 1 |  | GFX_goal_generic_consumer_goods | france.txt |
-| FRA_protect_the_rights_of_man | french_focus | 0 | 1 |  | GFX_goal_generic_demand_territory | france.txt |
-| FRA_freedom_front | french_focus | 0 | 1 |  | GFX_goal_generic_national_unity | france.txt |
-| FRA_stimulate_the_dynamic_market | french_focus | 1 | 1 |  | GFX_goal_generic_construct_civilian | france.txt |
-| FRA_agricultural_protectionism | french_focus | 1 | 1 |  | GFX_goal_generic_defence | france.txt |
-| FRA_economic_devolution | french_focus | 0 | 1 |  | GFX_goal_generic_positive_trade_relations | france.txt |
-| FRA_promote_entrepeneurship | french_focus | 0 | 1 |  | GFX_goal_generic_propaganda | france.txt |
-| FRA_ban_communism | french_focus | -3 | 1 |  | GFX_goal_anti_comintern_pact | france.txt |
-| FRA_utilize_the_leagues | french_focus | 8 | 1 |  | GFX_focus_generic_strike_at_democracy1 | france.txt |
-| FRA_national_regeneration | french_focus | 0 | 1 |  | GFX_goal_generic_political_pressure | france.txt |
-| FRA_destroy_decadence | french_focus | -4 | 1 |  | GFX_focus_rom_parties_end | france.txt |
-| FRA_integralism | french_focus | -2 | 1 |  | GFX_focus_generic_diplomatic_treaty | france.txt |
-| FRA_work | french_focus | -2 | 1 |  | GFX_goal_generic_construction2 | france.txt |
-| FRA_family | french_focus | 0 | 1 |  | GFX_focus_generic_support_the_left_right | france.txt |
-| FRA_fatherland | french_focus | 2 | 1 |  | GFX_focus_generic_military_mission | france.txt |
-| FRA_political_unity | french_focus | 0 | 1 |  | GFX_goal_generic_intelligence_exchange | france.txt |
-| FRA_diplomatic_freedom | french_focus | 4 | 1 |  | GFX_focus_renounce_the_treaty_of_trianon | france.txt |
-| FRA_latin_entente | french_focus | -2 | 1 |  | GFX_goal_generic_dangerous_deal | france.txt |
-| FRA_reach_out_to_spain | french_focus | -1 | 1 |  | GFX_goal_generic_improve_relations | france.txt |
-| FRA_invite_portugal | french_focus | 0 | 1 |  | GFX_focus_generic_befriend_portugal | france.txt |
-| FRA_compensate_italy | french_focus | 1 | 1 |  | GFX_goal_generic_position_armies | france.txt |
-| FRA_intervention_in_greece | french_focus | 0 | 1 |  | GFX_goal_generic_occupy_states_ongoing_war | france.txt |
-| FRA_the_congress_of_paris | french_focus | 1 | 1 |  | GFX_goal_generic_military_deal | france.txt |
-| FRA_the_natural_borders_of_france | french_focus | 0 | 1 |  | GFX_focus_focus_fra_border | france.txt |
-| FRA_towards_a_new_europe | french_focus | 2 | 1 |  | GFX_goal_tripartite_pact | france.txt |
-| FRA_establish_spheres_of_influence | french_focus | 0 | 1 |  | GFX_goal_generic_more_territorial_claims | france.txt |
-| FRA_split_belgium | french_focus | -1 | 1 |  | GFX_goal_generic_territory_or_war | france.txt |
-| FRA_align_belgium | french_focus | 1 | 1 |  | GFX_goal_generic_forceful_treaty | france.txt |
-| FRA_grow_the_empire | french_focus | -1 | 1 |  | GFX_goal_generic_political_pressure | france.txt |
-| FRA_bring_home_quebec | french_focus | 0 | 1 |  | GFX_focus_attack_canada | france.txt |
-| FRA_expand_to_the_suez | french_focus | 1 | 2 |  | GFX_goal_generic_occupy_states_coastal | france.txt |
-| FRA_dominate_the_middle_east | french_focus | 0 | 1 |  | GFX_goal_generic_attack_allies | france.txt |
+| FRA_force_the_issue | french_focus | 1 | 1 | 10 | GFX_goal_demand_sudetenland | france.txt |
+| FRA_reconciliation | french_focus | -2 | 1 | 10 | GFX_goal_generic_improve_relations | france.txt |
+| FRA_constitutional_convention | french_focus | 0 | 1 | 10 | GFX_focus_generic_treaty | france.txt |
+| FRA_anti_fascist_coalition | french_focus | -1 | 2 | 10 | GFX_goal_generic_military_deal | france.txt |
+| FRA_invite_anti_fascist_emigrants | french_focus | -1 | 3 | 10 | GFX_goal_generic_national_unity | france.txt |
+| FRA_reconnect_to_the_balkans | french_focus | -1 | 4 | 10 | GFX_goal_generic_military_sphere | france.txt |
+| FRA_pre_empt_the_fascist_attack | french_focus | 0 | 5 | 10 | GFX_focus_focus_fra_fascist_threat | france.txt |
+| FRA_loyalty_to_moscow | french_focus | 2 | 2 | 10 | GFX_goal_support_communism | france.txt |
+| FRA_league_of_french_bolshevist_volunteers | french_focus | 0 | 1 | 10 | GFX_focus_YUG_pan_slavic_congress | france.txt |
+| FRA_host_the_german_exiles | french_focus | 0 | 2 | 10 | GFX_focus_generic_self_management | france.txt |
+| FRA_revolution_to_the_utmost | french_focus | 2 | 1 | 10 | GFX_focus_focus_fra_revolution_utmost | france.txt |
+| FRA_destroy_the_counter_revolution | french_focus | 0 | 1 | 10 | GFX_goal_generic_secret_weapon | france.txt |
+| FRA_revolutionary_zeal | french_focus | 3 | 1 | 10 | GFX_goal_generic_war_with_comintern | france.txt |
+| FRA_loyalty_to_the_cause | french_focus | 1 | 2 | 10 | GFX_goal_generic_demand_territory | france.txt |
+| FRA_carry_the_revolution_north | french_focus | 0 | 1 | 10 | GFX_goal_generic_position_armies | france.txt |
+| FRA_carry_the_revolution_west | french_focus | -1 | 1 | 10 | GFX_goal_generic_territory_or_war | france.txt |
+| FRA_carry_the_revolution_east | french_focus | 1 | 1 | 10 | GFX_goal_generic_occupy_states_ongoing_war | france.txt |
+| FRA_carry_the_revolution_south | french_focus | 0 | 2 | 10 | GFX_goal_generic_major_war | france.txt |
+| FRA_egalite_liberte_solidarite | french_focus | 0 | 3 | 10 | GFX_focus_focus_fra_liberte_egalite_solidarite | france.txt |
+| FRA_reform_the_labour_laws | french_focus | 0 | 2 | 10 | GFX_goal_generic_production | france.txt |
+| FRA_nationalize_key_industry | french_focus | 0 | 1 | 10 | GFX_goal_generic_construct_civ_factory | france.txt |
+| FRA_reorganize_the_aviation_industry | french_focus | -1 | 1 | 10 | GFX_goal_generic_air_production | france.txt |
+| FRA_form_the_state_arsenals | french_focus | 1 | 1 | 10 | GFX_goal_generic_construct_mil_factory | france.txt |
+| FRA_general_work_council | french_focus | 0 | 2 | 10 | GFX_goal_generic_construction | france.txt |
+| FRA_dirigisme | french_focus | -1 | 1 | 10 | GFX_focus_generic_the_giant_wakes | france.txt |
+| FRA_national_champions | french_focus | 1 | 1 | 10 | GFX_focus_generic_industry_3 | france.txt |
+| FRA_ban_the_leagues | french_focus | 1 | 1 | 10 | GFX_goal_generic_forceful_treaty | france.txt |
+| FRA_the_blum_viollette_proposal | french_focus | 4 | 1 | 10 | GFX_goal_generic_improve_relations | france.txt |
+| FRA_expand_the_citizenship | french_focus | 0 | 1 | 10 | GFX_goal_generic_national_unity | france.txt |
+| FRA_france_undividable | french_focus | -1 | 1 | 10 | GFX_focus_chi_reach_out_to_france | france.txt |
+| FRA_french_union | french_focus | 0 | 1 | 10 | GFX_focus_fra_french_union | france.txt |
+| FRA_encourage_immigration | french_focus | 1 | 1 | 10 | GFX_goal_generic_national_unity | france.txt |
+| FRA_review_foreign_policy | french_focus | 10 | 1 | 10 | GFX_goal_support_democracy | france.txt |
+| FRA_intervention_in_spain | french_focus | 7 | 2 | 5 | GFX_focus_focus_fra_intervention_spain | france.txt |
+| FRA_support_the_finns | french_focus | 2 | 1 | 5 | GFX_focus_invite_finland | france.txt |
+| FRA_confirm_eastern_commitments | french_focus | -2 | 2 | 10 | GFX_goal_tripartite_pact | france.txt |
+| FRA_strengthen_the_little_entente | french_focus | -1 | 1 | 10 | GFX_focus_generic_little_entente | france.txt |
+| FRA_invite_yugoslavia | french_focus | -1 | 1 | 5 | GFX_focus_invite_yugoslavia | france.txt |
+| FRA_invite_romania | french_focus | 0 | 1 | 5 | GFX_focus_invite_romania | france.txt |
+| FRA_invest_in_our_weaker_allies | french_focus | 0 | 1 | 10 | GFX_goal_generic_build_tank | france.txt |
+| FRA_coordinate_rearmament | french_focus | 0 | 1 | 10 | GFX_goal_generic_position_armies | france.txt |
+| FRA_foreign_guest_workers | french_focus | 3 | 1 | 10 | GFX_focus_generic_manpower | france.txt |
+| FRA_join_the_ententes | french_focus | 1 | 1 | 10 | GFX_focus_chi_british_cooperation | france.txt |
+| FRA_revive_the_franco_polish_alliance | french_focus | 1 | 1 | 10 | GFX_focus_generic_polish_deal | france.txt |
+| FRA_buy_time | french_focus | 4 | 2 | 10 | GFX_goal_generic_neutrality_focus | france.txt |
+| FRA_strengthen_government_support | french_focus | 5 | 1 | 10 | GFX_goal_generic_demand_territory | france.txt |
+| FRA_defensive_strategems | french_focus | 0 | 1 | 10 | GFX_goal_generic_fortify_city | france.txt |
+| FRA_go_with_britain | french_focus | 0 | 1 | 10 | GFX_focus_chi_british_cooperation | france.txt |
+| FRA_arms_purchases_in_the_us | french_focus | 0 | 1 | 10 | GFX_goal_generic_build_tank | france.txt |
+| FRA_france_leads | french_focus | 2 | 1 | 10 | GFX_goal_generic_demand_territory | france.txt |
+| FRA_concessions_to_italy | french_focus | 0 | 1 | 10 | GFX_focus_befriend_italy | france.txt |
+| FRA_ratify_the_stresa_front | french_focus | 0 | 1 | 10 | GFX_focus_focus_fra_ratify_stresa | france.txt |
+| FRA_franco_soviet_treaty | french_focus | 2 | 1 | 10 | GFX_focus_chi_mission_to_the_soviet_union | france.txt |
+| FRA_leftist_rhetoric | french_focus | -3 | 1 | 10 | GFX_goal_generic_propaganda | france.txt |
+| FRA_national_mobilization | french_focus | 0 | 1 | 10 | GFX_goal_generic_allies_build_infantry | france.txt |
+| FRA_join_comintern | french_focus | 1 | 1 | 10 | GFX_goal_support_communism | france.txt |
+| FRA_humanite_unie | french_focus | -1 | 1 | 10 | GFX_goal_generic_dangerous_deal | france.txt |
+| FRA_revive_the_national_bloc | french_focus | 42 | 0 | 10 | GFX_focus_generic_strike_at_democracy2 | france.txt |
+| FRA_laissez_faire | french_focus | -1 | 1 | 10 | GFX_goal_generic_consumer_goods | france.txt |
+| FRA_protect_the_rights_of_man | french_focus | 0 | 1 | 10 | GFX_goal_generic_demand_territory | france.txt |
+| FRA_freedom_front | french_focus | 0 | 1 | 10 | GFX_goal_generic_national_unity | france.txt |
+| FRA_stimulate_the_dynamic_market | french_focus | 1 | 1 | 10 | GFX_goal_generic_construct_civilian | france.txt |
+| FRA_agricultural_protectionism | french_focus | 1 | 1 | 10 | GFX_goal_generic_defence | france.txt |
+| FRA_economic_devolution | french_focus | 0 | 1 | 10 | GFX_goal_generic_positive_trade_relations | france.txt |
+| FRA_promote_entrepeneurship | french_focus | 0 | 1 | 10 | GFX_goal_generic_propaganda | france.txt |
+| FRA_ban_communism | french_focus | -3 | 1 | 10 | GFX_goal_anti_comintern_pact | france.txt |
+| FRA_utilize_the_leagues | french_focus | 8 | 1 | 10 | GFX_focus_generic_strike_at_democracy1 | france.txt |
+| FRA_national_regeneration | french_focus | 0 | 1 | 10 | GFX_goal_generic_political_pressure | france.txt |
+| FRA_destroy_decadence | french_focus | -4 | 1 | 10 | GFX_focus_rom_parties_end | france.txt |
+| FRA_integralism | french_focus | -2 | 1 | 5 | GFX_focus_generic_diplomatic_treaty | france.txt |
+| FRA_work | french_focus | -2 | 1 | 10 | GFX_goal_generic_construction2 | france.txt |
+| FRA_family | french_focus | 0 | 1 | 10 | GFX_focus_generic_support_the_left_right | france.txt |
+| FRA_fatherland | french_focus | 2 | 1 | 10 | GFX_focus_generic_military_mission | france.txt |
+| FRA_political_unity | french_focus | 0 | 1 | 10 | GFX_goal_generic_intelligence_exchange | france.txt |
+| FRA_diplomatic_freedom | french_focus | 4 | 1 | 5 | GFX_focus_renounce_the_treaty_of_trianon | france.txt |
+| FRA_latin_entente | french_focus | -2 | 1 | 10 | GFX_goal_generic_dangerous_deal | france.txt |
+| FRA_reach_out_to_spain | french_focus | -1 | 1 | 5 | GFX_goal_generic_improve_relations | france.txt |
+| FRA_invite_portugal | french_focus | 0 | 1 | 5 | GFX_focus_generic_befriend_portugal | france.txt |
+| FRA_compensate_italy | french_focus | 1 | 1 | 10 | GFX_goal_generic_position_armies | france.txt |
+| FRA_intervention_in_greece | french_focus | 0 | 1 | 10 | GFX_goal_generic_occupy_states_ongoing_war | france.txt |
+| FRA_the_congress_of_paris | french_focus | 1 | 1 | 10 | GFX_goal_generic_military_deal | france.txt |
+| FRA_the_natural_borders_of_france | french_focus | 0 | 1 | 10 | GFX_focus_focus_fra_border | france.txt |
+| FRA_towards_a_new_europe | french_focus | 2 | 1 | 10 | GFX_goal_tripartite_pact | france.txt |
+| FRA_establish_spheres_of_influence | french_focus | 0 | 1 | 10 | GFX_goal_generic_more_territorial_claims | france.txt |
+| FRA_split_belgium | french_focus | -1 | 1 | 10 | GFX_goal_generic_territory_or_war | france.txt |
+| FRA_align_belgium | french_focus | 1 | 1 | 10 | GFX_goal_generic_forceful_treaty | france.txt |
+| FRA_grow_the_empire | french_focus | -1 | 1 | 10 | GFX_goal_generic_political_pressure | france.txt |
+| FRA_bring_home_quebec | french_focus | 0 | 1 | 10 | GFX_focus_attack_canada | france.txt |
+| FRA_expand_to_the_suez | french_focus | 1 | 2 | 10 | GFX_goal_generic_occupy_states_coastal | france.txt |
+| FRA_dominate_the_middle_east | french_focus | 0 | 1 | 10 | GFX_goal_generic_attack_allies | france.txt |
 | FRA_right_wing_rhetoric | french_focus | 5 | 1 | 10 | GFX_goal_generic_propaganda | france.txt |
-| FRA_army_of_aggression | french_focus |  |  |  | GFX_goal_generic_occupy_states_ongoing_war | france.txt |
-| FRA_france_first | french_focus |  |  |  | GFX_goal_generic_attack_allies | france.txt |
-| FRA_woo_italy | french_focus |  |  |  | GFX_goal_tripartite_pact | france.txt |
-| FRA_dismantle_the_democracies | french_focus |  |  |  | GFX_goal_generic_major_war | france.txt |
-| FRA_join_germany | french_focus |  |  |  | GFX_goal_support_fascism | france.txt |
-| FRA_the_council_of_rambouillet | french_focus | 14 | 1 |  | GFX_goal_generic_major_alliance | france.txt |
-| FRA_revise_the_constitution | french_focus | 0 | 1 |  | GFX_focus_generic_treaty | france.txt |
-| FRA_repeal_the_law_of_exile | french_focus | 0 | 1 |  | GFX_focus_renounce_the_treaty_of_trianon | france.txt |
-| FRA_orleanist_restoration | french_focus | -3 | 1 |  | GFX_focus_focus_fra_orleans_restoration | france.txt |
-| FRA_guarantee_the_constitution | french_focus | -1 | 1 |  | GFX_goal_generic_military_sphere | france.txt |
-| FRA_the_first_citizen_of_the_state | french_focus | 1 | 1 |  | GFX_focus_generic_military_mission | france.txt |
-| FRA_counter_action | french_focus | 1 | 1 |  | GFX_goal_tfv_saf_anti_colonialist_crusade | france.txt |
-| FRA_no_further_humiliations | french_focus | -2 | 1 |  | GFX_focus_generic_support_the_left_right | france.txt |
-| FRA_slum_clearing | french_focus | 0 | 1 |  | GFX_goal_generic_construction | france.txt |
-| FRA_public_welfare | french_focus | 0 | 1 |  | GFX_goal_generic_consumer_goods | france.txt |
-| FRA_the_legitimate_heir | french_focus | 0 | 1 |  | GFX_focus_rom_royal_dictatorship | france.txt |
-| FRA_secure_the_crown_of_spain | french_focus | 0 | 1 |  | GFX_goal_generic_position_armies | france.txt |
-| FRA_unite_the_crowns | french_focus | -1 | 1 |  | GFX_goal_generic_demand_territory | france.txt |
-| FRA_two_countries_two_crowns | french_focus | 1 | 1 |  | GFX_goal_tripartite_pact | france.txt |
-| FRA_proclaim_the_third_empire | french_focus | 3 | 1 |  | GFX_focus_focus_fra_third_empire | france.txt |
-| FRA_avenge_waterloo | french_focus | 0 | 1 |  | GFX_focus_attack_britain | france.txt |
-| FRA_reorganize_the_dutch | french_focus | 2 | 1 |  | GFX_focus_CZE_german_puppet | france.txt |
-| FRA_retribution_for_sedan | french_focus | 0 | 1 |  | GFX_focus_attack_germany | france.txt |
-| FRA_disunite_germany | french_focus | 2 | 1 |  | GFX_goal_generic_occupy_states_ongoing_war | france.txt |
-| FRA_return_to_borodino | french_focus | 0 | 1 |  | GFX_focus_attack_soviet | france.txt |
-| FRA_je_suis_la_deluge | french_focus | 0 | 1 |  | GFX_focus_fra_le_deluge | france.txt |
-| FRA_naval_rearmament | french_focus | 70 | 0 |  | GFX_goal_generic_construct_naval_dockyard | france.txt |
+| FRA_army_of_aggression | french_focus | 0 | 1 | 10 | GFX_goal_generic_occupy_states_ongoing_war | france.txt |
+| FRA_france_first | french_focus | -2 | 1 | 10 | GFX_goal_generic_attack_allies | france.txt |
+| FRA_woo_italy | french_focus | 0 | 1 | 10 | GFX_goal_tripartite_pact | france.txt |
+| FRA_dismantle_the_democracies | french_focus | 0 | 1 | 10 | GFX_goal_generic_major_war | france.txt |
+| FRA_join_germany | french_focus | 2 | 1 | 10 | GFX_goal_support_fascism | france.txt |
+| FRA_the_council_of_rambouillet | french_focus | 14 | 1 | 10 | GFX_goal_generic_major_alliance | france.txt |
+| FRA_revise_the_constitution | french_focus | 0 | 1 | 10 | GFX_focus_generic_treaty | france.txt |
+| FRA_repeal_the_law_of_exile | french_focus | 0 | 1 | 10 | GFX_focus_renounce_the_treaty_of_trianon | france.txt |
+| FRA_orleanist_restoration | french_focus | -3 | 1 | 10 | GFX_focus_focus_fra_orleans_restoration | france.txt |
+| FRA_guarantee_the_constitution | french_focus | -1 | 1 | 10 | GFX_goal_generic_military_sphere | france.txt |
+| FRA_the_first_citizen_of_the_state | french_focus | 1 | 1 | 10 | GFX_focus_generic_military_mission | france.txt |
+| FRA_counter_action | french_focus | 1 | 1 | 5 | GFX_goal_tfv_saf_anti_colonialist_crusade | france.txt |
+| FRA_no_further_humiliations | french_focus | -2 | 1 | 10 | GFX_focus_generic_support_the_left_right | france.txt |
+| FRA_slum_clearing | french_focus | 0 | 1 | 5 | GFX_goal_generic_construction | france.txt |
+| FRA_public_welfare | french_focus | 0 | 1 | 10 | GFX_goal_generic_consumer_goods | france.txt |
+| FRA_the_legitimate_heir | french_focus | 0 | 1 | 10 | GFX_focus_rom_royal_dictatorship | france.txt |
+| FRA_secure_the_crown_of_spain | french_focus | 0 | 1 | 10 | GFX_goal_generic_position_armies | france.txt |
+| FRA_unite_the_crowns | french_focus | -1 | 1 | 10 | GFX_goal_generic_demand_territory | france.txt |
+| FRA_two_countries_two_crowns | french_focus | 1 | 1 | 10 | GFX_goal_tripartite_pact | france.txt |
+| FRA_proclaim_the_third_empire | french_focus | 3 | 1 | 10 | GFX_focus_focus_fra_third_empire | france.txt |
+| FRA_avenge_waterloo | french_focus | 0 | 1 | 10 | GFX_focus_attack_britain | france.txt |
+| FRA_reorganize_the_dutch | french_focus | 2 | 1 | 10 | GFX_focus_CZE_german_puppet | france.txt |
+| FRA_retribution_for_sedan | french_focus | 0 | 1 | 10 | GFX_focus_attack_germany | france.txt |
+| FRA_disunite_germany | french_focus | 2 | 1 | 10 | GFX_goal_generic_occupy_states_ongoing_war | france.txt |
+| FRA_return_to_borodino | french_focus | 0 | 1 | 10 | GFX_focus_attack_soviet | france.txt |
+| FRA_je_suis_la_deluge | french_focus | 0 | 1 | 10 | GFX_focus_fra_le_deluge | france.txt |
+| FRA_naval_rearmament | french_focus | 70 | 0 | 10 | GFX_goal_generic_construct_naval_dockyard | france.txt |
 | FRA_colonial_naval_bases | french_focus | -3 | 1 | 10 | GFX_goal_generic_build_navy | france.txt |
 | FRA_develop_colonial_dockyards | french_focus | 0 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | france.txt |
 | FRA_the_old_school | french_focus | 0 | 1 | 10 | GFX_focus_generic_navy_battleship2 | france.txt |
@@ -3183,37 +3685,37 @@ Source: `common/national_focus/*.txt`
 | FRA_undersea_combat | french_focus | -1 | 1 | 10 | GFX_goal_generic_navy_submarine | france.txt |
 | FRA_surface_combat | french_focus | 1 | 1 | 10 | GFX_focus_generic_destroyer | france.txt |
 | FRA_improved_screen_ships | french_focus | 0 | 2 | 10 | GFX_goal_generic_navy_cruiser | france.txt |
-| FRA_naval_doctrine | french_focus |  |  |  | GFX_goal_generic_navy_doctrines_tactics | france.txt |
+| FRA_naval_doctrine | french_focus | 3 | 1 | 10 | GFX_goal_generic_navy_doctrines_tactics | france.txt |
 | FRA_air_focus | french_focus | 9 | 0 | 10 | GFX_goal_generic_build_airforce | france.txt |
 | FRA_fighter_focus | french_focus | -1 | 1 | 10 | GFX_goal_generic_air_fighter | france.txt |
 | FRA_heavy_fighter_focus | french_focus | -1 | 1 | 10 | GFX_goal_generic_air_fighter2 | france.txt |
 | FRA_bomber_focus | french_focus | 1 | 1 | 10 | GFX_goal_generic_air_bomber | france.txt |
-| FRA_air_doctrine | french_focus |  |  |  | GFX_goal_generic_air_doctrine | france.txt |
+| FRA_air_doctrine | french_focus | 1 | 1 | 10 | GFX_goal_generic_air_doctrine | france.txt |
 | FRA_heavy_bomber_focus | french_focus | 1 | 1 | 10 | GFX_goal_generic_occupy_start_war | france.txt |
 | FRA_naval_bomber_focus | french_focus | 3 | 1 | 10 | GFX_goal_generic_air_naval_bomber | france.txt |
-| FRA_appeal_to_the_french_nation | free_french_focus | 18 | 0 |  | GFX_goal_generic_propaganda | free_france.txt |
-| FRA_appeal_to_overseas_territories | free_french_focus | 0 | 1 |  | GFX_goal_generic_radar | free_france.txt |
-| FRA_intervention_in_north_africa | free_french_focus | -5 | 1 |  | GFX_goal_generic_position_armies | free_france.txt |
-| FRA_intervention_in_west_africa | free_french_focus | -3 | 1 |  | GFX_goal_generic_position_armies | free_france.txt |
-| FRA_intervention_in_syria | free_french_focus | -1 | 1 |  | GFX_goal_generic_position_armies | free_france.txt |
-| FRA_intervention_in_indochina | free_french_focus | 1 | 1 |  | GFX_goal_generic_position_armies | free_france.txt |
-| FRA_intervention_in_central_africa | free_french_focus | 3 | 1 |  | GFX_goal_generic_position_armies | free_france.txt |
-| FRA_intervention_in_madagascar | free_french_focus | 5 | 1 |  | GFX_goal_generic_position_armies | free_france.txt |
-| FRA_form_the_national_committee | free_french_focus | 0 | 3 |  | GFX_goal_generic_intelligence_exchange | free_france.txt |
-| FRA_form_the_provisional_government_of_the_republic | free_french_focus | 0 | 3 |  | GFX_goal_tripartite_pact | free_france.txt |
-| FRA_continue_the_fight | free_french_focus | 9 | 1 |  | GFX_goal_generic_major_war | free_france.txt |
-| FRA_the_free_french_navy | free_french_focus | -2 | 2 |  | GFX_goal_generic_build_navy | free_france.txt |
-| FRA_colonial_recruitment | free_french_focus | 0 | 2 |  | GFX_goal_generic_allies_build_infantry | free_france.txt |
-| FRA_the_regiment_normandie | free_french_focus | 2 | 2 |  | GFX_focus_fra_regiment_normandie | free_france.txt |
-| FRA_refus_absurde | free_french_focus | 8 | 0 |  | GFX_goal_generic_demand_territory | free_france.txt |
-| FRA_the_maquis | free_french_focus | -2 | 2 |  | GFX_focus_focus_fra_maquis | free_france.txt |
-| FRA_reach_out_to_trade_unions | free_french_focus | 0 | 2 |  | GFX_goal_generic_major_alliance | free_france.txt |
-| FRA_cooperation_with_the_communists | free_french_focus | 0 | 2 |  | GFX_focus_generic_soviet_politics | free_france.txt |
-| FRA_connections_to_industrialists | free_french_focus | 2 | 2 |  | GFX_goal_generic_intelligence_exchange | free_france.txt |
-| FRA_the_civil_and_military_organization | free_french_focus | 0 | 2 |  | GFX_goal_generic_military_deal | free_france.txt |
-| FRA_national_council_of_the_resistance | free_french_focus | 0 | 2 |  | GFX_focus_focus_fra_national_resistance_council | free_france.txt |
-| FRA_national_uprising | free_french_focus | -2 | 2 |  | GFX_goal_generic_dangerous_deal | free_france.txt |
-| FRA_french_forces_of_the_interior | free_french_focus | 2 | 2 |  | GFX_focus_prc_infiltration | free_france.txt |
+| FRA_appeal_to_the_french_nation | free_french_focus | 18 | 0 | 5 | GFX_goal_generic_propaganda | free_france.txt |
+| FRA_appeal_to_overseas_territories | free_french_focus | 0 | 1 | 5 | GFX_goal_generic_radar | free_france.txt |
+| FRA_intervention_in_north_africa | free_french_focus | -5 | 1 | 10 | GFX_goal_generic_position_armies | free_france.txt |
+| FRA_intervention_in_west_africa | free_french_focus | -3 | 1 | 10 | GFX_goal_generic_position_armies | free_france.txt |
+| FRA_intervention_in_syria | free_french_focus | -1 | 1 | 10 | GFX_goal_generic_position_armies | free_france.txt |
+| FRA_intervention_in_indochina | free_french_focus | 1 | 1 | 10 | GFX_goal_generic_position_armies | free_france.txt |
+| FRA_intervention_in_central_africa | free_french_focus | 3 | 1 | 10 | GFX_goal_generic_position_armies | free_france.txt |
+| FRA_intervention_in_madagascar | free_french_focus | 5 | 1 | 10 | GFX_goal_generic_position_armies | free_france.txt |
+| FRA_form_the_national_committee | free_french_focus | 0 | 3 | 10 | GFX_goal_generic_intelligence_exchange | free_france.txt |
+| FRA_form_the_provisional_government_of_the_republic | free_french_focus | 0 | 3 | 10 | GFX_goal_tripartite_pact | free_france.txt |
+| FRA_continue_the_fight | free_french_focus | 9 | 1 | 10 | GFX_goal_generic_major_war | free_france.txt |
+| FRA_the_free_french_navy | free_french_focus | -2 | 2 | 10 | GFX_goal_generic_build_navy | free_france.txt |
+| FRA_colonial_recruitment | free_french_focus | 0 | 2 | 10 | GFX_goal_generic_allies_build_infantry | free_france.txt |
+| FRA_the_regiment_normandie | free_french_focus | 2 | 2 | 10 | GFX_focus_fra_regiment_normandie | free_france.txt |
+| FRA_refus_absurde | free_french_focus | 8 | 0 | 10 | GFX_goal_generic_demand_territory | free_france.txt |
+| FRA_the_maquis | free_french_focus | -2 | 2 | 10 | GFX_focus_focus_fra_maquis | free_france.txt |
+| FRA_reach_out_to_trade_unions | free_french_focus | 0 | 2 | 10 | GFX_goal_generic_major_alliance | free_france.txt |
+| FRA_cooperation_with_the_communists | free_french_focus | 0 | 2 | 10 | GFX_focus_generic_soviet_politics | free_france.txt |
+| FRA_connections_to_industrialists | free_french_focus | 2 | 2 | 10 | GFX_goal_generic_intelligence_exchange | free_france.txt |
+| FRA_the_civil_and_military_organization | free_french_focus | 0 | 2 | 10 | GFX_goal_generic_military_deal | free_france.txt |
+| FRA_national_council_of_the_resistance | free_french_focus | 0 | 2 | 10 | GFX_focus_focus_fra_national_resistance_council | free_france.txt |
+| FRA_national_uprising | free_french_focus | -2 | 2 | 10 | GFX_goal_generic_dangerous_deal | free_france.txt |
+| FRA_french_forces_of_the_interior | free_french_focus | 2 | 2 | 10 | GFX_focus_prc_infiltration | free_france.txt |
 | army_effort | generic_focus | 1 | 0 | 10 | GFX_goal_generic_allies_build_infantry | generic.txt |
 | equipment_effort | generic_focus | -1 | 1 | 10 | GFX_goal_generic_small_arms | generic.txt |
 | motorization_effort | generic_focus | 1 | 1 | 10 | GFX_goal_generic_army_motorized | generic.txt |
@@ -3249,13 +3751,13 @@ Source: `common/national_focus/*.txt`
 | construction_effort_3 | generic_focus | 2 | 1 | 10 | GFX_goal_generic_construct_civ_factory | generic.txt |
 | nuclear_effort | generic_focus | -2 | 1 | 10 | GFX_focus_wonderweapons | generic.txt |
 | extra_tech_slot | generic_focus | 0 | 1 | 10 | GFX_focus_research | generic.txt |
-| extra_tech_slot_2 | generic_focus |  |  |  | GFX_focus_research | generic.txt |
+| extra_tech_slot_2 | generic_focus | 0 | 1 | 10 | GFX_focus_research | generic.txt |
 | secret_weapons | generic_focus | 2 | 1 | 10 | GFX_goal_generic_secret_weapon | generic.txt |
 | political_effort | generic_focus | 19 | 0 | 10 | GFX_goal_generic_demand_territory | generic.txt |
-| collectivist_ethos | generic_focus |  |  |  | GFX_goal_generic_national_unity | generic.txt |
-| nationalism_focus | generic_focus |  |  |  | GFX_goal_support_fascism | generic.txt |
-| internationalism_focus | generic_focus |  |  |  | GFX_goal_support_communism | generic.txt |
-| liberty_ethos | generic_focus |  |  |  | GFX_goal_support_democracy | generic.txt |
+| collectivist_ethos | generic_focus | -1 | 1 | 10 | GFX_goal_generic_national_unity | generic.txt |
+| nationalism_focus | generic_focus | -2 | 1 | 10 | GFX_goal_support_fascism | generic.txt |
+| internationalism_focus | generic_focus | 0 | 1 | 10 | GFX_goal_support_communism | generic.txt |
+| liberty_ethos | generic_focus | 1 | 1 | 10 | GFX_goal_support_democracy | generic.txt |
 | militarism | generic_focus | 0 | 1 | 10 | GFX_goal_generic_political_pressure | generic.txt |
 | political_correctness | generic_focus | 0 | 1 | 10 | GFX_goal_generic_dangerous_deal | generic.txt |
 | neutrality_focus | generic_focus | 0 | 1 | 10 | GFX_goal_generic_neutrality_focus | generic.txt |
@@ -3266,10 +3768,10 @@ Source: `common/national_focus/*.txt`
 | paramilitarism | generic_focus | 0 | 1 | 10 | GFX_goal_generic_military_sphere | generic.txt |
 | indoctrination_focus | generic_focus | 0 | 1 | 10 | GFX_goal_generic_propaganda | generic.txt |
 | foreign_expeditions | generic_focus | 0 | 1 | 10 | GFX_goal_generic_more_territorial_claims | generic.txt |
-| why_we_fight | generic_focus |  |  |  | GFX_goal_generic_propaganda | generic.txt |
-| political_commissars | generic_focus |  |  |  | GFX_goal_generic_forceful_treaty | generic.txt |
+| why_we_fight | generic_focus | -2 | 1 | 10 | GFX_goal_generic_propaganda | generic.txt |
+| political_commissars | generic_focus | 0 | 1 | 10 | GFX_goal_generic_forceful_treaty | generic.txt |
 | ideological_fanaticism | generic_focus | 1 | 1 | 10 | GFX_goal_generic_demand_territory | generic.txt |
-| technology_sharing | generic_focus |  |  |  | GFX_goal_generic_scientific_exchange | generic.txt |
+| technology_sharing | generic_focus | 2 | 1 | 10 | GFX_goal_generic_scientific_exchange | generic.txt |
 | GER_prioritize_economic_growth | german_focus | 45 | 0 | 5 | GFX_focus_usa_reestablish_the_gold_standard | germany.txt |
 | GER_currency_reforms | german_focus | -3 | 1 | 5 | GFX_focus_generic_currency_reforms | germany.txt |
 | GER_lower_taxes | german_focus | -1 | 1 | 5 | GFX_focus_mex_privatisation | germany.txt |
@@ -3341,7 +3843,7 @@ Source: `common/national_focus/*.txt`
 | GER_form_the_jagdwaffe | german_focus | 3 | 1 | 5 | GFX_focus_SOV_flying_clubs | germany.txt |
 | GER_reorganize_the_luftwaffe | german_focus | -2 | 1 | 10 | GFX_goal_generic_build_airforce | germany.txt |
 | GER_solve_the_logistical_bottlenecks | german_focus | -1 | 2 | 10 | GFX_goal_generic_air_production | germany.txt |
-| GER_experimental_rotorcrafts | german_focus | 0 | 1 |  | GFX_focus_generic_early_helicopter | germany.txt |
+| GER_experimental_rotorcrafts | german_focus | 0 | 1 | 5 | GFX_focus_generic_early_helicopter | germany.txt |
 | GER_develop_the_knickebein | german_focus | 2 | 1 | 5 | GFX_goal_generic_radar | germany.txt |
 | GER_defense_of_the_reich | german_focus | 2 | 2 | 10 | GFX_goal_generic_CAS | germany.txt |
 | GER_construct_the_kammhuber_line | german_focus | -1 | 1 | 5 | GFX_focus_generic_energy | germany.txt |
@@ -3367,8 +3869,8 @@ Source: `common/national_focus/*.txt`
 | GER_u_boat_efforts | german_focus | 0 | 1 | 5 | GFX_goal_generic_navy_submarine | germany.txt |
 | GER_unrestricted_convoy_raiding | german_focus | 1 | 1 | 10 | GFX_goal_generic_navy_battleship | germany.txt |
 | GER_seeherrschaft | german_focus | 0 | 1 | 5 | GFX_focus_GER_seeherrschaft | germany.txt |
-| GER_remilitarize_the_rhineland | german_focus |  |  |  | GFX_focus_GER_remilitarize_the_rhineland | germany.txt |
-| GER_legion_condor | german_focus | -25 | 0 |  | GFX_focus_intervention_spain_nationalists | germany.txt |
+| GER_remilitarize_the_rhineland | german_focus | 33 | 0 | 5 | GFX_focus_GER_remilitarize_the_rhineland | germany.txt |
+| GER_legion_condor | german_focus | -25 | 0 | 5 | GFX_focus_intervention_spain_nationalists | germany.txt |
 | GER_heed_von_neuraths_concerns | german_focus | -10 | 1 | 5 | GFX_focus_GER_heed_von_neuraths_concerns | germany.txt |
 | GER_war_preparations | german_focus | 0 | 1 | 5 | GFX_goal_generic_axis_build_infantry | germany.txt |
 | GER_prepare_for_the_next_blockade_ww | german_focus | 0 | 2 | 10 | GFX_goal_generic_navy_cruiser | germany.txt |
@@ -3454,7 +3956,7 @@ Source: `common/national_focus/*.txt`
 | GER_south_east_asian_natural_wealth | german_focus | 2 | 0 | 10 | GFX_focus_GER_south_east_asian_natural_wealth | germany.txt |
 | GER_the_proud_eagle_and_the_resurgent_dragon | german_focus | 0 | 2 | 10 | GFX_focus_GER_the_proud_eagle_and_the_rising_dragon | germany.txt |
 | GER_blitzkrieg_across_the_pacific | german_focus | -1 | 1 | 10 | GFX_focus_generic_naval_invasion_tank | germany.txt |
-| GER_fuhrerprinzip | german_focus |  |  |  |  | germany.txt |
+| GER_fuhrerprinzip | german_focus | -17 | 8 | 5 | GFX_focus_GER_support_the_fuhrer | germany.txt |
 | GER_ascension_of_todt | german_focus | -7 | 1 | 2 | GFX_focus_GER_ascension_of_todt | germany.txt |
 | GER_form_organization_todt | german_focus | 0 | 1 |  | GFX_focus_GER_form_organization_todt | germany.txt |
 | GER_autonomous_organization_todt | german_focus | 0 | 1 |  | GFX_focus_GER_autonomous_organization_todt | germany.txt |
@@ -3576,7 +4078,7 @@ Source: `common/national_focus/*.txt`
 | GER_glory_to_the_imperial_army | german_focus | 1 | 1 | 10 | GFX_focus_GER_glory_to_the_imperial_army | germany.txt |
 | GER_prepare_for_the_next_naval_blockade | german_focus | 2 | 1 | 5 | GFX_focus_generic_stockpile_fuel | germany.txt |
 | GER_all_for_the_front | german_focus | 0 | 1 | 5 | GFX_focus_GER_all_for_the_front | germany.txt |
-| GER_expatriate_the_communists_ww | german_focus |  |  |  | GFX_goal_anti_comintern_pact | germany.txt |
+| GER_expatriate_the_communists_ww | german_focus | 4 | 1 | 5 | GFX_goal_anti_comintern_pact | germany.txt |
 | GER_demand_the_return_of_southern_jutland | german_focus | 8 | 1 | 5 | GFX_focus_generic_invade_denmark | germany.txt |
 | GER_realpolitik | german_focus | 1 | 5 | 2 | GFX_focus_GER_realpolitik | germany.txt |
 | GER_mitteleuropa | german_focus | -9 | 1 | 2 | GFX_focus_GER_mitteleuropa | germany.txt |
@@ -3593,13 +4095,13 @@ Source: `common/national_focus/*.txt`
 | GER_the_second_berlin_award | german_focus | 0 | 2 | 5 | GFX_goal_generic_forceful_treaty | germany.txt |
 | GER_mitteleuropa_cooperation_sphere | german_focus | -1 | 2 | 5 | GFX_goal_generic_scientific_exchange | germany.txt |
 | GER_trade_agreements | german_focus | 0 | 1 | 5 | GFX_goal_generic_major_alliance | germany.txt |
-| GER_prepare_italian_coup_ww | german_focus |  |  |  | GFX_goal_generic_military_deal | germany.txt |
-| GER_assassinate_mussolini_ww | german_focus |  |  |  | GFX_focus_ger_assassinate_mussolini | germany.txt |
+| GER_prepare_italian_coup_ww | german_focus | -2 | 1 | 5 | GFX_goal_generic_military_deal | germany.txt |
+| GER_assassinate_mussolini_ww | german_focus | 0 | 1 | 10 | GFX_focus_ger_assassinate_mussolini | germany.txt |
 | GER_conquer_italy | german_focus | 0 | 1 | 10 | GFX_focus_attack_italy | germany.txt |
-| GER_restore_the_holy_roman_empire | german_focus | 0 | 2 |  | GFX_focus_POL_habsburg | germany.txt |
+| GER_restore_the_holy_roman_empire | german_focus | 0 | 2 | 10 | GFX_focus_POL_habsburg | germany.txt |
 | GER_align_italy | german_focus | 0 | 1 | 10 | GFX_focus_befriend_italy | germany.txt |
-| GER_german_hegemony_in_the_middle_east | german_focus |  |  |  |  | germany.txt |
-| GER_bring_turkey_into_the_fold | german_focus |  |  |  |  | germany.txt |
+| GER_german_hegemony_in_the_middle_east | german_focus | -1 | 1 | 10 |  | germany.txt |
+| GER_bring_turkey_into_the_fold | german_focus | 1 | 1 | 5 |  | germany.txt |
 | GER_see_to_the_eastern_front_ww | german_focus | -2 | 1 | 5 | GFX_focus_GER_the_eastern_border | germany.txt |
 | GER_safeguard_the_baltic_ww | german_focus | 3 | 1 | 5 | GFX_focus_generic_baltic_entente | germany.txt |
 | GER_tributes_for_guarantees | german_focus | 1 | 1 | 10 | GFX_focus_SOV_baltic_security | germany.txt |
@@ -3611,7 +4113,7 @@ Source: `common/national_focus/*.txt`
 | GER_ally_white_russian_forces | german_focus | 2 | 2 | 10 | GFX_focus_SOV_the_true_tsars | germany.txt |
 | GER_hold_joint_military_drills | german_focus | 0 | 3 | 10 | GFX_focus_SWE_varnplikt | germany.txt |
 | GER_extend_mitteleuropas_bounderies | german_focus | 2 | 1 | 5 | GFX_focus_GER_extend_mitteleuropa | germany.txt |
-| GER_reach_out_to_scandinavia | german_focus |  |  |  | GFX_focus_generic_scandinavia_flags | germany.txt |
+| GER_reach_out_to_scandinavia | german_focus | 0 | 2 | 10 | GFX_focus_generic_scandinavia_flags | germany.txt |
 | GER_support_the_finns_ww | german_focus | 1 | 2 | 5 | GFX_focus_invite_finland | germany.txt |
 | GER_restore_the_brest_litovsk_borders | german_focus | 4 | 1 | 5 | GFX_focus_GER_brest_litovsk_borders | germany.txt |
 | GER_memel_ultimatum | german_focus | -1 | 1 | 5 | GFX_goal_generic_political_pressure | germany.txt |
@@ -3656,73 +4158,91 @@ Source: `common/national_focus/*.txt`
 | GER_expand_african_reach | german_focus | 2 | 2 | 5 | GFX_focus_GER_schutztruppe | germany.txt |
 | GER_african_allies | german_focus | -1 | 1 | 5 | GFX_focus_generic_africa_liberation | germany.txt |
 | GER_realize_mittelafrika | german_focus | 0 | 2 | 10 | GFX_focus_GER_realize_mittelafrika | germany.txt |
-| GER_oppose_hitler | german_focus |  |  |  | GFX_focus_ger_oppose_hitler | germany.txt |
-| GER_secure_the_new_state | german_focus |  |  |  | GFX_focus_generic_support_the_left_right | germany.txt |
-| GER_revive_the_kaiserreich | german_focus |  |  |  | GFX_focus_ger_revive_kaiserreich | germany.txt |
-| GER_rebuild_the_nation | german_focus |  |  |  | GFX_goal_generic_construction2 | germany.txt |
-| GER_fan_the_prussian_militarism | german_focus |  |  |  | GFX_focus_generic_military_mission | germany.txt |
-| GER_a_new_and_better_germany | german_focus |  |  |  | GFX_goal_generic_construction | germany.txt |
-| GER_bulwark_against_bolshevism | german_focus |  |  |  | GFX_focus_ger_bulwark_against_bolshevism | germany.txt |
-| GER_return_of_the_kaiser | german_focus |  |  |  | GFX_focus_ger_return_of_the_kaiser | germany.txt |
-| GER_focus_on_the_true_enemy | german_focus |  |  |  | GFX_goal_generic_occupy_states_coastal | germany.txt |
-| GER_rebuild_the_high_seas_fleet | german_focus |  |  |  | GFX_goal_generic_navy_cruiser | germany.txt |
-| GER_our_place_in_the_sun | german_focus |  |  |  | GFX_goal_generic_demand_territory | germany.txt |
-| GER_pride_of_the_modern_germany | german_focus |  |  |  | GFX_goal_generic_navy_battleship | germany.txt |
-| GER_prepare_for_the_next_blockade | german_focus |  |  |  | GFX_goal_generic_consumer_goods | germany.txt |
-| GER_break_the_anglo_french_colonial_hegemony | german_focus |  |  |  | GFX_focus_ger_break_anglo_french_colonial_hegemony | germany.txt |
-| GER_schlieffen_once_more | german_focus |  |  |  | GFX_goal_generic_occupy_states_ongoing_war | germany.txt |
-| GER_the_central_powers | german_focus |  |  |  | GFX_goal_generic_major_alliance | germany.txt |
-| GER_prepare_italian_coup | german_focus |  |  |  | GFX_goal_generic_military_deal | germany.txt |
-| GER_assassinate_mussolini | german_focus |  |  |  | GFX_focus_ger_assassinate_mussolini | germany.txt |
-| GER_rekindle_imperial_sentiment | german_focus |  |  |  | GFX_focus_proclaim_the_restauration_of_Austria_Hungary | germany.txt |
-| GER_expatriate_the_communists | german_focus |  |  |  | GFX_goal_anti_comintern_pact | germany.txt |
-| GER_accept_british_naval_dominance | german_focus |  |  |  | GFX_focus_ger_accept_british_naval_dominance | germany.txt |
-| GER_ally_the_shade | german_focus |  |  |  | GFX_goal_generic_dangerous_deal | germany.txt |
-| GER_carte_blanche_for_alsace_and_french_colonies | german_focus |  |  |  | GFX_goal_generic_territory_or_war | germany.txt |
-| GER_bypass_maginot_in_the_south | german_focus |  |  |  | GFX_focus_attack_switzerland | germany.txt |
-| GER_reinstate_imperial_possessions | german_focus |  |  |  | GFX_goal_generic_position_armies | germany.txt |
-| GER_see_to_the_eastern_front | german_focus |  |  |  | GFX_goal_generic_position_armies | germany.txt |
-| GER_danzig_for_guarantees | german_focus |  |  |  | GFX_focus_POL_clamp_down_on_danzig | germany.txt |
-| GER_safeguard_the_baltic | german_focus |  |  |  | GFX_goal_generic_defence | germany.txt |
-| GER_support_the_finns | german_focus |  |  |  | GFX_focus_FIN_a_cry_for_help_2 | germany.txt |
+| GER_oppose_hitler | german_focus | 34 | 0 | 10 | GFX_focus_ger_oppose_hitler | germany.txt |
+| GER_secure_the_new_state | german_focus | 0 | 2 | 10 | GFX_focus_generic_support_the_left_right | germany.txt |
+| GER_revive_the_kaiserreich | german_focus | 1 | 0 | 10 | GFX_focus_ger_revive_kaiserreich | germany.txt |
+| GER_rebuild_the_nation | german_focus | 1 | 1 | 10 | GFX_goal_generic_construction2 | germany.txt |
+| GER_fan_the_prussian_militarism | german_focus | -1 | 1 | 5 | GFX_focus_generic_military_mission | germany.txt |
+| GER_a_new_and_better_germany | german_focus | 1 | 1 | 5 | GFX_goal_generic_construction | germany.txt |
+| GER_bulwark_against_bolshevism | german_focus | 1 | 1 | 10 | GFX_focus_ger_bulwark_against_bolshevism | germany.txt |
+| GER_return_of_the_kaiser | german_focus | -2 | 1 | 5 | GFX_focus_ger_return_of_the_kaiser | germany.txt |
+| GER_focus_on_the_true_enemy | german_focus | -6 | 1 | 10 | GFX_goal_generic_occupy_states_coastal | germany.txt |
+| GER_rebuild_the_high_seas_fleet | german_focus | 0 | 2 | 10 | GFX_goal_generic_navy_cruiser | germany.txt |
+| GER_our_place_in_the_sun | german_focus | 0 | 1 | 5 | GFX_goal_generic_demand_territory | germany.txt |
+| GER_pride_of_the_modern_germany | german_focus | 0 | 1 | 10 | GFX_goal_generic_navy_battleship | germany.txt |
+| GER_prepare_for_the_next_blockade | german_focus | -1 | 2 | 10 | GFX_goal_generic_consumer_goods | germany.txt |
+| GER_break_the_anglo_french_colonial_hegemony | german_focus | 0 | 1 | 10 | GFX_focus_ger_break_anglo_french_colonial_hegemony | germany.txt |
+| GER_schlieffen_once_more | german_focus | 0 | 1 | 4 | GFX_goal_generic_occupy_states_ongoing_war | germany.txt |
+| GER_the_central_powers | german_focus | 1 | 2 | 5 | GFX_goal_generic_major_alliance | germany.txt |
+| GER_prepare_italian_coup | german_focus | 0 | 1 | 10 | GFX_goal_generic_military_deal | germany.txt |
+| GER_assassinate_mussolini | german_focus | 0 | 1 | 10 | GFX_focus_ger_assassinate_mussolini | germany.txt |
+| GER_rekindle_imperial_sentiment | german_focus | 2 | 1 | 10 | GFX_focus_proclaim_the_restauration_of_Austria_Hungary | germany.txt |
+| GER_expatriate_the_communists | german_focus | -2 | 1 | 10 | GFX_goal_anti_comintern_pact | germany.txt |
+| GER_accept_british_naval_dominance | german_focus | 0 | 2 | 10 | GFX_focus_ger_accept_british_naval_dominance | germany.txt |
+| GER_ally_the_shade | german_focus | 0 | 1 | 10 | GFX_goal_generic_dangerous_deal | germany.txt |
+| GER_carte_blanche_for_alsace_and_french_colonies | german_focus | 0 | 2 | 10 | GFX_goal_generic_territory_or_war | germany.txt |
+| GER_bypass_maginot_in_the_south | german_focus | 0 | 2 | 4 | GFX_focus_attack_switzerland | germany.txt |
+| GER_reinstate_imperial_possessions | german_focus | 0 | 1 | 10 | GFX_goal_generic_position_armies | germany.txt |
+| GER_see_to_the_eastern_front | german_focus | 0 | 2 | 10 | GFX_goal_generic_position_armies | germany.txt |
+| GER_danzig_for_guarantees | german_focus | 2 | 2 | 10 | GFX_focus_POL_clamp_down_on_danzig | germany.txt |
+| GER_safeguard_the_baltic | german_focus | 0 | 1 | 10 | GFX_goal_generic_defence | germany.txt |
+| GER_support_the_finns | german_focus | 0 | 1 | 10 | GFX_focus_FIN_a_cry_for_help_2 | germany.txt |
 | GER_anti_comintern_pact_unaligned | german_focus | 1 | 1 | 10 | GFX_goal_anti_comintern_pact | germany.txt |
-| GER_anti_soviet_pact_unaligned | german_focus |  |  |  | GFX_goal_anti_comintern_pact | germany.txt |
-| GER_tackle_the_communist_threat | german_focus |  |  |  | GFX_goal_generic_war_with_comintern | germany.txt |
-| GER_the_iberian_problem | german_focus |  |  |  | GFX_focus_generic_attack_communist_spain | germany.txt |
-| GER_reestablish_free_elections | german_focus |  |  |  | GFX_goal_support_democracy | germany.txt |
-| GER_the_monarchy_compromise | german_focus |  |  |  | GFX_goal_tfv_strengthen_commonwealth_ties | germany.txt |
-| GER_the_great_red_menace | german_focus |  |  |  | GFX_focus_ger_great_red_menace | germany.txt |
-| GER_central_european_alliance | german_focus |  |  |  | GFX_goal_generic_national_unity | germany.txt |
-| GER_danubian_membership | german_focus |  |  |  | GFX_goal_generic_improve_relations | germany.txt |
-| GER_danubian_expansion | german_focus |  |  |  | GFX_goal_generic_improve_relations | germany.txt |
-| GER_no_balkan_communism | german_focus |  |  |  | GFX_goal_anti_comintern_pact | germany.txt |
-| GER_low_countries_membership | german_focus |  |  |  | GFX_focus_generic_influence_benelux | germany.txt |
-| GER_no_reds_in_western_europe | german_focus |  |  |  | GFX_goal_anti_comintern_pact | germany.txt |
-| GER_scandinavian_membership | german_focus |  |  |  | GFX_focus_generic_scandinavia_flags | germany.txt |
-| GER_baltic_membership | german_focus |  |  |  | GFX_focus_generic_baltic_entente | germany.txt |
-| GER_polish_membership | german_focus |  |  |  | GFX_focus_generic_polish_deal | germany.txt |
-| GER_finnish_membership | german_focus |  |  |  | GFX_focus_invite_finland | germany.txt |
-| GER_strike_at_the_source | german_focus |  |  |  | GFX_focus_ger_strike_at_the_source | germany.txt |
-| GER_reverse_the_brain_drain | german_focus |  |  |  | GFX_focus_research | germany.txt |
-| GER_shared_rd_programs | german_focus |  |  |  | GFX_goal_tfv_generic_tech_sharing | germany.txt |
-| GER_the_mannheim_project | german_focus |  |  |  | GFX_focus_wonderweapons | germany.txt |
-| GER_pool_technical_know_how | german_focus |  |  |  | GFX_goal_generic_production | germany.txt |
-| GRE_bring_home_the_exiled_republicans | greek_focus |  |  |  | GFX_focus_generic_support_the_left_right | greece.txt |
+| GER_anti_soviet_pact_unaligned | german_focus | 0 | 1 | 10 | GFX_goal_anti_comintern_pact | germany.txt |
+| GER_tackle_the_communist_threat | german_focus | 0 | 1 | 10 | GFX_goal_generic_war_with_comintern | germany.txt |
+| GER_the_iberian_problem | german_focus | 0 | 1 | 10 | GFX_focus_generic_attack_communist_spain | germany.txt |
+| GER_reestablish_free_elections | german_focus | -1 | 0 | 10 | GFX_goal_support_democracy | germany.txt |
+| GER_the_monarchy_compromise | german_focus | 2 | 1 | 10 | GFX_goal_tfv_strengthen_commonwealth_ties | germany.txt |
+| GER_the_great_red_menace | german_focus | 0 | 2 | 10 | GFX_focus_ger_great_red_menace | germany.txt |
+| GER_central_european_alliance | german_focus | 0 | 1 | 10 | GFX_goal_generic_national_unity | germany.txt |
+| GER_danubian_membership | german_focus | -2 | 1 | 10 | GFX_goal_generic_improve_relations | germany.txt |
+| GER_danubian_expansion | german_focus | 0 | 1 | 10 | GFX_goal_generic_improve_relations | germany.txt |
+| GER_no_balkan_communism | german_focus | 0 | 1 | 10 | GFX_goal_anti_comintern_pact | germany.txt |
+| GER_low_countries_membership | german_focus | 0 | 1 | 10 | GFX_focus_generic_influence_benelux | germany.txt |
+| GER_no_reds_in_western_europe | german_focus | 0 | 1 | 10 | GFX_goal_anti_comintern_pact | germany.txt |
+| GER_scandinavian_membership | german_focus | 3 | 1 | 10 | GFX_focus_generic_scandinavia_flags | germany.txt |
+| GER_baltic_membership | german_focus | -2 | 2 | 10 | GFX_focus_generic_baltic_entente | germany.txt |
+| GER_polish_membership | german_focus | 0 | 2 | 10 | GFX_focus_generic_polish_deal | germany.txt |
+| GER_finnish_membership | german_focus | 2 | 2 | 10 | GFX_focus_invite_finland | germany.txt |
+| GER_strike_at_the_source | german_focus | 0 | 1 | 10 | GFX_focus_ger_strike_at_the_source | germany.txt |
+| GER_reverse_the_brain_drain | german_focus | 2 | 1 | 10 | GFX_focus_research | germany.txt |
+| GER_shared_rd_programs | german_focus | 7 | 1 | 5 | GFX_goal_tfv_generic_tech_sharing | germany.txt |
+| GER_the_mannheim_project | german_focus | -1 | 1 | 10 | GFX_focus_wonderweapons | germany.txt |
+| GER_pool_technical_know_how | german_focus | 1 | 1 | 10 | GFX_goal_generic_production | germany.txt |
+| SSB_the_saadabad_pact | goe_shared_saadabad_branch_shared | 0 | 0 | 5 | GFX_focus_TUR_treaty_of_saadabad | goe_shared_saadabad_branch.txt |
+| SSB_military_cooperation | goe_shared_saadabad_branch_shared | -1 | 1 | 5 | GFX_focus_BRA_reach_out_to_military_dem | goe_shared_saadabad_branch.txt |
+| SSB_economic_cooperation | goe_shared_saadabad_branch_shared | 1 | 1 | 5 | GFX_focus_AFG_a_modern_economy | goe_shared_saadabad_branch.txt |
+| SSB_baghlan_sugar_factory_branches | goe_shared_saadabad_branch_shared | 2 | 1 | 5 | GFX_focus_AFG_sugar_factory | goe_shared_saadabad_branch.txt |
+| SSB_expand_road_and_rail_connections | goe_shared_saadabad_branch_shared | 0 | 1 | 10 | GFX_focus_generic_railroad | goe_shared_saadabad_branch.txt |
+| SSB_integration_of_our_infrastructure | goe_shared_saadabad_branch_shared | 0 | 1 | 5 | GFX_focus_GER_integrated_economies | goe_shared_saadabad_branch.txt |
+| SSB_berlin_baghdad_railway_into_iran_afghanistan | goe_shared_saadabad_branch_shared | 3 | 1 | 5 | GFX_focus_IRQ_train | goe_shared_saadabad_branch.txt |
+| SSB_joint_military_exercises | goe_shared_saadabad_branch_shared | 0 | 2 | 5 | GFX_focus_generic_advanced_military_studies | goe_shared_saadabad_branch.txt |
+| SSB_coordinate_military_production | goe_shared_saadabad_branch_shared | -3 | 1 | 10 | GFX_focus_PER_limit_foreign_influence | goe_shared_saadabad_branch.txt |
+| SSB_savak_protect_us | goe_shared_saadabad_branch_shared | 0 | 1 | 5 | GFX_focus_PER_form_savak | goe_shared_saadabad_branch.txt |
+| SSB_expand_turkeys_military_infrastructure | goe_shared_saadabad_branch_shared | -2 | 2 | 5 | GFX_focus_GRE_a_land_of_mountains | goe_shared_saadabad_branch.txt |
+| SSB_expand_afghanistans_military_infrastructure | goe_shared_saadabad_branch_shared | 0 | 2 | 5 | GFX_focus_PER_desert_training | goe_shared_saadabad_branch.txt |
+| SSB_expand_iraqs_military_infrastructure | goe_shared_saadabad_branch_shared | 2 | 2 | 5 | GFX_focus_generic_resource_extraction | goe_shared_saadabad_branch.txt |
+| SSB_expand_irans_military_infrastructure | goe_shared_saadabad_branch_shared | 4 | 2 | 5 | GFX_focus_generic_military_industry | goe_shared_saadabad_branch.txt |
+| SSB_expand_turkish_chromium_deposits | goe_shared_saadabad_branch_shared | -1 | 1 | 5 | GFX_focus_generic_chromium | goe_shared_saadabad_branch.txt |
+| SSB_expand_iranian_oil_fields | goe_shared_saadabad_branch_shared | 1 | 1 | 5 | GFX_focus_PER_increase_oil_sales | goe_shared_saadabad_branch.txt |
+| SSB_combined_arms | goe_shared_saadabad_branch_shared | -1 | 7 | 5 | GFX_goal_generic_alliance | goe_shared_saadabad_branch.txt |
+| SSB_saadabad_research_cooperation | goe_shared_saadabad_branch_shared | 1 | 7 | 5 | GFX_focus_research2 | goe_shared_saadabad_branch.txt |
+| GRE_bring_home_the_exiled_republicans | greek_focus | 5 | 0 | 10 | GFX_focus_generic_support_the_left_right | greece.txt |
 | GRE_compromise_with_the_monarchists | greek_focus | -1 | 1 | 5 | GFX_goal_tfv_strengthen_commonwealth_ties | greece.txt |
 | GRE_remembering_the_anatolian_catastrophe | greek_focus | -2 | 1 | 10 | GFX_goal_generic_attack_allies | greece.txt |
 | GRE_venerate_the_ancient_hellenes | greek_focus | 0 | 1 | 10 | GFX_goal_generic_national_unity | greece.txt |
-| GRE_restoring_our_home | greek_focus |  |  |  | GFX_goal_generic_positive_trade_relations | greece.txt |
+| GRE_restoring_our_home | greek_focus | -2 | 1 | 10 | GFX_goal_generic_positive_trade_relations | greece.txt |
 | GRE_the_birthplace_of_democracy | greek_focus | 2 | 1 | 10 | GFX_goal_support_democracy | greece.txt |
 | GRE_theban_warriors | greek_focus | -2 | 2 | 5 | GFX_goal_demand_sudetenland | greece.txt |
 | GRE_athenian_thinkers | greek_focus | 0 | 2 | 5 | GFX_focus_research | greece.txt |
 | GRE_macedonian_generals | greek_focus | 2 | 2 | 5 | GFX_goal_generic_position_armies | greece.txt |
 | GRE_the_anatolian_refugees | greek_focus | 0 | 1 | 10 | GFX_goal_generic_dangerous_deal | greece.txt |
-| GRE_resurrecting_the_megali_idea | greek_focus |  |  |  | GFX_focus_GRE_resurrecting_the_megali_idea | greece.txt |
-| GRE_the_gordian_knot | greek_focus |  |  |  | GFX_goal_generic_military_deal | greece.txt |
-| GRE_horror_and_fear | greek_focus |  |  |  | GFX_focus_generic_strike_at_democracy2 | greece.txt |
-| GRE_nenikikamen | greek_focus |  |  |  | GFX_focus_generic_strike_at_democracy1 | greece.txt |
+| GRE_resurrecting_the_megali_idea | greek_focus | 0 | 1 | 20 | GFX_focus_GRE_resurrecting_the_megali_idea | greece.txt |
+| GRE_the_gordian_knot | greek_focus | 1 | 1 | 10 | GFX_goal_generic_military_deal | greece.txt |
+| GRE_horror_and_fear | greek_focus | -1 | 1 | 10 | GFX_focus_generic_strike_at_democracy2 | greece.txt |
+| GRE_nenikikamen | greek_focus | 0 | 2 | 10 | GFX_focus_generic_strike_at_democracy1 | greece.txt |
 | GRE_the_die_is_cast | greek_focus | 0 | 1 | 10 | GFX_goal_demand_sudetenland | greece.txt |
-| GRE_reviving_the_double_headed_eagle | greek_focus |  |  |  | GFX_focus_GRE_reviving_the_double_headed_eagle | greece.txt |
+| GRE_reviving_the_double_headed_eagle | greek_focus | -1 | 1 | 10 | GFX_focus_GRE_reviving_the_double_headed_eagle | greece.txt |
 | GRE_phoideratoi | greek_focus | 0 | 1 | 10 | GFX_focus_generic_manpower | greece.txt |
 | GRE_byzantine_themata | greek_focus | 1 | 1 | 10 | GFX_focus_GRE_byzantine_themata | greece.txt |
 | GRE_request_communist_support | greek_focus | 1 | 1 | 5 | GFX_focus_generic_soviet_politics | greece.txt |
@@ -3735,25 +4255,25 @@ Source: `common/national_focus/*.txt`
 | GRE_the_greek_industrial_revolution | greek_focus | 0 | 1 | 10 | GFX_goal_generic_soviet_construction | greece.txt |
 | GRE_red_militias | greek_focus | 0 | 1 | 10 | GFX_focus_generic_military_mission | greece.txt |
 | GRE_prepare_for_the_great_anti_fascist_war | greek_focus | -1 | 1 | 10 | GFX_focus_generic_anti_fascist_diplomacy | greece.txt |
-| GRE_tow_the_stalinist_line | greek_focus |  |  |  | GFX_focus_fra_loyalty_stalin | greece.txt |
-| GRE_dominate_the_bulgarians | greek_focus |  |  |  | GFX_focus_generic_attack_bulgaria | greece.txt |
-| GRE_ally_tito | greek_focus |  |  |  | GFX_goal_generic_war_with_comintern | greece.txt |
-| GRE_secure_the_aegean | greek_focus |  |  |  | GFX_focus_generic_attack_turkey | greece.txt |
+| GRE_tow_the_stalinist_line | greek_focus | 1 | 1 | 10 | GFX_focus_fra_loyalty_stalin | greece.txt |
+| GRE_dominate_the_bulgarians | greek_focus | 0 | 1 | 10 | GFX_focus_generic_attack_bulgaria | greece.txt |
+| GRE_ally_tito | greek_focus | -2 | 1 | 10 | GFX_goal_generic_war_with_comintern | greece.txt |
+| GRE_secure_the_aegean | greek_focus | 0 | 1 | 10 | GFX_focus_generic_attack_turkey | greece.txt |
 | GRE_attack_the_fascists | greek_focus | 0 | 1 | 10 | GFX_focus_generic_combined_arms | greece.txt |
 | GRE_stage_an_incident_in_the_bosporus | greek_focus | 0 | 1 | 10 | GFX_focus_GRE_stage_an_incident_in_the_bosporus | greece.txt |
 | GRE_revolutionaries_of_the_south | greek_focus | 1 | 1 | 10 | GFX_goal_support_communism | greece.txt |
-| GRE_the_kings_government | greek_focus |  |  |  | GFX_focus_generic_home_defense | greece.txt |
+| GRE_the_kings_government | greek_focus | 17 | 0 | 5 | GFX_focus_generic_home_defense | greece.txt |
 | GRE_the_right_to_rule | greek_focus | -1 | 1 | 10 | GFX_focus_rom_royal_dictatorship | greece.txt |
 | GRE_metaxism_focus | greek_focus | 1 | 1 | 10 | GFX_focus_GRE_metaxism | greece.txt |
 | GRE_reorganize_the_royal_guard | greek_focus | -1 | 1 | 5 | GFX_focus_generic_little_entente | greece.txt |
-| GRE_petition_britain_for_aid | greek_focus |  |  |  | GFX_goal_generic_military_deal | greece.txt |
-| GRE_utilize_british_capital | greek_focus |  |  |  | GFX_focus_generic_british_trade | greece.txt |
+| GRE_petition_britain_for_aid | greek_focus | 0 | 2 | 5 | GFX_goal_generic_military_deal | greece.txt |
+| GRE_utilize_british_capital | greek_focus | -1 | 1 | 10 | GFX_focus_generic_british_trade | greece.txt |
 | GRE_the_hellenic_spirit | greek_focus | 0 | 1 | 10 | GFX_goal_generic_propaganda | greece.txt |
 | GRE_the_national_youth_organisation | greek_focus | 0 | 1 | 10 | GFX_goal_generic_secret_weapon | greece.txt |
 | GRE_crack_down_on_the_republicans | greek_focus | 1 | 1 | 10 | GFX_goal_generic_forceful_treaty | greece.txt |
 | GRE_use_the_military | greek_focus | -2 | 1 | 10 | GFX_focus_generic_military_mission | greece.txt |
 | GRE_recruit_the_fascists | greek_focus | 2 | 1 | 10 | GFX_goal_support_fascism | greece.txt |
-| GRE_realign_ourselves_with_the_central_powers | greek_focus |  |  |  | GFX_goal_tripartite_pact | greece.txt |
+| GRE_realign_ourselves_with_the_central_powers | greek_focus | -4 | 1 | 5 | GFX_goal_tripartite_pact | greece.txt |
 | GRE_our_traditional_allies_in_the_aegean | greek_focus | -2 | 1 | 5 | GFX_goal_generic_major_alliance | greece.txt |
 | GRE_prepare_against_the_mediterranean_threat | greek_focus | 0 | 1 | 10 | GFX_focus_attack_italy | greece.txt |
 | GRE_reclaiming_the_wayward_ally | greek_focus | 0 | 1 | 10 | GFX_goal_generic_major_war | greece.txt |
@@ -3761,17 +4281,17 @@ Source: `common/national_focus/*.txt`
 | GRE_securing_the_bulgarian_menace | greek_focus | 0 | 1 | 10 | GFX_focus_generic_attack_bulgaria | greece.txt |
 | GRE_expansion_of_athens_university | greek_focus | 0 | 1 | 10 | GFX_goal_generic_scientific_exchange | greece.txt |
 | GRE_protectors_of_the_mediterranean | greek_focus | 0 | 1 | 10 | GFX_focus_generic_coastal_fort | greece.txt |
-| GRE_an_orthodox_state | greek_focus |  |  |  | GFX_focus_GRE_an_orthodox_state | greece.txt |
-| GRE_third_hellenic_civilization | greek_focus |  |  |  | GFX_goal_generic_demand_territory | greece.txt |
-| GRE_defending_our_kingdom | greek_focus |  |  |  | GFX_goal_generic_defence | greece.txt |
-| GRE_reviving_the_spartan_warrior_spirit | greek_focus |  |  |  | GFX_focus_GRE_reviving_the_spartan_warrior_spirit | greece.txt |
+| GRE_an_orthodox_state | greek_focus | 0 | 2 | 10 | GFX_focus_GRE_an_orthodox_state | greece.txt |
+| GRE_third_hellenic_civilization | greek_focus | 0 | 1 | 10 | GFX_goal_generic_demand_territory | greece.txt |
+| GRE_defending_our_kingdom | greek_focus | 0 | 1 | 10 | GFX_goal_generic_defence | greece.txt |
+| GRE_reviving_the_spartan_warrior_spirit | greek_focus | 0 | 1 | 10 | GFX_focus_GRE_reviving_the_spartan_warrior_spirit | greece.txt |
 | GRE_following_in_the_footsteps_of_giants | greek_focus | 0 | 1 | 5 | GFX_focus_GRE_following_in_the_footsteps_of_giants | greece.txt |
-| GRE_the_modern_movement | greek_focus |  |  |  | GFX_focus_generic_little_entente | greece.txt |
+| GRE_the_modern_movement | greek_focus | 0 | 1 | 10 | GFX_focus_generic_little_entente | greece.txt |
 | GRE_hellenoturkism | greek_focus | 0 | 1 | 10 | GFX_focus_generic_befriend_turkey | greece.txt |
 | GRE_cement_greco_german_ties | greek_focus | 2 | 1 | 10 | GFX_goal_generic_neutrality_focus | greece.txt |
 | GRE_subjugating_the_bulgarians | greek_focus | 1 | 1 | 10 | GFX_focus_generic_attack_bulgaria | greece.txt |
-| GRE_greece_and_turkey_in_the_axis | greek_focus |  |  |  | GFX_goal_generic_dangerous_deal | greece.txt |
-| GRE_last_country_standing | greek_focus |  |  |  | GFX_goal_generic_attack_allies | greece.txt |
+| GRE_greece_and_turkey_in_the_axis | greek_focus | -1 | 1 | 10 | GFX_goal_generic_dangerous_deal | greece.txt |
+| GRE_last_country_standing | greek_focus | 1 | 1 | 10 | GFX_goal_generic_attack_allies | greece.txt |
 | GRE_moulding_the_new_world_order | greek_focus | 1 | 1 | 10 | GFX_goal_generic_territory_or_war | greece.txt |
 | GRE_reevaluating_the_drachma | greek_focus | 28 | 0 | 5 | GFX_focus_GRE_reevaluating_the_drachma | greece.txt |
 | GRE_lignite_liquefaction | greek_focus | -2 | 1 | 10 | GFX_goal_generic_oil_refinery | greece.txt |
@@ -3781,8 +4301,8 @@ Source: `common/national_focus/*.txt`
 | GRE_force_the_farmers_into_factories | greek_focus | 6 | 1 | 10 | GFX_focus_generic_industry_2 | greece.txt |
 | GRE_open_foreign_subsidized_factories | greek_focus | 0 | 1 | 10 | GFX_goal_generic_production2 | greece.txt |
 | GRE_paying_back_our_debts_in_bulk | greek_focus | 0 | 1 | 10 | GFX_goal_generic_intelligence_exchange | greece.txt |
-| GRE_connecting_our_prefectures | greek_focus |  |  |  | GFX_goal_generic_construct_infrastructure | greece.txt |
-| GRE_fiscal_responsibility | greek_focus |  |  |  | GFX_focus_generic_treaty | greece.txt |
+| GRE_connecting_our_prefectures | greek_focus | 0 | 1 | 10 | GFX_goal_generic_construct_infrastructure | greece.txt |
+| GRE_fiscal_responsibility | greek_focus | 0 | 1 | 10 | GFX_focus_generic_treaty | greece.txt |
 | GRE_sophistry_and_science | greek_focus | 0 | 1 | 10 | GFX_focus_research2 | greece.txt |
 | GRE_bedrock_of_balkan_financial_stability | greek_focus | 0 | 1 | 10 | GFX_focus_GRE_bedrock_of_balkan_stability | greece.txt |
 | GRE_exporting_more_luxury_commodoties | greek_focus | 2 | 1 | 5 | GFX_goal_generic_positive_trade_relations | greece.txt |
@@ -3797,13 +4317,13 @@ Source: `common/national_focus/*.txt`
 | GRE_crack_down_on_foreign_monopolies | greek_focus | 4 | 1 | 5 | GFX_goal_generic_political_pressure | greece.txt |
 | GRE_cooperate_with_foreign_monopolies | greek_focus | -4 | 1 | 5 | GFX_goal_tripartite_pact | greece.txt |
 | GRE_academy_of_athens | greek_focus | 4 | 1 | 10 | GFX_focus_research | greece.txt |
-| GRE_four_year_plan | greek_focus |  |  |  | GFX_focus_generic_license_production | greece.txt |
+| GRE_four_year_plan | greek_focus | 4 | 1 | 10 | GFX_focus_generic_license_production | greece.txt |
 | GRE_open_up_the_country | greek_focus | 0 | 1 | 10 | GFX_goal_generic_major_alliance | greece.txt |
-| GRE_bolster_the_schachtplan | greek_focus |  |  |  | GFX_focus_chi_mission_to_germany | greece.txt |
-| GRE_rapprochement_with_the_italians | greek_focus |  |  |  | GFX_focus_befriend_italy | greece.txt |
-| GRE_british_docking_rights | greek_focus |  |  |  | GFX_focus_chi_british_cooperation | greece.txt |
-| GRE_renegotiate_debt_with_france | greek_focus |  |  |  | GFX_focus_chi_reach_out_to_france | greece.txt |
-| GRE_appeal_to_the_soviet_union | greek_focus |  |  |  | GFX_focus_chi_mission_to_the_soviet_union | greece.txt |
+| GRE_bolster_the_schachtplan | greek_focus | 0 | 1 | 10 | GFX_focus_chi_mission_to_germany | greece.txt |
+| GRE_rapprochement_with_the_italians | greek_focus | 0 | 1 | 5 | GFX_focus_befriend_italy | greece.txt |
+| GRE_british_docking_rights | greek_focus | 2 | 1 | 5 | GFX_focus_chi_british_cooperation | greece.txt |
+| GRE_renegotiate_debt_with_france | greek_focus | 4 | 1 | 5 | GFX_focus_chi_reach_out_to_france | greece.txt |
+| GRE_appeal_to_the_soviet_union | greek_focus | 1 | 1 | 10 | GFX_focus_chi_mission_to_the_soviet_union | greece.txt |
 | GRE_hellenic_armed_forces | greek_focus | 46 | 0 | 10 | GFX_focus_GRE_hellenic_armed_forces | greece.txt |
 | GRE_the_hellenic_air_force | greek_focus | -7 | 1 | 5 | GFX_goal_generic_build_airforce | greece.txt |
 | GRE_the_hellenic_army | greek_focus | 0 | 1 | 5 | GFX_goal_generic_allies_build_infantry | greece.txt |
@@ -3827,9 +4347,44 @@ Source: `common/national_focus/*.txt`
 | GRE_escorts_for_our_bombers | greek_focus | 0 | 1 | 10 | GFX_goal_generic_air_bomber | greece.txt |
 | GRE_defending_our_seas | greek_focus | 0 | 1 | 10 | GFX_goal_generic_air_naval_bomber | greece.txt |
 | GRE_fund_the_hellenic_air_force_academy | greek_focus | 2 | 1 | 10 | GFX_goal_generic_air_doctrine | greece.txt |
-| GRE_the_double_headed_aquila | greek_focus |  |  |  | GFX_goal_generic_air_production | greece.txt |
-| GRE_modern_cataphracts | greek_focus |  |  |  | GFX_focus_generic_army_tanks2 | greece.txt |
-| GRE_thema_nautikon | greek_focus |  |  |  | GFX_goal_generic_amphibious_assault | greece.txt |
+| GRE_the_double_headed_aquila | greek_focus | 0 | 1 | 10 | GFX_goal_generic_air_production | greece.txt |
+| GRE_modern_cataphracts | greek_focus | 0 | 1 | 10 | GFX_focus_generic_army_tanks2 | greece.txt |
+| GRE_thema_nautikon | greek_focus | 0 | 1 | 10 | GFX_goal_generic_amphibious_assault | greece.txt |
+| HABSBURG_part_of_something_bigger | habsburg_joint_shared | 50 | 0 | 5 | GFX_focus_HABSBURG_part_of_something_bigger | habsburg_joint.txt |
+| HABSBURG_economic_cooperation_policy | habsburg_joint_shared | 0 | 1 | 10 | GFX_goal_generic_positive_trade_relations | habsburg_joint.txt |
+| HABSBURG_joint_consumer_goods_endeavors | habsburg_joint_shared | 1 | 1 | 5 | GFX_focus_usa_reestablish_the_gold_standard | habsburg_joint.txt |
+| HABSBURG_technology_sharing | habsburg_joint_shared | -1 | 1 | 10 | GFX_focus_research2 | habsburg_joint.txt |
+| HABSBURG_increase_scientific_cooperation | habsburg_joint_shared | 1 | 1 | 10 | GFX_goal_tfv_generic_tech_sharing | habsburg_joint.txt |
+| HABSBURG_simplify_economic_lawmaking | habsburg_joint_shared | -1 | 1 | 10 | GFX_focus_generic_self_management | habsburg_joint.txt |
+| HABSBURG_securing_the_consumer_rights | habsburg_joint_shared | 1 | 1 | 10 | GFX_goal_generic_consumer_goods | habsburg_joint.txt |
+| HABSBURG_discounted_licenses | habsburg_joint_shared | -1 | 1 | 10 | GFX_focus_generic_treaty | habsburg_joint.txt |
+| HABSBURG_reform_gemeinsame_armee | habsburg_joint_shared | -7 | 1 | 10 | GFX_focus_HABSBURG_reform_gemeinsame_armee | habsburg_joint.txt |
+| HABSBURG_motorizing_the_armies | habsburg_joint_shared | 3 | 1 | 10 | GFX_goal_generic_army_motorized | habsburg_joint.txt |
+| HABSBURG_mechanized_initiative | habsburg_joint_shared | -1 | 1 | 10 | GFX_focus_generic_mechanized | habsburg_joint.txt |
+| HABSBURG_armor_initiative | habsburg_joint_shared | 1 | 1 | 10 | GFX_goal_generic_army_tanks | habsburg_joint.txt |
+| HABSBURG_effectivizing_the_motorized_troops | habsburg_joint_shared | -1 | 1 | 10 | GFX_focus_generic_stockpile_fuel | habsburg_joint.txt |
+| HABSBURG_the_strength_of_the_common_man | habsburg_joint_shared | 0 | 1 | 10 | GFX_focus_generic_manpower | habsburg_joint.txt |
+| HABSBURG_joint_training_initiative | habsburg_joint_shared | 0 | 1 | 10 | GFX_focus_generic_improve_the_administration | habsburg_joint.txt |
+| HABSBURG_organizational_exercises | habsburg_joint_shared | -1 | 1 | 10 | GFX_focus_SOV_mobilization_plan | habsburg_joint.txt |
+| HABSBURG_meeting_the_logistical_challenge | habsburg_joint_shared | 1 | 1 | 10 | GFX_focus_generic_supply_line | habsburg_joint.txt |
+| HABSBURG_bring_back_royal_and_imperial_hussars | habsburg_joint_shared | -3 | 1 | 10 | GFX_focus_HABSBURG_bring_back_royal_and_imperial_hussars | habsburg_joint.txt |
+| HABSBURG_defensive_hussars | habsburg_joint_shared | -1 | 1 | 10 | GFX_focus_HABSBURG_defensive_hussars | habsburg_joint.txt |
+| HABSBURG_offensive_hussars | habsburg_joint_shared | 1 | 1 | 10 | GFX_focus_HABSBURG_offensive_hussars | habsburg_joint.txt |
+| HABSBURG_the_modern_hussar | habsburg_joint_shared | -1 | 1 | 10 | GFX_focus_HABSBURG_the_modern_hussar | habsburg_joint.txt |
+| HABSBURG_for_the_glory_of_the_empire | habsburg_joint_shared | 3 | 1 | 10 | GFX_focus_HABSBURG_for_the_glory_of_the_empire | habsburg_joint.txt |
+| HABSBURG_joint_industry_spirit | habsburg_joint_shared | 7 | 1 | 10 | GFX_focus_generic_industrialists | habsburg_joint.txt |
+| HABSBURG_supplying_the_federation | habsburg_joint_shared | 0 | 1 | 10 | GFX_goal_generic_construct_infrastructure | habsburg_joint.txt |
+| HABSBURG_optimizing_the_land_usage | habsburg_joint_shared | -3 | 1 | 10 | GFX_goal_generic_construct_civilian | habsburg_joint.txt |
+| HABSBURG_joint_ventures_in_resource_extraction | habsburg_joint_shared | 3 | 1 | 10 | GFX_focus_generic_mining_industry | habsburg_joint.txt |
+| HABSBURG_industrializing_our_capitals | habsburg_joint_shared | -3 | 1 | 10 | GFX_focus_generic_industry_2 | habsburg_joint.txt |
+| HABSBURG_specializing_in_civilian_logistics | habsburg_joint_shared | -1 | 1 | 10 | GFX_focus_generic_railroad | habsburg_joint.txt |
+| HABSBURG_specializing_in_the_arms_industry | habsburg_joint_shared | -3 | 1 | 10 | GFX_goal_generic_construct_mil_factory | habsburg_joint.txt |
+| HABSBURG_industrial_effectivization | habsburg_joint_shared | 1 | 1 | 10 | GFX_focus_generic_industry_3 | habsburg_joint.txt |
+| HABSBURG_reinforced_industry | habsburg_joint_shared | 3 | 1 | 10 | GFX_goal_generic_fortify_city | habsburg_joint.txt |
+| HABSBURG_improved_production_methods | habsburg_joint_shared | -1 | 1 | 10 | GFX_focus_generic_modernize_industry | habsburg_joint.txt |
+| HABSBURG_call_the_imperial_diet | habsburg_joint_shared | -1 | 1 | 5 | GFX_focus_ETH_re | habsburg_joint.txt |
+| HABSBURG_united_in_the_face_of_danger | habsburg_joint_shared | 1 | 1 | 5 | GFX_goal_generic_defence | habsburg_joint.txt |
+| HABSBURG_an_empire_not_just_in_name | habsburg_joint_shared | 1 | 1 | 10 | GFX_focus_HABSBURG_an_empire_not_just_in_name | habsburg_joint.txt |
 | HOA_develop_capitalstate | horn_of_africa_tree | 3 | 0 | 10 | GFX_focus_generic_industry_1 | horn_of_africa.txt |
 | HOA_the_state_bank_of_name | horn_of_africa_tree | -2 | 1 | 10 | GFX_focus_mex_privatisation | horn_of_africa.txt |
 | HOA_pave_the_roads | horn_of_africa_tree | 1 | 1 | 10 | GFX_goal_reichsautobahn | horn_of_africa.txt |
@@ -3916,7 +4471,7 @@ Source: `common/national_focus/*.txt`
 | HUN_renew_the_rome_protocols | hungarian_focus | 2 | 1 | 10 | GFX_goal_generic_positive_trade_relations | hungary.txt |
 | HUN_protect_austria | hungarian_focus | 2 | 2 | 5 | GFX_focus_AUS_for_a_better_future | hungary.txt |
 | HUN_alliance_with_italy | hungarian_focus | 2 | 3 | 5 | GFX_focus_befriend_italy | hungary.txt |
-| HUN_trade_deal_with_germany | hungarian_focus | 0 | 1 |  | GFX_focus_generic_german_trade | hungary.txt |
+| HUN_trade_deal_with_germany | hungarian_focus | 0 | 1 | 10 | GFX_focus_generic_german_trade | hungary.txt |
 | HUN_joint_aluminum_mining_company | hungarian_focus | 0 | 2 | 10 | GFX_goal_generic_construction2 | hungary.txt |
 | HUN_join_axis | hungarian_focus | 0 | 3 | 5 | GFX_focus_chi_mission_to_germany | hungary.txt |
 | HUN_reaffirm_territorial_claims | hungarian_focus | -2 | 3 | 10 | GFX_goal_generic_forceful_treaty | hungary.txt |
@@ -4076,7 +4631,7 @@ Source: `common/national_focus/*.txt`
 | wuw_HUN_empower_the_greenshirts | wuw_hungarian_focus | 1 | 1 | 10 | GFX_focus_generic_fascist_troops | hungary_wuw.txt |
 | wuw_HUN_the_march_on_budapest | wuw_hungarian_focus | -1 | 1 | 5 | GFX_focus_ITA_generic_fascist_workers | hungary_wuw.txt |
 | wuw_HUN_government_of_national_unity | wuw_hungarian_focus | 0 | 1 | 5 | GFX_focus_HUN_government_of_national_unity | hungary_wuw.txt |
-| wuw_HUN_the_turul_association | wuw_hungarian_focus | -3 | 1 |  | GFX_focus_HUN_the_turul_association | hungary_wuw.txt |
+| wuw_HUN_the_turul_association | wuw_hungarian_focus | -3 | 1 | 5 | GFX_focus_HUN_the_turul_association | hungary_wuw.txt |
 | wuw_HUN_carrying_on_arpads_legacy | wuw_hungarian_focus | 0 | 2 | 10 | GFX_focus_HUN_carrying_on_arpads_legacy | hungary_wuw.txt |
 | wuw_HUN_institute_corporatism | wuw_hungarian_focus | 0 | 1 | 10 | GFX_focus_ICE_state_corporatism | hungary_wuw.txt |
 | wuw_HUN_a_roman_catholic_state | wuw_hungarian_focus | 3 | 1 | 10 | GFX_focus_por_concordat | hungary_wuw.txt |
@@ -4085,13 +4640,13 @@ Source: `common/national_focus/*.txt`
 | wuw_HUN_sway_the_count | wuw_hungarian_focus | 1 | 1 | 5 | GFX_goal_generic_improve_relations | hungary_wuw.txt |
 | wuw_HUN_wherever_the_cross_points | wuw_hungarian_focus | 1 | 1 | 10 | GFX_focus_HUN_wherever_the_cross_points | hungary_wuw.txt |
 | wuw_HUN_the_war_on_atheism | wuw_hungarian_focus | 0 | 2 | 10 | GFX_focus_mex_restore_the_army_of_christ | hungary_wuw.txt |
-| wuw_HUN_promote_hungarianism | wuw_hungarian_focus | 2 | 1 |  | GFX_focus_generic_support_the_left_right | hungary_wuw.txt |
+| wuw_HUN_promote_hungarianism | wuw_hungarian_focus | 2 | 1 | 10 | GFX_focus_generic_support_the_left_right | hungary_wuw.txt |
 | wuw_HUN_strengthen_the_turani_vadaszok | wuw_hungarian_focus | 1 | 1 | 10 | GFX_focus_generic_limited_social_mobilization | hungary_wuw.txt |
 | wuw_HUN_our_ancestral_lands | wuw_hungarian_focus | 1 | 1 | 10 | GFX_focus_usa_focus_on_asia | hungary_wuw.txt |
 | wuw_HUN_reaffirm_territorial_claims | wuw_hungarian_focus | 0 | 2 | 10 | GFX_goal_generic_territory_or_war | hungary_wuw.txt |
 | wuw_HUN_demand_croatian_reintigration | wuw_hungarian_focus | 3 | 4 | 10 | GFX_focus_YUG_devolved_croatia | hungary_wuw.txt |
 | wuw_HUN_demand_southern_slovakia | wuw_hungarian_focus | -2 | 1 | 5 | GFX_goal_generic_occupy_states_ongoing_war | hungary_wuw.txt |
-| wuw_HUN_demand_carpathian_ruthenia | wuw_hungarian_focus | 0 | 1 |  | GFX_focus_HUN_demand_carpathian_ruthenia | hungary_wuw.txt |
+| wuw_HUN_demand_carpathian_ruthenia | wuw_hungarian_focus | 0 | 1 | 5 | GFX_focus_HUN_demand_carpathian_ruthenia | hungary_wuw.txt |
 | wuw_HUN_demand_transylvania | wuw_hungarian_focus | 2 | 1 | 5 | GFX_focus_YUG_autonomous_transylvania | hungary_wuw.txt |
 | wuw_HUN_demand_the_vojvodina | wuw_hungarian_focus | 1 | 1 | 5 | GFX_focus_YUG_dissolve_serbia | hungary_wuw.txt |
 | wuw_HUN_demand_burgenland | wuw_hungarian_focus | -1 | 1 | 10 | GFX_focus_generic_attack_austria | hungary_wuw.txt |
@@ -4099,7 +4654,7 @@ Source: `common/national_focus/*.txt`
 | wuw_HUN_demand_the_return_of_slovakia | wuw_hungarian_focus | 1 | 1 | 10 | GFX_focus_generic_attack_slovakia | hungary_wuw.txt |
 | wuw_HUN_proclaim_greater_hungary | wuw_hungarian_focus | 0 | 2 | 10 | GFX_focus_HUN_proclaim_greater_hungary | hungary_wuw.txt |
 | wuw_HUN_seek_german_contracts | wuw_hungarian_focus | -2 | 1 | 10 | GFX_focus_generic_german_trade | hungary_wuw.txt |
-| wuw_HUN_license_fiat_tankettes | wuw_hungarian_focus | -4 | 1 |  | GFX_focus_generic_fiat | hungary_wuw.txt |
+| wuw_HUN_license_fiat_tankettes | wuw_hungarian_focus | -4 | 1 | 5 | GFX_focus_generic_fiat | hungary_wuw.txt |
 | wuw_HUN_renew_the_rome_protocols | wuw_hungarian_focus | 0 | 1 | 5 | GFX_focus_befriend_italy | hungary_wuw.txt |
 | wuw_HUN_invite_german_investors | wuw_hungarian_focus | 0 | 1 | 10 | GFX_focus_chi_mission_to_germany | hungary_wuw.txt |
 | wuw_HUN_joint_aluminum_mining_company | wuw_hungarian_focus | 0 | 1 | 5 | GFX_goal_generic_construction2 | hungary_wuw.txt |
@@ -4152,8 +4707,8 @@ Source: `common/national_focus/*.txt`
 | HUN_hero_of_the_revolution | wuw_hungarian_focus | -1 | 1 | 5 | GFX_focus_GER_the_peoples_victory | hungary_wuw.txt |
 | HUN_balkan_ambitions | wuw_hungarian_focus | 1 | 1 | 10 | GFX_focus_BUL_free_balkan_states | hungary_wuw.txt |
 | wuw_HUN_denounce_marxism_leninism | wuw_hungarian_focus | 0 | 2 | 10 | GFX_goal_generic_war_with_comintern | hungary_wuw.txt |
-| wuw_HUN_avoid_interventionalist_destablilization | wuw_hungarian_focus | 45 | 0 |  | GFX_goal_generic_consumer_goods | hungary_wuw.txt |
-| wuw_HUN_economic_intervention | wuw_hungarian_focus | 47 | 0 |  | GFX_goal_generic_demand_territory | hungary_wuw.txt |
+| wuw_HUN_avoid_interventionalist_destablilization | wuw_hungarian_focus | 45 | 0 | 10 | GFX_goal_generic_consumer_goods | hungary_wuw.txt |
+| wuw_HUN_economic_intervention | wuw_hungarian_focus | 47 | 0 | 10 | GFX_goal_generic_demand_territory | hungary_wuw.txt |
 | wuw_HUN_secret_rearmament | wuw_hungarian_focus | 55 | 0 | 10 | GFX_focus_secret_rearmament | hungary_wuw.txt |
 | wuw_HUN_forcefully_revitalize_the_industries | wuw_hungarian_focus | 1 | 1 | 5 | GFX_goal_generic_forceful_treaty | hungary_wuw.txt |
 | wuw_HUN_reintigrate_the_imperial_railroads | wuw_hungarian_focus | -1 | 1 | 10 | GFX_goal_generic_construct_infrastructure | hungary_wuw.txt |
@@ -4262,7 +4817,7 @@ Source: `common/national_focus/*.txt`
 | ICE_political_unity | iceland_tree | 0 | 1 | 10 | GFX_goal_generic_national_unity | iceland.txt |
 | ICE_anglo_icelandic_relations | iceland_tree | 0 | 1 | 10 | GFX_focus_chi_british_cooperation | iceland.txt |
 | ICE_american_protection | iceland_tree | 1 | 1 | 10 | GFX_focus_generic_befriend_usa | iceland.txt |
-| ICE_fighting_as_equals | iceland_tree | -1 | 1 |  | GFX_focus_ICE_fighting_as_equals | iceland.txt |
+| ICE_fighting_as_equals | iceland_tree | -1 | 1 | 10 | GFX_focus_ICE_fighting_as_equals | iceland.txt |
 | ICE_expanding_the_university_of_reykjavik | iceland_tree | 2 | 1 | 10 | GFX_focus_ICE_expanding_the_university_of_reykjavik | iceland.txt |
 | ICE_trade_relations | iceland_tree | 3 | 1 | 10 | GFX_goal_generic_positive_trade_relations | iceland.txt |
 | ICE_keflavik_airbase | iceland_tree | 0 | 1 | 10 | GFX_focus_generic_multi_role_aircraft | iceland.txt |
@@ -4483,7 +5038,7 @@ Source: `common/national_focus/*.txt`
 | RAJ_night_shifts | indian_focus_goe | 2 | 0 | 10 | GFX_goal_generic_production2 | india_goe.txt |
 | RAJ_provincial_autonomy | indian_focus_goe | 29 | 0 | 5 | GFX_focus_RAJ_provincial_autonomy | india_goe.txt |
 | RAJ_princely_states_policy | indian_focus_goe | -2 | 1 | 5 | GFX_focus_rom_handle_king | india_goe.txt |
-| RAJ_trade_port | indian_focus_goe | 19 | 1 |  | GFX_focus_POL_develop_polish_shipbuilding | india_goe.txt |
+| RAJ_trade_port | indian_focus_goe | 19 | 1 | 5 | GFX_focus_POL_develop_polish_shipbuilding | india_goe.txt |
 | RAJ_fortify_aden | indian_focus_goe | 0 | 1 | 5 | GFX_focus_generic_coastal_fort | india_goe.txt |
 | RAJ_purna_swaraj | indian_focus_goe | 0 | 1 | 5 | GFX_focus_RAJ_pruna_swaraj | india_goe.txt |
 | RAJ_mahatma | indian_focus_goe | -6 | 8 | 10 | GFX_focus_RAJ_mahatma | india_goe.txt |
@@ -4567,7 +5122,7 @@ Source: `common/national_focus/*.txt`
 | RAJ_go_into_hiding | indian_focus_goe | -3 | 1 | 5 | GFX_focus_RAJ_go_into_hiding | india_goe.txt |
 | RAJ_seek_domestic_allies | indian_focus_goe | 0 | 1 | 5 | GFX_focus_generic_national_security | india_goe.txt |
 | RAJ_give_me_blood_and_i_will_grant_you_freedom | indian_focus_goe | 1 | 1 | 10 | GFX_focus_RAJ_give_me_blood_and_i_will_grant_you_freedom | india_goe.txt |
-| RAJ_rani_of_jhansi_regiment | indian_focus_goe | 13 | 1 |  | GFX_focus_generic_women_in_military | india_goe.txt |
+| RAJ_rani_of_jhansi_regiment | indian_focus_goe | 13 | 1 | 10 | GFX_focus_generic_women_in_military | india_goe.txt |
 | RAJ_azad_hind_dlc | indian_focus_goe | 6 | 1 | 5 | GFX_goal_generic_major_war | india_goe.txt |
 | RAJ_seek_japanese_support | indian_focus_goe | 3 | 1 | 5 | GFX_focus_AST_war_japan | india_goe.txt |
 | RAJ_the_enemy_of_my_enemy | indian_focus_goe | 1 | 1 | 10 | GFX_focus_jap_cast_the_die | india_goe.txt |
@@ -4623,7 +5178,7 @@ Source: `common/national_focus/*.txt`
 | RAJ_hedgemony_of_the_subcontinent | indian_focus_goe | 0 | 1 | 10 | GFX_focus_spa_the_spanish_miracle | india_goe.txt |
 | RAJ_a_secular_state | indian_focus_goe | 0 | 1 | 5 | GFX_focus_generic_court | india_goe.txt |
 | RAJ_indian_independence_act | indian_focus_goe | 1 | 1 | 10 | GFX_focus_generic_self_management | india_goe.txt |
-| RAJ_tryst_with_destiny | indian_focus_goe |  |  |  |  | india_goe.txt |
+| RAJ_tryst_with_destiny | indian_focus_goe | 2 | 1 | 10 |  | india_goe.txt |
 | RAJ_i_am_death | indian_focus_goe | -10 | 1 | 10 | GFX_focus_RAJ_i_am_death | india_goe.txt |
 | RAJ_sideline_the_conflict | indian_focus_goe | -2 | 1 | 5 | GFX_goal_generic_neutrality_focus | india_goe.txt |
 | RAJ_kingmaker | indian_focus_goe | -1 | 1 | 5 | GFX_focus_RAJ_kingmaker | india_goe.txt |
@@ -4648,17 +5203,166 @@ Source: `common/national_focus/*.txt`
 | RAJ_education_efforts | indian_focus_goe | 0 | 1 | 10 | GFX_focus_research | india_goe.txt |
 | RAJ_to_shake_the_world | indian_focus_goe | 0 | 2 | 10 | GFX_focus_RAJ_to_shake_the_world | india_goe.txt |
 | RAJ_his_majestys_loyal_government | indian_focus_goe | 44 | 0 | 5 | GFX_focus_RAJ_his_majestys_loyal_government | india_goe.txt |
+| RAJ_the_government_of_india_act | indian_focus_goe | -4 | 1 | 5 | GFX_focus_RAJ_all_india_forward_bloc | india_goe.txt |
+| RAJ_work_with_local_leaders | indian_focus_goe | 0 | 1 | 5 | GFX_goal_tripartite_pact | india_goe.txt |
+| RAJ_concessions_to_the_industrialists | indian_focus_goe | -1 | 1 | 5 | GFX_focus_generic_industrialists | india_goe.txt |
+| RAJ_empower_provincial_authorities | indian_focus_goe | 1 | 1 | 5 | GFX_focus_generic_self_management | india_goe.txt |
+| RAJ_confer_with_the_congress | indian_focus_goe | 1 | 1 | 5 | GFX_focus_RAJ_a_congress_resurgent | india_goe.txt |
+| RAJ_favor_the_muslim_league | indian_focus_goe | -1 | 1 | 10 | GFX_focus_RAJ_seek_allies_with_the_muslim_league | india_goe.txt |
+| RAJ_the_indian_parliament | indian_focus_goe | 0 | 1 | 10 | GFX_focus_generic_improve_the_administration | india_goe.txt |
+| RAJ_court_the_princes | indian_focus_goe | 1 | 1 | 5 | GFX_focus_RAJ_war_taxes | india_goe.txt |
+| RAJ_the_integrity_of_india_act | indian_focus_goe | 2 | 1 | 10 | GFX_focus_usa_voter_registration_act | india_goe.txt |
+| RAJ_princely_state_donations_GOE | indian_focus_goe | 1 | 2 | 5 | GFX_goal_generic_improve_relations | india_goe.txt |
+| RAJ_the_jewel_becomes_the_crown | indian_focus_goe | -1 | 1 | 10 | GFX_focus_RAJ_the_jewel_becomes_the_crown | india_goe.txt |
+| RAJ_the_punjab_accord | indian_focus_goe | 1 | 1 | 10 | GFX_focus_RAJ_sikh_religious_guarantees | india_goe.txt |
+| RAJ_the_dominion_of_india | indian_focus_goe | 0 | 1 | 10 | GFX_focus_RAJ_the_dominion_of_india | india_goe.txt |
+| RAJ_curtail_the_zamindars | indian_focus_goe | 5 | 1 | 5 | GFX_goal_generic_political_pressure | india_goe.txt |
+| RAJ_raise_import_duties | indian_focus_goe | -1 | 1 | 5 | GFX_focus_RAJ_issue_bonds_on_the_stock_market | india_goe.txt |
+| RAJ_imperial_industry_initiative | indian_focus_goe | -1 | 1 | 10 | GFX_goal_generic_construct_mil_factory | india_goe.txt |
+| RAJ_rural_development_plan | indian_focus_goe | 1 | 1 | 5 | GFX_focus_generic_energy | india_goe.txt |
+| RAJ_the_great_recovery | indian_focus_goe | 1 | 1 | 10 | GFX_focus_generic_industry_3 | india_goe.txt |
+| RAJ_reform_the_agricultural_sector | indian_focus_goe | 1 | 1 | 5 | GFX_focus_generic_farmland | india_goe.txt |
+| RAJ_expand_the_zamindari_system | indian_focus_goe | 4 | 0 | 5 | GFX_goal_generic_dangerous_deal | india_goe.txt |
+| RAJ_crown_commodities | indian_focus_goe | -1 | 1 | 10 | GFX_focus_RAJ_tea_exports | india_goe.txt |
+| RAJ_rural_mechanization_program | indian_focus_goe | 1 | 1 | 5 | GFX_focus_generic_supply_line | india_goe.txt |
+| RAJ_the_riches_of_the_raj | indian_focus_goe | 1 | 1 | 10 | GFX_focus_generic_mining_industry | india_goe.txt |
+| RAJ_strengthen_ties_with_british_investors_GOE | indian_focus_goe | 1 | 1 | 5 | GFX_goal_generic_positive_trade_relations | india_goe.txt |
+| RAJ_imperial_rail_renewal_act | indian_focus_goe | 1 | 1 | 10 | GFX_goal_generic_construct_infrastructure | india_goe.txt |
+| RAJ_exploit_the_frontier | indian_focus_goe | -1 | 1 | 5 | GFX_goal_generic_construction2 | india_goe.txt |
+| RAJ_overlords_railway_investment | indian_focus_goe | 1 | 1 | 5 | GFX_focus_generic_railroad | india_goe.txt |
+| RAJ_territorial_development_scheme | indian_focus_goe | 1 | 1 | 5 | GFX_goal_generic_construct_civilian | india_goe.txt |
+| RAJ_the_empires_workshop | indian_focus_goe | -1 | 1 | 10 | GFX_goal_generic_construct_civ_factory | india_goe.txt |
+| RAJ_institute_of_fundamental_research_GOE | indian_focus_goe | 1 | 1 | 10 | GFX_focus_research | india_goe.txt |
+| RAJ_keep_calm_and_carry_on | indian_focus_goe | 0 | 1 | 10 | GFX_goal_generic_secret_weapon | india_goe.txt |
+| RAJ_indian_gentleman_officers | indian_focus_goe | 14 | 1 | 5 | GFX_focus_RAJ_indian_gentlemen_offcers | india_goe.txt |
+| RAJ_the_aden_protectorate | indian_focus_goe | -2 | 2 | 10 | GFX_focus_generic_coastal_fort | india_goe.txt |
+| RAJ_linlithgows_declaration_of_war | indian_focus_goe | -1 | 1 | 5 | GFX_goal_generic_propaganda | india_goe.txt |
+| RAJ_consult_with_congress_leaders | indian_focus_goe | 1 | 1 | 5 | GFX_focus_generic_treaty | india_goe.txt |
+| RAJ_preemptive_invasion_of_iran | indian_focus_goe | 2 | 2 | 10 | GFX_focus_generic_attack_iran | india_goe.txt |
+| RAJ_mobilization_of_the_indian_army | indian_focus_goe | 1 | 1 | 10 | GFX_focus_RAJ_indianisation_of_army | india_goe.txt |
+| RAJ_support_naval_invasions | indian_focus_goe | -1 | 1 | 10 | GFX_focus_generic_naval_invasion | india_goe.txt |
+| RAJ_assume_eastern_naval_responsibilities | indian_focus_goe | 1 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | india_goe.txt |
+| RAJ_south_east_asia_command | indian_focus_goe | 0 | 2 | 10 | GFX_goal_generic_small_arms | india_goe.txt |
+| RAJ_desert_training | indian_focus_goe | -4 | 1 | 5 | GFX_focus_PER_desert_training | india_goe.txt |
+| RAJ_fortify_el_alamein | indian_focus_goe | 0 | 1 | 10 | GFX_goal_generic_defence | india_goe.txt |
+| RAJ_jungle_training_GOE | indian_focus_goe | -1 | 1 | 5 | GFX_focus_generic_jungle_training | india_goe.txt |
+| RAJ_defense_of_malaya | indian_focus_goe | -1 | 1 | 10 | GFX_focus_FIN_coastal_defense | india_goe.txt |
+| RAJ_hill_training | indian_focus_goe | 1 | 1 | 5 | GFX_focus_generic_hill_training | india_goe.txt |
+| RAJ_defense_of_burma | indian_focus_goe | 1 | 1 | 10 | GFX_goal_generic_construct_military | india_goe.txt |
+| RAJ_holding_the_gates_of_india | indian_focus_goe | 0 | 1 | 10 | GFX_focus_SWE_hedgehog_defense | india_goe.txt |
+| RAJ_free_abyssinia | indian_focus_goe | 1 | 1 | 10 | GFX_focus_generic_naval_invasion_tank | india_goe.txt |
+| RAJ_urban_training | indian_focus_goe | 4 | 1 | 5 | GFX_focus_generic_urban_training | india_goe.txt |
+| RAJ_the_defense_of_hong_kong | indian_focus_goe | 0 | 1 | 10 | GFX_goal_generic_fortify_city | india_goe.txt |
+| RAJ_keep_british_generals | indian_focus_goe | -4 | 0 | 5 | GFX_focus_RAJ_british_investors | india_goe.txt |
+| RAJ_defense_of_india_act | indian_focus_goe | -2 | 1 | 10 | GFX_goal_panzerwaffe | india_goe.txt |
+| RAJ_learn_from_the_crown | indian_focus_goe | 0 | 1 | 5 | GFX_focus_chi_british_cooperation | india_goe.txt |
+| RAJ_join_the_shadow_scheme | indian_focus_goe | -2 | 1 | 10 | GFX_goal_generic_construct_mil_factory | india_goe.txt |
+| RAJ_colonial_cadet_exchange | indian_focus_goe | 0 | 1 | 5 | GFX_focus_generic_fascist_troops | india_goe.txt |
+| RAJ_learn_from_the_secret_intelligence_service | indian_focus_goe | -2 | 1 | 5 | GFX_focus_generic_secret_service_agency | india_goe.txt |
+| RAJ_purchase_british_supply_equipment | indian_focus_goe | 0 | 1 | 10 | GFX_focus_generic_british_trade | india_goe.txt |
+| RAJ_forming_an_indian_doctrine | indian_focus_goe | 0 | 1 | 5 | GFX_focus_RAJ_indian_gurkhas | india_goe.txt |
+| RAJ_model_after_germany | indian_focus_goe | -2 | 1 | 10 | GFX_focus_chi_mission_to_germany | india_goe.txt |
+| RAJ_model_after_usa | indian_focus_goe | 0 | 1 | 10 | GFX_focus_generic_befriend_usa | india_goe.txt |
+| RAJ_model_after_soviet | indian_focus_goe | 2 | 1 | 10 | GFX_focus_chi_mission_to_the_soviet_union | india_goe.txt |
+| RAJ_automating_the_army | indian_focus_goe | -1 | 2 | 10 | GFX_goal_generic_army_tanks | india_goe.txt |
+| RAJ_for_the_people_by_the_people | indian_focus_goe | 1 | 2 | 10 | GFX_focus_ETH_freedom_at_gunpoint | india_goe.txt |
+| RAJ_east_india_railways_dlc | indian_focus_goe | 7 | 0 | 5 | GFX_goal_generic_construct_infrastructure | india_goe.txt |
+| RAJ_the_calcutta_line | indian_focus_goe | 0 | 1 | 10 | GFX_goal_fortify_the_westwall | india_goe.txt |
+| RAJ_bombay_baroda_and_central_india_railway | indian_focus_goe | 4 | 0 | 5 | GFX_goal_generic_construct_infrastructure | india_goe.txt |
+| RAJ_great_indian_peninsula_railway_dlc | indian_focus_goe | 2 | 1 | 5 | GFX_goal_generic_construct_infrastructure | india_goe.txt |
+| RAJ_south_indian_railway_company | indian_focus_goe | -2 | 1 | 5 | GFX_goal_generic_construct_infrastructure | india_goe.txt |
+| RAJ_supply_center_fortifications | indian_focus_goe | 0 | 1 | 5 | GFX_goal_generic_fortify_city | india_goe.txt |
+| RAJ_north_western_state_railway | indian_focus_goe | 2 | 1 | 5 | GFX_goal_generic_construct_infrastructure | india_goe.txt |
+| RAJ_prioritize_army_cargo | indian_focus_goe | -2 | 1 | 5 | GFX_focus_GER_kriegslokomotive | india_goe.txt |
+| RAJ_prioritize_civilian_cargo | indian_focus_goe | 4 | 0 | 5 | GFX_focus_generic_railroad | india_goe.txt |
+| RAJ_ammunition_factory_khadki | indian_focus_goe | 6 | 0 | 5 | GFX_goal_generic_construct_mil_factory | india_goe.txt |
+| RAJ_royal_indian_artillery_dlc | indian_focus_goe | 8 | 0 | 5 | GFX_focus_SWE_let_fly_all_guns | india_goe.txt |
+| RAJ_military_pensions | indian_focus_goe | 8 | 0 | 5 | GFX_focus_SWE_defense_act | india_goe.txt |
+| RAJ_local_recruitment_offices | indian_focus_goe | 6 | 0 | 5 | GFX_focus_SWE_varnplikt | india_goe.txt |
+| RAJ_specialized_dietary_requirement | indian_focus_goe | 1 | 1 | 10 | GFX_focus_RAJ_specialized_dietery_requirements | india_goe.txt |
+| RAJ_standardized_rations | indian_focus_goe | 2 | 0 | 10 | GFX_focus_SWE_rations | india_goe.txt |
+| RAJ_quinine | indian_focus_goe | 1 | 1 | 5 | GFX_focus_RAJ_quinine | india_goe.txt |
+| RAJ_armoured_corps_center_and_school | indian_focus_goe | -3 | 1 | 10 | GFX_goal_generic_army_tanks | india_goe.txt |
+| RAJ_legacy_of_military_service | indian_focus_goe | 0 | 1 | 10 | GFX_focus_generic_commonwealth_build_infantry | india_goe.txt |
+| RAJ_indian_states_force | indian_focus_goe | 0 | 1 | 10 | GFX_goal_generic_construct_mil_factory | india_goe.txt |
+| RAJ_womens_auxiliary_corps | indian_focus_goe | 2 | 1 | 5 | GFX_focus_SWE_lottakoren | india_goe.txt |
+| RAJ_indian_army_corps_of_engineers | indian_focus_goe | -3 | 1 | 5 | GFX_focus_SOV_organize_wreckers | india_goe.txt |
+| RAJ_relax_agrarian_society_criteria | indian_focus_goe | -1 | 1 | 5 | GFX_focus_secret_rearmament | india_goe.txt |
+| RAJ_mechanization_of_the_cavalry | indian_focus_goe | 0 | 1 | 5 | GFX_focus_generic_mechanized | india_goe.txt |
+| RAJ_mountain_tanks | indian_focus_goe | 0 | 1 | 10 | GFX_focus_generic_army_tanks2 | india_goe.txt |
+| RAJ_siege_batteries | indian_focus_goe | -1 | 1 | 10 | GFX_focus_generic_railway_gun | india_goe.txt |
+| RAJ_mountain_guns | indian_focus_goe | -1 | 1 | 10 | GFX_focus_RAJ_mountain_guns | india_goe.txt |
+| RAJ_frontier_corps | indian_focus_goe | -2 | 1 | 5 | GFX_focus_generic_military_academy | india_goe.txt |
+| RAJ_regimental_loyalty | indian_focus_goe | 2 | 0 | 5 | GFX_goal_generic_axis_build_infantry | india_goe.txt |
+| RAJ_the_burma_rifles | indian_focus_goe | 0 | 1 | 5 | GFX_goal_generic_army_doctrines | india_goe.txt |
+| RAJ_gurkhas | indian_focus_goe | 0 | 1 | 5 | GFX_focus_RAJ_indian_gurkhas | india_goe.txt |
+| RAJ_lions_of_the_great_war_dlc | indian_focus_goe | 0 | 1 | 10 | GFX_focus_RAJ_lions_of_the_great_war | india_goe.txt |
+| RAJ_abolish_agrarian_society_criteria | indian_focus_goe | -1 | 1 | 5 | GFX_focus_generic_manpower | india_goe.txt |
+| RAJ_indian_territorial_force | indian_focus_goe | -2 | 1 | 5 | GFX_goal_generic_more_territorial_claims | india_goe.txt |
+| RAJ_military_engineer_services | indian_focus_goe | 1 | 1 | 5 | GFX_goal_fortify_the_westwall | india_goe.txt |
+| RAJ_help_from_the_nagas | indian_focus_goe | 0 | 1 | 5 | GFX_goal_generic_military_deal | india_goe.txt |
+| RAJ_re_establish_the_khyber_rifles | indian_focus_goe | -5 | 1 | 5 | GFX_focus_ETH_freedom_at_gunpoint | india_goe.txt |
+| RAJ_campaign_against_agrarian_societys | indian_focus_goe | 0 | 1 | 10 | GFX_goal_generic_small_arms | india_goe.txt |
+| RAJ_assam_oil_dlc | indian_focus_goe | -4 | 1 | 5 | GFX_goal_generic_oil_refinery | india_goe.txt |
+| RAJ_tata_steel_dlc | indian_focus_goe | 0 | 1 | 5 | GFX_goal_generic_construct_civilian | india_goe.txt |
+| RAJ_chindits_dlc | indian_focus_goe | 0 | 1 | 10 | GFX_goal_generic_special_forces | india_goe.txt |
+| RAJ_viceroys_body_guard | indian_focus_goe | 0 | 1 | 5 | GFX_goal_generic_cavalry | india_goe.txt |
+| RAJ_engineering_revolution | indian_focus_goe | -2 | 1 | 5 | GFX_focus_SWE_landsverk | india_goe.txt |
+| RAJ_gun_and_shell_factory_cossipore | indian_focus_goe | 2 | 1 | 5 | GFX_goal_generic_construct_mil_factory | india_goe.txt |
+| RAJ_rifle_factory_ishapore_west_bengal | indian_focus_goe | -2 | 1 | 5 | GFX_goal_generic_small_arms | india_goe.txt |
+| RAJ_ordnance_factory_kanpur_uttar_pradesh | indian_focus_goe | 0 | 1 | 5 | GFX_goal_generic_construct_mil_factory | india_goe.txt |
+| RAJ_ordnance_factory_medak | indian_focus_goe | -2 | 1 | 5 | GFX_focus_CHL_domestic_production_of_the_willys_mb | india_goe.txt |
+| RAJ_chariot_of_victory | indian_focus_goe | 1 | 1 | 5 | GFX_focus_generic_mechanized | india_goe.txt |
+| RAJ_indian_air_force | indian_focus_goe | 6 | 0 | 5 | GFX_goal_generic_build_airforce | india_goe.txt |
+| RAJ_cordite_factory_aruvankadu_tamil_nadu | indian_focus_goe | -1 | 1 | 5 | GFX_goal_generic_construct_mil_factory | india_goe.txt |
+| RAJ_the_burma_road | indian_focus_goe | -2 | 1 | 5 | GFX_focus_generic_road_investment | india_goe.txt |
+| RAJ_womens_auxiliary_air_force | indian_focus_goe | -2 | 1 | 5 | GFX_focus_SOV_women_in_aviation | india_goe.txt |
+| RAJ_trainer_planes | indian_focus_goe | 0 | 1 | 10 | GFX_focus_generic_air_bases | india_goe.txt |
+| RAJ_spitfire | indian_focus_goe | -2 | 1 | 10 | GFX_goal_generic_air_fighter2 | india_goe.txt |
+| RAJ_ground_pounder | indian_focus_goe | 2 | 1 | 5 | GFX_focus_SWE_marauder_bombers | india_goe.txt |
+| RAJ_douglas_dakota | indian_focus_goe | 4 | 1 | 5 | GFX_goal_generic_air_bomber | india_goe.txt |
+| RAJ_vultee_vengeance | indian_focus_goe | 0 | 1 | 10 | GFX_focus_generic_cas_aircraft | india_goe.txt |
+| RAJ_ordnance_factory_khamaria_jabalpur | indian_focus_goe | 1 | 1 | 5 | GFX_focus_CHL_high_quality_nitrate | india_goe.txt |
+| RAJ_the_ledo_road | indian_focus_goe | 0 | 1 | 5 | GFX_focus_SOV_the_road_of_life | india_goe.txt |
+| RAJ_long_range_escorts | indian_focus_goe | 2 | 0 | 5 | GFX_focus_generic_multi_role_aircraft | india_goe.txt |
+| RAJ_british_air_experts | indian_focus_goe | 1 | 1 | 5 | GFX_focus_generic_air_partners | india_goe.txt |
+| RAJ_special_operations_executive | indian_focus_goe | -1 | 1 | 5 | GFX_focus_generic_paratrooper | india_goe.txt |
+| RAJ_the_ordnance_factories_board | indian_focus_goe | -2 | 1 | 10 | GFX_focus_eng_concessions_to_the_trade_unions | india_goe.txt |
+| RAJ_smiling_buddah | indian_focus_goe | -3 | 1 | 10 | GFX_focus_smiling_buddha | india_goe.txt |
+| RAJ_royal_indian_air_force_dlc | indian_focus_goe | 1 | 1 | 5 | GFX_focus_eng_special_air_service | india_goe.txt |
+| RAJ_royal_indian_navy_dlc | indian_focus_goe | 8 | 0 | 5 | GFX_goal_generic_navy_doctrines_tactics | india_goe.txt |
+| RAJ_expand_mazagon_dock_dlc | indian_focus_goe | -2 | 1 | 5 | GFX_goal_generic_construct_naval_dockyard | india_goe.txt |
+| RAJ_black_swan_sloops | indian_focus_goe | 0 | 1 | 5 | GFX_focus_generic_destroyer | india_goe.txt |
+| RAJ_indian_marine_corps | indian_focus_goe | 2 | 1 | 5 | GFX_goal_generic_navy_battleship | india_goe.txt |
+| RAJ_madras_ship_repair_factories | indian_focus_goe | 1 | 1 | 5 | GFX_focus_generic_refit_civilian_ships | india_goe.txt |
+| RAJ_found_scindia_shipyard_dlc | indian_focus_goe | 1 | 2 | 5 | GFX_goal_generic_construct_naval_dockyard | india_goe.txt |
+| RAJ_dominate_the_bay_of_bengal | indian_focus_goe | 1 | 3 | 5 | GFX_goal_generic_navy_submarine | india_goe.txt |
+| RAJ_indian_cruiser_development | indian_focus_goe | 3 | 3 | 5 | GFX_focus_generic_cruiser2 | india_goe.txt |
+| RAJ_womens_royal_indian_naval_service | indian_focus_goe | 4 | 4 | 5 | GFX_focus_generic_women_in_military | india_goe.txt |
+| RAJ_increase_funding_for_the_GRSE | indian_focus_goe | 1 | 4 | 5 | GFX_focus_generic_economic_recovery | india_goe.txt |
+| RAJ_obtain_british_naval_contracts | indian_focus_goe | -1 | 2 | 5 | GFX_focus_RAJ_british_investors | india_goe.txt |
+| RAJ_eastern_shipyard_construction | indian_focus_goe | 1 | 1 | 10 | GFX_focus_generic_refit_civilian_ships | india_goe.txt |
+| RAJ_purchase_decomissioned_british_ships | indian_focus_goe | -1 | 3 | 5 | GFX_focus_generic_navy_battleship2 | india_goe.txt |
+| RAJ_request_transfer_of_british_commanders | indian_focus_goe | -3 | 3 | 5 | GFX_focus_generic_naval_discipline | india_goe.txt |
+| RAJ_obtain_modern_ship_contracts | indian_focus_goe | -1 | 4 | 5 | GFX_goal_generic_navy_cruiser | india_goe.txt |
+| RAJ_modernizing_navy_dlc | indian_focus_goe | 0 | 5 | 10 | GFX_focus_generic_naval_invasion | india_goe.txt |
+| RAJ_red_punjab_operation | indian_focus_goe | 3 | 1 | 5 | GFX_goal_generic_attack_allies | india_goe.txt |
+| RAJ_secure_rajahsthan | indian_focus_goe | 2 | 0 | 5 | GFX_goal_generic_position_armies | india_goe.txt |
+| RAJ_strike_eastern_pakistan | indian_focus_goe | 4 | 0 | 5 | GFX_focus_generic_provoke_border_clashes | india_goe.txt |
+| RAJ_deathblow_to_imperial_remnants | indian_focus_goe | 2 | 1 | 10 | GFX_goal_generic_secret_weapon | india_goe.txt |
+| RAJ_stopping_the_japanese_threat_into_central_asia | indian_focus_goe | 2 | 1 | 10 | GFX_goal_generic_secret_weapon | india_goe.txt |
+| RAJ_nationalize_british_owned_factories | indian_focus_goe | -2 | 1 | 10 | GFX_focus_AUS_raid_military_storages | india_goe.txt |
 | IRQ_decouple_from_the_pound | iraq_focus | 0 | 0 | 10 | GFX_focus_IRQ_decouple_from_the_pound | iraq.txt |
 | IRQ_construct_the_kut_barrage | iraq_focus | 0 | 1 | 10 | GFX_focus_IRQ_construct_the_kut_barrage | iraq.txt |
 | IRQ_strengthen_mesopotamian_farming | iraq_focus | 0 | 2 | 5 | GFX_focus_generic_farmland | iraq.txt |
 | IRQ_extensive_irrigation_projects | iraq_focus | -1 | 1 | 10 | GFX_focus_generic_land_reclamation | iraq.txt |
 | IRQ_rural_electrification | iraq_focus | 1 | 1 | 10 | GFX_focus_generic_energy | iraq.txt |
-| IRQ_found_the_iraqi_state_railways | iraq_focus |  |  |  |  | iraq.txt |
+| IRQ_found_the_iraqi_state_railways | iraq_focus | -3 | 1 | 5 |  | iraq.txt |
 | IRQ_finish_the_berlin_baghdad_railway | iraq_focus | 0 | 1 | 10 | GFX_focus_IRQ_train | iraq.txt |
 | IRQ_purchase_foreign_equipment | iraq_focus | -5 | 1 | 5 | GFX_goal_generic_production2 | iraq.txt |
 | IRQ_found_southern_steel_plants | iraq_focus | 0 | 1 | 10 | GFX_focus_generic_steel | iraq.txt |
-| IRQ_found_the_state_company_for_iron_and_steel | iraq_focus |  |  |  |  | iraq.txt |
-| IRQ_baghdad_colleges_of_engineering_and_education | iraq_focus |  |  |  |  | iraq.txt |
+| IRQ_found_the_state_company_for_iron_and_steel | iraq_focus | 0 | 1 | 10 |  | iraq.txt |
+| IRQ_baghdad_colleges_of_engineering_and_education | iraq_focus | 2 | 1 | 10 |  | iraq.txt |
 | IRQ_strengthen_the_iraqi_dinar | iraq_focus | 5 | 1 | 5 | GFX_focus_IRQ_strengthen_the_iraqi_dinar | iraq.txt |
 | IRQ_found_company_for_cement | iraq_focus | -2 | 1 | 10 | GFX_goal_generic_construction | iraq.txt |
 | IRQ_expand_the_cotton_industries | iraq_focus | 2 | 1 | 10 | GFX_focus_generic_welfare | iraq.txt |
@@ -4673,12 +5377,12 @@ Source: `common/national_focus/*.txt`
 | IRQ_demand_greater_stake_in_the_company | iraq_focus | 1 | 1 | 10 | GFX_focus_eng_concessions_to_the_trade_unions | iraq.txt |
 | IRQ_expand_oil_production | iraq_focus | -2 | 1 | 10 | GFX_focus_generic_resource_extraction | iraq.txt |
 | IRQ_export_infrastructure | iraq_focus | 0 | 1 | 5 | GFX_goal_generic_positive_trade_relations | iraq.txt |
-| IRQ_royal_iraqi_army | iraq_focus |  |  |  |  | iraq.txt |
+| IRQ_royal_iraqi_army | iraq_focus | 17 | 0 | 10 |  | iraq.txt |
 | IRQ_infantry_focus | iraq_focus | -2 | 1 | 10 | GFX_focus_generic_manpower | iraq.txt |
 | IRQ_scavenging | iraq_focus | -2 | 1 | 10 | GFX_focus_AFG_scavenging | iraq.txt |
 | IRQ_modernization | iraq_focus | 1 | 1 | 5 | GFX_focus_generic_combined_arms | iraq.txt |
 | IRQ_cavalry_integration | iraq_focus | 0 | 1 | 5 | GFX_focus_URG_turmoil_of_paso_morlan | iraq.txt |
-| IRQ_expand_camel_corps | iraq_focus | -1 | 1 |  | GFX_focus_generic_camel_corps | iraq.txt |
+| IRQ_expand_camel_corps | iraq_focus | -1 | 1 | 5 | GFX_focus_generic_camel_corps | iraq.txt |
 | IRQ_purchase_mechanized_equipment | iraq_focus | -1 | 1 | 5 | GFX_focus_generic_purchase_mechanized_equipment | iraq.txt |
 | IRQ_purchase_armored_equipment | iraq_focus | 1 | 1 | 10 | GFX_focus_generic_tankette | iraq.txt |
 | IRQ_approach_tribes_for_support | iraq_focus | 3 | 1 | 5 | GFX_focus_IRQ_approach_tribes_for_support | iraq.txt |
@@ -4697,14 +5401,14 @@ Source: `common/national_focus/*.txt`
 | IRQ_air_research_bonus | iraq_focus | 0 | 1 | 10 | GFX_focus_generic_aircraft_production | iraq.txt |
 | IRQ_special_projects | iraq_focus | -2 | 2 | 10 | GFX_focus_wonderweapons | iraq.txt |
 | IRQ_special_forces | iraq_focus | 2 | 2 | 10 | GFX_goal_generic_special_forces | iraq.txt |
-| IRQ_establish_iraqi_coastal_defense_force | iraq_focus |  |  |  |  | iraq.txt |
+| IRQ_establish_iraqi_coastal_defense_force | iraq_focus | 5 | 1 | 10 |  | iraq.txt |
 | IRQ_invite_foreign_advisors | iraq_focus | -1 | 1 | 5 | GFX_focus_generic_naval_discipline | iraq.txt |
 | IRQ_purchase_small_ships | iraq_focus | 0 | 1 | 5 | GFX_focus_SWE_italian_destroyers | iraq.txt |
 | IRQ_create_repair_yards | iraq_focus | 1 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | iraq.txt |
 | IRQ_navy_research_bonus | iraq_focus | 0 | 1 | 10 | GFX_focus_generic_navy_research_bonus | iraq.txt |
 | IRQ_basra_military_port_focus | iraq_focus | 0 | 1 | 10 | GFX_focus_generic_refit_civilian_ships | iraq.txt |
 | IRQ_develop_the_kuwaiti_port | iraq_focus | 0 | 1 | 10 | GFX_focus_POL_develop_polish_shipbuilding | iraq.txt |
-| IRQ_ensure_sunni_dominance | iraq_focus | 34 | 0 |  | GFX_focus_IRQ_arab_dominance | iraq.txt |
+| IRQ_ensure_sunni_dominance | iraq_focus | 34 | 0 | 5 | GFX_focus_IRQ_arab_dominance | iraq.txt |
 | IRQ_rally_behind_the_hashemite_dynasty | iraq_focus | -2 | 1 | 10 | GFX_focus_IRQ_rally_behind_the_hashemite_dynasty | iraq.txt |
 | IRQ_increase_anglo_iraqi_economic_ties | iraq_focus | 0 | 1 | 10 | GFX_goal_tfv_strengthen_commonwealth_ties | iraq.txt |
 | IRQ_raf_levies_focus | iraq_focus | 0 | 1 | 10 | GFX_focus_generic_air_bases | iraq.txt |
@@ -4733,7 +5437,7 @@ Source: `common/national_focus/*.txt`
 | IRQ_unite_mashriq | iraq_focus | 0 | 1 | 10 | GFX_focus_IRQ_unite_mashriq | iraq.txt |
 | IRQ_unite_maghreb | iraq_focus | -2 | 1 | 10 | GFX_focus_IRQ_unite_maghreb | iraq.txt |
 | IRQ_restore_al_andalus | iraq_focus | 0 | 1 | 10 | GFX_focus_generic_attack_nationalist_spain_focus | iraq.txt |
-| IRQ_party_of_national_brotherhood | iraq_focus | 4 | 0 |  | GFX_focus_IRQ_party_of_national_brotherhood | iraq.txt |
+| IRQ_party_of_national_brotherhood | iraq_focus | 4 | 0 | 10 | GFX_focus_IRQ_party_of_national_brotherhood | iraq.txt |
 | IRQ_bakr_sidqi_coup | iraq_focus | 0 | 1 | 10 | GFX_focus_IRQ_bakr_sidqi_coup | iraq.txt |
 | IRQ_increase_italian_business_relations | iraq_focus | 0 | 1 | 5 | GFX_focus_BRA_joint_italian_motor_development | iraq.txt |
 | IRQ_al_muthanna_club | iraq_focus | 2 | 1 | 10 | GFX_focus_ITA_generic_fascist_workers | iraq.txt |
@@ -4767,7 +5471,7 @@ Source: `common/national_focus/*.txt`
 | IRQ_invite_oil_mission | iraq_focus | 1 | 1 | 10 | GFX_focus_generic_resource_extraction | iraq.txt |
 | IRQ_restore_regent | iraq_focus | -2 | 1 | 2 | GFX_focus_IRQ_restore_regent | iraq.txt |
 | IRQ_refuge_for_the_grand_mufti | iraq_focus | -2 | 1 | 10 | GFX_focus_IRQ_refuge_for_the_grand_mufti | iraq.txt |
-| IRQ_promote_kurdish_culture | iraq_focus | 19 | -1 |  | GFX_focus_IRQ_promote_kurdish_culture | iraq.txt |
+| IRQ_promote_kurdish_culture | iraq_focus | 19 | -1 | 10 | GFX_focus_IRQ_promote_kurdish_culture | iraq.txt |
 | IRQ_kurdish_democratic | iraq_focus | -1 | 1 | 10 | GFX_focus_IRQ_kurdish_democratic | iraq.txt |
 | IRQ_kurdish_socialist | iraq_focus | 1 | 1 | 5 | GFX_focus_chi_mission_to_the_soviet_union | iraq.txt |
 | IRQ_kurdish_revolt | iraq_focus | -1 | 1 | 10 | GFX_goal_generic_major_war | iraq.txt |
@@ -4784,7 +5488,7 @@ Source: `common/national_focus/*.txt`
 | IRQ_kurdish_attack_turkey | iraq_focus | -1 | 3 | 10 | GFX_focus_generic_attack_turkey | iraq.txt |
 | IRQ_kurdish_attack_iran | iraq_focus | 1 | 3 | 10 | GFX_focus_generic_attack_iran | iraq.txt |
 | IRQ_kurdish_united | iraq_focus | -1 | 1 | 10 | GFX_focus_IRQ_kurdistan_united | iraq.txt |
-| ITA_ethiopian_war_logistics_bba | italian_focus | 2 | 0 |  | GFX_goal_generic_position_armies | italy.txt |
+| ITA_ethiopian_war_logistics_bba | italian_focus | 2 | 0 | 5 | GFX_goal_generic_position_armies | italy.txt |
 | ITA_italian_highways_bba | italian_focus | 6 | 0 | 5 | GFX_focus_generic_truck | italy.txt |
 | ITA_ministry_of_italian_africa | italian_focus | -5 | 1 | 5 | GFX_focus_ITA_ministry_of_italian_africa | italy.txt |
 | ITA_develop_ethiopia | italian_focus | -3 | 1 | 5 | GFX_focus_generic_develop_ethiopia | italy.txt |
@@ -4872,18 +5576,18 @@ Source: `common/national_focus/*.txt`
 | ITA_refit_civilian_ships | italian_focus | 4 | 1 | 10 | GFX_focus_generic_refit_civilian_ships | italy.txt |
 | ITA_flotta_d_evasione | italian_focus | 0 | 1 | 10 | GFX_focus_ITA_new_horizons | italy.txt |
 | ITA_the_abyssinian_fiasco | italian_focus | 29 | 0 | 5 | GFX_focus_generic_anti_fascist_diplomacy | italy.txt |
-| ITA_solid_progress | italian_focus | 2 | 0 |  | GFX_focus_generic_attack_ethiopia | italy.txt |
+| ITA_solid_progress | italian_focus | 2 | 0 | 5 | GFX_focus_generic_attack_ethiopia | italy.txt |
 | ITA_struggle_in_ethiopia | italian_focus | 2 | 0 | 5 | GFX_goal_generic_major_war | italy.txt |
 | ITA_undermine_the_duce | italian_focus | 6 | 1 | 5 | GFX_focus_eng_move_to_secure_the_dominions | italy.txt |
-| ITA_servizio_informazione_militare | italian_focus | 0 | 1 |  | GFX_focus_generic_secret_service_agency | italy.txt |
+| ITA_servizio_informazione_militare | italian_focus | 0 | 1 | 10 | GFX_focus_generic_secret_service_agency | italy.txt |
 | ITA_conspiracies_in_the_shadows | italian_focus | 0 | 1 | 5 | GFX_focus_eng_concessions_to_the_trade_unions | italy.txt |
 | ITA_triumph_in_africa_bba | italian_focus | 0 | 1 | 5 | GFX_focus_ETH_the_second_italo_ethiopian_war | italy.txt |
-| ITA_convene_the_grand_council | italian_focus |  |  |  | GFX_focus_generic_military_dictatorship | italy.txt |
+| ITA_convene_the_grand_council | italian_focus | 20 | 2 | 5 | GFX_focus_generic_military_dictatorship | italy.txt |
 | ITA_devaluate_the_lire | italian_focus | -3 | 1 | 5 | GFX_focus_ITA_devaluate_the_lire | italy.txt |
 | ITA_anglo_italian_agreements | italian_focus | -1 | 1 | 5 | GFX_focus_chi_british_cooperation | italy.txt |
 | ITA_topple_amhara_rulers | italian_focus | 1 | 1 | 5 | GFX_focus_ITA_topple_amhara_rulers | italy.txt |
 | ITA_the_new_emperor_of_ethiopia | italian_focus | 3 | 1 | 5 | GFX_focus_ITA_the_new_emperor_of_ethiopia | italy.txt |
-| ITA_culto_del_duce | italian_focus |  |  |  | GFX_focus_ITA_culto_del_duce | italy.txt |
+| ITA_culto_del_duce | italian_focus | 0 | 2 | 10 | GFX_focus_ITA_culto_del_duce | italy.txt |
 | ITA_the_man_of_providence | italian_focus | -3 | 1 | 5 | GFX_goal_demand_sudetenland | italy.txt |
 | ITA_legge_bottai | italian_focus | 0 | 1 | 5 | GFX_focus_generic_treaty | italy.txt |
 | ITA_boost_the_grand_council_of_fascism | italian_focus | -1 | 3 | 5 | GFX_focus_generic_strike_at_democracy1 | italy.txt |
@@ -4893,12 +5597,12 @@ Source: `common/national_focus/*.txt`
 | ITA_la_battaglia_per_le_nascite | italian_focus | 1 | 2 | 5 | GFX_focus_generic_population_growth | italy.txt |
 | ITA_strengthen_the_regime | italian_focus | 0 | 5 | 10 | GFX_goal_generic_political_pressure | italy.txt |
 | ITA_devotion | italian_focus | -3 | 1 | 5 | GFX_goal_generic_propaganda | italy.txt |
-| ITA_ministero_della_cultura_popolare | italian_focus | 3 | 1 |  | GFX_focus_generic_italy_propaganda | italy.txt |
+| ITA_ministero_della_cultura_popolare | italian_focus | 3 | 1 | 5 | GFX_focus_generic_italy_propaganda | italy.txt |
 | ITA_believe_obey_fight | italian_focus | 0 | 1 | 5 | GFX_focus_generic_little_entente | italy.txt |
 | ITA_banda_carita | italian_focus | 0 | 2 | 10 | GFX_focus_ITA_banda_carita | italy.txt |
 | ITA_banda_koch | italian_focus | 0 | 2 | 10 | GFX_focus_generic_national_security | italy.txt |
-| ITA_security_militias | italian_focus | 6 | 2 |  | GFX_goal_generic_military_sphere | italy.txt |
-| ITA_battaglioni_d_assalto | italian_focus | -1 | 2 |  | GFX_focus_ITA_blackshirts | italy.txt |
+| ITA_security_militias | italian_focus | 6 | 2 | 5 | GFX_goal_generic_military_sphere | italy.txt |
+| ITA_battaglioni_d_assalto | italian_focus | -1 | 2 | 10 | GFX_focus_ITA_blackshirts | italy.txt |
 | ITA_strengthen_the_blackshirts | italian_focus | 2 | 0 | 10 | GFX_focus_generic_manpower | italy.txt |
 | ITA_milizia_coloniale | italian_focus | 1 | 2 | 10 | GFX_focus_secret_rearmament | italy.txt |
 | ITA_towards_a_greater_italy | italian_focus | 0 | 1 | 5 | GFX_focus_ITA_greater_italy | italy.txt |
@@ -4910,7 +5614,7 @@ Source: `common/national_focus/*.txt`
 | ITA_by_blood_alone | italian_focus | 0 | 1 | 10 | GFX_focus_ITA_by_blood_alone | italy.txt |
 | ITA_masters_of_the_aegean | italian_focus | 2 | 1 | 10 | GFX_focus_generic_aegean_sea_focus | italy.txt |
 | ITA_masters_of_the_mediterranean | italian_focus | 0 | 1 | 10 | GFX_focus_generic_mediterranean_sea_focus | italy.txt |
-| ITA_depose_mussolini | italian_focus |  |  |  | GFX_focus_ITA_depose_mussolini | italy.txt |
+| ITA_depose_mussolini | italian_focus | 0 | 1 | 5 | GFX_focus_ITA_depose_mussolini | italy.txt |
 | ITA_italo_balbo_focus | italian_focus | -10 | 1 | 5 | GFX_focus_ITA_italo_balbo | italy.txt |
 | ITA_dino_grandi_focus | italian_focus | 0 | 1 | 5 | GFX_focus_ITA_dino_grandi | italy.txt |
 | ITA_stop_the_squandering | italian_focus | 5 | 1 | 10 | GFX_focus_mex_privatisation | italy.txt |
@@ -4963,7 +5667,7 @@ Source: `common/national_focus/*.txt`
 | ITA_agents_of_the_church | italian_focus | 0 | 1 | 5 | GFX_focus_generic_vatican_agents | italy.txt |
 | ITA_strengthen_the_papacy | italian_focus | 0 | 1 | 5 | GFX_focus_generic_pope | italy.txt |
 | ITA_setting_course | italian_focus | -1 | 2 | 10 | GFX_goal_generic_political_pressure | italy.txt |
-| ITA_mare_nostrum_bba | italian_focus | 31 | 0 |  | GFX_focus_ITA_mare_nostrum | italy.txt |
+| ITA_mare_nostrum_bba | italian_focus | 31 | 0 | 5 | GFX_focus_ITA_mare_nostrum | italy.txt |
 | ITA_auxiliaries | italian_focus | -2 | 1 | 5 | GFX_focus_ETH_peacekeeping_forces | italy.txt |
 | ITA_the_italian_legions | italian_focus | 0 | 1 | 10 | GFX_focus_generic_fascist_troops | italy.txt |
 | ITA_new_roman_citizens | italian_focus | 2 | 1 | 5 | GFX_focus_ETH_invite_italian_settlers | italy.txt |
@@ -4980,7 +5684,7 @@ Source: `common/national_focus/*.txt`
 | ITA_a_time_for_war | italian_focus | 0 | 1 | 10 | GFX_goal_generic_major_war | italy.txt |
 | ITA_the_holy_lands | italian_focus | 2 | 1 | 10 | GFX_goal_generic_more_territorial_claims | italy.txt |
 | ITA_the_catholic_dominion | italian_focus | 1 | 1 | 10 | GFX_focus_generic_catholic_dominion | italy.txt |
-| ITA_foreign_affairs | italian_focus |  |  |  | GFX_goal_generic_dangerous_deal | italy.txt |
+| ITA_foreign_affairs | italian_focus | 50 | 1 | 5 | GFX_goal_generic_dangerous_deal | italy.txt |
 | ITA_balkan_ambition | italian_focus | -1 | 1 | 5 | GFX_focus_generic_balkans_focus | italy.txt |
 | ITA_potential_allies_in_the_balkans | italian_focus | 1 | 1 | 5 | GFX_focus_generic_balkan_diplomacy | italy.txt |
 | ITA_albanian_occupation | italian_focus | -12 | 1 | 5 | GFX_goal_generic_more_territorial_claims | italy.txt |
@@ -5003,7 +5707,7 @@ Source: `common/national_focus/*.txt`
 | ITA_befriend_japan | italian_focus | 1 | 1 | 10 | GFX_focus_chi_collaboration_with_the_japanese | italy.txt |
 | ITA_italian_irredentism | italian_focus | 3 | 1 | 10 | GFX_focus_ITA_italian_irredentism | italy.txt |
 | ITA_war_with_france | italian_focus | -1 | 1 | 10 | GFX_focus_attack_france | italy.txt |
-| ITA_demand_ticino | italian_focus |  |  |  | GFX_focus_attack_switzerland | italy.txt |
+| ITA_demand_ticino | italian_focus | -1 | 1 | 10 | GFX_focus_attack_switzerland | italy.txt |
 | ITA_war_with_the_uk | italian_focus | 0 | 2 | 10 | GFX_focus_attack_britain | italy.txt |
 | ITA_war_with_greece | italian_focus | 0 | 2 | 5 | GFX_focus_generic_attack_greece | italy.txt |
 | ITA_befriend_greece | italian_focus | 1 | 3 | 10 | GFX_focus_generic_befriend_greece | italy.txt |
@@ -5098,7 +5802,7 @@ Source: `common/national_focus/*.txt`
 | ITA_irregulars | italian_focus | -2 | 1 | 10 | GFX_focus_ETH_peacekeeping_forces | italy.txt |
 | ITA_liberate_the_workers_of_africa | italian_focus | 0 | 1 | 10 | GFX_focus_generic_africa_liberation | italy.txt |
 | ITA_ascari | italian_focus | 2 | 1 | 10 | GFX_focus_ITA_strengthen_ascari_corps | italy.txt |
-| JAP_the_unthinkable_option | japan_wtt_focus |  |  |  | GFX_goal_support_communism | japan.txt |
+| JAP_the_unthinkable_option | japan_wtt_focus | 12 | 0 | 10 | GFX_goal_support_communism | japan.txt |
 | JAP_approach_the_young_officers | japan_wtt_focus | -1 | 1 | 10 | GFX_focus_generic_military_mission | japan.txt |
 | JAP_exchange_the_exiles | japan_wtt_focus | 1 | 1 | 10 | GFX_goal_generic_forceful_treaty | japan.txt |
 | JAP_open_up_the_universities | japan_wtt_focus | 1 | 1 | 10 | GFX_focus_research | japan.txt |
@@ -5115,8 +5819,8 @@ Source: `common/national_focus/*.txt`
 | JAP_people_owned_mines | japan_wtt_focus | -1 | 1 | 10 | GFX_goal_generic_construction2 | japan.txt |
 | JAP_public_works | japan_wtt_focus | 1 | 1 | 5 | GFX_goal_generic_construction | japan.txt |
 | JAP_tokyo_aluminum_plant | japan_wtt_focus | 0 | 2 | 10 | GFX_goal_generic_construct_civilian | japan.txt |
-| JAP_strengthen_civilian_government | japan_wtt_focus | 7 | 0 |  | GFX_goal_support_democracy | japan.txt |
-| JAP_support_the_kodoha_faction | japan_wtt_focus | 6 | 0 |  | GFX_goal_generic_military_deal | japan.txt |
+| JAP_strengthen_civilian_government | japan_wtt_focus | 7 | 0 | 10 | GFX_goal_support_democracy | japan.txt |
+| JAP_support_the_kodoha_faction | japan_wtt_focus | 6 | 0 | 5 | GFX_goal_generic_military_deal | japan.txt |
 | JAP_challenge_the_zaibatsus | japan_wtt_focus | 3 | 1 | 10 | GFX_focus_jap_zaibatsu | japan.txt |
 | JAP_national_mobilization_law | japan_wtt_focus | 2 | 1 | 10 | GFX_goal_generic_axis_build_infantry | japan.txt |
 | JAP_national_research_policy | japan_wtt_focus | 0 | 1 | 10 | GFX_focus_research | japan.txt |
@@ -5150,8 +5854,8 @@ Source: `common/national_focus/*.txt`
 | JAP_liberate_manchuria | japan_wtt_focus | 0 | 1 | 10 | GFX_goal_generic_territory_or_war | japan.txt |
 | JAP_ultimate_deterrence | japan_wtt_focus | -2 | 1 | 10 | GFX_focus_wonderweapons | japan.txt |
 | JAP_full_sovereignty_for_the_philippines | japan_wtt_focus | 0 | 1 | 10 | GFX_goal_generic_forceful_treaty | japan.txt |
-| JAP_okadas_military_purge_speech | japan_wtt_focus |  |  |  | GFX_focus_JAP_okadas_military_purge_speech | japan.txt |
-| JAP_revere_the_emperor_destroy_the_traitors | japan_wtt_focus |  |  |  | GFX_focus_JAP_revere_the_emperor_destroy_the_traitors | japan.txt |
+| JAP_okadas_military_purge_speech | japan_wtt_focus | 27 | 0 | 0 | GFX_focus_JAP_okadas_military_purge_speech | japan.txt |
+| JAP_revere_the_emperor_destroy_the_traitors | japan_wtt_focus | 27 | 0 | 0 | GFX_focus_JAP_revere_the_emperor_destroy_the_traitors | japan.txt |
 | JAP_establish_the_gunbatsu | japan_wtt_focus | 0 | 1 | 5 | GFX_focus_generic_military_dictatorship | japan.txt |
 | JAP_authorize_aid_to_ethiopia | japan_wtt_focus | -3 | 1 | 5 | GFX_focus_generic_befriend_ethiopia | japan.txt |
 | JAP_grand_army_purge | japan_wtt_focus | -1 | 1 | 5 | GFX_focus_IRQ_attempted_assasination_of_sidqi | japan.txt |
@@ -5204,7 +5908,7 @@ Source: `common/national_focus/*.txt`
 | JAP_to_reach_princess_kaguya | japan_wtt_focus | -1 | 1 | 10 | GFX_focus_ETH_an_empire_in_the_shade_of_the_sun | japan.txt |
 | JAP_to_rival_zheng_yi_sao | japan_wtt_focus | 1 | 1 | 10 | GFX_focus_SMB_blue_water_fleet | japan.txt |
 | JAP_amaterasus_aramitama | japan_wtt_focus | -1 | 1 | 10 | GFX_focus_RAJ_the_sun_sets | japan.txt |
-| JAP_sea_purge_the_kodoha_faction | japan_wtt_focus |  |  |  | GFX_focus_JAP_purge_the_kodoha_faction | japan.txt |
+| JAP_sea_purge_the_kodoha_faction | japan_wtt_focus | 70 | 0 | 0 | GFX_focus_JAP_purge_the_kodoha_faction | japan.txt |
 | JAP_promulgate_the_military_ministers_system | japan_wtt_focus | 0 | 1 | 5 | GFX_focus_AUS_lawmaking_leniency | japan.txt |
 | JAP_east_asian_cooperative_society | japan_wtt_focus | 3 | 1 | 10 | GFX_goal_generic_positive_trade_relations | japan.txt |
 | JAP_imperial_headquarters_liasion_conference | japan_wtt_focus | -3 | 1 | 5 | GFX_goal_generic_intelligence_exchange | japan.txt |
@@ -5248,7 +5952,7 @@ Source: `common/national_focus/*.txt`
 | JAP_tojos_premiership | japan_wtt_focus | -2 | 2 | 5 | GFX_focus_JAP_tojos_premiership | japan.txt |
 | JAP_yamamotos_premiership | japan_wtt_focus | 0 | 2 | 5 | GFX_focus_JAP_yamamotos_premiership | japan.txt |
 | JAP_the_crysanthemum_throne | japan_wtt_focus | 2 | 2 | 5 | GFX_focus_JAP_the_crysanthemum_throne | japan.txt |
-| JAP_solidify_tohokai_rule | japan_wtt_focus | 4 | 2 |  | GFX_focus_JAP_the_tohokai | japan.txt |
+| JAP_solidify_tohokai_rule | japan_wtt_focus | 4 | 2 | 5 | GFX_focus_JAP_the_tohokai | japan.txt |
 | JAP_national_defense_brotherhood | japan_wtt_focus | -2 | 2 | 10 | GFX_focus_JAP_national_defense_brotherhood | japan.txt |
 | JAP_supreme_council_for_direction_of_war | japan_wtt_focus | -1 | 1 | 10 | GFX_focus_JAP_supreme_council_for_direction_of_war | japan.txt |
 | JAP_found_the_boeitai | japan_wtt_focus | 0 | 2 | 5 | GFX_focus_generic_manpower | japan.txt |
@@ -5263,7 +5967,7 @@ Source: `common/national_focus/*.txt`
 | JAP_the_war_has_not_necessarily_developed_focus | japan_wtt_focus | 0 | 1 | 5 | GFX_focus_JAP_propaganda | japan.txt |
 | JAP_japans_longest_day | japan_wtt_focus | -1 | 1 | 5 | GFX_focus_IRQ_attempted_assasination_of_sidqi | japan.txt |
 | JAP_the_surrender_broadcast | japan_wtt_focus | 1 | 1 | 5 | GFX_focus_JAP_gather_royal_pacifists_support | japan.txt |
-| JAP_revisit_the_thirteen_demands | japan_wtt_focus | -13 | 1 |  | GFX_focus_generic_treaty | japan.txt |
+| JAP_revisit_the_thirteen_demands | japan_wtt_focus | -13 | 1 | 3 | GFX_focus_generic_treaty | japan.txt |
 | JAP_invest_in_senbu | japan_wtt_focus | 0 | 1 | 5 | GFX_focus_generic_concessions | japan.txt |
 | JAP_establish_mongol_military_government | japan_wtt_focus | -2 | 1 | 5 | GFX_focus_JAP_establish_the_mongol_military_government | japan.txt |
 | JAP_launch_the_suiyuan_campaign | japan_wtt_focus | 1 | 1 | 5 | GFX_focus_generic_attack_kuomintang | japan.txt |
@@ -5284,7 +5988,7 @@ Source: `common/national_focus/*.txt`
 | JAP_claim_the_scripech | japan_wtt_focus | 0 | 1 | 5 | GFX_focus_JAP_claim_the_scripech | japan.txt |
 | JAP_ally_afghanistan | japan_wtt_focus | -2 | 1 | 5 | GFX_focus_JAP_ally_afghanistan | japan.txt |
 | JAP_best_the_graveyard | japan_wtt_focus | 0 | 1 | 5 | GFX_focus_AFG_contact_amanullah_loyalists_alt | japan.txt |
-| JAP_nanshin_ron | japan_wtt_focus | -21 | 1 |  | GFX_focus_JAP_nanshin_ron | japan.txt |
+| JAP_nanshin_ron | japan_wtt_focus | -21 | 1 | 5 | GFX_focus_JAP_nanshin_ron | japan.txt |
 | JAP_soviet_japanese_neutrality_pact | japan_wtt_focus | 3 | 1 | 5 | GFX_focus_chi_mission_to_the_soviet_union | japan.txt |
 | JAP_unsinkable_aircraft_carriers | japan_wtt_focus | 1 | 1 | 5 | GFX_focus_generic_air_bases | japan.txt |
 | JAP_isolate_oceania | japan_wtt_focus | 0 | 1 | 10 | GFX_focus_JAP_isolate_oceania | japan.txt |
@@ -5297,7 +6001,7 @@ Source: `common/national_focus/*.txt`
 | JAP_occupy_siam | japan_wtt_focus | 1 | 2 | 5 | GFX_focus_generic_attack_siam | japan.txt |
 | JAP_strike_the_southern_road | japan_wtt_focus | -1 | 1 | 10 | GFX_focus_jap_strike_south | japan.txt |
 | JAP_occupy_east_timor | japan_wtt_focus | 0 | 1 | 2 | GFX_focus_generic_attack_timor | japan.txt |
-| JAP_hokushin_ron | japan_wtt_focus | -28 | 1 |  | GFX_focus_JAP_hokushin_ron | japan.txt |
+| JAP_hokushin_ron | japan_wtt_focus | -28 | 1 | 5 | GFX_focus_JAP_hokushin_ron | japan.txt |
 | JAP_ensure_temporary_peace_with_china | japan_wtt_focus | 2 | 1 | 5 | GFX_focus_generic_mountain_fortification | japan.txt |
 | JAP_a_mongol_volunteer_army | japan_wtt_focus | 0 | 1 | 10 | GFX_focus_secret_rearmament | japan.txt |
 | JAP_strenghten_manchukuo_imperial_army | japan_wtt_focus | -2 | 1 | 10 | GFX_focus_JAP_strenghten_manchukuo_imperial_army | japan.txt |
@@ -5316,9 +6020,9 @@ Source: `common/national_focus/*.txt`
 | JAP_limit_military_power | japan_wtt_focus | -2 | 1 | 5 | GFX_focus_JAP_push_to_limit_military_power | japan.txt |
 | JAP_sway_the_navy_moderates | japan_wtt_focus | 0 | 1 | 5 | GFX_focus_generic_sway_navy | japan.txt |
 | JAP_divert_military_funds | japan_wtt_focus | 1 | 2 | 5 | GFX_focus_AUS_raid_military_storages | japan.txt |
-| JAP_bribe_generals | japan_wtt_focus | 6 | 2 |  | GFX_focus_BRA_reach_out_to_military_dem | japan.txt |
-| JAP_appoint_new_generals | japan_wtt_focus | -1 | 1 |  | GFX_focus_generic_military_mission | japan.txt |
-| JAP_implement_army_reforms | japan_wtt_focus | 1 | 1 |  | GFX_focus_JAP_implement_army_reforms | japan.txt |
+| JAP_bribe_generals | japan_wtt_focus | 6 | 2 | 5 | GFX_focus_BRA_reach_out_to_military_dem | japan.txt |
+| JAP_appoint_new_generals | japan_wtt_focus | -1 | 1 | 5 | GFX_focus_generic_military_mission | japan.txt |
+| JAP_implement_army_reforms | japan_wtt_focus | 1 | 1 | 10 | GFX_focus_JAP_implement_army_reforms | japan.txt |
 | JAP_a_new_take_on_state_shintoism | japan_wtt_focus | -1 | 1 | 10 | GFX_focus_jap_spiritual_mobilization | japan.txt |
 | JAP_crush_the_spirit_of_gekokujo | japan_wtt_focus | 0 | 1 | 10 | GFX_focus_JAP_crush_the_spirit_of_gekokujo | japan.txt |
 | JAP_anti_militarist_speeches_in_the_diet | japan_wtt_focus | 0 | 1 | 5 | GFX_focus_JAP_anti_militarist_speeches_in_the_diet | japan.txt |
@@ -5330,7 +6034,7 @@ Source: `common/national_focus/*.txt`
 | JAP_return_of_the_manchukuo_exiles | japan_wtt_focus | 2 | 1 | 5 | GFX_focus_JAP_return_of_the_machukuo_exiles | japan.txt |
 | JAP_organize_the_fifth_column | japan_wtt_focus | -2 | 1 | 10 | GFX_focus_generic_sabotage | japan.txt |
 | JAP_revoke_the_peace_preservation_law | japan_wtt_focus | 4 | 1 | 5 | GFX_focus_JAP_revoke_the_peace_preservation_law | japan.txt |
-| JAP_a_red_sun_rises_for_a_new_era | japan_wtt_focus | -9 | 2 |  | GFX_focus_JAP_the_red_sun_rises_for_a_new_era | japan.txt |
+| JAP_a_red_sun_rises_for_a_new_era | japan_wtt_focus | -9 | 2 | 5 | GFX_focus_JAP_the_red_sun_rises_for_a_new_era | japan.txt |
 | JAP_the_lecture_group_ascendant | japan_wtt_focus | -3 | 1 | 5 | GFX_focus_JAP_the_lecture_group_ascendant | japan.txt |
 | JAP_the_labor_farmer_faction_ascendant | japan_wtt_focus | 3 | 1 | 5 | GFX_focus_JAP_the_labor_farmer_group_ascendant | japan.txt |
 | JAP_sea_fate_of_the_imperial_family | japan_wtt_focus | 3 | 1 | 10 | GFX_focus_JAP_the_fate_of_the_imperial_family | japan.txt |
@@ -5399,7 +6103,7 @@ Source: `common/national_focus/*.txt`
 | JAP_spread_revolutionary_flames_to_south_asia | japan_wtt_focus | -1 | 1 | 5 | GFX_focus_JAP_spread_the_revolutionary_flame_to_south_asia | japan.txt |
 | JAP_spread_revolutionary_flames_to_west_asia | japan_wtt_focus | 0 | 1 | 5 | GFX_focus_JAP_spread_the_revolutionary_flame_to_west_asia | japan.txt |
 | JAP_trans_pacific_influence | japan_wtt_focus | 0 | 3 | 10 | GFX_focus_GER_align_south_america | japan.txt |
-| JAP_organize_a_general_election | japan_wtt_focus | 9 | 2 |  | GFX_focus_generic_election | japan.txt |
+| JAP_organize_a_general_election | japan_wtt_focus | 9 | 2 | 5 | GFX_focus_generic_election | japan.txt |
 | JAP_rikken_minseito_victory | japan_wtt_focus | -2 | 1 | 0 | GFX_focus_JAP_rikken_minseito_victory | japan.txt |
 | JAP_rikken_seiyukai_victory | japan_wtt_focus | 2 | 1 | 0 | GFX_focus_JAP_rikken_seiyukai_victory | japan.txt |
 | JAP_promote_meritocracy | japan_wtt_focus | -1 | 1 | 5 | GFX_focus_generic_industrial_experts | japan.txt |
@@ -5432,7 +6136,7 @@ Source: `common/national_focus/*.txt`
 | JAP_form_greater_east_asian_customs_union | japan_wtt_focus | -1 | 1 | 5 | GFX_focus_GER_customs_union | japan.txt |
 | JAP_form_greater_east_asian_currency_union | japan_wtt_focus | 1 | 1 | 10 | GFX_focus_generic_monetary_union | japan.txt |
 | JAP_an_integrated_union | japan_wtt_focus | -1 | 1 | 10 | GFX_focus_JAP_an_integrated_union | japan.txt |
-| JAP_greater_east_asian_federation | japan_wtt_focus | 1 | 1 |  | GFX_focus_JAP_the_greater_east_asian_federation | japan.txt |
+| JAP_greater_east_asian_federation | japan_wtt_focus | 1 | 1 | 10 | GFX_focus_JAP_the_greater_east_asian_federation | japan.txt |
 | JAP_democratic_womens_suffrage | japan_wtt_focus | 0 | 1 | 5 | GFX_focus_AUS_womens_education_initiative | japan.txt |
 | JAP_launch_the_income_doubling_plan | japan_wtt_focus | 5 | 1 | 5 | GFX_focus_JAP_launch_the_income_doubling_plan | japan.txt |
 | JAP_reform_the_education_system | japan_wtt_focus | -3 | 1 | 10 | GFX_focus_generic_university_2 | japan.txt |
@@ -5451,9 +6155,9 @@ Source: `common/national_focus/*.txt`
 | JAP_lifetime_employment | japan_wtt_focus | -1 | 1 | 5 | GFX_focus_generic_full_employment | japan.txt |
 | JAP_modernize_agriculture | japan_wtt_focus | 1 | 1 | 5 | GFX_focus_generic_modernize_agriculture_2 | japan.txt |
 | JAP_civilian_nuclear_reactor_investments | japan_wtt_focus | -1 | 1 | 10 | GFX_focus_generic_nuclear_development | japan.txt |
-| JAP_ministry_of_commerce_and_industry | japan_wtt_focus |  |  |  | GFX_focus_JAP_ministry_of_commerce_and_industry | japan.txt |
-| JAP_continue_takahashi_korekiyos_policies | japan_wtt_focus |  |  |  | GFX_goal_generic_construct_civ_factory | japan.txt |
-| JAP_increase_armament_spending | japan_wtt_focus |  |  |  | GFX_focus_generic_military_industry | japan.txt |
+| JAP_ministry_of_commerce_and_industry | japan_wtt_focus | 16 | 0 | 5 | GFX_focus_JAP_ministry_of_commerce_and_industry | japan.txt |
+| JAP_continue_takahashi_korekiyos_policies | japan_wtt_focus | 3 | 1 | 5 | GFX_goal_generic_construct_civ_factory | japan.txt |
+| JAP_increase_armament_spending | japan_wtt_focus | 5 | 1 | 5 | GFX_focus_generic_military_industry | japan.txt |
 | JAP_approach_mitsui | japan_wtt_focus | -2 | 1 | 10 | GFX_focus_JAP_approach_mitsui | japan.txt |
 | JAP_approach_mitsubishi | japan_wtt_focus | 0 | 1 | 10 | GFX_focus_JAP_approach_mitsubishi | japan.txt |
 | JAP_approach_sumitomo | japan_wtt_focus | 2 | 1 | 10 | GFX_focus_JAP_approach_sumitomo | japan.txt |
@@ -5485,14 +6189,14 @@ Source: `common/national_focus/*.txt`
 | JAP_hydroelectric_dams_in_korea | japan_wtt_focus | 1 | 1 | 5 | GFX_focus_focus_generic_build_dam | japan.txt |
 | JAP_prepare_for_peninsular_warfare | japan_wtt_focus | 0 | 2 | 10 | GFX_focus_JAP_prepare_for_peninsular_war | japan.txt |
 | JAP_establish_the_japanese_korean_army | japan_wtt_focus | 0 | 1 | 5 | GFX_focus_JAP_korean_volunteer_army | japan.txt |
-| JAP_the_imperial_defense_plan | japan_wtt_focus |  |  |  | GFX_focus_JAP_the_imperial_defense_plan | japan.txt |
+| JAP_the_imperial_defense_plan | japan_wtt_focus | 23 | 0 | 3 | GFX_focus_JAP_the_imperial_defense_plan | japan.txt |
 | JAP_expand_kawagoe_army_arsenal | japan_wtt_focus | -9 | 1 | 5 | GFX_focus_generic_reorient_production | japan.txt |
-| JAP_reform_the_army | japan_wtt_focus |  |  |  | GFX_focus_JAP_reform_the_army | japan.txt |
+| JAP_reform_the_army | japan_wtt_focus | -1 | 1 | 5 | GFX_focus_JAP_reform_the_army | japan.txt |
 | JAP_rethink_armor_doctrine | japan_wtt_focus | -3 | 1 | 10 | GFX_focus_generic_tank_assault | japan.txt |
-| JAP_foreign_tank_modernization_cooperation | japan_wtt_focus |  |  |  | GFX_focus_generic_heavy_tank | japan.txt |
-| JAP_domestic_tank_modernization_program | japan_wtt_focus |  |  |  | GFX_focus_generic_tank_assembly | japan.txt |
+| JAP_foreign_tank_modernization_cooperation | japan_wtt_focus | -1 | 1 | 10 | GFX_focus_generic_heavy_tank | japan.txt |
+| JAP_domestic_tank_modernization_program | japan_wtt_focus | 1 | 1 | 5 | GFX_focus_generic_tank_assembly | japan.txt |
 | JAP_the_ultimate_tank | japan_wtt_focus | -1 | 1 | 10 | GFX_focus_JAP_the_ultimate_tank | japan.txt |
-| JAP_rely_on_supremacy_of_the_will | japan_wtt_focus |  |  |  | GFX_focus_JAP_rely_on_infantry_charges | japan.txt |
+| JAP_rely_on_supremacy_of_the_will | japan_wtt_focus | 1 | 1 | 5 | GFX_focus_JAP_rely_on_infantry_charges | japan.txt |
 | JAP_adopt_new_assault_doctrine | japan_wtt_focus | 3 | 1 | 10 | GFX_focus_generic_full_social_mobilization | japan.txt |
 | JAP_develop_lethal_infantry_equipment | japan_wtt_focus | -1 | 1 | 10 | GFX_goal_generic_small_arms | japan.txt |
 | JAP_develop_sophisticated_artillery_equipment | japan_wtt_focus | 1 | 1 | 10 | GFX_focus_SWE_let_fly_all_guns | japan.txt |
@@ -5504,8 +6208,8 @@ Source: `common/national_focus/*.txt`
 | JAP_jungle_adaptation | japan_wtt_focus | 2 | 1 | 5 | GFX_focus_generic_jungle_troops | japan.txt |
 | JAP_army_weapons_administration_headquarters | japan_wtt_focus | 0 | 1 | 10 | GFX_focus_JAP_army_weapons_administration_hq | japan.txt |
 | JAP_divert_naval_guns_to_the_army | japan_wtt_focus | 0 | 1 | 10 | GFX_focus_generic_railway_gun | japan.txt |
-| JAP_pivot_towards_defensive_measures | japan_wtt_focus |  |  |  | GFX_goal_generic_defence | japan.txt |
-| JAP_strenghten_the_supply_lines | japan_wtt_focus |  |  |  | GFX_focus_generic_supply_line | japan.txt |
+| JAP_pivot_towards_defensive_measures | japan_wtt_focus | -1 | 2 | 10 | GFX_goal_generic_defence | japan.txt |
+| JAP_strenghten_the_supply_lines | japan_wtt_focus | 1 | 2 | 10 | GFX_focus_generic_supply_line | japan.txt |
 | JAP_ni_go_nuclear_project | japan_wtt_focus | -1 | 1 | 5 | GFX_focus_JAP_ni_go_nuclear_project | japan.txt |
 | JAP_establish_showa_aircraft_idnsutry | japan_wtt_focus | 0 | 1 | 5 | GFX_focus_generic_aircraft_production | japan.txt |
 | JAP_develop_new_fighters | japan_wtt_focus | -1 | 1 | 10 | GFX_focus_jap_zero | japan.txt |
@@ -5513,8 +6217,8 @@ Source: `common/national_focus/*.txt`
 | JAP_modern_bombers | japan_wtt_focus | 1 | 1 | 10 | GFX_goal_generic_air_bomber | japan.txt |
 | JAP_improve_the_type_91_aerial_torpedo | japan_wtt_focus | 1 | 1 | 5 | GFX_goal_generic_air_naval_bomber | japan.txt |
 | JAP_escort_efficiency | japan_wtt_focus | 1 | 1 | 5 | GFX_goal_generic_air_fighter2 | japan.txt |
-| JAP_sea_sturdy_aircraft | japan_wtt_focus |  |  |  | GFX_goal_generic_air_fighter | japan.txt |
-| JAP_sea_long_operational_range | japan_wtt_focus |  |  |  | GFX_focus_generic_long_range_aircraft | japan.txt |
+| JAP_sea_sturdy_aircraft | japan_wtt_focus | -1 | 1 | 10 | GFX_goal_generic_air_fighter | japan.txt |
+| JAP_sea_long_operational_range | japan_wtt_focus | 1 | 1 | 10 | GFX_focus_generic_long_range_aircraft | japan.txt |
 | JAP_project_z_bomber_project | japan_wtt_focus | 1 | 1 | 10 | GFX_focus_JAP_z_bomber_project | japan.txt |
 | JAP_adopt_new_air_doctrine | japan_wtt_focus | -1 | 1 | 5 | GFX_goal_generic_air_doctrine | japan.txt |
 | JAP_sea_unify_the_air_forces | japan_wtt_focus | -1 | 1 | 10 | GFX_focus_JAP_unify_the_air_forces | japan.txt |
@@ -5526,19 +6230,19 @@ Source: `common/national_focus/*.txt`
 | JAP_expand_hiratsuka_navy_arsenal | japan_wtt_focus | 9 | 1 | 5 | GFX_goal_generic_construct_naval_dockyard | japan.txt |
 | JAP_expand_navy_technical_department | japan_wtt_focus | -1 | 1 | 10 | GFX_focus_JAP_expand_navy_technical_department | japan.txt |
 | JAP_prepare_the_southern_front | japan_wtt_focus | 1 | 1 | 5 | GFX_focus_generic_naval_invasion | japan.txt |
-| JAP_focus_on_aircraft_carriers | japan_wtt_focus |  |  |  | GFX_focus_JAP_strengthen_the_kido_butai | japan.txt |
+| JAP_focus_on_aircraft_carriers | japan_wtt_focus | -1 | 1 | 10 | GFX_focus_JAP_strengthen_the_kido_butai | japan.txt |
 | JAP_yokosuka_naval_air_technical_arsenal | japan_wtt_focus | -1 | 1 | 5 | GFX_goal_generic_navy_carrier | japan.txt |
 | JAP_establish_the_mine_warfare_force | japan_wtt_focus | -2 | 1 | 5 | GFX_focus_JAP_mine_warfare_force | japan.txt |
-| JAP_balanced_naval_approach | japan_wtt_focus |  |  |  | GFX_focus_JAP_balanced_naval_approach | japan.txt |
-| JAP_sea_battleship_initiative | japan_wtt_focus |  |  |  | GFX_focus_ETH_an_ethiopian_navy_in_exile | japan.txt |
+| JAP_balanced_naval_approach | japan_wtt_focus | 1 | 1 | 10 | GFX_focus_JAP_balanced_naval_approach | japan.txt |
+| JAP_sea_battleship_initiative | japan_wtt_focus | 3 | 1 | 10 | GFX_focus_ETH_an_ethiopian_navy_in_exile | japan.txt |
 | JAP_sea_bigger_better_yamato | japan_wtt_focus | 1 | 1 | 5 | GFX_focus_generic_navy_battleship2 | japan.txt |
 | JAP_akizuki_class_destroyers | japan_wtt_focus | 2 | 1 | 5 | GFX_focus_generic_destroyer | japan.txt |
 | JAP_form_the_kido_butai | japan_wtt_focus | 1 | 2 | 5 | GFX_focus_SMB_blue_water_fleet | japan.txt |
 | JAP_sea_heavier_naval_guns | japan_wtt_focus | 1 | 2 | 5 | GFX_focus_generic_battleship_guns | japan.txt |
 | JAP_naval_armaments_program | japan_wtt_focus | -2 | 1 | 5 | GFX_focus_JAP_naval_armaments_program | japan.txt |
 | JAP_radio_guided_missiles | japan_wtt_focus | -1 | 2 | 5 | GFX_focus_JAP_radio_guided_missiles | japan.txt |
-| JAP_assure_superior_naval_quality | japan_wtt_focus |  |  |  | GFX_focus_JAP_assure_superior_naval_quality | japan.txt |
-| JAP_seek_strength_in_numbers | japan_wtt_focus |  |  |  | GFX_focus_generic_large_navy | japan.txt |
+| JAP_assure_superior_naval_quality | japan_wtt_focus | 0 | 1 | 5 | GFX_focus_JAP_assure_superior_naval_quality | japan.txt |
+| JAP_seek_strength_in_numbers | japan_wtt_focus | 2 | 1 | 5 | GFX_focus_generic_large_navy | japan.txt |
 | JAP_nationalize_suzuka_naval_arsenal | japan_wtt_focus | 4 | 1 | 5 | GFX_focus_POL_develop_polish_shipbuilding | japan.txt |
 | JAP_nationalize_fujinagata_shipyards | japan_wtt_focus | 0 | 1 | 10 | GFX_focus_generic_refit_civilian_ships | japan.txt |
 | JAP_secure_the_sea_lanes | japan_wtt_focus | -2 | 1 | 5 | GFX_goal_generic_navy_anti_submarine | japan.txt |
@@ -5602,7 +6306,7 @@ Source: `common/national_focus/*.txt`
 | LAT_propose_baltic_union | latvia_tree | -1 | 1 | 10 | GFX_focus_generic_diplomatic_treaty | latvia.txt |
 | LAT_baltic_stronger_together | latvia_tree | 1 | 1 | 10 | GFX_focus_generic_support_the_left_right | latvia.txt |
 | LAT_baltic_unification | latvia_tree | -1 | 1 | 10 | GFX_goal_anschluss | latvia.txt |
-| LIT_secure_a_loyal_cabinet | lithuania_tree | 34 | 0 |  | GFX_goal_generic_neutrality_focus | lithuania.txt |
+| LIT_secure_a_loyal_cabinet | lithuania_tree | 34 | 0 | 10 | GFX_goal_generic_neutrality_focus | lithuania.txt |
 | LIT_rastikis_military_reforms | lithuania_tree | 18 | 1 | 10 | GFX_focus_generic_military_mission | lithuania.txt |
 | LIT_patriotic_education | lithuania_tree | 0 | 1 | 10 | GFX_focus_research2 | lithuania.txt |
 | LIT_soviet_mutual_assistance | lithuania_tree | 0 | 1 | 5 | GFX_focus_chi_mission_to_the_soviet_union | lithuania.txt |
@@ -5765,11 +6469,11 @@ Source: `common/national_focus/*.txt`
 | MAN_tsr_strengthen_the_manchukuo_imperial_army | manchukuo_focus_tsr | 1 | 1 | 5 | GFX_focus_PRC_develop_the_army | manchukuo_TSR.txt |
 | MAN_tsr_expand_xingan_army | manchukuo_focus_tsr | 1 | 1 | 5 | GFX_focus_secret_rearmament | manchukuo_TSR.txt |
 | MAN_tsr_the_question_of_leadership | manchukuo_focus_tsr | -1 | 1 | 5 | GFX_focus_jap_manchurian_project | manchukuo_TSR.txt |
-| MAN_tsr_chinese_leadership | manchukuo_focus_tsr | -2 | 1 |  | GFX_focus_generic_support_the_left_right | manchukuo_TSR.txt |
+| MAN_tsr_chinese_leadership | manchukuo_focus_tsr | -2 | 1 | 10 | GFX_focus_generic_support_the_left_right | manchukuo_TSR.txt |
 | MAN_tsr_vassalize_mengukuo | manchukuo_focus_tsr | -1 | 1 | 10 | GFX_focus_JAP_mengjiang_united_autonomous_government | manchukuo_TSR.txt |
 | MAN_tsr_national_cooperation_government | manchukuo_focus_tsr | 1 | 1 | 10 | GFX_goal_generic_improve_relations | manchukuo_TSR.txt |
 | MAN_tsr_the_two_emperors | manchukuo_focus_tsr | 0 | 2 | 10 | GFX_goal_anschluss | manchukuo_TSR.txt |
-| MAN_tsr_empire_of_manchukuo | manchukuo_focus_tsr | 2 | 1 |  | GFX_focus_ETH_an_empire_in_the_shade_of_the_sun | manchukuo_TSR.txt |
+| MAN_tsr_empire_of_manchukuo | manchukuo_focus_tsr | 2 | 1 | 10 | GFX_focus_ETH_an_empire_in_the_shade_of_the_sun | manchukuo_TSR.txt |
 | MAN_tsr_embrace_state_shintoism | manchukuo_focus_tsr | 0 | 1 | 10 | GFX_focus_jap_spiritual_mobilization | manchukuo_TSR.txt |
 | MAN_tsr_work_with_the_kempeitai | manchukuo_focus_tsr | -1 | 1 | 10 | GFX_focus_generic_secret_service_agency | manchukuo_TSR.txt |
 | MAN_tsr_promote_manchu_identity | manchukuo_focus_tsr | 1 | 1 | 10 | GFX_goal_generic_national_unity | manchukuo_TSR.txt |
@@ -5779,25 +6483,25 @@ Source: `common/national_focus/*.txt`
 | MAN_tsr_staff_the_court_with_manchus | manchukuo_focus_tsr | -1 | 1 | 5 | GFX_goal_generic_intelligence_exchange | manchukuo_TSR.txt |
 | MAN_tsr_expand_the_imperial_guards | manchukuo_focus_tsr | -1 | 1 | 10 | GFX_focus_generic_little_entente | manchukuo_TSR.txt |
 | MAN_tsr_local_arms_procurement | manchukuo_focus_tsr | 0 | 1 | 10 | GFX_goal_generic_construct_mil_factory | manchukuo_TSR.txt |
-| MAN_tsr_bolster_nationalism | manchukuo_focus_tsr | 1 | 1 |  | GFX_goal_generic_political_pressure | manchukuo_TSR.txt |
+| MAN_tsr_bolster_nationalism | manchukuo_focus_tsr | 1 | 1 | 10 | GFX_goal_generic_political_pressure | manchukuo_TSR.txt |
 | MAN_tsr_five_equal_peoples | manchukuo_focus_tsr | 1 | 1 | 5 | GFX_goal_generic_national_unity | manchukuo_TSR.txt |
 | MAN_tsr_white_russian_advisers | manchukuo_focus_tsr | 3 | 1 | 10 | GFX_focus_SOV_approach_semyonov | manchukuo_TSR.txt |
 | MAN_tsr_empower_the_legislative_council | manchukuo_focus_tsr | 5 | 1 | 10 | GFX_goal_generic_dangerous_deal | manchukuo_TSR.txt |
 | MAN_tsr_five_people_armies | manchukuo_focus_tsr | 0 | 1 | 10 | GFX_goal_generic_occupy_states_ongoing_war | manchukuo_TSR.txt |
-| MAN_tsr_question_the_emperors_authority | manchukuo_focus_tsr | 1 | 1 |  | GFX_focus_rom_handle_king | manchukuo_TSR.txt |
+| MAN_tsr_question_the_emperors_authority | manchukuo_focus_tsr | 1 | 1 | 10 | GFX_focus_rom_handle_king | manchukuo_TSR.txt |
 | MAN_tsr_bandit_recruitment | manchukuo_focus_tsr | 0 | 1 | 10 | GFX_focus_generic_workers | manchukuo_TSR.txt |
 | MAN_tsr_ally_bandit_leaders | manchukuo_focus_tsr | 0 | 1 | 5 | GFX_goal_generic_military_deal | manchukuo_TSR.txt |
 | MAN_tsr_persuade_the_IMPRP | manchukuo_focus_tsr | 3 | 1 | 10 | GFX_focus_MAN_persuade_the_imprp | manchukuo_TSR.txt |
 | MAN_tsr_a_new_dawn_over_manchuria | manchukuo_focus_tsr | 6 | 1 | 5 | GFX_focus_jap_cast_the_die | manchukuo_TSR.txt |
-| MAN_tsr_depose_puyi | manchukuo_focus_tsr | 0 | 1 |  | GFX_focus_IRQ_attempted_assasination_of_sidqi | manchukuo_TSR.txt |
-| MAN_tsr_the_new_beiyang_government | manchukuo_focus_tsr | -3 | 1 |  | GFX_focus_CHI_restore_the_old_republic | manchukuo_TSR.txt |
+| MAN_tsr_depose_puyi | manchukuo_focus_tsr | 0 | 1 | 5 | GFX_focus_IRQ_attempted_assasination_of_sidqi | manchukuo_TSR.txt |
+| MAN_tsr_the_new_beiyang_government | manchukuo_focus_tsr | -3 | 1 | 10 | GFX_focus_CHI_restore_the_old_republic | manchukuo_TSR.txt |
 | MAN_tsr_beiyang_university | manchukuo_focus_tsr | 2 | 1 | 10 | GFX_focus_generic_university_2 | manchukuo_TSR.txt |
 | MAN_tsr_reform_the_army | manchukuo_focus_tsr | -2 | 1 | 10 | GFX_focus_MAN_the_new_fengtian_army | manchukuo_TSR.txt |
 | MAN_tsr_the_southern_expedition | manchukuo_focus_tsr | 0 | 1 | 10 | GFX_focus_attack_china | manchukuo_TSR.txt |
 | MAN_tsr_proclaim_the_republic_of_china | manchukuo_focus_tsr | 0 | 1 | 10 | GFX_focus_chi_one_china_policy | manchukuo_TSR.txt |
 | MAN_tsr_finish_off_the_japanese_threat | manchukuo_focus_tsr | 1 | 1 | 10 | GFX_focus_AST_war_japan | manchukuo_TSR.txt |
 | MAN_tsr_an_industrial_power | manchukuo_focus_tsr | -1 | 1 | 10 | GFX_focus_generic_industrial_experts | manchukuo_TSR.txt |
-| MAN_tsr_zhao_shangzhis_coup | manchukuo_focus_tsr | 2 | 1 |  | GFX_focus_generic_spur_communist_revolutions | manchukuo_TSR.txt |
+| MAN_tsr_zhao_shangzhis_coup | manchukuo_focus_tsr | 2 | 1 | 10 | GFX_focus_generic_spur_communist_revolutions | manchukuo_TSR.txt |
 | MAN_tsr_ally_the_soviet_republic | manchukuo_focus_tsr | 0 | 1 | 10 | GFX_focus_generic_befriend_the_chinese_soviet | manchukuo_TSR.txt |
 | MAN_tsr_research_cooperation | manchukuo_focus_tsr | -2 | 1 | 10 | GFX_focus_PRC_form_the_yanan_university | manchukuo_TSR.txt |
 | MAN_tsr_the_long_march_south | manchukuo_focus_tsr | 0 | 1 | 10 | GFX_focus_PRC_towards_one_china | manchukuo_TSR.txt |
@@ -5807,9 +6511,9 @@ Source: `common/national_focus/*.txt`
 | MAN_tsr_purge_the_general_affairs_council | manchukuo_focus_tsr | 0 | 1 | 10 | GFX_goal_generic_major_war | manchukuo_TSR.txt |
 | MAN_tsr_reform_the_civil_service | manchukuo_focus_tsr | -2 | 1 | 10 | GFX_goal_generic_intelligence_exchange | manchukuo_TSR.txt |
 | MAN_tsr_independence_war | manchukuo_focus_tsr | 0 | 1 | 5 | GFX_goal_generic_territory_or_war | manchukuo_TSR.txt |
-| MAN_tsr_imperial_divinity | manchukuo_focus_tsr | -2 | 1 |  | GFX_goal_generic_secret_weapon | manchukuo_TSR.txt |
+| MAN_tsr_imperial_divinity | manchukuo_focus_tsr | -2 | 1 | 5 | GFX_goal_generic_secret_weapon | manchukuo_TSR.txt |
 | MAN_tsr_reclaim_our_lost_possessions | manchukuo_focus_tsr | 0 | 1 | 10 | GFX_focus_GER_end_european_communism | manchukuo_TSR.txt |
-| MAN_tsr_a_new_constitution | manchukuo_focus_tsr | 2 | 1 |  | GFX_focus_generic_treaty | manchukuo_TSR.txt |
+| MAN_tsr_a_new_constitution | manchukuo_focus_tsr | 2 | 1 | 5 | GFX_focus_generic_treaty | manchukuo_TSR.txt |
 | MAN_tsr_division_of_power | manchukuo_focus_tsr | 0 | 1 | 5 | GFX_focus_BRA_reach_out_to_military_dem | manchukuo_TSR.txt |
 | MAN_tsr_reestablish_the_qing_army | manchukuo_focus_tsr | 2 | 1 | 10 | GFX_focus_MAN_reestablish_the_imperial_army | manchukuo_TSR.txt |
 | MAN_tsr_raise_the_yong_ying | manchukuo_focus_tsr | -2 | 1 | 5 | GFX_focus_AUS_frontmiliz_focus | manchukuo_TSR.txt |
@@ -5935,143 +6639,148 @@ Source: `common/national_focus/*.txt`
 | MEX_focus_army_expansion_programme | mexico_focus_tree | 1 | 1 | 10 | GFX_goal_generic_construct_mil_factory | mexico.txt |
 | MEX_focus_heavy_artillery | mexico_focus_tree | -1 | 1 | 10 | GFX_goal_generic_army_artillery2 | mexico.txt |
 | MEX_focus_aerial_artillery | mexico_focus_tree | 1 | 1 | 10 | GFX_goal_generic_occupy_start_war | mexico.txt |
-| HOL_obtain_foreign_colonial_investments | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_the_western_possessions | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_expand_curacao_oil_refineries | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_open_second_paranam_bauxite_mine | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_antilles_defenses | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_pre_empt_venezuelan_aggression | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_the_crown_jewel_colony | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_java | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_reinforce_java | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_the_foundations_of_defense | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_sumatra | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_borneo_and_the_grote_oost | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_curtail_colonial_autonomy | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_continue_the_war_in_batavia | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_a_western_capital | netherlands_focus |  |  |  |  | netherlands.txt |
+| MA_develop_inter_province_ties | ncns_ma_clique_joint_branch_shared | 31 | 0 | 10 | GFX_goal_generic_national_unity | ncns_ma_clique_joint_branch.txt |
+| MA_unified_training_program | ncns_ma_clique_joint_branch_shared | -1 | 1 | 10 | GFX_focus_PER_recruit_bakhtiari | ncns_ma_clique_joint_branch.txt |
+| MA_strenghten_regional_trade | ncns_ma_clique_joint_branch_shared | 1 | 1 | 10 | GFX_focus_generic_economic_recovery | ncns_ma_clique_joint_branch.txt |
+| MA_promises_of_mutual_defense | ncns_ma_clique_joint_branch_shared | -1 | 1 | 5 | GFX_goal_generic_defence | ncns_ma_clique_joint_branch.txt |
+| MA_formalize_the_ma_clique_collective | ncns_ma_clique_joint_branch_shared | 0 | 1 | 10 | GFX_focus_generic_treaty | ncns_ma_clique_joint_branch.txt |
+| HOL_obtain_foreign_colonial_investments | netherlands_focus | 3 | 0 | 10 | GFX_goal_generic_consumer_goods | netherlands.txt |
+| HOL_the_western_possessions | netherlands_focus | -3 | 1 | 10 | GFX_goal_generic_construct_infrastructure | netherlands.txt |
+| HOL_expand_curacao_oil_refineries | netherlands_focus | 0 | 1 | 10 | GFX_goal_generic_oil_refinery | netherlands.txt |
+| HOL_open_second_paranam_bauxite_mine | netherlands_focus | 0 | 1 | 10 | GFX_focus_generic_aluminum | netherlands.txt |
+| HOL_antilles_defenses | netherlands_focus | 2 | 2 | 5 | GFX_goal_generic_construct_military | netherlands.txt |
+| HOL_pre_empt_venezuelan_aggression | netherlands_focus | -1 | 1 | 10 | GFX_goal_demand_sudetenland | netherlands.txt |
+| HOL_the_crown_jewel_colony | netherlands_focus | 3 | 1 | 10 | GFX_goal_generic_construct_infrastructure | netherlands.txt |
+| HOL_java | netherlands_focus | 0 | 1 | 10 | GFX_focus_generic_industry_2 | netherlands.txt |
+| HOL_reinforce_java | netherlands_focus | -2 | 2 | 5 | GFX_goal_generic_construct_military | netherlands.txt |
+| HOL_the_foundations_of_defense | netherlands_focus | -1 | 1 | 10 | GFX_focus_hol_the_foundations_of_defense | netherlands.txt |
+| HOL_sumatra | netherlands_focus | -1 | 1 | 10 | GFX_focus_generic_industry_2 | netherlands.txt |
+| HOL_borneo_and_the_grote_oost | netherlands_focus | 1 | 1 | 10 | GFX_focus_generic_industry_1 | netherlands.txt |
+| HOL_curtail_colonial_autonomy | netherlands_focus | 2 | 3 | 10 | GFX_focus_generic_treaty | netherlands.txt |
+| HOL_continue_the_war_in_batavia | netherlands_focus | 1 | 2 | 5 | GFX_focus_hol_continue_the_war_in_batavia | netherlands.txt |
+| HOL_a_western_capital | netherlands_focus | -1 | 1 | 10 | GFX_focus_generic_industry_3 | netherlands.txt |
 | HOL_expand_the_colonial_army | netherlands_focus | 1 | 1 | 10 | GFX_focus_generic_military_academy | netherlands.txt |
-| HOL_colonial_shipbuilding | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_the_east_indies_war_machine | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_prepare_for_our_return | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_liberation | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_colonial_shipbuilding | netherlands_focus | -1 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | netherlands.txt |
+| HOL_the_east_indies_war_machine | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_construct_mil_factory | netherlands.txt |
+| HOL_prepare_for_our_return | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_amphibious_assault | netherlands.txt |
+| HOL_liberation | netherlands_focus | 0 | 1 | 10 | GFX_focus_hol_liberation | netherlands.txt |
 | HOL_abandon_the_gold_standard | netherlands_focus | 13 | 0 | 10 | GFX_focus_hol_abandon_the_gold_standard | netherlands.txt |
-| HOL_continue_the_public_works | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_finish_the_noordoostpolder | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_the_maastunnel | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_expand_the_artillerieinrichtingen | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_continue_the_public_works | netherlands_focus | -5 | 1 | 10 | GFX_goal_generic_construction | netherlands.txt |
+| HOL_finish_the_noordoostpolder | netherlands_focus | -1 | 1 | 10 | GFX_goal_generic_construction2 | netherlands.txt |
+| HOL_the_maastunnel | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_construct_infrastructure | netherlands.txt |
+| HOL_expand_the_artillerieinrichtingen | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_construct_mil_factory | netherlands.txt |
 | HOL_philips_focus | netherlands_focus | 2 | 1 | 10 | GFX_focus_hol_philips | netherlands.txt |
 | HOL_expand_RD_facilities | netherlands_focus | 0 | 1 | 10 | GFX_focus_research | netherlands.txt |
-| HOL_the_zuiderzee_works | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_develop_the_randstad | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_expand_the_ijmuiden_steel_mill | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_fokker | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_the_zuiderzee_works | netherlands_focus | -1 | 1 | 30 | GFX_focus_hol_the_zuiderzee_works | netherlands.txt |
+| HOL_develop_the_randstad | netherlands_focus | -1 | 1 | 10 | GFX_goal_generic_construct_civ_factory | netherlands.txt |
+| HOL_expand_the_ijmuiden_steel_mill | netherlands_focus | 0 | 1 | 10 | GFX_focus_generic_steel | netherlands.txt |
+| HOL_fokker | netherlands_focus | 0 | 1 | 10 | GFX_focus_hol_fokker | netherlands.txt |
 | HOL_domestic_jet_engine_designs | netherlands_focus | 0 | 1 | 10 | GFX_goal_generic_build_airforce | netherlands.txt |
-| HOL_develop_the_zandstad | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_friesland_agricultural_impetus | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_daf | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_develop_the_zandstad | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_construct_civ_factory | netherlands.txt |
+| HOL_friesland_agricultural_impetus | netherlands_focus | 0 | 1 | 10 | GFX_goal_generic_consumer_goods | netherlands.txt |
+| HOL_daf | netherlands_focus | 0 | 1 | 10 | GFX_focus_hol_daf | netherlands.txt |
 | HOL_domestic_vehicle_designs | netherlands_focus | 0 | 1 | 10 | GFX_goal_generic_army_motorized | netherlands.txt |
-| HOL_continental_shipbuilding | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_domestic_innovation | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_continental_shipbuilding | netherlands_focus | 1 | 2 | 10 | GFX_goal_generic_construct_naval_dockyard | netherlands.txt |
+| HOL_domestic_innovation | netherlands_focus | -1 | 2 | 10 | GFX_focus_research | netherlands.txt |
 | HOL_make_use_of_our_riches | netherlands_focus | -1 | 1 | 10 | GFX_goal_generic_construction2 | netherlands.txt |
 | HOL_the_ultimate_deterrent | netherlands_focus | 1 | 1 | 10 | GFX_focus_wonderweapons | netherlands.txt |
 | HOL_overturn_military_budget_cuts | netherlands_focus | 6 | 1 | 10 | GFX_goal_generic_army_doctrines | netherlands.txt |
 | HOL_prepare_the_inundation_lines | netherlands_focus | -6 | 1 | 10 | GFX_focus_hol_prepare_the_inundation_lines | netherlands.txt |
-| HOL_protect_against_britain | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_further_reinforce_the_ports | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_southward_defenses | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_germany_is_the_greater_threat | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_fortress_holland | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_modernize_the_grebbeline | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_war_on_pacifism | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_protect_against_britain | netherlands_focus | -1 | 1 | 5 | GFX_focus_attack_britain | netherlands.txt |
+| HOL_further_reinforce_the_ports | netherlands_focus | 0 | 1 | 5 | GFX_focus_generic_coastal_fort | netherlands.txt |
+| HOL_southward_defenses | netherlands_focus | 0 | 1 | 5 | GFX_goal_generic_construct_military | netherlands.txt |
+| HOL_germany_is_the_greater_threat | netherlands_focus | 1 | 1 | 5 | GFX_focus_attack_germany | netherlands.txt |
+| HOL_fortress_holland | netherlands_focus | 0 | 1 | 5 | GFX_goal_generic_fortify_city | netherlands.txt |
+| HOL_modernize_the_grebbeline | netherlands_focus | 0 | 1 | 5 | GFX_goal_generic_construct_military | netherlands.txt |
+| HOL_war_on_pacifism | netherlands_focus | 1 | 3 | 10 | GFX_focus_hol_war_on_pacifism | netherlands.txt |
 | HOL_appoint_new_supreme_commander | netherlands_focus | -1 | 1 | 10 | GFX_focus_generic_military_mission | netherlands.txt |
-| HOL_modernize_our_infantry_equipment | netherlands_focus | -1 | 1 |  | GFX_goal_generic_small_arms | netherlands.txt |
-| HOL_production_under_license | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_light_tanks_for_the_colonies | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_secret_staff_talks | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_anti_tank_guns_for_the_continent | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_modernize_our_infantry_equipment | netherlands_focus | -1 | 1 | 10 | GFX_goal_generic_small_arms | netherlands.txt |
+| HOL_production_under_license | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_production | netherlands.txt |
+| HOL_light_tanks_for_the_colonies | netherlands_focus | -1 | 1 | 10 | GFX_goal_generic_army_tanks | netherlands.txt |
+| HOL_secret_staff_talks | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_intelligence_exchange | netherlands.txt |
+| HOL_anti_tank_guns_for_the_continent | netherlands_focus | 3 | 1 | 10 | GFX_goal_generic_army_artillery2 | netherlands.txt |
 | HOL_lessons_from_the_last_war | netherlands_focus | 0 | 1 | 10 | GFX_goal_generic_army_doctrines | netherlands.txt |
-| HOL_expand_the_mld | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_protect_the_mainland | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_protect_the_colonies | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_expand_the_mld | netherlands_focus | 4 | 2 | 10 | GFX_goal_generic_air_doctrine | netherlands.txt |
+| HOL_protect_the_mainland | netherlands_focus | -1 | 1 | 10 | GFX_goal_generic_air_fighter | netherlands.txt |
+| HOL_protect_the_colonies | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_air_naval_bomber | netherlands.txt |
 | HOL_modernize_the_air_fleet | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_air_production | netherlands.txt |
-| HOL_strategic_bombing_defense | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_strategic_bombing_defense | netherlands_focus | 0 | 1 | 10 | GFX_focus_generic_air_defense | netherlands.txt |
 | HOL_longer_range_models | netherlands_focus | -1 | 1 | 10 | GFX_goal_generic_air_bomber | netherlands.txt |
-| HOL_unsinkable_aircraft_carriers | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_unsinkable_aircraft_carriers | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_construct_military | netherlands.txt |
 | HOL_aviatic_aspirations | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_build_airforce | netherlands.txt |
-| HOL_prepare_naval_expansion | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_expand_the_amsterdam_petroleum_harbor | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_prepare_naval_expansion | netherlands_focus | 8 | 2 | 10 | GFX_goal_generic_construct_naval_dockyard | netherlands.txt |
+| HOL_expand_the_amsterdam_petroleum_harbor | netherlands_focus | 2 | 1 | 5 | GFX_goal_generic_oil_refinery | netherlands.txt |
 | HOL_cornerstone_of_colonial_defense | netherlands_focus | 0 | 1 | 10 | GFX_goal_generic_navy_doctrines_tactics | netherlands.txt |
 | HOL_rely_on_submarines | netherlands_focus | -1 | 1 | 10 | GFX_goal_generic_navy_submarine | netherlands.txt |
 | HOL_modernize_the_cruiser_fleet | netherlands_focus | 1 | 1 | 10 | GFX_focus_generic_cruiser2 | netherlands.txt |
-| HOL_the_battlecruiser_plan | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_the_battlecruiser_plan | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_navy_battleship | netherlands.txt |
 | HOL_air_cover_for_the_new_fleet | netherlands_focus | -1 | 1 | 10 | GFX_goal_generic_navy_carrier | netherlands.txt |
 | HOL_escorts_for_the_new_fleet | netherlands_focus | 1 | 1 | 10 | GFX_focus_generic_destroyer | netherlands.txt |
 | HOL_naval_heritage | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_build_navy | netherlands.txt |
-| HOL_form_new_government | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_gateway_to_europe | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_cave_to_the_germans | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_maintain_trade_neutrality | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_cave_to_the_british | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_form_new_government | netherlands_focus | 27 | 0 | 10 | GFX_goal_generic_improve_relations | netherlands.txt |
+| HOL_gateway_to_europe | netherlands_focus | 0 | 1 | 10 | GFX_focus_hol_gateway_to_europe | netherlands.txt |
+| HOL_cave_to_the_germans | netherlands_focus | -4 | 1 | 5 | GFX_goal_generic_trade | netherlands.txt |
+| HOL_maintain_trade_neutrality | netherlands_focus | 0 | 1 | 5 | GFX_goal_generic_positive_trade_relations | netherlands.txt |
+| HOL_cave_to_the_british | netherlands_focus | 4 | 1 | 5 | GFX_goal_generic_trade | netherlands.txt |
 | HOL_volk_en_vaderland | netherlands_focus | -3 | 1 | 10 | GFX_goal_support_fascism | netherlands.txt |
-| HOL_de_jeugdstorm | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_strength_over_blood | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_join_germany | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_de_jeugdstorm | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_more_territorial_claims | netherlands.txt |
+| HOL_strength_over_blood | netherlands_focus | -1 | 1 | 10 | GFX_focus_generic_support_the_left_right | netherlands.txt |
+| HOL_join_germany | netherlands_focus | -1 | 1 | 5 | GFX_focus_chi_mission_to_germany | netherlands.txt |
 | HOL_german_technological_exchange | netherlands_focus | -1 | 1 | 10 | GFX_goal_tfv_generic_tech_sharing | netherlands.txt |
-| HOL_beginnings_of_a_dutch_blitzkrieg | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_placate_the_japanese | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_assume_the_naval_burden | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_the_netherlands_first | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_beginnings_of_a_dutch_blitzkrieg | netherlands_focus | -1 | 3 | 10 | GFX_focus_generic_tank_production | netherlands.txt |
+| HOL_placate_the_japanese | netherlands_focus | 0 | 2 | 10 | GFX_focus_chi_collaboration_with_the_japanese | netherlands.txt |
+| HOL_assume_the_naval_burden | netherlands_focus | 0 | 2 | 10 | GFX_goal_generic_occupy_states_coastal | netherlands.txt |
+| HOL_the_netherlands_first | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_demand_territory | netherlands.txt |
 | HOL_implement_the_program | netherlands_focus | 0 | 2 | 10 | GFX_goal_generic_military_sphere | netherlands.txt |
 | HOL_taking_back_french_flanders | netherlands_focus | 0 | 2 | 10 | GFX_goal_generic_occupy_states_ongoing_war | netherlands.txt |
-| HOL_the_united_netherlands | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_taking_back_our_old_colonies | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_imperial_ambitions | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_the_united_netherlands | netherlands_focus | 1 | 1 | 10 | GFX_focus_hol_united_netherlands | netherlands.txt |
+| HOL_taking_back_our_old_colonies | netherlands_focus | 0 | 2 | 10 | GFX_goal_generic_position_armies | netherlands.txt |
+| HOL_imperial_ambitions | netherlands_focus | 0 | 2 | 10 | GFX_goal_generic_territory_or_war | netherlands.txt |
 | HOL_legacy_of_the_de_zeven_provincien_mutiny | netherlands_focus | -2 | 1 | 10 | GFX_focus_hol_legacy_of_the_de_zeven_provincien_mutiny | netherlands.txt |
-| HOL_decolonization | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_red_is_the_new_orange | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_affirm_loyalty_to_moscow | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_decolonization | netherlands_focus | -1 | 1 | 10 | GFX_goal_tfv_saf_anti_colonialist_crusade | netherlands.txt |
+| HOL_red_is_the_new_orange | netherlands_focus | 1 | 1 | 10 | GFX_goal_tfv_burn_the_royal_portraits | netherlands.txt |
+| HOL_affirm_loyalty_to_moscow | netherlands_focus | -2 | 1 | 5 | GFX_focus_chi_mission_to_the_soviet_union | netherlands.txt |
 | HOL_soviet_technical_teams | netherlands_focus | -1 | 1 | 10 | GFX_goal_generic_production2 | netherlands.txt |
-| HOL_making_the_ends_of_europe_meet | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_join_the_french | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_making_the_ends_of_europe_meet | netherlands_focus | 0 | 2 | 10 | GFX_focus_attack_germany | netherlands.txt |
+| HOL_join_the_french | netherlands_focus | 0 | 1 | 5 | GFX_focus_chi_reach_out_to_france | netherlands.txt |
 | HOL_french_military_mission | netherlands_focus | 0 | 2 | 10 | GFX_goal_generic_army_doctrines | netherlands.txt |
 | HOL_socialist_industrial_support | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_soviet_construction | netherlands.txt |
 | HOL_for_the_common_good | netherlands_focus | -1 | 1 | 10 | GFX_focus_generic_socialist_science | netherlands.txt |
 | HOL_mobilize_the_masses | netherlands_focus | 0 | 2 | 10 | GFX_goal_generic_allies_build_infantry | netherlands.txt |
-| HOL_bastion_of_true_communism | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_bring_socialism_south | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_bastion_of_true_communism | netherlands_focus | 2 | 1 | 10 | GFX_focus_generic_join_comintern | netherlands.txt |
+| HOL_bring_socialism_south | netherlands_focus | -1 | 1 | 10 | GFX_goal_generic_war_with_comintern | netherlands.txt |
 | HOL_enemies_on_all_fronts | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_allies_build_infantry | netherlands.txt |
 | HOL_haven_of_tolerance | netherlands_focus | 0 | 2 | 10 | GFX_goal_support_communism | netherlands.txt |
-| HOL_pre_empt_western_intervention | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_oranje_boven | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_pre_empt_western_intervention | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_occupy_start_war | netherlands.txt |
+| HOL_oranje_boven | netherlands_focus | 2 | 1 | 10 | GFX_focus_hol_oranje_boven | netherlands.txt |
 | HOL_symbol_of_resistance | netherlands_focus | -1 | 1 | 10 | GFX_focus_generic_support_the_left_right | netherlands.txt |
-| HOL_replace_the_defeatist_government | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_the_only_man_in_the_dutch_government | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_replace_the_defeatist_government | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_political_pressure | netherlands.txt |
+| HOL_the_only_man_in_the_dutch_government | netherlands_focus | 1 | 1 | 10 | GFX_focus_hol_the_only_man_in_the_dutch_government | netherlands.txt |
 | HOL_de_vernieuwing | netherlands_focus | -1 | 1 | 10 | GFX_goal_generic_demand_territory | netherlands.txt |
 | HOL_depillarization | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_national_unity | netherlands.txt |
 | HOL_a_new_dutch_unity | netherlands_focus | 1 | 1 | 10 | GFX_goal_anschluss | netherlands.txt |
-| HOL_revive_the_buffer_state_proposal | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_royal_arms_purchases | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_develop_the_south | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_wilhelminism | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_revive_the_buffer_state_proposal | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_position_armies | netherlands.txt |
+| HOL_royal_arms_purchases | netherlands_focus | 0 | 2 | 10 | GFX_goal_generic_construct_mil_factory | netherlands.txt |
+| HOL_develop_the_south | netherlands_focus | 0 | 1 | 10 | GFX_goal_generic_construct_civilian | netherlands.txt |
+| HOL_wilhelminism | netherlands_focus | 0 | 3 | 10 | GFX_goal_generic_dangerous_deal | netherlands.txt |
 | HOL_unity_through_democracy | netherlands_focus | 3 | 1 | 10 | GFX_goal_support_democracy | netherlands.txt |
-| HOL_go_with_britain | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_go_with_britain | netherlands_focus | 3 | 1 | 5 | GFX_focus_chi_british_cooperation | netherlands.txt |
 | HOL_de_vaarplicht | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_propaganda | netherlands.txt |
-| HOL_request_allied_favors | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_the_singapore_conferences | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_ship_a_day_sinking_quotas | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_request_allied_favors | netherlands_focus | 0 | 2 | 10 | GFX_goal_generic_major_alliance | netherlands.txt |
+| HOL_the_singapore_conferences | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_navy_doctrines_tactics | netherlands.txt |
+| HOL_ship_a_day_sinking_quotas | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_navy_submarine | netherlands.txt |
 | HOL_allied_technological_developments | netherlands_focus | 1 | 1 | 10 | GFX_goal_tfv_generic_tech_sharing | netherlands.txt |
-| HOL_american_west_indies_protectorate | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_combined_chiefs_of_staff_representation | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_the_fourth_ally | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_zandery_military_airport | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_lead_the_minor_democracies | netherlands_focus |  |  |  |  | netherlands.txt |
-| HOL_form_the_benelux | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_american_west_indies_protectorate | netherlands_focus | 1 | 1 | 10 | GFX_focus_chi_mission_to_the_us | netherlands.txt |
+| HOL_combined_chiefs_of_staff_representation | netherlands_focus | 1 | 1 | 10 | GFX_focus_generic_military_academy | netherlands.txt |
+| HOL_the_fourth_ally | netherlands_focus | 0 | 1 | 10 | GFX_focus_hol_the_fourth_ally | netherlands.txt |
+| HOL_zandery_military_airport | netherlands_focus | 1 | 2 | 10 | GFX_goal_generic_construct_military | netherlands.txt |
+| HOL_lead_the_minor_democracies | netherlands_focus | 2 | 1 | 10 | GFX_goal_generic_demand_territory | netherlands.txt |
+| HOL_form_the_benelux | netherlands_focus | -1 | 1 | 10 | GFX_goal_generic_position_armies | netherlands.txt |
 | HOL_responsibility_for_our_own_defense | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_build_tank | netherlands.txt |
 | HOL_lessons_from_the_low_countries | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_construct_military | netherlands.txt |
-| HOL_foundations_for_a_european_union | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_foundations_for_a_european_union | netherlands_focus | 0 | 1 | 10 | GFX_focus_generic_the_council_of_europe | netherlands.txt |
 | HOL_the_continents_best_and_brightest | netherlands_focus | -1 | 1 | 10 | GFX_goal_tfv_generic_tech_sharing | netherlands.txt |
-| HOL_the_best_defense | netherlands_focus |  |  |  |  | netherlands.txt |
+| HOL_the_best_defense | netherlands_focus | 1 | 1 | 10 | GFX_goal_generic_major_war | netherlands.txt |
 | NZL_transfer_the_new_zealand_division | new_zealander_focus | 16 | 0 | 10 | GFX_goal_generic_navy_doctrines_tactics | new_zealand.txt |
 | NZL_form_the_rnzn | new_zealander_focus | 0 | 1 | 10 | GFX_goal_generic_build_navy | new_zealand.txt |
 | NZL_expand_devonport_naval_base | new_zealander_focus | -1 | 2 | 10 | GFX_goal_generic_construct_naval_dockyard | new_zealand.txt |
@@ -6131,16 +6840,68 @@ Source: `common/national_focus/*.txt`
 | NZL_technology_sharing_with_japan | new_zealander_focus | 0 | 2 | 10 | GFX_goal_tfv_generic_tech_sharing | new_zealand.txt |
 | NZL_constitution_amendment_act | new_zealander_focus | 3 | 1 | 10 | GFX_goal_tfv_sever_ties_with_uk | new_zealand.txt |
 | NZL_independent_new_zealand | new_zealander_focus | 0 | 1 | 10 | GFX_focus_AST_never_gallipoli | new_zealand.txt |
+| NORDIC_form_joint_alliance | nordic_shared_shared | 40 | 15 | 10 |  | nordic_shared.txt |
+| NORDIC_northern_command | nordic_shared_shared | -6 | 1 | 5 | GFX_goal_generic_army_doctrines | nordic_shared.txt |
+| NORDIC_political_cooperation | nordic_shared_shared | 0 | 1 | 5 | GFX_focus_generic_improve_the_administration | nordic_shared.txt |
+| NORDIC_economic_union | nordic_shared_shared | 1 | 1 | 10 | GFX_goal_generic_positive_trade_relations | nordic_shared.txt |
+| NORDIC_shared_intelligence | nordic_shared_shared | -1 | 1 | 10 | GFX_goal_generic_intelligence_exchange | nordic_shared.txt |
+| NORDIC_first_joint_institution | nordic_shared_shared | 1 | 1 | 10 |  | nordic_shared.txt |
+| NORDIC_procurement_fund | nordic_shared_shared | 0 | 1 | 10 | GFX_focus_usa_reestablish_the_gold_standard | nordic_shared.txt |
+| NORDIC_second_institution | nordic_shared_shared | 0 | 1 | 10 |  | nordic_shared.txt |
+| NORDIC_nordic_army | nordic_shared_shared | 3 | 1 | 10 |  | nordic_shared.txt |
+| NORDIC_joint_military_exercises | nordic_shared_shared | 0 | 1 | 5 | GFX_focus_generic_military_mission | nordic_shared.txt |
+| NORDIC_unified_recruitment | nordic_shared_shared | 0 | 1 | 10 | GFX_focus_chi_army_reform | nordic_shared.txt |
+| NORDIC_mechanized_army | nordic_shared_shared | -1 | 1 | 5 | GFX_goal_generic_army_tanks | nordic_shared.txt |
+| NORDIC_infantry_first | nordic_shared_shared | 1 | 1 | 5 | GFX_goal_generic_allies_build_infantry | nordic_shared.txt |
+| NORDIC_nordic_navy | nordic_shared_shared | -2 | 1 | 10 |  | nordic_shared.txt |
+| NORDIC_naval_exercises | nordic_shared_shared | 0 | 1 | 10 | GFX_focus_generic_naval_discipline | nordic_shared.txt |
+| NORDIC_naval_officer_academy | nordic_shared_shared | 3 | 1 | 10 | GFX_focus_generic_military_academy | nordic_shared.txt |
+| NORDIC_defend_the_danish_belt | nordic_shared_shared | -2 | 1 | 5 | GFX_focus_generic_develop_denmark_silhouette | nordic_shared.txt |
+| NORDIC_control_the_northern_sea | nordic_shared_shared | 0 | 1 | 5 | GFX_focus_generic_north_atlantic_fleet | nordic_shared.txt |
+| NORDIC_baltic_sea_dominance | nordic_shared_shared | 2 | 1 | 5 | GFX_focus_generic_baltic_sea_fleet | nordic_shared.txt |
+| NORDIC_naval_research_institute | nordic_shared_shared | 0 | 1 | 5 | GFX_goal_generic_navy_doctrines_tactics | nordic_shared.txt |
+| NORDIC_submarine_cooperation | nordic_shared_shared | 0 | 1 | 10 | GFX_goal_generic_navy_submarine | nordic_shared.txt |
+| NORDIC_mountaineers | nordic_shared_shared | 1 | 1 | 10 | GFX_goal_generic_special_forces | nordic_shared.txt |
+| NORDIC_amphibious_forces | nordic_shared_shared | 0 | 3 | 10 | GFX_goal_generic_amphibious_assault | nordic_shared.txt |
+| NORDIC_nordic_airforce | nordic_shared_shared | -5 | 0 | 10 |  | nordic_shared.txt |
+| NORDIC_air_exercises | nordic_shared_shared | 0 | 1 | 10 | GFX_focus_SOV_flying_clubs | nordic_shared.txt |
+| NORDIC_air_production | nordic_shared_shared | 0 | 1 | 10 | GFX_focus_generic_aircraft_production | nordic_shared.txt |
+| NORDIC_naval_aircraft | nordic_shared_shared | 2 | 1 | 5 | GFX_goal_generic_air_naval_bomber | nordic_shared.txt |
+| NORDIC_bomber_command | nordic_shared_shared | -1 | 1 | 5 | GFX_goal_generic_air_bomber | nordic_shared.txt |
+| NORDIC_fighter_command | nordic_shared_shared | 1 | 1 | 5 | GFX_goal_generic_air_fighter2 | nordic_shared.txt |
+| NORDIC_ground_operations | nordic_shared_shared | 1 | 1 | 5 | GFX_focus_generic_air_bases | nordic_shared.txt |
+| NORDIC_carrier_effort | nordic_shared_shared | 0 | 3 | 10 | GFX_goal_generic_navy_carrier | nordic_shared.txt |
+| NORDIC_nordic_research | nordic_shared_shared | 7 | 1 | 10 |  | nordic_shared.txt |
+| NORDIC_materiel_design | nordic_shared_shared | 1 | 1 | 5 | GFX_focus_generic_reorient_production | nordic_shared.txt |
+| NORDIC_nordic_construction_developments | nordic_shared_shared | -1 | 1 | 5 | GFX_goal_generic_construction | nordic_shared.txt |
+| NORDIC_nordic_industry | nordic_shared_shared | -2 | 1 | 10 |  | nordic_shared.txt |
+| NORDIC_civilian_contributions | nordic_shared_shared | 0 | 1 | 5 | GFX_focus_SWI_issue_war_bonds | nordic_shared.txt |
+| NORDIC_fill_the_infrastructure_gaps | nordic_shared_shared | -1 | 1 | 10 | GFX_goal_generic_construct_infrastructure | nordic_shared.txt |
+| NORDIC_develop_resources | nordic_shared_shared | 1 | 1 | 10 | GFX_focus_generic_mining_industry | nordic_shared.txt |
+| NORDIC_naval_construction | nordic_shared_shared | 1 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | nordic_shared.txt |
+| NORDIC_railway_expansion | nordic_shared_shared | -1 | 1 | 5 | GFX_focus_generic_railroad | nordic_shared.txt |
+| NORDIC_nordic_electronics | nordic_shared_shared | 0 | 1 | 5 | GFX_focus_SWE_radiotjanst | nordic_shared.txt |
+| NORDIC_research_investments | nordic_shared_shared | 0 | 1 | 5 | GFX_focus_research2 | nordic_shared.txt |
+| NORDIC_nuclear_research | nordic_shared_shared | 0 | 1 | 5 | GFX_focus_wonderweapons | nordic_shared.txt |
+| NORDIC_nuclear_production | nordic_shared_shared | 0 | 2 | 10 | GFX_goal_generic_secret_weapon | nordic_shared.txt |
+| NORDIC_nordic_rocketry | nordic_shared_shared | 0 | 1 | 10 | GFX_focus_rocketry | nordic_shared.txt |
+| NORDIC_jet_engines | nordic_shared_shared | 0 | 2 | 10 | GFX_focus_generic_jet_planes | nordic_shared.txt |
+| NORDIC_nordic_military_industry | nordic_shared_shared | 2 | 1 | 10 |  | nordic_shared.txt |
+| NORDIC_standarized_parts | nordic_shared_shared | 0 | 1 | 5 | GFX_focus_SWE_let_fly_all_guns | nordic_shared.txt |
+| NORDIC_military_industry_hub | nordic_shared_shared | -1 | 1 | 10 | GFX_goal_generic_construct_mil_factory | nordic_shared.txt |
+| NORDIC_ad_hoc_military_industry | nordic_shared_shared | 1 | 1 | 10 | GFX_goal_generic_production | nordic_shared.txt |
+| NORDIC_equipment_conversion_focus | nordic_shared_shared | 1 | 1 | 10 | GFX_focus_generic_license_production | nordic_shared.txt |
+| NORDIC_machine_tools_research | nordic_shared_shared | 1 | 1 | 10 | GFX_focus_generic_modernize_industry | nordic_shared.txt |
 | NOR_a_resurgent_labor_movement | norwegian_focus | 4 | 0 | 5 | GFX_focus_NOR_a_resurgent_labor_movement | norway.txt |
-| NOR_vote_of_no_confidence | norwegian_focus | 11 | 0 |  | GFX_focus_NOR_vote_of_no_confidence | norway.txt |
-| NOR_continue_nygaardsvold_government | norwegian_focus | 8 | 0 |  | GFX_focus_NOR_continue_nygaardsvold_government | norway.txt |
+| NOR_vote_of_no_confidence | norwegian_focus | 11 | 0 | 5 | GFX_focus_NOR_vote_of_no_confidence | norway.txt |
+| NOR_continue_nygaardsvold_government | norwegian_focus | 8 | 0 | 5 | GFX_focus_NOR_continue_nygaardsvold_government | norway.txt |
 | NOR_weathering_the_storm_to_come | norwegian_focus | -4 | 1 | 5 | GFX_focus_NOR_weathering_the_storm_to_come | norway.txt |
-| NOR_compromise_with_the_nkp | norwegian_focus | -3 | 1 |  | GFX_focus_NOR_compromise_with_the_nkp | norway.txt |
-| NOR_prosecute_the_nkp | norwegian_focus | 3 | 1 |  | GFX_focus_NOR_prosecute_the_nkp | norway.txt |
+| NOR_compromise_with_the_nkp | norwegian_focus | -3 | 1 | 5 | GFX_focus_NOR_compromise_with_the_nkp | norway.txt |
+| NOR_prosecute_the_nkp | norwegian_focus | 3 | 1 | 5 | GFX_focus_NOR_prosecute_the_nkp | norway.txt |
 | NOR_the_seeds_of_the_revolution | norwegian_focus | 3 | 1 | 10 | GFX_focus_SOV_organization_centralization_discipline | norway.txt |
 | NOR_the_voice_of_the_people | norwegian_focus | -2 | 1 | 5 | GFX_focus_prc_agrarian_socialism | norway.txt |
 | NOR_organize_partisan_militias | norwegian_focus | 0 | 1 | 5 | GFX_focus_generic_limited_social_mobilization | norway.txt |
-| NOR_consolidate_power | norwegian_focus | 11 | 2 |  | GFX_goal_generic_political_pressure | norway.txt |
+| NOR_consolidate_power | norwegian_focus | 11 | 2 | 5 | GFX_goal_generic_political_pressure | norway.txt |
 | NOR_demand_nationalizations | norwegian_focus | 2 | 1 | 5 | GFX_focus_generic_industry_3 | norway.txt |
 | NOR_squash_dissent | norwegian_focus | -1 | 1 | 5 | GFX_goal_tfv_saf_anti_colonialist_crusade | norway.txt |
 | NOR_denounce_the_german_reich | norwegian_focus | 1 | 1 | 10 | GFX_focus_ger_oppose_hitler | norway.txt |
@@ -6152,7 +6913,7 @@ Source: `common/national_focus/*.txt`
 | NOR_worker_armies | norwegian_focus | 0 | 1 | 10 | GFX_focus_generic_workers | norway.txt |
 | NOR_nationalize_the_hydro_plants | norwegian_focus | -2 | 1 | 10 | GFX_focus_generic_hydroelectric_energy | norway.txt |
 | NOR_expand_military_industry | norwegian_focus | 2 | 1 | 10 | GFX_focus_generic_modernize_industry | norway.txt |
-| NOR_a_new_norway | norwegian_focus |  |  |  |  | norway.txt |
+| NOR_a_new_norway | norwegian_focus | 0 | 1 | 10 |  | norway.txt |
 | NOR_reawaken_the_permanent_revolution | norwegian_focus | -1 | 1 | 10 | GFX_goal_generic_war_with_comintern | norway.txt |
 | NOR_norwegian_engineering | norwegian_focus | 0 | 1 | 10 | GFX_focus_DEN_no_regulations | norway.txt |
 | NOR_crush_stalin | norwegian_focus | 1 | 1 | 10 | GFX_focus_attack_soviet | norway.txt |
@@ -6189,12 +6950,12 @@ Source: `common/national_focus/*.txt`
 | NOR_restore_public_trust_in_the_storting | norwegian_focus | -1 | 1 | 10 | GFX_focus_NOR_restore_public_trust_in_the_storting | norway.txt |
 | NOR_the_neutrality_guard | norwegian_focus | 0 | 1 | 10 | GFX_goal_generic_military_sphere | norway.txt |
 | NOR_rearm_for_defense | norwegian_focus | 1 | 1 | 10 | GFX_goal_generic_fortify_city | norway.txt |
-| NOR_fde_intelligence_agency | norwegian_focus | -1 | 2 |  | GFX_focus_generic_secret_service_agency | norway.txt |
+| NOR_fde_intelligence_agency | norwegian_focus | -1 | 2 | 10 | GFX_focus_generic_secret_service_agency | norway.txt |
 | NOR_patrol_our_coast | norwegian_focus | 1 | 1 | 10 | GFX_goal_generic_navy_cruiser | norway.txt |
 | NOR_social_incrementalism | norwegian_focus | 0 | 1 | 10 | GFX_goal_generic_national_unity | norway.txt |
 | NOR_print_more_money | norwegian_focus | 0 | 2 | 10 | GFX_focus_hol_abandon_the_gold_standard | norway.txt |
 | NOR_restart_public_investment | norwegian_focus | 1 | 1 | 5 | GFX_goal_generic_construct_civ_factory | norway.txt |
-| NOR_coastal_defense | norwegian_focus | -1 | 1 |  | GFX_focus_generic_coastal_fort | norway.txt |
+| NOR_coastal_defense | norwegian_focus | -1 | 1 | 5 | GFX_focus_generic_coastal_fort | norway.txt |
 | NOR_fortify_norway | norwegian_focus | 2 | 0 | 5 | GFX_focus_generic_fortify_norway | norway.txt |
 | NOR_the_kings_no | norwegian_focus | 1 | 1 | 5 | GFX_focus_NOR_the_kings_no | norway.txt |
 | NOR_prince_olavs_inspiration | norwegian_focus | -5 | 1 | 5 | GFX_focus_generic_military_mission | norway.txt |
@@ -6205,9 +6966,9 @@ Source: `common/national_focus/*.txt`
 | NOR_recruit_norwegian_refugees | norwegian_focus | 1 | 1 | 10 | GFX_focus_generic_manpower | norway.txt |
 | NOR_empower_sivorg | norwegian_focus | 1 | 1 | 10 | GFX_focus_NOR_empower_sivorg | norway.txt |
 | NOR_preparing_the_return_to_norway | norwegian_focus | 1 | 1 | 10 | GFX_focus_NOR_preparing_the_return_to_norway | norway.txt |
-| NOR_the_stumbling_storting | norwegian_focus | 16 | 0 |  | GFX_focus_NOR_the_stumbling_storting | norway.txt |
-| NOR_lurk_in_the_shadows | norwegian_focus | -5 | 1 |  | GFX_focus_NOR_lurk_in_the_shadows | norway.txt |
-| NOR_the_chamberlains_overture | norwegian_focus | 8 | 1 |  | GFX_focus_NOR_the_chamberlains_overture | norway.txt |
+| NOR_the_stumbling_storting | norwegian_focus | 16 | 0 | 5 | GFX_focus_NOR_the_stumbling_storting | norway.txt |
+| NOR_lurk_in_the_shadows | norwegian_focus | -5 | 1 | 5 | GFX_focus_NOR_lurk_in_the_shadows | norway.txt |
+| NOR_the_chamberlains_overture | norwegian_focus | 8 | 1 | 5 | GFX_focus_NOR_the_chamberlains_overture | norway.txt |
 | NOR_ask_for_foreign_support | norwegian_focus | -3 | 1 | 5 | GFX_goal_support_fascism | norway.txt |
 | NOR_approach_the_fatherland_league | norwegian_focus | -1 | 1 | 5 | GFX_focus_NOR_approach_the_fatherland_league | norway.txt |
 | NOR_cultivate_the_conservative_parties | norwegian_focus | 1 | 1 | 5 | GFX_goal_tripartite_pact | norway.txt |
@@ -6215,7 +6976,7 @@ Source: `common/national_focus/*.txt`
 | NOR_nasjonal_samling | norwegian_focus | 1 | 1 | 10 | GFX_focus_NOR_nasjonal_samling | norway.txt |
 | NOR_the_secret_army | norwegian_focus | -1 | 1 | 10 | GFX_focus_SWE_varnplikt | norway.txt |
 | NOR_empower_hirden | norwegian_focus | 1 | 1 | 10 | GFX_focus_generic_fascist_troops | norway.txt |
-| NOR_quislings_coup | norwegian_focus |  |  |  | GFX_focus_NOR_quislings_coup | norway.txt |
+| NOR_quislings_coup | norwegian_focus | 0 | 2 | 1 | GFX_focus_NOR_quislings_coup | norway.txt |
 | NOR_quislings_regime | norwegian_focus | 1 | 1 | 5 | GFX_focus_NOR_quislings_regime | norway.txt |
 | NOR_get_rid_of_quisling | norwegian_focus | -1 | 1 | 5 | GFX_focus_NOR_get_rid_of_quisling | norway.txt |
 | NOR_elevate_hirden | norwegian_focus | 3 | 1 | 10 | GFX_focus_generic_manpower | norway.txt |
@@ -6259,17 +7020,17 @@ Source: `common/national_focus/*.txt`
 | NOR_the_kings_line | norwegian_focus | 1 | 1 | 10 | GFX_goal_generic_fortify_city | norway.txt |
 | NOR_reviving_the_norgesveldet | norwegian_focus | -2 | 1 | 5 | GFX_focus_ICE_the_viking_spirit | norway.txt |
 | NOR_our_royal_claims | norwegian_focus | 0 | 1 | 5 | GFX_focus_NOR_our_royal_claims | norway.txt |
-| NOR_swedish_claims | norwegian_focus | 6 | 1 |  | GFX_focus_generic_invade_sweden | norway.txt |
-| NOR_claims_on_faroe_islands | norwegian_focus | -3 | 1 |  | GFX_focus_generic_annex_country | norway.txt |
+| NOR_swedish_claims | norwegian_focus | 6 | 1 | 10 | GFX_focus_generic_invade_sweden | norway.txt |
+| NOR_claims_on_faroe_islands | norwegian_focus | -3 | 1 | 5 | GFX_focus_generic_annex_country | norway.txt |
 | NOR_eirik_raudes_land | norwegian_focus | 2 | 0 | 10 | GFX_goal_generic_position_armies | norway.txt |
 | NOR_iceland | norwegian_focus | 2 | 0 | 10 | GFX_focus_generic_invade_iceland | norway.txt |
-| NOR_claims_on_denmark | norwegian_focus | 4 | 1 |  | GFX_focus_generic_invade_denmark | norway.txt |
+| NOR_claims_on_denmark | norwegian_focus | 4 | 1 | 10 | GFX_focus_generic_invade_denmark | norway.txt |
 | NOR_bjarmeland | norwegian_focus | 1 | 1 | 10 | GFX_goal_generic_more_territorial_claims | norway.txt |
 | NOR_claims_on_ireland | norwegian_focus | 0 | 1 | 10 | GFX_goal_generic_territory_or_war | norway.txt |
 | NOR_claims_on_scotland | norwegian_focus | 2 | 0 | 10 | GFX_focus_generic_annex_country_2 | norway.txt |
 | NOR_old_vinland | norwegian_focus | -4 | 0 | 10 | GFX_goal_generic_major_war | norway.txt |
 | NOR_consolidate_kingdom | norwegian_focus | -4 | 3 | 10 | GFX_focus_rom_royal_dictatorship | norway.txt |
-| NOR_start_rearmament | norwegian_focus | 20 | 0 |  | GFX_focus_generic_combined_arms | norway.txt |
+| NOR_start_rearmament | norwegian_focus | 20 | 0 | 10 | GFX_focus_generic_combined_arms | norway.txt |
 | NOR_kickstart_military_industry | norwegian_focus | -6 | 1 | 10 | GFX_goal_generic_construct_mil_factory | norway.txt |
 | NOR_build_supplies_network | norwegian_focus | 0 | 1 | 10 | GFX_goal_generic_construct_infrastructure | norway.txt |
 | NOR_drobak_coastal_fort | norwegian_focus | -3 | 1 | 5 | GFX_focus_NOR_drobak_coastal_fort | norway.txt |
@@ -6323,60 +7084,109 @@ Source: `common/national_focus/*.txt`
 | NOR_nortraship | norwegian_focus | 2 | 1 | 5 | GFX_focus_NOR_nortraship | norway.txt |
 | NOR_convoy_bombing | norwegian_focus | 1 | 1 | 10 | GFX_goal_generic_air_naval_bomber | norway.txt |
 | NOR_rebuild_the_royal_navy | norwegian_focus | 0 | 1 | 5 | GFX_focus_POL_develop_polish_shipbuilding | norway.txt |
-| PAR_fedrerista_land_reforms | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_reach_out_to_european_contacts | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_rebuild_humaita | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_ban_vouchers | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_a_great_charter | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_invite_japanese_settlers | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_central_bank_of_paraguay | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_allow_unions_to_strike | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_military_pensions | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_allow_women_workers | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_request_weapons | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_a_call_out_for_aid | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_to_cross_a_river | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_specialized_terrain_training | paraguay_focus |  |  |  | GFX_focus_eng_special_air_service | paraguay.txt |
-| PAR_chaco_war_decoration | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_order_italian_planes | paraguay_focus |  |  |  |  | paraguay.txt |
+| PAR_fedrerista_land_reforms | paraguay_focus | 3 | 0 | 5 | GFX_focus_generic_farmland | paraguay.txt |
+| PAR_reach_out_to_european_contacts | paraguay_focus | 15 | 0 | 5 | GFX_focus_generic_befriend_usa | paraguay.txt |
+| PAR_rebuild_humaita | paraguay_focus | 9 | 1 | 10 | GFX_focus_SWE_hedgehog_defense | paraguay.txt |
+| PAR_ban_vouchers | paraguay_focus | -2 | 1 | 5 | GFX_focus_hol_abandon_the_gold_standard | paraguay.txt |
+| PAR_a_great_charter | paraguay_focus | -1 | 2 | 10 | GFX_focus_renounce_the_treaty_of_trianon | paraguay.txt |
+| PAR_invite_japanese_settlers | paraguay_focus | -1 | 1 | 5 | GFX_focus_chi_collaboration_with_the_japanese | paraguay.txt |
+| PAR_central_bank_of_paraguay | paraguay_focus | -1 | 1 | 10 | GFX_focus_usa_reestablish_the_gold_standard | paraguay.txt |
+| PAR_allow_unions_to_strike | paraguay_focus | 2 | 0 | 5 | GFX_focus_eng_concessions_to_the_trade_unions | paraguay.txt |
+| PAR_military_pensions | paraguay_focus | 2 | 0 | 5 | GFX_focus_SWE_defense_act | paraguay.txt |
+| PAR_allow_women_workers | paraguay_focus | -1 | 1 | 10 | GFX_focus_generic_women_in_military | paraguay.txt |
+| PAR_request_weapons | paraguay_focus | 0 | 1 | 10 | GFX_goal_generic_amphibious_assault | paraguay.txt |
+| PAR_a_call_out_for_aid | paraguay_focus | -2 | 1 | 10 | GFX_focus_chi_reach_out_to_france | paraguay.txt |
+| PAR_to_cross_a_river | paraguay_focus | 2 | 1 | 10 | GFX_focus_generic_provoke_border_clashes | paraguay.txt |
+| PAR_specialized_terrain_training | paraguay_focus | 0 | 1 | 10 | GFX_focus_eng_special_air_service | paraguay.txt |
+| PAR_chaco_war_decoration | paraguay_focus | 0 | 1 | 5 | GFX_focus_generic_strike_at_democracy2 | paraguay.txt |
+| PAR_order_italian_planes | paraguay_focus | 5 | 1 | 10 | GFX_focus_generic_copy_plane_designs | paraguay.txt |
 | PAR_urbanization | paraguay_focus | 2 | 0 | 10 | GFX_focus_SWE_urbanization | paraguay.txt |
-| PAR_ask_for_bankroll | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_emergency_powers | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_by_all_means_which_to_win | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_assasinate_rafael_franco | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_goad_bolivia | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_put_estigarribia_on_a_pedestal | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_purge_the_military_of_dissent | paraguay_focus |  |  |  |  | paraguay.txt |
+| PAR_ask_for_bankroll | paraguay_focus | 0 | 1 | 10 | GFX_focus_mex_privatisation | paraguay.txt |
+| PAR_emergency_powers | paraguay_focus | -1 | 4 | 5 | GFX_focus_generic_military_dictatorship | paraguay.txt |
+| PAR_by_all_means_which_to_win | paraguay_focus | 4 | 1 | 10 | GFX_focus_SWE_varnplikt | paraguay.txt |
+| PAR_assasinate_rafael_franco | paraguay_focus | -1 | 1 | 10 | GFX_focus_generic_conspiracy | paraguay.txt |
+| PAR_goad_bolivia | paraguay_focus | 2 | 0 | 10 | GFX_focus_generic_attack_bolivia | paraguay.txt |
+| PAR_put_estigarribia_on_a_pedestal | paraguay_focus | 1 | 1 | 10 | GFX_focus_PAR_put_estigarribia_on_a_pedestal | paraguay.txt |
+| PAR_purge_the_military_of_dissent | paraguay_focus | 0 | 1 | 10 | GFX_focus_SOV_military_purge | paraguay.txt |
 | PAR_soliders_for_prisoners | paraguay_focus | 1 | 1 | 10 | GFX_focus_SOV_penal_battalions | paraguay.txt |
 | PAR_aftermath_of_the_coup | paraguay_focus | -1 | 1 | 10 | GFX_focus_SWE_organize_a_putsch | paraguay.txt |
-| PAR_revenge_for_the_chaco_war | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_get_rid_of_obsolete_guns | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_pull_back_troops_from_the_chaco | paraguay_focus |  |  |  |  | paraguay.txt |
+| PAR_revenge_for_the_chaco_war | paraguay_focus | 4 | 2 | 10 | GFX_focus_PAR_revenge_for_the_chaco_war | paraguay.txt |
+| PAR_get_rid_of_obsolete_guns | paraguay_focus | -4 | 1 | 10 | GFX_focus_ETH_freedom_at_gunpoint | paraguay.txt |
+| PAR_pull_back_troops_from_the_chaco | paraguay_focus | -8 | 0 | 10 | GFX_focus_PAR_pull_back_troops_from_the_chaco | paraguay.txt |
 | PAR_the_permanent_leader | paraguay_focus | 2 | 1 | 10 | GFX_goal_generic_demand_territory | paraguay.txt |
-| PAR_discipline_hierarchy_and_order | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_suspend_elections | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_get_rid_of_colonel_peredes | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_ensure_army_loyalty | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_nazify_the_army | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_radicalize_the_police | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_accept_american_loans | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_agricultural_technical_assistence | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_brazilian_road_finance | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_join_the_allies | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_join_the_cominterm | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_join_the_axis | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_ban_the_liberal_party | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_align_with_the_guion_rojo | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_neuter_the_guion_rojo | paraguay_focus |  |  |  |  | paraguay.txt |
-| PAR_liga_nacional_independiente | paraguay_focus |  |  |  |  | paraguay.txt |
+| PAR_discipline_hierarchy_and_order | paraguay_focus | -4 | 1 | 10 | GFX_focus_generic_support_the_left_right | paraguay.txt |
+| PAR_suspend_elections | paraguay_focus | -2 | 1 | 5 | GFX_goal_support_fascism | paraguay.txt |
+| PAR_get_rid_of_colonel_peredes | paraguay_focus | -1 | 1 | 10 | GFX_focus_generic_conspiracy | paraguay.txt |
+| PAR_ensure_army_loyalty | paraguay_focus | 1 | 1 | 10 | GFX_focus_generic_military_mission | paraguay.txt |
+| PAR_nazify_the_army | paraguay_focus | 0 | 1 | 10 | GFX_focus_ger_reichskommisariats | paraguay.txt |
+| PAR_radicalize_the_police | paraguay_focus | -2 | 0 | 5 | GFX_focus_generic_fascist_troops | paraguay.txt |
+| PAR_accept_american_loans | paraguay_focus | 7 | 1 | 10 | GFX_focus_generic_american_investments | paraguay.txt |
+| PAR_agricultural_technical_assistence | paraguay_focus | 0 | 1 | 10 | GFX_goal_tfv_generic_tech_sharing | paraguay.txt |
+| PAR_brazilian_road_finance | paraguay_focus | 0 | 1 | 10 | GFX_focus_SOV_the_road_of_life | paraguay.txt |
+| PAR_join_the_allies | paraguay_focus | 0 | 1 | 5 | GFX_focus_chi_british_cooperation | paraguay.txt |
+| PAR_join_the_cominterm | paraguay_focus | 2 | 1 | 5 | GFX_focus_chi_mission_to_the_soviet_union | paraguay.txt |
+| PAR_join_the_axis | paraguay_focus | -2 | 0 | 5 | GFX_focus_chi_mission_to_germany | paraguay.txt |
+| PAR_ban_the_liberal_party | paraguay_focus | 2 | 0 | 5 | GFX_focus_LAT_suspend_constitution_of_latvia | paraguay.txt |
+| PAR_align_with_the_guion_rojo | paraguay_focus | 2 | 0 | 10 | GFX_focus_PAR_align_with_the_guion_rojo | paraguay.txt |
+| PAR_neuter_the_guion_rojo | paraguay_focus | -2 | 1 | 5 | GFX_focus_PAR_neuter_the_guion_rojo | paraguay.txt |
+| PAR_liga_nacional_independiente | paraguay_focus | -1 | 1 | 10 | GFX_focus_SWE_refuge_for_revolutionaries | paraguay.txt |
 | PAR_cult_of_personality | paraguay_focus | 1 | 1 | 10 | GFX_focus_ICE_embrace_the_workers_revolution | paraguay.txt |
-| PAR_union_nacional_revolucionaria | paraguay_focus |  |  |  |  | paraguay.txt |
+| PAR_union_nacional_revolucionaria | paraguay_focus | 1 | 1 | 10 | GFX_focus_URG_turmoil_of_paso_morlan | paraguay.txt |
 | PAR_adopt_minority_languages | paraguay_focus | 0 | 1 | 10 | GFX_goal_generic_propaganda | paraguay.txt |
 | PAR_free_seconday_schools | paraguay_focus | -2 | 1 | 10 | GFX_focus_generic_university_1 | paraguay.txt |
 | PAR_nationalize_foreign_owned_companies | paraguay_focus | -4 | 1 | 10 | GFX_focus_generic_annex_country_2 | paraguay.txt |
 | PAR_mass_drafts | paraguay_focus | 0 | 1 | 5 | GFX_focus_SOV_mobilization_plan | paraguay.txt |
-| PAR_mythologize_the_father_of_the_nation | paraguay_focus | -3 | 1 |  | GFX_focus_focus_fra_revolution_utmost | paraguay.txt |
-| PAR_access_the_sea | paraguay_focus |  |  |  |  | paraguay.txt |
+| PAR_mythologize_the_father_of_the_nation | paraguay_focus | -3 | 1 | 10 | GFX_focus_focus_fra_revolution_utmost | paraguay.txt |
+| PAR_access_the_sea | paraguay_focus | 1 | 1 | 10 | GFX_focus_ARG_chilean_ultimatum | paraguay.txt |
+| GUAY_rekindle_old_gripes | paraguay_uruguay_shared_branch_shared | 40 | 0 | 10 | GFX_goal_generic_attack_allies | paraguay_uruguay_shared_branch.txt |
+| GUAY_laissez_faire | paraguay_uruguay_shared_branch_shared | 5 | 0 | 10 | GFX_focus_generic_industry_3 | paraguay_uruguay_shared_branch.txt |
+| GUAY_disperse_military_power | paraguay_uruguay_shared_branch_shared | 30 | 0 | 10 | GFX_focus_NOR_broken_gun_policies | paraguay_uruguay_shared_branch.txt |
+| GUAY_nationalize_foreign_owned_companies | paraguay_uruguay_shared_branch_shared | 0 | 1 | 10 | GFX_focus_generic_annex_country_2 | paraguay_uruguay_shared_branch.txt |
+| GUAY_urbanization | paraguay_uruguay_shared_branch_shared | -1 | 1 | 10 | GFX_focus_SWE_urbanization | paraguay_uruguay_shared_branch.txt |
+| GUAY_abolish_low_level_income_tax | paraguay_uruguay_shared_branch_shared | 2 | 0 | 10 | GFX_goal_generic_major_alliance | paraguay_uruguay_shared_branch.txt |
+| GUAY_free_seconday_schools | paraguay_uruguay_shared_branch_shared | 1 | 1 | 10 | GFX_focus_generic_military_academy | paraguay_uruguay_shared_branch.txt |
+| GUAY_cooperation_in_the_americas | paraguay_uruguay_shared_branch_shared | -3 | 1 | 5 | GFX_focus_generic_league_of_nations | paraguay_uruguay_shared_branch.txt |
+| GUAY_defense_force | paraguay_uruguay_shared_branch_shared | 0 | 1 | 5 | GFX_focus_generic_manpower | paraguay_uruguay_shared_branch.txt |
+| GUAY_specialized_terrain_training | paraguay_uruguay_shared_branch_shared | -1 | 1 | 10 | GFX_focus_eng_special_air_service | paraguay_uruguay_shared_branch.txt |
+| GUAY_volunteers | paraguay_uruguay_shared_branch_shared | 2 | 0 | 5 | GFX_goal_generic_axis_build_infantry | paraguay_uruguay_shared_branch.txt |
+| GUAY_mass_drafts | paraguay_uruguay_shared_branch_shared | 1 | 1 | 5 | GFX_focus_SOV_mobilization_plan | paraguay_uruguay_shared_branch.txt |
+| GUAY_form_ties_with_the_military | paraguay_uruguay_shared_branch_shared | 7 | 0 | 5 | GFX_focus_ITA_banda_carita | paraguay_uruguay_shared_branch.txt |
+| GUAY_military_licenses | paraguay_uruguay_shared_branch_shared | 3 | 1 | 5 | GFX_focus_ITA_banda_carita | paraguay_uruguay_shared_branch.txt |
+| GUAY_place_opposition_leaders_in_house_arrest | paraguay_uruguay_shared_branch_shared | -1 | 1 | 10 | GFX_focus_mex_arrest_general_cedillo | paraguay_uruguay_shared_branch.txt |
+| GUAY_enact_martial_law | paraguay_uruguay_shared_branch_shared | 2 | 0 | 10 | GFX_focus_POL_riot_of_37 | paraguay_uruguay_shared_branch.txt |
+| GUAY_coup_detat | paraguay_uruguay_shared_branch_shared | 1 | 1 | 10 | GFX_focus_SWE_organize_a_putsch | paraguay_uruguay_shared_branch.txt |
+| GUAY_appease_the_generals | paraguay_uruguay_shared_branch_shared | 1 | 1 | 10 | GFX_focus_generic_military_mission | paraguay_uruguay_shared_branch.txt |
+| GUAY_cult_of_personality | paraguay_uruguay_shared_branch_shared | -1 | 1 | 10 | GFX_focus_spa_fuse_the_parties | paraguay_uruguay_shared_branch.txt |
+| GUAY_adopt_minority_languages | paraguay_uruguay_shared_branch_shared | -1 | 1 | 10 | GFX_goal_generic_propaganda | paraguay_uruguay_shared_branch.txt |
+| GUAY_mythologize_the_father_of_the_nation | paraguay_uruguay_shared_branch_shared | -3 | 0 | 10 | GFX_focus_focus_fra_revolution_utmost | paraguay_uruguay_shared_branch.txt |
+| GUAY_a_domestic_arms_factory | paraguay_uruguay_shared_branch_shared | 2 | 0 | 10 | GFX_goal_generic_construct_mil_factory | paraguay_uruguay_shared_branch.txt |
+| GUAY_penal_battalions | paraguay_uruguay_shared_branch_shared | 2 | 0 | 10 | GFX_focus_SOV_penal_battalions | paraguay_uruguay_shared_branch.txt |
+| GUAY_the_permanent_leader | paraguay_uruguay_shared_branch_shared | 0 | 2 | 10 | GFX_goal_generic_demand_territory | paraguay_uruguay_shared_branch.txt |
+| GUAY_mobalize_the_economy | paraguay_uruguay_shared_branch_shared | 0 | 1 | 10 | GFX_focus_DEN_heavy_regulations | paraguay_uruguay_shared_branch.txt |
+| GUAY_meet_with_the_old_powers | paraguay_uruguay_shared_branch_shared | -11 | 0 | 10 | GFX_goal_generic_dangerous_deal | paraguay_uruguay_shared_branch.txt |
+| GUAY_long_term_contracts | paraguay_uruguay_shared_branch_shared | 0 | 1 | 10 | GFX_focus_generic_license_production | paraguay_uruguay_shared_branch.txt |
+| GUAY_land_reforms | paraguay_uruguay_shared_branch_shared | 4 | 0 | 10 | GFX_focus_generic_mining_industry | paraguay_uruguay_shared_branch.txt |
+| GUAY_workers_rights | paraguay_uruguay_shared_branch_shared | 0 | 1 | 10 | GFX_focus_SWE_state_paid_vacation | paraguay_uruguay_shared_branch.txt |
+| GUAY_agricultural_colonization | paraguay_uruguay_shared_branch_shared | 0 | 1 | 10 | GFX_focus_generic_industry_1 | paraguay_uruguay_shared_branch.txt |
+| GUAY_beef_and_hide_industry | paraguay_uruguay_shared_branch_shared | 0 | 1 | 10 | GFX_focus_ARG_capitalize_the_beef_industry | paraguay_uruguay_shared_branch.txt |
+| GUAY_wool_makers | paraguay_uruguay_shared_branch_shared | 0 | 1 | 5 | GFX_goal_generic_construct_infrastructure | paraguay_uruguay_shared_branch.txt |
+| GUAY_heavy_industry | paraguay_uruguay_shared_branch_shared | 2 | 1 | 10 | GFX_goal_generic_production | paraguay_uruguay_shared_branch.txt |
+| GUAY_empower_the_land_owners | paraguay_uruguay_shared_branch_shared | 0 | 1 | 10 | GFX_focus_generic_industrialists | paraguay_uruguay_shared_branch.txt |
+| GUAY_river_trade | paraguay_uruguay_shared_branch_shared | 0 | 1 | 10 | GFX_goal_generic_positive_trade_relations | paraguay_uruguay_shared_branch.txt |
+| GUAY_cash_crop_exports | paraguay_uruguay_shared_branch_shared | -1 | 1 | 5 | GFX_focus_generic_modernize_industry | paraguay_uruguay_shared_branch.txt |
+| GUAY_export_focus | paraguay_uruguay_shared_branch_shared | 1 | 1 | 10 | GFX_goal_generic_trade | paraguay_uruguay_shared_branch.txt |
+| GUAY_clamp_down_on_new_territories | paraguay_uruguay_shared_branch_shared | -2 | 1 | 10 | GFX_goal_generic_political_pressure | paraguay_uruguay_shared_branch.txt |
+| GUAY_develop_new_territories | paraguay_uruguay_shared_branch_shared | 4 | 0 | 10 | GFX_focus_generic_self_management | paraguay_uruguay_shared_branch.txt |
+| GUAY_no_second_american_colonization | paraguay_uruguay_shared_branch_shared | 4 | 1 | 10 | GFX_focus_generic_total_war | paraguay_uruguay_shared_branch.txt |
+| GUAY_the_stuff_of_legends | paraguay_uruguay_shared_branch_shared | 0 | 1 | 10 | GFX_focus_focus_fra_fascist_threat | paraguay_uruguay_shared_branch.txt |
+| GUAY_a_deal_with_devil | paraguay_uruguay_shared_branch_shared | 0 | 1 | 5 | GFX_goal_generic_forceful_treaty | paraguay_uruguay_shared_branch.txt |
+| GUAY_demand_a_seat_at_the_high_table | paraguay_uruguay_shared_branch_shared | 0 | 1 | 10 | GFX_focus_SWE_revoke_militia_law | paraguay_uruguay_shared_branch.txt |
+| GUAY_the_tag_economic_miracle | paraguay_uruguay_shared_branch_shared | 5 | 0 | 10 | GFX_focus_spa_the_spanish_miracle | paraguay_uruguay_shared_branch.txt |
+| GUAY_protect_domestic_industries | paraguay_uruguay_shared_branch_shared | -1 | 1 | 10 | GFX_goal_generic_construction | paraguay_uruguay_shared_branch.txt |
+| GUAY_exploit_mineral_wealth | paraguay_uruguay_shared_branch_shared | 2 | 0 | 5 | GFX_focus_generic_steel | paraguay_uruguay_shared_branch.txt |
+| GUAY_national_academy_of_sciences | paraguay_uruguay_shared_branch_shared | 1 | 1 | 10 | GFX_focus_research | paraguay_uruguay_shared_branch.txt |
+| GUAY_national_academy_of_sciences_2 | paraguay_uruguay_shared_branch_shared | 0 | 1 | 10 | GFX_focus_research2 | paraguay_uruguay_shared_branch.txt |
+| GUAY_national_academy_of_sciences_3 | paraguay_uruguay_shared_branch_shared | 0 | 1 | 10 | GFX_focus_ARG_universidad_de_buenos_aires | paraguay_uruguay_shared_branch.txt |
 | PER_modernizing_iran | persian_focus_tree | 50 | 0 | 5 | GFX_focus_PER_modernizing_iran | persia.txt |
 | PER_adult_literacy | persian_focus_tree | -8 | 1 | 5 | GFX_focus_generic_university_1 | persia.txt |
 | PER_national_museum | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_national_museum | persia.txt |
@@ -6406,6 +7216,418 @@ Source: `common/national_focus/*.txt`
 | PER_profit_from_war | persian_focus_tree | 1 | 1 | 5 | GFX_focus_SWI_issue_war_bonds | persia.txt |
 | PER_a_modern_iran | persian_focus_tree | 0 | 6 | 5 | GFX_focus_AFG_a_modern_economy | persia.txt |
 | PER_restructure_army | persian_focus_tree | 29 | 0 | 5 | GFX_focus_PER_restructure_army | persia.txt |
+| PER_expand_imperial_guard | persian_focus_tree | -6 | 1 | 10 | GFX_focus_PER_expand_imperial_guard | persia.txt |
+| PER_expand_military_facilities | persian_focus_tree | -3 | 1 | 10 | GFX_focus_generic_reorient_production | persia.txt |
+| PER_czech_tanks | persian_focus_tree | -1 | 1 | 10 | GFX_focus_PER_czech_tanks | persia.txt |
+| PER_german_tanks | persian_focus_tree | 1 | 1 | 10 | GFX_focus_BRA_acquire_german_tanks | persia.txt |
+| PER_future_of_war | persian_focus_tree | 1 | 1 | 5 | GFX_focus_generic_army_tanks2 | persia.txt |
+| PER_reverse_engineer_tanks | persian_focus_tree | -1 | 1 | 5 | GFX_focus_generic_tank_production | persia.txt |
+| PER_establish_tehran_armor | persian_focus_tree | 0 | 1 | 10 | GFX_focus_PER_establish_tehran_armor | persia.txt |
+| PER_expand_tehran_armor | persian_focus_tree | 0 | 1 | 10 | GFX_goal_generic_construct_mil_factory | persia.txt |
+| PER_train_tank_commanders | persian_focus_tree | 0 | 2 | 5 | GFX_focus_ETH_ecole_militaire_haile_selassie_1er | persia.txt |
+| PER_foreign_retraining | persian_focus_tree | 3 | 1 | 5 | GFX_focus_secret_rearmament | persia.txt |
+| PER_bolster_infantry | persian_focus_tree | -1 | 1 | 10 | GFX_goal_generic_allies_build_infantry | persia.txt |
+| PER_establish_motor_arms | persian_focus_tree | -1 | 1 | 10 | GFX_focus_generic_truck | persia.txt |
+| PER_motorize_infantry | persian_focus_tree | 0 | 1 | 10 | GFX_goal_generic_army_motorized | persia.txt |
+| PER_swedish_artillery | persian_focus_tree | 1 | 1 | 10 | GFX_focus_PER_swedish_artillery | persia.txt |
+| PER_increase_heavy_arms | persian_focus_tree | 1 | 1 | 10 | GFX_goal_generic_army_artillery | persia.txt |
+| PER_our_own_artillery | persian_focus_tree | 0 | 1 | 10 | GFX_goal_generic_army_artillery2 | persia.txt |
+| PER_develop_qorkhaneh | persian_focus_tree | 1 | 1 | 10 | GFX_focus_PER_develop_qorkhaneh | persia.txt |
+| PER_desert_training | persian_focus_tree | 0 | 2 | 5 | GFX_focus_PER_desert_training | persia.txt |
+| PER_every_man_serves | persian_focus_tree | -1 | 1 | 10 | GFX_focus_generic_limited_social_mobilization | persia.txt |
+| PER_military_excellency | persian_focus_tree | 1 | 1 | 10 | GFX_focus_generic_full_social_mobilization | persia.txt |
+| PER_special_units | persian_focus_tree | 11 | 1 | 5 | GFX_goal_generic_special_forces | persia.txt |
+| PER_form_savak | persian_focus_tree | -2 | 1 | 5 | GFX_focus_PER_form_savak | persia.txt |
+| PER_fund_state_intelligence | persian_focus_tree | 0 | 1 | 5 | GFX_goal_generic_intelligence_exchange | persia.txt |
+| PER_transfer_officers_to_intelligence | persian_focus_tree | -2 | 1 | 5 | GFX_focus_SWI_embrace_rote_drei | persia.txt |
+| PER_special_forces_program | persian_focus_tree | 2 | 1 | 5 | GFX_focus_PER_special_forces_program | persia.txt |
+| PER_recruit_bakhtiari | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_recruit_bakhtiari | persia.txt |
+| PER_expand_unique_unit | persian_focus_tree | 2 | 1 | 10 | GFX_focus_PER_expand_unique_unit | persia.txt |
+| PER_import_rocketry | persian_focus_tree | 0 | 3 | 10 | GFX_focus_rocketry | persia.txt |
+| PER_cyrus_initiative | persian_focus_tree | -2 | 1 | 10 | GFX_focus_PER_cyrus_initiative | persia.txt |
+| PER_negotiate_with_america | persian_focus_tree | 2 | 1 | 10 | GFX_focus_generic_befriend_usa | persia.txt |
+| PER_establish_nuclear_program | persian_focus_tree | 0 | 1 | 10 | GFX_focus_wonderweapons | persia.txt |
+| PER_establish_airforce | persian_focus_tree | 51 | 0 | 5 | GFX_focus_PER_establish_airforce | persia.txt |
+| PER_pilot_training | persian_focus_tree | -3 | 1 | 5 | GFX_focus_SOV_flying_clubs | persia.txt |
+| PER_raf_planes | persian_focus_tree | -1 | 1 | 5 | GFX_focus_PER_raf_planes | persia.txt |
+| PER_luftwaffe_planes | persian_focus_tree | 1 | 1 | 5 | GFX_focus_PER_luftwaffe_planes | persia.txt |
+| PER_establish_air_academy | persian_focus_tree | 1 | 1 | 10 | GFX_goal_generic_build_airforce | persia.txt |
+| PER_own_plane_designs | persian_focus_tree | 1 | 1 | 5 | GFX_goal_generic_air_production | persia.txt |
+| PER_strategic_bombing | persian_focus_tree | 0 | 1 | 10 | GFX_focus_SWE_marauder_bombers | persia.txt |
+| PER_legacy_of_gilani | persian_focus_tree | -2 | 1 | 5 | GFX_focus_PER_legacy_of_gilani | persia.txt |
+| PER_construct_air_bases | persian_focus_tree | 3 | 1 | 10 | GFX_focus_generic_air_bases | persia.txt |
+| PER_anti_air_development | persian_focus_tree | 0 | 2 | 10 | GFX_focus_generic_air_defense | persia.txt |
+| PER_anti_air_research | persian_focus_tree | 0 | 1 | 10 | GFX_focus_SWE_let_fly_all_guns | persia.txt |
+| PER_air_superiority | persian_focus_tree | 0 | 2 | 10 | GFX_goal_generic_air_fighter | persia.txt |
+| PER_battlefield_support | persian_focus_tree | -3 | 2 | 10 | GFX_focus_generic_cas_aircraft | persia.txt |
+| PER_perfect_iranian_airforce | persian_focus_tree | 0 | 1 | 10 | GFX_focus_PER_perfect_iranian_airforce | persia.txt |
+| PER_establish_the_navy | persian_focus_tree | 59 | 0 | 5 | GFX_focus_PER_establish_the_navy | persia.txt |
+| PER_officers_to_italy | persian_focus_tree | -2 | 1 | 10 | GFX_focus_generic_naval_discipline | persia.txt |
+| PER_persian_gulf_fleet | persian_focus_tree | 0 | 1 | 10 | GFX_focus_PER_persian_gulf_fleet | persia.txt |
+| PER_construct_naval_bases | persian_focus_tree | 2 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | persia.txt |
+| PER_coastal_defense_initiative | persian_focus_tree | 2 | 1 | 5 | GFX_focus_FIN_coastal_defense | persia.txt |
+| PER_bolster_the_caspian | persian_focus_tree | 0 | 1 | 10 | GFX_focus_PER_bolster_the_caspian | persia.txt |
+| PER_purchase_foreign_ships | persian_focus_tree | 2 | 1 | 10 | GFX_goal_generic_navy_battleship | persia.txt |
+| PER_found_iranian_shipyards | persian_focus_tree | 0 | 1 | 10 | GFX_focus_POL_develop_polish_shipbuilding | persia.txt |
+| PER_expand_dockyards | persian_focus_tree | 0 | 1 | 10 | GFX_focus_generic_refit_civilian_ships | persia.txt |
+| PER_merchant_navy | persian_focus_tree | -2 | 1 | 10 | GFX_focus_generic_merchant_fleet | persia.txt |
+| PER_expert_raiders | persian_focus_tree | 2 | 1 | 10 | GFX_goal_generic_navy_submarine | persia.txt |
+| PER_the_pahlavi_imperium | persian_focus_tree | -35 | 0 | 5 | GFX_focus_PER_the_pahlavi_imperium | persia.txt |
+| PER_stand_with_giants | persian_focus_tree | -6 | 1 | 5 | GFX_focus_PER_stand_with_giants | persia.txt |
+| PER_forced_secularization | persian_focus_tree | 0 | 2 | 10 | GFX_focus_PER_forced_secularization | persia.txt |
+| PER_increase_education_funding | persian_focus_tree | -5 | 1 | 5 | GFX_focus_generic_university_2 | persia.txt |
+| PER_open_abadan | persian_focus_tree | 0 | 1 | 10 | GFX_focus_research | persia.txt |
+| PER_trial_fifty_three | persian_focus_tree | -3 | 1 | 10 | GFX_focus_GER_end_european_communism | persia.txt |
+| PER_persian_german_trade | persian_focus_tree | -1 | 1 | 5 | GFX_goal_generic_positive_trade_relations | persia.txt |
+| PER_increase_military_funding | persian_focus_tree | 1 | 1 | 10 | GFX_focus_generic_military_mission | persia.txt |
+| PER_royal_visit_germany | persian_focus_tree | 0 | 1 | 5 | GFX_focus_generic_monarchy_2 | persia.txt |
+| PER_military_high_schools | persian_focus_tree | 0 | 1 | 5 | GFX_focus_generic_military_academy | persia.txt |
+| PER_wether_the_storm | persian_focus_tree | 1 | 2 | 10 | GFX_focus_PER_wether_the_storm | persia.txt |
+| PER_question_of_resources | persian_focus_tree | -2 | 1 | 5 | GFX_focus_generic_resource_extraction | persia.txt |
+| PER_prepare_for_worst | persian_focus_tree | 1 | 1 | 10 | GFX_goal_fortify_the_westwall | persia.txt |
+| PER_plant_resistance_cells | persian_focus_tree | -1 | 1 | 10 | GFX_focus_ETH_freedom_at_gunpoint | persia.txt |
+| PER_preemptive_strike | persian_focus_tree | 1 | 1 | 5 | GFX_focus_generic_total_war | persia.txt |
+| PER_establish_northern_buffer_states | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_establish_northern_buffer_states | persia.txt |
+| PER_stand_our_ground | persian_focus_tree | 2 | 1 | 5 | GFX_goal_generic_defence | persia.txt |
+| PER_bolster_civilian_industry | persian_focus_tree | -1 | 1 | 10 | GFX_goal_generic_construct_civ_factory | persia.txt |
+| PER_upscale_military_production | persian_focus_tree | 1 | 1 | 10 | GFX_goal_generic_construct_mil_factory | persia.txt |
+| PER_preparatory_mobilization | persian_focus_tree | 1 | 1 | 5 | GFX_focus_generic_limited_social_mobilization | persia.txt |
+| PER_we_will_survive | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_we_will_survive | persia.txt |
+| PER_we_survived | persian_focus_tree | -2 | 1 | 5 | GFX_focus_PER_iran_for_iranians | persia.txt |
+| PER_fight_for_iran | persian_focus_tree | -52 | 1 | 0 | GFX_focus_PER_fight_for_iran | persia.txt |
+| PER_force_them_back | persian_focus_tree | -2 | 1 | 5 | GFX_focus_generic_provoke_border_clashes | persia.txt |
+| PER_dig_and_defend | persian_focus_tree | 2 | 1 | 5 | GFX_goal_generic_more_territorial_claims | persia.txt |
+| PER_push_to_deserts | persian_focus_tree | -1 | 1 | 5 | GFX_focus_PER_push_to_deserts | persia.txt |
+| PER_push_to_mountains | persian_focus_tree | 1 | 1 | 5 | GFX_focus_PER_push_to_mountains | persia.txt |
+| PER_capital_protect | persian_focus_tree | -1 | 1 | 5 | GFX_goal_generic_fortify_city | persia.txt |
+| PER_secure_coastline | persian_focus_tree | 1 | 1 | 5 | GFX_focus_FIN_coastal_defense | persia.txt |
+| PER_demand_war_reparations | persian_focus_tree | 0 | 1 | 5 | GFX_goal_generic_demand_territory | persia.txt |
+| PER_force_white_peace | persian_focus_tree | 2 | 1 | 5 | GFX_goal_generic_major_alliance | persia.txt |
+| PER_swear_fealty | persian_focus_tree | 0 | 1 | 5 | GFX_focus_CZE_german_puppet | persia.txt |
+| PER_push_negotiations | persian_focus_tree | 2 | 1 | 5 | GFX_goal_generic_forceful_treaty | persia.txt |
+| PER_rebuilding_iran | persian_focus_tree | 0 | 1 | 10 | GFX_goal_generic_construct_civ_factory | persia.txt |
+| PER_declare_loyalty_to_britain | persian_focus_tree | -2 | 1 | 10 | GFX_goal_tripartite_pact | persia.txt |
+| PER_reinstate_qajars | persian_focus_tree | -3 | 1 | 10 | GFX_focus_generic_monarchy_2 | persia.txt |
+| PER_invite_british_investors | persian_focus_tree | -1 | 1 | 10 | GFX_goal_generic_intelligence_exchange | persia.txt |
+| PER_request_british_equipment | persian_focus_tree | 1 | 1 | 10 | GFX_focus_generic_commonwealth_build_infantry | persia.txt |
+| PER_our_place_in_empire | persian_focus_tree | 1 | 1 | 10 | GFX_focus_PER_our_place_in_empire | persia.txt |
+| PER_retake_north_iran | persian_focus_tree | 1 | 1 | 10 | GFX_goal_generic_more_territorial_claims | persia.txt |
+| PER_azadi | persian_focus_tree | 2 | 1 | 10 | GFX_focus_spr_masters_of_our_own_fate | persia.txt |
+| PER_reinforce_iranian_identity | persian_focus_tree | -1 | 1 | 10 | GFX_focus_PER_reinforce_iranian_identity | persia.txt |
+| PER_rally_bakhtiari_and_qashqai | persian_focus_tree | 1 | 1 | 10 | GFX_focus_generic_full_social_mobilization | persia.txt |
+| PER_iran_for_iranians | persian_focus_tree | 1 | 1 | 10 | GFX_focus_PER_iran_for_iranians | persia.txt |
+| PER_consolidate_british_territory | persian_focus_tree | -1 | 1 | 10 | GFX_goal_generic_demand_territory | persia.txt |
+| PER_legacy_of_greatness | persian_focus_tree | 6 | 1 | 5 | GFX_focus_PER_legacy_of_greatness | persia.txt |
+| PER_assassinate_reza_shah | persian_focus_tree | -1 | 1 | 5 | GFX_focus_PER_assassinate_reza_shah | persia.txt |
+| PER_root_out_conspiracies | persian_focus_tree | 1 | 1 | 5 | GFX_focus_generic_conspiracy | persia.txt |
+| PER_his_fathers_footsteps | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_his_fathers_footsteps | persia.txt |
+| PER_third_persian_empire | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_third_persian_empire | persia.txt |
+| PER_choose_a_shahbanu | persian_focus_tree | -2 | 1 | 5 | GFX_focus_PER_choose_a_shahbanu | persia.txt |
+| PER_embrace_opulence | persian_focus_tree | -1 | 1 | 10 | GFX_focus_PER_embrace_opulence | persia.txt |
+| PER_emperor_for_people | persian_focus_tree | 1 | 1 | 10 | GFX_focus_PER_emperor_for_people | persia.txt |
+| PER_fund_imperial_excellency | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_fund_imperial_excellency | persia.txt |
+| PER_uphold_civil_rights | persian_focus_tree | 0 | 1 | 5 | GFX_focus_generic_support_the_left_right | persia.txt |
+| PER_absolute_monarchy | persian_focus_tree | 0 | 1 | 10 | GFX_focus_generic_monarchy_2 | persia.txt |
+| PER_first_iranian_empire | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_first_iranian_empire | persia.txt |
+| PER_take_regional_tour | persian_focus_tree | 2 | 1 | 5 | GFX_focus_PER_take_regional_tour | persia.txt |
+| PER_limit_foreign_influence | persian_focus_tree | -1 | 1 | 10 | GFX_focus_PER_limit_foreign_influence | persia.txt |
+| PER_embrace_industrial_powers | persian_focus_tree | 1 | 1 | 5 | GFX_SOV_aristocratic_investments_ccp_2d_sov_compatibility | persia.txt |
+| PER_subserviant_to_noone | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_subserviant_to_noone | persia.txt |
+| PER_modernize_iran_economy | persian_focus_tree | 0 | 1 | 5 | GFX_focus_generic_modernize_industry | persia.txt |
+| PER_last_thousand_years | persian_focus_tree | -2 | 2 | 10 | GFX_focus_PER_last_thousand_years | persia.txt |
+| PER_shahanshah | persian_focus_tree | 1 | 1 | 5 | GFX_focus_PER_shahanshah | persia.txt |
+| PER_rally_ancient_history | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_rally_ancient_history | persia.txt |
+| PER_rebuild_persepolis | persian_focus_tree | 0 | 1 | 10 | GFX_focus_PER_rebuild_persepolis | persia.txt |
+| PER_imperial_funded_universities | persian_focus_tree | 5 | 1 | 10 | GFX_focus_PER_imperial_funded_universities | persia.txt |
+| PER_assessing_the_opposition | persian_focus_tree | 10 | 1 | 10 | GFX_goal_generic_political_pressure | persia.txt |
+| PER_the_unification_initiative | persian_focus_tree | -2 | 1 | 5 | GFX_goal_generic_major_alliance | persia.txt |
+| PER_clamp_kurdish_dissidence | persian_focus_tree | -1 | 1 | 5 | GFX_focus_PER_clamp_kurdish_dissidence | persia.txt |
+| PER_clamp_azerbaijani_dissidence | persian_focus_tree | 1 | 1 | 5 | GFX_focus_PER_clamp_azerbaijani_dissidence | persia.txt |
+| PER_state_atheism | persian_focus_tree | 1 | 1 | 10 | GFX_focus_PER_state_atheism | persia.txt |
+| PER_venerate_islam | persian_focus_tree | -1 | 1 | 10 | GFX_focus_TUR_turanist_ambition | persia.txt |
+| PER_revive_old_ways | persian_focus_tree | 3 | 1 | 10 | GFX_focus_PER_revive_old_ways | persia.txt |
+| PER_imperial_expansionism | persian_focus_tree | 4 | 1 | 10 | GFX_focus_PER_imperial_expansionism | persia.txt |
+| PER_tehran_moscow_pact | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_tehran_moscow_pact | persia.txt |
+| PER_establish_special_unit | persian_focus_tree | 2 | 1 | 5 | GFX_focus_PER_establish_special_unit | persia.txt |
+| PER_demand_iraqi_territory | persian_focus_tree | -1 | 2 | 10 | GFX_focus_PER_demand_iraqi_territory | persia.txt |
+| PER_demand_afghan_territory | persian_focus_tree | 1 | 2 | 10 | GFX_focus_PER_demand_afghan_territory | persia.txt |
+| PER_war_plan_darius | persian_focus_tree | 1 | 1 | 5 | GFX_focus_PER_war_plan_darius | persia.txt |
+| PER_foothold_in_indus | persian_focus_tree | -1 | 1 | 10 | GFX_focus_PER_foothold_in_indus | persia.txt |
+| PER_usurp_afghanistan | persian_focus_tree | 1 | 1 | 5 | GFX_focus_PER_usurp_afghanistan | persia.txt |
+| PER_invasion_of_india | persian_focus_tree | 1 | 1 | 5 | GFX_focus_attack_india | persia.txt |
+| PER_glory_of_cyrus | persian_focus_tree | 0 | 2 | 5 | GFX_focus_PER_glory_of_cyrus | persia.txt |
+| PER_war_plan_xerxes | persian_focus_tree | -2 | 1 | 5 | GFX_focus_PER_war_plan_xerxes | persia.txt |
+| PER_reclaim_turkish_peninsula | persian_focus_tree | 0 | 1 | 5 | GFX_focus_generic_attack_turkey | persia.txt |
+| PER_reintegrate_anatolia | persian_focus_tree | 0 | 1 | 10 | GFX_focus_PER_reintegrate_anatolia | persia.txt |
+| PER_clash_of_titans | persian_focus_tree | -2 | 1 | 5 | GFX_focus_PER_clash_of_titans | persia.txt |
+| PER_absorb_byzantines | persian_focus_tree | 0 | 1 | 10 | GFX_focus_PER_absorb_byzantines | persia.txt |
+| PER_war_plan_cambyses | persian_focus_tree | 2 | 1 | 5 | GFX_focus_PER_war_plan_cambyses | persia.txt |
+| PER_path_through_iraq | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_path_through_iraq | persia.txt |
+| PER_demand_west_asia | persian_focus_tree | 2 | 1 | 10 | GFX_goal_generic_demand_territory | persia.txt |
+| PER_march_to_nile | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_march_to_nile | persia.txt |
+| PER_the_memphis_initiative | persian_focus_tree | 2 | 1 | 5 | GFX_focus_PER_the_memphis_initiative | persia.txt |
+| PER_stand_with_germany | persian_focus_tree | 2 | 1 | 5 | GFX_focus_chi_mission_to_germany | persia.txt |
+| PER_align_with_axis | persian_focus_tree | 0 | 1 | 5 | GFX_goal_support_fascism | persia.txt |
+| PER_spoils_of_war | persian_focus_tree | 0 | 1 | 10 | GFX_goal_generic_territory_or_war | persia.txt |
+| PER_donate_oil_fields | persian_focus_tree | -2 | 1 | 5 | GFX_focus_PER_donate_oil_fields | persia.txt |
+| PER_middle_east_protectorate | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_middle_east_protectorate | persia.txt |
+| PER_rally_the_reformers | persian_focus_tree | -70 | 0 | 5 | GFX_goal_generic_national_unity | persia.txt |
+| PER_stage_mass_protests | persian_focus_tree | -1 | 1 | 5 | GFX_focus_PER_stage_mass_protests | persia.txt |
+| PER_propagate_political_literature | persian_focus_tree | 1 | 1 | 5 | GFX_focus_generic_workers | persia.txt |
+| PER_rally_behind_mosaddegh | persian_focus_tree | 1 | 1 | 5 | GFX_focus_PER_rally_behind_mosaddegh | persia.txt |
+| PER_embrace_national_front | persian_focus_tree | 1 | 1 | 5 | GFX_focus_generic_treaty | persia.txt |
+| PER_constitutional_monarchy | persian_focus_tree | -1 | 1 | 5 | GFX_focus_PER_constitutional_monarchy | persia.txt |
+| PER_strengthen_iranian_parliament | persian_focus_tree | 0 | 1 | 10 | GFX_focus_POL_complete_april_constitution | persia.txt |
+| PER_force_abdication | persian_focus_tree | 0 | 1 | 10 | GFX_focus_rom_abdicate | persia.txt |
+| PER_promise_clergy_power | persian_focus_tree | -2 | 1 | 5 | GFX_focus_TUR_loosen_the_laws_on_secularism | persia.txt |
+| PER_free_elections | persian_focus_tree | -1 | 1 | 5 | GFX_goal_support_democracy | persia.txt |
+| PER_continue_westernization | persian_focus_tree | 2 | 1 | 10 | GFX_goal_generic_construct_civ_factory | persia.txt |
+| PER_islamic_restoration | persian_focus_tree | -2 | 1 | 10 | GFX_focus_AUS_disregard_the_treaties | persia.txt |
+| PER_ally_bazaari | persian_focus_tree | 0 | 1 | 10 | GFX_focus_PER_ally_bazaari | persia.txt |
+| PER_royal_college_funding | persian_focus_tree | 1 | 2 | 10 | GFX_focus_research | persia.txt |
+| PER_entice_foreign_investment | persian_focus_tree | 1 | 1 | 10 | GFX_focus_usa_reestablish_the_gold_standard | persia.txt |
+| PER_secularize_the_state | persian_focus_tree | 3 | 1 | 10 | GFX_focus_AFG_parliamentary_democracy | persia.txt |
+| PER_increase_faculty_staffing_budget | persian_focus_tree | 1 | 1 | 5 | GFX_focus_generic_university_2 | persia.txt |
+| PER_invest_in_univerity_facilities | persian_focus_tree | 3 | 1 | 10 | GFX_focus_research2 | persia.txt |
+| PER_expand_oil_production | persian_focus_tree | 0 | 3 | 10 | GFX_focus_generic_resource_extraction | persia.txt |
+| PER_islamic_revolution | persian_focus_tree | -3 | 3 | 10 | GFX_focus_TUR_turanist_ambition | persia.txt |
+| PER_nationalize_oil_fields | persian_focus_tree | -2 | 1 | 10 | GFX_focus_PER_nationalize_oil_fields | persia.txt |
+| PER_islamic_solidarity | persian_focus_tree | 0 | 1 | 10 | GFX_focus_PER_islamic_solidarity | persia.txt |
+| PER_increase_oil_sales | persian_focus_tree | 2 | 1 | 5 | GFX_focus_PER_increase_oil_sales | persia.txt |
+| PER_request_membership_allies | persian_focus_tree | 0 | 1 | 10 | GFX_focus_ARG_join_the_allies | persia.txt |
+| PER_secure_iraq | persian_focus_tree | -1 | 1 | 5 | GFX_focus_PER_secure_iraq | persia.txt |
+| PER_secure_afghanistan | persian_focus_tree | 1 | 1 | 5 | GFX_focus_PER_secure_afghanistan | persia.txt |
+| PER_post_war_spoils | persian_focus_tree | 1 | 1 | 10 | GFX_focus_generic_welfare | persia.txt |
+| PER_united_progressive_parties | persian_focus_tree | -8 | 1 | 5 | GFX_focus_SWE_socialist_reforms | persia.txt |
+| PER_reach_to_seperatists | persian_focus_tree | 0 | 1 | 5 | GFX_focus_GER_support_the_proletarian_uprising | persia.txt |
+| PER_strengthen_the_tudeh | persian_focus_tree | -1 | 1 | 5 | GFX_focus_PER_strengthen_the_tudeh | persia.txt |
+| PER_iranian_socialist_revolution | persian_focus_tree | 1 | 1 | 10 | GFX_focus_generic_workers_and_farmers_rise | persia.txt |
+| PER_soviet_alignment | persian_focus_tree | -1 | 2 | 5 | GFX_focus_chi_mission_to_the_soviet_union | persia.txt |
+| PER_industrial_aid | persian_focus_tree | -2 | 1 | 10 | GFX_focus_generic_communist_industry | persia.txt |
+| PER_elevate_the_iran_party | persian_focus_tree | 1 | 1 | 5 | GFX_focus_PER_elevate_the_iran_party | persia.txt |
+| PER_appease_the_seperatists | persian_focus_tree | -1 | 2 | 10 | GFX_focus_GER_strengthen_the_proletarian_international | persia.txt |
+| PER_communist_education_reform | persian_focus_tree | 0 | 1 | 10 | GFX_focus_NOR_moscows_education_centers | persia.txt |
+| PER_the_new_economy | persian_focus_tree | 0 | 1 | 10 | GFX_goal_generic_soviet_construction | persia.txt |
+| PER_oil_and_rubber_industry | persian_focus_tree | 1 | 1 | 5 | GFX_focus_generic_rubber | persia.txt |
+| PER_workers_army | persian_focus_tree | -1 | 1 | 5 | GFX_focus_SOV_builder_of_the_red_army | persia.txt |
+| PER_the_peoples_airforce | persian_focus_tree | -1 | 1 | 5 | GFX_focus_PER_the_peoples_airforce | persia.txt |
+| PER_communist_air_defense | persian_focus_tree | -2 | 1 | 5 | GFX_focus_FIN_foreign_anti_air | persia.txt |
+| PER_communist_basic_plane_design | persian_focus_tree | 0 | 1 | 5 | GFX_focus_generic_air_bases | persia.txt |
+| PER_communist_naval_bomber_design | persian_focus_tree | -1 | 1 | 10 | GFX_goal_generic_air_naval_bomber | persia.txt |
+| PER_challenge_the_royal_navy | persian_focus_tree | 1 | 1 | 5 | GFX_goal_generic_navy_battleship | persia.txt |
+| PER_the_peoples_navy | persian_focus_tree | 1 | 1 | 5 | GFX_focus_PER_the_peoples_navy | persia.txt |
+| PER_communist_shore_defense | persian_focus_tree | 2 | 1 | 5 | GFX_focus_FIN_coastal_defense | persia.txt |
+| PER_communist_naval_designs | persian_focus_tree | 0 | 1 | 5 | GFX_focus_SWE_coastal_support | persia.txt |
+| PER_communist_submarine_design | persian_focus_tree | 1 | 1 | 10 | GFX_goal_generic_navy_submarine | persia.txt |
+| PER_iranian_socialism | persian_focus_tree | 1 | 2 | 5 | GFX_focus_SWE_refuge_for_revolutionaries | persia.txt |
+| PER_iranian_industrialization | persian_focus_tree | 2 | 1 | 5 | GFX_focus_ARG_women_in_industry | persia.txt |
+| PER_international_solidarity | persian_focus_tree | 5 | 2 | 10 | GFX_focus_ETH_freedom_at_gunpoint | persia.txt |
+| PER_communist_afghanistan_intervention | persian_focus_tree | -1 | 1 | 5 | GFX_focus_PER_communist_afghanistan_intervention | persia.txt |
+| PER_communist_liberate_pashtuns | persian_focus_tree | -1 | 1 | 10 | GFX_focus_AFG_curtail_pashtunwali_primacy | persia.txt |
+| PER_communist_destabilize_iraq | persian_focus_tree | 1 | 1 | 5 | GFX_focus_generic_befriend_kurdistan | persia.txt |
+| PER_revolution_in_the_gulf | persian_focus_tree | -1 | 1 | 5 | GFX_focus_focus_fra_revolution_utmost | persia.txt |
+| PER_hormuz_crisis | persian_focus_tree | 0 | 1 | 10 | GFX_focus_attack_britain | persia.txt |
+| PER_communist_gulf_hegemony | persian_focus_tree | 0 | 1 | 10 | GFX_focus_ETH_an_arabic_base | persia.txt |
+| PER_communist_propaganda | persian_focus_tree | -2 | 1 | 10 | GFX_focus_SWE_radiotjanst | persia.txt |
+| PER_communist_industrialization | persian_focus_tree | 2 | 1 | 10 | GFX_focus_SOV_merge_plants | persia.txt |
+| PER_reject_foreign_dominance | persian_focus_tree | -1 | 1 | 10 | GFX_focus_ETH_callout_to_the_world | persia.txt |
+| PER_iranian_revolutionary_vanguard | persian_focus_tree | 3 | 1 | 5 | GFX_focus_SOV_the_glory_of_the_red_army_communism | persia.txt |
+| PER_one_for_all_all_for_one | persian_focus_tree | 0 | 1 | 5 | GFX_focus_generic_workers | persia.txt |
+| PER_land_reform | persian_focus_tree | -2 | 1 | 5 | GFX_focus_generic_land_reclamation | persia.txt |
+| PER_soviet_iranian_oil_collaboration | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_increase_oil_sales | persia.txt |
+| PER_comintern_research_collaboration | persian_focus_tree | -1 | 1 | 5 | GFX_focus_research2 | persia.txt |
+| PER_iranian_nuclear_program | persian_focus_tree | 0 | 1 | 10 | GFX_focus_generic_nuclear_development | persia.txt |
+| PER_iranian_culture | persian_focus_tree | 11 | 1 | 5 | GFX_focus_ITA_generic_fascist_workers | persia.txt |
+| PER_form_sumka | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_form_sumka | persia.txt |
+| PER_ally_the_bazaari | persian_focus_tree | 1 | 2 | 10 | GFX_focus_generic_industrialists | persia.txt |
+| PER_brown_shirts | persian_focus_tree | -1 | 2 | 5 | GFX_focus_generic_fascist_troops | persia.txt |
+| PER_march_on_saadabad | persian_focus_tree | 1 | 1 | 5 | GFX_focus_PER_march_on_saadabad | persia.txt |
+| PER_roll_back_reforms | persian_focus_tree | -1 | 1 | 5 | GFX_focus_ICE_state_corporatism | persia.txt |
+| PER_finding_a_shah | persian_focus_tree | 1 | 1 | 10 | GFX_focus_generic_monarchy_1 | persia.txt |
+| PER_fascist_secularism | persian_focus_tree | 3 | 1 | 10 | GFX_focus_ARG_fascist_researchers | persia.txt |
+| PER_form_savama | persian_focus_tree | -1 | 1 | 10 | GFX_focus_generic_secret_service_agency | persia.txt |
+| PER_fascist_reach_out_to_germany | persian_focus_tree | 0 | 1 | 5 | GFX_focus_chi_mission_to_germany | persia.txt |
+| PER_iran_first | persian_focus_tree | 2 | 1 | 5 | GFX_focus_PER_iran_first | persia.txt |
+| PER_fascist_reach_out_to_japan | persian_focus_tree | 0 | 1 | 5 | GFX_focus_PER_fascist_reach_out_to_japan | persia.txt |
+| PER_pan_iranianism | persian_focus_tree | 1 | 1 | 10 | GFX_focus_PER_pan_iranianism | persia.txt |
+| PER_intervene_in_central_asia | persian_focus_tree | 0 | 2 | 5 | GFX_focus_attack_soviet | persia.txt |
+| PER_proclaim_greater_iran | persian_focus_tree | 0 | 1 | 10 | GFX_focus_PER_proclaim_greater_iran | persia.txt |
+| PER_eastern_expansion | persian_focus_tree | 1 | 1 | 5 | GFX_focus_generic_attack_india | persia.txt |
+| PER_curtail_pan_arabism | persian_focus_tree | -1 | 1 | 5 | GFX_focus_ETH_an_arabic_base | persia.txt |
+| PER_there_can_be_only_one | persian_focus_tree | 0 | 2 | 5 | GFX_focus_attack_germany | persia.txt |
+| PER_fascist_attack_turkey | persian_focus_tree | -1 | 1 | 5 | GFX_focus_generic_attack_turkey | persia.txt |
+| PER_intervention_in_iraq | persian_focus_tree | 1 | 1 | 5 | GFX_focus_generic_attack_iraq | persia.txt |
+| PER_crush_saudi_arabia | persian_focus_tree | 0 | 1 | 10 | GFX_focus_AUS_raid_military_storages | persia.txt |
+| PER_fascist_attack_afghanistan | persian_focus_tree | 0 | 1 | 5 | GFX_focus_generic_attack_afghanistan | persia.txt |
+| PHI_commonwealth_of_the_philippines | philippines_focus | 21 | 0 | 10 | GFX_focus_PHI_commonwealth_of_the_philippines | philippines.txt |
+| PHI_align_with_the_usa | philippines_focus | -2 | 1 | 10 | GFX_focus_generic_befriend_usa | philippines.txt |
+| PHI_align_with_japan | philippines_focus | 2 | 1 | 10 | GFX_focus_chi_collaboration_with_the_japanese | philippines.txt |
+| PHI_peg_the_peso_to_the_dollar | philippines_focus | -4 | 1 | 10 | GFX_focus_PHI_uncouple_the_peso_and_dollar | philippines.txt |
+| PHI_leverage_the_peso | philippines_focus | 4 | 1 | 10 | GFX_focus_PHI_leverage_the_peso | philippines.txt |
+| PHI_quezon_city | philippines_focus | 2 | 1 | 10 | GFX_focus_SWE_hygienic_housing | philippines.txt |
+| PHI_unicameral_legislature | philippines_focus | 4 | 1 | 10 | GFX_focus_generic_improve_the_administration | philippines.txt |
+| PHI_national_fiscal_policy | philippines_focus | 6 | 1 | 10 | GFX_focus_generic_currency_reforms | philippines.txt |
+| PHI_agricultural_migrants_to_hawaii | philippines_focus | 8 | 1 | 10 | GFX_focus_PHI_agricultural_migrants_to_hawaii | philippines.txt |
+| PHI_encourage_foreign_investment | philippines_focus | 10 | 1 | 10 | GFX_focus_RAJ_issue_bonds_on_the_stock_market | philippines.txt |
+| PHI_encourage_japanese_investment | philippines_focus | 2 | 1 | 5 | GFX_focus_PHI_encourage_japanese_investment | philippines.txt |
+| PHI_develop_japanese_trade_connections | philippines_focus | 0 | 1 | 5 | GFX_focus_PHI_develop_japanese_trade_connections | philippines.txt |
+| PHI_quezon_city_campus | philippines_focus | 0 | 1 | 10 | GFX_focus_research | philippines.txt |
+| PHI_reduce_unneccessary_expenditure | philippines_focus | -2 | 1 | 10 | GFX_focus_generic_reduce_unneccessary_expenditure | philippines.txt |
+| PHI_subsidies | philippines_focus | 0 | 1 | 10 | GFX_focus_mex_privatisation | philippines.txt |
+| PHI_basic_welfare | philippines_focus | 2 | 1 | 10 | GFX_focus_generic_welfare | philippines.txt |
+| PHI_encourage_asian_trade | philippines_focus | 0 | 1 | 10 | GFX_goal_generic_positive_trade_relations | philippines.txt |
+| PHI_pro_hacendados | philippines_focus | 0 | 3 | 10 | GFX_focus_PHI_pro_hacendados | philippines.txt |
+| PHI_anti_hacendados | philippines_focus | 0 | 3 | 10 | GFX_focus_PHI_anti_hacendados | philippines.txt |
+| PHI_sugar_barons | philippines_focus | 2 | 1 | 10 | GFX_focus_BRA_support_sugar_barons | philippines.txt |
+| PHI_luzon_transport | philippines_focus | 4 | 1 | 10 | GFX_focus_PHI_luzon_transport | philippines.txt |
+| PHI_expand_gold_mining | philippines_focus | 6 | 1 | 10 | GFX_focus_generic_expand_gold_mining | philippines.txt |
+| PHI_mindanao_transport | philippines_focus | 8 | 1 | 10 | GFX_focus_PHI_mindanao_transport | philippines.txt |
+| PHI_land_reform | philippines_focus | 10 | 1 | 10 | GFX_focus_generic_farmland | philippines.txt |
+| PHI_japanese_advisors | philippines_focus | 2 | 1 | 5 | GFX_focus_PHI_japanese_advisors | philippines.txt |
+| PHI_san_miguel | philippines_focus | 0 | 1 | 10 | GFX_focus_PHI_san_miguel | philippines.txt |
+| PHI_textile_mills | philippines_focus | 0 | 1 | 10 | GFX_focus_CHL_enlarge_the_textile_industries | philippines.txt |
+| PHI_encourage_gold_exports | philippines_focus | 0 | 1 | 10 | GFX_focus_usa_reestablish_the_gold_standard | philippines.txt |
+| PHI_mineral_prospecting | philippines_focus | 0 | 1 | 10 | GFX_focus_generic_mineral_prospecting | philippines.txt |
+| PHI_bill_of_rights | philippines_focus | 0 | 1 | 10 | GFX_focus_generic_treaty | philippines.txt |
+| PHI_nationality_act | philippines_focus | 0 | 3 | 10 | GFX_focus_usa_recruit_the_free_corps | philippines.txt |
+| PHI_open_borders | philippines_focus | 0 | 3 | 10 | GFX_focus_PHI_open_borders | philippines.txt |
+| PHI_philippine_american_educational_foundation | philippines_focus | 0 | 2 | 10 | GFX_focus_research | philippines.txt |
+| PHI_government_filipinization | philippines_focus | 1 | 1 | 10 | GFX_focus_PER_limit_foreign_influence | philippines.txt |
+| PHI_bicameral_legislature | philippines_focus | 3 | 1 | 10 | GFX_focus_generic_improve_the_administration_2 | philippines.txt |
+| PHI_uncouple_the_peso_and_dollar | philippines_focus | 5 | 1 | 10 | GFX_focus_PHI_uncouple_the_peso_and_dollar | philippines.txt |
+| PHI_increase_sugar_exports | philippines_focus | 7 | 1 | 10 | GFX_focus_AFG_sugar_factory | philippines.txt |
+| PHI_break_chinese_monopoly | philippines_focus | 9 | 1 | 10 | GFX_focus_BEL_government_resigns | philippines.txt |
+| PHI_encourage_chinese_immigration | philippines_focus | 11 | 1 | 10 | GFX_focus_PHI_encourage_chinese_immigration | philippines.txt |
+| PHI_japanese_observers | philippines_focus | 2 | 1 | 5 | GFX_focus_PHI_japanese_observers | philippines.txt |
+| PHI_treaty_of_manila | philippines_focus | 1 | 2 | 10 | GFX_focus_PHI_treaty_of_manila | philippines.txt |
+| PHI_universal_sufferage | philippines_focus | -1 | 1 | 5 | GFX_focus_generic_universal_suffrage | philippines.txt |
+| PHI_modernization | philippines_focus | 1 | 1 | 5 | GFX_focus_generic_modernize_industry | philippines.txt |
+| PHI_bill_of_rights_for_veterans | philippines_focus | -3 | 1 | 5 | GFX_focus_PHI_bill_of_rights_for_veterans | philippines.txt |
+| PHI_revision_of_taxation_laws | philippines_focus | -1 | 1 | 5 | GFX_focus_generic_economic_recovery | philippines.txt |
+| PHI_rehabilitation_finance_corporation | philippines_focus | 1 | 1 | 5 | GFX_focus_RAJ_special_economic_zones | philippines.txt |
+| PHI_department_of_foreign_affairs | philippines_focus | 3 | 1 | 5 | GFX_focus_generic_diplomatic_treaty | philippines.txt |
+| PHI_economic_nationalism | philippines_focus | 1 | 1 | 5 | GFX_focus_PHI_economic_nationalism | philippines.txt |
+| PHI_bell_trade_act | philippines_focus | 3 | 1 | 5 | GFX_focus_PHI_bell_trade_act | philippines.txt |
+| PHI_pearl_of_the_orient_seas | philippines_focus | 1 | 1 | 5 | GFX_focus_PHI_pearl_of_the_orient_seas | philippines.txt |
+| PHI_united_states_army_forces_in_the_far_east | philippines_focus | 8 | 1 | 5 | GFX_focus_PHI_united_states_army_forces_in_the_far_east | philippines.txt |
+| PHI_appoint_macarthur | philippines_focus | 0 | 1 | 5 | GFX_focus_PHI_appoint_macarthur | philippines.txt |
+| PHI_bring_in_eisenhower | philippines_focus | -5 | 1 | 5 | GFX_focus_PHI_bring_in_eisenhower | philippines.txt |
+| PHI_subordinate_philippine_department | philippines_focus | -1 | 1 | 5 | GFX_focus_PHI_subordinate_philippine_department | philippines.txt |
+| PHI_usaffe_headquarters | philippines_focus | 0 | 1 | 5 | GFX_focus_PHI_usaffe_headquarters | philippines.txt |
+| PHI_utang_na_loob | philippines_focus | 0 | 1 | 10 | GFX_focus_PHI_utang_na_loob | philippines.txt |
+| PHI_police_chief_eisenhower | philippines_focus | 1 | 1 | 10 | GFX_focus_PHI_police_chief_eisenhower | philippines.txt |
+| PHI_military_requisitions | philippines_focus | 0 | 1 | 3 | GFX_focus_PHI_military_requisitions | philippines.txt |
+| PHI_small_arms_and_artillery_requisition | philippines_focus | -2 | 1 | 3 | GFX_focus_PHI_small_arms_and_artillery_requisition | philippines.txt |
+| PHI_trucks_and_transport_requisition | philippines_focus | 0 | 2 | 3 | GFX_focus_PHI_trucks_and_transport_requisition | philippines.txt |
+| PHI_far_east_air_force | philippines_focus | 2 | 1 | 3 | GFX_focus_PHI_far_east_air_force | philippines.txt |
+| PHI_aircraft_requisition | philippines_focus | 0 | 2 | 3 | GFX_focus_PHI_aircraft_requisition | philippines.txt |
+| PHI_mariveles_naval_base | philippines_focus | 0 | 3 | 5 | GFX_goal_generic_construct_naval_dockyard | philippines.txt |
+| PHI_expand_us_bases | philippines_focus | 0 | 1 | 5 | GFX_focus_generic_air_bases | philippines.txt |
+| PHI_united_states_asiatic_fleet | philippines_focus | 0 | 2 | 10 | GFX_focus_PHI_united_states_asiatic_fleet | philippines.txt |
+| PHI_gunboat_diplomacy | philippines_focus | -1 | 1 | 10 | GFX_focus_PHI_gunboat_diplomacy | philippines.txt |
+| PHI_war_plan_rainbow_five | philippines_focus | 1 | 1 | 10 | GFX_focus_ARG_join_the_allies | philippines.txt |
+| PHI_american_capital_injection | philippines_focus | -2 | 1 | 5 | GFX_focus_generic_american_investments | philippines.txt |
+| PHI_filipino_repatriation_act | philippines_focus | 0 | 1 | 5 | GFX_focus_generic_full_employment | philippines.txt |
+| PHI_investment_fund | philippines_focus | -2 | 1 | 5 | GFX_focus_PHI_investment_fund | philippines.txt |
+| PHI_luce_celler_act | philippines_focus | -2 | 1 | 5 | GFX_goal_generic_national_unity | philippines.txt |
+| PHI_declare_military_emergency | philippines_focus | 3 | 9 | 10 | GFX_focus_PHI_declare_military_emergency | philippines.txt |
+| PHI_weapons_of_war | philippines_focus | 0 | 1 | 10 | GFX_goal_generic_secret_weapon | philippines.txt |
+| PHI_preemptive_strikes | philippines_focus | 0 | 1 | 5 | GFX_focus_PHI_preemptive_strikes | philippines.txt |
+| PHI_sunset_empires | philippines_focus | 0 | 1 | 5 | GFX_goal_generic_attack_allies | philippines.txt |
+| PHI_land_of_the_setting_sun | philippines_focus | -2 | 1 | 5 | GFX_focus_attack_japan | philippines.txt |
+| PHI_sea_of_cobalt | philippines_focus | 0 | 1 | 10 | GFX_focus_wonderweapons | philippines.txt |
+| PHI_the_sun_has_set | philippines_focus | 2 | 1 | 5 | GFX_focus_attack_britain | philippines.txt |
+| PHI_traitors_back_home | philippines_focus | 0 | 1 | 5 | GFX_focus_generic_attack_usa | philippines.txt |
+| PHI_end_colonialism | philippines_focus | 0 | 1 | 5 | GFX_goal_tfv_saf_anti_colonialist_crusade | philippines.txt |
+| PHI_cobalt_supremacy | philippines_focus | 0 | 2 | 10 | GFX_focus_PHI_cobalt_supremacy | philippines.txt |
+| PHI_subject_surrender | philippines_focus | 11 | 11 | 10 | GFX_focus_generic_surrender | philippines.txt |
+| PHI_i_shall_return | philippines_focus | -3 | 1 | 5 | GFX_focus_PHI_i_shall_return | philippines.txt |
+| PHI_soldiers_in_hiding | philippines_focus | -1 | 1 | 10 | GFX_focus_generic_manpower | philippines.txt |
+| PHI_hukbalahap | philippines_focus | 1 | 1 | 10 | GFX_focus_GER_the_peoples_victory | philippines.txt |
+| PHI_local_resistance | philippines_focus | 3 | 1 | 10 | GFX_focus_GER_support_the_proletarian_uprising | philippines.txt |
+| PHI_submarine_supplies | philippines_focus | 0 | 1 | 10 | GFX_focus_generic_reinforcing_the_supply_network | philippines.txt |
+| PHI_the_hunters | philippines_focus | 0 | 1 | 10 | GFX_focus_FIN_the_cold_front | philippines.txt |
+| PHI_the_cry | philippines_focus | 0 | 1 | 10 | GFX_focus_generic_spur_communist_revolutions | philippines.txt |
+| PHI_juramentado | philippines_focus | 0 | 1 | 10 | GFX_focus_PHI_juramentado | philippines.txt |
+| PHI_exile_support | philippines_focus | 1 | 1 | 10 | GFX_focus_generic_government_in_exile | philippines.txt |
+| PHI_grassroot_guerillas | philippines_focus | 1 | 1 | 10 | GFX_focus_SWE_lottakoren | philippines.txt |
+| PHI_reconquista | philippines_focus | 2 | 1 | 10 | GFX_focus_PHI_reconquista | philippines.txt |
+| PHI_rebuild_sakdalistas | philippines_focus | 9 | 1 | 5 | GFX_focus_PHI_rebuild_sakdalistas | philippines.txt |
+| PHI_slippery_slope | philippines_focus | -3 | 1 | 10 | GFX_goal_support_fascism | philippines.txt |
+| PHI_assassination_of_quezon | philippines_focus | 0 | 1 | 10 | GFX_focus_PHI_assassination_of_quezon | philippines.txt |
+| PHI_aguinaldos_coup | philippines_focus | 0 | 2 | 10 | GFX_focus_generic_conspiracy | philippines.txt |
+| PHI_makapili | philippines_focus | -1 | 1 | 5 | GFX_focus_PHI_makapili | philippines.txt |
+| PHI_form_the_executive_commision | philippines_focus | 1 | 1 | 5 | GFX_focus_generic_commission | philippines.txt |
+| PHI_secure_japanese_guarantees | philippines_focus | 0 | 1 | 5 | GFX_focus_chi_collaboration_with_the_japanese | philippines.txt |
+| PHI_war_of_independence | philippines_focus | 3 | 1 | 5 | GFX_goal_generic_major_war | philippines.txt |
+| PHI_election_overturned | philippines_focus | 3 | 1 | 10 | GFX_focus_AUS_lawmaking_leniency | philippines.txt |
+| PHI_hispanidad_filipina | philippines_focus | 0 | 1 | 5 | GFX_focus_PHI_hispanidad_filipina | philippines.txt |
+| PHI_spanish_refugees | philippines_focus | -1 | 1 | 10 | GFX_focus_generic_immigration | philippines.txt |
+| PHI_reconciliation_with_spain | philippines_focus | 0 | 1 | 5 |  | philippines.txt |
+| PHI_hispanic_overtures | philippines_focus | 1 | 1 | 10 | GFX_focus_CHL_promote_pan_hispanic_rhetoric | philippines.txt |
+| PHI_revolutionary_regrets | philippines_focus | 1 | 1 | 10 | GFX_focus_spr_crush_the_revolution | philippines.txt |
+| PHI_royal_exiles | philippines_focus | 0 | 1 | 10 | GFX_focus_generic_monarchy_2 | philippines.txt |
+| PHI_reino_de_filipinas | philippines_focus | 1 | 3 | 10 | GFX_focus_PHI_reino_de_filipinas | philippines.txt |
+| PHI_second_philippine_republic | philippines_focus | -1 | 4 | 10 | GFX_focus_PHI_second_philippine_republic | philippines.txt |
+| PHI_war_for_the_oceans | philippines_focus | 4 | 1 | 10 | GFX_focus_PHI_war_for_the_oceans | philippines.txt |
+| PHI_assume_the_naval_burden | philippines_focus | -1 | 1 | 10 | GFX_goal_generic_occupy_states_coastal | philippines.txt |
+| PHI_develop_naval_infrastructure | philippines_focus | 1 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | philippines.txt |
+| PHI_reunite_madagascar | philippines_focus | -3 | 1 | 10 | GFX_focus_PHI_reunite_madagascar | philippines.txt |
+| PHI_take_pacific_islands | philippines_focus | -1 | 1 | 10 | GFX_focus_PHI_take_pacific_islands | philippines.txt |
+| PHI_malayo_polynesia | philippines_focus | 1 | 1 | 10 | GFX_focus_PHI_malayo_polynesia | philippines.txt |
+| PHI_war_for_oceania | philippines_focus | 3 | 1 | 10 | GFX_focus_PHI_war_for_oceania | philippines.txt |
+| PHI_conquest_of_japan | philippines_focus | 5 | 1 | 10 | GFX_focus_PHI_conquest_of_japan | philippines.txt |
+| PHI_filipino_polynesian_reunification | philippines_focus | 0 | 1 | 10 | GFX_focus_PHI_filipino_polynesian_reunification | philippines.txt |
+| PHI_petition_the_supreme_court | philippines_focus | 46 | 1 | 10 | GFX_focus_generic_court | philippines.txt |
+| PHI_legalize_the_communist_party | philippines_focus | 0 | 1 | 10 | GFX_focus_generic_communist | philippines.txt |
+| PHI_return_of_the_exiles | philippines_focus | -1 | 1 | 10 | GFX_focus_PHI_return_of_the_exiles | philippines.txt |
+| PHI_support_for_chinese_communists | philippines_focus | 1 | 1 | 10 | GFX_focus_prc_proclaim_the_peoples_republic | philippines.txt |
+| PHI_the_red_sun_over_manila | philippines_focus | 0 | 2 | 10 | GFX_focus_PHI_the_red_sun_over_manila | philippines.txt |
+| PHI_partido_komunista_ng_pilipinas_coup | philippines_focus | 0 | 1 | 5 | GFX_focus_PHI_partido_komunista_ng_pilipinas_coup | philippines.txt |
+| PHI_national_confederation | philippines_focus | -2 | 1 | 5 | GFX_focus_generic_workers_and_farmers_rise | philippines.txt |
+| PHI_anti_intervention_strategies | philippines_focus | 2 | 1 | 5 | GFX_focus_PHI_anti_intervention_strategies | philippines.txt |
+| PHI_rally_the_fisherfolk | philippines_focus | 0 | 1 | 10 | GFX_focus_PHI_rally_the_fisherfolk | philippines.txt |
+| PHI_smugglers | philippines_focus | 0 | 1 | 10 | GFX_focus_generic_smugglers | philippines.txt |
+| PHI_struggle_conference | philippines_focus | -2 | 1 | 10 | GFX_focus_generic_conference | philippines.txt |
+| PHI_sanction_piracy | philippines_focus | 0 | 1 | 10 | GFX_focus_generic_piracy | philippines.txt |
+| PHI_infiltrate_chinese_ports | philippines_focus | 2 | 1 | 5 | GFX_focus_PHI_infiltrate_chinese_ports | philippines.txt |
+| PHI_maritime_communism | philippines_focus | 0 | 1 | 10 | GFX_focus_PHI_maritime_communism | philippines.txt |
+| PHI_pan_pacific_trade_union_secretariat | philippines_focus | -1 | 2 | 10 | GFX_focus_generic_spur_communist_revolutions | philippines.txt |
+| PHI_comitern | philippines_focus | 1 | 2 | 10 | GFX_focus_generic_join_comintern | philippines.txt |
+| PHI_national_defense_act | philippines_focus | 65 | 1 | 35 | GFX_focus_PHI_national_defense_act | philippines.txt |
+| PHI_war_plan_orange | philippines_focus | -7 | 1 | 5 | GFX_focus_PHI_war_plan_orange | philippines.txt |
+| PHI_beach_defense_strategy | philippines_focus | 2 | 0 | 5 | GFX_focus_PHI_beach_defense_strategy | philippines.txt |
+| PHI_fortify_corregidor | philippines_focus | 1 | 1 | 5 | GFX_focus_PHI_fortify_corregidor | philippines.txt |
+| PHI_coastal_artillery | philippines_focus | 0 | 1 | 5 | GFX_focus_FIN_coastal_defense | philippines.txt |
+| PHI_bastion_bataan | philippines_focus | 0 | 1 | 5 | GFX_goal_fortify_the_westwall | philippines.txt |
+| PHI_the_concrete_battleship | philippines_focus | 0 | 1 | 10 | GFX_focus_PHI_the_concrete_battleship | philippines.txt |
+| PHI_philippine_scouts | philippines_focus | -2 | 1 | 10 | GFX_focus_PHI_philippine_scouts | philippines.txt |
+| PHI_militarize_the_constabulary | philippines_focus | 4 | 0 | 10 | GFX_focus_PHI_militarize_the_constabulary | philippines.txt |
+| PHI_philippine_army_orchestra | philippines_focus | 0 | 1 | 10 | GFX_focus_PHI_philippine_army_orchestra | philippines.txt |
+| PHI_philippine_military_academy | philippines_focus | 2 | 1 | 10 | GFX_focus_generic_military_academy | philippines.txt |
+| PHI_philippine_division | philippines_focus | 0 | 1 | 10 | GFX_focus_PHI_philippine_division | philippines.txt |
+| PHI_10_year_training_plan | philippines_focus | 0 | 1 | 10 | GFX_focus_PHI_10_year_training_plan | philippines.txt |
+| PHI_battalion_combat_teams | philippines_focus | -2 | 1 | 10 | GFX_focus_PHI_battalion_combat_teams | philippines.txt |
+| PHI_mandatory_conscription | philippines_focus | 0 | 1 | 10 | GFX_focus_generic_manpower | philippines.txt |
+| PHI_self_reliance_defense | philippines_focus | 2 | 1 | 10 | GFX_focus_generic_combined_arms | philippines.txt |
+| PHI_army_of_the_philippines | philippines_focus | 0 | 1 | 10 | GFX_focus_PHI_army_of_the_philippines | philippines.txt |
+| PHI_army_air_corps | philippines_focus | 6 | 1 | 10 | GFX_focus_PHI_army_air_corps | philippines.txt |
+| PHI_pilot_training_programme | philippines_focus | -1 | 1 | 10 | GFX_goal_generic_air_doctrine | philippines.txt |
+| PHI_off_shore_patrol | philippines_focus | -1 | 1 | 10 | GFX_goal_generic_air_naval_bomber | philippines.txt |
+| PHI_expand_airbases | philippines_focus | 1 | 1 | 10 | GFX_focus_generic_air_bases | philippines.txt |
+| PHI_develop_domestic_aircraft_industry | philippines_focus | 1 | 1 | 10 | GFX_focus_generic_aircraft_production | philippines.txt |
+| PHI_philippine_air_force | philippines_focus | 2 | 1 | 10 | GFX_focus_PHI_philippine_air_force | philippines.txt |
+| PHI_thats_not_an_island | philippines_focus | 0 | 1 | 10 | GFX_focus_PHI_thats_not_an_island | philippines.txt |
+| PHI_offshore_patrol | philippines_focus | 53 | 1 | 10 | GFX_goal_generic_navy_cruiser | philippines.txt |
+| PHI_marine_corps | philippines_focus | 2 | 1 | 10 | GFX_focus_PHI_marine_corps | philippines.txt |
+| PHI_cavite_naval_base | philippines_focus | -2 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | philippines.txt |
+| PHI_pt_boat_development | philippines_focus | 0 | 1 | 10 | GFX_focus_generic_navy_research_bonus | philippines.txt |
+| PHI_mosquito_fleet | philippines_focus | -1 | 1 | 10 | GFX_focus_PHI_mosquito_fleet | philippines.txt |
+| PHI_devil_boats | philippines_focus | 1 | 1 | 10 | GFX_focus_PHI_devil_boats | philippines.txt |
+| PHI_fast_attack_craft | philippines_focus | -1 | 1 | 10 | GFX_focus_generic_destroyer | philippines.txt |
+| PHI_coastal_defense_ships | philippines_focus | 1 | 1 | 10 | GFX_focus_generic_coastal_fort | philippines.txt |
+| PHI_philippine_naval_patrol | philippines_focus | 2 | 1 | 10 | GFX_focus_PHI_philippine_naval_patrol | philippines.txt |
+| PHI_thalassocracy | philippines_focus | 0 | 1 | 10 | GFX_focus_PHI_thalassocracy | philippines.txt |
 | POL_the_four_year_plan | polish_focus | 2 | 0 | 5 | GFX_focus_POL_the_four_year_plan | poland.txt |
 | POL_additional_research_slot1 | polish_focus | 2 | 1 | 10 | GFX_focus_research | poland.txt |
 | POL_central_region_strategy | polish_focus | 4 | 1 | 5 | GFX_goal_generic_construction | poland.txt |
@@ -6413,9 +7635,9 @@ Source: `common/national_focus/*.txt`
 | POL_start_central_industrial_region | polish_focus | 0 | 1 | 10 | GFX_goal_generic_construct_mil_factory | poland.txt |
 | POL_expand_central_industrial_region | polish_focus | 0 | 1 | 10 | GFX_goal_generic_build_tank | poland.txt |
 | POL_expand_katowice_mines | polish_focus | 2 | 1 | 10 | GFX_focus_generic_steel | poland.txt |
-| POL_additional_research_slot2 | polish_focus |  |  |  | GFX_focus_research | poland.txt |
-| POL_ideological_fanaticism | polish_focus |  |  |  | GFX_focus_POL_nationalist_education | poland.txt |
-| POL_abolish_segregated_seating | polish_focus |  |  |  | GFX_goal_support_democracy | poland.txt |
+| POL_additional_research_slot2 | polish_focus | 4 | 1 | 10 | GFX_focus_research | poland.txt |
+| POL_ideological_fanaticism | polish_focus | -2 | 1 | 10 | GFX_focus_POL_nationalist_education | poland.txt |
+| POL_abolish_segregated_seating | polish_focus | 0 | 1 | 10 | GFX_goal_support_democracy | poland.txt |
 | POL_fill_the_railways_gaps | polish_focus | 0 | 1 | 10 | GFX_goal_generic_construct_infrastructure | poland.txt |
 | POL_national_defence_fund | polish_focus | 0 | 1 | 10 | GFX_goal_generic_defence | poland.txt |
 | POL_central_defence_of_poland | polish_focus | 2 | 1 | 10 | GFX_goal_fortify_the_westwall | poland.txt |
@@ -6427,7 +7649,7 @@ Source: `common/national_focus/*.txt`
 | POL_warsaw_main_railway_station | polish_focus | 0 | 1 | 10 | GFX_focus_POL_warsaw_main_station | poland.txt |
 | POL_prepare_for_the_next_war | polish_focus | 23 | 0 | 5 | GFX_goal_generic_build_tank | poland.txt |
 | POL_new_military_academy | polish_focus | 0 | 1 | 10 | GFX_focus_generic_military_academy | poland.txt |
-| POL_standardisation_of_equipment | polish_focus |  |  |  | GFX_goal_generic_small_arms | poland.txt |
+| POL_standardisation_of_equipment | polish_focus | 0 | 2 | 5 | GFX_goal_generic_small_arms | poland.txt |
 | POL_army_modernisation | polish_focus | -3 | 1 | 10 | GFX_goal_generic_army_doctrines | poland.txt |
 | POL_modernising_the_cavalry | polish_focus | -3 | 1 | 10 | GFX_goal_generic_cavalry | poland.txt |
 | POL_attract_foreign_motors | polish_focus | -1 | 1 | 10 | GFX_goal_generic_cavalry | poland.txt |
@@ -6515,14 +7737,14 @@ Source: `common/national_focus/*.txt`
 | POL_reassemble_the_sejm | polish_focus | -1 | 1 | 5 | GFX_focus_generic_self_management | poland.txt |
 | POL_empower_the_morges | polish_focus | 1 | 1 | 5 | GFX_goal_generic_allies_build_infantry | poland.txt |
 | POL_KPP_focus | polish_focus | -2 | 2 | 10 | GFX_goal_support_communism | poland.txt |
-| POL_surrender_the_east | polish_focus |  |  |  | GFX_focus_CZE_german_puppet | poland.txt |
+| POL_surrender_the_east | polish_focus | 2 | 1 | 10 | GFX_focus_CZE_german_puppet | poland.txt |
 | POL_polish_peoples_republic | polish_focus | 1 | 1 | 10 | GFX_goal_support_communism | poland.txt |
 | POL_soviet_industry | polish_focus | -2 | 1 | 10 | GFX_goal_generic_soviet_construction | poland.txt |
 | POL_pressure_for_the_west | polish_focus | 0 | 1 | 10 | GFX_goal_generic_more_territorial_claims | poland.txt |
 | POL_soviet_military_staff | polish_focus | 2 | 1 | 10 | GFX_focus_generic_military_academy | poland.txt |
 | POL_com_independence | polish_focus | 1 | 1 | 10 | GFX_focus_generic_support_the_left_right | poland.txt |
 | POL_greater_polish_SSR | polish_focus | 3 | 1 | 10 | GFX_focus_generic_soviet_politics | poland.txt |
-| POL_polish_path_to_socialism | polish_focus |  |  |  | GFX_focus_generic_join_comintern | poland.txt |
+| POL_polish_path_to_socialism | polish_focus | 0 | 1 | 10 | GFX_focus_generic_join_comintern | poland.txt |
 | POL_anti_imperialism | polish_focus | 0 | 3 | 10 | GFX_goal_tfv_saf_anti_colonialist_crusade | poland.txt |
 | POL_anti_capitalist_revolution | polish_focus | 1 | 1 | 10 | GFX_goal_generic_forceful_treaty | poland.txt |
 | POL_morges_pact | polish_focus | -3 | 1 | 10 | GFX_focus_chi_reach_out_to_france | poland.txt |
@@ -6537,7 +7759,7 @@ Source: `common/national_focus/*.txt`
 | POL_dismantle_fascist_empires | polish_focus | -1 | 1 | 10 | GFX_focus_generic_anti_fascist_diplomacy | poland.txt |
 | POL_dismantle_soviet_empire | polish_focus | 0 | 1 | 10 | GFX_focus_attack_soviet | poland.txt |
 | POL_social_commonwealth | polish_focus | 1 | 1 | 10 | GFX_focus_prc_agrarian_socialism | poland.txt |
-| POL_elect_a_PSL_leader | polish_focus |  |  |  | GFX_goal_support_democracy | poland.txt |
+| POL_elect_a_PSL_leader | polish_focus | 2 | 2 | 10 | GFX_goal_support_democracy | poland.txt |
 | POL_invest_in_the_peasantry | polish_focus | 0 | 1 | 10 | GFX_goal_generic_construct_infrastructure | poland.txt |
 | POL_dabrowszczacy | polish_focus | -2 | 1 | 5 | GFX_focus_focus_fra_intervention_spain | poland.txt |
 | POL_leftist_economics | polish_focus | -5 | 1 | 10 | GFX_focus_prc_agrarian_socialism | poland.txt |
@@ -6546,10 +7768,10 @@ Source: `common/national_focus/*.txt`
 | POL_armia_ludowa | polish_focus | -1 | 1 | 10 | GFX_focus_YUG_pan_slavic_congress | poland.txt |
 | POL_lower_class_education | polish_focus | -2 | 2 | 10 | GFX_focus_generic_socialist_science | poland.txt |
 | POL_press_for_liberia | polish_focus | 1 | 1 | 10 | GFX_focus_generic_africa_factory | poland.txt |
-| POL_support_colonial_workers_strikes | polish_focus |  |  |  | GFX_goal_tfv_saf_anti_colonialist_crusade | poland.txt |
+| POL_support_colonial_workers_strikes | polish_focus | 1 | 1 | 10 | GFX_goal_tfv_saf_anti_colonialist_crusade | poland.txt |
 | POL_reopen_the_maritime_and_colonial_league | polish_focus | -1 | 1 | 10 | GFX_focus_POL_colonial_league | poland.txt |
-| POL_assemble_the_regency_council | polish_focus |  |  |  | GFX_focus_generic_monarchy_2 | poland.txt |
-| POL_fulfil_fifth_of_november | polish_focus |  |  |  | GFX_focus_POL_end_the_regency | poland.txt |
+| POL_assemble_the_regency_council | polish_focus | 77 | 0 | 5 | GFX_focus_generic_monarchy_2 | poland.txt |
+| POL_fulfil_fifth_of_november | polish_focus | 0 | 1 | 5 | GFX_focus_POL_end_the_regency | poland.txt |
 | POL_habsburg | polish_focus | -8 | 1 | 10 | GFX_focus_POL_habsburg | poland.txt |
 | POL_restore_the_diet_of_galicia | polish_focus | -1 | 1 | 10 | GFX_focus_generic_home_defense | poland.txt |
 | POL_support_monarchy_in_CZE | polish_focus | -1 | 1 | 10 | GFX_goal_generic_forceful_treaty | poland.txt |
@@ -6576,7 +7798,7 @@ Source: `common/national_focus/*.txt`
 | POL_seek_german_alignment | polish_focus | 1 | 2 | 10 | GFX_focus_CZE_german_puppet | poland.txt |
 | POL_assert_eastern_claims_pavel | polish_focus | 0 | 1 | 10 | GFX_focus_attack_soviet | poland.txt |
 | POL_assert_western_claims | polish_focus | -1 | 2 | 10 | GFX_focus_attack_germany | poland.txt |
-| POL_demand_pomerania | polish_focus |  |  |  | GFX_goal_generic_territory_or_war | poland.txt |
+| POL_demand_pomerania | polish_focus | 0 | 1 | 10 | GFX_goal_generic_territory_or_war | poland.txt |
 | POL_complete_the_bermontian_mission | polish_focus | 0 | 4 | 10 | GFX_focus_ger_reichskommisariats | poland.txt |
 | POL_romanov | polish_focus | 6 | 1 | 10 | GFX_focus_generic_home_defense | poland.txt |
 | POL_invite_exiled_nobility | polish_focus | 0 | 1 | 10 | GFX_focus_rom_royal_dictatorship | poland.txt |
@@ -6610,7 +7832,7 @@ Source: `common/national_focus/*.txt`
 | POL_demand_slovakia | polish_focus | 0 | 1 | 10 | GFX_goal_generic_territory_or_war | poland.txt |
 | POL_restore_poland_hungary | polish_focus | 0 | 1 | 10 | GFX_focus_hun_elect_a_king | poland.txt |
 | POL_seek_an_alliance_with_kaiser | polish_focus | 2 | 1 | 10 | GFX_focus_ger_revive_kaiserreich | poland.txt |
-| POL_nationalist_constitution | polish_focus |  |  |  | GFX_goal_support_fascism | poland.txt |
+| POL_nationalist_constitution | polish_focus | 91 | 0 | 10 | GFX_goal_support_fascism | poland.txt |
 | POL_integrate_the_falanga | polish_focus | 1 | 1 | 5 | GFX_focus_LIT_support_polish_fascists | poland.txt |
 | POL_empower_falangist_militants | polish_focus | 0 | 1 | 5 | GFX_goal_generic_wolf_pack | poland.txt |
 | POL_integrate_the_endecja | polish_focus | -1 | 1 | 5 | GFX_focus_generic_diplomatic_treaty | poland.txt |
@@ -6620,12 +7842,12 @@ Source: `common/national_focus/*.txt`
 | POL_reopen_national_elections | polish_focus | -1 | 1 | 10 | GFX_focus_generic_strike_at_democracy2 | poland.txt |
 | POL_beck_ribbentrop | polish_focus | -2 | 1 | 10 | GFX_focus_POL_beck_ribbentrop | poland.txt |
 | POL_divide_lit | polish_focus | -1 | 1 | 10 | GFX_goal_demand_sudetenland | poland.txt |
-| POL_german_training | polish_focus |  |  |  | GFX_focus_chi_mission_to_germany | poland.txt |
-| POL_konfederacja_narodu | polish_focus |  |  |  | GFX_focus_generic_polish_deal | poland.txt |
-| POL_german_staff | polish_focus |  |  |  | GFX_focus_ger_reichskommisariats | poland.txt |
-| POL_polish_shock_battallions | polish_focus |  |  |  | GFX_goal_generic_special_forces | poland.txt |
-| POL_request_autonomous_status | polish_focus |  |  |  | GFX_focus_generic_diplomatic_treaty | poland.txt |
-| POL_reach_out_to_underground_state | polish_focus |  |  |  | GFX_focus_POL_reach_out_to_underground_state | poland.txt |
+| POL_german_training | polish_focus | 87 | 7 | 10 | GFX_focus_chi_mission_to_germany | poland.txt |
+| POL_konfederacja_narodu | polish_focus | 89 | 7 | 10 | GFX_focus_generic_polish_deal | poland.txt |
+| POL_german_staff | polish_focus | 0 | 1 | 10 | GFX_focus_ger_reichskommisariats | poland.txt |
+| POL_polish_shock_battallions | polish_focus | 0 | 1 | 10 | GFX_goal_generic_special_forces | poland.txt |
+| POL_request_autonomous_status | polish_focus | 0 | 1 | 10 | GFX_focus_generic_diplomatic_treaty | poland.txt |
+| POL_reach_out_to_underground_state | polish_focus | 0 | 1 | 10 | GFX_focus_POL_reach_out_to_underground_state | poland.txt |
 | POL_assurance_of_loyalty | polish_focus | 0 | 1 | 10 | GFX_goal_generic_territory_or_war | poland.txt |
 | POL_declare_independence | polish_focus | 2 | 0 | 10 | GFX_goal_generic_demand_territory | poland.txt |
 | POL_reassert_silesian_claims | polish_focus | 0 | 1 | 10 | GFX_focus_POL_reassert_silesian_claims | poland.txt |
@@ -6650,55 +7872,55 @@ Source: `common/national_focus/*.txt`
 | POL_paramilitarism | polish_focus | -1 | 1 | 10 | GFX_goal_generic_military_sphere | poland.txt |
 | POL_go_right | polish_focus | 1 | 1 | 10 | GFX_goal_support_fascism | poland.txt |
 | POL_military_youth | polish_focus | -1 | 2 | 10 | GFX_goal_generic_wolf_pack | poland.txt |
-| POL_seek_accommodation_with_germany | polish_focus |  |  |  | GFX_goal_generic_military_deal | poland.txt |
+| POL_seek_accommodation_with_germany | polish_focus | 0 | 1 | 10 | GFX_goal_generic_military_deal | poland.txt |
 | POL_go_left | polish_focus | 3 | 1 | 10 | GFX_goal_support_communism | poland.txt |
 | POL_political_commissars | polish_focus | 1 | 2 | 10 | GFX_goal_generic_war_with_comintern | poland.txt |
-| POL_seek_accommodation_with_USSR | polish_focus |  |  |  | GFX_goal_generic_dangerous_deal | poland.txt |
+| POL_seek_accommodation_with_USSR | polish_focus | 0 | 1 | 10 | GFX_goal_generic_dangerous_deal | poland.txt |
 | POL_liberalism_focus | polish_focus | -1 | 1 | 10 | GFX_goal_support_democracy | poland.txt |
 | POL_intervention_focus | polish_focus | -1 | 1 | 10 | GFX_goal_generic_position_armies | poland.txt |
-| POL_draw_closer_to_britain | polish_focus |  |  |  | GFX_goal_generic_major_alliance | poland.txt |
+| POL_draw_closer_to_britain | polish_focus | -2 | 5 | 10 | GFX_goal_generic_major_alliance | poland.txt |
 | POL_volunteer_corps | polish_focus | 0 | 1 | 10 | GFX_goal_generic_more_territorial_claims | poland.txt |
-| POL_the_between_the_seas_concept | polish_focus |  |  |  | GFX_goal_anschluss | poland.txt |
-| POL_the_baltic_alliance | polish_focus |  |  |  | GFX_focus_generic_baltic_entente | poland.txt |
-| POL_treaty_with_lithuania | polish_focus |  |  |  | GFX_goal_generic_major_alliance | poland.txt |
-| POL_the_north_sea | polish_focus |  |  |  | GFX_focus_generic_scandinavian_alliance | poland.txt |
-| POL_finno_polish_pact | polish_focus |  |  |  | GFX_focus_invite_finland | poland.txt |
-| POL_invite_denmark | polish_focus |  |  |  | GFX_goal_generic_alliance | poland.txt |
-| POL_invite_sweden | polish_focus |  |  |  | GFX_goal_generic_alliance | poland.txt |
-| POL_invite_norway | polish_focus |  |  |  | GFX_goal_generic_alliance | poland.txt |
-| POL_the_mediterranean | polish_focus |  |  |  | GFX_focus_BUL_free_balkan_states | poland.txt |
-| POL_coerce_czechoslovakia | polish_focus |  |  |  | GFX_focus_generic_diplomatic_treaty | poland.txt |
-| POL_austro_hungarian_alliance | polish_focus |  |  |  | GFX_focus_proclaim_the_restauration_of_Austria_Hungary | poland.txt |
-| POL_protect_yugoslavia | polish_focus |  |  |  | GFX_focus_invite_yugoslavia | poland.txt |
-| POL_invite_greece | polish_focus |  |  |  | GFX_focus_generic_befriend_greece | poland.txt |
-| POL_control_the_bosporus | polish_focus |  |  |  | GFX_focus_generic_befriend_turkey | poland.txt |
-| POL_italian_alliance | polish_focus |  |  |  | GFX_focus_befriend_italy | poland.txt |
-| POL_prepare_for_the_inevitable | polish_focus |  |  |  | GFX_focus_POL_prepare_for_the_inevitable | poland.txt |
-| POL_foreign_air_support | polish_focus |  |  |  | GFX_goal_generic_air_fighter | poland.txt |
-| POL_foreign_army_support | polish_focus |  |  |  | GFX_focus_generic_manpower | poland.txt |
-| POL_aces_in_exile | polish_focus |  |  |  | GFX_goal_generic_air_fighter2 | poland.txt |
-| POL_foreign_naval_support | polish_focus |  |  |  | GFX_goal_generic_construct_naval_dockyard | poland.txt |
-| POL_resistance_industries | polish_focus |  |  |  | GFX_focus_generic_industry_1 | poland.txt |
-| POL_exile_industries | polish_focus |  |  |  | GFX_focus_generic_industry_2 | poland.txt |
-| POL_expand_polish_intelligence | polish_focus |  |  |  | GFX_focus_POL_expand_polish_intelligence | poland.txt |
-| POL_expand_polish_intelligence_no_mtg | polish_focus |  |  |  | GFX_focus_POL_expand_polish_intelligence | poland.txt |
-| POL_niech_zyje_opor | polish_focus |  |  |  | GFX_focus_POL_resistance | poland.txt |
-| POL_niech_zyje_opor_no_mtg | polish_focus |  |  |  | GFX_focus_POL_resistance | poland.txt |
-| POL_the_long_push_home | polish_focus |  |  |  | GFX_focus_spr_the_anti_fascist_workers_revolution | poland.txt |
-| POL_the_long_push_home_no_mtg | polish_focus |  |  |  | GFX_focus_spr_the_anti_fascist_workers_revolution | poland.txt |
-| POL_the_bombe | polish_focus |  |  |  | GFX_goal_generic_radar | poland.txt |
-| POL_the_bombe_no_mtg | polish_focus |  |  |  | GFX_goal_generic_radar | poland.txt |
-| POL_the_cyclometer | polish_focus |  |  |  | GFX_goal_generic_production2 | poland.txt |
-| POL_the_cyclometer_no_mtg | polish_focus |  |  |  | GFX_goal_generic_production2 | poland.txt |
+| POL_the_between_the_seas_concept | polish_focus | 97 | 0 | 10 | GFX_goal_anschluss | poland.txt |
+| POL_the_baltic_alliance | polish_focus | 0 | 1 | 5 | GFX_focus_generic_baltic_entente | poland.txt |
+| POL_treaty_with_lithuania | polish_focus | 0 | 1 | 5 | GFX_goal_generic_major_alliance | poland.txt |
+| POL_the_north_sea | polish_focus | -2 | 1 | 5 | GFX_focus_generic_scandinavian_alliance | poland.txt |
+| POL_finno_polish_pact | polish_focus | 0 | 1 | 5 | GFX_focus_invite_finland | poland.txt |
+| POL_invite_denmark | polish_focus | -2 | 1 | 5 | GFX_goal_generic_alliance | poland.txt |
+| POL_invite_sweden | polish_focus | 0 | 1 | 5 | GFX_goal_generic_alliance | poland.txt |
+| POL_invite_norway | polish_focus | 2 | 1 | 5 | GFX_goal_generic_alliance | poland.txt |
+| POL_the_mediterranean | polish_focus | 2 | 1 | 5 | GFX_focus_BUL_free_balkan_states | poland.txt |
+| POL_coerce_czechoslovakia | polish_focus | 0 | 1 | 5 | GFX_focus_generic_diplomatic_treaty | poland.txt |
+| POL_austro_hungarian_alliance | polish_focus | 0 | 1 | 5 | GFX_focus_proclaim_the_restauration_of_Austria_Hungary | poland.txt |
+| POL_protect_yugoslavia | polish_focus | 2 | 1 | 5 | GFX_focus_invite_yugoslavia | poland.txt |
+| POL_invite_greece | polish_focus | 0 | 1 | 5 | GFX_focus_generic_befriend_greece | poland.txt |
+| POL_control_the_bosporus | polish_focus | 2 | 1 | 5 | GFX_focus_generic_befriend_turkey | poland.txt |
+| POL_italian_alliance | polish_focus | 0 | 1 | 5 | GFX_focus_befriend_italy | poland.txt |
+| POL_prepare_for_the_inevitable | polish_focus | 106 | 0 | 10 | GFX_focus_POL_prepare_for_the_inevitable | poland.txt |
+| POL_foreign_air_support | polish_focus | -3 | 1 | 10 | GFX_goal_generic_air_fighter | poland.txt |
+| POL_foreign_army_support | polish_focus | 0 | 1 | 10 | GFX_focus_generic_manpower | poland.txt |
+| POL_aces_in_exile | polish_focus | 2 | 1 | 10 | GFX_goal_generic_air_fighter2 | poland.txt |
+| POL_foreign_naval_support | polish_focus | -1 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | poland.txt |
+| POL_resistance_industries | polish_focus | 1 | 1 | 10 | GFX_focus_generic_industry_1 | poland.txt |
+| POL_exile_industries | polish_focus | 0 | 1 | 10 | GFX_focus_generic_industry_2 | poland.txt |
+| POL_expand_polish_intelligence | polish_focus | 3 | 1 | 10 | GFX_focus_POL_expand_polish_intelligence | poland.txt |
+| POL_expand_polish_intelligence_no_mtg | polish_focus | -2 | 0 | 10 | GFX_focus_POL_expand_polish_intelligence | poland.txt |
+| POL_niech_zyje_opor | polish_focus | -1 | 2 | 10 | GFX_focus_POL_resistance | poland.txt |
+| POL_niech_zyje_opor_no_mtg | polish_focus | -1 | 2 | 10 | GFX_focus_POL_resistance | poland.txt |
+| POL_the_long_push_home | polish_focus | 0 | 1 | 10 | GFX_focus_spr_the_anti_fascist_workers_revolution | poland.txt |
+| POL_the_long_push_home_no_mtg | polish_focus | 0 | 1 | 10 | GFX_focus_spr_the_anti_fascist_workers_revolution | poland.txt |
+| POL_the_bombe | polish_focus | 4 | 1 | 10 | GFX_goal_generic_radar | poland.txt |
+| POL_the_bombe_no_mtg | polish_focus | 4 | 1 | 10 | GFX_goal_generic_radar | poland.txt |
+| POL_the_cyclometer | polish_focus | 2 | 1 | 10 | GFX_goal_generic_production2 | poland.txt |
+| POL_the_cyclometer_no_mtg | polish_focus | 2 | 1 | 10 | GFX_goal_generic_production2 | poland.txt |
 | POL_atomic_physics_institute | polish_focus | 1 | 1 | 10 | GFX_focus_wonderweapons | poland.txt |
 | POL_develop_polish_ship_building | polish_focus | 14 | 0 | 10 | GFX_focus_POL_develop_polish_shipbuilding | poland.txt |
 | POL_clamp_down_on_danzig | polish_focus | 2 | 0 | 5 | GFX_focus_POL_clamp_down_on_danzig | poland.txt |
 | POL_attract_poles_to_gdynia | polish_focus | -1 | 1 | 10 | GFX_focus_generic_the_giant_wakes | poland.txt |
 | POL_study_foreign_built_ships | polish_focus | 1 | 1 | 10 | GFX_focus_ger_accept_british_naval_dominance | poland.txt |
 | POL_ban_the_nazi_party | polish_focus | 1 | 1 | 5 | GFX_focus_POL_ban_nazi_party | poland.txt |
-| POL_develop_gdansk_ship_building | polish_focus |  |  |  | GFX_goal_generic_construct_naval_dockyard | poland.txt |
+| POL_develop_gdansk_ship_building | polish_focus | 1 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | poland.txt |
 | POL_expand_gdynia_seaport | polish_focus | 1 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | poland.txt |
-| POL_integrate_gdansk_industries | polish_focus |  |  |  | GFX_goal_generic_construct_naval_dockyard | poland.txt |
+| POL_integrate_gdansk_industries | polish_focus | -1 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | poland.txt |
 | POL_expand_northern_rail | polish_focus | 1 | 1 | 10 | GFX_goal_generic_construct_infrastructure | poland.txt |
 | POL_the_twin_threats | polish_focus | -1 | 1 | 10 | GFX_goal_generic_navy_doctrines_tactics | poland.txt |
 | POL_a_cruiser_navy | polish_focus | -1 | 1 | 10 | GFX_goal_generic_navy_anti_submarine | poland.txt |
@@ -6707,128 +7929,128 @@ Source: `common/national_focus/*.txt`
 | POL_coastal_defense | polish_focus | 1 | 1 | 10 | GFX_goal_generic_navy_cruiser | poland.txt |
 | POL_strike_force | polish_focus | 3 | 1 | 10 | GFX_goal_generic_occupy_states_coastal | poland.txt |
 | POL_baltic_navy | polish_focus | -1 | 1 | 10 | GFX_goal_generic_navy_battleship | poland.txt |
-| POR_colonial_assimilation_policy | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_colonial_army | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_luso_tropicalism | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_limited_self_rule | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_infrastructure_in_angola | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_develop_north_angola | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_develop_south_angola | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_portuguese_oil | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_develop_mozambique | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_continue_the_public_works | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_instituto_superior_tecnico | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_ogme | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_ogma | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_roads_bridges_and_dams | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_extraction_industries | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_hydroelectricity | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_military_vehicles | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_portuguese_artillery | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_advanced_artillery | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_military_research_facilities | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_armor_focus | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_mechanized_focus | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_light_aircraft_focus | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_advanced_light_aircraft | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_jet_research | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_industrial_modernization | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_a_new_industry | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_food_industries | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_textile_industry | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_second_navy_reequipment | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_a_powerful_merchant_marine | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_merchant_marine_protection | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_submarine_effort | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_fuzileiros | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_naval_research_institute | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_air_naval_research | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_arsenal_do_alfeite | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_national_cruiser_production | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_battleship_effort | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_carrier_effort | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_atlantic_defense_strategy | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_endless_sea | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_army_reorganization | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_metropolitan_army | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_standardization | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_defend_the_borders | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_rebuild_the_lines_of_torres_vedras | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_tropas_paraquedistas | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_regimento_de_comandos | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_corpo_do_estado_maior | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_staff_wargames | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_field_maneuvers | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_popular_front | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_nation_in_arms | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_unify_leftist_youth_wings | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_nationalize_industry | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_reorganization_of_the_communist_party | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_join_the_comintern | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_research_collaboration | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_cooperate_with_french_militants | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_anti_fascism | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_support_the_spanish_republic | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_workers_of_iberia_unite | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_the_iberian_socialist_union | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_the_popular_front_bloc | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_latin_american_communism | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_our_comrades_overseas | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_visit_the_front | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_they_need_our_help | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_intervention_in_spain | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_securing_the_free_world | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_protect_chinese_civilians | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_strict_neutrality_in_the_spanish_civil_war | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_british_investment_in_mines | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_british_guns | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_british_industrial_investments | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_allow_free_elections | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_join_the_allies | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_research_sharing | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_oppose_germany | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_iberian_summit | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_estado_novo | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_support_the_spanish_nationalists | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_portuguese_legion | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_observation_mission | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_send_assistance | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_nationalist_intervention | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_strengthen_the_regime | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_the_capital_of_espionage | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_appease_monarchists | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_concordat_with_the_holy_see | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_honor_anglo_portuguese_alliance | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_national_gold_reserves | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_proudly_alone | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_the_eastern_menace | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_national_syndicalism | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_ditadura_militar | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_camisas_azuis | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_join_the_axis | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_research_agreements | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_the_fifth_empire | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_expand_the_chinese_territories | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_deal_with_the_japanese_threat | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_refuse_the_naval_blockade | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_mapa_cor_de_rosa | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_recover_the_east_indies | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_recover_brazil | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_a_royal_wedding | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_the_return_of_duarte | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_support_a_spanish_monarchy_in_the_war | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_assist_the_requetes | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_join_the_carlist_fight | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_the_royal_iberian_alliance | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_promote_the_monarchist_cause_in_portugal | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_monarchist_uprising_in_brazil | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_the_empire_of_brazil | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_restoration_of_the_monarchy | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_the_kingdom_reunited | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_remember_olivenca | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_deal_with_fascism | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_latin_america | portuguese_focus |  |  |  |  | portugal.txt |
-| POR_the_communist_threat | portuguese_focus |  |  |  |  | portugal.txt |
+| POR_colonial_assimilation_policy | portuguese_focus | 2 | 0 | 10 | GFX_focus_generic_military_academy | portugal.txt |
+| POR_colonial_army | portuguese_focus | 0 | 1 | 10 | GFX_focus_generic_little_entente | portugal.txt |
+| POR_luso_tropicalism | portuguese_focus | -2 | 2 | 10 | GFX_focus_por_luso_tropicalism | portugal.txt |
+| POR_limited_self_rule | portuguese_focus | 0 | 1 | 10 | GFX_focus_por_limited_self_rule | portugal.txt |
+| POR_infrastructure_in_angola | portuguese_focus | 2 | 0 | 10 | GFX_focus_generic_africa_infrastructure | portugal.txt |
+| POR_develop_north_angola | portuguese_focus | 0 | 1 | 10 | GFX_focus_generic_africa_factory | portugal.txt |
+| POR_develop_south_angola | portuguese_focus | 0 | 1 | 10 | GFX_focus_generic_africa_production | portugal.txt |
+| POR_portuguese_oil | portuguese_focus | -1 | 1 | 10 | GFX_goal_generic_oil_refinery | portugal.txt |
+| POR_develop_mozambique | portuguese_focus | 1 | 1 | 10 | GFX_focus_generic_africa_naval | portugal.txt |
+| POR_continue_the_public_works | portuguese_focus | 9 | 0 | 10 | GFX_focus_generic_industry_2 | portugal.txt |
+| POR_instituto_superior_tecnico | portuguese_focus | 0 | 1 | 10 | GFX_focus_research | portugal.txt |
+| POR_ogme | portuguese_focus | -1 | 1 | 10 | GFX_goal_generic_build_airforce | portugal.txt |
+| POR_ogma | portuguese_focus | 1 | 1 | 10 | GFX_goal_generic_air_production | portugal.txt |
+| POR_roads_bridges_and_dams | portuguese_focus | 2 | 0 | 10 | GFX_goal_generic_construct_infrastructure | portugal.txt |
+| POR_extraction_industries | portuguese_focus | 0 | 1 | 10 | GFX_goal_generic_construction2 | portugal.txt |
+| POR_hydroelectricity | portuguese_focus | 0 | 1 | 10 | GFX_focus_generic_hydroelectric_energy | portugal.txt |
+| POR_military_vehicles | portuguese_focus | 0 | 1 | 10 | GFX_goal_generic_army_motorized | portugal.txt |
+| POR_portuguese_artillery | portuguese_focus | -2 | 1 | 10 | GFX_goal_generic_army_artillery | portugal.txt |
+| POR_advanced_artillery | portuguese_focus | 0 | 2 | 10 | GFX_goal_generic_army_artillery2 | portugal.txt |
+| POR_military_research_facilities | portuguese_focus | 0 | 1 | 10 | GFX_focus_research | portugal.txt |
+| POR_armor_focus | portuguese_focus | 0 | 1 | 10 | GFX_goal_generic_army_tanks | portugal.txt |
+| POR_mechanized_focus | portuguese_focus | 0 | 1 | 10 | GFX_goal_generic_build_tank | portugal.txt |
+| POR_light_aircraft_focus | portuguese_focus | 0 | 1 | 10 | GFX_goal_generic_air_fighter2 | portugal.txt |
+| POR_advanced_light_aircraft | portuguese_focus | 0 | 2 | 10 | GFX_goal_generic_air_bomber | portugal.txt |
+| POR_jet_research | portuguese_focus | 0 | 1 | 10 | GFX_goal_generic_air_fighter | portugal.txt |
+| POR_industrial_modernization | portuguese_focus | 3 | 1 | 10 | GFX_goal_generic_construct_civ_factory | portugal.txt |
+| POR_a_new_industry | portuguese_focus | 0 | 1 | 10 | GFX_focus_generic_industry_3 | portugal.txt |
+| POR_food_industries | portuguese_focus | 5 | 2 | 10 | GFX_goal_generic_consumer_goods | portugal.txt |
+| POR_textile_industry | portuguese_focus | 0 | 1 | 10 | GFX_goal_generic_trade | portugal.txt |
+| POR_second_navy_reequipment | portuguese_focus | 9 | 0 | 10 | GFX_goal_generic_build_navy | portugal.txt |
+| POR_a_powerful_merchant_marine | portuguese_focus | 0 | 1 | 10 | GFX_goal_generic_navy_battleship | portugal.txt |
+| POR_merchant_marine_protection | portuguese_focus | 0 | 1 | 10 | GFX_goal_generic_amphibious_assault | portugal.txt |
+| POR_submarine_effort | portuguese_focus | -2 | 1 | 10 | GFX_goal_generic_navy_submarine | portugal.txt |
+| POR_fuzileiros | portuguese_focus | 0 | 3 | 10 | GFX_goal_generic_occupy_states_coastal | portugal.txt |
+| POR_naval_research_institute | portuguese_focus | 0 | 1 | 10 | GFX_focus_research | portugal.txt |
+| POR_air_naval_research | portuguese_focus | 0 | 1 | 10 | GFX_goal_generic_air_naval_bomber | portugal.txt |
+| POR_arsenal_do_alfeite | portuguese_focus | 2 | 1 | 20 | GFX_goal_generic_navy_cruiser | portugal.txt |
+| POR_national_cruiser_production | portuguese_focus | 0 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | portugal.txt |
+| POR_battleship_effort | portuguese_focus | -1 | 1 | 10 | GFX_focus_generic_navy_battleship2 | portugal.txt |
+| POR_carrier_effort | portuguese_focus | 1 | 1 | 10 | GFX_goal_generic_navy_carrier | portugal.txt |
+| POR_atlantic_defense_strategy | portuguese_focus | 0 | 2 | 10 | GFX_focus_generic_destroyer | portugal.txt |
+| POR_endless_sea | portuguese_focus | 0 | 1 | 20 | GFX_focus_generic_coastal_fort | portugal.txt |
+| POR_army_reorganization | portuguese_focus | 7 | 0 | 10 | GFX_focus_generic_combined_arms | portugal.txt |
+| POR_metropolitan_army | portuguese_focus | -1 | 1 | 10 | GFX_focus_eng_move_to_secure_the_dominions | portugal.txt |
+| POR_standardization | portuguese_focus | 0 | 1 | 10 | GFX_focus_generic_rubber | portugal.txt |
+| POR_defend_the_borders | portuguese_focus | -1 | 1 | 10 | GFX_focus_generic_provoke_border_clashes | portugal.txt |
+| POR_rebuild_the_lines_of_torres_vedras | portuguese_focus | 1 | 1 | 10 | GFX_goal_generic_defence | portugal.txt |
+| POR_tropas_paraquedistas | portuguese_focus | 1 | 1 | 10 | GFX_focus_generic_paratrooper | portugal.txt |
+| POR_regimento_de_comandos | portuguese_focus | 0 | 1 | 10 | GFX_goal_generic_special_forces | portugal.txt |
+| POR_corpo_do_estado_maior | portuguese_focus | 1 | 1 | 10 | GFX_goal_generic_army_doctrines | portugal.txt |
+| POR_staff_wargames | portuguese_focus | 0 | 1 | 10 | GFX_focus_generic_license_production | portugal.txt |
+| POR_field_maneuvers | portuguese_focus | 1 | 1 | 10 | GFX_focus_generic_manpower | portugal.txt |
+| POR_popular_front | portuguese_focus | 9 | 0 | 10 | GFX_focus_generic_strike_at_democracy1 | portugal.txt |
+| POR_nation_in_arms | portuguese_focus | -5 | 1 | 10 | GFX_focus_generic_attack_portugal | portugal.txt |
+| POR_unify_leftist_youth_wings | portuguese_focus | -1 | 1 | 10 | GFX_goal_generic_war_with_comintern | portugal.txt |
+| POR_nationalize_industry | portuguese_focus | 1 | 1 | 10 | GFX_goal_generic_soviet_construction | portugal.txt |
+| POR_reorganization_of_the_communist_party | portuguese_focus | -1 | 1 | 10 | GFX_focus_generic_soviet_politics | portugal.txt |
+| POR_join_the_comintern | portuguese_focus | 0 | 3 | 5 | GFX_focus_generic_join_comintern | portugal.txt |
+| POR_research_collaboration | portuguese_focus | -1 | 1 | 10 | GFX_focus_generic_socialist_science | portugal.txt |
+| POR_cooperate_with_french_militants | portuguese_focus | 1 | 1 | 10 | GFX_focus_chi_reach_out_to_france | portugal.txt |
+| POR_anti_fascism | portuguese_focus | 0 | 1 | 10 | GFX_focus_generic_anti_fascist_diplomacy | portugal.txt |
+| POR_support_the_spanish_republic | portuguese_focus | 0 | 1 | 10 | GFX_goal_support_communism | portugal.txt |
+| POR_workers_of_iberia_unite | portuguese_focus | -2 | 1 | 10 | GFX_focus_por_workers_of_iberia | portugal.txt |
+| POR_the_iberian_socialist_union | portuguese_focus | 0 | 1 | 10 | GFX_focus_generic_befriend_portugal | portugal.txt |
+| POR_the_popular_front_bloc | portuguese_focus | 0 | 1 | 10 | GFX_focus_generic_diplomatic_treaty | portugal.txt |
+| POR_latin_american_communism | portuguese_focus | 0 | 1 | 10 | GFX_focus_por_latin_american_communism | portugal.txt |
+| POR_our_comrades_overseas | portuguese_focus | 0 | 1 | 10 | GFX_focus_hol_legacy_of_the_de_zeven_provincien_mutiny | portugal.txt |
+| POR_visit_the_front | portuguese_focus | 2 | 1 | 10 | GFX_focus_eng_special_air_service | portugal.txt |
+| POR_they_need_our_help | portuguese_focus | 0 | 2 | 10 | GFX_focus_intervention_spain_republic | portugal.txt |
+| POR_intervention_in_spain | portuguese_focus | 0 | 1 | 10 | GFX_focus_focus_fra_intervention_spain | portugal.txt |
+| POR_securing_the_free_world | portuguese_focus | 2 | 1 | 10 | GFX_focus_generic_treaty | portugal.txt |
+| POR_protect_chinese_civilians | portuguese_focus | -2 | 1 | 10 | GFX_focus_chi_united_front | portugal.txt |
+| POR_strict_neutrality_in_the_spanish_civil_war | portuguese_focus | 5 | 0 | 10 | GFX_goal_generic_neutrality_focus | portugal.txt |
+| POR_british_investment_in_mines | portuguese_focus | -1 | 1 | 10 | GFX_goal_generic_construct_civilian | portugal.txt |
+| POR_british_guns | portuguese_focus | 1 | 1 | 10 | GFX_goal_generic_military_sphere | portugal.txt |
+| POR_british_industrial_investments | portuguese_focus | 1 | 1 | 10 | GFX_focus_generic_industry_3 | portugal.txt |
+| POR_allow_free_elections | portuguese_focus | 0 | 1 | 10 | GFX_goal_support_democracy | portugal.txt |
+| POR_join_the_allies | portuguese_focus | 0 | 2 | 5 | GFX_focus_chi_british_cooperation | portugal.txt |
+| POR_research_sharing | portuguese_focus | 2 | 1 | 10 | GFX_focus_research2 | portugal.txt |
+| POR_oppose_germany | portuguese_focus | 4 | 1 | 10 | GFX_focus_ger_oppose_hitler | portugal.txt |
+| POR_iberian_summit | portuguese_focus | 1 | 1 | 10 | GFX_focus_por_iberian_summit | portugal.txt |
+| POR_estado_novo | portuguese_focus | 12 | 0 | 10 | GFX_focus_por_estado_novo | portugal.txt |
+| POR_support_the_spanish_nationalists | portuguese_focus | 0 | 1 | 10 | GFX_goal_support_fascism | portugal.txt |
+| POR_portuguese_legion | portuguese_focus | 0 | 1 | 10 | GFX_focus_por_portuguese_legion | portugal.txt |
+| POR_observation_mission | portuguese_focus | -4 | 1 | 10 | GFX_goal_generic_position_armies | portugal.txt |
+| POR_send_assistance | portuguese_focus | 0 | 1 | 10 | GFX_focus_intervention_spain_nationalists | portugal.txt |
+| POR_nationalist_intervention | portuguese_focus | 0 | 1 | 10 | GFX_goal_generic_major_war | portugal.txt |
+| POR_strengthen_the_regime | portuguese_focus | 4 | 0 | 10 | GFX_goal_generic_political_pressure | portugal.txt |
+| POR_the_capital_of_espionage | portuguese_focus | -2 | 1 | 10 | GFX_goal_generic_intelligence_exchange | portugal.txt |
+| POR_appease_monarchists | portuguese_focus | 0 | 1 | 10 | GFX_goal_tfv_strengthen_commonwealth_ties | portugal.txt |
+| POR_concordat_with_the_holy_see | portuguese_focus | -1 | 1 | 10 | GFX_focus_por_concordat | portugal.txt |
+| POR_honor_anglo_portuguese_alliance | portuguese_focus | -1 | 1 | 10 | GFX_goal_generic_alliance | portugal.txt |
+| POR_national_gold_reserves | portuguese_focus | 1 | 1 | 10 | GFX_focus_usa_reestablish_the_gold_standard | portugal.txt |
+| POR_proudly_alone | portuguese_focus | 2 | 1 | 10 | GFX_focus_por_salazar | portugal.txt |
+| POR_the_eastern_menace | portuguese_focus | -1 | 1 | 10 | GFX_focus_AST_war_japan | portugal.txt |
+| POR_national_syndicalism | portuguese_focus | 8 | 0 | 10 | GFX_focus_generic_strike_at_democracy2 | portugal.txt |
+| POR_ditadura_militar | portuguese_focus | 0 | 1 | 10 | GFX_goal_generic_forceful_treaty | portugal.txt |
+| POR_camisas_azuis | portuguese_focus | 0 | 1 | 10 | GFX_focus_generic_military_mission | portugal.txt |
+| POR_join_the_axis | portuguese_focus | -1 | 1 | 5 | GFX_focus_chi_mission_to_germany | portugal.txt |
+| POR_research_agreements | portuguese_focus | -1 | 1 | 10 | GFX_goal_generic_scientific_exchange | portugal.txt |
+| POR_the_fifth_empire | portuguese_focus | 1 | 1 | 10 | GFX_focus_por_the_fifth_empire | portugal.txt |
+| POR_expand_the_chinese_territories | portuguese_focus | -1 | 1 | 10 | GFX_focus_usa_focus_on_asia | portugal.txt |
+| POR_deal_with_the_japanese_threat | portuguese_focus | 1 | 1 | 10 | GFX_focus_attack_japan | portugal.txt |
+| POR_refuse_the_naval_blockade | portuguese_focus | 3 | 1 | 10 | GFX_goal_generic_navy_anti_submarine | portugal.txt |
+| POR_mapa_cor_de_rosa | portuguese_focus | 0 | 1 | 10 | GFX_focus_por_the_pink_map | portugal.txt |
+| POR_recover_the_east_indies | portuguese_focus | 0 | 1 | 10 | GFX_focus_RAJ_seek_help_from_germany | portugal.txt |
+| POR_recover_brazil | portuguese_focus | 1 | 2 | 10 | GFX_focus_por_recover_brazil | portugal.txt |
+| POR_a_royal_wedding | portuguese_focus | 13 | 0 | 10 | GFX_focus_generic_royal_wedding | portugal.txt |
+| POR_the_return_of_duarte | portuguese_focus | 0 | 2 | 10 | GFX_focus_generic_monarchy_1 | portugal.txt |
+| POR_support_a_spanish_monarchy_in_the_war | portuguese_focus | 2 | 1 | 10 | GFX_focus_spa_supremacy_of_the_communion | portugal.txt |
+| POR_assist_the_requetes | portuguese_focus | 0 | 1 | 10 | GFX_goal_generic_military_deal | portugal.txt |
+| POR_join_the_carlist_fight | portuguese_focus | 0 | 1 | 10 | GFX_focus_spa_no_compromise_on_carlist_ideals | portugal.txt |
+| POR_the_royal_iberian_alliance | portuguese_focus | 0 | 1 | 5 | GFX_goal_tfv_strengthen_commonwealth_ties | portugal.txt |
+| POR_promote_the_monarchist_cause_in_portugal | portuguese_focus | 0 | 1 | 10 | GFX_focus_generic_monarchy_2 | portugal.txt |
+| POR_monarchist_uprising_in_brazil | portuguese_focus | -2 | 1 | 10 | GFX_focus_por_reclaim_crown_jewel | portugal.txt |
+| POR_the_empire_of_brazil | portuguese_focus | 0 | 1 | 10 | GFX_focus_generic_home_defense | portugal.txt |
+| POR_restoration_of_the_monarchy | portuguese_focus | 0 | 1 | 10 | GFX_focus_rom_royal_dictatorship | portugal.txt |
+| POR_the_kingdom_reunited | portuguese_focus | -1 | 2 | 10 | GFX_focus_por_the_kingdom_reunited | portugal.txt |
+| POR_remember_olivenca | portuguese_focus | 0 | 2 | 10 | GFX_focus_por_remember_olivenca | portugal.txt |
+| POR_deal_with_fascism | portuguese_focus | 1 | 1 | 10 | GFX_focus_attack_germany | portugal.txt |
+| POR_latin_america | portuguese_focus | -1 | 1 | 10 | GFX_focus_por_recover_latin_america | portugal.txt |
+| POR_the_communist_threat | portuguese_focus | -8 | 1 | 10 | GFX_focus_ger_great_red_menace | portugal.txt |
 | ROM_preserve_greater_romania | romanian_focus | 3 | 0 | 10 | GFX_focus_rom_preserve_romania | romania.txt |
 | ROM_a_deal_with_the_devil | romanian_focus | -2 | 1 | 10 | GFX_goal_generic_dangerous_deal | romania.txt |
 | ROM_form_peasant_militias | romanian_focus | -1 | 1 | 10 | GFX_goal_generic_political_pressure | romania.txt |
@@ -6946,7 +8168,7 @@ Source: `common/national_focus/*.txt`
 | SAF_support_the_german_coup | south_african_focus | 1 | 4 | 10 | GFX_goal_tfv_saf_support_german_coup | south_africa.txt |
 | SAF_reclaim_boer_colonies | south_african_focus | 3 | 4 | 10 | GFX_goal_generic_major_war | south_africa.txt |
 | SAF_commemorate_the_battle_of_blood_river | south_african_focus | -1 | 4 | 10 | GFX_goal_generic_secret_weapon | south_africa.txt |
-| SAF_german_scientists | south_african_focus | -2 | 5 |  | GFX_goal_tfv_generic_tech_sharing | south_africa.txt |
+| SAF_german_scientists | south_african_focus | -2 | 5 | 10 | GFX_goal_tfv_generic_tech_sharing | south_africa.txt |
 | SAF_a_king_for_our_people | south_african_focus | 2 | 5 | 10 | GFX_goal_generic_propaganda | south_africa.txt |
 | SAF_support_axis_interests | south_african_focus | 0 | 5 | 10 | GFX_goal_generic_construct_infrastructure | south_africa.txt |
 | SAF_empower_the_workers | south_african_focus | 5 | 1 | 10 | GFX_goal_support_communism | south_africa.txt |
@@ -7096,8 +8318,8 @@ Source: `common/national_focus/*.txt`
 | SOV_swap_to_political_advisors | soviet_focus | 3 | 1 | 10 | GFX_SOV_swap_to_political_advisors_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_the_glory_of_the_red_army | soviet_focus | 1 | 1 | 10 | GFX_SOV_the_glory_of_the_red_army_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_the_glory_of_the_red_army_alt | soviet_focus | 1 | 1 | 10 | GFX_SOV_the_glory_of_the_red_army_alt_ccp_2d_sov_compatibility | soviet.txt |
-| SOV_the_path_of_marxism_leninism | soviet_focus | 16 | 0 |  | GFX_focus_SOV_the_path_of_marxism_leninism | soviet.txt |
-| SOV_the_centre | soviet_focus | -8 | 1 |  | GFX_focus_fra_loyalty_stalin | soviet.txt |
+| SOV_the_path_of_marxism_leninism | soviet_focus | 16 | 0 | 5 | GFX_focus_SOV_the_path_of_marxism_leninism | soviet.txt |
+| SOV_the_centre | soviet_focus | -8 | 1 | 5 | GFX_focus_fra_loyalty_stalin | soviet.txt |
 | SOV_socialism_in_one_country | soviet_focus | -1 | 1 | 5 | GFX_focus_SOV_socialism_in_one_country | soviet.txt |
 | SOV_the_stalin_constitution | soviet_focus | 1 | 1 | 10 | GFX_SOV_the_stalin_constitutiony_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_the_zinovyevite_terrorist_center | soviet_focus | 0 | 1 | 5 | GFX_focus_SOV_purge_zinovyevists | soviet.txt |
@@ -7122,7 +8344,7 @@ Source: `common/national_focus/*.txt`
 | SOV_father_of_nations | soviet_focus | 1 | 1 | 10 | GFX_SOV_father_of_nations_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_freedom_of_debate_unity_of_action | soviet_focus | 3 | 1 | 10 | GFX_focus_generic_soviet_politics | soviet.txt |
 | SOV_the_construction_of_communism | soviet_focus | 0 | 2 | 10 | GFX_focus_ger_great_red_menace | soviet.txt |
-| SOV_the_left_opposition | soviet_focus | 2 | 1 |  | GFX_focus_fra_loyalty_trotzky | soviet.txt |
+| SOV_the_left_opposition | soviet_focus | 2 | 1 | 5 | GFX_focus_fra_loyalty_trotzky | soviet.txt |
 | SOV_the_fourth_international | soviet_focus | -4 | 1 | 10 | GFX_SOV_the_fourth_international_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_bring_old_trotskyists_back | soviet_focus | -2 | 1 | 5 | GFX_SOV_bring_old_trotskyists_back_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_organize_the_wreckers | soviet_focus | 1 | 1 | 10 | GFX_focus_SOV_organize_wreckers | soviet.txt |
@@ -7144,19 +8366,19 @@ Source: `common/national_focus/*.txt`
 | SOV_strengthen_heavy_industry | soviet_focus | 1 | 1 | 10 | GFX_goal_generic_soviet_construction | soviet.txt |
 | SOV_a_global_class_struggle | soviet_focus | 0 | 1 | 10 | GFX_SOV_a_global_class_struggle_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_all_power_to_the_soviets | soviet_focus | 0 | 1 | 10 | GFX_goal_support_communism | soviet.txt |
-| SOV_regional_development | soviet_focus | 0 | 1 |  | GFX_focus_generic_soviet_politics | soviet.txt |
+| SOV_regional_development | soviet_focus | 0 | 1 | 10 | GFX_focus_generic_soviet_politics | soviet.txt |
 | SOV_autonomous_soviet_republics | soviet_focus | 0 | 1 | 10 | GFX_SOV_autonomous_soviet_republics_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_international_union_of_soviet_republics | soviet_focus | 0 | 1 | 10 | GFX_focus_SOV_international_union_of_soviet_republics | soviet.txt |
 | SOV_the_onslaught_on_colonialism | soviet_focus | -1 | 1 | 10 | GFX_SOV_the_onslaught_on_colonialism_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_carry_revolution_east | soviet_focus | 1 | 1 | 10 | GFX_SOV_carry_revolution_east_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_the_end_of_the_imperialist_era | soviet_focus | 1 | 1 | 10 | GFX_SOV_the_end_of_the_imperialist_era_ccp_2d_sov_compatibility | soviet.txt |
-| SOV_the_right_opposition | soviet_focus |  |  |  | GFX_focus_SOV_bukharinists | soviet.txt |
+| SOV_the_right_opposition | soviet_focus | 15 | 0 | 5 | GFX_focus_SOV_bukharinists | soviet.txt |
 | SOV_the_need_for_policy_changes | soviet_focus | 0 | 1 | 5 | GFX_focus_hol_abandon_the_gold_standard | soviet.txt |
 | SOV_reverse_the_collectivization_process | soviet_focus | 2 | 1 | 10 | GFX_SOV_reverse_the_collectivization_process_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_organize_uprisings_in_the_country | soviet_focus | -2 | 1 | 10 | GFX_SOV_organize_uprisings_in_the_country_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_dissent_in_the_party | soviet_focus | 0 | 1 | 10 | GFX_goal_generic_forceful_treaty | soviet.txt |
 | SOV_eliminate_the_left | soviet_focus | -4 | 1 | 5 | GFX_focus_SOV_purge_trotskyists | soviet.txt |
-| SOV_concessions_to_foreign_powers | soviet_focus | -1 | 2 |  | GFX_goal_generic_dangerous_deal | soviet.txt |
+| SOV_concessions_to_foreign_powers | soviet_focus | -1 | 2 | 5 | GFX_goal_generic_dangerous_deal | soviet.txt |
 | SOV_covert_support_for_spanish_poum | soviet_focus | 1 | 2 | 5 | GFX_focus_SOV_support_spanish_poum | soviet.txt |
 | SOV_undermine_stalins_authority | soviet_focus | -1 | 1 | 10 | GFX_focus_ger_bulwark_against_bolshevism | soviet.txt |
 | SOV_clandestine_cells | soviet_focus | 1 | 1 | 10 | GFX_goal_generic_more_territorial_claims | soviet.txt |
@@ -7189,10 +8411,10 @@ Source: `common/national_focus/*.txt`
 | SOV_align_the_zinovyevites | soviet_focus | -1 | 1 | 10 | GFX_focus_SOV_zinovyevists | soviet.txt |
 | SOV_liberate_ryutin | soviet_focus | 1 | 1 | 10 | GFX_SOV_liberate_ryutin_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_return_democracy_to_the_party | soviet_focus | 0 | 4 | 10 | GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility | soviet.txt |
-| SOV_strengthen_the_trade_unions | soviet_focus | 6 | 1 |  | GFX_focus_generic_treaty | soviet.txt |
+| SOV_strengthen_the_trade_unions | soviet_focus | 6 | 1 | 10 | GFX_focus_generic_treaty | soviet.txt |
 | SOV_the_peoples_revolution | soviet_focus | 0 | 1 | 10 | GFX_focus_por_workers_of_iberia | soviet.txt |
 | SOV_the_supreme_soviet | soviet_focus | 0 | 1 | 10 | GFX_focus_SOV_the_supreme_soviet | soviet.txt |
-| SOV_addressing_internal_affairs | soviet_focus | 24 | 1 |  | GFX_focus_generic_self_management | soviet.txt |
+| SOV_addressing_internal_affairs | soviet_focus | 24 | 1 | 5 | GFX_focus_generic_self_management | soviet.txt |
 | SOV_nkvd_primacy | soviet_focus | -2 | 1 | 5 | GFX_SOV_nkvd_primacy_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_the_new_soviet_woman | soviet_focus | 2 | 1 | 5 | GFX_SOV_the_new_soviet_woman_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_expand_the_agitprop | soviet_focus | 0 | 1 | 5 | GFX_SOV_expand_the_agitprop_ccp_2d_sov_compatibility | soviet.txt |
@@ -7247,21 +8469,21 @@ Source: `common/national_focus/*.txt`
 | SOV_reconcile_japan | soviet_focus | 3 | 0 | 10 | GFX_focus_chi_collaboration_with_the_japanese | soviet.txt |
 | SOV_spheres_of_influence_in_china | soviet_focus | 1 | 1 | 10 | GFX_goal_generic_position_armies | soviet.txt |
 | SOV_soviet_japanese_pact_against_usa_focus | soviet_focus | 0 | 4 | 10 | GFX_goal_generic_military_deal | soviet.txt |
-| SOV_beaten_but_not_defeated | soviet_focus | 61 | 0 |  | GFX_SOV_beaten_but_not_defeated_ccp_2d_sov_compatibility | soviet.txt |
-| SOV_unification_of_the_exiles | soviet_focus | -4 | 1 |  | GFX_goal_generic_major_alliance | soviet.txt |
+| SOV_beaten_but_not_defeated | soviet_focus | 61 | 0 | 5 | GFX_SOV_beaten_but_not_defeated_ccp_2d_sov_compatibility | soviet.txt |
+| SOV_unification_of_the_exiles | soviet_focus | -4 | 1 | 10 | GFX_goal_generic_major_alliance | soviet.txt |
 | SOV_womens_fascist_movement | soviet_focus | -2 | 1 | 5 | GFX_focus_SOV_womens_fascist_movement | soviet.txt |
 | SOV_the_true_tsars | soviet_focus | 0 | 1 | 5 | GFX_focus_SOV_the_true_tsars | soviet.txt |
 | SOV_national_unification | soviet_focus | 2 | 1 | 5 | GFX_SOV_national_unification_ccp_2d_sov_compatibility | soviet.txt |
-| SOV_embrace_the_black_hundreds | soviet_focus |  |  |  | GFX_focus_generic_little_entente | soviet.txt |
+| SOV_embrace_the_black_hundreds | soviet_focus | 0 | 1 | 5 | GFX_focus_generic_little_entente | soviet.txt |
 | SOV_covert_operations | soviet_focus | -3 | 1 | 5 | GFX_goal_generic_more_territorial_claims | soviet.txt |
-| SOV_muster_the_old_guard | soviet_focus |  |  |  | GFX_SOV_muster_the_old_guard_ccp_2d_sov_compatibility | soviet.txt |
-| SOV_approach_semyonov | soviet_focus |  |  |  | GFX_focus_SOV_approach_semyonov | soviet.txt |
-| SOV_fascist_youth_union | soviet_focus |  |  |  | GFX_SOV_fascist_youth_union_ccp_2d_sov_compatibility | soviet.txt |
-| SOV_tolkachi | soviet_focus |  |  |  | GFX_goal_generic_intelligence_exchange | soviet.txt |
-| SOV_south_manchuria_railway | soviet_focus |  |  |  | GFX_focus_SOV_south_manchuria_railway | soviet.txt |
-| SOV_organize_wreckers | soviet_focus |  |  |  | GFX_focus_SOV_organize_wreckers | soviet.txt |
-| SOV_the_eyes_fear | soviet_focus |  |  |  | GFX_SOV_the_eyes_fear_ccp_2d_sov_compatibility | soviet.txt |
-| SOV_the_hands_do | soviet_focus |  |  |  | GFX_SOV_the_hands_do_ccp_2d_sov_compatibility | soviet.txt |
+| SOV_muster_the_old_guard | soviet_focus | -1 | 1 | 10 | GFX_SOV_muster_the_old_guard_ccp_2d_sov_compatibility | soviet.txt |
+| SOV_approach_semyonov | soviet_focus | 3 | 1 | 5 | GFX_focus_SOV_approach_semyonov | soviet.txt |
+| SOV_fascist_youth_union | soviet_focus | 1 | 1 | 10 | GFX_SOV_fascist_youth_union_ccp_2d_sov_compatibility | soviet.txt |
+| SOV_tolkachi | soviet_focus | 1 | 1 | 5 | GFX_goal_generic_intelligence_exchange | soviet.txt |
+| SOV_south_manchuria_railway | soviet_focus | 1 | 1 | 5 | GFX_focus_SOV_south_manchuria_railway | soviet.txt |
+| SOV_organize_wreckers | soviet_focus | -1 | 1 | 5 | GFX_focus_SOV_organize_wreckers | soviet.txt |
+| SOV_the_eyes_fear | soviet_focus | 0 | 1 | 5 | GFX_SOV_the_eyes_fear_ccp_2d_sov_compatibility | soviet.txt |
+| SOV_the_hands_do | soviet_focus | 0 | 1 | 5 | GFX_SOV_the_hands_do_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_call_for_aid | soviet_focus | -3 | 1 | 5 | GFX_SOV_call_for_aid_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_request_imperial_protection | soviet_focus | 0 | 1 | 10 | GFX_SOV_request_imperial_protection_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_sabotage_behind_enemy_lines | soviet_focus | -1 | 1 | 5 | GFX_focus_prc_infiltration | soviet.txt |
@@ -7284,9 +8506,9 @@ Source: `common/national_focus/*.txt`
 | SOV_romanov_reconstruction | soviet_focus | -5 | 1 | 10 | GFX_SOV_romanov_reconstruction_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_capital_of_the_tsars | soviet_focus | -2 | 1 | 10 | GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_church_candidates | soviet_focus | 5 | 1 | 10 | GFX_focus_generic_diplomatic_treaty | soviet.txt |
-| SOV_reinstitute_the_mestnichestvo | soviet_focus |  |  |  | GFX_SOV_reinstitute_the_mestnichestvo_ccp_2d_sov_compatibility | soviet.txt |
-| SOV_the_iron_wall_of_russian_resolve | soviet_focus |  |  |  | GFX_SOV_the_iron_wall_of_russian_resolve_ccp_2d_sov_compatibility | soviet.txt |
-| SOV_my_brothers_keeper | soviet_focus |  |  |  | GFX_focus_SOV_my_brothers_keeper | soviet.txt |
+| SOV_reinstitute_the_mestnichestvo | soviet_focus | -5 | 1 | 10 | GFX_SOV_reinstitute_the_mestnichestvo_ccp_2d_sov_compatibility | soviet.txt |
+| SOV_the_iron_wall_of_russian_resolve | soviet_focus | -1 | 1 | 10 | GFX_SOV_the_iron_wall_of_russian_resolve_ccp_2d_sov_compatibility | soviet.txt |
+| SOV_my_brothers_keeper | soviet_focus | 0 | 2 | 10 | GFX_focus_SOV_my_brothers_keeper | soviet.txt |
 | SOV_the_rightful_heir_to_the_empire | soviet_focus | 0 | 2 | 10 | GFX_SOV_the_rightful_heir_to_the_empire_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_the_third_rome | soviet_focus | 0 | 1 | 10 | GFX_focus_SOV_third_rome | soviet.txt |
 | SOV_vengeance_for_the_yoke | soviet_focus | -3 | 1 | 5 | GFX_focus_generic_attack_mongolia | soviet.txt |
@@ -7312,287 +8534,287 @@ Source: `common/national_focus/*.txt`
 | SOV_an_empire_in_the_pacific | soviet_focus | 0 | 1 | 10 | GFX_focus_SOV_pacific_empire | soviet.txt |
 | SOV_the_berlin_moscow_axis | soviet_focus | 2 | 1 | 10 | GFX_SOV_the_berlin_moscow_axis_ccp_2d_sov_compatibility | soviet.txt |
 | SOV_japanese_overtures | soviet_focus | 0 | 1 | 10 | GFX_SOV_japanese_overtures_ccp_2d_sov_compatibility | soviet.txt |
-| SPA_a_great_spain | spanish_focus |  |  |  |  | spain.txt |
-| SPA_hand_over_the_ceda_campaign_chest | spanish_focus |  |  |  |  | spain.txt |
-| SPA_negotiate_carlist_support | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_army_of_africa | spanish_focus |  |  |  |  | spain.txt |
-| SPA_secure_the_northern_garrisons | spanish_focus |  |  |  |  | spain.txt |
-| SPA_sin_paquito | spanish_focus |  |  |  |  | spain.txt |
-| SPA_con_paquito | spanish_focus |  |  |  |  | spain.txt |
-| SPR_the_popular_front | spanish_focus |  |  |  |  | spain.txt |
-| SPR_secure_the_guardia_de_asalto | spanish_focus |  |  |  |  | spain.txt |
-| SPR_secure_the_guardia_civil | spanish_focus |  |  |  |  | spain.txt |
-| SPR_train_the_union_youth | spanish_focus |  |  |  |  | spain.txt |
-| SPR_enlarge_the_weapon_caches | spanish_focus |  |  |  |  | spain.txt |
-| SPR_distribute_arms_to_the_people | spanish_focus |  |  |  |  | spain.txt |
-| SPR_disband_the_army | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_phalanx_ascendant | spanish_focus |  |  |  |  | spain.txt |
-| SPA_bolster_offensive_infrastructure | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_fifth_column | spanish_focus |  |  |  |  | spain.txt |
-| SPA_emergency_munitions_corporations | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_corpo_truppe_volontarie | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_condor_legion | spanish_focus |  |  |  |  | spain.txt |
-| SPA_equipment_shipments | spanish_focus |  |  |  |  | spain.txt |
-| SPA_obtain_training_staff | spanish_focus |  |  |  |  | spain.txt |
-| SPA_doctrinal_advancements | spanish_focus |  |  |  |  | spain.txt |
-| SPA_secure_the_national_defense_council | spanish_focus |  |  |  |  | spain.txt |
-| SPA_suspend_the_constitution | spanish_focus |  |  |  |  | spain.txt |
-| SPA_primo_de_rivera_prisoner_exchange | spanish_focus |  |  |  |  | spain.txt |
-| SPA_eliminate_the_carlists | spanish_focus |  |  |  |  | spain.txt |
-| SPA_absorb_carlist_remnants | spanish_focus |  |  |  |  | spain.txt |
-| SPA_establish_the_directory | spanish_focus |  |  |  |  | spain.txt |
-| SPA_a_one_party_state | spanish_focus |  |  |  |  | spain.txt |
-| SPA_expand_conscription | spanish_focus |  |  |  |  | spain.txt |
-| SPA_safeguard_the_freedom_of_worship | spanish_focus |  |  |  |  | spain.txt |
-| SPA_prepare_the_pyrenees_defenses | spanish_focus |  |  |  |  | spain.txt |
-| SPA_develop_all_talent | spanish_focus |  |  |  |  | spain.txt |
-| SPA_regional_agrarian_commissions | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_national_syndicalist_state | spanish_focus |  |  |  |  | spain.txt |
-| SPA_syndicalize_production | spanish_focus |  |  |  |  | spain.txt |
-| SPA_strengthen_the_supreme_reality_of_spain | spanish_focus |  |  |  |  | spain.txt |
-| SPA_glory_and_wealth_on_the_sea_lanes | spanish_focus |  |  |  |  | spain.txt |
-| SPA_improve_domestic_naval_facilities | spanish_focus |  |  |  |  | spain.txt |
-| SPA_a_great_maritime_power | spanish_focus |  |  |  |  | spain.txt |
-| SPA_commerce_protection | spanish_focus |  |  |  |  | spain.txt |
-| SPA_exemplify_the_art_and_science_of_warfare | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_will_to_empire | spanish_focus |  |  |  |  | spain.txt |
-| SPA_unite_iberia | spanish_focus |  |  |  |  | spain.txt |
-| SPA_absorb_the_portuguese_empire | spanish_focus |  |  |  |  | spain.txt |
-| SPA_claim_the_aragonese_possessions | spanish_focus |  |  |  |  | spain.txt |
-| SPA_reclaim_spanish_africa | spanish_focus |  |  |  |  | spain.txt |
-| SPA_reassert_american_dominance | spanish_focus |  |  |  |  | spain.txt |
-| SPA_retake_the_americas | spanish_focus |  |  |  |  | spain.txt |
+| SPA_a_great_spain | spanish_focus | 31 | 0 | 5 | GFX_goal_generic_demand_territory | spain.txt |
+| SPA_hand_over_the_ceda_campaign_chest | spanish_focus | -15 | 1 | 5 | GFX_focus_generic_concessions | spain.txt |
+| SPA_negotiate_carlist_support | spanish_focus | 0 | 1 | 4 | GFX_goal_generic_military_deal | spain.txt |
+| SPA_the_army_of_africa | spanish_focus | 0 | 1 | 5 | GFX_goal_generic_special_forces | spain.txt |
+| SPA_secure_the_northern_garrisons | spanish_focus | 0 | 1 | 5 | GFX_goal_generic_position_armies | spain.txt |
+| SPA_sin_paquito | spanish_focus | -1 | 1 | 4 | GFX_goal_generic_forceful_treaty | spain.txt |
+| SPA_con_paquito | spanish_focus | 1 | 1 | 4 | GFX_goal_generic_dangerous_deal | spain.txt |
+| SPR_the_popular_front | spanish_focus | 33 | 0 | 5 | GFX_goal_generic_national_unity | spain.txt |
+| SPR_secure_the_guardia_de_asalto | spanish_focus | 13 | 1 | 10 | GFX_goal_generic_political_pressure | spain.txt |
+| SPR_secure_the_guardia_civil | spanish_focus | 15 | 1 | 10 | GFX_focus_generic_support_the_left_right | spain.txt |
+| SPR_train_the_union_youth | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_more_territorial_claims | spain.txt |
+| SPR_enlarge_the_weapon_caches | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_military_sphere | spain.txt |
+| SPR_distribute_arms_to_the_people | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_small_arms | spain.txt |
+| SPR_disband_the_army | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_forceful_treaty | spain.txt |
+| SPA_the_phalanx_ascendant | spanish_focus | -10 | 1 | 5 | GFX_focus_spa_the_phalanx_ascendant | spain.txt |
+| SPA_bolster_offensive_infrastructure | spanish_focus | -3 | 1 | 10 | GFX_goal_generic_construct_infrastructure | spain.txt |
+| SPA_the_fifth_column | spanish_focus | -1 | 1 | 5 | GFX_focus_prc_infiltration | spain.txt |
+| SPA_emergency_munitions_corporations | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_construct_mil_factory | spain.txt |
+| SPA_the_corpo_truppe_volontarie | spanish_focus | 4 | 1 | 5 | GFX_focus_befriend_italy | spain.txt |
+| SPA_the_condor_legion | spanish_focus | 6 | 1 | 5 | GFX_focus_chi_mission_to_germany | spain.txt |
+| SPA_equipment_shipments | spanish_focus | 1 | 1 | 5 | GFX_goal_generic_build_tank | spain.txt |
+| SPA_obtain_training_staff | spanish_focus | -1 | 1 | 5 | GFX_focus_generic_military_academy | spain.txt |
+| SPA_doctrinal_advancements | spanish_focus | 1 | 1 | 5 | GFX_goal_generic_army_doctrines | spain.txt |
+| SPA_secure_the_national_defense_council | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_political_pressure | spain.txt |
+| SPA_suspend_the_constitution | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_more_territorial_claims | spain.txt |
+| SPA_primo_de_rivera_prisoner_exchange | spanish_focus | 2 | 1 | 5 | GFX_goal_generic_intelligence_exchange | spain.txt |
+| SPA_eliminate_the_carlists | spanish_focus | -1 | 1 | 5 | GFX_focus_spa_eliminate_the_carlists | spain.txt |
+| SPA_absorb_carlist_remnants | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_dangerous_deal | spain.txt |
+| SPA_establish_the_directory | spanish_focus | 1 | 1 | 5 | GFX_goal_generic_propaganda | spain.txt |
+| SPA_a_one_party_state | spanish_focus | -1 | 1 | 10 | GFX_focus_generic_strike_at_democracy2 | spain.txt |
+| SPA_expand_conscription | spanish_focus | 3 | 1 | 10 | GFX_goal_generic_axis_build_infantry | spain.txt |
+| SPA_safeguard_the_freedom_of_worship | spanish_focus | 5 | 1 | 10 | GFX_focus_generic_strike_at_democracy1 | spain.txt |
+| SPA_prepare_the_pyrenees_defenses | spanish_focus | 4 | 2 | 10 | GFX_goal_generic_fortify_city | spain.txt |
+| SPA_develop_all_talent | spanish_focus | -3 | 1 | 10 | GFX_focus_research | spain.txt |
+| SPA_regional_agrarian_commissions | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_consumer_goods | spain.txt |
+| SPA_the_national_syndicalist_state | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_propaganda | spain.txt |
+| SPA_syndicalize_production | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_production2 | spain.txt |
+| SPA_strengthen_the_supreme_reality_of_spain | spanish_focus | -3 | 1 | 10 | GFX_focus_spa_strengthen_the_supreme_reality_of_spain | spain.txt |
+| SPA_glory_and_wealth_on_the_sea_lanes | spanish_focus | -2 | 1 | 10 | GFX_goal_generic_navy_doctrines_tactics | spain.txt |
+| SPA_improve_domestic_naval_facilities | spanish_focus | -2 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | spain.txt |
+| SPA_a_great_maritime_power | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_navy_battleship | spain.txt |
+| SPA_commerce_protection | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_navy_cruiser | spain.txt |
+| SPA_exemplify_the_art_and_science_of_warfare | spanish_focus | 1 | 1 | 10 | GFX_focus_research2 | spain.txt |
+| SPA_the_will_to_empire | spanish_focus | 0 | 2 | 10 | GFX_goal_generic_demand_territory | spain.txt |
+| SPA_unite_iberia | spanish_focus | -2 | 1 | 10 | GFX_focus_generic_attack_portugal | spain.txt |
+| SPA_absorb_the_portuguese_empire | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_forceful_treaty | spain.txt |
+| SPA_claim_the_aragonese_possessions | spanish_focus | 0 | 2 | 10 | GFX_goal_generic_territory_or_war | spain.txt |
+| SPA_reclaim_spanish_africa | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_occupy_states_ongoing_war | spain.txt |
+| SPA_reassert_american_dominance | spanish_focus | 1 | 2 | 10 | GFX_goal_generic_political_pressure | spain.txt |
+| SPA_retake_the_americas | spanish_focus | 0 | 1 | 10 | GFX_focus_spa_the_war_of_vengeance | spain.txt |
 | SPA_embrace_pan_hispanism | spanish_focus | 0 | 1 | 10 | GFX_focus_CHL_promote_pan_hispanic_rhetoric | spain.txt |
-| SPA_embrace_the_spanish_destiny | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_national_and_popular_army_of_spain | spanish_focus |  |  |  |  | spain.txt |
-| SPA_mandatory_pre_military_training | spanish_focus |  |  |  |  | spain.txt |
-| SPA_all_shall_serve | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_army_of_africa_model | spanish_focus |  |  |  |  | spain.txt |
-| SPA_equipment_modernization | spanish_focus |  |  |  |  | spain.txt |
-| SPA_artillery_modernization | spanish_focus |  |  |  |  | spain.txt |
-| SPA_expand_the_air_branch | spanish_focus |  |  |  |  | spain.txt |
-| SPA_expand_the_special_forces | spanish_focus |  |  |  |  | spain.txt |
-| SPA_motorization | spanish_focus |  |  |  |  | spain.txt |
-| SPA_an_armored_corps | spanish_focus |  |  |  |  | spain.txt |
-| SPA_join_the_axis | spanish_focus |  |  |  |  | spain.txt |
-| SPA_fascist_economic_aid | spanish_focus |  |  |  |  | spain.txt |
-| SPA_facilitate_pyrenees_freight_transports | spanish_focus |  |  |  |  | spain.txt |
-| SPA_improve_cross_country_railways | spanish_focus |  |  |  |  | spain.txt |
-| SPA_support_the_war_industry | spanish_focus |  |  |  |  | spain.txt |
-| SPA_italian_shipbuilding_expertise | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_duty_to_work | spanish_focus |  |  |  |  | spain.txt |
-| SPA_expand_the_war_industry | spanish_focus |  |  |  |  | spain.txt |
-| SPA_national_recovery | spanish_focus |  |  |  |  | spain.txt |
-| SPA_autarky | spanish_focus |  |  |  |  | spain.txt |
-| SPA_spanish_austerity | spanish_focus |  |  |  |  | spain.txt |
-| SPA_reduce_reliance_on_foreign_resources | spanish_focus |  |  |  |  | spain.txt |
-| SPA_expand_the_axis_gold_trade | spanish_focus |  |  |  |  | spain.txt |
-| SPA_ensure_agricultural_self_sufficiency | spanish_focus |  |  |  |  | spain.txt |
-| SPA_unify_the_nationalist_front | spanish_focus |  |  |  |  | spain.txt |
-| SPA_save_the_alcazar | spanish_focus |  |  |  |  | spain.txt |
-| SPA_martyrdom_for_primo_de_rivera | spanish_focus |  |  |  |  | spain.txt |
-| SPA_caudillo_of_spain | spanish_focus |  |  |  |  | spain.txt |
-| SPA_extol_the_martyrs_of_the_war | spanish_focus |  |  |  |  | spain.txt |
-| SPA_consolidate_the_north | spanish_focus |  |  |  |  | spain.txt |
-| SPA_foment_a_carlist_split | spanish_focus |  |  |  |  | spain.txt |
-| SPA_a_methodical_approach | spanish_focus |  |  |  |  | spain.txt |
-| SPA_tackle_the_vulnerable_fronts | spanish_focus |  |  |  |  | spain.txt |
-| SPA_integrate_the_requetes | spanish_focus |  |  |  |  | spain.txt |
-| SPA_portuguese_aid | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_iberian_pact | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_latin_bloc | spanish_focus |  |  |  |  | spain.txt |
-| SPA_utilize_the_intellectuals | spanish_focus |  |  |  |  | spain.txt |
-| SPA_banish_the_party_leaders | spanish_focus |  |  |  |  | spain.txt |
-| SPA_fuse_the_parties | spanish_focus |  |  |  |  | spain.txt |
-| SPA_join_the_allies | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_stabilization_plan | spanish_focus |  |  |  |  | spain.txt |
-| SPA_expand_spanish_bases | spanish_focus |  |  |  |  | spain.txt |
-| SPA_capitalist_economic_aid | spanish_focus |  |  |  |  | spain.txt |
-| SPA_improve_living_standards | spanish_focus |  |  |  |  | spain.txt |
-| SPA_domestic_industrial_developments | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_spanish_miracle | spanish_focus |  |  |  |  | spain.txt |
-| SPA_adopt_the_26_points | spanish_focus |  |  |  |  | spain.txt |
-| SPA_direct_the_universities | spanish_focus |  |  |  |  | spain.txt |
-| SPA_dictator_for_life | spanish_focus |  |  |  |  | spain.txt |
-| SPA_invest_in_naval_infrastructure | spanish_focus |  |  |  |  | spain.txt |
-| SPA_expand_the_slipways | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_plan_imperial | spanish_focus |  |  |  |  | spain.txt |
-| SPA_restart_small_scale_shipbuilding | spanish_focus |  |  |  |  | spain.txt |
-| SPA_la_division_azul | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_tangiers_enclave | spanish_focus |  |  |  |  | spain.txt |
-| SPA_demand_french_north_africa | spanish_focus |  |  |  |  | spain.txt |
-| SPA_restore_the_monarchy | spanish_focus |  |  |  |  | spain.txt |
-| SPA_stamp_out_the_maquis | spanish_focus |  |  |  |  | spain.txt |
-| SPA_defenses_against_strategic_bombing | spanish_focus |  |  |  |  | spain.txt |
-| SPA_defenses_against_invasion | spanish_focus |  |  |  |  | spain.txt |
-| SPA_retake_gibraltar | spanish_focus |  |  |  |  | spain.txt |
-| SPA_claim_west_africa | spanish_focus |  |  |  |  | spain.txt |
-| SPA_supremacy_of_the_communion | spanish_focus |  |  |  |  | spain.txt |
-| SPA_prepare_the_carlist_insurrection | spanish_focus |  |  |  |  | spain.txt |
-| SPA_contact_the_union_militar_espanola | spanish_focus |  |  |  |  | spain.txt |
-| SPA_head_the_junta_nacional | spanish_focus |  |  |  |  | spain.txt |
-| SPA_unite_the_requetes | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_war_in_the_north | spanish_focus |  |  |  |  | spain.txt |
-| SPA_revive_the_spirit_of_the_carlist_wars | spanish_focus |  |  |  |  | spain.txt |
-| SPA_arms_modernization | spanish_focus |  |  |  |  | spain.txt |
-| SPA_no_compromise_on_carlist_ideals | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_crusade_against_democracy | spanish_focus |  |  |  |  | spain.txt |
-| SPA_expand_the_requetes | spanish_focus |  |  |  |  | spain.txt |
-| SPA_militarize_the_masses | spanish_focus |  |  |  |  | spain.txt |
-| SPA_defenders_of_catholicism | spanish_focus |  |  |  |  | spain.txt |
-| SPA_battle_rites | spanish_focus |  |  |  |  | spain.txt |
-| SPA_cultivate_fanaticism | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_third_dimension_of_warfare | spanish_focus |  |  |  |  | spain.txt |
-| SPA_a_modern_fighter_fleet | spanish_focus |  |  |  |  | spain.txt |
-| SPA_confirm_the_fueros | spanish_focus |  |  |  |  | spain.txt |
-| SPA_encourage_local_industrialization | spanish_focus |  |  |  |  | spain.txt |
-| SPA_encourage_local_mining | spanish_focus |  |  |  |  | spain.txt |
-| SPA_settle_the_succession_question | spanish_focus |  |  |  |  | spain.txt |
-| SPA_dios_patria_rey | spanish_focus |  |  |  |  | spain.txt |
-| SPA_restore_the_empire | spanish_focus |  |  |  |  | spain.txt |
-| SPA_strengthen_the_empire | spanish_focus |  |  |  |  | spain.txt |
-| SPA_prosperity_of_the_empire | spanish_focus |  |  |  |  | spain.txt |
-| SPA_press_the_gibraltar_claim | spanish_focus |  |  |  |  | spain.txt |
-| SPA_claim_the_french_throne | spanish_focus |  |  |  |  | spain.txt |
-| SPA_retake_the_spanish_netherlands | spanish_focus |  |  |  |  | spain.txt |
-| SPA_restore_the_iberian_union | spanish_focus |  |  |  |  | spain.txt |
-| SPA_the_war_of_vengeance | spanish_focus |  |  |  |  | spain.txt |
-| SPA_found_the_academia_vazquez_de_mella | spanish_focus |  |  |  |  | spain.txt |
-| SPA_a_fleet_worthy_of_a_king | spanish_focus |  |  |  |  | spain.txt |
-| SPA_rebuild_the_battlefleet | spanish_focus |  |  |  |  | spain.txt |
-| SPA_imperial_security | spanish_focus |  |  |  |  | spain.txt |
-| SPR_regional_defense_council_of_aragon | spanish_focus |  |  |  |  | spain.txt |
-| SPR_appropriate_the_means_of_production | spanish_focus |  |  |  |  | spain.txt |
-| SPR_autogestion | spanish_focus |  |  |  |  | spain.txt |
-| SPR_collectivization_and_workers_control | spanish_focus |  |  |  |  | spain.txt |
-| SPR_arm_the_people | spanish_focus |  |  |  |  | spain.txt |
-| SPR_the_maximum_concession | spanish_focus |  |  |  |  | spain.txt |
-| SPR_seize_public_transport | spanish_focus |  |  |  |  | spain.txt |
-| SPR_agrarian_collectivization | spanish_focus |  |  |  |  | spain.txt |
-| SPR_mujeres_libres | spanish_focus |  |  |  |  | spain.txt |
-| SPR_literacy_programs | spanish_focus |  |  |  |  | spain.txt |
-| SPR_shared_burdens | spanish_focus |  |  |  |  | spain.txt |
-| SPR_international_brigades | spanish_focus |  |  |  |  | spain.txt |
-| SPR_seize_the_gold_reserves | spanish_focus |  |  |  |  | spain.txt |
-| SPR_foreign_arms_purchases | spanish_focus |  |  |  |  | spain.txt |
-| SPR_masters_of_our_own_fate | spanish_focus |  |  |  |  | spain.txt |
-| SPR_all_must_bear_the_torch | spanish_focus |  |  |  |  | spain.txt |
-| SPR_the_threats_abound | spanish_focus |  |  |  |  | spain.txt |
-| SPR_portuguese_anarchism | spanish_focus |  |  |  |  | spain.txt |
-| SPR_regional_defense_council_of_iberia | spanish_focus |  |  |  |  | spain.txt |
-| SPR_a_new_way_of_warfare | spanish_focus |  |  |  |  | spain.txt |
-| SPR_communal_military_strategies | spanish_focus |  |  |  |  | spain.txt |
-| SPR_maintaining_the_fire | spanish_focus |  |  |  |  | spain.txt |
-| SPR_freedom_of_thought | spanish_focus |  |  |  |  | spain.txt |
-| SPR_torchbearers_of_tomorrow | spanish_focus |  |  |  |  | spain.txt |
-| SPR_the_inevitable_counterblow | spanish_focus |  |  |  |  | spain.txt |
-| SPR_improve_military_infrastructure | spanish_focus |  |  |  |  | spain.txt |
-| SPR_fortify_the_pyrenees | spanish_focus |  |  |  |  | spain.txt |
-| SPR_fortify_la_linea_de_la_concepcion | spanish_focus |  |  |  |  | spain.txt |
-| SPR_fortify_the_coastlines | spanish_focus |  |  |  |  | spain.txt |
-| SPR_militarize_the_industry | spanish_focus |  |  |  |  | spain.txt |
-| SPR_communal_autarky | spanish_focus |  |  |  |  | spain.txt |
-| SPR_faith_in_the_cause | spanish_focus |  |  |  |  | spain.txt |
-| SPR_militarize_the_people | spanish_focus |  |  |  |  | spain.txt |
-| SPR_anarchism_knows_no_borders | spanish_focus |  |  |  |  | spain.txt |
-| SPR_plant_the_seeds_of_revolution | spanish_focus |  |  |  |  | spain.txt |
-| SPR_global_defense_council | spanish_focus |  |  |  |  | spain.txt |
-| SPR_the_anti_fascist_workers_revolution | spanish_focus |  |  |  |  | spain.txt |
-| SPR_strengthen_the_euzko_gudarostea | spanish_focus |  |  |  |  | spain.txt |
-| SPR_fortify_the_iron_ring | spanish_focus |  |  |  |  | spain.txt |
-| SPR_arm_the_workers_militias | spanish_focus |  |  |  |  | spain.txt |
-| SPR_hinder_nkvd_interference | spanish_focus |  |  |  |  | spain.txt |
-| SPR_demand_ministerial_positions | spanish_focus |  |  |  |  | spain.txt |
-| SPR_the_stalinist_doctrine | spanish_focus |  |  |  |  | spain.txt |
-| SPR_subvert_the_stalinists | spanish_focus |  |  |  |  | spain.txt |
-| SPR_class_war | spanish_focus |  |  |  |  | spain.txt |
-| SPR_secularize_the_new_state | spanish_focus |  |  |  |  | spain.txt |
-| SPR_appropriate_church_riches | spanish_focus |  |  |  |  | spain.txt |
-| SPR_an_army_of_all_classes | spanish_focus |  |  |  |  | spain.txt |
-| SPR_relocate_the_gold_reserves | spanish_focus |  |  |  |  | spain.txt |
-| SPR_reaffirm_the_popular_front_strategy | spanish_focus |  |  |  |  | spain.txt |
-| SPR_anti_fascist_unity | spanish_focus |  |  |  |  | spain.txt |
-| SPR_crush_the_revolution | spanish_focus |  |  |  |  | spain.txt |
-| SPR_united_under_socialism | spanish_focus |  |  |  |  | spain.txt |
-| SPR_wealth_redistribution | spanish_focus |  |  |  |  | spain.txt |
-| SPR_collective_recovery_efforts | spanish_focus |  |  |  |  | spain.txt |
-| SPR_repair_and_expand_the_dockyards | spanish_focus |  |  |  |  | spain.txt |
-| SPR_the_peoples_fleet | spanish_focus |  |  |  |  | spain.txt |
-| SPR_land_redistribution | spanish_focus |  |  |  |  | spain.txt |
-| SPR_expand_the_means_of_production | spanish_focus |  |  |  |  | spain.txt |
-| SPR_invite_socialist_intellectuals | spanish_focus |  |  |  |  | spain.txt |
-| SPR_solidify_government_control | spanish_focus |  |  |  |  | spain.txt |
-| SPR_reeducate_the_bourgeoisie | spanish_focus |  |  |  |  | spain.txt |
-| SPR_the_spanish_red_army | spanish_focus |  |  |  |  | spain.txt |
-| SPR_expand_soviet_aid | spanish_focus |  |  |  |  | spain.txt |
-| SPR_soviet_equipment_shipments | spanish_focus |  |  |  |  | spain.txt |
-| SPR_soviet_military_advisors | spanish_focus |  |  |  |  | spain.txt |
-| SPR_soviet_industrial_aid | spanish_focus |  |  |  |  | spain.txt |
-| SPR_soviet_technological_advancements | spanish_focus |  |  |  |  | spain.txt |
-| SPR_soviet_recovery_aid | spanish_focus |  |  |  |  | spain.txt |
-| SPR_all_must_do_their_part | spanish_focus |  |  |  |  | spain.txt |
-| SPR_the_red_tide | spanish_focus |  |  |  |  | spain.txt |
-| SPR_arm_the_tide | spanish_focus |  |  |  |  | spain.txt |
-| SPR_against_fascism | spanish_focus |  |  |  |  | spain.txt |
-| SPR_doctrinal_advancements | spanish_focus |  |  |  |  | spain.txt |
-| SPR_lessons_from_the_civil_war | spanish_focus |  |  |  |  | spain.txt |
-| SPR_nationalize_the_industry | spanish_focus |  |  |  |  | spain.txt |
-| SPR_beacon_of_socialism | spanish_focus |  |  |  |  | spain.txt |
-| SPR_increase_arms_production | spanish_focus |  |  |  |  | spain.txt |
-| SPR_exploit_spains_riches | spanish_focus |  |  |  |  | spain.txt |
-| SPR_unify_the_london_bureau | spanish_focus |  |  |  |  | spain.txt |
-| SPR_against_trotskyism_and_stalinism | spanish_focus |  |  |  |  | spain.txt |
-| SPR_red_bulwark_in_the_west | spanish_focus |  |  |  |  | spain.txt |
-| SPR_appeal_for_increased_autonomy | spanish_focus |  |  |  |  | spain.txt |
-| SPR_modernize_the_armed_forces | spanish_focus |  |  |  |  | spain.txt |
-| SPR_a_red_iberia | spanish_focus |  |  |  |  | spain.txt |
-| SPR_support_french_communists | spanish_focus |  |  |  |  | spain.txt |
-| SPR_avenge_foreign_interference | spanish_focus |  |  |  |  | spain.txt |
-| SPR_provide_for_the_people | spanish_focus |  |  |  |  | spain.txt |
-| SPR_collectivize_industry | spanish_focus |  |  |  |  | spain.txt |
-| SPR_connect_the_country | spanish_focus |  |  |  |  | spain.txt |
-| SPR_transplant_soviet_industry | spanish_focus |  |  |  |  | spain.txt |
-| SPR_the_five_year_plan | spanish_focus |  |  |  |  | spain.txt |
-| SPR_slipway_enlargement | spanish_focus |  |  |  |  | spain.txt |
-| SPR_a_red_fleet | spanish_focus |  |  |  |  | spain.txt |
-| SPR_maintain_the_second_republic | spanish_focus |  |  |  |  | spain.txt |
-| SPR_new_leadership | spanish_focus |  |  |  |  | spain.txt |
-| SPR_the_future_of_the_republic | spanish_focus |  |  |  |  | spain.txt |
-| SPR_petition_for_french_aid | spanish_focus |  |  |  |  | spain.txt |
-| SPR_ensure_loyalty | spanish_focus |  |  |  |  | spain.txt |
-| SPR_enlist_the_carabineros | spanish_focus |  |  |  |  | spain.txt |
-| SPR_the_popular_army | spanish_focus |  |  |  |  | spain.txt |
-| SPR_take_the_initiative | spanish_focus |  |  |  |  | spain.txt |
-| SPR_no_pasaran | spanish_focus |  |  |  |  | spain.txt |
-| SPR_a_frontline_suited_for_intellectuals | spanish_focus |  |  |  |  | spain.txt |
-| SPR_strengthen_the_anti_fascist_coalition | spanish_focus |  |  |  |  | spain.txt |
-| SPR_oppose_the_communists | spanish_focus |  |  |  |  | spain.txt |
-| SPR_fortify_the_central_government | spanish_focus |  |  |  |  | spain.txt |
-| SPR_secure_democratic_principles | spanish_focus |  |  |  |  | spain.txt |
-| SPR_subvert_soviet_control | spanish_focus |  |  |  |  | spain.txt |
-| SPR_war_of_independence | spanish_focus |  |  |  |  | spain.txt |
-| SPR_those_who_would_not_help_us | spanish_focus |  |  |  |  | spain.txt |
-| SPR_ideological_allies | spanish_focus |  |  |  |  | spain.txt |
-| SPR_enemies_of_our_enemy | spanish_focus |  |  |  |  | spain.txt |
-| SPR_deal_with_the_devil | spanish_focus |  |  |  |  | spain.txt |
-| SPR_foreign_industrial_aid | spanish_focus |  |  |  |  | spain.txt |
-| SPR_stabilize_the_nation | spanish_focus |  |  |  |  | spain.txt |
-| SPR_end_fascism_at_all_costs | spanish_focus |  |  |  |  | spain.txt |
-| SPR_communists_in_the_government | spanish_focus |  |  |  |  | spain.txt |
-| SPR_restore_higher_education | spanish_focus |  |  |  |  | spain.txt |
-| SPR_engineering_advances | spanish_focus |  |  |  |  | spain.txt |
-| SPR_rebuild_the_nation | spanish_focus |  |  |  |  | spain.txt |
-| SPR_reprofessionalize_the_military | spanish_focus |  |  |  |  | spain.txt |
-| SPR_experiences_from_the_civil_war | spanish_focus |  |  |  |  | spain.txt |
-| SPR_a_new_military_academy | spanish_focus |  |  |  |  | spain.txt |
-| SPR_revive_the_republican_navy | spanish_focus |  |  |  |  | spain.txt |
-| SPR_navy_modernization | spanish_focus |  |  |  |  | spain.txt |
-| SPR_expand_the_naval_academy | spanish_focus |  |  |  |  | spain.txt |
-| SPR_prepare_for_the_next_war | spanish_focus |  |  |  |  | spain.txt |
-| SPR_wartime_industry | spanish_focus |  |  |  |  | spain.txt |
-| SPR_fuel_for_the_war_machine | spanish_focus |  |  |  |  | spain.txt |
-| SPR_join_the_global_fight_against_fascism | spanish_focus |  |  |  |  | spain.txt |
-| SPR_the_anti_fascist_crusade | spanish_focus |  |  |  |  | spain.txt |
+| SPA_embrace_the_spanish_destiny | spanish_focus | 2 | 1 | 10 | GFX_goal_demand_sudetenland | spain.txt |
+| SPA_the_national_and_popular_army_of_spain | spanish_focus | 2 | 1 | 10 | GFX_goal_generic_army_doctrines | spain.txt |
+| SPA_mandatory_pre_military_training | spanish_focus | 0 | 2 | 10 | GFX_focus_generic_military_academy | spain.txt |
+| SPA_all_shall_serve | spanish_focus | 0 | 1 | 10 | GFX_focus_generic_military_mission | spain.txt |
+| SPA_the_army_of_africa_model | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_army_artillery | spain.txt |
+| SPA_equipment_modernization | spanish_focus | -1 | 2 | 10 | GFX_goal_generic_small_arms | spain.txt |
+| SPA_artillery_modernization | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_army_artillery2 | spain.txt |
+| SPA_expand_the_air_branch | spanish_focus | 0 | 2 | 10 | GFX_goal_generic_air_doctrine | spain.txt |
+| SPA_expand_the_special_forces | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_special_forces | spain.txt |
+| SPA_motorization | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_army_motorized | spain.txt |
+| SPA_an_armored_corps | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_army_tanks | spain.txt |
+| SPA_join_the_axis | spanish_focus | 4 | 1 | 5 | GFX_goal_support_fascism | spain.txt |
+| SPA_fascist_economic_aid | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_construction | spain.txt |
+| SPA_facilitate_pyrenees_freight_transports | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_construct_infrastructure | spain.txt |
+| SPA_improve_cross_country_railways | spanish_focus | 1 | 2 | 10 | GFX_goal_generic_construct_infrastructure | spain.txt |
+| SPA_support_the_war_industry | spanish_focus | 0 | 2 | 10 | GFX_goal_generic_construct_civ_factory | spain.txt |
+| SPA_italian_shipbuilding_expertise | spanish_focus | -1 | 1 | 10 | GFX_focus_generic_navy_battleship2 | spain.txt |
+| SPA_the_duty_to_work | spanish_focus | 0 | 2 | 10 | GFX_goal_generic_construct_military | spain.txt |
+| SPA_expand_the_war_industry | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_construct_mil_factory | spain.txt |
+| SPA_national_recovery | spanish_focus | 6 | 1 | 10 | GFX_goal_generic_consumer_goods | spain.txt |
+| SPA_autarky | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_oil_refinery | spain.txt |
+| SPA_spanish_austerity | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_construct_civilian | spain.txt |
+| SPA_reduce_reliance_on_foreign_resources | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_construction2 | spain.txt |
+| SPA_expand_the_axis_gold_trade | spanish_focus | 0 | 2 | 10 | GFX_focus_usa_reestablish_the_gold_standard | spain.txt |
+| SPA_ensure_agricultural_self_sufficiency | spanish_focus | 0 | 2 | 10 | GFX_goal_generic_construct_civ_factory | spain.txt |
+| SPA_unify_the_nationalist_front | spanish_focus | -1 | 1 | 5 | GFX_focus_spa_unify_the_nationalist_front | spain.txt |
+| SPA_save_the_alcazar | spanish_focus | -2 | 1 | 5 | GFX_focus_spa_save_the_alcazar | spain.txt |
+| SPA_martyrdom_for_primo_de_rivera | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_secret_weapon | spain.txt |
+| SPA_caudillo_of_spain | spanish_focus | 1 | 1 | 10 | GFX_focus_spa_caudillo_of_spain | spain.txt |
+| SPA_extol_the_martyrs_of_the_war | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_propaganda | spain.txt |
+| SPA_consolidate_the_north | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_position_armies | spain.txt |
+| SPA_foment_a_carlist_split | spanish_focus | 0 | 2 | 10 | GFX_goal_generic_military_deal | spain.txt |
+| SPA_a_methodical_approach | spanish_focus | 2 | 1 | 5 | GFX_goal_generic_more_territorial_claims | spain.txt |
+| SPA_tackle_the_vulnerable_fronts | spanish_focus | -1 | 1 | 5 | GFX_goal_generic_major_war | spain.txt |
+| SPA_integrate_the_requetes | spanish_focus | 0 | 2 | 10 | GFX_goal_generic_military_sphere | spain.txt |
+| SPA_portuguese_aid | spanish_focus | 1 | 1 | 5 | GFX_focus_generic_befriend_portugal | spain.txt |
+| SPA_the_iberian_pact | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_major_alliance | spain.txt |
+| SPA_the_latin_bloc | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_alliance | spain.txt |
+| SPA_utilize_the_intellectuals | spanish_focus | 3 | 1 | 10 | GFX_focus_research | spain.txt |
+| SPA_banish_the_party_leaders | spanish_focus | 1 | 1 | 10 | GFX_focus_generic_support_the_left_right | spain.txt |
+| SPA_fuse_the_parties | spanish_focus | -1 | 1 | 10 | GFX_focus_spa_fuse_the_parties | spain.txt |
+| SPA_join_the_allies | spanish_focus | 0 | 1 | 5 | GFX_goal_support_democracy | spain.txt |
+| SPA_the_stabilization_plan | spanish_focus | 2 | 1 | 10 | GFX_goal_generic_neutrality_focus | spain.txt |
+| SPA_expand_spanish_bases | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_construct_military | spain.txt |
+| SPA_capitalist_economic_aid | spanish_focus | 0 | 2 | 10 | GFX_focus_generic_the_giant_wakes | spain.txt |
+| SPA_improve_living_standards | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_consumer_goods | spain.txt |
+| SPA_domestic_industrial_developments | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_production | spain.txt |
+| SPA_the_spanish_miracle | spanish_focus | 1 | 1 | 20 | GFX_focus_spa_the_spanish_miracle | spain.txt |
+| SPA_adopt_the_26_points | spanish_focus | 6 | 1 | 10 | GFX_focus_generic_treaty | spain.txt |
+| SPA_direct_the_universities | spanish_focus | -1 | 1 | 10 | GFX_focus_research2 | spain.txt |
+| SPA_dictator_for_life | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_political_pressure | spain.txt |
+| SPA_invest_in_naval_infrastructure | spanish_focus | -3 | 2 | 10 | GFX_goal_generic_navy_doctrines_tactics | spain.txt |
+| SPA_expand_the_slipways | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | spain.txt |
+| SPA_the_plan_imperial | spanish_focus | 0 | 2 | 10 | GFX_goal_generic_navy_battleship | spain.txt |
+| SPA_restart_small_scale_shipbuilding | spanish_focus | 1 | 2 | 10 | GFX_focus_generic_destroyer | spain.txt |
+| SPA_la_division_azul | spanish_focus | 0 | 1 | 10 | GFX_goal_rhineland | spain.txt |
+| SPA_the_tangiers_enclave | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_position_armies | spain.txt |
+| SPA_demand_french_north_africa | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_territory_or_war | spain.txt |
+| SPA_restore_the_monarchy | spanish_focus | 3 | 1 | 10 | GFX_goal_tfv_strengthen_commonwealth_ties | spain.txt |
+| SPA_stamp_out_the_maquis | spanish_focus | 2 | 1 | 10 | GFX_goal_generic_more_territorial_claims | spain.txt |
+| SPA_defenses_against_strategic_bombing | spanish_focus | 0 | 1 | 10 | GFX_focus_generic_air_defense | spain.txt |
+| SPA_defenses_against_invasion | spanish_focus | 0 | 1 | 10 | GFX_focus_generic_coastal_fort | spain.txt |
+| SPA_retake_gibraltar | spanish_focus | 1 | 1 | 10 | GFX_focus_attack_britain | spain.txt |
+| SPA_claim_west_africa | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_occupy_states_ongoing_war | spain.txt |
+| SPA_supremacy_of_the_communion | spanish_focus | 9 | 1 | 5 | GFX_focus_spa_supremacy_of_the_communion | spain.txt |
+| SPA_prepare_the_carlist_insurrection | spanish_focus | -3 | 1 | 5 | GFX_goal_generic_occupy_states_ongoing_war | spain.txt |
+| SPA_contact_the_union_militar_espanola | spanish_focus | 0 | 1 | 5 | GFX_goal_generic_major_alliance | spain.txt |
+| SPA_head_the_junta_nacional | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_political_pressure | spain.txt |
+| SPA_unite_the_requetes | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_military_sphere | spain.txt |
+| SPA_the_war_in_the_north | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_position_armies | spain.txt |
+| SPA_revive_the_spirit_of_the_carlist_wars | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_propaganda | spain.txt |
+| SPA_arms_modernization | spanish_focus | 2 | 1 | 10 | GFX_goal_generic_build_tank | spain.txt |
+| SPA_no_compromise_on_carlist_ideals | spanish_focus | 1 | 1 | 5 | GFX_focus_spa_no_compromise_on_carlist_ideals | spain.txt |
+| SPA_the_crusade_against_democracy | spanish_focus | 1 | 1 | 10 | GFX_focus_generic_strike_at_democracy2 | spain.txt |
+| SPA_expand_the_requetes | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_small_arms | spain.txt |
+| SPA_militarize_the_masses | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_axis_build_infantry | spain.txt |
+| SPA_defenders_of_catholicism | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_defence | spain.txt |
+| SPA_battle_rites | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_attack_allies | spain.txt |
+| SPA_cultivate_fanaticism | spanish_focus | 1 | 1 | 20 | GFX_goal_generic_secret_weapon | spain.txt |
+| SPA_the_third_dimension_of_warfare | spanish_focus | 3 | 1 | 10 | GFX_goal_generic_air_doctrine | spain.txt |
+| SPA_a_modern_fighter_fleet | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_air_fighter | spain.txt |
+| SPA_confirm_the_fueros | spanish_focus | -1 | 1 | 10 | GFX_focus_generic_treaty | spain.txt |
+| SPA_encourage_local_industrialization | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_construct_civ_factory | spain.txt |
+| SPA_encourage_local_mining | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_construction2 | spain.txt |
+| SPA_settle_the_succession_question | spanish_focus | 1 | 2 | 10 | GFX_goal_generic_forceful_treaty | spain.txt |
+| SPA_dios_patria_rey | spanish_focus | 3 | 1 | 10 | GFX_goal_generic_national_unity | spain.txt |
+| SPA_restore_the_empire | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_demand_territory | spain.txt |
+| SPA_strengthen_the_empire | spanish_focus | -2 | 1 | 10 | GFX_goal_generic_demand_territory | spain.txt |
+| SPA_prosperity_of_the_empire | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_demand_territory | spain.txt |
+| SPA_press_the_gibraltar_claim | spanish_focus | -1 | 3 | 10 | GFX_focus_attack_britain | spain.txt |
+| SPA_claim_the_french_throne | spanish_focus | 0 | 1 | 10 | GFX_focus_chi_reach_out_to_france | spain.txt |
+| SPA_retake_the_spanish_netherlands | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_occupy_states_ongoing_war | spain.txt |
+| SPA_restore_the_iberian_union | spanish_focus | 1 | 3 | 10 | GFX_focus_generic_befriend_portugal | spain.txt |
+| SPA_the_war_of_vengeance | spanish_focus | 1 | 1 | 10 | GFX_focus_spa_the_war_of_vengeance | spain.txt |
+| SPA_found_the_academia_vazquez_de_mella | spanish_focus | 2 | 1 | 10 | GFX_focus_research2 | spain.txt |
+| SPA_a_fleet_worthy_of_a_king | spanish_focus | 3 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | spain.txt |
+| SPA_rebuild_the_battlefleet | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_navy_battleship | spain.txt |
+| SPA_imperial_security | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_navy_doctrines_tactics | spain.txt |
+| SPR_regional_defense_council_of_aragon | spanish_focus | -11 | 1 | 5 | GFX_focus_spr_regional_defense_council_of_aragon | spain.txt |
+| SPR_appropriate_the_means_of_production | spanish_focus | -1 | 1 | 10 | GFX_focus_generic_support_the_left_right | spain.txt |
+| SPR_autogestion | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_production | spain.txt |
+| SPR_collectivization_and_workers_control | spanish_focus | 0 | 2 | 10 | GFX_focus_eng_concessions_to_the_trade_unions | spain.txt |
+| SPR_arm_the_people | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_military_sphere | spain.txt |
+| SPR_the_maximum_concession | spanish_focus | 1 | 1 | 5 | GFX_focus_generic_concessions | spain.txt |
+| SPR_seize_public_transport | spanish_focus | -1 | 1 | 5 | GFX_goal_generic_army_motorized | spain.txt |
+| SPR_agrarian_collectivization | spanish_focus | 1 | 1 | 5 | GFX_goal_generic_national_unity | spain.txt |
+| SPR_mujeres_libres | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_improve_relations | spain.txt |
+| SPR_literacy_programs | spanish_focus | 1 | 1 | 10 | GFX_focus_research | spain.txt |
+| SPR_shared_burdens | spanish_focus | 1 | 1 | 5 | GFX_goal_generic_consumer_goods | spain.txt |
+| SPR_international_brigades | spanish_focus | 4 | 1 | 5 | GFX_goal_generic_allies_build_infantry | spain.txt |
+| SPR_seize_the_gold_reserves | spanish_focus | 5 | 1 | 5 | GFX_focus_usa_reestablish_the_gold_standard | spain.txt |
+| SPR_foreign_arms_purchases | spanish_focus | -2 | 1 | 5 | GFX_goal_generic_small_arms | spain.txt |
+| SPR_masters_of_our_own_fate | spanish_focus | 0 | 1 | 5 | GFX_focus_spr_masters_of_our_own_fate | spain.txt |
+| SPR_all_must_bear_the_torch | spanish_focus | 1 | 1 | 10 | GFX_focus_spr_torchbearers_of_tomorrow | spain.txt |
+| SPR_the_threats_abound | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_defence | spain.txt |
+| SPR_portuguese_anarchism | spanish_focus | -2 | 1 | 10 | GFX_focus_generic_attack_portugal | spain.txt |
+| SPR_regional_defense_council_of_iberia | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_alliance | spain.txt |
+| SPR_a_new_way_of_warfare | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_army_tanks | spain.txt |
+| SPR_communal_military_strategies | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_army_doctrines | spain.txt |
+| SPR_maintaining_the_fire | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_propaganda | spain.txt |
+| SPR_freedom_of_thought | spanish_focus | 0 | 1 | 10 | GFX_focus_research2 | spain.txt |
+| SPR_torchbearers_of_tomorrow | spanish_focus | 2 | 1 | 10 | GFX_goal_generic_demand_territory | spain.txt |
+| SPR_the_inevitable_counterblow | spanish_focus | 2 | 1 | 10 | GFX_goal_generic_construct_military | spain.txt |
+| SPR_improve_military_infrastructure | spanish_focus | -2 | 1 | 10 | GFX_goal_generic_construct_infrastructure | spain.txt |
+| SPR_fortify_the_pyrenees | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_fortify_city | spain.txt |
+| SPR_fortify_la_linea_de_la_concepcion | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_fortify_city | spain.txt |
+| SPR_fortify_the_coastlines | spanish_focus | 1 | 1 | 10 | GFX_focus_generic_coastal_fort | spain.txt |
+| SPR_militarize_the_industry | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_construct_mil_factory | spain.txt |
+| SPR_communal_autarky | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_construction2 | spain.txt |
+| SPR_faith_in_the_cause | spanish_focus | 0 | 1 | 10 | GFX_goal_tfv_saf_anti_colonialist_crusade | spain.txt |
+| SPR_militarize_the_people | spanish_focus | 2 | 1 | 10 | GFX_goal_generic_military_deal | spain.txt |
+| SPR_anarchism_knows_no_borders | spanish_focus | 0 | 1 | 10 | GFX_focus_spr_anarchism_knows_no_borders | spain.txt |
+| SPR_plant_the_seeds_of_revolution | spanish_focus | -1 | 1 | 10 | GFX_focus_prc_infiltration | spain.txt |
+| SPR_global_defense_council | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_alliance | spain.txt |
+| SPR_the_anti_fascist_workers_revolution | spanish_focus | 0 | 1 | 5 | GFX_focus_spr_the_anti_fascist_workers_revolution | spain.txt |
+| SPR_strengthen_the_euzko_gudarostea | spanish_focus | 6 | 1 | 5 | GFX_goal_generic_allies_build_infantry | spain.txt |
+| SPR_fortify_the_iron_ring | spanish_focus | 0 | 1 | 5 | GFX_goal_generic_fortify_city | spain.txt |
+| SPR_arm_the_workers_militias | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_military_sphere | spain.txt |
+| SPR_hinder_nkvd_interference | spanish_focus | -1 | 1 | 5 | GFX_focus_generic_support_the_left_right | spain.txt |
+| SPR_demand_ministerial_positions | spanish_focus | 1 | 1 | 10 | GFX_focus_eng_concessions_to_the_trade_unions | spain.txt |
+| SPR_the_stalinist_doctrine | spanish_focus | 1 | 1 | 5 | GFX_focus_generic_soviet_politics | spain.txt |
+| SPR_subvert_the_stalinists | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_more_territorial_claims | spain.txt |
+| SPR_class_war | spanish_focus | 0 | 1 | 10 | GFX_focus_spr_class_war | spain.txt |
+| SPR_secularize_the_new_state | spanish_focus | 2 | 1 | 10 | GFX_focus_mex_triumph_over_the_cristeros | spain.txt |
+| SPR_appropriate_church_riches | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_construct_civilian | spain.txt |
+| SPR_an_army_of_all_classes | spanish_focus | 1 | 2 | 10 | GFX_focus_YUG_pan_slavic_congress | spain.txt |
+| SPR_relocate_the_gold_reserves | spanish_focus | 3 | 1 | 5 | GFX_focus_usa_reestablish_the_gold_standard | spain.txt |
+| SPR_reaffirm_the_popular_front_strategy | spanish_focus | 5 | 1 | 5 | GFX_goal_generic_propaganda | spain.txt |
+| SPR_anti_fascist_unity | spanish_focus | 3 | 1 | 5 | GFX_goal_generic_improve_relations | spain.txt |
+| SPR_crush_the_revolution | spanish_focus | 0 | 1 | 5 | GFX_focus_spr_crush_the_revolution | spain.txt |
+| SPR_united_under_socialism | spanish_focus | 0 | 1 | 10 | GFX_goal_tripartite_pact | spain.txt |
+| SPR_wealth_redistribution | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_consumer_goods | spain.txt |
+| SPR_collective_recovery_efforts | spanish_focus | -2 | 1 | 10 | GFX_goal_generic_construct_infrastructure | spain.txt |
+| SPR_repair_and_expand_the_dockyards | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | spain.txt |
+| SPR_the_peoples_fleet | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_navy_doctrines_tactics | spain.txt |
+| SPR_land_redistribution | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_construction2 | spain.txt |
+| SPR_expand_the_means_of_production | spanish_focus | 0 | 1 | 10 | GFX_focus_generic_industry_3 | spain.txt |
+| SPR_invite_socialist_intellectuals | spanish_focus | 3 | 1 | 10 | GFX_focus_research | spain.txt |
+| SPR_solidify_government_control | spanish_focus | 0 | 1 | 10 | GFX_focus_generic_self_management | spain.txt |
+| SPR_reeducate_the_bourgeoisie | spanish_focus | 2 | 1 | 10 | GFX_goal_generic_political_pressure | spain.txt |
+| SPR_the_spanish_red_army | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_army_doctrines | spain.txt |
+| SPR_expand_soviet_aid | spanish_focus | 1 | 2 | 5 | GFX_goal_support_communism | spain.txt |
+| SPR_soviet_equipment_shipments | spanish_focus | -1 | 1 | 5 | GFX_goal_generic_build_tank | spain.txt |
+| SPR_soviet_military_advisors | spanish_focus | 1 | 1 | 5 | GFX_focus_generic_military_mission | spain.txt |
+| SPR_soviet_industrial_aid | spanish_focus | 0 | 1 | 5 | GFX_focus_generic_join_comintern | spain.txt |
+| SPR_soviet_technological_advancements | spanish_focus | 2 | 1 | 5 | GFX_focus_generic_socialist_science | spain.txt |
+| SPR_soviet_recovery_aid | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_soviet_construction | spain.txt |
+| SPR_all_must_do_their_part | spanish_focus | 3 | 1 | 10 | GFX_goal_generic_consumer_goods | spain.txt |
+| SPR_the_red_tide | spanish_focus | -1 | 2 | 10 | GFX_goal_generic_army_artillery | spain.txt |
+| SPR_arm_the_tide | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_small_arms | spain.txt |
+| SPR_against_fascism | spanish_focus | 0 | 2 | 10 | GFX_focus_generic_anti_fascist_diplomacy | spain.txt |
+| SPR_doctrinal_advancements | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_air_doctrine | spain.txt |
+| SPR_lessons_from_the_civil_war | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_army_doctrines | spain.txt |
+| SPR_nationalize_the_industry | spanish_focus | 2 | 2 | 10 | GFX_goal_generic_construct_civ_factory | spain.txt |
+| SPR_beacon_of_socialism | spanish_focus | -1 | 1 | 10 | GFX_focus_research2 | spain.txt |
+| SPR_increase_arms_production | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_construct_mil_factory | spain.txt |
+| SPR_exploit_spains_riches | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_construction2 | spain.txt |
+| SPR_unify_the_london_bureau | spanish_focus | 1 | 1 | 10 | GFX_focus_spr_unify_the_london_bureau | spain.txt |
+| SPR_against_trotskyism_and_stalinism | spanish_focus | 0 | 2 | 10 | GFX_focus_attack_soviet | spain.txt |
+| SPR_red_bulwark_in_the_west | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_construct_military | spain.txt |
+| SPR_appeal_for_increased_autonomy | spanish_focus | 0 | 1 | 10 | GFX_focus_CZE_german_puppet | spain.txt |
+| SPR_modernize_the_armed_forces | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_build_tank | spain.txt |
+| SPR_a_red_iberia | spanish_focus | 2 | 1 | 10 | GFX_focus_generic_attack_portugal | spain.txt |
+| SPR_support_french_communists | spanish_focus | 0 | 1 | 10 | GFX_focus_attack_france | spain.txt |
+| SPR_avenge_foreign_interference | spanish_focus | 1 | 1 | 10 | GFX_focus_attack_germany | spain.txt |
+| SPR_provide_for_the_people | spanish_focus | 0 | 1 | 10 | GFX_focus_prc_agrarian_socialism | spain.txt |
+| SPR_collectivize_industry | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_construct_civ_factory | spain.txt |
+| SPR_connect_the_country | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_construct_infrastructure | spain.txt |
+| SPR_transplant_soviet_industry | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_construct_mil_factory | spain.txt |
+| SPR_the_five_year_plan | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_production2 | spain.txt |
+| SPR_slipway_enlargement | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | spain.txt |
+| SPR_a_red_fleet | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_navy_doctrines_tactics | spain.txt |
+| SPR_maintain_the_second_republic | spanish_focus | 11 | 1 | 5 | GFX_focus_spr_maintain_the_republic | spain.txt |
+| SPR_new_leadership | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_intelligence_exchange | spain.txt |
+| SPR_the_future_of_the_republic | spanish_focus | 0 | 1 | 10 | GFX_goal_support_democracy | spain.txt |
+| SPR_petition_for_french_aid | spanish_focus | 0 | 1 | 10 | GFX_focus_chi_reach_out_to_france | spain.txt |
+| SPR_ensure_loyalty | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_political_pressure | spain.txt |
+| SPR_enlist_the_carabineros | spanish_focus | 3 | 1 | 5 | GFX_goal_generic_military_sphere | spain.txt |
+| SPR_the_popular_army | spanish_focus | 1 | 1 | 10 | GFX_focus_generic_support_the_left_right | spain.txt |
+| SPR_take_the_initiative | spanish_focus | -1 | 1 | 5 | GFX_goal_generic_major_war | spain.txt |
+| SPR_no_pasaran | spanish_focus | 1 | 1 | 10 | GFX_focus_spr_no_pasaran | spain.txt |
+| SPR_a_frontline_suited_for_intellectuals | spanish_focus | 0 | 1 | 10 | GFX_focus_research | spain.txt |
+| SPR_strengthen_the_anti_fascist_coalition | spanish_focus | 4 | 1 | 10 | GFX_goal_generic_national_unity | spain.txt |
+| SPR_oppose_the_communists | spanish_focus | -1 | 1 | 10 | GFX_goal_anti_comintern_pact | spain.txt |
+| SPR_fortify_the_central_government | spanish_focus | 0 | 1 | 10 | GFX_focus_generic_diplomatic_treaty | spain.txt |
+| SPR_secure_democratic_principles | spanish_focus | -1 | 1 | 10 | GFX_goal_support_democracy | spain.txt |
+| SPR_subvert_soviet_control | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_demand_territory | spain.txt |
+| SPR_war_of_independence | spanish_focus | 0 | 1 | 10 | GFX_focus_spr_war_of_independence | spain.txt |
+| SPR_those_who_would_not_help_us | spanish_focus | -1 | 1 | 10 | GFX_goal_generic_small_arms | spain.txt |
+| SPR_ideological_allies | spanish_focus | -1 | 1 | 5 | GFX_focus_chi_british_cooperation | spain.txt |
+| SPR_enemies_of_our_enemy | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_dangerous_deal | spain.txt |
+| SPR_deal_with_the_devil | spanish_focus | 1 | 1 | 5 | GFX_focus_chi_mission_to_germany | spain.txt |
+| SPR_foreign_industrial_aid | spanish_focus | 1 | 1 | 10 | GFX_focus_generic_industry_2 | spain.txt |
+| SPR_stabilize_the_nation | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_political_pressure | spain.txt |
+| SPR_end_fascism_at_all_costs | spanish_focus | 1 | 1 | 10 | GFX_focus_generic_anti_fascist_diplomacy | spain.txt |
+| SPR_communists_in_the_government | spanish_focus | 0 | 1 | 10 | GFX_focus_generic_soviet_politics | spain.txt |
+| SPR_restore_higher_education | spanish_focus | 3 | 1 | 10 | GFX_focus_research2 | spain.txt |
+| SPR_engineering_advances | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_production | spain.txt |
+| SPR_rebuild_the_nation | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_construct_civ_factory | spain.txt |
+| SPR_reprofessionalize_the_military | spanish_focus | 3 | 1 | 10 | GFX_goal_generic_army_artillery2 | spain.txt |
+| SPR_experiences_from_the_civil_war | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_army_doctrines | spain.txt |
+| SPR_a_new_military_academy | spanish_focus | 0 | 2 | 10 | GFX_focus_generic_military_academy | spain.txt |
+| SPR_revive_the_republican_navy | spanish_focus | 5 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | spain.txt |
+| SPR_navy_modernization | spanish_focus | 0 | 1 | 10 | GFX_focus_generic_cruiser2 | spain.txt |
+| SPR_expand_the_naval_academy | spanish_focus | 0 | 2 | 10 | GFX_goal_generic_navy_doctrines_tactics | spain.txt |
+| SPR_prepare_for_the_next_war | spanish_focus | 1 | 1 | 10 | GFX_goal_generic_build_tank | spain.txt |
+| SPR_wartime_industry | spanish_focus | 2 | 1 | 10 | GFX_goal_generic_construct_mil_factory | spain.txt |
+| SPR_fuel_for_the_war_machine | spanish_focus | 0 | 1 | 10 | GFX_goal_generic_construction2 | spain.txt |
+| SPR_join_the_global_fight_against_fascism | spanish_focus | 0 | 1 | 10 | GFX_focus_generic_anti_fascist_diplomacy | spain.txt |
+| SPR_the_anti_fascist_crusade | spanish_focus | 0 | 1 | 10 | GFX_focus_generic_strike_at_democracy1 | spain.txt |
 | SWE_defense_act | sweden_focus | 3 | 0 | 5 | GFX_focus_SWE_defense_act | sweden.txt |
 | SWE_the_old_enemy_stirs | sweden_focus | 14 | 7 | 5 | GFX_focus_SWE_the_beast_stirs | sweden.txt |
 | SWE_urbanization | sweden_focus | 0 | 1 | 10 | GFX_focus_SWE_urbanization | sweden.txt |
@@ -7658,6 +8880,109 @@ Source: `common/national_focus/*.txt`
 | SWE_coalition_war_cabinet | sweden_focus | 5 | 2 | 10 | GFX_focus_generic_treaty | sweden.txt |
 | SWE_winter_drill | sweden_focus | 0 | 1 | 10 | GFX_focus_generic_commonwealth_build_infantry | sweden.txt |
 | SWE_strike_the_capitalist_beast_down | sweden_focus | 0 | 2 | 5 | GFX_focus_eng_expose_the_belly_of_the_bear | sweden.txt |
+| SWE_socialist_reforms | sweden_focus | 0 | 1 | 10 | GFX_focus_SWE_socialist_reforms | sweden.txt |
+| SWE_refuge_from_war | sweden_focus | -2 | 0 | 10 | GFX_focus_SWE_refuge_from_war | sweden.txt |
+| SWE_refuge_for_revolutionaries | sweden_focus | 0 | 1 | 10 | GFX_focus_SWE_refuge_for_revolutionaries | sweden.txt |
+| SWE_liquidate_the_monarchy | sweden_focus | 0 | 1 | 5 | GFX_focus_SWE_liquidate_the_monarchy | sweden.txt |
+| SWE_establish_politburo | sweden_focus | 0 | 1 | 10 | GFX_focus_generic_soviet_politics | sweden.txt |
+| SWE_five_year_plan | sweden_focus | -2 | 1 | 5 | GFX_goal_generic_soviet_construction | sweden.txt |
+| SWE_starve_the_fascists_of_iron | sweden_focus | 0 | 1 | 10 | GFX_focus_generic_anti_fascist_diplomacy | sweden.txt |
+| SWE_peoples_commissar_for_defense | sweden_focus | 2 | 1 | 10 | GFX_focus_SOV_builder_of_the_red_army | sweden.txt |
+| SWE_support_danish_communists | sweden_focus | 2 | 1 | 10 | GFX_focus_SWE_danish_communists | sweden.txt |
+| SWE_support_norwegian_communists | sweden_focus | 0 | 1 | 10 | GFX_focus_SWE_norwegian_communists | sweden.txt |
+| SWE_finnish_buffer_state | sweden_focus | -2 | 1 | 5 | GFX_focus_SWE_finnish_communists | sweden.txt |
+| SWE_universal_basic_income | sweden_focus | 0 | 1 | 10 | GFX_focus_generic_join_comintern | sweden.txt |
+| SWE_police_reforms | sweden_focus | 2 | 0 | 10 | GFX_focus_generic_court | sweden.txt |
+| SWE_train_the_sheltered | sweden_focus | -2 | 1 | 10 | GFX_focus_SWE_train_the_sheltered | sweden.txt |
+| SWE_the_narvik_solution | sweden_focus | 2 | 1 | 10 | GFX_focus_SWE_the_narvik_solution | sweden.txt |
+| SWE_finlands_cause_is_ours | sweden_focus | 4 | 0 | 5 | GFX_focus_EST_national_pride_in_finland | sweden.txt |
+| SWE_the_nordic_defense_council | sweden_focus | -5 | 2 | 10 | GFX_focus_SWE_the_nordic_defense_council | sweden.txt |
+| SWE_central_nordic_army_command | sweden_focus | -3 | 1 | 10 | GFX_focus_SWE_the_nordic_centralized_nordic_army_command | sweden.txt |
+| SWE_nordic_defense_fleet | sweden_focus | 3 | 1 | 10 | GFX_focus_generic_navy_battleship2 | sweden.txt |
+| SWE_nordljus | sweden_focus | 1 | 1 | 20 | GFX_goal_generic_navy_battleship | sweden.txt |
+| SWE_nordic_centralized_air_command | sweden_focus | 1 | 1 | 10 | GFX_focus_usa_escort_fighters | sweden.txt |
+| SWE_centralized_military_aid | sweden_focus | -2 | 2 | 10 | GFX_goal_generic_construct_mil_factory | sweden.txt |
+| SWE_merge_army_complexes | sweden_focus | 0 | 1 | 5 | GFX_focus_generic_annex_country | sweden.txt |
+| SWE_cement_control_of_the_baltic | sweden_focus | -1 | 1 | 10 | GFX_focus_SWE_the_narvik_solution | sweden.txt |
+| SWE_decentralized_nordic_army_command | sweden_focus | 3 | 1 | 10 | GFX_focus_SWE_the_nordic_decentralized_nordic_army_command | sweden.txt |
+| SWE_nordic_protection_complex | sweden_focus | 0 | 1 | 10 | GFX_focus_generic_little_entente | sweden.txt |
+| SWE_decentralized_nordic_volunteer_group | sweden_focus | -1 | 1 | 5 | GFX_focus_generic_manpower | sweden.txt |
+| SWE_neither_death_nor_dishonor | sweden_focus | 1 | 5 | 10 | GFX_focus_SWE_neither_death_nor_dishonor | sweden.txt |
+| SWE_varnplikt | sweden_focus | 0 | 1 | 5 | GFX_focus_SWE_varnplikt | sweden.txt |
+| SWE_rationing | sweden_focus | 2 | 1 | 5 | GFX_focus_SWE_rations | sweden.txt |
+| SWE_per_albin_bus | sweden_focus | -2 | 1 | 5 | GFX_focus_SWE_per_albin_bus | sweden.txt |
+| SWE_land_air_warfare | sweden_focus | 2 | 1 | 10 | GFX_goal_generic_CAS | sweden.txt |
+| SWE_defense_in_depth | sweden_focus | -2 | 1 | 10 | GFX_focus_prc_infiltration | sweden.txt |
+| SWE_ga_pa_tactics | sweden_focus | 2 | 1 | 5 | GFX_goal_generic_army_tanks | sweden.txt |
+| SWE_hedgehog_defense | sweden_focus | 0 | 1 | 10 | GFX_focus_SWE_hedgehog_defense | sweden.txt |
+| SWE_beneath_sticks_and_stones | sweden_focus | 0 | 1 | 10 | GFX_focus_SWE_beneath_sticks_and_stone | sweden.txt |
+| SWE_per_albin_line | sweden_focus | 2 | 1 | 5 | GFX_goal_generic_fortify_city | sweden.txt |
+| SWE_rapid_response_force | sweden_focus | 0 | 1 | 10 | GFX_focus_SWE_rapid_defense_force | sweden.txt |
+| SWE_tank_development | sweden_focus | 0 | 1 | 10 | GFX_focus_generic_tank_production | sweden.txt |
+| SWE_end_the_fubkrieg | sweden_focus | 2 | 1 | 5 | GFX_goal_generic_position_armies | sweden.txt |
+| SWE_mobilization_of_society | sweden_focus | 0 | 1 | 1 | GFX_focus_SOV_organize_wreckers | sweden.txt |
+| SWE_let_fly_all_guns | sweden_focus | 0 | 1 | 10 | GFX_focus_SWE_let_fly_all_guns | sweden.txt |
+| SWE_totalforsvar | sweden_focus | 4 | 1 | 10 | GFX_goal_generic_military_sphere | sweden.txt |
+| SWE_hemvarnet | sweden_focus | -8 | 1 | 10 | GFX_focus_SOV_penal_battalions | sweden.txt |
+| SWE_swedish_shooting_movement | sweden_focus | 0 | 1 | 10 | GFX_focus_focus_fra_maquis | sweden.txt |
+| SWE_lottakaren | sweden_focus | -6 | 1 | 5 | GFX_focus_SWE_lottakoren | sweden.txt |
+| SWE_rapid_mobilization | sweden_focus | -4 | 1 | 10 | GFX_focus_SOV_mobilization_plan | sweden.txt |
+| SWE_operation_save_denmark | sweden_focus | -1 | 3 | 5 | GFX_focus_generic_attack_denmark | sweden.txt |
+| SWE_operation_save_norway | sweden_focus | 1 | 3 | 5 | GFX_focus_generic_attack_norway | sweden.txt |
+| SWE_secret_mobilization | sweden_focus | -2 | 1 | 10 | GFX_focus_secret_rearmament | sweden.txt |
+| SWE_jagartrupper | sweden_focus | 0 | 1 | 10 | GFX_focus_ITA_banda_carita | sweden.txt |
+| SWE_prevent_a_red_dictatorship | sweden_focus | 5 | 2 | 10 | GFX_goal_support_fascism | sweden.txt |
+| SWE_undermine_the_fascists | sweden_focus | -2 | 1 | 5 | GFX_focus_SWE_undermine_fascism | sweden.txt |
+| SWE_revoke_anti_militia_laws | sweden_focus | 2 | 1 | 10 | GFX_focus_SWE_revoke_militia_law | sweden.txt |
+| SWE_appeal_for_support | sweden_focus | 2 | 1 | 5 | GFX_focus_generic_industrialists | sweden.txt |
+| SWE_unify_the_national_socialist_movement | sweden_focus | 2 | 1 | 10 | GFX_focus_generic_fascist_propaganda | sweden.txt |
+| SWE_meet_with_the_king | sweden_focus | -2 | 1 | 10 | GFX_focus_SWE_meet_with_the_king | sweden.txt |
+| SWE_attack_Landsorganisationen | sweden_focus | 0 | 1 | 5 | GFX_focus_SWE_attack_landsorganisationen | sweden.txt |
+| SWE_organize_a_putsch | sweden_focus | 0 | 1 | 10 | GFX_focus_SWE_organize_a_putsch | sweden.txt |
+| SWE_delegation_to_berlin | sweden_focus | 7 | 1 | 10 | GFX_focus_chi_mission_to_germany | sweden.txt |
+| SWE_king_in_council | sweden_focus | 0 | 1 | 10 | GFX_focus_SWE_king_in_council | sweden.txt |
+| SWE_restoring_order | sweden_focus | 0 | 1 | 5 | GFX_focus_generic_fascist_troops | sweden.txt |
+| SWE_economic_integration | sweden_focus | -1 | 1 | 10 | GFX_focus_generic_german_trade | sweden.txt |
+| SWE_economic_independence | sweden_focus | 1 | 1 | 10 | GFX_focus_generic_support_the_left_right | sweden.txt |
+| SWE_military_integration | sweden_focus | 0 | 1 | 10 | GFX_focus_POL_beck_ribbentrop | sweden.txt |
+| SWE_military_independence | sweden_focus | 0 | 1 | 10 | GFX_focus_generic_fascist_troops | sweden.txt |
+| SWE_germanify_sweden | sweden_focus | 0 | 1 | 10 | GFX_focus_CZE_german_puppet | sweden.txt |
+| SWE_promote_nordic_identity | sweden_focus | 0 | 1 | 10 | GFX_focus_generic_scandinavian_alliance | sweden.txt |
+| SWE_finland_claims | sweden_focus | 1 | 1 | 10 | GFX_focus_generic_develop_finland_silhouette | sweden.txt |
+| SWE_uranium_project | sweden_focus | -1 | 1 | 10 | GFX_focus_wonderweapons | sweden.txt |
+| SWE_betray_germany_plan | sweden_focus | 1 | 1 | 10 | GFX_focus_ger_oppose_hitler | sweden.txt |
+| SWE_establish_nordland | sweden_focus | -1 | 1 | 10 | GFX_focus_ger_reichskommisariats | sweden.txt |
+| SWE_the_new_order | sweden_focus | 1 | 1 | 10 | GFX_focus_generic_nordic_territory | sweden.txt |
+| SWE_mythologize_swedish_history | sweden_focus | -2 | 1 | 5 | GFX_focus_SWE_counter_revolution | sweden.txt |
+| SWE_approach_the_allies | sweden_focus | -5 | 1 | 5 | GFX_focus_SWE_approach_the_allies | sweden.txt |
+| SWE_join_allies_for_colonies | sweden_focus | 0 | 2 | 10 | GFX_focus_SWE_exchange_of_holdings | sweden.txt |
+| SWE_narvik_crisis | sweden_focus | -3 | 1 | 5 | GFX_focus_generic_attack_norway | sweden.txt |
+| SWE_bornholm_crisis | sweden_focus | -1 | 1 | 5 | GFX_focus_generic_attack_denmark | sweden.txt |
+| SWE_the_aland_issue | sweden_focus | 1 | 1 | 5 | GFX_focus_generic_attack_finland | sweden.txt |
+| SWE_scramble_for_the_baltic | sweden_focus | 3 | 1 | 10 | GFX_focus_SOV_baltic_security | sweden.txt |
+| SWE_join_the_anti_soviet_pact | sweden_focus | 5 | 1 | 5 | GFX_goal_anti_comintern_pact | sweden.txt |
+| SWE_demand_atlantic_resource_rights | sweden_focus | 0 | 1 | 5 | GFX_goal_generic_dangerous_deal | sweden.txt |
+| SWE_demand_demilitarization_of_finnish_border | sweden_focus | 0 | 1 | 5 | GFX_focus_SWE_finnish_demilitarization | sweden.txt |
+| SWE_united_kingdoms_of_sweden_and_norway | sweden_focus | 0 | 2 | 10 | GFX_focus_SWE_united_kingdoms_of_norway_and_sweden | sweden.txt |
+| SWE_swedish_finnish_defense_agreement | sweden_focus | 2 | 1 | 10 | GFX_focus_SWE_swedish_finnish_defense_agreement | sweden.txt |
+| SWE_danish_alignment | sweden_focus | 0 | 1 | 10 | GFX_focus_generic_annex_country | sweden.txt |
+| SWE_finnish_integration | sweden_focus | 0 | 1 | 10 | GFX_focus_SWE_finnish_integration | sweden.txt |
+| SWE_crusade_against_bolshevism | sweden_focus | 2 | 2 | 10 | GFX_focus_attack_soviet | sweden.txt |
+| SWE_reclaiming_the_rus | sweden_focus | 0 | 1 | 10 | GFX_focus_SWE_reclaiming_the_rus | sweden.txt |
+| SWE_greater_nordic_reich | sweden_focus | 0 | 2 | 10 | GFX_focus_SOV_reinforce_western_naval_bases | sweden.txt |
+| SWE_the_cross_we_bear | sweden_focus | 1 | 1 | 10 | GFX_focus_generic_scandinavian_alliance | sweden.txt |
+| SWE_scandinavian_defense_union | sweden_focus | 3 | 1 | 5 | GFX_focus_generic_scandinavian_alliance | sweden.txt |
+| SWE_the_threat_of_the_iron_curtain | sweden_focus | 4 | 0 | 10 | GFX_focus_SWE_the_threat_of_the_iron_curtain | sweden.txt |
+| SWE_special_forces | sweden_focus | 1 | 1 | 10 | GFX_focus_eng_special_air_service | sweden.txt |
+| SWE_acquire_ww2_tanks_and_wrecks | sweden_focus | -1 | 1 | 10 | GFX_goal_generic_army_tanks | sweden.txt |
+| SWE_extend_the_time_of_preparedness | sweden_focus | 2 | 1 | 10 | GFX_focus_generic_little_entente | sweden.txt |
+| SWE_increase_intelligence_funding | sweden_focus | 0 | 1 | 10 | GFX_goal_generic_intelligence_exchange | sweden.txt |
+| SWE_karnvapenprogram | sweden_focus | 0 | 1 | 10 | GFX_focus_wonderweapons | sweden.txt |
+| SWE_specialized_equipment | sweden_focus | 0 | 1 | 10 | GFX_focus_generic_license_production | sweden.txt |
+| SWE_war_games | sweden_focus | -1 | 1 | 10 | GFX_goal_generic_position_armies | sweden.txt |
+| SWE_the_lion_of_the_north_rises | sweden_focus | 1 | 1 | 10 | GFX_focus_SWE_the_lion_of_the_north | sweden.txt |
+| SWE_preemptive_strike | sweden_focus | 1 | 1 | 10 | GFX_focus_ger_strike_at_the_source | sweden.txt |
+| SWE_research_slot_2 | sweden_focus | 0 | 1 | 10 | GFX_focus_research | sweden.txt |
 | SWI_swiss_guiding_principles | swiss_focus | 12 | 0 | 5 | GFX_focus_SWI_swiss_guiding_principles | switzerland.txt |
 | SWI_increase_defense_budget | swiss_focus | -1 | 1 | 10 | GFX_goal_generic_military_sphere | switzerland.txt |
 | SWI_national_defense_fund | swiss_focus | 1 | 1 | 10 | GFX_focus_SWI_issue_war_bonds | switzerland.txt |
@@ -7818,11 +9143,94 @@ Source: `common/national_focus/*.txt`
 | SWI_air_research | swiss_focus | 1 | 1 | 10 | GFX_focus_generic_multi_role_aircraft | switzerland.txt |
 | SWI_air_production | swiss_focus | 1 | 1 | 10 | GFX_goal_generic_air_production | switzerland.txt |
 | SWI_mountaneer_paratroopers | swiss_focus | 0 | 1 | 10 | GFX_focus_generic_paratrooper | switzerland.txt |
-| TUR_the_montreux_convention | turkish_focus |  |  |  | GFX_focus_TUR_the_montreux_convention | turkey.txt |
-| TUR_continue_the_policy_of_etatism | turkish_focus |  |  |  | GFX_goal_generic_neutrality_focus | turkey.txt |
-| TUR_fully_integrate_the_is_bank | turkish_focus |  |  |  | GFX_goal_generic_intelligence_exchange | turkey.txt |
-| TUR_continue_the_sumerbank_industrialization_scheme | turkish_focus |  |  |  | GFX_focus_CHL_enlarge_the_textile_industries | turkey.txt |
-| TUR_millet_mektebi_focus | turkish_focus |  |  |  | GFX_focus_AFG_education_reform | turkey.txt |
+| SMB_army | toa_shared_military_branch_shared | 0 | 0 | 5 |  | toa_shared_military_branch.txt |
+| SMB_military_facilities | toa_shared_military_branch_shared | -1 | 1 | 5 | GFX_focus_generic_reorient_production | toa_shared_military_branch.txt |
+| SMB_department_of_propaganda | toa_shared_military_branch_shared | -4 | 1 | 10 | GFX_goal_generic_propaganda | toa_shared_military_branch.txt |
+| SMB_logistics_department | toa_shared_military_branch_shared | -6 | 1 | 10 | GFX_focus_generic_supply_line | toa_shared_military_branch.txt |
+| SMB_support_company | toa_shared_military_branch_shared | 0 | 1 | 5 | GFX_focus_generic_land_reclamation | toa_shared_military_branch.txt |
+| SMB_department_of_military_intelligence | toa_shared_military_branch_shared | 0 | 1 | 10 | GFX_goal_generic_intelligence_exchange | toa_shared_military_branch.txt |
+| SMB_motorized | toa_shared_military_branch_shared | 0 | 1 | 10 | GFX_focus_generic_truck | toa_shared_military_branch.txt |
+| SMB_tank_warfare | toa_shared_military_branch_shared | 0 | 1 | 5 | GFX_goal_generic_army_tanks | toa_shared_military_branch.txt |
+| SMB_domestic_production | toa_shared_military_branch_shared | 0 | 1 | 5 |  | toa_shared_military_branch.txt |
+| SMB_tierra_del_fuego_training | toa_shared_military_branch_shared | -2 | 1 | 5 | GFX_focus_SMB_tierra_del_fuego_training | toa_shared_military_branch.txt |
+| SMB_atacama_training | toa_shared_military_branch_shared | -4 | 1 | 5 | GFX_focus_SMB_atacama_training | toa_shared_military_branch.txt |
+| SMB_a_land_of_mountains | toa_shared_military_branch_shared | 1 | 1 | 10 | GFX_focus_SMB_a_land_of_mountains | toa_shared_military_branch.txt |
+| SMB_mechanized_troops | toa_shared_military_branch_shared | -2 | 1 | 10 | GFX_goal_generic_army_motorized | toa_shared_military_branch.txt |
+| SMB_army_academy | toa_shared_military_branch_shared | 1 | 1 | 10 |  | toa_shared_military_branch.txt |
+| SMB_regular_infantry | toa_shared_military_branch_shared | 0 | 1 | 10 | GFX_goal_generic_allies_build_infantry | toa_shared_military_branch.txt |
+| SMB_artillery | toa_shared_military_branch_shared | 0 | 1 | 5 | GFX_goal_generic_army_artillery2 | toa_shared_military_branch.txt |
+| SMB_foreign_designs | toa_shared_military_branch_shared | 0 | 1 | 5 | GFX_focus_generic_license_production | toa_shared_military_branch.txt |
+| SMB_foreign_advisors | toa_shared_military_branch_shared | 1 | 1 | 5 | GFX_focus_generic_military_mission | toa_shared_military_branch.txt |
+| SMB_army_professionalism | toa_shared_military_branch_shared | -2 | 1 | 10 | GFX_focus_generic_full_social_mobilization | toa_shared_military_branch.txt |
+| SMB_conscription | toa_shared_military_branch_shared | 2 | 1 | 10 | GFX_focus_generic_limited_social_mobilization | toa_shared_military_branch.txt |
+| SMB_experimental_weapons_department | toa_shared_military_branch_shared | 0 | 2 | 10 | GFX_focus_rocketry | toa_shared_military_branch.txt |
+| SMB_nuclear_program | toa_shared_military_branch_shared | 3 | 1 | 10 | GFX_focus_wonderweapons | toa_shared_military_branch.txt |
+| SMB_special_forces | toa_shared_military_branch_shared | -2 | 1 | 5 | GFX_focus_eng_special_air_service | toa_shared_military_branch.txt |
+| SMB_special_forces_option_1 | toa_shared_military_branch_shared | -2 | 1 | 5 | GFX_focus_SMB_special_forces_option_1 | toa_shared_military_branch.txt |
+| SMB_special_forces_option_2 | toa_shared_military_branch_shared | 2 | 1 | 5 |  | toa_shared_military_branch.txt |
+| SMB_special_forces_option_3 | toa_shared_military_branch_shared | 0 | 1 | 5 | GFX_focus_SMB_special_forces_option_3 | toa_shared_military_branch.txt |
+| SMB_special_forces_option_3_continuation | toa_shared_military_branch_shared | 0 | 1 | 5 | GFX_goal_generic_build_airforce | toa_shared_military_branch.txt |
+| SMB_special_forces_option_2_continuation | toa_shared_military_branch_shared | 0 | 1 | 5 | GFX_goal_generic_occupy_states_coastal | toa_shared_military_branch.txt |
+| SMB_special_forces_option_1_continuation | toa_shared_military_branch_shared | 0 | 1 | 5 | GFX_focus_SWE_beneath_sticks_and_stone | toa_shared_military_branch.txt |
+| SMB_mountain_guns | toa_shared_military_branch_shared | -2 | 1 | 5 | GFX_focus_SMB_mountain_guns | toa_shared_military_branch.txt |
+| SMB_air_defense | toa_shared_military_branch_shared | 4 | 1 | 5 | GFX_focus_generic_air_defense | toa_shared_military_branch.txt |
+| SMB_air_force | toa_shared_military_branch_shared | 8 | 0 | 5 |  | toa_shared_military_branch.txt |
+| SMB_air_academy | toa_shared_military_branch_shared | -2 | 1 | 5 | GFX_focus_SOV_flying_clubs | toa_shared_military_branch.txt |
+| SMB_construct_air_bases | toa_shared_military_branch_shared | 2 | 1 | 5 | GFX_focus_generic_air_bases | toa_shared_military_branch.txt |
+| SMB_domestic_designs | toa_shared_military_branch_shared | 0 | 1 | 5 | GFX_focus_SMB_purchase_aircraft | toa_shared_military_branch.txt |
+| SMB_license_designs | toa_shared_military_branch_shared | 0 | 2 | 5 | GFX_focus_generic_copy_plane_designs | toa_shared_military_branch.txt |
+| SMB_purchase_aircraft | toa_shared_military_branch_shared | 0 | 1 | 5 | GFX_focus_SMB_purchase_aircraft | toa_shared_military_branch.txt |
+| SMB_establish_aircraft_industry | toa_shared_military_branch_shared | 0 | 1 | 10 | GFX_focus_generic_aircraft_production | toa_shared_military_branch.txt |
+| SMB_flying_fortress | toa_shared_military_branch_shared | -2 | 1 | 10 | GFX_focus_generic_long_range_aircraft | toa_shared_military_branch.txt |
+| SMB_tactical_air_force | toa_shared_military_branch_shared | 0 | 1 | 10 | GFX_focus_usa_escort_fighters | toa_shared_military_branch.txt |
+| SMB_nimble_air_force | toa_shared_military_branch_shared | 2 | 1 | 10 | GFX_goal_generic_air_fighter2 | toa_shared_military_branch.txt |
+| SMB_strategic_bombing | toa_shared_military_branch_shared | -1 | 1 | 10 | GFX_focus_SWE_marauder_bombers | toa_shared_military_branch.txt |
+| SMB_army_support | toa_shared_military_branch_shared | 1 | 1 | 10 | GFX_focus_generic_cas_aircraft | toa_shared_military_branch.txt |
+| SMB_winning_the_air_war | toa_shared_military_branch_shared | -1 | 1 | 10 | GFX_goal_generic_air_fighter | toa_shared_military_branch.txt |
+| SMB_naval_support | toa_shared_military_branch_shared | 1 | 1 | 10 | GFX_goal_generic_air_naval_bomber | toa_shared_military_branch.txt |
+| SMB_air_modifier_boost_1 | toa_shared_military_branch_shared | -1 | 1 | 10 | GFX_focus_generic_tank_air_support | toa_shared_military_branch.txt |
+| SMB_air_modifier_boost_2 | toa_shared_military_branch_shared | 1 | 1 | 10 | GFX_focus_generic_armored_air_support | toa_shared_military_branch.txt |
+| SMB_air_doctrine | toa_shared_military_branch_shared | 0 | 2 | 10 | GFX_goal_generic_air_doctrine | toa_shared_military_branch.txt |
+| SMB_aircraft_carriers | toa_shared_military_branch_shared | 1 | 3 | 5 | GFX_goal_generic_navy_carrier | toa_shared_military_branch.txt |
+| SMB_joint_operative_command | toa_shared_military_branch_shared | 0 | 1 | 10 | GFX_focus_generic_combined_arms | toa_shared_military_branch.txt |
+| SMB_war_planning_office | toa_shared_military_branch_shared | -1 | 1 | 10 | GFX_focus_SOV_mobilization_plan | toa_shared_military_branch.txt |
+| SMB_women_in_aviation | toa_shared_military_branch_shared | 1 | 1 | 10 | GFX_focus_SOV_women_in_aviation | toa_shared_military_branch.txt |
+| SMB_navy | toa_shared_military_branch_shared | 8 | 0 | 5 |  | toa_shared_military_branch.txt |
+| SMB_naval_academy | toa_shared_military_branch_shared | -1 | 1 | 10 | GFX_focus_generic_naval_discipline | toa_shared_military_branch.txt |
+| SMB_construct_naval_bases | toa_shared_military_branch_shared | 1 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | toa_shared_military_branch.txt |
+| SMB_naval_foreign_advisors | toa_shared_military_branch_shared | 0 | 1 | 5 | GFX_focus_generic_military_academy | toa_shared_military_branch.txt |
+| SMB_purchase_destroyers_and_subs | toa_shared_military_branch_shared | 0 | 1 | 5 | GFX_focus_generic_destroyer | toa_shared_military_branch.txt |
+| SMB_reescalate_the_naval_arms_race | toa_shared_military_branch_shared | 0 | 3 | 5 | GFX_focus_SMB_reescalate_the_naval_arms_race | toa_shared_military_branch.txt |
+| SMB_blue_water_fleet | toa_shared_military_branch_shared | -1 | 1 | 10 | GFX_focus_SMB_blue_water_fleet | toa_shared_military_branch.txt |
+| SMB_coastal_fleet | toa_shared_military_branch_shared | 1 | 1 | 10 | GFX_focus_SWE_coastal_support | toa_shared_military_branch.txt |
+| SMB_purchase_cruisers_and_dreadnoughts | toa_shared_military_branch_shared | 0 | 2 | 5 | GFX_goal_generic_navy_battleship | toa_shared_military_branch.txt |
+| SMB_minelaying | toa_shared_military_branch_shared | 1 | 1 | 5 | GFX_focus_generic_mine_warfare | toa_shared_military_branch.txt |
+| SMB_escort_fleet | toa_shared_military_branch_shared | -2 | 1 | 10 | GFX_focus_generic_navy_battleship2 | toa_shared_military_branch.txt |
+| SMB_raiding_fleet | toa_shared_military_branch_shared | 2 | 1 | 10 | GFX_goal_generic_navy_submarine | toa_shared_military_branch.txt |
+| SMB_degaussing | toa_shared_military_branch_shared | -1 | 1 | 10 | GFX_goal_generic_navy_anti_submarine | toa_shared_military_branch.txt |
+| SMB_naval_invasion | toa_shared_military_branch_shared | 1 | 1 | 5 | GFX_goal_generic_amphibious_assault | toa_shared_military_branch.txt |
+| SMB_cruiser_subs | toa_shared_military_branch_shared | -1 | 1 | 10 | GFX_focus_generic_cruiser_submarines | toa_shared_military_branch.txt |
+| SMB_midget_subs | toa_shared_military_branch_shared | 1 | 1 | 5 | GFX_focus_generic_midget_submarines | toa_shared_military_branch.txt |
+| SMB_expand_repair_yards | toa_shared_military_branch_shared | 3 | 1 | 5 | GFX_focus_POL_develop_polish_shipbuilding | toa_shared_military_branch.txt |
+| SMB_carrier_conversion | toa_shared_military_branch_shared | 0 | 1 | 10 | GFX_focus_BRA_converted_carriers | toa_shared_military_branch.txt |
+| SMB_enlarge_naval_facilities | toa_shared_military_branch_shared | -1 | 2 | 10 | GFX_focus_generic_refit_civilian_ships | toa_shared_military_branch.txt |
+| SMB_merchant_marine | toa_shared_military_branch_shared | 1 | 2 | 5 | GFX_focus_generic_merchant_fleet | toa_shared_military_branch.txt |
+| SMB_fortification_effort | toa_shared_military_branch_shared | 4 | 1 | 5 | GFX_focus_FIN_coastal_defense | toa_shared_military_branch.txt |
+| SMB_jungle_warfare_training | toa_shared_military_branch_shared | 2 | 2 | 10 | GFX_focus_ETH_peacekeeping_forces | toa_shared_military_branch.txt |
+| SMB_jungle_pioneers | toa_shared_military_branch_shared | 1 | 1 | 10 | GFX_goal_generic_construction2 | toa_shared_military_branch.txt |
+| SMB_brown_water_navy | toa_shared_military_branch_shared | -1 | 1 | 10 | GFX_focus_generic_merchant_fleet | toa_shared_military_branch.txt |
+| GXC_the_japanese_visit | TSR_lingguang_incident_joint_branch_shared | 31 | 0 | 5 | GFX_focus_PER_fascist_reach_out_to_japan | TSR_lingguang_incident_joint_branch.txt |
+| GXC_question_chiangs_authority | TSR_lingguang_incident_joint_branch_shared | -1 | 1 | 5 | GFX_focus_generic_support_the_left_right | TSR_lingguang_incident_joint_branch.txt |
+| GXC_rumors_of_deposition | TSR_lingguang_incident_joint_branch_shared | 1 | 1 | 5 | GFX_focus_PRC_arms_recovery_efforts | TSR_lingguang_incident_joint_branch.txt |
+| GXC_the_scorched_earth_speech | TSR_lingguang_incident_joint_branch_shared | 0 | 1 | 5 | GFX_focus_AST_war_japan | TSR_lingguang_incident_joint_branch.txt |
+| GXC_denounce_chiang | TSR_lingguang_incident_joint_branch_shared | 0 | 1 | 5 | GFX_goal_generic_propaganda | TSR_lingguang_incident_joint_branch.txt |
+| GXC_formation_of_the_nraja | TSR_lingguang_incident_joint_branch_shared | -1 | 1 | 5 | GFX_focus_PRC_reorganize_divisions | TSR_lingguang_incident_joint_branch.txt |
+| GXC_declare_opposition | TSR_lingguang_incident_joint_branch_shared | 0 | 1 | 5 | GFX_focus_prc_remove_chiang_kai_shek | TSR_lingguang_incident_joint_branch.txt |
+| TUR_the_montreux_convention | turkish_focus | 5 | 0 | 10 | GFX_focus_TUR_the_montreux_convention | turkey.txt |
+| TUR_continue_the_policy_of_etatism | turkish_focus | 3 | 1 | 10 | GFX_goal_generic_neutrality_focus | turkey.txt |
+| TUR_fully_integrate_the_is_bank | turkish_focus | -3 | 1 | 5 | GFX_goal_generic_intelligence_exchange | turkey.txt |
+| TUR_continue_the_sumerbank_industrialization_scheme | turkish_focus | -1 | 1 | 10 | GFX_focus_CHL_enlarge_the_textile_industries | turkey.txt |
+| TUR_millet_mektebi_focus | turkish_focus | -5 | 1 | 10 | GFX_focus_AFG_education_reform | turkey.txt |
 | TUR_ratify_the_six_arrows | turkish_focus | 0 | 2 | 5 | GFX_focus_TUR_ratify_the_six_arrows | turkey.txt |
 | TUR_privatize_the_anadolu_agency | turkish_focus | -4 | 2 | 5 | GFX_goal_generic_propaganda | turkey.txt |
 | TUR_lift_the_ban_on_other_political_parties | turkish_focus | 0 | 1 | 5 | GFX_goal_generic_national_unity | turkey.txt |
@@ -7832,20 +9240,20 @@ Source: `common/national_focus/*.txt`
 | TUR_permit_regional_elections | turkish_focus | 1 | 1 | 10 | GFX_goal_generic_improve_relations | turkey.txt |
 | TUR_privatize_our_infrastructure | turkish_focus | 1 | 1 | 5 | GFX_goal_generic_construct_infrastructure | turkey.txt |
 | TUR_democratic_capstone_focus | turkish_focus | 0 | 2 | 10 | GFX_goal_generic_territory_or_war | turkey.txt |
-| TUR_the_sanayiciler | turkish_focus |  |  |  | GFX_goal_generic_construct_civ_factory | turkey.txt |
-| TUR_cooperate_with_the_debt_council | turkish_focus |  |  |  | GFX_goal_generic_positive_trade_relations | turkey.txt |
+| TUR_the_sanayiciler | turkish_focus | -3 | 1 | 5 | GFX_goal_generic_construct_civ_factory | turkey.txt |
+| TUR_cooperate_with_the_debt_council | turkish_focus | 0 | 1 | 5 | GFX_goal_generic_positive_trade_relations | turkey.txt |
 | TUR_utilize_foreign_capital | turkish_focus | 0 | 1 | 10 | GFX_goal_generic_intelligence_exchange | turkey.txt |
 | TUR_treaty_of_saadabad | turkish_focus | 1 | 1 | 5 | GFX_focus_TUR_treaty_of_saadabad | turkey.txt |
-| TUR_assess_our_future | turkish_focus |  |  |  | GFX_focus_eng_concessions_to_the_trade_unions | turkey.txt |
+| TUR_assess_our_future | turkish_focus | 0 | 3 | 5 | GFX_focus_eng_concessions_to_the_trade_unions | turkey.txt |
 | TUR_the_hatay_issue | turkish_focus | 0 | 2 | 5 | GFX_goal_generic_demand_territory | turkey.txt |
 | TUR_peace_in_the_world | turkish_focus | 0 | 1 | 5 | GFX_goal_generic_defence | turkey.txt |
-| TUR_peace_at_home | turkish_focus |  |  |  | GFX_goal_tripartite_pact | turkey.txt |
-| TUR_revive_turkish_revolutionism | turkish_focus |  |  |  | GFX_goal_generic_dangerous_deal | turkey.txt |
+| TUR_peace_at_home | turkish_focus | 3 | 1 | 5 | GFX_goal_tripartite_pact | turkey.txt |
+| TUR_revive_turkish_revolutionism | turkish_focus | 7 | 2 | 10 | GFX_goal_generic_dangerous_deal | turkey.txt |
 | TUR_turkish_state_railways | turkish_focus | 0 | 1 | 10 | GFX_goal_generic_construct_infrastructure | turkey.txt |
 | TUR_reinvigorate_turkish_nationalism | turkish_focus | -3 | 1 | 5 | GFX_focus_generic_strike_at_democracy1 | turkey.txt |
 | TUR_the_second_five_year_plan | turkish_focus | 2 | 1 | 10 | GFX_focus_generic_industry_3 | turkey.txt |
 | TUR_the_guardians_of_kemalism | turkish_focus | 0 | 2 | 5 | GFX_goal_generic_political_pressure | turkey.txt |
-| TUR_the_sun_language_theory | turkish_focus |  |  |  | GFX_focus_TUR_the_sun_language_theory | turkey.txt |
+| TUR_the_sun_language_theory | turkish_focus | 0 | 2 | 5 | GFX_focus_TUR_the_sun_language_theory | turkey.txt |
 | TUR_variant_turkish_tax_focus | turkish_focus | 2 | 1 | 5 | GFX_goal_generic_forceful_treaty | turkey.txt |
 | TUR_turk_ulusu | turkish_focus | 0 | 2 | 10 | GFX_focus_generic_support_the_left_right | turkey.txt |
 | TUR_loosen_the_laws_on_secularism | turkish_focus | 2 | 1 | 10 | GFX_focus_TUR_loosen_the_laws_on_secularism | turkey.txt |
@@ -7855,8 +9263,8 @@ Source: `common/national_focus/*.txt`
 | TUR_integrate_the_fascist_council | turkish_focus | 0 | 1 | 5 | GFX_goal_support_fascism | turkey.txt |
 | TUR_restack_the_officer_corps | turkish_focus | 0 | 1 | 10 | GFX_focus_generic_military_mission | turkey.txt |
 | TUR_form_the_redshirts | turkish_focus | 2 | 1 | 5 | GFX_focus_eng_move_to_secure_the_dominions | turkey.txt |
-| TUR_fatherland_first | turkish_focus |  |  |  | GFX_goal_tfv_saf_anti_colonialist_crusade | turkey.txt |
-| TUR_the_pontic_redoubt | turkish_focus |  |  |  | GFX_goal_generic_fortify_city | turkey.txt |
+| TUR_fatherland_first | turkish_focus | 0 | 2 | 5 | GFX_goal_tfv_saf_anti_colonialist_crusade | turkey.txt |
+| TUR_the_pontic_redoubt | turkish_focus | 0 | 2 | 5 | GFX_goal_generic_fortify_city | turkey.txt |
 | TUR_abuse_the_office_of_soil_products | turkish_focus | 0 | 2 | 10 | GFX_goal_generic_production2 | turkey.txt |
 | TUR_deal_for_the_oniki_islands | turkish_focus | 0 | 2 | 10 | GFX_focus_generic_aegean_sea_focus | turkey.txt |
 | TUR_kemalist_socialist_theory | turkish_focus | 4 | 1 | 5 | GFX_focus_generic_air_defense | turkey.txt |
@@ -7865,18 +9273,18 @@ Source: `common/national_focus/*.txt`
 | TUR_hunt_down_fifth_columnist_islamists | turkish_focus | 0 | 1 | 5 | GFX_goal_generic_more_territorial_claims | turkey.txt |
 | TUR_patriotism_over_internationalism | turkish_focus | 0 | 1 | 5 | GFX_focus_generic_support_the_left_right | turkey.txt |
 | TUR_create_the_turkish_workers_militia | turkish_focus | 0 | 1 | 5 | GFX_goal_generic_war_with_comintern | turkey.txt |
-| TUR_halk_ve_devlet | turkish_focus |  |  |  | GFX_goal_support_communism | turkey.txt |
+| TUR_halk_ve_devlet | turkish_focus | 0 | 1 | 5 | GFX_goal_support_communism | turkey.txt |
 | TUR_nationalise_all_private_industry | turkish_focus | 0 | 1 | 10 | GFX_goal_generic_soviet_construction | turkey.txt |
-| TUR_georgian_manganese_extraction | turkish_focus |  |  |  |  | turkey.txt |
+| TUR_georgian_manganese_extraction | turkish_focus | -2 | 1 | 10 | GFX_focus_chi_mission_to_the_soviet_union | turkey.txt |
 | TUR_salt_the_scars_of_the_great_war | turkish_focus | 0 | 2 | 5 | GFX_goal_demand_sudetenland | turkey.txt |
-| TUR_pivot_to_the_past | turkish_focus |  |  |  | GFX_focus_TUR_pivot_to_the_past | turkey.txt |
+| TUR_pivot_to_the_past | turkish_focus | -12 | 1 | 10 | GFX_focus_TUR_pivot_to_the_past | turkey.txt |
 | TUR_purge_the_kemalists | turkish_focus | 0 | 1 | 10 | GFX_focus_TUR_purge_the_kemalists | turkey.txt |
 | TUR_restore_the_divan | turkish_focus | -1 | 1 | 5 | GFX_focus_generic_self_management | turkey.txt |
 | TUR_rebuilding_our_nation | turkish_focus | 1 | 1 | 5 | GFX_goal_generic_consumer_goods | turkey.txt |
 | TUR_return_of_the_sultan | turkish_focus | 0 | 2 | 10 | GFX_focus_rom_royal_dictatorship | turkey.txt |
 | TUR_reclaim_macedonia | turkish_focus | 0 | 1 | 10 | GFX_focus_generic_attack_greece | turkey.txt |
-| TUR_join_the_central_powers | turkish_focus |  |  |  | GFX_focus_ger_revive_kaiserreich | turkey.txt |
-| TUR_press_the_austro_hungarian_claim | turkish_focus |  |  |  | GFX_focus_proclaim_the_restauration_of_Austria_Hungary | turkey.txt |
+| TUR_join_the_central_powers | turkish_focus | -1 | 1 | 10 | GFX_focus_ger_revive_kaiserreich | turkey.txt |
+| TUR_press_the_austro_hungarian_claim | turkish_focus | 1 | 1 | 10 | GFX_focus_proclaim_the_restauration_of_Austria_Hungary | turkey.txt |
 | TUR_aligning_bulgaria | turkish_focus | 0 | 2 | 10 | GFX_focus_generic_befriend_bulgaria | turkey.txt |
 | TUR_reclaiming_our_lost_empire | turkish_focus | -2 | 1 | 10 | GFX_focus_generic_strike_at_democracy1 | turkey.txt |
 | TUR_expanding_the_saadabad_pact | turkish_focus | 0 | 1 | 10 | GFX_goal_generic_improve_relations | turkey.txt |
@@ -7889,51 +9297,51 @@ Source: `common/national_focus/*.txt`
 | TUR_refining_our_strategies | turkish_focus | 3 | 1 | 10 | GFX_goal_generic_occupy_states_ongoing_war | turkey.txt |
 | TUR_the_red_apples_of_sevres | turkish_focus | 0 | 2 | 10 | GFX_focus_focus_fra_ratify_stresa | turkey.txt |
 | TUR_realize_the_nightmare_of_meiji | turkish_focus | 0 | 1 | 10 | GFX_focus_jap_pacific_guardian | turkey.txt |
-| TUR_continue_to_prioritise_balkan_integrity | turkish_focus |  |  |  | GFX_goal_generic_national_unity | turkey.txt |
-| TUR_reaffirm_the_balkan_pact | turkish_focus |  |  |  | GFX_focus_TUR_reform_the_balkan_pact | turkey.txt |
-| TUR_balkan_defense_council | turkish_focus |  |  |  | GFX_focus_generic_military_academy | turkey.txt |
-| TUR_three_year_industrial_plan | turkish_focus |  |  |  | GFX_focus_generic_the_giant_wakes | turkey.txt |
-| TUR_united_against_imperialism | turkish_focus |  |  |  | GFX_goal_generic_demand_territory | turkey.txt |
-| TUR_create_the_balkan_central_bank | turkish_focus |  |  |  | GFX_goal_generic_consumer_goods | turkey.txt |
-| TUR_the_treaty_for_prosperity_and_trade | turkish_focus |  |  |  | GFX_goal_generic_positive_trade_relations | turkey.txt |
-| TUR_joint_budgets_on_fortifications | turkish_focus |  |  |  | GFX_goal_generic_construct_military | turkey.txt |
-| TUR_connecting_our_capitals | turkish_focus |  |  |  | GFX_goal_reichsautobahn | turkey.txt |
-| TUR_fortifying_contentious_areas | turkish_focus |  |  |  | GFX_focus_generic_provoke_border_clashes | turkey.txt |
-| TUR_integrated_armed_forces | turkish_focus |  |  |  | GFX_goal_generic_military_sphere | turkey.txt |
-| TUR_the_balkan_academy_of_science | turkish_focus |  |  |  | GFX_focus_research2 | turkey.txt |
-| TUR_extend_an_olive_branch_to_bulgaria | turkish_focus |  |  |  | GFX_focus_generic_befriend_bulgaria | turkey.txt |
+| TUR_continue_to_prioritise_balkan_integrity | turkish_focus | 30 | 1 | 10 | GFX_goal_generic_national_unity | turkey.txt |
+| TUR_reaffirm_the_balkan_pact | turkish_focus | 0 | 1 | 10 | GFX_focus_TUR_reform_the_balkan_pact | turkey.txt |
+| TUR_balkan_defense_council | turkish_focus | -1 | 1 | 10 | GFX_focus_generic_military_academy | turkey.txt |
+| TUR_three_year_industrial_plan | turkish_focus | 1 | 1 | 10 | GFX_focus_generic_the_giant_wakes | turkey.txt |
+| TUR_united_against_imperialism | turkish_focus | -1 | 1 | 10 | GFX_goal_generic_demand_territory | turkey.txt |
+| TUR_create_the_balkan_central_bank | turkish_focus | 0 | 2 | 10 | GFX_goal_generic_consumer_goods | turkey.txt |
+| TUR_the_treaty_for_prosperity_and_trade | turkish_focus | 1 | 1 | 10 | GFX_goal_generic_positive_trade_relations | turkey.txt |
+| TUR_joint_budgets_on_fortifications | turkish_focus | 1 | 1 | 10 | GFX_goal_generic_construct_military | turkey.txt |
+| TUR_connecting_our_capitals | turkish_focus | -1 | 1 | 10 | GFX_goal_reichsautobahn | turkey.txt |
+| TUR_fortifying_contentious_areas | turkish_focus | 1 | 1 | 10 | GFX_focus_generic_provoke_border_clashes | turkey.txt |
+| TUR_integrated_armed_forces | turkish_focus | 0 | 1 | 10 | GFX_goal_generic_military_sphere | turkey.txt |
+| TUR_the_balkan_academy_of_science | turkish_focus | 2 | 1 | 10 | GFX_focus_research2 | turkey.txt |
+| TUR_extend_an_olive_branch_to_bulgaria | turkish_focus | -1 | 1 | 10 | GFX_focus_generic_befriend_bulgaria | turkey.txt |
 | TUR_preempt_bulgarian_alignment | turkish_focus | 1 | 1 | 10 | GFX_focus_generic_attack_bulgaria | turkey.txt |
-| TUR_peninsular_network_of_factories | turkish_focus |  |  |  | GFX_goal_generic_production | turkey.txt |
-| TUR_combined_operational_strategies | turkish_focus |  |  |  | GFX_focus_secret_rearmament | turkey.txt |
+| TUR_peninsular_network_of_factories | turkish_focus | -1 | 1 | 10 | GFX_goal_generic_production | turkey.txt |
+| TUR_combined_operational_strategies | turkish_focus | 0 | 2 | 10 | GFX_focus_secret_rearmament | turkey.txt |
 | TUR_edirne_research_exchange | turkish_focus | 0 | 2 | 10 | GFX_goal_generic_scientific_exchange | turkey.txt |
 | TUR_crush_the_warmongers_in_rome | turkish_focus | -1 | 1 | 10 | GFX_focus_attack_italy | turkey.txt |
 | TUR_brace_against_the_red_menace | turkish_focus | 1 | 1 | 10 | GFX_focus_attack_soviet | turkey.txt |
 | TUR_reconfigure_our_foreign_policy | turkish_focus | 8 | 1 | 10 | GFX_focus_TUR_reconfigure_turkish_foreign_policy | turkey.txt |
-| TUR_the_anglo_turkish_agreement | turkish_focus |  |  |  | GFX_focus_chi_british_cooperation | turkey.txt |
-| TUR_applying_british_oil_embargoes_on_iraq | turkish_focus |  |  |  | GFX_goal_generic_trade | turkey.txt |
+| TUR_the_anglo_turkish_agreement | turkish_focus | -12 | 1 | 5 | GFX_focus_chi_british_cooperation | turkey.txt |
+| TUR_applying_british_oil_embargoes_on_iraq | turkish_focus | -1 | 1 | 10 | GFX_goal_generic_trade | turkey.txt |
 | TUR_host_exiled_scientists | turkish_focus | 1 | 1 | 10 | GFX_focus_research2 | turkey.txt |
-| TUR_the_chester_concession | turkish_focus |  |  |  | GFX_focus_chi_mission_to_the_us | turkey.txt |
-| TUR_american_motor_factories | turkish_focus |  |  |  | GFX_goal_generic_army_motorized | turkey.txt |
-| TUR_bomber_schematics | turkish_focus |  |  |  | GFX_focus_usa_escort_fighters | turkey.txt |
-| TUR_join_the_allies | turkish_focus |  |  |  | GFX_goal_support_democracy | turkey.txt |
+| TUR_the_chester_concession | turkish_focus | 0 | 2 | 10 | GFX_focus_chi_mission_to_the_us | turkey.txt |
+| TUR_american_motor_factories | turkish_focus | -1 | 1 | 10 | GFX_goal_generic_army_motorized | turkey.txt |
+| TUR_bomber_schematics | turkish_focus | 1 | 1 | 10 | GFX_focus_usa_escort_fighters | turkey.txt |
+| TUR_join_the_allies | turkish_focus | 0 | 2 | 10 | GFX_goal_support_democracy | turkey.txt |
 | TUR_controlling_the_skies_of_europe | turkish_focus | -1 | 1 | 10 | GFX_goal_generic_air_fighter2 | turkey.txt |
 | TUR_expanding_our_navy | turkish_focus | 1 | 1 | 10 | GFX_focus_generic_navy_battleship2 | turkey.txt |
 | TUR_the_petra_proposal | turkish_focus | 3 | 1 | 10 | GFX_goal_generic_major_alliance | turkey.txt |
 | TUR_expanded_credit_on_our_debts | turkish_focus | 0 | 2 | 10 | GFX_goal_generic_neutrality_focus | turkey.txt |
 | TUR_partnership_pact_with_bulgaria | turkish_focus | 0 | 1 | 10 | GFX_focus_generic_befriend_bulgaria | turkey.txt |
-| TUR_seizing_the_romanian_oil_fields | turkish_focus |  |  |  | GFX_goal_tfv_saf_anti_colonialist_crusade | turkey.txt |
+| TUR_seizing_the_romanian_oil_fields | turkish_focus | -2 | 1 | 10 | GFX_goal_tfv_saf_anti_colonialist_crusade | turkey.txt |
 | TUR_securing_iran | turkish_focus | 0 | 1 | 10 | GFX_goal_generic_occupy_states_ongoing_war | turkey.txt |
 | TUR_british_dockyards_in_turkey | turkish_focus | 0 | 2 | 10 | GFX_goal_generic_construct_naval_dockyard | turkey.txt |
-| TUR_taking_over_defense_of_the_gulf | turkish_focus |  |  |  | GFX_focus_TUR_taking_over_defense_of_the_gulf | turkey.txt |
+| TUR_taking_over_defense_of_the_gulf | turkish_focus | 0 | 2 | 10 | GFX_focus_TUR_taking_over_defense_of_the_gulf | turkey.txt |
 | TUR_we_must_not_fall | turkish_focus | 0 | 2 | 10 | GFX_focus_generic_coastal_fort | turkey.txt |
-| TUR_the_german_turkish_friendship_treaty | turkish_focus |  |  |  | GFX_focus_chi_mission_to_germany | turkey.txt |
-| TUR_the_clodius_agreement | turkish_focus |  |  |  | GFX_goal_generic_major_alliance | turkey.txt |
-| TUR_purchase_italian_light_tanks | turkish_focus |  |  |  | GFX_focus_generic_license_production | turkey.txt |
-| TUR_approve_the_funkplan | turkish_focus |  |  |  | GFX_focus_generic_treaty | turkey.txt |
-| TUR_the_italo_turkish_naval_academy | turkish_focus |  |  |  | GFX_goal_generic_amphibious_assault | turkey.txt |
-| TUR_invite_german_officers_to_izmir | turkish_focus |  |  |  | GFX_focus_generic_military_mission | turkey.txt |
-| TUR_the_mediterranean_entente | turkish_focus |  |  |  | GFX_focus_generic_italy_first | turkey.txt |
-| TUR_join_the_axis | turkish_focus |  |  |  | GFX_focus_ger_reichskommisariats | turkey.txt |
+| TUR_the_german_turkish_friendship_treaty | turkish_focus | 0 | 1 | 5 | GFX_focus_chi_mission_to_germany | turkey.txt |
+| TUR_the_clodius_agreement | turkish_focus | 0 | 1 | 10 | GFX_goal_generic_major_alliance | turkey.txt |
+| TUR_purchase_italian_light_tanks | turkish_focus | -2 | 1 | 10 | GFX_focus_generic_license_production | turkey.txt |
+| TUR_approve_the_funkplan | turkish_focus | 2 | 1 | 10 | GFX_focus_generic_treaty | turkey.txt |
+| TUR_the_italo_turkish_naval_academy | turkish_focus | 0 | 1 | 10 | GFX_goal_generic_amphibious_assault | turkey.txt |
+| TUR_invite_german_officers_to_izmir | turkish_focus | 0 | 1 | 10 | GFX_focus_generic_military_mission | turkey.txt |
+| TUR_the_mediterranean_entente | turkish_focus | -1 | 1 | 10 | GFX_focus_generic_italy_first | turkey.txt |
+| TUR_join_the_axis | turkish_focus | -1 | 1 | 10 | GFX_focus_ger_reichskommisariats | turkey.txt |
 | TUR_invite_bulgaria | turkish_focus | -2 | 1 | 10 | GFX_focus_generic_befriend_bulgaria | turkey.txt |
 | TUR_entice_the_greeks | turkish_focus | 0 | 1 | 10 | GFX_focus_generic_befriend_greece | turkey.txt |
 | TUR_carve_up_greece | turkish_focus | -2 | 1 | 10 | GFX_focus_generic_attack_greece | turkey.txt |
@@ -7950,7 +9358,7 @@ Source: `common/national_focus/*.txt`
 | TUR_cooperative_research_centers | turkish_focus | 2 | 1 | 10 | GFX_goal_generic_scientific_exchange | turkey.txt |
 | TUR_the_tuz_golu_training_facility | turkish_focus | 0 | 2 | 10 | GFX_goal_generic_small_arms | turkey.txt |
 | TUR_pack_for_a_long_winter | turkish_focus | 2 | 1 | 10 | GFX_goal_generic_more_territorial_claims | turkey.txt |
-| TUR_support_the_golden_square | turkish_focus |  |  |  | GFX_focus_TUR_support_the_golden_square | turkey.txt |
+| TUR_support_the_golden_square | turkish_focus | -1 | 1 | 10 | GFX_focus_TUR_support_the_golden_square | turkey.txt |
 | TUR_secure_the_iraqi_oil | turkish_focus | 1 | 1 | 10 | GFX_goal_generic_major_war | turkey.txt |
 | TUR_rebuke_the_treaty_of_lausanne | turkish_focus | 1 | 1 | 10 | GFX_focus_renounce_the_treaty_of_trianon | turkey.txt |
 | TUR_turkish_panzers | turkish_focus | 0 | 1 | 10 | GFX_focus_generic_army_tanks2 | turkey.txt |
@@ -7958,12 +9366,12 @@ Source: `common/national_focus/*.txt`
 | TUR_integrate_german_officers_into_the_army | turkish_focus | 2 | 1 | 10 | GFX_focus_generic_manpower | turkey.txt |
 | TUR_restoring_our_nations_pride | turkish_focus | 0 | 4 | 10 | GFX_goal_generic_demand_territory | turkey.txt |
 | TUR_renew_the_turkish_soviet_non_aggression_pact | turkish_focus | 14 | 1 | 5 | GFX_focus_chi_mission_to_the_soviet_union | turkey.txt |
-| TUR_the_batumi_accord | turkish_focus |  |  |  | GFX_focus_generic_industry_2 | turkey.txt |
+| TUR_the_batumi_accord | turkish_focus | 0 | 1 | 10 | GFX_focus_generic_industry_2 | turkey.txt |
 | TUR_provide_refuge_to_the_victims_of_fascism | turkish_focus | -2 | 1 | 10 | GFX_focus_prc_infiltration | turkey.txt |
-| TUR_soviet_tank_factories | turkish_focus |  |  |  | GFX_goal_generic_soviet_construction | turkey.txt |
+| TUR_soviet_tank_factories | turkish_focus | 2 | 1 | 10 | GFX_goal_generic_soviet_construction | turkey.txt |
 | TUR_dissolve_the_ODPA | turkish_focus | -2 | 1 | 10 | GFX_goal_generic_forceful_treaty | turkey.txt |
-| TUR_adana_to_baku_highway | turkish_focus |  |  |  | GFX_goal_generic_construct_infrastructure | turkey.txt |
-| TUR_anti_bolshevik_mediterranean_bloc | turkish_focus |  |  |  | GFX_focus_intervention_spain_republic | turkey.txt |
+| TUR_adana_to_baku_highway | turkish_focus | 0 | 2 | 10 | GFX_goal_generic_construct_infrastructure | turkey.txt |
+| TUR_anti_bolshevik_mediterranean_bloc | turkish_focus | 0 | 1 | 10 | GFX_focus_intervention_spain_republic | turkey.txt |
 | TUR_readdress_the_montreux_convention | turkish_focus | 0 | 1 | 10 | GFX_focus_generic_black_sea_focus | turkey.txt |
 | TUR_the_international_of_proletarian_freethinkers | turkish_focus | 2 | 1 | 10 | GFX_focus_generic_socialist_science | turkey.txt |
 | TUR_strengthening_our_navies | turkish_focus | -2 | 2 | 10 | GFX_focus_generic_destroyer | turkey.txt |
@@ -8019,27 +9427,27 @@ Source: `common/national_focus/*.txt`
 | TUR_the_path_of_the_wolf | turkish_focus | 2 | 1 | 5 | GFX_goal_generic_wolf_pack | turkey.txt |
 | TUR_fortified_defensive_bases | turkish_focus | 0 | 2 | 10 | GFX_goal_generic_radar | turkey.txt |
 | TUR_turk_silahli_kuvvetleri | turkish_focus | 0 | 1 | 10 | GFX_focus_generic_military_mission | turkey.txt |
-| crypto_bomb_focus | british_focus |  |  |  |  | uk.txt |
-| tizard_mission_focus | british_focus |  |  |  |  | uk.txt |
+| crypto_bomb_focus | british_focus | 0 | 0 | 10 | GFX_focus_generic_cryptologic_bomb | uk.txt |
+| tizard_mission_focus | british_focus | 0 | 3 | 10 | GFX_goal_generic_scientific_exchange | uk.txt |
 | maud_focus | british_focus | 0 | 1 | 10 | GFX_focus_wonderweapons | uk.txt |
 | limited_rearmament_focus | british_focus | 5 | 0 | 10 | GFX_goal_generic_build_tank | uk.txt |
-| ENG_motorized_focus | british_focus |  |  |  |  | uk.txt |
+| ENG_motorized_focus | british_focus | 0 | 1 | 10 | GFX_goal_generic_army_motorized | uk.txt |
 | ENG_tank_focus | british_focus | 0 | 1 | 10 | GFX_goal_generic_army_tanks | uk.txt |
-| ENG_expand_the_secret_intelligence_service_focus | british_focus |  |  |  |  | uk.txt |
-| air_defense_focus | british_focus |  |  |  |  | uk.txt |
+| ENG_expand_the_secret_intelligence_service_focus | british_focus | 2 | 1 | 10 | GFX_focus_generic_secret_service_agency | uk.txt |
+| air_defense_focus | british_focus | -4 | 1 | 10 | GFX_goal_generic_construct_military | uk.txt |
 | radar_focus | british_focus | 0 | 1 | 10 | GFX_goal_generic_radar | uk.txt |
-| shadow_scheme_focus | british_focus |  |  |  |  | uk.txt |
+| shadow_scheme_focus | british_focus | -2 | 1 | 10 | GFX_goal_generic_construct_mil_factory | uk.txt |
 | uk_industrial_focus | british_focus | 0 | 1 | 10 | GFX_goal_generic_construct_civ_factory | uk.txt |
-| ENG_vickers_experimental_facility_focus | british_focus |  |  |  |  | uk.txt |
+| ENG_vickers_experimental_facility_focus | british_focus | 1 | 2 | 5 | GFX_focus_generic_aircraft_production | uk.txt |
 | uk_extra_tech_slot | british_focus | 0 | 1 | 10 | GFX_focus_research | uk.txt |
-| general_rearmament_focus | british_focus |  |  |  |  | uk.txt |
-| ENG_special_air_service | british_focus |  |  |  |  | uk.txt |
-| ENG_parachute_regiments | british_focus |  |  |  |  | uk.txt |
-| royal_ordinance_focus | british_focus |  |  |  |  | uk.txt |
+| general_rearmament_focus | british_focus | 5 | 1 | 10 | GFX_goal_generic_consumer_goods | uk.txt |
+| ENG_special_air_service | british_focus | 0 | 1 | 10 | GFX_focus_eng_special_air_service | uk.txt |
+| ENG_parachute_regiments | british_focus | 0 | 1 | 10 | GFX_focus_generic_paratrooper | uk.txt |
+| royal_ordinance_focus | british_focus | -1 | 2 | 10 | GFX_goal_generic_construct_mil_factory | uk.txt |
 | uk_small_arms_focus | british_focus | 1 | 1 | 10 | GFX_goal_generic_production2 | uk.txt |
 | UK_secret_focus | british_focus | -1 | 1 | 10 | GFX_goal_generic_secret_weapon | uk.txt |
 | air_rearmament_focus | british_focus | -2 | 2 | 10 | GFX_goal_generic_air_doctrine | uk.txt |
-| ENG_chiefs_of_staff_committee | british_focus |  |  |  |  | uk.txt |
+| ENG_chiefs_of_staff_committee | british_focus | 2 | 1 | 10 | GFX_focus_eng_chiefs_of_staff_committee | uk.txt |
 | fighter_command_focus | british_focus | -1 | 2 | 10 | GFX_goal_generic_air_fighter | uk.txt |
 | bomber_command_focus | british_focus | 0 | 1 | 10 | GFX_goal_generic_air_bomber | uk.txt |
 | coastal_command_focus | british_focus | 1 | 2 | 10 | GFX_goal_generic_air_naval_bomber | uk.txt |
@@ -8047,185 +9455,185 @@ Source: `common/national_focus/*.txt`
 | uk_jet_focus | british_focus | 0 | 1 | 10 | GFX_goal_generic_build_airforce | uk.txt |
 | naval_rearmament_focus | british_focus | 2 | 2 | 10 | GFX_goal_generic_construct_naval_dockyard | uk.txt |
 | ENG_anti_non_contact_committee | british_focus | 2 | 1 | 10 | GFX_goal_generic_occupy_states_coastal | uk.txt |
-| ENG_secure_the_imperial_shipping_routes | british_focus | 3 | 2 |  | GFX_focus_generic_cruiser2 | uk.txt |
+| ENG_secure_the_imperial_shipping_routes | british_focus | 3 | 2 | 10 | GFX_focus_generic_cruiser2 | uk.txt |
 | uk_destroyer_focus | british_focus | -1 | 2 | 10 | GFX_focus_generic_destroyer | uk.txt |
 | ENG_a_s_warfare | british_focus | 0 | 2 | 10 | GFX_goal_generic_navy_anti_submarine | uk.txt |
 | uk_convoy_focus | british_focus | -1 | 1 | 10 | GFX_goal_generic_navy_cruiser | uk.txt |
-| ENG_anti_submarine_training_school | british_focus | 0 | 2 |  | GFX_goal_generic_navy_doctrines_tactics | uk.txt |
+| ENG_anti_submarine_training_school | british_focus | 0 | 2 | 10 | GFX_goal_generic_navy_doctrines_tactics | uk.txt |
 | uk_waves_focus | british_focus | 1 | 2 | 10 | GFX_goal_generic_navy_doctrines_tactics | uk.txt |
 | uk_carrier_focus | british_focus | -1 | 1 | 10 | GFX_goal_generic_navy_carrier | uk.txt |
 | uk_battleship_focus | british_focus | 1 | 1 | 10 | GFX_goal_generic_navy_battleship | uk.txt |
 | uk_amphibious_focus | british_focus | 0 | 1 | 10 | GFX_goal_generic_amphibious_assault | uk.txt |
 | ENG_expand_the_repair_yards | british_focus | -1 | 1 | 10 | GFX_goal_generic_production | uk.txt |
 | ENG_vanguard | british_focus | 0 | 2 | 10 | GFX_focus_generic_navy_battleship2 | uk.txt |
-| uk_empire_focus | british_focus |  |  |  |  | uk.txt |
-| uk_service_focus | british_focus |  |  |  |  | uk.txt |
-| uk_mediterranean_focus | british_focus |  |  |  |  | uk.txt |
-| uk_rock_focus | british_focus |  |  |  |  | uk.txt |
-| uk_spain_focus | british_focus |  |  |  |  | uk.txt |
+| uk_empire_focus | british_focus | 29 | 0 | 10 | GFX_goal_generic_national_unity | uk.txt |
+| uk_service_focus | british_focus | -2 | 1 | 10 | GFX_goal_generic_position_armies | uk.txt |
+| uk_mediterranean_focus | british_focus | 5 | 1 | 10 | GFX_goal_generic_construct_military | uk.txt |
+| uk_rock_focus | british_focus | -3 | 1 | 10 | GFX_goal_generic_construct_military | uk.txt |
+| uk_spain_focus | british_focus | -1 | 1 | 10 | GFX_focus_generic_befriend_republican_spain_focus | uk.txt |
 | uk_protect_suez | british_focus | 0 | 2 | 10 | GFX_goal_generic_defence | uk.txt |
-| uk_balkan_strategy | british_focus |  |  |  | GFX_goal_generic_improve_relations | uk.txt |
-| uk_sanction_italy_focus | british_focus |  |  |  |  | uk.txt |
-| ENG_war_with_italy | british_focus |  |  |  |  | uk.txt |
-| uk_turkey_focus | british_focus |  |  |  |  | uk.txt |
-| uk_greece_focus | british_focus |  |  |  |  | uk.txt |
-| uk_malta_focus | british_focus |  |  |  |  | uk.txt |
-| ENG_revisit_colonial_policy | british_focus |  |  |  |  | uk.txt |
-| ENG_guide_the_colonies | british_focus |  |  |  |  | uk.txt |
-| ENG_towards_dominion_independence | british_focus |  |  |  |  | uk.txt |
-| ENG_foundations_for_an_indian_state | british_focus |  |  |  |  | uk.txt |
-| ENG_the_three_nation_solution | british_focus |  |  |  |  | uk.txt |
-| ENG_towards_indian_independence | british_focus |  |  |  |  | uk.txt |
-| ENG_withdraw_from_contested_territories | british_focus |  |  |  |  | uk.txt |
-| ENG_self_government_for_the_mediterranean | british_focus |  |  |  |  | uk.txt |
-| ENG_self_government_for_africa | british_focus |  |  |  |  | uk.txt |
-| ENG_self_government_for_the_middle_east | british_focus |  |  |  |  | uk.txt |
-| ENG_self_government_for_the_americas | british_focus |  |  |  |  | uk.txt |
-| ENG_self_government_for_asia | british_focus |  |  |  |  | uk.txt |
-| ENG_decolonization | british_focus |  |  |  |  | uk.txt |
+| uk_balkan_strategy | british_focus | 1 | 1 | 10 | GFX_goal_generic_improve_relations | uk.txt |
+| uk_sanction_italy_focus | british_focus | 0 | 1 | 10 | GFX_goal_generic_trade | uk.txt |
+| ENG_war_with_italy | british_focus | 0 | 1 | 10 | GFX_focus_attack_italy | uk.txt |
+| uk_turkey_focus | british_focus | -3 | 1 | 10 | GFX_focus_generic_befriend_turkey | uk.txt |
+| uk_greece_focus | british_focus | -1 | 1 | 10 | GFX_focus_generic_befriend_greece | uk.txt |
+| uk_malta_focus | british_focus | 2 | 2 | 10 | GFX_focus_generic_coastal_fort | uk.txt |
+| ENG_revisit_colonial_policy | british_focus | 34 | 0 | 10 | GFX_goal_tfv_saf_anti_colonialist_crusade | uk.txt |
+| ENG_guide_the_colonies | british_focus | 3 | 1 | 10 | GFX_focus_chi_british_cooperation | uk.txt |
+| ENG_towards_dominion_independence | british_focus | -1 | 1 | 10 | GFX_goal_tfv_sever_ties_with_uk | uk.txt |
+| ENG_foundations_for_an_indian_state | british_focus | -1 | 1 | 10 | GFX_focus_RAJ_all_india_forward_bloc | uk.txt |
+| ENG_the_three_nation_solution | british_focus | 1 | 1 | 10 | GFX_focus_RAJ_two_nation_theory | uk.txt |
+| ENG_towards_indian_independence | british_focus | 0 | 2 | 10 | GFX_goal_tfv_sever_ties_with_uk | uk.txt |
+| ENG_withdraw_from_contested_territories | british_focus | 1 | 1 | 5 | GFX_goal_generic_position_armies | uk.txt |
+| ENG_self_government_for_the_mediterranean | british_focus | -1 | 1 | 5 | GFX_focus_generic_self_management | uk.txt |
+| ENG_self_government_for_africa | british_focus | 0 | 2 | 10 | GFX_focus_generic_self_management | uk.txt |
+| ENG_self_government_for_the_middle_east | british_focus | 1 | 1 | 5 | GFX_focus_generic_self_management | uk.txt |
+| ENG_self_government_for_the_americas | british_focus | 0 | 1 | 5 | GFX_focus_generic_self_management | uk.txt |
+| ENG_self_government_for_asia | british_focus | 0 | 1 | 10 | GFX_focus_generic_self_management | uk.txt |
+| ENG_decolonization | british_focus | 0 | 1 | 10 | GFX_focus_eng_decolonization | uk.txt |
 | uk_colonial_focus | british_focus | -5 | 1 | 10 | GFX_focus_research2 | uk.txt |
-| uk_asia_focus | british_focus |  |  |  |  | uk.txt |
-| uk_burma_focus | british_focus |  |  |  |  | uk.txt |
-| uk_sanction_japan_focus | british_focus |  |  |  |  | uk.txt |
-| ENG_war_with_japan | british_focus |  |  |  |  | uk.txt |
+| uk_asia_focus | british_focus | -4 | 1 | 10 | GFX_goal_generic_construct_civilian | uk.txt |
+| uk_burma_focus | british_focus | -2 | 1 | 10 | GFX_goal_generic_construct_infrastructure | uk.txt |
+| uk_sanction_japan_focus | british_focus | 0 | 2 | 10 | GFX_goal_generic_trade | uk.txt |
+| ENG_war_with_japan | british_focus | 2 | 1 | 10 | GFX_focus_attack_japan | uk.txt |
 | singapore_focus | british_focus | 0 | 1 | 10 | GFX_goal_generic_fortify_city | uk.txt |
 | sp_landward_forts_focus | british_focus | 0 | 1 | 10 | GFX_goal_generic_construct_military | uk.txt |
 | peninsular_focus | british_focus | 0 | 1 | 10 | GFX_goal_generic_construction2 | uk.txt |
 | hongkong_focus | british_focus | 2 | 1 | 10 | GFX_goal_generic_fortify_city | uk.txt |
 | hk_landward_forts_focus | british_focus | 0 | 1 | 10 | GFX_goal_generic_construct_military | uk.txt |
 | hk_air_focus | british_focus | 0 | 1 | 10 | GFX_goal_generic_construct_civilian | uk.txt |
-| uk_china_focus | british_focus |  |  |  |  | uk.txt |
-| uk_commonwealth_focus | british_focus |  |  |  |  | uk.txt |
+| uk_china_focus | british_focus | 0 | 1 | 10 | GFX_focus_chi_cooperation_with_the_nationalists | uk.txt |
+| uk_commonwealth_focus | british_focus | 4 | 1 | 5 | GFX_goal_tfv_strengthen_commonwealth_ties | uk.txt |
 | ENG_british_commonwealth_air_training_plan | british_focus | -1 | 1 | 10 | GFX_goal_generic_air_fighter2 | uk.txt |
-| uk_india_focus | british_focus |  |  |  |  | uk.txt |
-| uk_free_india_focus | british_focus |  |  |  |  | uk.txt |
-| uk_australia_focus | british_focus |  |  |  |  | uk.txt |
-| uk_new_zealand_focus | british_focus |  |  |  |  | uk.txt |
-| uk_canada_focus | british_focus |  |  |  |  | uk.txt |
-| uk_south_africa_focus | british_focus |  |  |  |  | uk.txt |
-| ENG_indian_autonomy | british_focus |  |  |  |  | uk.txt |
-| ENG_imperial_conference | british_focus |  |  |  |  | uk.txt |
-| ENG_imperial_federation | british_focus |  |  |  |  | uk.txt |
-| ENG_steady_as_she_goes | british_focus |  |  |  | GFX_goal_support_democracy | uk.txt |
-| ENG_global_defense | british_focus |  |  |  |  | uk.txt |
-| ENG_every_man_will_do_his_duty | british_focus |  |  |  |  | uk.txt |
-| ENG_motion_of_no_confidence | british_focus |  |  |  |  | uk.txt |
-| ENG_no_further_appeasement | british_focus |  |  |  |  | uk.txt |
-| ENG_kickstart_the_war_industry | british_focus |  |  |  |  | uk.txt |
-| ENG_secure_the_oil_imports | british_focus |  |  |  |  | uk.txt |
-| ENG_maintaining_imperial_integrity | british_focus |  |  |  |  | uk.txt |
-| ENG_enforce_the_naval_treaties | british_focus |  |  |  |  | uk.txt |
-| ENG_maintaining_the_balance_of_power | british_focus |  |  |  |  | uk.txt |
-| ENG_continental_intervention | british_focus |  |  |  |  | uk.txt |
-| ENG_home_defence | british_focus | 5 | 1 |  | GFX_focus_generic_home_defense | uk.txt |
-| uk_iraq_focus | british_focus |  |  |  |  | uk.txt |
+| uk_india_focus | british_focus | -3 | 1 | 10 | GFX_goal_generic_construct_civ_factory | uk.txt |
+| uk_free_india_focus | british_focus | -1 | 1 | 10 | GFX_goal_generic_improve_relations | uk.txt |
+| uk_australia_focus | british_focus | 1 | 1 | 10 | GFX_goal_generic_construct_civilian | uk.txt |
+| uk_new_zealand_focus | british_focus | 0 | 1 | 10 | GFX_goal_generic_construction | uk.txt |
+| uk_canada_focus | british_focus | 0 | 3 | 10 | GFX_goal_generic_construct_civ_factory | uk.txt |
+| uk_south_africa_focus | british_focus | 2 | 3 | 10 | GFX_goal_generic_construct_civ_factory | uk.txt |
+| ENG_indian_autonomy | british_focus | 1 | 1 | 10 | GFX_focus_RAJ_british_investors | uk.txt |
+| ENG_imperial_conference | british_focus | 0 | 2 | 10 | GFX_goal_generic_national_unity | uk.txt |
+| ENG_imperial_federation | british_focus | 0 | 1 | 10 | GFX_focus_eng_imperial_federation | uk.txt |
+| ENG_steady_as_she_goes | british_focus | 14 | 0 | 5 | GFX_goal_support_democracy | uk.txt |
+| ENG_global_defense | british_focus | -4 | 1 | 10 | GFX_focus_eng_global_defense | uk.txt |
+| ENG_every_man_will_do_his_duty | british_focus | -1 | 1 | 10 | GFX_focus_generic_commonwealth_build_infantry | uk.txt |
+| ENG_motion_of_no_confidence | british_focus | 1 | 1 | 10 | GFX_focus_eng_motion_of_no_confidence | uk.txt |
+| ENG_no_further_appeasement | british_focus | -1 | 1 | 10 | GFX_focus_generic_strike_at_democracy1 | uk.txt |
+| ENG_kickstart_the_war_industry | british_focus | -3 | 1 | 10 | GFX_goal_generic_construct_mil_factory | uk.txt |
+| ENG_secure_the_oil_imports | british_focus | 0 | 1 | 10 | GFX_goal_generic_occupy_states_ongoing_war | uk.txt |
+| ENG_maintaining_imperial_integrity | british_focus | -1 | 1 | 10 | GFX_focus_chi_british_cooperation | uk.txt |
+| ENG_enforce_the_naval_treaties | british_focus | 0 | 1 | 10 | GFX_goal_generic_major_war | uk.txt |
+| ENG_maintaining_the_balance_of_power | british_focus | 1 | 1 | 10 | GFX_goal_generic_neutrality_focus | uk.txt |
+| ENG_continental_intervention | british_focus | 0 | 1 | 10 | GFX_goal_generic_major_war | uk.txt |
+| ENG_home_defence | british_focus | 5 | 1 | 10 | GFX_focus_generic_home_defense | uk.txt |
+| uk_iraq_focus | british_focus | -6 | 1 | 10 | GFX_goal_generic_occupy_states_ongoing_war | uk.txt |
 | uk_iran_focus | british_focus | 0 | 1 | 10 | GFX_goal_generic_forceful_treaty | uk.txt |
-| ENG_embargo_ussr | british_focus |  |  |  |  | uk.txt |
-| ENG_war_with_ussr | british_focus |  |  |  |  | uk.txt |
-| ENG_issue_gasmasks | british_focus |  |  |  |  | uk.txt |
-| ENG_military_training_act | british_focus |  |  |  |  | uk.txt |
-| ENG_embargo_germany | british_focus |  |  |  |  | uk.txt |
-| ENG_war_with_germany | british_focus |  |  |  |  | uk.txt |
-| uk_scandinavian_focus | british_focus |  |  |  |  | uk.txt |
-| ENG_swedish_intervention | british_focus |  |  |  |  | uk.txt |
-| ENG_norwegian_intervention | british_focus |  |  |  |  | uk.txt |
-| ENG_danish_intervention | british_focus |  |  |  |  | uk.txt |
-| ENG_prepare_for_the_inevitable | british_focus |  |  |  |  | uk.txt |
-| ENG_benelux_intervention | british_focus |  |  |  |  | uk.txt |
-| ENG_belgium_security | british_focus |  |  |  |  | uk.txt |
-| ENG_dutch_security | british_focus |  |  |  |  | uk.txt |
-| ENG_a_change_in_course | british_focus |  |  |  |  | uk.txt |
-| ENG_the_kings_party | british_focus |  |  |  |  | uk.txt |
-| ENG_reassess_continental_commitments | british_focus |  |  |  |  | uk.txt |
-| ENG_isolate_the_mediterranean_threat | british_focus |  |  |  |  | uk.txt |
-| ENG_alliance_with_germany | british_focus |  |  |  |  | uk.txt |
-| ENG_noninterference_treaty_with_germany | british_focus |  |  |  |  | uk.txt |
-| ENG_take_out_the_regia_marina | british_focus |  |  |  |  | uk.txt |
-| ENG_organize_the_blackshirts | british_focus |  |  |  |  | uk.txt |
-| ENG_the_british_path_to_fascism | british_focus |  |  |  |  | uk.txt |
-| ENG_secure_the_italian_alliance | british_focus |  |  |  |  | uk.txt |
-| ENG_gibraltar_for_spanish_support | british_focus |  |  |  |  | uk.txt |
-| ENG_pre_empt_spanish_alignment | british_focus |  |  |  |  | uk.txt |
-| ENG_prevent_a_continental_hegemony | british_focus |  |  |  |  | uk.txt |
-| ENG_enact_the_mosley_manifesto | british_focus |  |  |  |  | uk.txt |
-| ENG_god_save_the_king | british_focus |  |  |  |  | uk.txt |
-| ENG_ceylon_forward_operating_base | british_focus |  |  |  |  | uk.txt |
-| ENG_imperial_conscription | british_focus |  |  |  |  | uk.txt |
-| ENG_reclaim_burma | british_focus |  |  |  |  | uk.txt |
-| ENG_pre_empt_the_ideological_threat | british_focus |  |  |  |  | uk.txt |
-| ENG_expose_the_belly_of_the_bear | british_focus |  |  |  |  | uk.txt |
-| ENG_reclaim_the_jewel_in_the_crown | british_focus |  |  |  |  | uk.txt |
-| ENG_consolidate_the_british_isles | british_focus |  |  |  |  | uk.txt |
-| ENG_unite_the_anglosphere | british_focus |  |  |  |  | uk.txt |
-| ENG_appeal_to_imperial_loyalists | british_focus |  |  |  |  | uk.txt |
-| ENG_bring_the_dominions_back_into_the_fold | british_focus |  |  |  |  | uk.txt |
-| ENG_the_sun_never_sets | british_focus |  |  |  |  | uk.txt |
-| ENG_pre_empt_the_strategic_threat | british_focus |  |  |  |  | uk.txt |
-| ENG_concessions_to_the_trade_unions | british_focus |  |  |  |  | uk.txt |
-| ENG_move_to_secure_the_dominions | british_focus | -5 | 0 |  |  | uk.txt |
-| ENG_the_fate_of_the_royal_family | british_focus |  |  |  |  | uk.txt |
-| ENG_eliminate_the_upper_class | british_focus |  |  |  |  | uk.txt |
-| ENG_for_the_good_of_the_revolution | british_focus |  |  |  |  | uk.txt |
-| ENG_the_british_communist_alternative | british_focus |  |  |  |  | uk.txt |
-| ENG_enforce_decolonization | british_focus |  |  |  |  | uk.txt |
-| ENG_reach_out_across_the_channel | british_focus |  |  |  |  | uk.txt |
-| ENG_soviet_cooperation | british_focus |  |  |  |  | uk.txt |
-| ENG_the_one_true_revolution | british_focus |  |  |  |  | uk.txt |
-| ENG_follow_moscow | british_focus |  |  |  |  | uk.txt |
-| ENG_tackle_fascism | british_focus |  |  |  |  | uk.txt |
-| ENG_preparing_the_second_front | british_focus |  |  |  |  | uk.txt |
-| ENG_tackle_capitalism | british_focus |  |  |  |  | uk.txt |
-| ENG_bermuda_invasion_launch_point | british_focus |  |  |  |  | uk.txt |
-| ENG_crush_the_dream | british_focus |  |  |  |  | uk.txt |
-| ENG_socialist_science_pool | british_focus |  |  |  |  | uk.txt |
-| ENG_liberate_the_home_of_marx | british_focus |  |  |  |  | uk.txt |
-| ENG_spirit_of_the_industrial_revolution | british_focus |  |  |  |  | uk.txt |
-| URG_terras_dictatorship | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_statism | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_right_to_food_housing_and_health | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_womens_vote | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_prohibition_of_usury | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_break_relations_with_the_ussr | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_tour_to_italy | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_recognize_francoist_spain | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_merge_falangist_movements | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_rincon_del_bonete_hydroelectric_power_station | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_allow_nazi_movements_among_german_uruguayan | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_accion_revisionista_del_uruguay | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_force_through_corporatism | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_establish_the_german_uruguayan_cultural_center | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_the_fuhrmann_plan | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_food_for_the_warmachine | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_revaluation_law | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_brou | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_pay_of_all_external_debts | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_ministry_of_public_works | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_import_substitution | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_rapid_industrialization | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_la_teja_refinery | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_pluna | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_conaprole | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_mercado_modelo | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_colorado_victory | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_legacy_of_batlle | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_declare_neutrality | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_law_no_9914 | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_investigate_german_and_italian_cultural_organization | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_law_no_9943 | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_american_air_bases | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_break_diplomatic_relations_with_the_axis | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_join_the_allies | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_a_new_constitution | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_the_good_coup | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_legalize_the_pool | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_blanco_victory | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_herrerismo | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_traditionalism | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_americanism | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_ruralism | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_anticentralism | uruguay_focus |  |  |  |  | uruguay.txt |
-| URG_anti_imperialism | uruguay_focus |  |  |  |  | uruguay.txt |
-| USA_continue_the_new_deal | usa_focus | 14 | 0 |  | GFX_focus_generic_self_management | usa.txt |
+| ENG_embargo_ussr | british_focus | 4 | 0 | 10 | GFX_goal_generic_trade | uk.txt |
+| ENG_war_with_ussr | british_focus | 0 | 1 | 10 | GFX_focus_attack_soviet | uk.txt |
+| ENG_issue_gasmasks | british_focus | 4 | 1 | 10 | GFX_goal_generic_construct_military | uk.txt |
+| ENG_military_training_act | british_focus | 0 | 1 | 10 | GFX_focus_generic_commonwealth_build_infantry | uk.txt |
+| ENG_embargo_germany | british_focus | 0 | 1 | 10 | GFX_goal_generic_trade | uk.txt |
+| ENG_war_with_germany | british_focus | 0 | 1 | 10 | GFX_focus_attack_germany | uk.txt |
+| uk_scandinavian_focus | british_focus | -3 | 1 | 10 | GFX_goal_generic_position_armies | uk.txt |
+| ENG_swedish_intervention | british_focus | -1 | 1 | 10 | GFX_focus_generic_attack_sweden | uk.txt |
+| ENG_norwegian_intervention | british_focus | 0 | 2 | 10 | GFX_focus_generic_attack_norway | uk.txt |
+| ENG_danish_intervention | british_focus | 1 | 1 | 10 | GFX_focus_generic_attack_denmark | uk.txt |
+| ENG_prepare_for_the_inevitable | british_focus | -1 | 1 | 10 | GFX_goal_generic_construction | uk.txt |
+| ENG_benelux_intervention | british_focus | 1 | 1 | 10 | GFX_goal_generic_position_armies | uk.txt |
+| ENG_belgium_security | british_focus | -1 | 1 | 10 | GFX_goal_generic_attack_allies | uk.txt |
+| ENG_dutch_security | british_focus | 1 | 1 | 10 | GFX_goal_generic_attack_allies | uk.txt |
+| ENG_a_change_in_course | british_focus | 18 | 0 | 5 | GFX_focus_generic_strike_at_democracy2 | uk.txt |
+| ENG_the_kings_party | british_focus | 5 | 0 | 10 | GFX_focus_eng_the_kings_party | uk.txt |
+| ENG_reassess_continental_commitments | british_focus | -1 | 1 | 10 | GFX_goal_generic_position_armies | uk.txt |
+| ENG_isolate_the_mediterranean_threat | british_focus | 0 | 1 | 10 | GFX_goal_generic_forceful_treaty | uk.txt |
+| ENG_alliance_with_germany | british_focus | -1 | 1 | 10 | GFX_focus_chi_mission_to_germany | uk.txt |
+| ENG_noninterference_treaty_with_germany | british_focus | 1 | 1 | 10 | GFX_goal_generic_dangerous_deal | uk.txt |
+| ENG_take_out_the_regia_marina | british_focus | -1 | 1 | 10 | GFX_goal_generic_major_war | uk.txt |
+| ENG_organize_the_blackshirts | british_focus | 1 | 0 | 10 | GFX_focus_eng_organise_the_blackshirts | uk.txt |
+| ENG_the_british_path_to_fascism | british_focus | 1 | 1 | 10 | GFX_goal_support_fascism | uk.txt |
+| ENG_secure_the_italian_alliance | british_focus | 0 | 1 | 10 | GFX_goal_generic_major_alliance | uk.txt |
+| ENG_gibraltar_for_spanish_support | british_focus | -1 | 1 | 10 | GFX_goal_generic_dangerous_deal | uk.txt |
+| ENG_pre_empt_spanish_alignment | british_focus | 1 | 1 | 10 | GFX_goal_generic_more_territorial_claims | uk.txt |
+| ENG_prevent_a_continental_hegemony | british_focus | 1 | 1 | 10 | GFX_goal_generic_major_war | uk.txt |
+| ENG_enact_the_mosley_manifesto | british_focus | 2 | 1 | 10 | GFX_goal_generic_construct_mil_factory | uk.txt |
+| ENG_god_save_the_king | british_focus | 2 | 1 | 10 | GFX_focus_eng_god_save_the_king | uk.txt |
+| ENG_ceylon_forward_operating_base | british_focus | -1 | 1 | 10 | GFX_goal_generic_position_armies | uk.txt |
+| ENG_imperial_conscription | british_focus | 0 | 2 | 10 | GFX_focus_generic_commonwealth_build_infantry | uk.txt |
+| ENG_reclaim_burma | british_focus | 1 | 2 | 10 | GFX_goal_generic_occupy_states_ongoing_war | uk.txt |
+| ENG_pre_empt_the_ideological_threat | british_focus | -2 | 1 | 10 | GFX_focus_attack_soviet | uk.txt |
+| ENG_expose_the_belly_of_the_bear | british_focus | -1 | 1 | 10 | GFX_focus_eng_expose_the_belly_of_the_bear | uk.txt |
+| ENG_reclaim_the_jewel_in_the_crown | british_focus | -1 | 2 | 10 | GFX_focus_RAJ_british_investors | uk.txt |
+| ENG_consolidate_the_british_isles | british_focus | 0 | 2 | 10 | GFX_goal_generic_occupy_states_ongoing_war | uk.txt |
+| ENG_unite_the_anglosphere | british_focus | 1 | 2 | 10 | GFX_focus_eng_unite_the_anglosphere | uk.txt |
+| ENG_appeal_to_imperial_loyalists | british_focus | 1 | 1 | 10 | GFX_goal_tfv_strengthen_commonwealth_ties | uk.txt |
+| ENG_bring_the_dominions_back_into_the_fold | british_focus | 0 | 2 | 10 | GFX_focus_eng_bring_the_dominions_back_into_the_fold | uk.txt |
+| ENG_the_sun_never_sets | british_focus | 1 | 2 | 10 | GFX_focus_eng_the_sun_never_sets | uk.txt |
+| ENG_pre_empt_the_strategic_threat | british_focus | 2 | 1 | 10 | GFX_focus_attack_japan | uk.txt |
+| ENG_concessions_to_the_trade_unions | british_focus | -5 | 0 | 10 | GFX_focus_eng_concessions_to_the_trade_unions | uk.txt |
+| ENG_move_to_secure_the_dominions | british_focus | -5 | 0 | 5 | GFX_focus_eng_move_to_secure_the_dominions | uk.txt |
+| ENG_the_fate_of_the_royal_family | british_focus | -1 | 1 | 10 | GFX_goal_tfv_burn_the_royal_portraits | uk.txt |
+| ENG_eliminate_the_upper_class | british_focus | 1 | 1 | 10 | GFX_goal_generic_political_pressure | uk.txt |
+| ENG_for_the_good_of_the_revolution | british_focus | 1 | 1 | 10 | GFX_focus_generic_soviet_politics | uk.txt |
+| ENG_the_british_communist_alternative | british_focus | -2 | 1 | 5 | GFX_focus_generic_join_comintern | uk.txt |
+| ENG_enforce_decolonization | british_focus | -1 | 1 | 10 | GFX_goal_generic_forceful_treaty | uk.txt |
+| ENG_reach_out_across_the_channel | british_focus | 1 | 1 | 10 | GFX_goal_tripartite_pact | uk.txt |
+| ENG_soviet_cooperation | british_focus | 0 | 1 | 10 | GFX_focus_chi_mission_to_the_soviet_union | uk.txt |
+| ENG_the_one_true_revolution | british_focus | 0 | 1 | 10 | GFX_focus_attack_soviet | uk.txt |
+| ENG_follow_moscow | british_focus | 2 | 1 | 5 | GFX_goal_support_communism | uk.txt |
+| ENG_tackle_fascism | british_focus | -1 | 1 | 10 | GFX_focus_generic_anti_fascist_diplomacy | uk.txt |
+| ENG_preparing_the_second_front | british_focus | 0 | 1 | 10 | GFX_goal_generic_amphibious_assault | uk.txt |
+| ENG_tackle_capitalism | british_focus | 1 | 1 | 10 | GFX_focus_generic_strike_at_democracy3 | uk.txt |
+| ENG_bermuda_invasion_launch_point | british_focus | 0 | 1 | 10 | GFX_goal_generic_position_armies | uk.txt |
+| ENG_crush_the_dream | british_focus | 0 | 1 | 10 | GFX_focus_eng_crush_the_dream | uk.txt |
+| ENG_socialist_science_pool | british_focus | 3 | 1 | 10 | GFX_focus_generic_socialist_science | uk.txt |
+| ENG_liberate_the_home_of_marx | british_focus | 1 | 1 | 10 | GFX_focus_eng_liberate_the_home_of_marx | uk.txt |
+| ENG_spirit_of_the_industrial_revolution | british_focus | -3 | 1 | 10 | GFX_goal_generic_soviet_construction | uk.txt |
+| URG_terras_dictatorship | uruguay_focus | 10 | 0 | 5 | GFX_focus_generic_military_dictatorship | uruguay.txt |
+| URG_statism | uruguay_focus | 2 | 1 | 5 | GFX_focus_por_concordat | uruguay.txt |
+| URG_right_to_food_housing_and_health | uruguay_focus | 0 | 1 | 10 | GFX_goal_generic_national_unity | uruguay.txt |
+| URG_womens_vote | uruguay_focus | 0 | 1 | 5 | GFX_focus_generic_population_growth | uruguay.txt |
+| URG_prohibition_of_usury | uruguay_focus | -2 | 1 | 10 | GFX_focus_ITA_workers_unions | uruguay.txt |
+| URG_break_relations_with_the_ussr | uruguay_focus | 2 | 1 | 5 | GFX_goal_anti_comintern_pact | uruguay.txt |
+| URG_tour_to_italy | uruguay_focus | 2 | 1 | 5 | GFX_focus_befriend_italy | uruguay.txt |
+| URG_recognize_francoist_spain | uruguay_focus | 4 | 0 | 5 | GFX_focus_spa_caudillo_of_spain | uruguay.txt |
+| URG_merge_falangist_movements | uruguay_focus | 0 | 1 | 10 | GFX_focus_spa_fuse_the_parties | uruguay.txt |
+| URG_rincon_del_bonete_hydroelectric_power_station | uruguay_focus | 8 | 1 | 10 | GFX_focus_generic_hydroelectric_energy | uruguay.txt |
+| URG_allow_nazi_movements_among_german_uruguayan | uruguay_focus | 0 | 1 | 5 | GFX_focus_generic_reorient_production | uruguay.txt |
+| URG_accion_revisionista_del_uruguay | uruguay_focus | -1 | 1 | 5 | GFX_focus_generic_fascist_troops | uruguay.txt |
+| URG_force_through_corporatism | uruguay_focus | -2 | 1 | 10 | GFX_focus_ICE_state_corporatism | uruguay.txt |
+| URG_establish_the_german_uruguayan_cultural_center | uruguay_focus | 0 | 1 | 10 | GFX_goal_generic_political_pressure | uruguay.txt |
+| URG_the_fuhrmann_plan | uruguay_focus | 0 | 1 | 10 | GFX_focus_hol_war_on_pacifism | uruguay.txt |
+| URG_food_for_the_warmachine | uruguay_focus | 0 | 1 | 5 | GFX_focus_SWE_rations | uruguay.txt |
+| URG_revaluation_law | uruguay_focus | -2 | 1 | 10 | GFX_focus_generic_court | uruguay.txt |
+| URG_brou | uruguay_focus | 0 | 1 | 5 | GFX_focus_usa_reestablish_the_gold_standard | uruguay.txt |
+| URG_pay_of_all_external_debts | uruguay_focus | 0 | 1 | 5 | GFX_focus_generic_american_investments | uruguay.txt |
+| URG_ministry_of_public_works | uruguay_focus | 0 | 1 | 5 | GFX_focus_generic_improve_the_administration | uruguay.txt |
+| URG_import_substitution | uruguay_focus | 2 | 1 | 5 | GFX_goal_generic_positive_trade_relations | uruguay.txt |
+| URG_rapid_industrialization | uruguay_focus | 0 | 1 | 10 | GFX_focus_generic_modernize_industry | uruguay.txt |
+| URG_la_teja_refinery | uruguay_focus | 0 | 1 | 5 | GFX_goal_generic_oil_refinery | uruguay.txt |
+| URG_pluna | uruguay_focus | 2 | 1 | 5 | GFX_focus_generic_aircraft_production | uruguay.txt |
+| URG_conaprole | uruguay_focus | 4 | 1 | 5 | GFX_goal_generic_construct_civ_factory | uruguay.txt |
+| URG_mercado_modelo | uruguay_focus | 6 | 1 | 10 | GFX_focus_generic_industry_1 | uruguay.txt |
+| URG_colorado_victory | uruguay_focus | -11 | 0 | 5 | GFX_focus_URG_colorados | uruguay.txt |
+| URG_legacy_of_batlle | uruguay_focus | 2 | 1 | 5 | GFX_focus_URG_legacy_of_batle | uruguay.txt |
+| URG_declare_neutrality | uruguay_focus | 0 | 1 | 5 | GFX_goal_generic_neutrality_focus | uruguay.txt |
+| URG_law_no_9914 | uruguay_focus | 0 | 1 | 5 | GFX_focus_invite_finland | uruguay.txt |
+| URG_investigate_german_and_italian_cultural_organization | uruguay_focus | 2 | 0 | 5 | GFX_focus_URG_turmoil_of_paso_morlan | uruguay.txt |
+| URG_law_no_9943 | uruguay_focus | 2 | 0 | 5 | GFX_focus_generic_commonwealth_build_infantry | uruguay.txt |
+| URG_american_air_bases | uruguay_focus | 1 | 1 | 5 | GFX_focus_generic_air_defense | uruguay.txt |
+| URG_break_diplomatic_relations_with_the_axis | uruguay_focus | 2 | 0 | 5 | GFX_focus_attack_germany | uruguay.txt |
+| URG_join_the_allies | uruguay_focus | -6 | 1 | 5 | GFX_focus_chi_british_cooperation | uruguay.txt |
+| URG_a_new_constitution | uruguay_focus | -4 | 1 | 5 | GFX_focus_generic_treaty | uruguay.txt |
+| URG_the_good_coup | uruguay_focus | 0 | 1 | 5 | GFX_focus_SWE_refuge_from_war | uruguay.txt |
+| URG_legalize_the_pool | uruguay_focus | -2 | 1 | 5 | GFX_focus_mex_privatisation | uruguay.txt |
+| URG_blanco_victory | uruguay_focus | -8 | 0 | 5 | GFX_focus_URG_blancos | uruguay.txt |
+| URG_herrerismo | uruguay_focus | -1 | 1 | 5 | GFX_goal_generic_construction | uruguay.txt |
+| URG_traditionalism | uruguay_focus | 1 | 1 | 5 | GFX_focus_generic_self_management | uruguay.txt |
+| URG_americanism | uruguay_focus | 0 | 1 | 5 | GFX_focus_por_recover_latin_america | uruguay.txt |
+| URG_ruralism | uruguay_focus | 0 | 1 | 5 | GFX_focus_ARG_capitalize_the_beef_industry | uruguay.txt |
+| URG_anticentralism | uruguay_focus | 0 | 1 | 5 | GFX_focus_generic_workers_and_farmers_rise | uruguay.txt |
+| URG_anti_imperialism | uruguay_focus | 0 | 1 | 5 | GFX_focus_generic_support_the_left_right | uruguay.txt |
+| USA_continue_the_new_deal | usa_focus | 14 | 0 | 10 | GFX_focus_generic_self_management | usa.txt |
 | USA_suspend_the_presecution | usa_focus | -7 | 1 | 10 | GFX_focus_generic_diplomatic_treaty | usa.txt |
 | USA_desegregate_the_armed_forces | usa_focus | -6 | 1 | 10 | GFX_goal_generic_small_arms | usa.txt |
 | USA_full_desegregation | usa_focus | -1 | 1 | 10 | GFX_focus_generic_support_the_left_right | usa.txt |
@@ -8242,33 +9650,33 @@ Source: `common/national_focus/*.txt`
 | USA_reintegration | usa_focus | 0 | 3 | 10 | GFX_goal_generic_intelligence_exchange | usa.txt |
 | USA_reach_out_to_the_ware_group | usa_focus | 0 | 3 | 10 | GFX_goal_generic_propaganda | usa.txt |
 | USA_us_ussr_economic_cooperation | usa_focus | 0 | 5 | 10 | GFX_goal_generic_soviet_construction | usa.txt |
-| USA_unholy_alliance | usa_focus |  |  |  | GFX_focus_chi_mission_to_the_soviet_union | usa.txt |
+| USA_unholy_alliance | usa_focus | 0 | 3 | 10 | GFX_focus_chi_mission_to_the_soviet_union | usa.txt |
 | USA_secure_china | usa_focus | 2 | 3 | 10 | GFX_focus_chi_cooperation_with_the_communists | usa.txt |
 | USA_end_monarchism | usa_focus | 4 | 1 | 10 | GFX_focus_rom_abdicate | usa.txt |
 | USA_shatter_the_empires | usa_focus | 4 | 2 | 10 | GFX_goal_tfv_saf_anti_colonialist_crusade | usa.txt |
-| USA_wpa | usa_focus | -4 | 1 |  | GFX_goal_generic_production | usa.txt |
+| USA_wpa | usa_focus | -4 | 1 | 10 | GFX_goal_generic_production | usa.txt |
 | USA_agricultural_adjustment_act | usa_focus | 0 | 1 | 10 | GFX_goal_generic_consumer_goods | usa.txt |
 | USA_fair_labour_standards_act | usa_focus | 0 | 2 | 10 | GFX_focus_eng_concessions_to_the_trade_unions | usa.txt |
 | USA_federal_housing_act | usa_focus | 0 | 3 | 10 | GFX_goal_generic_construct_civilian | usa.txt |
 | USA_office_of_scientific_research_and_development | usa_focus | 2 | 1 | 10 | GFX_focus_research | usa.txt |
-| USA_rubber_reserve_company | usa_focus |  |  |  | GFX_focus_generic_rubber | usa.txt |
-| USA_limited_intervention | usa_focus | 0 | 1 |  | GFX_goal_generic_territory_or_war | usa.txt |
-| USA_war_propaganda | usa_focus |  |  |  | GFX_goal_generic_propaganda | usa.txt |
-| USA_focus_on_europe | usa_focus | -1 | 3 |  | GFX_focus_usa_focus_on_europe | usa.txt |
-| USA_office_of_strategic_services | usa_focus |  |  |  | GFX_goal_generic_major_war | usa.txt |
-| USA_focus_on_asia | usa_focus | 1 | 3 |  | GFX_focus_usa_focus_on_asia | usa.txt |
-| USA_magic | usa_focus | 1 | 4 |  | GFX_goal_generic_radar | usa.txt |
-| USA_black_chamber | usa_focus | 1 | 3 |  | GFX_goal_generic_military_deal | usa.txt |
-| USA_scientist_haven | usa_focus | 1 | 1 |  | GFX_focus_research | usa.txt |
+| USA_rubber_reserve_company | usa_focus | 2 | 2 | 10 | GFX_focus_generic_rubber | usa.txt |
+| USA_limited_intervention | usa_focus | 0 | 1 | 10 | GFX_goal_generic_territory_or_war | usa.txt |
+| USA_war_propaganda | usa_focus | 0 | 2 | 10 | GFX_goal_generic_propaganda | usa.txt |
+| USA_focus_on_europe | usa_focus | -1 | 3 | 10 | GFX_focus_usa_focus_on_europe | usa.txt |
+| USA_office_of_strategic_services | usa_focus | -1 | 4 | 10 | GFX_goal_generic_major_war | usa.txt |
+| USA_focus_on_asia | usa_focus | 1 | 3 | 10 | GFX_focus_usa_focus_on_asia | usa.txt |
+| USA_magic | usa_focus | 1 | 4 | 10 | GFX_goal_generic_radar | usa.txt |
+| USA_black_chamber | usa_focus | 1 | 3 | 10 | GFX_goal_generic_military_deal | usa.txt |
+| USA_scientist_haven | usa_focus | 1 | 1 | 10 | GFX_focus_research | usa.txt |
 | USA_manhattan_project | usa_focus | 0 | 1 | 10 | GFX_focus_wonderweapons | usa.txt |
-| USA_neutrality_act | usa_focus | 4 | 1 |  | GFX_goal_generic_neutrality_focus | usa.txt |
-| USA_lend_lease_act | usa_focus | 2 | 2 |  | GFX_focus_generic_treaty | usa.txt |
-| USA_arsenal_of_democracy | usa_focus | 0 | 2 |  | GFX_goal_support_democracy | usa.txt |
-| USA_the_giant_wakes | usa_focus |  |  |  | GFX_goal_generic_construct_civ_factory | usa.txt |
+| USA_neutrality_act | usa_focus | 4 | 1 | 10 | GFX_goal_generic_neutrality_focus | usa.txt |
+| USA_lend_lease_act | usa_focus | 2 | 2 | 10 | GFX_focus_generic_treaty | usa.txt |
+| USA_arsenal_of_democracy | usa_focus | 0 | 2 | 10 | GFX_goal_support_democracy | usa.txt |
+| USA_the_giant_wakes | usa_focus | 0 | 2 | 10 | GFX_goal_generic_construct_civ_factory | usa.txt |
 | USA_wartime_industry | usa_focus | 0 | 2 | 10 | GFX_goal_generic_construct_mil_factory | usa.txt |
-| USA_military_construction | usa_focus |  |  |  | GFX_goal_generic_build_tank | usa.txt |
-| USA_USACE_projects | usa_focus |  |  |  | GFX_goal_generic_production | usa.txt |
-| USA_reestablish_the_gold_standard | usa_focus | 18 | 0 |  | GFX_focus_usa_reestablish_the_gold_standard | usa.txt |
+| USA_military_construction | usa_focus | 1 | 1 | 10 | GFX_goal_generic_build_tank | usa.txt |
+| USA_USACE_projects | usa_focus | 0 | 2 | 10 | GFX_goal_generic_production | usa.txt |
+| USA_reestablish_the_gold_standard | usa_focus | 18 | 0 | 10 | GFX_focus_usa_reestablish_the_gold_standard | usa.txt |
 | USA_adjusted_compensation_act | usa_focus | 2 | 1 | 10 | GFX_goal_generic_consumer_goods | usa.txt |
 | USA_labour_management_relations_act | usa_focus | 0 | 1 | 10 | GFX_focus_generic_military_academy | usa.txt |
 | USA_protectionist_tariffs | usa_focus | 0 | 2 | 10 | GFX_goal_generic_defence | usa.txt |
@@ -8299,7 +9707,7 @@ Source: `common/national_focus/*.txt`
 | USA_pacific_pacification | usa_focus | 1 | 4 | 10 | GFX_focus_generic_coastal_fort | usa.txt |
 | USA_secure_asia | usa_focus | 1 | 5 | 10 | GFX_focus_generic_strike_at_democracy1 | usa.txt |
 | USA_global_hegemony | usa_focus | 0 | 6 | 10 | GFX_focus_generic_diplomatic_treaty | usa.txt |
-| USA_war_plans_division | usa_focus | 42 | 0 |  | GFX_goal_generic_position_armies | usa.txt |
+| USA_war_plans_division | usa_focus | 42 | 0 | 10 | GFX_goal_generic_position_armies | usa.txt |
 | USA_intervention_in_the_americas | usa_focus | -4 | 1 | 10 | GFX_goal_generic_occupy_states_ongoing_war | usa.txt |
 | USA_war_plan_green | usa_focus | -1 | 1 | 10 | GFX_focus_attack_mexico | usa.txt |
 | USA_war_plan_crimson | usa_focus | 1 | 1 | 10 | GFX_focus_attack_canada | usa.txt |
@@ -8309,17 +9717,17 @@ Source: `common/national_focus/*.txt`
 | USA_intervention_in_europe | usa_focus | 0 | 1 | 10 | GFX_goal_generic_territory_or_war | usa.txt |
 | USA_war_plan_gold | usa_focus | -2 | 2 | 10 | GFX_focus_attack_france | usa.txt |
 | USA_war_plan_silver | usa_focus | -1 | 1 | 10 | GFX_focus_attack_italy | usa.txt |
-| USA_war_plan_black | usa_focus |  |  |  | GFX_focus_attack_germany | usa.txt |
-| USA_destroyers_for_bases | usa_focus |  |  |  | GFX_goal_generic_navy_cruiser | usa.txt |
-| USA_war_plan_white | usa_focus |  |  |  | GFX_focus_attack_soviet | usa.txt |
+| USA_war_plan_black | usa_focus | 0 | 2 | 10 | GFX_focus_attack_germany | usa.txt |
+| USA_destroyers_for_bases | usa_focus | 0 | 1 | 10 | GFX_goal_generic_navy_cruiser | usa.txt |
+| USA_war_plan_white | usa_focus | 2 | 2 | 10 | GFX_focus_attack_soviet | usa.txt |
 | USA_anti_bolshevist_aid | usa_focus | 2 | 3 | 10 | GFX_goal_generic_war_with_comintern | usa.txt |
-| USA_war_plan_red | usa_focus |  |  |  | GFX_focus_attack_britain | usa.txt |
+| USA_war_plan_red | usa_focus | 4 | 2 | 10 | GFX_focus_attack_britain | usa.txt |
 | USA_war_plan_ruby | usa_focus | 4 | 3 | 10 | GFX_focus_attack_india | usa.txt |
 | USA_war_plan_scarlet_garnet | usa_focus | 6 | 3 | 10 | GFX_focus_attack_australia | usa.txt |
 | USA_intervention_in_asia | usa_focus | 6 | 1 | 10 | GFX_goal_generic_major_war | usa.txt |
-| USA_war_plan_orange | usa_focus |  |  |  | GFX_focus_attack_japan | usa.txt |
+| USA_war_plan_orange | usa_focus | -1 | 1 | 10 | GFX_focus_attack_japan | usa.txt |
 | USA_war_plan_yellow | usa_focus | 1 | 1 | 10 | GFX_focus_attack_china | usa.txt |
-| USA_defense_of_the_pacific | usa_focus |  |  |  | GFX_goal_generic_occupy_states_coastal | usa.txt |
+| USA_defense_of_the_pacific | usa_focus | 0 | 2 | 10 | GFX_goal_generic_occupy_states_coastal | usa.txt |
 | USA_war_department | usa_focus | 16 | 0 | 10 | GFX_goal_generic_army_doctrines | usa.txt |
 | USA_selective_training_act | usa_focus | -5 | 1 | 10 | GFX_focus_generic_military_mission | usa.txt |
 | USA_first_special_service_force | usa_focus | -2 | 1 | 10 | GFX_goal_generic_special_forces | usa.txt |
@@ -8339,7 +9747,7 @@ Source: `common/national_focus/*.txt`
 | USA_strategic_bombing | usa_focus | 1 | 1 | 10 | GFX_goal_generic_occupy_start_war | usa.txt |
 | USA_TAC | usa_focus | 0 | 2 | 10 | GFX_goal_generic_air_doctrine | usa.txt |
 | USA_CAS | usa_focus | -1 | 1 | 10 | GFX_goal_generic_CAS | usa.txt |
-| USA_combined_bomber_offensive | usa_focus |  |  |  | GFX_goal_generic_air_bomber | usa.txt |
+| USA_combined_bomber_offensive | usa_focus | 0 | 2 | 10 | GFX_goal_generic_air_bomber | usa.txt |
 | USA_escort_fighters | usa_focus | 0 | 2 | 10 | GFX_focus_usa_escort_fighters | usa.txt |
 | USA_us_army_airforce | usa_focus | -1 | 4 | 10 | GFX_focus_generic_strike_at_democracy1 | usa.txt |
 | USA_us_air_force | usa_focus | 1 | 4 | 10 | GFX_goal_generic_build_airforce | usa.txt |
@@ -8360,30 +9768,30 @@ Source: `common/national_focus/*.txt`
 | USA_fund_the_navy | usa_focus | 7 | 1 | 5 | GFX_goal_generic_construct_naval_dockyard | usa.txt |
 | USA_expand_the_USMC | usa_focus | 0 | 1 | 10 | GFX_goal_generic_special_forces | usa.txt |
 | USA_amphibious_operations | usa_focus | 0 | 1 | 10 | GFX_goal_generic_amphibious_assault | usa.txt |
-| VIC_emergency_powers_to_petain | vichy_french_focus | 18 | 0 |  | GFX_goal_generic_demand_territory | vichy_france.txt |
-| VIC_the_national_revolution | vichy_french_focus | -5 | 1 |  | GFX_focus_generic_strike_at_democracy1 | vichy_france.txt |
-| VIC_long_term_economic_planning | vichy_french_focus | -2 | 1 |  | GFX_goal_generic_construct_civilian | vichy_france.txt |
-| VIC_aid_small_businesses | vichy_french_focus | 0 | 2 |  | GFX_goal_generic_consumer_goods | vichy_france.txt |
-| VIC_venerate_the_craftsman | vichy_french_focus | 0 | 2 |  | GFX_goal_generic_production | vichy_france.txt |
-| VIC_down_with_marianne | vichy_french_focus | 0 | 1 |  | GFX_focus_focus_fra_down_marianne | vichy_france.txt |
-| VIC_up_with_jean_darc | vichy_french_focus | 0 | 2 |  | GFX_focus_up_joan_of_arc | vichy_france.txt |
-| VIC_celebrate_motherhood | vichy_french_focus | 0 | 2 |  | GFX_goal_generic_propaganda | vichy_france.txt |
-| VIC_prosecute_the_losers | vichy_french_focus | 2 | 1 |  | GFX_goal_generic_neutrality_focus | vichy_france.txt |
-| VIC_concessions_to_the_germans | vichy_french_focus | 0 | 2 |  | GFX_focus_chi_mission_to_germany | vichy_france.txt |
-| VIC_mandatory_work_service | vichy_french_focus | 0 | 2 |  | GFX_goal_generic_construction2 | vichy_france.txt |
-| VIC_a_nation_reborn | vichy_french_focus | 0 | 2 |  | GFX_goal_support_fascism | vichy_france.txt |
-| VIC_end_the_occupation | vichy_french_focus | 0 | 2 |  | GFX_goal_generic_territory_or_war | vichy_france.txt |
-| VIC_the_national_bureau_of_statistics | vichy_french_focus | -2 | 1 |  | GFX_focus_generic_treaty | vichy_france.txt |
-| VIC_the_legionary_service_order | vichy_french_focus | 0 | 1 |  | GFX_goal_generic_small_arms | vichy_france.txt |
-| VIC_form_the_milice | vichy_french_focus | -1 | 2 |  | GFX_focus_fra_milice | vichy_france.txt |
-| VIC_anti_bolshevist_volunteers | vichy_french_focus | 1 | 2 |  | GFX_focus_generic_military_mission | vichy_france.txt |
-| VIC_rebuild_the_military | vichy_french_focus | 4 | 1 |  | GFX_goal_generic_construct_mil_factory | vichy_france.txt |
-| VIC_finish_the_naval_buildup | vichy_french_focus | -2 | 1 |  | GFX_goal_generic_construct_naval_dockyard | vichy_france.txt |
-| VIC_hidden_materials | vichy_french_focus | 0 | 1 |  | GFX_focus_secret_rearmament | vichy_france.txt |
-| VIC_analyze_our_defeat | vichy_french_focus | 0 | 2 |  | GFX_goal_generic_army_doctrines | vichy_france.txt |
-| VIC_modernize_the_airforce | vichy_french_focus | 2 | 1 |  | GFX_goal_generic_air_doctrine | vichy_france.txt |
-| VIC_learn_from_the_enemy | vichy_french_focus | 0 | 1 |  | GFX_focus_research2 | vichy_france.txt |
-| VIC_buy_from_the_enemy | vichy_french_focus | 0 | 2 |  | GFX_goal_generic_air_fighter | vichy_france.txt |
+| VIC_emergency_powers_to_petain | vichy_french_focus | 18 | 0 | 10 | GFX_goal_generic_demand_territory | vichy_france.txt |
+| VIC_the_national_revolution | vichy_french_focus | -5 | 1 | 10 | GFX_focus_generic_strike_at_democracy1 | vichy_france.txt |
+| VIC_long_term_economic_planning | vichy_french_focus | -2 | 1 | 10 | GFX_goal_generic_construct_civilian | vichy_france.txt |
+| VIC_aid_small_businesses | vichy_french_focus | 0 | 2 | 10 | GFX_goal_generic_consumer_goods | vichy_france.txt |
+| VIC_venerate_the_craftsman | vichy_french_focus | 0 | 2 | 10 | GFX_goal_generic_production | vichy_france.txt |
+| VIC_down_with_marianne | vichy_french_focus | 0 | 1 | 10 | GFX_focus_focus_fra_down_marianne | vichy_france.txt |
+| VIC_up_with_jean_darc | vichy_french_focus | 0 | 2 | 10 | GFX_focus_up_joan_of_arc | vichy_france.txt |
+| VIC_celebrate_motherhood | vichy_french_focus | 0 | 2 | 10 | GFX_goal_generic_propaganda | vichy_france.txt |
+| VIC_prosecute_the_losers | vichy_french_focus | 2 | 1 | 10 | GFX_goal_generic_neutrality_focus | vichy_france.txt |
+| VIC_concessions_to_the_germans | vichy_french_focus | 0 | 2 | 10 | GFX_focus_chi_mission_to_germany | vichy_france.txt |
+| VIC_mandatory_work_service | vichy_french_focus | 0 | 2 | 10 | GFX_goal_generic_construction2 | vichy_france.txt |
+| VIC_a_nation_reborn | vichy_french_focus | 0 | 2 | 10 | GFX_goal_support_fascism | vichy_france.txt |
+| VIC_end_the_occupation | vichy_french_focus | 0 | 2 | 10 | GFX_goal_generic_territory_or_war | vichy_france.txt |
+| VIC_the_national_bureau_of_statistics | vichy_french_focus | -2 | 1 | 10 | GFX_focus_generic_treaty | vichy_france.txt |
+| VIC_the_legionary_service_order | vichy_french_focus | 0 | 1 | 10 | GFX_goal_generic_small_arms | vichy_france.txt |
+| VIC_form_the_milice | vichy_french_focus | -1 | 2 | 10 | GFX_focus_fra_milice | vichy_france.txt |
+| VIC_anti_bolshevist_volunteers | vichy_french_focus | 1 | 2 | 10 | GFX_focus_generic_military_mission | vichy_france.txt |
+| VIC_rebuild_the_military | vichy_french_focus | 4 | 1 | 10 | GFX_goal_generic_construct_mil_factory | vichy_france.txt |
+| VIC_finish_the_naval_buildup | vichy_french_focus | -2 | 1 | 10 | GFX_goal_generic_construct_naval_dockyard | vichy_france.txt |
+| VIC_hidden_materials | vichy_french_focus | 0 | 1 | 10 | GFX_focus_secret_rearmament | vichy_france.txt |
+| VIC_analyze_our_defeat | vichy_french_focus | 0 | 2 | 10 | GFX_goal_generic_army_doctrines | vichy_france.txt |
+| VIC_modernize_the_airforce | vichy_french_focus | 2 | 1 | 10 | GFX_goal_generic_air_doctrine | vichy_france.txt |
+| VIC_learn_from_the_enemy | vichy_french_focus | 0 | 1 | 10 | GFX_focus_research2 | vichy_france.txt |
+| VIC_buy_from_the_enemy | vichy_french_focus | 0 | 2 | 10 | GFX_goal_generic_air_fighter | vichy_france.txt |
 | YUG_western_focus | yugoslavian_focus | 2 | 0 | 10 | GFX_goal_generic_position_armies | yugoslavia.txt |
 | YUG_friendship_treaty_with_italy | yugoslavian_focus | -2 | 1 | 5 | GFX_goal_generic_improve_relations | yugoslavia.txt |
 | YUG_reinforce_old_alliances | yugoslavian_focus | 2 | 1 | 10 | GFX_goal_generic_major_alliance | yugoslavia.txt |

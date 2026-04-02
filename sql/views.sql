@@ -154,7 +154,6 @@ SELECT
     t.start_year,
     t.research_cost,
     t.folder_name,
-    t.dlc_source,
     COALESCE((
         SELECT jsonb_agg(tp.prerequisite_key ORDER BY tp.prerequisite_key)
         FROM technology_prerequisites tp

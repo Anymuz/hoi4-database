@@ -18,23 +18,7 @@ ARG,Armada Argentina,Armada Argentina,ARA Tucumán,destroyer,ship_hull_light_2,A
 ARG,Armada Argentina,Flotilla de Submarinos,ARA Santa Fe,submarine,ship_hull_submarine_1,ARG,Santa Fe Class,no,ARG_1936_naval_mtg.txt
 ARG,Armada Argentina,Flotilla de Submarinos,ARA Santiago del Estero,submarine,ship_hull_submarine_1,ARG,Santa Fe Class,no,ARG_1936_naval_mtg.txt
 ARG,Armada Argentina,Flotilla de Submarinos,ARA Salta,submarine,ship_hull_submarine_1,ARG,Santa Fe Class,no,ARG_1936_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA Rivadavia,battleship,ship_hull_heavy_1,ARG,Rivadavia Class,yes,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA Moreno,battleship,ship_hull_heavy_1,ARG,Rivadavia Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA Veinticinco de Mayo,heavy_cruiser,ship_hull_cruiser_1,ARG,Veinticinco de Mayo Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA Almirante Brown,heavy_cruiser,ship_hull_cruiser_1,ARG,Veinticinco de Mayo Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA Pueyrredon,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,ARG,Garibaldi Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA Libertad,light_cruiser,ship_hull_cruiser_coastal_defense_ship,ARG,Libertad Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA Independencia,light_cruiser,ship_hull_cruiser_coastal_defense_ship,ARG,Libertad Class,no,ARG_1939_naval_mtg.txt
 ARG,Armada Argentina,Armada Argentina,ARA La Argentina,light_cruiser,ship_hull_cruiser_1,ARG,La Argentina Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA Catamarca,destroyer,ship_hull_light_1,ARG,Catamarca Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA Jujuy,destroyer,ship_hull_light_1,ARG,Catamarca Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA Córdoba,destroyer,ship_hull_light_1,ARG,Catamarca Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA La Plata,destroyer,ship_hull_light_1,ARG,Catamarca Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA Cervantes,destroyer,ship_hull_light_2,ARG,Cervantes Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA Juan de Garay,destroyer,ship_hull_light_2,ARG,Cervantes Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA Mendoza,destroyer,ship_hull_light_2,ARG,Mendoza Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA La Rioja,destroyer,ship_hull_light_2,ARG,Mendoza Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Armada Argentina,ARA Tucumán,destroyer,ship_hull_light_2,ARG,Mendoza Class,no,ARG_1939_naval_mtg.txt
 ARG,Armada Argentina,Armada Argentina,ARA Buenos Aires,destroyer,ship_hull_light_2,ARG,Buenos Aires Class,no,ARG_1939_naval_mtg.txt
 ARG,Armada Argentina,Armada Argentina,ARA Entre Rios,destroyer,ship_hull_light_2,ARG,Buenos Aires Class,no,ARG_1939_naval_mtg.txt
 ARG,Armada Argentina,Armada Argentina,ARA Corrientes,destroyer,ship_hull_light_2,ARG,Buenos Aires Class,no,ARG_1939_naval_mtg.txt
@@ -42,9 +26,6 @@ ARG,Armada Argentina,Armada Argentina,ARA San Juan,destroyer,ship_hull_light_2,A
 ARG,Armada Argentina,Armada Argentina,ARA San Luis,destroyer,ship_hull_light_2,ARG,Buenos Aires Class,no,ARG_1939_naval_mtg.txt
 ARG,Armada Argentina,Armada Argentina,ARA Misiones,destroyer,ship_hull_light_2,ARG,Buenos Aires Class,no,ARG_1939_naval_mtg.txt
 ARG,Armada Argentina,Armada Argentina,ARA Santa Cruz,destroyer,ship_hull_light_2,ARG,Buenos Aires Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Flotilla de Submarinos,ARA Santa Fe,submarine,ship_hull_submarine_1,ARG,Santa Fe Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Flotilla de Submarinos,ARA Santiago del Estero,submarine,ship_hull_submarine_1,ARG,Santa Fe Class,no,ARG_1939_naval_mtg.txt
-ARG,Armada Argentina,Flotilla de Submarinos,ARA Salta,submarine,ship_hull_submarine_1,ARG,Santa Fe Class,no,ARG_1939_naval_mtg.txt
 AST,Royal Australian Navy,Australian Squadron,HMAS Canberra,heavy_cruiser,ship_hull_cruiser_1,AST,Canberra Class,no,AST_1936_naval.txt
 AST,Royal Australian Navy,Australian Squadron,HMAS Australia,heavy_cruiser,ship_hull_cruiser_1,AST,Canberra Class,yes,AST_1936_naval.txt
 AST,Royal Australian Navy,Australian Squadron,HMAS Sydney,light_cruiser,ship_hull_cruiser_2,AST,Sydney Class,no,AST_1936_naval.txt
@@ -54,17 +35,8 @@ AST,Royal Australian Navy,Australian Squadron,HMAS Vendetta,destroyer,ship_hull_
 AST,Royal Australian Navy,Australian Squadron,HMAS Voyager,destroyer,ship_hull_light_1,AST,V/W Class,no,AST_1936_naval.txt
 AST,Royal Australian Navy,Australian Squadron,HMAS Waterhen,destroyer,ship_hull_light_1,AST,V/W Class,no,AST_1936_naval.txt
 AST,Royal Australian Navy,Australian Squadron,HMAS Stuart,destroyer,ship_hull_light_1,AST,S Class,no,AST_1936_naval.txt
-AST,Royal Australian Navy,Australian Squadron,HMAS Canberra,heavy_cruiser,ship_hull_cruiser_1,AST,Canberra Class,no,AST_1939_naval.txt
-AST,Royal Australian Navy,Australian Squadron,HMAS Australia,heavy_cruiser,ship_hull_cruiser_1,AST,Canberra Class,no,AST_1939_naval.txt
-AST,Royal Australian Navy,Australian Squadron,HMAS Sydney,light_cruiser,ship_hull_cruiser_2,AST,Sydney Class,no,AST_1939_naval.txt
 AST,Royal Australian Navy,Australian Squadron,HMAS Hobart,light_cruiser,ship_hull_cruiser_2,AST,Sydney Class,no,AST_1939_naval.txt
 AST,Royal Australian Navy,Australian Squadron,HMAS Perth,light_cruiser,ship_hull_cruiser_2,AST,Sydney Class,no,AST_1939_naval.txt
-AST,Royal Australian Navy,Australian Squadron,HMAS Adelaide,light_cruiser,ship_hull_cruiser_1,AST,Town Class,no,AST_1939_naval.txt
-AST,Royal Australian Navy,Australian Squadron,HMAS Vampire,destroyer,ship_hull_light_1,AST,V/W Class,no,AST_1939_naval.txt
-AST,Royal Australian Navy,Australian Squadron,HMAS Vendetta,destroyer,ship_hull_light_1,AST,V/W Class,no,AST_1939_naval.txt
-AST,Royal Australian Navy,Australian Squadron,HMAS Voyager,destroyer,ship_hull_light_1,AST,V/W Class,no,AST_1939_naval.txt
-AST,Royal Australian Navy,Australian Squadron,HMAS Waterhen,destroyer,ship_hull_light_1,AST,V/W Class,no,AST_1939_naval.txt
-AST,Royal Australian Navy,Australian Squadron,HMAS Stuart,destroyer,ship_hull_light_1,AST,S Class,no,AST_1939_naval.txt
 BRA,Marinha do Brasil,Marinha do Brasil,NRB Minas Geraes,battleship,ship_hull_heavy_1,BRA,Minas Geraes Class,yes,BRA_1936_naval.txt
 BRA,Marinha do Brasil,Marinha do Brasil,NRB São Paulo,battleship,ship_hull_heavy_1,BRA,Minas Geraes Class,no,BRA_1936_naval.txt
 BRA,Marinha do Brasil,Marinha do Brasil,NRB Bahia,light_cruiser,ship_hull_cruiser_1,BRA,Bahia Class,no,BRA_1936_naval.txt
@@ -78,19 +50,6 @@ BRA,Marinha do Brasil,Marinha do Brasil,NRB Sergipe,destroyer,ship_hull_light_1,
 BRA,Marinha do Brasil,Marinha do Brasil,NRB Santa Catharina,destroyer,ship_hull_light_1,BRA,Para Class,no,BRA_1936_naval.txt
 BRA,Marinha do Brasil,Marinha do Brasil,NRB Mato Grosso,destroyer,ship_hull_light_1,BRA,Para Class,no,BRA_1936_naval.txt
 BRA,Marinha do Brasil,Flotilha de Submarinos,NRB Humaytá,submarine,ship_hull_submarine_2,BRA,Humaytá Class,no,BRA_1936_naval.txt
-BRA,Marinha do Brasil,Marinha do Brasil,NRB Minas Geraes,battleship,ship_hull_heavy_1,BRA,Minas Geraes Class,yes,BRA_1939_naval.txt
-BRA,Marinha do Brasil,Marinha do Brasil,NRB São Paulo,battleship,ship_hull_heavy_1,BRA,Minas Geraes Class,no,BRA_1939_naval.txt
-BRA,Marinha do Brasil,Marinha do Brasil,NRB Bahia,light_cruiser,ship_hull_cruiser_1,BRA,Bahia Class,no,BRA_1939_naval.txt
-BRA,Marinha do Brasil,Marinha do Brasil,NRB Rio Grande do Sul,light_cruiser,ship_hull_cruiser_1,BRA,Bahia Class,no,BRA_1939_naval.txt
-BRA,Marinha do Brasil,Marinha do Brasil,NRB Piaui,destroyer,ship_hull_light_1,BRA,Para Class,no,BRA_1939_naval.txt
-BRA,Marinha do Brasil,Marinha do Brasil,NRB Rio Grande do Norte,destroyer,ship_hull_light_1,BRA,Para Class,no,BRA_1939_naval.txt
-BRA,Marinha do Brasil,Marinha do Brasil,NRB Paraíba,destroyer,ship_hull_light_1,BRA,Para Class,no,BRA_1939_naval.txt
-BRA,Marinha do Brasil,Marinha do Brasil,NRB Alagoas,destroyer,ship_hull_light_1,BRA,Para Class,no,BRA_1939_naval.txt
-BRA,Marinha do Brasil,Marinha do Brasil,NRB Marnhão,destroyer,ship_hull_light_1,BRA,Para Class,no,BRA_1939_naval.txt
-BRA,Marinha do Brasil,Marinha do Brasil,NRB Sergipe,destroyer,ship_hull_light_1,BRA,Para Class,no,BRA_1939_naval.txt
-BRA,Marinha do Brasil,Marinha do Brasil,NRB Santa Catharina,destroyer,ship_hull_light_1,BRA,Para Class,no,BRA_1939_naval.txt
-BRA,Marinha do Brasil,Marinha do Brasil,NRB Mato Grosso,destroyer,ship_hull_light_1,BRA,Para Class,no,BRA_1939_naval.txt
-BRA,Marinha do Brasil,Flotilha de Submarinos,NRB Humaytá,submarine,ship_hull_submarine_2,BRA,Humaytá Class,no,BRA_1939_naval.txt
 BRA,Marinha do Brasil,Flotilha de Submarinos,NRB Tupi,submarine,ship_hull_submarine_2,BRA,Tupi Class,no,BRA_1939_naval.txt
 BRA,Marinha do Brasil,Flotilha de Submarinos,NRB Timbira,submarine,ship_hull_submarine_2,BRA,Tupi Class,no,BRA_1939_naval.txt
 BRA,Marinha do Brasil,Flotilha de Submarinos,NRB Tamoio,submarine,ship_hull_submarine_2,BRA,Tupi Class,no,BRA_1939_naval.txt
@@ -134,30 +93,8 @@ CHL,Armada de Chile,Flotilla de Submarinos nro. 1,BACH Guale,submarine,ship_hull
 CHL,Armada de Chile,Flotilla de Submarinos nro. 2,BACH Capitán O`Brien,submarine,ship_hull_submarine_1,CHL,Capitán O'Brien Class,no,CHL_1936_naval_mtg.txt
 CHL,Armada de Chile,Flotilla de Submarinos nro. 2,BACH Almirante Simpson,submarine,ship_hull_submarine_1,CHL,Capitán O'Brien Class,no,CHL_1936_naval_mtg.txt
 CHL,Armada de Chile,Flotilla de Submarinos nro. 2,BACH Capitán Thomson,submarine,ship_hull_submarine_1,CHL,Capitán O'Brien Class,no,CHL_1936_naval_mtg.txt
-CHL,Armada de Chile,Armada de Chile,BACH Almirante Latorre,battleship,ship_hull_heavy_1,CHL,Almirante Latorre Class,yes,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Armada de Chile,BACH O'Higgins,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,CHL,O'Higgins Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Armada de Chile,BACH Chacabuco,light_cruiser,ship_hull_cruiser_coastal_defense_ship,CHL,Chacabuco Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Armada de Chile,BACH Almirante Lynch,destroyer,ship_hull_light_1,CHL,Almirante Lynch Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Armada de Chile,BACH Almirante Condell,destroyer,ship_hull_light_1,CHL,Almirante Lynch Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Armada de Chile,BACH Aldea,destroyer,ship_hull_light_1,CHL,Serrano Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Armada de Chile,BACH Hyatt,destroyer,ship_hull_light_1,CHL,Serrano Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Armada de Chile,BACH Orella,destroyer,ship_hull_light_1,CHL,Serrano Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Armada de Chile,BACH Requelme,destroyer,ship_hull_light_1,CHL,Serrano Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Armada de Chile,BACH Serrano,destroyer,ship_hull_light_1,CHL,Serrano Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Armada de Chile,BACH Videla,destroyer,ship_hull_light_1,CHL,Serrano Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Flotilla de Submarinos nro. 1,BACH Gualcolda,submarine,ship_hull_submarine_1,CHL,H1 Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Flotilla de Submarinos nro. 1,BACH Tegualda,submarine,ship_hull_submarine_1,CHL,H1 Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Flotilla de Submarinos nro. 1,BACH Rucumilla,submarine,ship_hull_submarine_1,CHL,H1 Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Flotilla de Submarinos nro. 1,BACH Quidora,submarine,ship_hull_submarine_1,CHL,H1 Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Flotilla de Submarinos nro. 1,BACH Fresia,submarine,ship_hull_submarine_1,CHL,H1 Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Flotilla de Submarinos nro. 1,BACH Guale,submarine,ship_hull_submarine_1,CHL,H1 Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Flotilla de Submarinos nro. 2,BACH Capitán O`Brien,submarine,ship_hull_submarine_1,CHL,Capitán O'Brien Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Flotilla de Submarinos nro. 2,BACH Almirante Simpson,submarine,ship_hull_submarine_1,CHL,Capitán O'Brien Class,no,CHL_1939_naval_mtg.txt
-CHL,Armada de Chile,Flotilla de Submarinos nro. 2,BACH Capitán Thomson,submarine,ship_hull_submarine_1,CHL,Capitán O'Brien Class,no,CHL_1939_naval_mtg.txt
 COL,Armada Nacional,Armada Nacional,ARC Antioquia,destroyer,ship_hull_light_1,COL,Antioquia Class,no,COL_1936_naval_mtg.txt
 COL,Armada Nacional,Armada Nacional,ARC Caldas,destroyer,ship_hull_light_1,COL,Antioquia Class,no,COL_1936_naval_mtg.txt
-COL,Armada Nacional,Armada Nacional,ARC Antioquia,destroyer,ship_hull_light_1,COL,Antioquia Class,no,COL_1939_naval_mtg.txt
-COL,Armada Nacional,Armada Nacional,ARC Caldas,destroyer,ship_hull_light_1,COL,Antioquia Class,no,COL_1939_naval_mtg.txt
 DEN,Den Danske Flåde,Den Danske Flåde,HDMS Niels Iuel,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,DEN,Niels Iuel Class,yes,DEN_1936_naval_mtg.txt
 DEN,Den Danske Flåde,Den Danske Flåde,HDMS Peder Skram,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,DEN,Herluf Trolle Class,no,DEN_1936_naval_mtg.txt
 DEN,Den Danske Flåde,Den Danske Flåde,HDMS Rota,submarine,ship_hull_submarine_1,DEN,Rota Class,no,DEN_1936_naval_mtg.txt
@@ -165,13 +102,6 @@ DEN,Den Danske Flåde,Den Danske Flåde,HDMS Bellona,submarine,ship_hull_submari
 DEN,Den Danske Flåde,Den Danske Flåde,HDMS Flora,submarine,ship_hull_submarine_1,DEN,Rota Class,no,DEN_1936_naval_mtg.txt
 DEN,Den Danske Flåde,Den Danske Flåde,HDMS Daphne,submarine,ship_hull_submarine_1,DEN,Rota Class,no,DEN_1936_naval_mtg.txt
 DEN,Den Danske Flåde,Den Danske Flåde,HDMS Dryaden,submarine,ship_hull_submarine_1,DEN,Rota Class,no,DEN_1936_naval_mtg.txt
-DEN,Den Danske Flåde,Den Danske Flåde,HDMS Niels Iuel,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,DEN,Niels Iuel Class,yes,DEN_1939_naval_mtg.txt
-DEN,Den Danske Flåde,Den Danske Flåde,HDMS Peder Skram,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,DEN,Herluf Trolle Class,no,DEN_1939_naval_mtg.txt
-DEN,Den Danske Flåde,Den Danske Flåde,HDMS Rota,submarine,ship_hull_submarine_1,DEN,Rota Class,no,DEN_1939_naval_mtg.txt
-DEN,Den Danske Flåde,Den Danske Flåde,HDMS Bellona,submarine,ship_hull_submarine_1,DEN,Rota Class,no,DEN_1939_naval_mtg.txt
-DEN,Den Danske Flåde,Den Danske Flåde,HDMS Flora,submarine,ship_hull_submarine_1,DEN,Rota Class,no,DEN_1939_naval_mtg.txt
-DEN,Den Danske Flåde,Den Danske Flåde,HDMS Daphne,submarine,ship_hull_submarine_1,DEN,Rota Class,no,DEN_1939_naval_mtg.txt
-DEN,Den Danske Flåde,Den Danske Flåde,HDMS Dryaden,submarine,ship_hull_submarine_1,DEN,Rota Class,no,DEN_1939_naval_mtg.txt
 DEN,Den Danske Flåde,Den Danske Flåde,HDMS Havmanden,submarine,ship_hull_submarine_1,DEN,Havmanden Class,no,DEN_1939_naval_mtg.txt
 DEN,Den Danske Flåde,Den Danske Flåde,HDMS Havfruen,submarine,ship_hull_submarine_1,DEN,Havmanden Class,no,DEN_1939_naval_mtg.txt
 DEN,Den Danske Flåde,Den Danske Flåde,HDMS Havkalen,submarine,ship_hull_submarine_1,DEN,Havmanden Class,no,DEN_1939_naval_mtg.txt
@@ -318,12 +248,6 @@ ENG,Far East Command,4th Submarine Flotilla,HMS Regulus,submarine,ship_hull_subm
 ENG,Home Command,Home Fleet,HMS Ark Royal,carrier,ship_hull_carrier_1,ENG,Ark Royal Class,no,ENG_1939_Naval.txt
 ENG,Home Command,Northern Patrol,HMS Caledon,light_cruiser,ship_hull_cruiser_1,ENG,C-Class,no,ENG_1939_Naval.txt
 ENG,Home Command,Northern Patrol,HMS Calypso,light_cruiser,ship_hull_cruiser_1,ENG,C-Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Northern Patrol,HMS Diomede,light_cruiser,ship_hull_cruiser_1,ENG,Danae Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Northern Patrol,HMS Dragon,light_cruiser,ship_hull_cruiser_1,ENG,Danae Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Northern Patrol,HMS Effingham,heavy_cruiser,ship_hull_cruiser_1,ENG,Hawkins Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Northern Patrol,HMS Cardiff,light_cruiser,ship_hull_cruiser_1,ENG,C-Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Northern Patrol,HMS Delhi,light_cruiser,ship_hull_cruiser_1,ENG,Danae Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Northern Patrol,HMS Dunedin,light_cruiser,ship_hull_cruiser_1,ENG,Danae Class,no,ENG_1939_Naval.txt
 ENG,Home Command,Northern Patrol,HMS Emerald,light_cruiser,ship_hull_cruiser_1,ENG,Emerald Class,no,ENG_1939_Naval.txt
 ENG,Home Command,Northern Patrol,HMS Enterprise,light_cruiser,ship_hull_cruiser_1,ENG,Emerald Class,no,ENG_1939_Naval.txt
 ENG,Home Command,Rosyth Command,HMS Furious,carrier,ship_hull_carrier_conversion_bb,ENG,Courageous Class,no,ENG_1939_Naval.txt
@@ -373,7 +297,6 @@ ENG,Home Command,Portsmouth Command,HMS Achates,destroyer,ship_hull_light_1,ENG,
 ENG,Home Command,Portsmouth Command,HMS Anthony,destroyer,ship_hull_light_1,ENG,A/B/C/D Class,no,ENG_1939_Naval.txt
 ENG,Home Command,Portsmouth Command,HMS Arrow,destroyer,ship_hull_light_1,ENG,A/B/C/D Class,no,ENG_1939_Naval.txt
 ENG,Home Command,Portsmouth Command,HMS Amazon,destroyer,ship_hull_light_1,ENG,A/B/C/D Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Channel Force,HMS Courageous,carrier,ship_hull_carrier_conversion_bb,ENG,Courageous Class,no,ENG_1939_Naval.txt
 ENG,Home Command,Western Approaches Command,HMS Sturdy,destroyer,ship_hull_light_1,ENG,V/W Class,no,ENG_1939_Naval.txt
 ENG,Home Command,Western Approaches Command,HMS Valentine,destroyer,ship_hull_light_1,ENG,V/W Class,no,ENG_1939_Naval.txt
 ENG,Home Command,Western Approaches Command,HMS Vega,destroyer,ship_hull_light_1,ENG,V/W Class,no,ENG_1939_Naval.txt
@@ -385,45 +308,15 @@ ENG,Home Command,Portland Squadron,HMS Eclipse,destroyer,ship_hull_light_2,ENG,E
 ENG,Home Command,Portland Squadron,HMS Encounter,destroyer,ship_hull_light_2,ENG,E/F/G/H Class,no,ENG_1939_Naval.txt
 ENG,Home Command,Portland Squadron,HMS Escapade,destroyer,ship_hull_light_2,ENG,E/F/G/H Class,no,ENG_1939_Naval.txt
 ENG,Home Command,Portland Squadron,HMS Escort,destroyer,ship_hull_light_2,ENG,E/F/G/H Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Reserve Fleet,HMS Queen Elizabeth,battleship,ship_hull_heavy_1,ENG,Queen Elizabeth Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Reserve Fleet,HMS Valiant,battleship,ship_hull_heavy_1,ENG,Queen Elizabeth Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Reserve Fleet,HMS Erebus,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,ENG,Erebus Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Reserve Fleet,HMS Terror,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,ENG,Erebus Class,no,ENG_1939_Naval.txt
 ENG,Home Command,Reserve Fleet,HMS Suffolk,heavy_cruiser,ship_hull_cruiser_1,ENG,County Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Reserve Fleet,HMS Frobisher,heavy_cruiser,ship_hull_cruiser_1,ENG,Hawkins Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Reserve Fleet,HMS Hawkins,heavy_cruiser,ship_hull_cruiser_1,ENG,Hawkins Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Reserve Fleet,HMS Carlisle,light_cruiser,ship_hull_cruiser_1,ENG,C-Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Reserve Fleet,HMS Curlew,light_cruiser,ship_hull_cruiser_1,ENG,C-Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Reserve Fleet,HMS Adventure,light_cruiser,ship_hull_cruiser_1,ENG,Adventure Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Reserve Fleet,HMS Whitshed,destroyer,ship_hull_light_1,ENG,V/W Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Reserve Fleet,HMS Wild Swan,destroyer,ship_hull_light_1,ENG,V/W Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Reserve Fleet,HMS Viceroy,destroyer,ship_hull_light_1,ENG,V/W Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Reserve Fleet,HMS Verdun,destroyer,ship_hull_light_1,ENG,V/W Class,no,ENG_1939_Naval.txt
-ENG,Home Command,Reserve Fleet,HMS Vanity,destroyer,ship_hull_light_1,ENG,V/W Class,no,ENG_1939_Naval.txt
-ENG,Home Command,2nd Submarine Flotilla,HMS Oxley,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Home Command,2nd Submarine Flotilla,HMS Seahorse,submarine,ship_hull_submarine_1,ENG,S Class,no,ENG_1939_Naval.txt
-ENG,Home Command,2nd Submarine Flotilla,HMS Starfish,submarine,ship_hull_submarine_1,ENG,S Class,no,ENG_1939_Naval.txt
 ENG,Home Command,2nd Submarine Flotilla,HMS Seawolf,submarine,ship_hull_submarine_1,ENG,S Class,no,ENG_1939_Naval.txt
 ENG,Home Command,2nd Submarine Flotilla,HMS Spearfish,submarine,ship_hull_submarine_1,ENG,S Class,no,ENG_1939_Naval.txt
-ENG,Home Command,2nd Submarine Flotilla,HMS Swordfish,submarine,ship_hull_submarine_1,ENG,S Class,no,ENG_1939_Naval.txt
-ENG,Home Command,2nd Submarine Flotilla,HMS Sturgeon,submarine,ship_hull_submarine_1,ENG,S Class,no,ENG_1939_Naval.txt
 ENG,Home Command,2nd Submarine Flotilla,HMS Sunfish,submarine,ship_hull_submarine_1,ENG,S Class,no,ENG_1939_Naval.txt
 ENG,Home Command,2nd Submarine Flotilla,HMS Sterlet,submarine,ship_hull_submarine_1,ENG,S Class,no,ENG_1939_Naval.txt
 ENG,Home Command,2nd Submarine Flotilla,HMS Trident,submarine,ship_hull_submarine_2,ENG,T Class,no,ENG_1939_Naval.txt
 ENG,Home Command,2nd Submarine Flotilla,HMS Triumph,submarine,ship_hull_submarine_2,ENG,T Class,no,ENG_1939_Naval.txt
 ENG,Home Command,2nd Submarine Flotilla,HMS Triton,submarine,ship_hull_submarine_2,ENG,T Class,no,ENG_1939_Naval.txt
 ENG,Home Command,2nd Submarine Flotilla,HMS Thistle,submarine,ship_hull_submarine_2,ENG,T Class,no,ENG_1939_Naval.txt
-ENG,Home Command,5th Submarine Flotilla,HMS Oberon,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Home Command,5th Submarine Flotilla,HMS Thames,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Home Command,5th Submarine Flotilla,HMS L23,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Home Command,5th Submarine Flotilla,HMS H28,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Home Command,5th Submarine Flotilla,HMS H31,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Home Command,5th Submarine Flotilla,HMS H33,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Home Command,5th Submarine Flotilla,HMS H34,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Home Command,5th Submarine Flotilla,HMS H43,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Home Command,5th Submarine Flotilla,HMS H44,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Home Command,5th Submarine Flotilla,HMS H49,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Home Command,5th Submarine Flotilla,HMS H50,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
 ENG,Home Command,6th Submarine Flotilla,HMS Undine,submarine,ship_hull_submarine_1,ENG,U Class,no,ENG_1939_Naval.txt
 ENG,Home Command,6th Submarine Flotilla,HMS Unity,submarine,ship_hull_submarine_1,ENG,U Class,no,ENG_1939_Naval.txt
 ENG,Home Command,6th Submarine Flotilla,HMS Ursula,submarine,ship_hull_submarine_1,ENG,U Class,no,ENG_1939_Naval.txt
@@ -442,31 +335,17 @@ ENG,Foreign Stations Command,North Atlantic Fleet,HMS Douglas,destroyer,ship_hul
 ENG,Foreign Stations Command,North Atlantic Fleet,HMS Active,destroyer,ship_hull_light_1,ENG,A/B/C/D Class,no,ENG_1939_Naval.txt
 ENG,Foreign Stations Command,North Atlantic Fleet,HMS Wishart,destroyer,ship_hull_light_1,ENG,V/W Class,no,ENG_1939_Naval.txt
 ENG,Foreign Stations Command,North Atlantic Fleet,HMS Wrestler,destroyer,ship_hull_light_1,ENG,V/W Class,no,ENG_1939_Naval.txt
-ENG,Mediterranean Command,Mediterranean Fleet,HMS Glorious,carrier,ship_hull_carrier_conversion_bb,ENG,Courageous Class,no,ENG_1939_Naval.txt
 ENG,Mediterranean Command,1st Submarine Flotilla,HMS Cachalot,submarine,ship_hull_submarine_2,ENG,Grampus Class,no,ENG_1939_Naval.txt
 ENG,Mediterranean Command,1st Submarine Flotilla,HMS Narwhal,submarine,ship_hull_submarine_2,ENG,Grampus Class,no,ENG_1939_Naval.txt
 ENG,Mediterranean Command,1st Submarine Flotilla,HMS Seal,submarine,ship_hull_submarine_2,ENG,Grampus Class,no,ENG_1939_Naval.txt
-ENG,Mediterranean Command,1st Submarine Flotilla,HMS Sealion,submarine,ship_hull_submarine_1,ENG,S Class,no,ENG_1939_Naval.txt
-ENG,Mediterranean Command,1st Submarine Flotilla,HMS Shark,submarine,ship_hull_submarine_1,ENG,S Class,no,ENG_1939_Naval.txt
-ENG,Mediterranean Command,1st Submarine Flotilla,HMS Snapper,submarine,ship_hull_submarine_1,ENG,S Class,no,ENG_1939_Naval.txt
-ENG,Mediterranean Command,1st Submarine Flotilla,HMS Salmon,submarine,ship_hull_submarine_1,ENG,S Class,no,ENG_1939_Naval.txt
-ENG,Mediterranean Command,1st Submarine Flotilla,HMS Porpoise,submarine,ship_hull_submarine_1,ENG,S Class,no,ENG_1939_Naval.txt
-ENG,Mediterranean Command,1st Submarine Flotilla,HMS Otway,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Mediterranean Command,1st Submarine Flotilla,HMS Osiris,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Mediterranean Command,1st Submarine Flotilla,HMS Oswald,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
 ENG,North and South Americas Command,West Indies Command,HMS Berwick,heavy_cruiser,ship_hull_cruiser_1,ENG,County Class,no,ENG_1939_Naval.txt
 ENG,North and South Americas Command,West Indies Command,HMS York,heavy_cruiser,ship_hull_cruiser_1,ENG,County Class,no,ENG_1939_Naval.txt
 ENG,North and South Americas Command,West Indies Command,HMS Orion,light_cruiser,ship_hull_cruiser_1,ENG,Emerald Class,no,ENG_1939_Naval.txt
-ENG,North and South Americas Command,South Atlantic Fleet,HMS Neptune,light_cruiser,ship_hull_cruiser_1,ENG,Emerald Class,no,ENG_1939_Naval.txt
-ENG,North and South Americas Command,South Atlantic Fleet,HMS Dauntless,light_cruiser,ship_hull_cruiser_1,ENG,Danae Class,no,ENG_1939_Naval.txt
 ENG,North and South Americas Command,South Atlantic Fleet,HMS Danae,light_cruiser,ship_hull_cruiser_1,ENG,Danae Class,no,ENG_1939_Naval.txt
 ENG,North and South Americas Command,South Atlantic Fleet,HMS Durban,light_cruiser,ship_hull_cruiser_1,ENG,Danae Class,no,ENG_1939_Naval.txt
 ENG,North and South Americas Command,South Atlantic Fleet,HMS Despatch,light_cruiser,ship_hull_cruiser_1,ENG,Danae Class,no,ENG_1939_Naval.txt
 ENG,North and South Americas Command,South Atlantic Fleet,HMS Hunter,destroyer,ship_hull_light_2,ENG,E/F/G/H Class,no,ENG_1939_Naval.txt
 ENG,North and South Americas Command,South Atlantic Fleet,HMS Hyperion,destroyer,ship_hull_light_2,ENG,E/F/G/H Class,no,ENG_1939_Naval.txt
-ENG,North and South Americas Command,South America Squadron,HMS Exeter,heavy_cruiser,ship_hull_cruiser_1,ENG,County Class,no,ENG_1939_Naval.txt
-ENG,North and South Americas Command,South America Squadron,HMS Cumberland,heavy_cruiser,ship_hull_cruiser_1,ENG,County Class,no,ENG_1939_Naval.txt
-ENG,North and South Americas Command,South America Squadron,HMS Ajax,light_cruiser,ship_hull_cruiser_1,ENG,Emerald Class,no,ENG_1939_Naval.txt
 ENG,North and South Americas Command,South America Squadron,HMS Havock,destroyer,ship_hull_light_2,ENG,E/F/G/H Class,no,ENG_1939_Naval.txt
 ENG,North and South Americas Command,South America Squadron,HMS Hotspur,destroyer,ship_hull_light_2,ENG,E/F/G/H Class,no,ENG_1939_Naval.txt
 ENG,North and South Americas Command,7th Submarine Flotilla,HMS Severn,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
@@ -481,13 +360,6 @@ ENG,Far East Command,Hong Kong Destroyer Division,HMS Thracian,destroyer,ship_hu
 ENG,Far East Command,Singapore Squadron,HMS Eagle,carrier,ship_hull_carrier_conversion_bb,ENG,Eagle Class,no,ENG_1939_Naval.txt
 ENG,Far East Command,4th Submarine Flotilla,HMS Grampus,submarine,ship_hull_submarine_2,ENG,Grampus Class,no,ENG_1939_Naval.txt
 ENG,Far East Command,4th Submarine Flotilla,HMS Rorqual,submarine,ship_hull_submarine_2,ENG,Grampus Class,no,ENG_1939_Naval.txt
-ENG,Far East Command,4th Submarine Flotilla,HMS Olympus,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Far East Command,4th Submarine Flotilla,HMS Parthian,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Far East Command,4th Submarine Flotilla,HMS Proteus,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Far East Command,4th Submarine Flotilla,HMS Regent,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Far East Command,4th Submarine Flotilla,HMS Rover,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Far East Command,4th Submarine Flotilla,HMS Odin,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
-ENG,Far East Command,4th Submarine Flotilla,HMS Otus,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
 ENG,Far East Command,Submarine Division 43,HMS Orpheus,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
 ENG,Far East Command,Submarine Division 43,HMS Pandora,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
 ENG,Far East Command,Submarine Division 43,HMS Perseus,submarine,ship_hull_submarine_1,ENG,O/P/R Class,no,ENG_1939_Naval.txt
@@ -503,13 +375,6 @@ FIN,Suomen Merivoimat,Sukellusvenelaivue,Vesihiisi,submarine,ship_hull_submarine
 FIN,Suomen Merivoimat,Sukellusvenelaivue,Iku-Turso,submarine,ship_hull_submarine_1,FIN,Vetehinen Class,no,FIN_1936_naval_mtg.txt
 FIN,Suomen Merivoimat,Sukellusvenelaivue,Vesikko,submarine,ship_hull_submarine_1,FIN,Vesikko Class,no,FIN_1936_naval_mtg.txt
 FIN,Suomen Merivoimat,Sukellusvenelaivue,Saukko,submarine,ship_hull_submarine_1,FIN,Vesikko Class,no,FIN_1936_naval_mtg.txt
-FIN,Suomen Merivoimat,Rannikkolaivue,Ilmarinen,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,FIN,Väinämöinen Class,yes,FIN_1939_naval_mtg.txt
-FIN,Suomen Merivoimat,Rannikkolaivue,Väinämöinen,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,FIN,Väinämöinen Class,no,FIN_1939_naval_mtg.txt
-FIN,Suomen Merivoimat,Sukellusvenelaivue,Vetehinen,submarine,ship_hull_submarine_1,FIN,Vetehinen Class,no,FIN_1939_naval_mtg.txt
-FIN,Suomen Merivoimat,Sukellusvenelaivue,Vesihiisi,submarine,ship_hull_submarine_1,FIN,Vetehinen Class,no,FIN_1939_naval_mtg.txt
-FIN,Suomen Merivoimat,Sukellusvenelaivue,Iku-Turso,submarine,ship_hull_submarine_1,FIN,Vetehinen Class,no,FIN_1939_naval_mtg.txt
-FIN,Suomen Merivoimat,Sukellusvenelaivue,Vesikko,submarine,ship_hull_submarine_1,FIN,Vesikko Class,no,FIN_1939_naval_mtg.txt
-FIN,Suomen Merivoimat,Sukellusvenelaivue,Saukko,submarine,ship_hull_submarine_1,FIN,Vesikko Class,no,FIN_1939_naval_mtg.txt
 FRA,Amiral Nord,1ère Région Navale,Le Terrible,destroyer,ship_hull_light_1,FRA,Le Fantasque Class,no,FRA_1936_naval_mtg.txt
 FRA,Amiral Nord,1ère Région Navale,L'Audacieux,destroyer,ship_hull_light_1,FRA,Le Fantasque Class,no,FRA_1936_naval_mtg.txt
 FRA,Amiral Nord,Sous-Marins Force du Nord,Orphée,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1936_naval_mtg.txt
@@ -632,10 +497,6 @@ FRA,Flotte d'Extrême Orient,Flotte d'Extrême Orient,Lamotte-Picquet,light_crui
 FRA,Amiral Nord,1ère Région Navale,La Cordelière,destroyer,ship_hull_light_1,FRA,Le Fantasque Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Nord,1ère Région Navale,L'Incomprise,destroyer,ship_hull_light_1,FRA,Le Fantasque Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Nord,1ère Région Navale,Branlebas,destroyer,ship_hull_light_1,FRA,Le Fantasque Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Nord,Sous-Marins Force du Nord,Orphée,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Nord,Sous-Marins Force du Nord,Amazone,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Nord,Sous-Marins Force du Nord,La Sybille,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Nord,Sous-Marins Force du Nord,Antiope,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Ouest,2ème Région Navale,Courbet,battleship,ship_hull_heavy_1,FRA,Courbet Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Ouest,2ème Région Navale,Paris,battleship,ship_hull_heavy_1,FRA,Courbet Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Ouest,2ème Région Navale,Jaguar,destroyer,ship_hull_light_1,FRA,Chacal Class,no,FRA_1939_naval_mtg.txt
@@ -671,21 +532,12 @@ FRA,Amiral Ouest,Force de Raid,Le Triomphant,destroyer,ship_hull_light_1,FRA,Le 
 FRA,Amiral Ouest,Force de Raid,Le Terrible,destroyer,ship_hull_light_1,FRA,Le Fantasque Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Ouest,Force de Raid,L'Audacieux,destroyer,ship_hull_light_1,FRA,Le Fantasque Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Ouest,Force de Raid,Le Fantasque,destroyer,ship_hull_light_1,FRA,Le Fantasque Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Ouest,4ème Escadron Sous-Marins,Surcouf,submarine,ship_hull_cruiser_submarine,FRA,Surcouf Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Ouest,4ème Escadron Sous-Marins,Casabianca,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Ouest,4ème Escadron Sous-Marins,Sfax,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Ouest,4ème Escadron Sous-Marins,Pasteur,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Ouest,4ème Escadron Sous-Marins,Achille,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Ouest,4ème Escadron Sous-Marins,Persée,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Ouest,4ème Escadron Sous-Marins,Poncelet,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Ouest,4ème Escadron Sous-Marins,Ajax,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Ouest,4ème Escadron Sous-Marins,Archimède,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Ouest,4ème Escadron Sous-Marins,Agosta,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Ouest,4ème Escadron Sous-Marins,Bévéziers,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Ouest,4ème Escadron Sous-Marins,Ouessant,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Ouest,4ème Escadron Sous-Marins,Sidi Ferruch,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Sud,3ème Région Navale,Lynx,destroyer,ship_hull_light_1,FRA,Chacal Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Sud,3ème Région Navale,Tigre,destroyer,ship_hull_light_1,FRA,Chacal Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Sud,3ème Région Navale,Baliste,destroyer,ship_hull_light_1,FRA,Le Fantasque Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Sud,3ème Région Navale,La Bayonnaise,destroyer,ship_hull_light_1,FRA,Le Fantasque Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Sud,3ème Région Navale,La Poursuivante,destroyer,ship_hull_light_1,FRA,Le Fantasque Class,no,FRA_1939_naval_mtg.txt
@@ -704,21 +556,9 @@ FRA,Amiral Sud,3ème Flottille de Haute Mers,Vautour,destroyer,ship_hull_light_1
 FRA,Amiral Sud,3ème Flottille de Haute Mers,Cassard,destroyer,ship_hull_light_1,FRA,Chacal Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Sud,3ème Flottille de Haute Mers,Maillé Brézé,destroyer,ship_hull_light_1,FRA,Chacal Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Sud,3ème Flottille de Haute Mers,Kersaint,destroyer,ship_hull_light_1,FRA,Chacal Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Sud,3ème Escadron Sous-Marins,Le Glorieux,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Sud,3ème Escadron Sous-Marins,Le Héros,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Sud,3ème Escadron Sous-Marins,Le Conquérant,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Sud,3ème Escadron Sous-Marins,Le Tonnant,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Sud,3ème Escadron Sous-Marins,Protée,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Sud,3ème Escadron Sous-Marins,Actéon,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Sud,3ème Escadron Sous-Marins,Fresnel,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Sud,3ème Escadron Sous-Marins,Achéron,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Sud,3ème Escadron Sous-Marins,L`Espoire,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Sud,3ème Escadron Sous-Marins,Pégase,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Sud,3ème Escadron Sous-Marins,Monge,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Sud,5ème Escadron Sous-Marins,Circé,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Sud,5ème Escadron Sous-Marins,Calypso,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Sud,5ème Escadron Sous-Marins,Thétis,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Sud,5ème Escadron Sous-Marins,Doris,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Sud,5ème Escadron Sous-Marins,Iris,submarine,ship_hull_submarine_1,FRA,Minerve Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Sud,5ème Escadron Sous-Marins,Vénus,submarine,ship_hull_submarine_1,FRA,Minerve Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Sud,5ème Escadron Sous-Marins,Pallas,submarine,ship_hull_submarine_1,FRA,Minerve Class,no,FRA_1939_naval_mtg.txt
@@ -764,39 +604,9 @@ FRA,Amiral Afrique,Attack Force Légère,Verdun,destroyer,ship_hull_light_1,FRA,
 FRA,Amiral Afrique,Attack Force Légère,Aigle,destroyer,ship_hull_light_1,FRA,Chacal Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Afrique,Attack Force Légère,Milan,destroyer,ship_hull_light_1,FRA,Chacal Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Afrique,Attack Force Légère,Épervier,destroyer,ship_hull_light_1,FRA,Chacal Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,Flotte d'Afrique de l'Ouest,Jeanne d'Arc,light_cruiser,ship_hull_cruiser_1,FRA,Duguay-Trouin Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,Flotte d'Afrique de l'Ouest,Duguay-Trouin,light_cruiser,ship_hull_cruiser_1,FRA,Duguay-Trouin Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,Flotte d'Afrique de l'Ouest,Primauguet,light_cruiser,ship_hull_cruiser_1,FRA,Duguay-Trouin Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Afrique,Flotte d'Afrique de l'Ouest,Pluton,light_cruiser,ship_hull_cruiser_1,FRA,Duguay-Trouin Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Afrique,2ème Escadron Sous-Marins,Minerve,submarine,ship_hull_submarine_1,FRA,Minerve Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Afrique,2ème Escadron Sous-Marins,Junon,submarine,ship_hull_submarine_1,FRA,Minerve Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,2ème Escadron Sous-Marins,Orion,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,2ème Escadron Sous-Marins,Ondine,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,2ème Escadron Sous-Marins,Diane,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,2ème Escadron Sous-Marins,Ariane,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,2ème Escadron Sous-Marins,Eurydice,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,2ème Escadron Sous-Marins,Danaé,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,2ème Escadron Sous-Marins,Méduse,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,2ème Escadron Sous-Marins,Amphitrite,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,2ème Escadron Sous-Marins,Oréade,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,2ème Escadron Sous-Marins,La Psyché,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,6ème Escadron Sous-Marins,Caïman,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,6ème Escadron Sous-Marins,Morse,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,6ème Escadron Sous-Marins,Souffleur,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,6ème Escadron Sous-Marins,Phoque,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,6ème Escadron Sous-Marins,Espadon,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,6ème Escadron Sous-Marins,Dauphin,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,6ème Escadron Sous-Marins,Aréthuse,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,6ème Escadron Sous-Marins,Atalante,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,6ème Escadron Sous-Marins,La Vestale,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,6ème Escadron Sous-Marins,La Sultane,submarine,ship_hull_submarine_1,FRA,630 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,6ème Escadron Sous-Marins,Saphir,submarine,ship_hull_submarine_1,FRA,Saphir Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,6ème Escadron Sous-Marins,Turquoise,submarine,ship_hull_submarine_1,FRA,Saphir Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,6ème Escadron Sous-Marins,Nautilus,submarine,ship_hull_submarine_1,FRA,Saphir Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,6ème Escadron Sous-Marins,Rubis,submarine,ship_hull_submarine_1,FRA,Saphir Class,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,Sous-Marins Force de Levant,Requin,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,Sous-Marins Force de Levant,Marsouin,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
-FRA,Amiral Afrique,Sous-Marins Force de Levant,Narval,submarine,ship_hull_submarine_1,FRA,600 Series,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Afrique,Sous-Marins Force du Maroc,Le Centaure,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Afrique,Sous-Marins Force du Maroc,Argo,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
 FRA,Amiral Afrique,Sous-Marins Force du Maroc,Pascal,submarine,ship_hull_submarine_2,FRA,Redoutable Class,no,FRA_1939_naval_mtg.txt
@@ -844,17 +654,8 @@ GER,Unterseeboots-Flotte,II. U-Boots-Ausbildungs-Gruppe,U-6,submarine,ship_hull_
 GER,Kriegsmarine,Hochseeflotte,Scharnhorst,battleship,ship_hull_heavy_2,GER,Scharnhorst,no,GER_1939_naval_mtg.txt
 GER,Kriegsmarine,Hochseeflotte,Gneisenau,battleship,ship_hull_heavy_2,GER,Scharnhorst,yes,GER_1939_naval_mtg.txt
 GER,Kriegsmarine,Hochseeflotte,Admiral Hipper,heavy_cruiser,ship_hull_cruiser_2,GER,Admiral Hipper,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Hochseeflotte,Deutschland,heavy_cruiser,ship_hull_cruiser_panzerschiff,GER,Deutschland,no,GER_1939_naval_mtg.txt
 GER,Kriegsmarine,Hochseeflotte,Admiral Graf Spee,heavy_cruiser,ship_hull_cruiser_panzerschiff,GER,Deutschland,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Hochseeflotte,Nürnberg,light_cruiser,ship_hull_cruiser_2,GER,Leipzig,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Hochseeflotte,Leipzig,light_cruiser,ship_hull_cruiser_2,GER,Leipzig,no,GER_1939_naval_mtg.txt
 GER,Kriegsmarine,Hochseeflotte,Zerstörer 1934A,destroyer,ship_hull_light_2,GER,Zerstörer 1934A,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Hochseeflotte,Zerstörer 1934A,destroyer,ship_hull_light_2,GER,Zerstörer 1934A,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Hochseeflotte,Zerstörer 1934A,destroyer,ship_hull_light_2,GER,Zerstörer 1934A,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Hochseeflotte,Zerstörer 1936,destroyer,ship_hull_light_2,GER,Zerstörer 1936,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Hochseeflotte,Zerstörer 1936,destroyer,ship_hull_light_2,GER,Zerstörer 1936,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Hochseeflotte,Zerstörer 1936,destroyer,ship_hull_light_2,GER,Zerstörer 1936,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Hochseeflotte,Zerstörer 1936,destroyer,ship_hull_light_2,GER,Zerstörer 1936,no,GER_1939_naval_mtg.txt
 GER,Kriegsmarine,Hochseeflotte,Zerstörer 1936,destroyer,ship_hull_light_2,GER,Zerstörer 1936,no,GER_1939_naval_mtg.txt
 GER,Kriegsmarine,Aufklärungsflotte,Admiral Scheer,heavy_cruiser,ship_hull_cruiser_panzerschiff,GER,Deutschland,no,GER_1939_naval_mtg.txt
 GER,Kriegsmarine,Aufklärungsflotte,Königsberg,light_cruiser,ship_hull_cruiser_1,GER,Königsberg,no,GER_1939_naval_mtg.txt
@@ -862,90 +663,18 @@ GER,Kriegsmarine,Aufklärungsflotte,Karlsruhe,light_cruiser,ship_hull_cruiser_1,
 GER,Kriegsmarine,Aufklärungsflotte,Köln,light_cruiser,ship_hull_cruiser_1,GER,Königsberg,no,GER_1939_naval_mtg.txt
 GER,Kriegsmarine,Aufklärungsflotte,Emden,light_cruiser,ship_hull_cruiser_1,GER,Emden,no,GER_1939_naval_mtg.txt
 GER,Kriegsmarine,Aufklärungsflotte,Type 24,destroyer,ship_hull_light_1,GER,Type 24,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Aufklärungsflotte,Type 24,destroyer,ship_hull_light_1,GER,Type 24,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Aufklärungsflotte,Type 24,destroyer,ship_hull_light_1,GER,Type 24,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Aufklärungsflotte,Type 24,destroyer,ship_hull_light_1,GER,Type 24,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Aufklärungsflotte,Type 24,destroyer,ship_hull_light_1,GER,Type 24,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Aufklärungsflotte,Type 24,destroyer,ship_hull_light_1,GER,Type 24,no,GER_1939_naval_mtg.txt
 GER,Kriegsmarine,Zerstörerflotte,Zerstörer 1934,destroyer,ship_hull_light_2,GER,Zerstörer 1934,no,GER_1939_naval_mtg.txt
 GER,Kriegsmarine,Zerstörerflotte,Zerstörer 1934A,destroyer,ship_hull_light_2,GER,Zerstörer 1934A,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Zerstörerflotte,Zerstörer 1934A,destroyer,ship_hull_light_2,GER,Zerstörer 1934A,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Zerstörerflotte,Zerstörer 1934A,destroyer,ship_hull_light_2,GER,Zerstörer 1934A,no,GER_1939_naval_mtg.txt
 GER,Kriegsmarine,Zerstörerflotte,Type 24,destroyer,ship_hull_light_1,GER,Type 24,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Zerstörerflotte,Type 24,destroyer,ship_hull_light_1,GER,Type 24,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Zerstörerflotte,Type 24,destroyer,ship_hull_light_1,GER,Type 24,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Zerstörerflotte,Type 24,destroyer,ship_hull_light_1,GER,Type 24,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Zerstörerflotte,Type 24,destroyer,ship_hull_light_1,GER,Type 24,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Ostseeflotte,Schleswig-Holstein,battleship,ship_hull_pre_dreadnought,GER,Deutschland,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Ostseeflotte,Schlesien,battleship,ship_hull_pre_dreadnought,GER,Deutschland,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Ostseeflotte,Zerstörer 1934,destroyer,ship_hull_light_2,GER,Zerstörer 1934,no,GER_1939_naval_mtg.txt
 GER,Kriegsmarine,Ostseeflotte,Zerstörer 1934,destroyer,ship_hull_light_2,GER,Zerstörer 1934,no,GER_1939_naval_mtg.txt
 GER,Kriegsmarine,Ostseeflotte,Zerstörer 1934A,destroyer,ship_hull_light_2,GER,Zerstörer 1934A,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Ostseeflotte,Zerstörer 1934A,destroyer,ship_hull_light_2,GER,Zerstörer 1934A,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Ostseeflotte,Zerstörer 1934A,destroyer,ship_hull_light_2,GER,Zerstörer 1934A,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Ostseeflotte,Zerstörer 1934,destroyer,ship_hull_light_2,GER,Zerstörer 1934,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Ostseeflotte,Zerstörer 1934A,destroyer,ship_hull_light_2,GER,Zerstörer 1934A,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Ostseeflotte,Zerstörer 1934A,destroyer,ship_hull_light_2,GER,Zerstörer 1934A,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Ostseeflotte,Zerstörer 1934A,destroyer,ship_hull_light_2,GER,Zerstörer 1934A,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Marineschule Kiel,Brummer,light_cruiser,ship_hull_cruiser_1,GER,Bremse,no,GER_1939_naval_mtg.txt
-GER,Kriegsmarine,Marineschule Kiel,Bremse,light_cruiser,ship_hull_cruiser_1,GER,Bremse,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,I. U-Boots-Flot. Weddigen,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,I. U-Boots-Flot. Weddigen,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,I. U-Boots-Flot. Weddigen,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,I. U-Boots-Flot. Weddigen,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,I. U-Boots-Flot. Weddigen,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,I. U-Boots-Flot. Weddigen,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
 GER,Unterseeboots Flotte,I. U-Boots-Flot. Weddigen,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
 GER,Unterseeboots Flotte,II. U-Boots-Flot. Saltzwedel,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,II. U-Boots-Flot. Saltzwedel,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
 GER,Unterseeboots Flotte,II. U-Boots-Flot. Saltzwedel,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,II. U-Boots-Flot. Saltzwedel,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,II. U-Boots-Flot. Saltzwedel,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,II. U-Boots-Flot. Saltzwedel,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,II. U-Boots-Flot. Saltzwedel,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,II. U-Boots-Flot. Saltzwedel,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,II. U-Boots-Flot. Saltzwedel,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,II. U-Boots-Flot. Saltzwedel,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,II. U-Boots-Flot. Saltzwedel,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,II. U-Boots-Flot. Saltzwedel,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,III. U-Boots-Flot. Lohs,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,III. U-Boots-Flot. Lohs,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,III. U-Boots-Flot. Lohs,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,III. U-Boots-Flot. Lohs,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,III. U-Boots-Flot. Lohs,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,III. U-Boots-Flot. Lohs,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
 GER,Unterseeboots Flotte,III. U-Boots-Flot. Lohs,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
 GER,Unterseeboots Flotte,V. U-Boots-Flot. Emsmann,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,V. U-Boots-Flot. Emsmann,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,V. U-Boots-Flot. Emsmann,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,V. U-Boots-Flot. Emsmann,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,V. U-Boots-Flot. Emsmann,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,V. U-Boots-Flot. Emsmann,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,VI. U-Boots-Flot. Hundius,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,VI. U-Boots-Flot. Hundius,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,VI. U-Boots-Flot. Hundius,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,VI. U-Boots-Flot. Hundius,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,VI. U-Boots-Flot. Hundius,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,VI. U-Boots-Flot. Hundius,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,VI. U-Boots-Flot. Hundius,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
 GER,Unterseeboots Flotte,VI. U-Boots-Flot. Hundius,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
 GER,Unterseeboots Flotte,VII. U-Boots-Flot. Wegener,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,VII. U-Boots-Flot. Wegener,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,VII. U-Boots-Flot. Wegener,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,VII. U-Boots-Flot. Wegener,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,VII. U-Boots-Flot. Wegener,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,VII. U-Boots-Flot. Wegener,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,VII. U-Boots-Flot. Wegener,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,VII. U-Boots-Flot. Wegener,Type VII,submarine,ship_hull_submarine_2,GER,Type VII,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,Ausbildungs-Flottille,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,Ausbildungs-Flottille,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,Ausbildungs-Flottille,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,Ausbildungs-Flottille,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,Ausbildungs-Flottille,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,Ausbildungs-Flottille,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,Ausbildungs-Flottille,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,Ausbildungs-Flottille,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
-GER,Unterseeboots Flotte,Ausbildungs-Flottille,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
 GER,Unterseeboots Flotte,Ausbildungs-Flottille,Type II,submarine,ship_hull_submarine_1,GER,Type II,no,GER_1939_naval_mtg.txt
 GRE,Vasilikó Polemikó Naftikó,Vasilikós Stólos,RHS Georgios Averof,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,GRE,Averof Class,yes,GRE_1936_naval_mtg.txt
 GRE,Vasilikó Polemikó Naftikó,Vasilikós Stólos,RHS Elli,light_cruiser,ship_hull_cruiser_1,GRE,Elli Class,no,GRE_1936_naval_mtg.txt
@@ -963,34 +692,12 @@ GRE,Vasilikó Polemikó Naftikó,Stolískou Ypovrychíon,RHS Protefs,submarine,s
 GRE,Vasilikó Polemikó Naftikó,Stolískou Ypovrychíon,RHS Nirefs,submarine,ship_hull_submarine_2,GRE,Glafkos Class,no,GRE_1936_naval_mtg.txt
 GRE,Vasilikó Polemikó Naftikó,Stolískou Ypovrychíon,RHS Triton,submarine,ship_hull_submarine_2,GRE,Glafkos Class,no,GRE_1936_naval_mtg.txt
 GRE,Vasilikó Polemikó Naftikó,Stolískou Ypovrychíon,RHS Glafkos,submarine,ship_hull_submarine_2,GRE,Glafkos Class,no,GRE_1936_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Vasilikós Stólos,RHS Georgios Averof,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,GRE,Averof Class,yes,GRE_1939_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Vasilikós Stólos,RHS Elli,light_cruiser,ship_hull_cruiser_1,GRE,Elli Class,no,GRE_1939_naval_mtg.txt
 GRE,Vasilikó Polemikó Naftikó,Vasilikós Stólos,RHS Vasilefs Georgios I,destroyer,ship_hull_light_2,GRE,Vasilefs Georgios I Class,no,GRE_1939_naval_mtg.txt
 GRE,Vasilikó Polemikó Naftikó,Vasilikós Stólos,RHS Vasilissa Olga,destroyer,ship_hull_light_2,GRE,Vasilefs Georgios I Class,no,GRE_1939_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Vasilikós Stólos,RHS Aetos,destroyer,ship_hull_light_1,GRE,Aetos Class,no,GRE_1939_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Vasilikós Stólos,RHS Ierax,destroyer,ship_hull_light_1,GRE,Aetos Class,no,GRE_1939_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Vasilikós Stólos,RHS Leon,destroyer,ship_hull_light_1,GRE,Aetos Class,no,GRE_1939_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Vasilikós Stólos,RHS Panthir,destroyer,ship_hull_light_1,GRE,Aetos Class,no,GRE_1939_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Vasilikós Stólos,RHS Kountouriotis,destroyer,ship_hull_light_1,GRE,Hydra Class,no,GRE_1939_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Vasilikós Stólos,RHS Hydra,destroyer,ship_hull_light_1,GRE,Hydra Class,no,GRE_1939_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Vasilikós Stólos,RHS Psara,destroyer,ship_hull_light_1,GRE,Hydra Class,no,GRE_1939_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Vasilikós Stólos,RHS Spetsai,destroyer,ship_hull_light_1,GRE,Hydra Class,no,GRE_1939_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Stolískou Ypovrychíon,RHS Katsonis,submarine,ship_hull_submarine_1,GRE,Katsonis Class,no,GRE_1939_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Stolískou Ypovrychíon,RHS Papanikolis,submarine,ship_hull_submarine_1,GRE,Katsonis Class,no,GRE_1939_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Stolískou Ypovrychíon,RHS Protefs,submarine,ship_hull_submarine_2,GRE,Glafkos Class,no,GRE_1939_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Stolískou Ypovrychíon,RHS Nirefs,submarine,ship_hull_submarine_2,GRE,Glafkos Class,no,GRE_1939_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Stolískou Ypovrychíon,RHS Triton,submarine,ship_hull_submarine_2,GRE,Glafkos Class,no,GRE_1939_naval_mtg.txt
-GRE,Vasilikó Polemikó Naftikó,Stolískou Ypovrychíon,RHS Glafkos,submarine,ship_hull_submarine_2,GRE,Glafkos Class,no,GRE_1939_naval_mtg.txt
 HOL,Koninklijke Marine,Koninklijke Vloot,HrMs Hertog Hendrik,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,HOL,Hertog Hendrik Class,no,HOL_1936_naval_mtg.txt
 HOL,Koninklijke Marine,Koninklijke Vloot,HrMs Jacob van Heemskerck,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,HOL,Soerabaja Class,no,HOL_1936_naval_mtg.txt
 HOL,Koninklijke Marine,Koninklijke Vloot,HrMs Van Galen,destroyer,ship_hull_light_1,HOL,Van Galen Class,no,HOL_1936_naval_mtg.txt
 HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,HrMs O-8,submarine,ship_hull_submarine_1,HOL,K-III Class,no,HOL_1936_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O9 Class,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1936_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O9 Class,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1936_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O9 Class,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1936_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O9 Class,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1936_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O9 Class,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1936_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O9 Class,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1936_naval_mtg.txt
 HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O9 Class,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1936_naval_mtg.txt
 HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Soerabaja,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,HOL,Soerabaja Class,no,HOL_1936_naval_mtg.txt
 HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Java,light_cruiser,ship_hull_cruiser_1,HOL,Java Class,no,HOL_1936_naval_mtg.txt
@@ -1004,56 +711,16 @@ HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Witte de With,destro
 HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Banckert,destroyer,ship_hull_light_1,HOL,Van Galen Class,no,HOL_1936_naval_mtg.txt
 HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Van Nes,destroyer,ship_hull_light_1,HOL,Van Galen Class,no,HOL_1936_naval_mtg.txt
 HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-III Class,submarine,ship_hull_submarine_1,HOL,K-III Class,no,HOL_1936_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-III Class,submarine,ship_hull_submarine_1,HOL,K-III Class,no,HOL_1936_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-III Class,submarine,ship_hull_submarine_1,HOL,K-III Class,no,HOL_1936_naval_mtg.txt
 HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-XIV Class,submarine,ship_hull_submarine_2,HOL,K-XIV Class,no,HOL_1936_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-XIV Class,submarine,ship_hull_submarine_2,HOL,K-XIV Class,no,HOL_1936_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-III Class,submarine,ship_hull_submarine_1,HOL,K-III Class,no,HOL_1936_naval_mtg.txt
 HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,HrMs K-XI,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1936_naval_mtg.txt
 HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,HrMs K-XII,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1936_naval_mtg.txt
 HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,HrMs K-XIII,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1936_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-XIV Class,submarine,ship_hull_submarine_2,HOL,K-XIV Class,no,HOL_1936_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-XIV Class,submarine,ship_hull_submarine_2,HOL,K-XIV Class,no,HOL_1936_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-XIV Class,submarine,ship_hull_submarine_2,HOL,K-XIV Class,no,HOL_1936_naval_mtg.txt
 HOL,Koninklijke Marine,Koninklijke Vloot,HrMs Vliereede,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,HOL,Hertog Hendrik Class,no,HOL_1939_naval_mtg.txt
 HOL,Koninklijke Marine,Koninklijke Vloot,HrMs Ijmuiden,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,HOL,Soerabaja Class,no,HOL_1939_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Vloot,HrMs Van Galen,destroyer,ship_hull_light_1,HOL,Van Galen Class,no,HOL_1939_naval_mtg.txt
 HOL,Koninklijke Marine,Koninklijke Vloot,HrMs Willem van der Zaan,destroyer,ship_hull_light_2,HOL,van der Zaan Class,no,HOL_1939_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,HrMs O-8,submarine,ship_hull_submarine_1,HOL,K-III Class,no,HOL_1939_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O9 Class,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1939_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O9 Class,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1939_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O9 Class,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1939_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O9 Class,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1939_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O9 Class,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1939_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O9 Class,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1939_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O9 Class,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1939_naval_mtg.txt
 HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,HrMs O-16,submarine,ship_hull_submarine_2,HOL,K-XIV Class,no,HOL_1939_naval_mtg.txt
 HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O19 Class,submarine,ship_hull_submarine_3,HOL,O19 Class,no,HOL_1939_naval_mtg.txt
-HOL,Koninklijke Marine,Koninklijke Onderzeeboot Smaldeel,O19 Class,submarine,ship_hull_submarine_3,HOL,O19 Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Soerabaja,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,HOL,Soerabaja Class,no,HOL_1939_naval_mtg.txt
 HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Tromp,light_cruiser,ship_hull_cruiser_1,HOL,Tromp Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs De Ruyter,light_cruiser,ship_hull_cruiser_1,HOL,De Ruyter Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Java,light_cruiser,ship_hull_cruiser_1,HOL,Java Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Sumatra,light_cruiser,ship_hull_cruiser_1,HOL,Java Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Van Ghent,destroyer,ship_hull_light_1,HOL,Van Ghent Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Evertsen,destroyer,ship_hull_light_1,HOL,Van Ghent Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Kortenaer,destroyer,ship_hull_light_1,HOL,Van Ghent Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Piet Hein,destroyer,ship_hull_light_1,HOL,Van Ghent Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Witte de With,destroyer,ship_hull_light_1,HOL,Van Galen Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Banckert,destroyer,ship_hull_light_1,HOL,Van Galen Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Eskader,HrMs Van Nes,destroyer,ship_hull_light_1,HOL,Van Galen Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-III Class,submarine,ship_hull_submarine_1,HOL,K-III Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-III Class,submarine,ship_hull_submarine_1,HOL,K-III Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-III Class,submarine,ship_hull_submarine_1,HOL,K-III Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-XIV Class,submarine,ship_hull_submarine_2,HOL,K-XIV Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-XIV Class,submarine,ship_hull_submarine_2,HOL,K-XIV Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-III Class,submarine,ship_hull_submarine_1,HOL,K-III Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,HrMs K-XI,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,HrMs K-XII,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,HrMs K-XIII,submarine,ship_hull_submarine_1,HOL,O9 Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-XIV Class,submarine,ship_hull_submarine_2,HOL,K-XIV Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-XIV Class,submarine,ship_hull_submarine_2,HOL,K-XIV Class,no,HOL_1939_naval_mtg.txt
-HOL,Nederlands-Indië Marine,Nederlands-Indië Onderzeeboot Smaldeel,K-XIV Class,submarine,ship_hull_submarine_2,HOL,K-XIV Class,no,HOL_1939_naval_mtg.txt
 ITA,Comando Navale Ionio e Basso Adriatico,I Squadra Navale,RN Caio Duilio,battleship,ship_hull_heavy_1,ITA,Andrea Doria Class,yes,ITA_1936_naval_mtg.txt
 ITA,Comando Navale Ionio e Basso Adriatico,I Squadra Navale,RN Andrea Doria,battleship,ship_hull_heavy_1,ITA,Andrea Doria Class,no,ITA_1936_naval_mtg.txt
 ITA,Comando Navale Ionio e Basso Adriatico,I Squadra Navale,RI Zara,heavy_cruiser,ship_hull_cruiser_1,ITA,Zara Class,no,ITA_1936_naval_mtg.txt
@@ -1419,10 +1086,6 @@ ITA,Flotta Sommergibili,VII Gruppo Sommergibili,RSmg Diaspro,submarine,ship_hull
 ITA,Flotta Sommergibili,VII Gruppo Sommergibili,RSmg Corallo,submarine,ship_hull_submarine_2,ITA,Calvi Class,no,ITA_1939_naval_mtg.txt
 ITA,Flotta Sommergibili,VII Gruppo Sommergibili,RSmg Turchese,submarine,ship_hull_submarine_2,ITA,Calvi Class,no,ITA_1939_naval_mtg.txt
 ITA,Flotta Sommergibili,VII Gruppo Sommergibili,RSmg Medusa,submarine,ship_hull_submarine_2,ITA,Sirena Class,no,ITA_1939_naval_mtg.txt
-ITA,Comando Navale Libia,Squadra di Libia,RCT Aquilone,destroyer,ship_hull_light_1,ITA,Curtatone Class,no,ITA_1939_naval_mtg.txt
-ITA,Comando Navale Libia,Squadra di Libia,RCT Euro,destroyer,ship_hull_light_1,ITA,Curtatone Class,no,ITA_1939_naval_mtg.txt
-ITA,Comando Navale Libia,Squadra di Libia,RCT Nembo,destroyer,ship_hull_light_1,ITA,Curtatone Class,no,ITA_1939_naval_mtg.txt
-ITA,Comando Navale Libia,Squadra di Libia,RCT Turbine,destroyer,ship_hull_light_1,ITA,Curtatone Class,no,ITA_1939_naval_mtg.txt
 ITA,Comando Navale Libia,Squadra di Libia,RCT Castore,destroyer,ship_hull_light_1,ITA,Maestrale Class,no,ITA_1939_naval_mtg.txt
 ITA,Comando Navale Libia,Squadra di Libia,RCT Centauro,destroyer,ship_hull_light_1,ITA,Maestrale Class,no,ITA_1939_naval_mtg.txt
 ITA,Comando Navale Libia,Squadra di Libia,RCT Cigno,destroyer,ship_hull_light_1,ITA,Maestrale Class,no,ITA_1939_naval_mtg.txt
@@ -1437,15 +1100,6 @@ ITA,Comando Navale Libia,VI Gruppo Sommergibili,RSmg Diamante,submarine,ship_hul
 ITA,Comando Navale Libia,VI Gruppo Sommergibili,RSmg Topazio,submarine,ship_hull_submarine_2,ITA,Sirena Class,no,ITA_1939_naval_mtg.txt
 ITA,Comando Navale Libia,VI Gruppo Sommergibili,RSmg Galatea,submarine,ship_hull_submarine_2,ITA,Sirena Class,no,ITA_1939_naval_mtg.txt
 ITA,Comando Navale Libia,VI Gruppo Sommergibili,RSmg Nereide,submarine,ship_hull_submarine_2,ITA,Sirena Class,no,ITA_1939_naval_mtg.txt
-ITA,Comando Navale Mar Rosso,Squadra di Mar Rosso,RCT Francesco Nullo,destroyer,ship_hull_light_1,ITA,Curtatone Class,no,ITA_1939_naval_mtg.txt
-ITA,Comando Navale Mar Rosso,Squadra di Mar Rosso,RCT Nazario Sauro,destroyer,ship_hull_light_1,ITA,Curtatone Class,no,ITA_1939_naval_mtg.txt
-ITA,Comando Navale Mar Rosso,Squadra di Mar Rosso,RCT Cesare Battisti,destroyer,ship_hull_light_1,ITA,Curtatone Class,no,ITA_1939_naval_mtg.txt
-ITA,Comando Navale Mar Rosso,Squadra di Mar Rosso,RCT Daniele Manin,destroyer,ship_hull_light_1,ITA,Curtatone Class,no,ITA_1939_naval_mtg.txt
-ITA,Comando Navale Mar Rosso,Squadra di Mar Rosso,RCT Leone,destroyer,ship_hull_light_1,ITA,Navigatori Class,no,ITA_1939_naval_mtg.txt
-ITA,Comando Navale Mar Rosso,Squadra di Mar Rosso,RCT Pantera,destroyer,ship_hull_light_1,ITA,Navigatori Class,no,ITA_1939_naval_mtg.txt
-ITA,Comando Navale Mar Rosso,Squadra di Mar Rosso,RCT Tigre,destroyer,ship_hull_light_1,ITA,Navigatori Class,no,ITA_1939_naval_mtg.txt
-ITA,Comando Navale Mar Rosso,Squadra di Mar Rosso,RCT Giovanni Acerbi,destroyer,ship_hull_light_1,ITA,Curtatone Class,no,ITA_1939_naval_mtg.txt
-ITA,Comando Navale Mar Rosso,Squadra di Mar Rosso,RCT Vincenzo Giordano Orsini,destroyer,ship_hull_light_1,ITA,Curtatone Class,no,ITA_1939_naval_mtg.txt
 ITA,Comando Navale Mar Rosso,VIII Gruppo Sommergibili,RSmg Guglielmotti,submarine,ship_hull_submarine_2,ITA,Marcello Class,no,ITA_1939_naval_mtg.txt
 ITA,Comando Navale Mar Rosso,VIII Gruppo Sommergibili,RSmg Galvani,submarine,ship_hull_submarine_2,ITA,Marcello Class,no,ITA_1939_naval_mtg.txt
 ITA,Comando Navale Mar Rosso,VIII Gruppo Sommergibili,RSmg Galileo Galilei,submarine,ship_hull_submarine_2,ITA,Sirena Class,no,ITA_1939_naval_mtg.txt
@@ -1675,22 +1329,9 @@ JAP,Rengo Kantai,2 Kantai,Suzukaze,destroyer,ship_hull_light_2,JAP,Fubuki Class,
 JAP,Rengo Kantai,2 Kantai,Umikaze,destroyer,ship_hull_light_2,JAP,Fubuki Class,no,JAP_1939_naval.txt
 JAP,Rengo Kantai,2 Kantai,Yamakaze,destroyer,ship_hull_light_2,JAP,Fubuki Class,no,JAP_1939_naval.txt
 JAP,Rengo Kantai,4 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Rengo Kantai,4 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Rengo Kantai,4 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Rengo Kantai,4 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Rengo Kantai,4 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Rengo Kantai,4 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
 JAP,Rengo Kantai,4 Sensui Kantai,Ro-33,submarine,ship_hull_submarine_1,JAP,Kaichū IV Class,no,JAP_1939_naval.txt
 JAP,Rengo Kantai,4 Sensui Kantai,Ro-34,submarine,ship_hull_submarine_1,JAP,Kaichū IV Class,no,JAP_1939_naval.txt
 JAP,Rengo Kantai,5 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Rengo Kantai,5 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Rengo Kantai,5 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Rengo Kantai,5 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Rengo Kantai,5 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Rengo Kantai,5 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Rengo Kantai,3 Sensui Sentai,Kiraisen Class,submarine,ship_hull_submarine_2,JAP,Kiraisen Class,no,JAP_1939_naval.txt
-JAP,Rengo Kantai,3 Sensui Sentai,Kiraisen Class,submarine,ship_hull_submarine_2,JAP,Kiraisen Class,no,JAP_1939_naval.txt
-JAP,Rengo Kantai,3 Sensui Sentai,Kiraisen Class,submarine,ship_hull_submarine_2,JAP,Kiraisen Class,no,JAP_1939_naval.txt
 JAP,Rengo Kantai,3 Sensui Sentai,Kiraisen Class,submarine,ship_hull_submarine_2,JAP,Kiraisen Class,no,JAP_1939_naval.txt
 JAP,Kaigun Yobikantai,Kure Kantai,Hosho,carrier,ship_hull_carrier_conversion_ca,JAP,Hosho Class,no,JAP_1939_naval.txt
 JAP,Kaigun Yobikantai,Chinkai Kantai,Minekaze,destroyer,ship_hull_light_1,JAP,Mutsuki Class,no,JAP_1939_naval.txt
@@ -1722,11 +1363,6 @@ JAP,Chikogu Eira Kantai,Shanghai Kantai,Hasu,destroyer,ship_hull_light_1,JAP,Mom
 JAP,Chikogu Eira Kantai,Shanghai Kantai,Kuri,destroyer,ship_hull_light_1,JAP,Momi Class,no,JAP_1939_naval.txt
 JAP,Chikogu Eira Kantai,Shanghai Kantai,Tsuga,destroyer,ship_hull_light_1,JAP,Momi Class,no,JAP_1939_naval.txt
 JAP,Taiheiyo Kantai,1 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,1 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,1 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,1 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,1 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,1 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
 JAP,Taiheiyo Kantai,1 Sensui Kantai,Ro-60,submarine,ship_hull_submarine_1,JAP,Kaichū IV Class,no,JAP_1939_naval.txt
 JAP,Taiheiyo Kantai,1 Sensui Kantai,Ro-61,submarine,ship_hull_submarine_1,JAP,Kaichū IV Class,no,JAP_1939_naval.txt
 JAP,Taiheiyo Kantai,1 Sensui Kantai,Ro-62,submarine,ship_hull_submarine_1,JAP,Kaichū IV Class,no,JAP_1939_naval.txt
@@ -1740,19 +1376,6 @@ JAP,Taiheiyo Kantai,2 Sensui Kantai,Ro-57,submarine,ship_hull_submarine_1,JAP,Ka
 JAP,Taiheiyo Kantai,2 Sensui Kantai,Ro-58,submarine,ship_hull_submarine_1,JAP,Kaichū IV Class,no,JAP_1939_naval.txt
 JAP,Taiheiyo Kantai,2 Sensui Kantai,Ro-59,submarine,ship_hull_submarine_1,JAP,Kaichū IV Class,no,JAP_1939_naval.txt
 JAP,Taiheiyo Kantai,2 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,2 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,2 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,2 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,2 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,2 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,2 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,3 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,3 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,3 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,3 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,3 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,3 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
-JAP,Taiheiyo Kantai,3 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
 JAP,Taiheiyo Kantai,3 Sensui Kantai,Kaidai III Class,submarine,ship_hull_submarine_2,JAP,Kaidai III Class,no,JAP_1939_naval.txt
 JAP,Taiheiyo Kantai,3 Sensui Kantai,Ro-30,submarine,ship_hull_submarine_1,JAP,Kaichū IV Class,no,JAP_1939_naval.txt
 JAP,Taiheiyo Kantai,3 Sensui Kantai,Ro-31,submarine,ship_hull_submarine_1,JAP,Kaichū IV Class,no,JAP_1939_naval.txt
@@ -1767,11 +1390,6 @@ MEX,Armada de México,Armada de México,ARM Durango,destroyer,ship_hull_light_1,
 MEX,Armada de México,Armada de México,ARM Guanajuato,destroyer,ship_hull_light_1,MEX,Durango Class,no,MEX_1936_naval_mtg.txt
 MEX,Armada de México,Armada de México,ARM Querétaro,destroyer,ship_hull_light_1,MEX,Durango Class,no,MEX_1936_naval_mtg.txt
 MEX,Armada de México,Armada de México,ARM Potosí,destroyer,ship_hull_light_1,MEX,Durango Class,no,MEX_1936_naval_mtg.txt
-MEX,Armada de México,Armada de México,ARM Nicolás Bravo,destroyer,ship_hull_light_1,MEX,Nicolás Bravo Class,no,MEX_1939_naval_mtg.txt
-MEX,Armada de México,Armada de México,ARM Durango,destroyer,ship_hull_light_1,MEX,Durango Class,no,MEX_1939_naval_mtg.txt
-MEX,Armada de México,Armada de México,ARM Guanajuato,destroyer,ship_hull_light_1,MEX,Durango Class,no,MEX_1939_naval_mtg.txt
-MEX,Armada de México,Armada de México,ARM Querétaro,destroyer,ship_hull_light_1,MEX,Durango Class,no,MEX_1939_naval_mtg.txt
-MEX,Armada de México,Armada de México,ARM Potosí,destroyer,ship_hull_light_1,MEX,Durango Class,no,MEX_1939_naval_mtg.txt
 NOR,Kongelige Norske Marine,1. Sjøforsvarsdistrikt,HNoMS Harald Haarfagre,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,NOR,Norge Class,no,NOR_1936_naval_mtg.txt
 NOR,Kongelige Norske Marine,1. Sjøforsvarsdistrikt,HNoMS Tordenskjold,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,NOR,Norge Class,no,NOR_1936_naval_mtg.txt
 NOR,Kongelige Norske Marine,1. Sjøforsvarsdistrikt,HNoMS Olaf Tryggvason,destroyer,ship_hull_light_2,NOR,Olaf Tryggvason Class,no,NOR_1936_naval_mtg.txt
@@ -1790,27 +1408,9 @@ NOR,Kongelige Norske Marine,3. Sjøforsvarsdistrikt,HNoMS Norge,heavy_cruiser,sh
 NOR,Kongelige Norske Marine,3. Sjøforsvarsdistrikt,HNoMS Eidsvold,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,NOR,Norge Class,no,NOR_1936_naval_mtg.txt
 NOR,Kongelige Norske Marine,3. Sjøforsvarsdistrikt,HNoMS B1,submarine,ship_hull_submarine_1,NOR,A & B Class,no,NOR_1936_naval_mtg.txt
 NOR,Kongelige Norske Marine,3. Sjøforsvarsdistrikt,HNoMS B3,submarine,ship_hull_submarine_1,NOR,A & B Class,no,NOR_1936_naval_mtg.txt
-NOR,Kongelige Norske Marine,1. Sjøforsvarsdistrikt,HNoMS Harald Haarfagre,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,NOR,Norge Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,1. Sjøforsvarsdistrikt,HNoMS Tordenskjold,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,NOR,Norge Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,1. Sjøforsvarsdistrikt,HNoMS Olaf Tryggvason,destroyer,ship_hull_light_2,NOR,Olaf Tryggvason Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,1. Sjøforsvarsdistrikt,HNoMS Frøya,destroyer,ship_hull_light_1,NOR,Frøya Class,no,NOR_1939_naval_mtg.txt
 NOR,Kongelige Norske Marine,1. Sjøforsvarsdistrikt,HNoMS Gyller,destroyer,ship_hull_light_1,NOR,Sleipner & Odin Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,1. Sjøforsvarsdistrikt,HNoMS A2,submarine,ship_hull_submarine_1,NOR,A & B Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,1. Sjøforsvarsdistrikt,HNoMS A3,submarine,ship_hull_submarine_1,NOR,A & B Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,1. Sjøforsvarsdistrikt,HNoMS A4,submarine,ship_hull_submarine_1,NOR,A & B Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,1. Sjøforsvarsdistrikt,HNoMS B2,submarine,ship_hull_submarine_1,NOR,A & B Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,1. Sjøforsvarsdistrikt,HNoMS B4,submarine,ship_hull_submarine_1,NOR,A & B Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,1. Sjøforsvarsdistrikt,HNoMS B5,submarine,ship_hull_submarine_1,NOR,A & B Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,2. Sjøforsvarsdistrikt,HNoMS Draug,destroyer,ship_hull_light_1,NOR,Draug Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,2. Sjøforsvarsdistrikt,HNoMS Troll,destroyer,ship_hull_light_1,NOR,Draug Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,2. Sjøforsvarsdistrikt,HNoMS Garm,destroyer,ship_hull_light_1,NOR,Draug Class,no,NOR_1939_naval_mtg.txt
 NOR,Kongelige Norske Marine,2. Sjøforsvarsdistrikt,HNoMS Æger,destroyer,ship_hull_light_1,NOR,Sleipner & Odin Class,no,NOR_1939_naval_mtg.txt
 NOR,Kongelige Norske Marine,2. Sjøforsvarsdistrikt,HNoMS Sleipner,destroyer,ship_hull_light_1,NOR,Sleipner & Odin Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,2. Sjøforsvarsdistrikt,HNoMS B6,submarine,ship_hull_submarine_1,NOR,A & B Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,3. Sjøforsvarsdistrikt,HNoMS Norge,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,NOR,Norge Class,yes,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,3. Sjøforsvarsdistrikt,HNoMS Eidsvold,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,NOR,Norge Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,3. Sjøforsvarsdistrikt,HNoMS B1,submarine,ship_hull_submarine_1,NOR,A & B Class,no,NOR_1939_naval_mtg.txt
-NOR,Kongelige Norske Marine,3. Sjøforsvarsdistrikt,HNoMS B3,submarine,ship_hull_submarine_1,NOR,A & B Class,no,NOR_1939_naval_mtg.txt
 NZL,Royal New Zealand Navy,New Zealand Division,HMNZS Achilles,light_cruiser,ship_hull_cruiser_2,NZL,Leander Class,no,NZL_1939_naval_mtg.txt
 NZL,Royal New Zealand Navy,New Zealand Division,HMNZS Leander,light_cruiser,ship_hull_cruiser_2,NZL,Leander Class,no,NZL_1939_naval_mtg.txt
 PHI,United States Army Forces in the Far East,Offshore Patrol,Q-111 Luzon,destroyer,ship_hull_light_2,PHI,Patrol Boat,no,PHI_1939_naval_mtg.txt
@@ -1844,15 +1444,6 @@ POR,Marinha de Portugal,Flotilha 'Viana do Castelo',NRP Tejo,destroyer,ship_hull
 POR,Marinha de Portugal,Flotilha Delfim,NRP Delfim,submarine,ship_hull_submarine_2,POR,Delfim Class,no,POR_1936_naval_mtg.txt
 POR,Marinha de Portugal,Flotilha Delfim,NRP Espadarte,submarine,ship_hull_submarine_2,POR,Delfim Class,no,POR_1936_naval_mtg.txt
 POR,Marinha de Portugal,Flotilha Delfim,NRP Golfinho,submarine,ship_hull_submarine_2,POR,Delfim Class,no,POR_1936_naval_mtg.txt
-POR,Marinha de Portugal,Flotilha 'Viana do Castelo',NRP Tamega,destroyer,ship_hull_light_1,POR,Guadiana Class,no,POR_1939_naval_mtg.txt
-POR,Marinha de Portugal,Flotilha 'Viana do Castelo',NRP Dão,destroyer,ship_hull_light_1,POR,Douro Class,no,POR_1939_naval_mtg.txt
-POR,Marinha de Portugal,Flotilha 'Viana do Castelo',NRP Douro,destroyer,ship_hull_light_1,POR,Douro Class,no,POR_1939_naval_mtg.txt
-POR,Marinha de Portugal,Flotilha 'Viana do Castelo',NRP Lima,destroyer,ship_hull_light_1,POR,Douro Class,no,POR_1939_naval_mtg.txt
-POR,Marinha de Portugal,Flotilha 'Viana do Castelo',NRP Vouga,destroyer,ship_hull_light_1,POR,Douro Class,no,POR_1939_naval_mtg.txt
-POR,Marinha de Portugal,Flotilha 'Viana do Castelo',NRP Tejo,destroyer,ship_hull_light_1,POR,Douro Class,no,POR_1939_naval_mtg.txt
-POR,Marinha de Portugal,Flotilha Delfim,NRP Delfim,submarine,ship_hull_submarine_2,POR,Delfim Class,no,POR_1939_naval_mtg.txt
-POR,Marinha de Portugal,Flotilha Delfim,NRP Espadarte,submarine,ship_hull_submarine_2,POR,Delfim Class,no,POR_1939_naval_mtg.txt
-POR,Marinha de Portugal,Flotilha Delfim,NRP Golfinho,submarine,ship_hull_submarine_2,POR,Delfim Class,no,POR_1939_naval_mtg.txt
 PRU,Marina de Guerra,Escuadrón Naval,BAP Almirante Grau,light_cruiser,ship_hull_cruiser_coastal_defense_ship,PRU,Almirante Grau Class,no,PRU_1936_naval_mtg.txt
 PRU,Marina de Guerra,Escuadrón Naval,BAP Coronel Bolognesi,light_cruiser,ship_hull_cruiser_coastal_defense_ship,PRU,Almirante Grau Class,no,PRU_1936_naval_mtg.txt
 PRU,Marina de Guerra,Escuadrón Naval,BAP Almirante Villar,destroyer,ship_hull_light_1,PRU,Almirante Villar Class,no,PRU_1936_naval_mtg.txt
@@ -1861,22 +1452,10 @@ PRU,Marina de Guerra,Flotilla de Submarinos,BAP R1,submarine,ship_hull_submarine
 PRU,Marina de Guerra,Flotilla de Submarinos,BAP R2,submarine,ship_hull_submarine_1,PRU,R1 Class,no,PRU_1936_naval_mtg.txt
 PRU,Marina de Guerra,Flotilla de Submarinos,BAP R3,submarine,ship_hull_submarine_1,PRU,R1 Class,no,PRU_1936_naval_mtg.txt
 PRU,Marina de Guerra,Flotilla de Submarinos,BAP R4,submarine,ship_hull_submarine_1,PRU,R1 Class,no,PRU_1936_naval_mtg.txt
-PRU,Marina de Guerra,Escuadrón Naval,BAP Almirante Grau,light_cruiser,ship_hull_cruiser_coastal_defense_ship,PRU,Almirante Grau Class,no,PRU_1939_naval_mtg.txt
-PRU,Marina de Guerra,Escuadrón Naval,BAP Coronel Bolognesi,light_cruiser,ship_hull_cruiser_coastal_defense_ship,PRU,Almirante Grau Class,no,PRU_1939_naval_mtg.txt
-PRU,Marina de Guerra,Escuadrón Naval,BAP Almirante Villar,destroyer,ship_hull_light_1,PRU,Almirante Villar Class,no,PRU_1939_naval_mtg.txt
-PRU,Marina de Guerra,Escuadrón Naval,BAP Almirante Guise,destroyer,ship_hull_light_1,PRU,Almirante Villar Class,no,PRU_1939_naval_mtg.txt
-PRU,Marina de Guerra,Flotilla de Submarinos,BAP R1,submarine,ship_hull_submarine_1,PRU,R1 Class,no,PRU_1939_naval_mtg.txt
-PRU,Marina de Guerra,Flotilla de Submarinos,BAP R2,submarine,ship_hull_submarine_1,PRU,R1 Class,no,PRU_1939_naval_mtg.txt
-PRU,Marina de Guerra,Flotilla de Submarinos,BAP R3,submarine,ship_hull_submarine_1,PRU,R1 Class,no,PRU_1939_naval_mtg.txt
-PRU,Marina de Guerra,Flotilla de Submarinos,BAP R4,submarine,ship_hull_submarine_1,PRU,R1 Class,no,PRU_1939_naval_mtg.txt
 ROM,Flota Romania de Mare,Flota Romania de Mare,NMS Marasti,destroyer,ship_hull_light_1,ROM,Marasti Class,no,ROM_1936_naval_mtg.txt
 ROM,Flota Romania de Mare,Flota Romania de Mare,NMS Marasesti,destroyer,ship_hull_light_1,ROM,Marasti Class,no,ROM_1936_naval_mtg.txt
 ROM,Flota Romania de Mare,Flota Romania de Mare,NMS Regele Ferdinand,destroyer,ship_hull_light_1,ROM,Regele Ferdinand Class,no,ROM_1936_naval_mtg.txt
 ROM,Flota Romania de Mare,Flota Romania de Mare,NMS Regina Maria,destroyer,ship_hull_light_1,ROM,Regele Ferdinand Class,no,ROM_1936_naval_mtg.txt
-ROM,Flota Romania de Mare,Flota Romania de Mare,NMS Marasti,destroyer,ship_hull_light_1,ROM,Marasti Class,no,ROM_1939_naval_mtg.txt
-ROM,Flota Romania de Mare,Flota Romania de Mare,NMS Marasesti,destroyer,ship_hull_light_1,ROM,Marasti Class,no,ROM_1939_naval_mtg.txt
-ROM,Flota Romania de Mare,Flota Romania de Mare,NMS Regele Ferdinand,destroyer,ship_hull_light_1,ROM,Regele Ferdinand Class,no,ROM_1939_naval_mtg.txt
-ROM,Flota Romania de Mare,Flota Romania de Mare,NMS Regina Maria,destroyer,ship_hull_light_1,ROM,Regele Ferdinand Class,no,ROM_1939_naval_mtg.txt
 ROM,Flota Romania de Mare,Flota Romania de Mare,NMS Delfinul,submarine,ship_hull_submarine_2,ROM,Delfinul Class,no,ROM_1939_naval_mtg.txt
 SIA,Royal Siamese Navy,Royal Siamese Navy,HTMS Phra Ruang,destroyer,ship_hull_light_1,SIA,Phra Ruang Class,no,SIA_1936_naval_mtg.txt
 SIA,Royal Siamese Navy,Royal Fleet,HTMS Sri Ayuthia,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,SIA,Sri Ayuthia Class,yes,SIA_1939_naval_mtg.txt
@@ -1971,13 +1550,7 @@ SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Shch-112,submarine,ship_hu
 SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,L-7,submarine,ship_hull_submarine_2,SOV,Series II Leninets,no,SOV_1936_naval_mtg.txt
 SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,L-8,submarine,ship_hull_submarine_2,SOV,Series II Leninets,no,SOV_1936_naval_mtg.txt
 SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,L-9,submarine,ship_hull_submarine_2,SOV,Series II Leninets,no,SOV_1936_naval_mtg.txt
-SOV,Severnyy Flot,Severnyy Flot,Dzerzhinskiy,destroyer,ship_hull_light_1,SOV,Fidonisi Class,no,SOV_1939_naval_mtg.txt
-SOV,Severnyy Flot,Severnyy Flot,Nezamozhnik,destroyer,ship_hull_light_1,SOV,Fidonisi Class,no,SOV_1939_naval_mtg.txt
-SOV,Severnyy Flot,Severnyy Flot,Petrovskiy,destroyer,ship_hull_light_1,SOV,Fidonisi Class,no,SOV_1939_naval_mtg.txt
-SOV,Severnyy Flot,Severnyy Flot,Shaumyan,destroyer,ship_hull_light_1,SOV,Fidonisi Class,no,SOV_1939_naval_mtg.txt
 SOV,Severnyy Flot,Severnyy Flot,Karl Libknekht,destroyer,ship_hull_light_1,SOV,Orfey Class,no,SOV_1939_naval_mtg.txt
-SOV,Severnyy Flot,Severnyy Flot,Izyaslav,destroyer,ship_hull_light_1,SOV,Fidonisi Class,no,SOV_1939_naval_mtg.txt
-SOV,Severnyy Flot,Severnyy Flot,Kalinin,destroyer,ship_hull_light_1,SOV,Fidonisi Class,no,SOV_1939_naval_mtg.txt
 SOV,Severnyy Flot,Severnyy Flot,Lenin,destroyer,ship_hull_light_1,SOV,Orfey Class,no,SOV_1939_naval_mtg.txt
 SOV,Severnyy Flot,Severnyy Flot,Voykov,destroyer,ship_hull_light_1,SOV,Orfey Class,no,SOV_1939_naval_mtg.txt
 SOV,Severnyy Flot,Severnyy Flot,Engels,destroyer,ship_hull_light_1,SOV,Orfey Class,no,SOV_1939_naval_mtg.txt
@@ -1988,17 +1561,7 @@ SOV,Severnyy Flot,Severniy Podvodniy Flot,D-4,submarine,ship_hull_submarine_1,SO
 SOV,Severnyy Flot,Severniy Podvodniy Flot,D-5,submarine,ship_hull_submarine_1,SOV,Series I Debakrist,no,SOV_1939_naval_mtg.txt
 SOV,Severnyy Flot,Severniy Podvodniy Flot,D-6,submarine,ship_hull_submarine_1,SOV,Series I Debakrist,no,SOV_1939_naval_mtg.txt
 SOV,Severnyy Flot,Severniy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Severnyy Flot,Severniy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Severnyy Flot,Severniy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Severnyy Flot,Severniy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Severnyy Flot,Severniy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Severnyy Flot,Severniy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Severnyy Flot,Severniy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Severnyy Flot,Severniy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Flot,Marat,battleship,ship_hull_heavy_1,SOV,Marat Class,yes,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Flot,Oktyabrskaya Revolutsiya,battleship,ship_hull_heavy_1,SOV,Marat Class,no,SOV_1939_naval_mtg.txt
 SOV,Baltiyskiy Flot,Baltiyskiy Flot,Kirov,heavy_cruiser,ship_hull_cruiser_1,SOV,Kirov Class,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Flot,Marti,light_cruiser,ship_hull_cruiser_1,SOV,Marti Class,no,SOV_1939_naval_mtg.txt
 SOV,Baltiyskiy Flot,Baltiyskiy Flot,Leningrad,destroyer,ship_hull_light_2,SOV,Leningrad & Minsk Class,no,SOV_1939_naval_mtg.txt
 SOV,Baltiyskiy Flot,Baltiyskiy Flot,Gremyashchiy,destroyer,ship_hull_light_2,SOV,Gnevnyy Class,no,SOV_1939_naval_mtg.txt
 SOV,Baltiyskiy Flot,Baltiyskiy Flot,Groznyy,destroyer,ship_hull_light_2,SOV,Gnevnyy Class,no,SOV_1939_naval_mtg.txt
@@ -2009,41 +1572,13 @@ SOV,Baltiyskiy Flot,Baltiyskiy Flot,Gromkiy,destroyer,ship_hull_light_2,SOV,Gnev
 SOV,Baltiyskiy Flot,Baltiyskiy Flot,Smetlivyy,destroyer,ship_hull_light_2,SOV,Gnevnyy Class,no,SOV_1939_naval_mtg.txt
 SOV,Baltiyskiy Flot,Baltiyskiy Flot,Stremitelnyy,destroyer,ship_hull_light_2,SOV,Gnevnyy Class,no,SOV_1939_naval_mtg.txt
 SOV,Baltiyskiy Flot,Baltiyskiy Flot,Sokrushitelnyy,destroyer,ship_hull_light_2,SOV,Gnevnyy Class,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,B-2,submarine,ship_hull_submarine_1,SOV,Series I Debakrist,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,L-55,submarine,ship_hull_submarine_1,SOV,Series I Debakrist,no,SOV_1939_naval_mtg.txt
 SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
 SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
 SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,P-1,submarine,ship_hull_submarine_2,SOV,Series IX Srednyaya,no,SOV_1939_naval_mtg.txt
 SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,P-2,submarine,ship_hull_submarine_2,SOV,Series IX Srednyaya,no,SOV_1939_naval_mtg.txt
 SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,P-3,submarine,ship_hull_submarine_2,SOV,Series IX Srednyaya,no,SOV_1939_naval_mtg.txt
 SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series IX Srednyaya,submarine,ship_hull_submarine_2,SOV,Series IX Srednyaya,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series IX Srednyaya,submarine,ship_hull_submarine_2,SOV,Series IX Srednyaya,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series IX Srednyaya,submarine,ship_hull_submarine_2,SOV,Series IX Srednyaya,no,SOV_1939_naval_mtg.txt
 SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series II Leninets,submarine,ship_hull_submarine_2,SOV,Series II Leninets,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series II Leninets,submarine,ship_hull_submarine_2,SOV,Series II Leninets,no,SOV_1939_naval_mtg.txt
-SOV,Baltiyskiy Flot,Baltiyskiy Podvodniy Flot,Series II Leninets,submarine,ship_hull_submarine_2,SOV,Series II Leninets,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Flot,Parizhskaya Kommuna,battleship,ship_hull_heavy_1,SOV,Marat Class,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Flot,Krasni Kavkaz,light_cruiser,ship_hull_cruiser_1,SOV,Chervona Ukraina Class,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Flot,Krasny Krym,light_cruiser,ship_hull_cruiser_1,SOV,Chervona Ukraina Class,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Flot,Chervona Ukraina,light_cruiser,ship_hull_cruiser_1,SOV,Chervona Ukraina Class,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Flot,Komintern,light_cruiser,ship_hull_cruiser_1,SOV,Komintern Class,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Flot,Bug,destroyer,ship_hull_light_1,SOV,Bug Class,no,SOV_1939_naval_mtg.txt
 SOV,Chernomorskiy Flot,Chernomorskiy Flot,Moskva,destroyer,ship_hull_light_2,SOV,Leningrad & Minsk Class,no,SOV_1939_naval_mtg.txt
 SOV,Chernomorskiy Flot,Chernomorskiy Flot,Bodryy,destroyer,ship_hull_light_2,SOV,Gnevnyy Class,no,SOV_1939_naval_mtg.txt
 SOV,Chernomorskiy Flot,Chernomorskiy Flot,Bystryy,destroyer,ship_hull_light_2,SOV,Gnevnyy Class,no,SOV_1939_naval_mtg.txt
@@ -2054,75 +1589,13 @@ SOV,Chernomorskiy Flot,Chernomorskiy Flot,Volodarskiy,destroyer,ship_hull_light_
 SOV,Chernomorskiy Flot,Chernomorskiy Flot,Yakov Sverdlov,destroyer,ship_hull_light_1,SOV,Orfey Class,no,SOV_1939_naval_mtg.txt
 SOV,Chernomorskiy Flot,Chernomorskiy Flot,Frunze,destroyer,ship_hull_light_1,SOV,Orfey Class,no,SOV_1939_naval_mtg.txt
 SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
 SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,A-1,submarine,ship_hull_submarine_1,SOV,AG Class,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,A-2,submarine,ship_hull_submarine_1,SOV,AG Class,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,A-3,submarine,ship_hull_submarine_1,SOV,AG Class,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,A-4,submarine,ship_hull_submarine_1,SOV,AG Class,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,A-5,submarine,ship_hull_submarine_1,SOV,AG Class,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series II Leninets,submarine,ship_hull_submarine_2,SOV,Series II Leninets,no,SOV_1939_naval_mtg.txt
-SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series II Leninets,submarine,ship_hull_submarine_2,SOV,Series II Leninets,no,SOV_1939_naval_mtg.txt
 SOV,Chernomorskiy Flot,Chernomorskiy Podvodniy Flot,Series II Leninets,submarine,ship_hull_submarine_2,SOV,Series II Leninets,no,SOV_1939_naval_mtg.txt
 SOV,Tikhookeanskiy Flot,Tikhookeanskiy Flot,Ryanyy,destroyer,ship_hull_light_2,SOV,Gnevnyy Class,no,SOV_1939_naval_mtg.txt
 SOV,Tikhookeanskiy Flot,Tikhookeanskiy Flot,Rykov,destroyer,ship_hull_light_1,SOV,Orfey Class,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tikhookeanskiy Flot,Uritskiy,destroyer,ship_hull_light_1,SOV,Orfey Class,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tikhookeanskiy Flot,Stalin,destroyer,ship_hull_light_1,SOV,Orfey Class,no,SOV_1939_naval_mtg.txt
 SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series V Shchuka,submarine,ship_hull_submarine_1,SOV,Series V Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
 SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series X Shchuka,submarine,ship_hull_submarine_1,SOV,Series X Shchuka,no,SOV_1939_naval_mtg.txt
 SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series II Leninets,submarine,ship_hull_submarine_2,SOV,Series II Leninets,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series II Leninets,submarine,ship_hull_submarine_2,SOV,Series II Leninets,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series II Leninets,submarine,ship_hull_submarine_2,SOV,Series II Leninets,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series II Leninets,submarine,ship_hull_submarine_2,SOV,Series II Leninets,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series II Leninets,submarine,ship_hull_submarine_2,SOV,Series II Leninets,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series II Leninets,submarine,ship_hull_submarine_2,SOV,Series II Leninets,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series XIII Leninets,submarine,ship_hull_submarine_2,SOV,Series XIII Leninets,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series XIII Leninets,submarine,ship_hull_submarine_2,SOV,Series XIII Leninets,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series XIII Leninets,submarine,ship_hull_submarine_2,SOV,Series XIII Leninets,no,SOV_1939_naval_mtg.txt
-SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series XIII Leninets,submarine,ship_hull_submarine_2,SOV,Series XIII Leninets,no,SOV_1939_naval_mtg.txt
 SOV,Tikhookeanskiy Flot,Tihookyeanskiy Podvodniy Flot,Series XIII Leninets,submarine,ship_hull_submarine_2,SOV,Series XIII Leninets,no,SOV_1939_naval_mtg.txt
 SPA,Base Naval El Ferrol,Escuadrón de El Ferrol,ARE Canarias,heavy_cruiser,ship_hull_cruiser_2,SPR,Canarias Class,yes,SPA_1939_naval_mtg.txt
 SPA,Base Naval El Ferrol,Escuadrón de El Ferrol,ARE Galicia,light_cruiser,ship_hull_cruiser_2,SPR,Príncipe Alfonso Class,no,SPA_1939_naval_mtg.txt
@@ -2221,42 +1694,14 @@ SWE,Kungliga Svenska Marinen,Göteborgs Eskadern,HMS Bävern,submarine,ship_hull
 SWE,Kungliga Svenska Marinen,Göteborgs Eskadern,HMS Illern,submarine,ship_hull_submarine_1,SWE,Hajen Class,no,SWE_1936_naval_mtg.txt
 SWE,Kungliga Svenska Marinen,Göteborgs Eskadern,HMS Uttern,submarine,ship_hull_submarine_1,SWE,Hajen Class,no,SWE_1936_naval_mtg.txt
 SWE,Kungliga Svenska Marinen,Göteborgs Eskadern,HMS Valen,submarine,ship_hull_submarine_1,SWE,Valen Class,no,SWE_1936_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Kustflottan,HMS Dristigheten,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,SWE,Äran Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Kustflottan,HMS Örnen,destroyer,ship_hull_light_1,SWE,Örnen Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Kustflottan,HMS Jacob Bagge,destroyer,ship_hull_light_1,SWE,Örnen Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Kustflottan,HMS Clas Fleming,destroyer,ship_hull_light_1,SWE,Clas Fleming Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,1a Eskadern,HMS Gustaf V,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,SWE,Sverige Class,yes,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,1a Eskadern,HMS Sverige,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,SWE,Sverige Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,1a Eskadern,HMS Drottning Victoria,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,SWE,Sverige Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,1a Eskadern,HMS Gotland,light_cruiser,ship_hull_cruiser_1,SWE,Gotland Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,1a Eskadern,HMS Klas Horn,destroyer,ship_hull_light_1,SWE,Ehrensköld Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,1a Eskadern,HMS Klas Uggla,destroyer,ship_hull_light_1,SWE,Ehrensköld Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,1a Eskadern,HMS Ehrensköld,destroyer,ship_hull_light_1,SWE,Ehrensköld Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,1a Eskadern,HMS Nordenskjöld,destroyer,ship_hull_light_1,SWE,Ehrensköld Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Ålandshavseskader,HMS Äran,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,SWE,Äran Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Ålandshavseskader,HMS Tapperheten,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,SWE,Äran Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Karlskrona Avdelningen,HMS Wasa,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,SWE,Äran Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Karlskrona Avdelningen,HMS Manligheten,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,SWE,Äran Class,no,SWE_1939_naval_mtg.txt
 SWE,Kungliga Svenska Marinen,Karlskrona Avdelningen,HMS Göteborg,destroyer,ship_hull_light_2,SWE,Göteborg Class,no,SWE_1939_naval_mtg.txt
 SWE,Kungliga Svenska Marinen,Karlskrona Avdelningen,HMS Stockholm,destroyer,ship_hull_light_2,SWE,Göteborg Class,no,SWE_1939_naval_mtg.txt
 SWE,Kungliga Svenska Marinen,Karlskrona Avdelningen,HMS Malmö,destroyer,ship_hull_light_2,SWE,Göteborg Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Karlskrona Avdelningen,HMS Draken,submarine,ship_hull_submarine_2,SWE,Draken Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Karlskrona Avdelningen,HMS Gripen,submarine,ship_hull_submarine_2,SWE,Draken Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Karlskrona Avdelningen,HMS Ulven,submarine,ship_hull_submarine_2,SWE,Draken Class,no,SWE_1939_naval_mtg.txt
 SWE,Kungliga Svenska Marinen,Karlskrona Avdelningen,HMS Delfinen,submarine,ship_hull_submarine_2,SWE,Delfinen Class,no,SWE_1939_naval_mtg.txt
 SWE,Kungliga Svenska Marinen,Karlskrona Avdelningen,HMS Nordkaparen,submarine,ship_hull_submarine_2,SWE,Delfinen Class,no,SWE_1939_naval_mtg.txt
 SWE,Kungliga Svenska Marinen,Karlskrona Avdelningen,HMS Springaren,submarine,ship_hull_submarine_2,SWE,Delfinen Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Göteborgs Eskadern,HMS Oscar II,heavy_cruiser,ship_hull_cruiser_coastal_defense_ship,SWE,Oscar II Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Göteborgs Eskadern,HMS Fylgia,light_cruiser,ship_hull_cruiser_coastal_defense_ship,SWE,Fylgia Class,no,SWE_1939_naval_mtg.txt
 SWE,Kungliga Svenska Marinen,Göteborgs Eskadern,HMS Sjölejonet,submarine,ship_hull_submarine_2,SWE,Sjölejonet Class,no,SWE_1939_naval_mtg.txt
 SWE,Kungliga Svenska Marinen,Göteborgs Eskadern,HMS Sjöbjörnen,submarine,ship_hull_submarine_2,SWE,Sjölejonet Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Göteborgs Eskadern,HMS Hajen,submarine,ship_hull_submarine_1,SWE,Hajen Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Göteborgs Eskadern,HMS Sälen,submarine,ship_hull_submarine_1,SWE,Hajen Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Göteborgs Eskadern,HMS Valrossen,submarine,ship_hull_submarine_1,SWE,Hajen Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Göteborgs Eskadern,HMS Bävern,submarine,ship_hull_submarine_1,SWE,Hajen Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Göteborgs Eskadern,HMS Illern,submarine,ship_hull_submarine_1,SWE,Hajen Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Göteborgs Eskadern,HMS Uttern,submarine,ship_hull_submarine_1,SWE,Hajen Class,no,SWE_1939_naval_mtg.txt
-SWE,Kungliga Svenska Marinen,Göteborgs Eskadern,HMS Valen,submarine,ship_hull_submarine_1,SWE,Valen Class,no,SWE_1939_naval_mtg.txt
 TUR,Türk Donanmasi,Türk Donanmasi,TCG Yavuz,battle_cruiser,ship_hull_heavy_1,TUR,Yavuz Class,yes,TUR_1936_naval_mtg.txt
 TUR,Türk Donanmasi,Türk Donanmasi,TCG Mecidiye,light_cruiser,ship_hull_cruiser_coastal_defense_ship,TUR,Mecidiye Class,no,TUR_1936_naval_mtg.txt
 TUR,Türk Donanmasi,Türk Donanmasi,TCG Hamidiye,light_cruiser,ship_hull_cruiser_coastal_defense_ship,TUR,Mecidiye Class,no,TUR_1936_naval_mtg.txt
@@ -2271,23 +1716,8 @@ TUR,Türk Donanmasi,Filotilla Denizalti Kücük,TCG Ikinci Inönü,submarine,shi
 TUR,Türk Donanmasi,Filotilla Denizalti Kücük,TCG Dumlupinar,submarine,ship_hull_submarine_2,TUR,Dumlupinar Class,no,TUR_1936_naval_mtg.txt
 TUR,Türk Donanmasi,Filotilla Denizalti Kücük,TCG Sakarya,submarine,ship_hull_submarine_1,TUR,Sakarya Class,no,TUR_1936_naval_mtg.txt
 TUR,Türk Donanmasi,Filotilla Denizalti Kücük,TCG Gür,submarine,ship_hull_submarine_1,TUR,Sakarya Class,no,TUR_1936_naval_mtg.txt
-TUR,Türk Donanmasi,Türk Donanmasi,TCG Yavuz,battle_cruiser,ship_hull_heavy_1,TUR,Yavuz Class,yes,TUR_1939_naval_mtg.txt
-TUR,Türk Donanmasi,Türk Donanmasi,TCG Mecidiye,light_cruiser,ship_hull_cruiser_coastal_defense_ship,TUR,Mecidiye Class,no,TUR_1939_naval_mtg.txt
-TUR,Türk Donanmasi,Türk Donanmasi,TCG Hamidiye,light_cruiser,ship_hull_cruiser_coastal_defense_ship,TUR,Mecidiye Class,no,TUR_1939_naval_mtg.txt
-TUR,Türk Donanmasi,Türk Donanmasi,TCG Peyk,destroyer,ship_hull_light_1,TUR,Peyk Class,no,TUR_1939_naval_mtg.txt
-TUR,Türk Donanmasi,Türk Donanmasi,TCG Berk,destroyer,ship_hull_light_1,TUR,Peyk Class,no,TUR_1939_naval_mtg.txt
-TUR,Türk Donanmasi,Türk Donanmasi,TCG Kocatepe,destroyer,ship_hull_light_1,TUR,Kocatepe Class,no,TUR_1939_naval_mtg.txt
-TUR,Türk Donanmasi,Türk Donanmasi,TCG Adatepe,destroyer,ship_hull_light_1,TUR,Kocatepe Class,no,TUR_1939_naval_mtg.txt
-TUR,Türk Donanmasi,Türk Donanmasi,TCG Zafer,destroyer,ship_hull_light_1,TUR,Kocatepe Class,no,TUR_1939_naval_mtg.txt
-TUR,Türk Donanmasi,Türk Donanmasi,TCG Tinaztepe,destroyer,ship_hull_light_1,TUR,Kocatepe Class,no,TUR_1939_naval_mtg.txt
-TUR,Türk Donanmasi,Filotilla Denizalti Kücük,TCG Birinci Inönü,submarine,ship_hull_submarine_1,TUR,Birinci Inönü Class,no,TUR_1939_naval_mtg.txt
-TUR,Türk Donanmasi,Filotilla Denizalti Kücük,TCG Ikinci Inönü,submarine,ship_hull_submarine_1,TUR,Birinci Inönü Class,no,TUR_1939_naval_mtg.txt
-TUR,Türk Donanmasi,Filotilla Denizalti Kücük,TCG Dumlupinar,submarine,ship_hull_submarine_2,TUR,Dumlupinar Class,no,TUR_1939_naval_mtg.txt
-TUR,Türk Donanmasi,Filotilla Denizalti Kücük,TCG Sakarya,submarine,ship_hull_submarine_1,TUR,Sakarya Class,no,TUR_1939_naval_mtg.txt
-TUR,Türk Donanmasi,Filotilla Denizalti Kücük,TCG Gür,submarine,ship_hull_submarine_1,TUR,Sakarya Class,no,TUR_1939_naval_mtg.txt
 TUR,Türk Donanmasi,Filotilla Denizalti Kücük,TCG Saldiray,submarine,ship_hull_submarine_2,TUR,Saldiray Class,no,TUR_1939_naval_mtg.txt
 URG,Armada Nacional,Armada Nacional,ROU Uruguay,destroyer,ship_hull_light_1,URG,Uruguay Class,no,URG_1936_naval_mtg.txt
-URG,Armada Nacional,Armada Nacional,ROU Uruguay,destroyer,ship_hull_light_1,URG,Uruguay Class,no,URG_1939_naval_mtg.txt
 USA,Battle Force,"Battleships, Battle Force",USS Nevada,battleship,ship_hull_heavy_1,USA,Nevada Class,no,USA_1936_naval_mtg.txt
 USA,Battle Force,"Battleships, Battle Force",USS Arizona,battleship,ship_hull_heavy_1,USA,Pennsylvania Class,no,USA_1936_naval_mtg.txt
 USA,Battle Force,"Battleships, Battle Force",USS Pennsylvania,battleship,ship_hull_heavy_1,USA,Pennsylvania Class,no,USA_1936_naval_mtg.txt
@@ -2515,18 +1945,6 @@ USA,Asiatic Fleet,5th Submarine Squadron,USS S-38,submarine,ship_hull_submarine_
 USA,Asiatic Fleet,5th Submarine Squadron,USS S-39,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1936_naval_mtg.txt
 USA,Asiatic Fleet,5th Submarine Squadron,USS S-40,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1936_naval_mtg.txt
 USA,Asiatic Fleet,5th Submarine Squadron,USS S-41,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1936_naval_mtg.txt
-USA,Battle Force,"Battleships, Battle Force",USS Nevada,battleship,ship_hull_heavy_1,USA,Nevada Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,"Battleships, Battle Force",USS Pennsylvania,battleship,ship_hull_heavy_1,USA,Pennsylvania Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,"Battleships, Battle Force",USS Arizona,battleship,ship_hull_heavy_1,USA,Pennsylvania Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,"Battleships, Battle Force",USS Oklahoma,battleship,ship_hull_heavy_1,USA,Nevada Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,"Battleships, Battle Force",USS Tennessee,battleship,ship_hull_heavy_1,USA,Tennessee Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,"Battleships, Battle Force",USS California,battleship,ship_hull_heavy_1,USA,Tennessee Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,"Battleships, Battle Force",USS New Mexico,battleship,ship_hull_heavy_1,USA,Pennsylvania Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,"Battleships, Battle Force",USS Mississippi,battleship,ship_hull_heavy_1,USA,Pennsylvania Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,"Battleships, Battle Force",USS Idaho,battleship,ship_hull_heavy_1,USA,Pennsylvania Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,"Battleships, Battle Force",USS Colorado,battleship,ship_hull_heavy_1,USA,Colorado Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,"Battleships, Battle Force",USS Maryland,battleship,ship_hull_heavy_1,USA,Colorado Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,"Battleships, Battle Force",USS West Virginia,battleship,ship_hull_heavy_1,USA,Colorado Class,yes,USA_1939_naval_mtg.txt
 USA,Battle Force,Carrier Division 1,USS Lexington,carrier,ship_hull_carrier_conversion_bb,USA,Lexington Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Carrier Division 2,USS Enterprise,carrier,ship_hull_carrier_1,USA,Yorktown Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,"Cruisers, Battle Force",USS Brooklyn,light_cruiser,ship_hull_cruiser_2,USA,Brooklyn Class,no,USA_1939_naval_mtg.txt
@@ -2540,19 +1958,7 @@ USA,Battle Force,"Cruisers, Battle Force",USS St. Louis,light_cruiser,ship_hull_
 USA,Battle Force,Cruiser Division 3,USS Omaha,light_cruiser,ship_hull_cruiser_1,USA,Omaha Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Cruiser Division 3,USS Milwaukee,light_cruiser,ship_hull_cruiser_1,USA,Omaha Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Cruiser Division 3,USS Cincinnati,light_cruiser,ship_hull_cruiser_1,USA,Omaha Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Cruiser Division 3,USS Concord,light_cruiser,ship_hull_cruiser_1,USA,Omaha Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Cruiser Division 3,USS Oglala,light_cruiser,ship_hull_cruiser_1,USA,Oglala Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Cruiser Division 3,USS Aroostook,light_cruiser,ship_hull_cruiser_1,USA,Oglala Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 1,USS Raleigh,light_cruiser,ship_hull_cruiser_1,USA,Omaha Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Flotilla 1,USS Phelps,destroyer,ship_hull_light_1,USA,Farragut Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 1,USS Dewey,destroyer,ship_hull_light_1,USA,Farragut Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 1,USS Hull,destroyer,ship_hull_light_1,USA,Farragut Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 1,USS MacDonough,destroyer,ship_hull_light_1,USA,Farragut Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 1,USS Worden,destroyer,ship_hull_light_1,USA,Farragut Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 1,USS Farragut,destroyer,ship_hull_light_1,USA,Farragut Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 1,USS Dale,destroyer,ship_hull_light_1,USA,Farragut Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 1,USS Monaghan,destroyer,ship_hull_light_1,USA,Farragut Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 1,USS Aylwin,destroyer,ship_hull_light_1,USA,Farragut Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Flotilla 1,USS Porter,destroyer,ship_hull_light_1,USA,Farragut Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Flotilla 1,USS Mahan,destroyer,ship_hull_light_1,USA,Farragut Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Flotilla 1,USS Drayton,destroyer,ship_hull_light_1,USA,Farragut Class,no,USA_1939_naval_mtg.txt
@@ -2578,7 +1984,6 @@ USA,Battle Force,Destroyer Flotilla 1,USS Winslow,destroyer,ship_hull_light_1,US
 USA,Battle Force,Destroyer Flotilla 1,USS Sampson,destroyer,ship_hull_light_2,USA,Sims Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Flotilla 1,USS Davis,destroyer,ship_hull_light_2,USA,Sims Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Flotilla 1,USS Jouett,destroyer,ship_hull_light_2,USA,Sims Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 2,USS Detroit,light_cruiser,ship_hull_cruiser_1,USA,Omaha Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Flotilla 2,USS Selfridge,destroyer,ship_hull_light_1,USA,Farragut Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Flotilla 2,USS Bagley,destroyer,ship_hull_light_2,USA,Sims Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Flotilla 2,USS Blue,destroyer,ship_hull_light_2,USA,Sims Class,no,USA_1939_naval_mtg.txt
@@ -2598,14 +2003,6 @@ USA,Battle Force,Destroyer Flotilla 2,USS Fanning,destroyer,ship_hull_light_2,US
 USA,Battle Force,Destroyer Flotilla 2,USS Benham,destroyer,ship_hull_light_2,USA,Sims Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Flotilla 2,USS Ellet,destroyer,ship_hull_light_2,USA,Sims Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Flotilla 2,USS Moffett,destroyer,ship_hull_light_1,USA,Farragut Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 2,USS Zane,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 2,USS Wasmuth,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 2,USS Trever,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 2,USS Perry,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 2,USS Chandler,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 2,USS Southard,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 2,USS Hovey,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Battle Force,Destroyer Flotilla 2,USS Long,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Flotilla 2,USS Lea,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Flotilla 2,USS Lang,destroyer,ship_hull_light_2,USA,Sims Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Flotilla 2,USS Sterett,destroyer,ship_hull_light_2,USA,Sims Class,no,USA_1939_naval_mtg.txt
@@ -2624,26 +2021,10 @@ USA,Battle Force,Destroyer Squadron  31,USS Humphreys,destroyer,ship_hull_light_
 USA,Battle Force,Destroyer Squadron  31,USS King,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Squadron  31,USS Sands,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
 USA,Battle Force,Destroyer Squadron  31,USS Lawrence,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Scouting Force,Scouting Force,USS Memphis,light_cruiser,ship_hull_cruiser_1,USA,Omaha Class,no,USA_1939_naval_mtg.txt
-USA,Scouting Force,Scouting Force,USS Pensacola,heavy_cruiser,ship_hull_cruiser_1,USA,Pensacola Class,no,USA_1939_naval_mtg.txt
-USA,Scouting Force,Scouting Force,USS Salt Lake City,heavy_cruiser,ship_hull_cruiser_1,USA,Pensacola Class,no,USA_1939_naval_mtg.txt
-USA,Scouting Force,Scouting Force,USS Northampton,heavy_cruiser,ship_hull_cruiser_1,USA,Pensacola Class,no,USA_1939_naval_mtg.txt
-USA,Scouting Force,Scouting Force,USS Houston,heavy_cruiser,ship_hull_cruiser_1,USA,Pensacola Class,no,USA_1939_naval_mtg.txt
-USA,Scouting Force,Scouting Force,USS Chester,heavy_cruiser,ship_hull_cruiser_1,USA,Pensacola Class,no,USA_1939_naval_mtg.txt
-USA,Scouting Force,Scouting Force,USS Louisville,heavy_cruiser,ship_hull_cruiser_1,USA,Pensacola Class,no,USA_1939_naval_mtg.txt
-USA,Scouting Force,Scouting Force,USS Chicago,heavy_cruiser,ship_hull_cruiser_1,USA,Pensacola Class,no,USA_1939_naval_mtg.txt
-USA,Scouting Force,Scouting Force,USS Portland,heavy_cruiser,ship_hull_cruiser_2,USA,Portland Class,no,USA_1939_naval_mtg.txt
 USA,Scouting Force,Scouting Force,USS New Orleans,heavy_cruiser,ship_hull_cruiser_2,USA,New Orleans Class,no,USA_1939_naval_mtg.txt
 USA,Scouting Force,Scouting Force,USS Astoria,heavy_cruiser,ship_hull_cruiser_2,USA,New Orleans Class,no,USA_1939_naval_mtg.txt
 USA,Scouting Force,Scouting Force,USS Minneapolis,heavy_cruiser,ship_hull_cruiser_2,USA,New Orleans Class,no,USA_1939_naval_mtg.txt
 USA,Scouting Force,Scouting Force,USS Indianapolis,heavy_cruiser,ship_hull_cruiser_2,USA,Portland Class,no,USA_1939_naval_mtg.txt
-USA,Submarine Base Force,Submarine Base Force,USS Richmond,light_cruiser,ship_hull_cruiser_1,USA,Omaha Class,no,USA_1939_naval_mtg.txt
-USA,Submarine Base Force,Submarine Base Force,USS Litchfield,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Submarine Base Force,4th Submarine Squadron,USS S-18,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Submarine Base Force,4th Submarine Squadron,USS S-23,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Submarine Base Force,4th Submarine Squadron,USS S-34,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Submarine Base Force,4th Submarine Squadron,USS S-35,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Submarine Base Force,4th Submarine Squadron,USS Argonaut,submarine,ship_hull_submarine_2,USA,Barracuda Class,no,USA_1939_naval_mtg.txt
 USA,Submarine Base Force,4th Submarine Squadron,USS Narwhal,submarine,ship_hull_submarine_2,USA,Barracuda Class,no,USA_1939_naval_mtg.txt
 USA,Submarine Base Force,4th Submarine Squadron,USS Nautilus,submarine,ship_hull_submarine_2,USA,Barracuda Class,no,USA_1939_naval_mtg.txt
 USA,Submarine Base Force,4th Submarine Squadron,USS Dolphin,submarine,ship_hull_submarine_2,USA,Barracuda Class,no,USA_1939_naval_mtg.txt
@@ -2667,16 +2048,6 @@ USA,Submarine Base Force,6th Submarine Squadron,USS Squalus,submarine,ship_hull_
 USA,Submarine Base Force,6th Submarine Squadron,USS Swordfish,submarine,ship_hull_submarine_2,USA,Salmon Class,no,USA_1939_naval_mtg.txt
 USA,Submarine Base Force,6th Submarine Squadron,USS S-27,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
 USA,Submarine Base Force,6th Submarine Squadron,USS S-28,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Pacific Reserve Fleet,Pacific Reserve Destroyers,USS Schley,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Pacific Reserve Fleet,Pacific Reserve Destroyers,USS Chew,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Pacific Reserve Fleet,Pacific Reserve Destroyers,USS Crane,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Pacific Reserve Fleet,Pacific Reserve Destroyers,USS Kilty,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Pacific Reserve Fleet,Pacific Reserve Destroyers,USS Kennison,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Pacific Reserve Fleet,Pacific Reserve Destroyers,USS Ward,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Pacific Reserve Fleet,Pacific Reserve Destroyers,USS Crosby,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Pacific Reserve Fleet,Pacific Reserve Destroyers,USS Dorsey,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Pacific Reserve Fleet,Pacific Reserve Destroyers,USS Elliot,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Pacific Reserve Fleet,Pacific Reserve Destroyers,USS Boggs,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
 USA,Atlantic Fleet,Atlantic Squadron,USS Ranger,carrier,ship_hull_carrier_1,USA,Ranger Class,no,USA_1939_naval_mtg.txt
 USA,Atlantic Fleet,Destroyer Squadron 12,USS Sims,destroyer,ship_hull_light_2,USA,Sims Class,no,USA_1939_naval_mtg.txt
 USA,Atlantic Fleet,Destroyer Squadron 12,USS Anderson,destroyer,ship_hull_light_2,USA,Sims Class,no,USA_1939_naval_mtg.txt
@@ -2698,31 +2069,9 @@ USA,Atlantic Fleet,Destroyer Squadron 41,USS Breckinridge,destroyer,ship_hull_li
 USA,Atlantic Fleet,Destroyer Squadron 41,USS Barney,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
 USA,Atlantic Fleet,Destroyer Squadron 41,USS Blakeley,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
 USA,Atlantic Fleet,Destroyer Squadron 41,USS Biddle,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Atlantic Fleet,2nd Submarine Squadron,USS R-2,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Atlantic Fleet,2nd Submarine Squadron,USS R-4,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Atlantic Fleet,2nd Submarine Squadron,USS R-10,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Atlantic Fleet,2nd Submarine Squadron,USS R-11,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Atlantic Fleet,2nd Submarine Squadron,USS R-13,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Atlantic Fleet,2nd Submarine Squadron,USS R-14,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Atlantic Fleet,2nd Submarine Squadron,USS S-21,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Atlantic Fleet,2nd Submarine Squadron,USS S-24,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Atlantic Fleet,2nd Submarine Squadron,USS S-25,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Atlantic Fleet,2nd Submarine Squadron,USS S-26,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Atlantic Fleet,2nd Submarine Squadron,USS S-29,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Atlantic Fleet,2nd Submarine Squadron,USS S-30,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Atlantic Fleet,2nd Submarine Squadron,USS S-20,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Atlantic Fleet,2nd Submarine Squadron,USS S-22,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
 USA,Special Assignment Forces,Squadron 40-T,USS Trenton,light_cruiser,ship_hull_cruiser_1,USA,Omaha Class,no,USA_1939_naval_mtg.txt
 USA,Special Assignment Forces,Squadron 40-T,USS Dickerson,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
 USA,Special Assignment Forces,Squadron 40-T,USS Herbert,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Special Assignment Forces,Special Service Squadron,USS Tattnall,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Special Assignment Forces,Special Service Squadron,USS J Fred Talbott,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Special Assignment Forces,3rd Submarine Squadron,USS S-42,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Special Assignment Forces,3rd Submarine Squadron,USS S-43,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Special Assignment Forces,3rd Submarine Squadron,USS S-44,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Special Assignment Forces,3rd Submarine Squadron,USS S-45,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Special Assignment Forces,3rd Submarine Squadron,USS S-46,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Special Assignment Forces,3rd Submarine Squadron,USS S-47,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
 USA,Atlantic Reserve Fleet,Atlantic Reserve Destroyers,USS Allen,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
 USA,Atlantic Reserve Fleet,Atlantic Reserve Destroyers,USS Noa,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
 USA,Atlantic Reserve Fleet,Atlantic Reserve Destroyers,USS Dahlgren,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
@@ -2762,27 +2111,6 @@ USA,Atlantic Reserve Fleet,Reserve Submarine Squadron,USS S-48,submarine,ship_hu
 USA,Atlantic Reserve Fleet,Reserve Submarine Squadron,USS Barracuda,submarine,ship_hull_submarine_2,USA,Barracuda Class,no,USA_1939_naval_mtg.txt
 USA,Atlantic Reserve Fleet,Reserve Submarine Squadron,USS Bass,submarine,ship_hull_submarine_2,USA,Barracuda Class,no,USA_1939_naval_mtg.txt
 USA,Atlantic Reserve Fleet,Reserve Submarine Squadron,USS Bonita,submarine,ship_hull_submarine_2,USA,Barracuda Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,Asiatic Fleet,USS Augusta,heavy_cruiser,ship_hull_cruiser_1,USA,Pensacola Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,Asiatic Fleet,USS Marblehead,light_cruiser,ship_hull_cruiser_1,USA,Omaha Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,Asiatic Fleet,USS Paul Jones,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,Asiatic Fleet,USS Alden,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,Asiatic Fleet,USS Barker,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,Asiatic Fleet,USS John D Edwards,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,Asiatic Fleet,USS Whipple,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,Asiatic Fleet,USS Edsall,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,Asiatic Fleet,USS Parrott,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,Asiatic Fleet,USS Bulmer,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,Asiatic Fleet,USS Stewart,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,Asiatic Fleet,USS Pope,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,Asiatic Fleet,USS Pillsbury,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,Asiatic Fleet,USS John D Ford,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,Asiatic Fleet,USS Peary,destroyer,ship_hull_light_1,USA,Clemson Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,5th Submarine Squadron,USS S-36,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,5th Submarine Squadron,USS S-37,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,5th Submarine Squadron,USS S-38,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,5th Submarine Squadron,USS S-39,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,5th Submarine Squadron,USS S-40,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
-USA,Asiatic Fleet,5th Submarine Squadron,USS S-41,submarine,ship_hull_submarine_1,USA,S Class,no,USA_1939_naval_mtg.txt
 USA,Asiatic Fleet,5th Submarine Squadron,USS Porpoise,submarine,ship_hull_submarine_2,USA,Porpoise Class,no,USA_1939_naval_mtg.txt
 USA,Asiatic Fleet,5th Submarine Squadron,USS Pike,submarine,ship_hull_submarine_2,USA,Porpoise Class,no,USA_1939_naval_mtg.txt
 USA,Asiatic Fleet,5th Submarine Squadron,USS Tarpon,submarine,ship_hull_submarine_2,USA,Porpoise Class,no,USA_1939_naval_mtg.txt
@@ -2795,12 +2123,6 @@ YUG,Kraljevska Mornarica,Kraljevska Mornarica,KB Hrabri,submarine,ship_hull_subm
 YUG,Kraljevska Mornarica,Kraljevska Mornarica,KB Nebojsa,submarine,ship_hull_submarine_2,YUG,Hrabri Class,no,YUG_1936_naval_mtg.txt
 YUG,Kraljevska Mornarica,Kraljevska Mornarica,KB Smeli,submarine,ship_hull_submarine_2,YUG,Hrabri Class,no,YUG_1936_naval_mtg.txt
 YUG,Kraljevska Mornarica,Kraljevska Mornarica,KB Osvetnik,submarine,ship_hull_submarine_2,YUG,Hrabri Class,no,YUG_1936_naval_mtg.txt
-YUG,Kraljevska Mornarica,Kraljevska Mornarica,KB Dalmacija,light_cruiser,ship_hull_cruiser_coastal_defense_ship,YUG,Dalmacija Class,no,YUG_1939_naval_mtg.txt
-YUG,Kraljevska Mornarica,Kraljevska Mornarica,KB Dubrovnik,destroyer,ship_hull_light_2,YUG,Dubrovnik Class,no,YUG_1939_naval_mtg.txt
 YUG,Kraljevska Mornarica,Kraljevska Mornarica,KB Beograd,destroyer,ship_hull_light_2,YUG,Beograd Class,no,YUG_1939_naval_mtg.txt
 YUG,Kraljevska Mornarica,Kraljevska Mornarica,KB Zagrb,destroyer,ship_hull_light_2,YUG,Beograd Class,no,YUG_1939_naval_mtg.txt
 YUG,Kraljevska Mornarica,Kraljevska Mornarica,KB Ljubljana,destroyer,ship_hull_light_2,YUG,Beograd Class,no,YUG_1939_naval_mtg.txt
-YUG,Kraljevska Mornarica,Kraljevska Mornarica,KB Hrabri,submarine,ship_hull_submarine_2,YUG,Hrabri Class,no,YUG_1939_naval_mtg.txt
-YUG,Kraljevska Mornarica,Kraljevska Mornarica,KB Nebojsa,submarine,ship_hull_submarine_2,YUG,Hrabri Class,no,YUG_1939_naval_mtg.txt
-YUG,Kraljevska Mornarica,Kraljevska Mornarica,KB Smeli,submarine,ship_hull_submarine_2,YUG,Hrabri Class,no,YUG_1939_naval_mtg.txt
-YUG,Kraljevska Mornarica,Kraljevska Mornarica,KB Osvetnik,submarine,ship_hull_submarine_2,YUG,Hrabri Class,no,YUG_1939_naval_mtg.txt

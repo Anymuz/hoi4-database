@@ -83,10 +83,8 @@ Source: `history/countries/*.txt`
 | AFG | basic_light_tank | 1 | AFG - Afghanistan.txt |
 | AFG | gwtank_chassis | 1 | AFG - Afghanistan.txt |
 | AFG | gw_artillery | 1 | AFG - Afghanistan.txt |
-| AFG | gw_artillery | 1 | AFG - Afghanistan.txt |
 | AFG | early_fighter | 1 | AFG - Afghanistan.txt |
 | AFG | CAS1 | 1 | AFG - Afghanistan.txt |
-| AFG | gw_artillery | 1 | AFG - Afghanistan.txt |
 | AFG | electronic_mechanical_engineering | 1 | AFG - Afghanistan.txt |
 | AFG | radio | 1 | AFG - Afghanistan.txt |
 | AFG | mechanical_computing | 1 | AFG - Afghanistan.txt |
@@ -406,7 +404,6 @@ Source: `history/countries/*.txt`
 | ASY | tech_recon | 1 | ASY - Assyria.txt |
 | ASY | infantry_weapons2 | 1 | ASY - Assyria.txt |
 | ASY | support_weapons | 1 | ASY - Assyria.txt |
-| ASY | gw_artillery | 1 | ASY - Assyria.txt |
 | ASY | electronic_mechanical_engineering | 1 | ASY - Assyria.txt |
 | ASY | radio | 1 | ASY - Assyria.txt |
 | ASY | mechanical_computing | 1 | ASY - Assyria.txt |
@@ -600,10 +597,6 @@ Source: `history/countries/*.txt`
 | BEL | armored_car1 | 1 | BEL - Belgium.txt |
 | BEL | rangers_tech | 1 | BEL - Belgium.txt |
 | BEL | BEL_chasseurs_ardennais_ncns | 1 | BEL - Belgium.txt |
-| BEL | rangers_tech | 1 | BEL - Belgium.txt |
-| BEL | BEL_chasseurs_ardennais_ncns | 1 | BEL - Belgium.txt |
-| BEL | armored_car1 | 1 | BEL - Belgium.txt |
-| BEL | BEL_chasseurs_ardennais | 1 | BEL - Belgium.txt |
 | BEL | BEL_chasseurs_ardennais | 1 | BEL - Belgium.txt |
 | BEL | bicycle_infantry | 1 | BEL - Belgium.txt |
 | BEL | early_fighter | 1 | BEL - Belgium.txt |
@@ -636,7 +629,6 @@ Source: `history/countries/*.txt`
 | BEL | iw_medium_airframe | 1 | BEL - Belgium.txt |
 | BEL | iw_large_airframe | 1 | BEL - Belgium.txt |
 | BEL | bba_early_transport_plane | 1 | BEL - Belgium.txt |
-| BEL | early_fighter | 1 | BEL - Belgium.txt |
 | BEL | cv_early_fighter | 1 | BEL - Belgium.txt |
 | BEL | cv_naval_bomber1 | 1 | BEL - Belgium.txt |
 | BEL | naval_bomber1 | 1 | BEL - Belgium.txt |
@@ -644,9 +636,7 @@ Source: `history/countries/*.txt`
 | BEL | CAS1 | 1 | BEL - Belgium.txt |
 | BEL | early_transport_plane | 1 | BEL - Belgium.txt |
 | BEL | fighter1 | 1 | BEL - Belgium.txt |
-| BEL | gw_artillery | 1 | BEL - Belgium.txt |
 | BEL | interwar_artillery | 1 | BEL - Belgium.txt |
-| BEL | interwar_antitank | 1 | BEL - Belgium.txt |
 | BEL | interwar_antiair | 1 | BEL - Belgium.txt |
 | BEL | infantry_weapons2 | 1 | BEL - Belgium.txt |
 | BEL | support_weapons | 1 | BEL - Belgium.txt |
@@ -676,8 +666,6 @@ Source: `history/countries/*.txt`
 | BHR | construction2 | 1 | BHR - Bahrain.txt |
 | BHR | dispersed_industry | 1 | BHR - Bahrain.txt |
 | BHR | dispersed_industry2 | 1 | BHR - Bahrain.txt |
-| BHU | infantry_weapons | 1 | BHU - Bhutan.txt |
-| BHU | tech_mountaineers | 1 | BHU - Bhutan.txt |
 | BHU | infantry_weapons | 1 | BHU - Bhutan.txt |
 | BHU | tech_mountaineers | 1 | BHU - Bhutan.txt |
 | BHU | electronic_mechanical_engineering | 1 | BHU - Bhutan.txt |
@@ -959,11 +947,9 @@ Source: `history/countries/*.txt`
 | BRI | strategic_bomber1 | 1 | BRI - Brittany.txt |
 | BRI | cv_fighter1 | 1 | BRI - Brittany.txt |
 | BRI | cv_CAS1 | 1 | BRI - Brittany.txt |
-| BRI | improved_light_tank | 1 | BRI - Brittany.txt |
 | BRI | basic_medium_tank | 1 | BRI - Brittany.txt |
 | BRI | basic_heavy_tank | 1 | BRI - Brittany.txt |
 | BRI | basic_battleship | 1 | BRI - Brittany.txt |
-| BRI | basic_battlecruiser | 1 | BRI - Brittany.txt |
 | BRI | improved_ship_hull_light | 1 | BRI - Brittany.txt |
 | BRI | improved_ship_hull_heavy | 1 | BRI - Brittany.txt |
 | BRI | basic_ship_hull_carrier | 1 | BRI - Brittany.txt |
@@ -1220,12 +1206,8 @@ Source: `history/countries/*.txt`
 | CAN | basic_torpedo | 1 | CAN - Canada.txt |
 | CAN | basic_depth_charges | 1 | CAN - Canada.txt |
 | CAN | mtg_transport | 1 | CAN - Canada.txt |
-| CAN | iw_small_airframe | 1 | CAN - Canada.txt |
 | CAN | iw_medium_airframe | 1 | CAN - Canada.txt |
-| CAN | aa_lmg | 1 | CAN - Canada.txt |
 | CAN | early_bombs | 1 | CAN - Canada.txt |
-| CAN | engines_1 | 1 | CAN - Canada.txt |
-| CAN | bba_early_transport_plane | 1 | CAN - Canada.txt |
 | CAN | fighter1 | 1 | CAN - Canada.txt |
 | CAN | interwar_artillery | 1 | CAN - Canada.txt |
 | CAN | interwar_antitank | 1 | CAN - Canada.txt |
@@ -1249,7 +1231,6 @@ Source: `history/countries/*.txt`
 | CAN | dispersed_industry | 1 | CAN - Canada.txt |
 | CAN | dispersed_industry2 | 1 | CAN - Canada.txt |
 | CAN | dispersed_industry3 | 1 | CAN - Canada.txt |
-| CAN | basic_light_battery | 1 | CAN - Canada.txt |
 | CAN | sonar | 1 | CAN - Canada.txt |
 | CAN | improved_sonar | 1 | CAN - Canada.txt |
 | CAN | improved_depth_charges | 1 | CAN - Canada.txt |
@@ -1368,10 +1349,8 @@ Source: `history/countries/*.txt`
 | CHI | tech_support | 1 | CHI - China.txt |
 | CHI | tech_trucks | 1 | CHI - China.txt |
 | CHI | motorised_infantry | 1 | CHI - China.txt |
-| CHI | tech_support | 1 | CHI - China.txt |
 | CHI | tech_recon | 1 | CHI - China.txt |
 | CHI | tech_engineers | 1 | CHI - China.txt |
-| CHI | tech_trucks | 1 | CHI - China.txt |
 | CHI | electronic_mechanical_engineering | 1 | CHI - China.txt |
 | CHI | radio | 1 | CHI - China.txt |
 | CHI | mechanical_computing | 1 | CHI - China.txt |
@@ -1758,14 +1737,11 @@ Source: `history/countries/*.txt`
 | COR | strategic_bomber1 | 1 | COR - Corsica.txt |
 | COR | cv_fighter1 | 1 | COR - Corsica.txt |
 | COR | cv_CAS1 | 1 | COR - Corsica.txt |
-| COR | improved_light_tank | 1 | COR - Corsica.txt |
 | COR | basic_medium_tank | 1 | COR - Corsica.txt |
 | COR | basic_heavy_tank | 1 | COR - Corsica.txt |
-| COR | improved_light_tank_chassis | 1 | COR - Corsica.txt |
 | COR | basic_medium_tank_chassis | 1 | COR - Corsica.txt |
 | COR | basic_heavy_tank_chassis | 1 | COR - Corsica.txt |
 | COR | basic_battleship | 1 | COR - Corsica.txt |
-| COR | basic_battlecruiser | 1 | COR - Corsica.txt |
 | COR | improved_ship_hull_light | 1 | COR - Corsica.txt |
 | COR | improved_ship_hull_heavy | 1 | COR - Corsica.txt |
 | COR | basic_ship_hull_carrier | 1 | COR - Corsica.txt |
@@ -2139,7 +2115,6 @@ Source: `history/countries/*.txt`
 | DEN | coastal_defense_ships | 1 | DEN - Denmark.txt |
 | DEN | mtg_transport | 1 | DEN - Denmark.txt |
 | DEN | early_bomber | 1 | DEN - Denmark.txt |
-| DEN | gw_artillery | 1 | DEN - Denmark.txt |
 | DEN | interwar_artillery | 1 | DEN - Denmark.txt |
 | DEN | infantry_weapons2 | 1 | DEN - Denmark.txt |
 | DEN | support_weapons | 1 | DEN - Denmark.txt |
@@ -2389,14 +2364,11 @@ Source: `history/countries/*.txt`
 | ENG | basic_fire_control_system | 1 | ENG - Britain.txt |
 | ENG | basic_dp_light_battery | 1 | ENG - Britain.txt |
 | ENG | coastal_defense_ships | 1 | ENG - Britain.txt |
-| ENG | basic_small_airframe | 1 | ENG - Britain.txt |
 | ENG | improved_small_airframe | 1 | ENG - Britain.txt |
-| ENG | basic_medium_airframe | 1 | ENG - Britain.txt |
 | ENG | basic_large_airframe | 1 | ENG - Britain.txt |
 | ENG | aa_cannon_1 | 1 | ENG - Britain.txt |
 | ENG | engines_3 | 1 | ENG - Britain.txt |
 | ENG | range_improvements | 1 | ENG - Britain.txt |
-| ENG | air_torpedoe_1 | 1 | ENG - Britain.txt |
 | ENG | fighter1 | 1 | ENG - Britain.txt |
 | ENG | fighter2 | 1 | ENG - Britain.txt |
 | ENG | heavy_fighter1 | 1 | ENG - Britain.txt |
@@ -2413,8 +2385,6 @@ Source: `history/countries/*.txt`
 | ENG | infantry_weapons2 | 1 | ENG - Britain.txt |
 | ENG | support_weapons | 1 | ENG - Britain.txt |
 | ENG | support_weapons2 | 1 | ENG - Britain.txt |
-| ENG | electronic_mechanical_engineering | 1 | ENG - Britain.txt |
-| ENG | radio | 1 | ENG - Britain.txt |
 | ENG | cavity_magnatron | 1 | ENG - Britain.txt |
 | ENG | centimetric_radar | 1 | ENG - Britain.txt |
 | ENG | mechanical_computing | 1 | ENG - Britain.txt |
@@ -2453,7 +2423,6 @@ Source: `history/countries/*.txt`
 | ENG | improved_ship_hull_submarine | 1 | ENG - Britain.txt |
 | ENG | improved_ship_hull_light | 1 | ENG - Britain.txt |
 | ENG | improved_ship_hull_cruiser | 1 | ENG - Britain.txt |
-| ENG | basic_ship_hull_heavy | 1 | ENG - Britain.txt |
 | ENG | improved_ship_hull_carrier | 1 | ENG - Britain.txt |
 | ENG | advanced_dp_light_battery | 1 | ENG - Britain.txt |
 | ENG | improved_sonar | 1 | ENG - Britain.txt |
@@ -2827,20 +2796,14 @@ Source: `history/countries/*.txt`
 | FRA | dispersed_industry | 1 | FRA - France.txt |
 | FRA | dispersed_industry2 | 1 | FRA - France.txt |
 | FRA | dispersed_industry3 | 1 | FRA - France.txt |
-| FRA | improved_light_tank | 1 | FRA - France.txt |
 | FRA | basic_medium_tank | 1 | FRA - France.txt |
-| FRA | basic_heavy_tank | 1 | FRA - France.txt |
-| FRA | improved_light_tank_chassis | 1 | FRA - France.txt |
 | FRA | basic_medium_tank_chassis | 1 | FRA - France.txt |
-| FRA | basic_heavy_tank_chassis | 1 | FRA - France.txt |
 | FRA | basic_battleship | 1 | FRA - France.txt |
-| FRA | basic_battlecruiser | 1 | FRA - France.txt |
 | FRA | improved_ship_hull_light | 1 | FRA - France.txt |
 | FRA | improved_ship_hull_heavy | 1 | FRA - France.txt |
 | FRA | basic_ship_hull_carrier | 1 | FRA - France.txt |
 | FRA | improved_heavy_armor_scheme | 1 | FRA - France.txt |
 | FRA | improved_light_battery | 1 | FRA - France.txt |
-| FRA | basic_heavy_battery | 1 | FRA - France.txt |
 | FRA | improved_ship_torpedo_launcher | 1 | FRA - France.txt |
 | FSA | infantry_weapons | 1 | FSA - Federation of South Arabia.txt |
 | FSM | infantry_weapons | 1 | FSM - Micronesia.txt |
@@ -3143,14 +3106,12 @@ Source: `history/countries/*.txt`
 | GER | basic_fortification_tech | 1 | GER - Germany.txt |
 | GER | basic_medium_tank | 1 | GER - Germany.txt |
 | GER | basic_medium_tank_chassis | 1 | GER - Germany.txt |
-| GER | basic_heavy_cruiser | 1 | GER - Germany.txt |
 | GER | improved_heavy_cruiser | 1 | GER - Germany.txt |
 | GER | improved_battleship | 1 | GER - Germany.txt |
 | GER | early_carrier | 1 | GER - Germany.txt |
 | GER | basic_carrier | 1 | GER - Germany.txt |
 | GER | improved_carrier | 1 | GER - Germany.txt |
 | GER | improved_ship_hull_cruiser | 1 | GER - Germany.txt |
-| GER | basic_ship_hull_heavy | 1 | GER - Germany.txt |
 | GER | early_ship_hull_carrier | 1 | GER - Germany.txt |
 | GER | basic_ship_hull_carrier | 1 | GER - Germany.txt |
 | GER | improved_heavy_battery | 1 | GER - Germany.txt |
@@ -3259,13 +3220,9 @@ Source: `history/countries/*.txt`
 | GRE | coastal_defense_ships | 1 | GRE - Greece.txt |
 | GRE | pre_dreadnoughts | 1 | GRE - Greece.txt |
 | GRE | mtg_transport | 1 | GRE - Greece.txt |
-| GRE | early_fighter | 1 | GRE - Greece.txt |
-| GRE | early_bomber | 1 | GRE - Greece.txt |
 | GRE | CAS1 | 1 | GRE - Greece.txt |
 | GRE | naval_bomber1 | 1 | GRE - Greece.txt |
-| GRE | tech_support | 1 | GRE - Greece.txt |
 | GRE | tech_engineers2 | 1 | GRE - Greece.txt |
-| GRE | tech_recon | 1 | GRE - Greece.txt |
 | GRE | interwar_artillery | 1 | GRE - Greece.txt |
 | GRE | interwar_antitank | 1 | GRE - Greece.txt |
 | GRE | infantry_weapons1 | 1 | GRE - Greece.txt |
@@ -3278,8 +3235,6 @@ Source: `history/countries/*.txt`
 | GRE | basic_machine_tools | 1 | GRE - Greece.txt |
 | GRE | improved_machine_tools | 1 | GRE - Greece.txt |
 | GRE | advanced_machine_tools | 1 | GRE - Greece.txt |
-| GRE | synth_oil_experiments | 1 | GRE - Greece.txt |
-| GRE | fuel_silos | 1 | GRE - Greece.txt |
 | GRE | oil_processing | 1 | GRE - Greece.txt |
 | GRE | improved_oil_processing | 1 | GRE - Greece.txt |
 | GRE | construction1 | 1 | GRE - Greece.txt |
@@ -3407,7 +3362,6 @@ Source: `history/countries/*.txt`
 | HAN | basic_heavy_tank_chassis | 1 | HAN - Hanover.txt |
 | HAN | transport | 1 | HAN - Hanover.txt |
 | HAN | mtg_transport | 1 | HAN - Hanover.txt |
-| HAN | improved_light_tank | 1 | HAN - Hanover.txt |
 | HAN | basic_medium_tank | 1 | HAN - Hanover.txt |
 | HAN | CAS2 | 1 | HAN - Hanover.txt |
 | HAN | heavy_fighter1 | 1 | HAN - Hanover.txt |
@@ -3579,7 +3533,6 @@ Source: `history/countries/*.txt`
 | HOL | interwar_antitank | 1 | HOL - Holland.txt |
 | HOL | infantry_weapons2 | 1 | HOL - Holland.txt |
 | HOL | support_weapons | 1 | HOL - Holland.txt |
-| HOL | marines | 1 | HOL - Holland.txt |
 | HOL | electronic_mechanical_engineering | 1 | HOL - Holland.txt |
 | HOL | radio | 1 | HOL - Holland.txt |
 | HOL | mechanical_computing | 1 | HOL - Holland.txt |
@@ -3651,14 +3604,6 @@ Source: `history/countries/*.txt`
 | HUN | basic_train | 1 | HUN - Hungary.txt |
 | HUN | gwtank | 1 | HUN - Hungary.txt |
 | HUN | gwtank_chassis | 1 | HUN - Hungary.txt |
-| HUN | infantry_weapons | 1 | HUN - Hungary.txt |
-| HUN | infantry_weapons1 | 1 | HUN - Hungary.txt |
-| HUN | tech_support | 1 | HUN - Hungary.txt |
-| HUN | tech_recon | 1 | HUN - Hungary.txt |
-| HUN | tech_trucks | 1 | HUN - Hungary.txt |
-| HUN | gw_artillery | 1 | HUN - Hungary.txt |
-| HUN | fuel_silos | 1 | HUN - Hungary.txt |
-| HUN | basic_train | 1 | HUN - Hungary.txt |
 | HUN | interwar_artillery | 1 | HUN - Hungary.txt |
 | HUN | interwar_antitank | 1 | HUN - Hungary.txt |
 | HUN | interwar_antiair | 1 | HUN - Hungary.txt |
@@ -3685,21 +3630,13 @@ Source: `history/countries/*.txt`
 | HUN | dispersed_industry2 | 1 | HUN - Hungary.txt |
 | HUN | fuel_refining | 1 | HUN - Hungary.txt |
 | HUN | armored_car1 | 1 | HUN - Hungary.txt |
-| HUN | iw_small_airframe | 1 | HUN - Hungary.txt |
 | HUN | basic_small_airframe | 1 | HUN - Hungary.txt |
 | HUN | aircraft_construction | 1 | HUN - Hungary.txt |
 | HUN | engines_2 | 1 | HUN - Hungary.txt |
-| HUN | engines_1 | 1 | HUN - Hungary.txt |
-| HUN | early_bombs | 1 | HUN - Hungary.txt |
-| HUN | aa_lmg | 1 | HUN - Hungary.txt |
 | HUN | fighter1 | 1 | HUN - Hungary.txt |
 | HUN | early_bomber | 1 | HUN - Hungary.txt |
 | HUN | tactical_bomber1 | 1 | HUN - Hungary.txt |
-| HUN | CAS1 | 1 | HUN - Hungary.txt |
-| HUN | photo_reconnaisance | 1 | HUN - Hungary.txt |
 | HUN | basic_light_tank | 1 | HUN - Hungary.txt |
-| HUN | gwtank | 1 | HUN - Hungary.txt |
-| HUN | gwtank_chassis | 1 | HUN - Hungary.txt |
 | HUN | basic_light_tank_chassis | 1 | HUN - Hungary.txt |
 | HYD | infantry_weapons | 1 | HYD - Hyderabad.txt |
 | HYD | infantry_weapons1 | 1 | HYD - Hyderabad.txt |
@@ -3785,24 +3722,6 @@ Source: `history/countries/*.txt`
 | ICE | construction2 | 1 | ICE - Iceland.txt |
 | ICE | dispersed_industry | 1 | ICE - Iceland.txt |
 | ICE | dispersed_industry2 | 1 | ICE - Iceland.txt |
-| ICE | gw_artillery | 1 | ICE - Iceland.txt |
-| ICE | interwar_artillery | 1 | ICE - Iceland.txt |
-| ICE | interwar_antiair | 1 | ICE - Iceland.txt |
-| ICE | infantry_weapons2 | 1 | ICE - Iceland.txt |
-| ICE | support_weapons | 1 | ICE - Iceland.txt |
-| ICE | tech_trucks | 1 | ICE - Iceland.txt |
-| ICE | electronic_mechanical_engineering | 1 | ICE - Iceland.txt |
-| ICE | radio | 1 | ICE - Iceland.txt |
-| ICE | mechanical_computing | 1 | ICE - Iceland.txt |
-| ICE | computing_machine | 1 | ICE - Iceland.txt |
-| ICE | basic_machine_tools | 1 | ICE - Iceland.txt |
-| ICE | improved_machine_tools | 1 | ICE - Iceland.txt |
-| ICE | advanced_machine_tools | 1 | ICE - Iceland.txt |
-| ICE | fuel_silos | 1 | ICE - Iceland.txt |
-| ICE | construction1 | 1 | ICE - Iceland.txt |
-| ICE | construction2 | 1 | ICE - Iceland.txt |
-| ICE | dispersed_industry | 1 | ICE - Iceland.txt |
-| ICE | dispersed_industry2 | 1 | ICE - Iceland.txt |
 | IMO | infantry_weapons | 1 | IMO - Omani Imamate.txt |
 | IMO | tech_trucks | 1 | IMO - Omani Imamate.txt |
 | IMO | camelry | 1 | IMO - Omani Imamate.txt |
@@ -3853,7 +3772,6 @@ Source: `history/countries/*.txt`
 | INS | basic_battery | 1 | INS - Indonesia.txt |
 | INS | interwar_artillery | 1 | INS - Indonesia.txt |
 | INS | interwar_antiair | 1 | INS - Indonesia.txt |
-| INS | tech_recon | 1 | INS - Indonesia.txt |
 | INS | infantry_weapons2 | 1 | INS - Indonesia.txt |
 | INS | support_weapons | 1 | INS - Indonesia.txt |
 | INS | electronic_mechanical_engineering | 1 | INS - Indonesia.txt |
@@ -3918,7 +3836,6 @@ Source: `history/countries/*.txt`
 | IRQ | tech_recon | 1 | IRQ - Iraq.txt |
 | IRQ | infantry_weapons2 | 1 | IRQ - Iraq.txt |
 | IRQ | support_weapons | 1 | IRQ - Iraq.txt |
-| IRQ | gw_artillery | 1 | IRQ - Iraq.txt |
 | IRQ | electronic_mechanical_engineering | 1 | IRQ - Iraq.txt |
 | IRQ | radio | 1 | IRQ - Iraq.txt |
 | IRQ | mechanical_computing | 1 | IRQ - Iraq.txt |
@@ -4047,7 +3964,6 @@ Source: `history/countries/*.txt`
 | ITA | basic_destroyer | 1 | ITA - Italy.txt |
 | ITA | improved_destroyer | 1 | ITA - Italy.txt |
 | ITA | basic_light_cruiser | 1 | ITA - Italy.txt |
-| ITA | basic_battleship | 1 | ITA - Italy.txt |
 | ITA | improved_battleship | 1 | ITA - Italy.txt |
 | ITZ | early_fighter | 1 | ITZ - Itza.txt |
 | ITZ | cv_early_fighter | 1 | ITZ - Itza.txt |
@@ -4204,12 +4120,10 @@ Source: `history/countries/*.txt`
 | JAP | concentrated_industry2 | 1 | JAP - Japan.txt |
 | JAP | concentrated_industry3 | 1 | JAP - Japan.txt |
 | JAP | improved_ship_hull_submarine | 1 | JAP - Japan.txt |
-| JAP | basic_ship_hull_light | 1 | JAP - Japan.txt |
 | JAP | improved_ship_hull_light | 1 | JAP - Japan.txt |
 | JAP | improved_ship_hull_cruiser | 1 | JAP - Japan.txt |
 | JAP | improved_ship_hull_carrier | 1 | JAP - Japan.txt |
 | JAP | improved_submarine | 1 | JAP - Japan.txt |
-| JAP | basic_destroyer | 1 | JAP - Japan.txt |
 | JAP | improved_destroyer | 1 | JAP - Japan.txt |
 | JAP | improved_heavy_cruiser | 1 | JAP - Japan.txt |
 | JAP | improved_carrier | 1 | JAP - Japan.txt |
@@ -4607,7 +4521,6 @@ Source: `history/countries/*.txt`
 | KOM | fighter1 | 1 | KOM - Komi Republic.txt |
 | KOM | early_bomber | 1 | KOM - Komi Republic.txt |
 | KOM | strategic_bomber1 | 1 | KOM - Komi Republic.txt |
-| KOM | naval_bomber1 | 1 | KOM - Komi Republic.txt |
 | KOM | gwtank | 1 | KOM - Komi Republic.txt |
 | KOM | basic_light_tank | 1 | KOM - Komi Republic.txt |
 | KOM | gwtank_chassis | 1 | KOM - Komi Republic.txt |
@@ -4732,14 +4645,11 @@ Source: `history/countries/*.txt`
 | KSH | strategic_bomber1 | 1 | KSH - Kashubia.txt |
 | KSH | cv_fighter1 | 1 | KSH - Kashubia.txt |
 | KSH | cv_CAS1 | 1 | KSH - Kashubia.txt |
-| KSH | improved_light_tank | 1 | KSH - Kashubia.txt |
 | KSH | basic_medium_tank | 1 | KSH - Kashubia.txt |
 | KSH | basic_heavy_tank | 1 | KSH - Kashubia.txt |
-| KSH | improved_light_tank_chassis | 1 | KSH - Kashubia.txt |
 | KSH | basic_medium_tank_chassis | 1 | KSH - Kashubia.txt |
 | KSH | basic_heavy_tank_chassis | 1 | KSH - Kashubia.txt |
 | KSH | basic_battleship | 1 | KSH - Kashubia.txt |
-| KSH | basic_battlecruiser | 1 | KSH - Kashubia.txt |
 | KSH | improved_ship_hull_light | 1 | KSH - Kashubia.txt |
 | KSH | improved_ship_hull_heavy | 1 | KSH - Kashubia.txt |
 | KSH | basic_ship_hull_carrier | 1 | KSH - Kashubia.txt |
@@ -5044,7 +4954,6 @@ Source: `history/countries/*.txt`
 | LIT | early_bombs | 1 | LIT - Lithuania.txt |
 | LIT | early_bomber | 1 | LIT - Lithuania.txt |
 | LIT | tech_engineers | 1 | LIT - Lithuania.txt |
-| LIT | gw_artillery | 1 | LIT - Lithuania.txt |
 | LIT | interwar_artillery | 1 | LIT - Lithuania.txt |
 | LIT | interwar_antiair | 1 | LIT - Lithuania.txt |
 | LIT | support_weapons | 1 | LIT - Lithuania.txt |
@@ -5156,12 +5065,8 @@ Source: `history/countries/*.txt`
 | MAL | early_ship_hull_carrier | 1 | MAL - Malaysia.txt |
 | MAL | basic_battery | 1 | MAL - Malaysia.txt |
 | MAL | interwar_artillery | 1 | MAL - Malaysia.txt |
-| MAL | interwar_antiair | 1 | MAL - Malaysia.txt |
-| MAL | tech_recon | 1 | MAL - Malaysia.txt |
 | MAL | infantry_weapons2 | 1 | MAL - Malaysia.txt |
 | MAL | support_weapons | 1 | MAL - Malaysia.txt |
-| MAL | electronic_mechanical_engineering | 1 | MAL - Malaysia.txt |
-| MAL | radio | 1 | MAL - Malaysia.txt |
 | MAL | mechanical_computing | 1 | MAL - Malaysia.txt |
 | MAL | basic_machine_tools | 1 | MAL - Malaysia.txt |
 | MAL | improved_machine_tools | 1 | MAL - Malaysia.txt |
@@ -5963,7 +5868,6 @@ Source: `history/countries/*.txt`
 | OCC | cv_fighter1 | 1 | OCC - Occitania.txt |
 | OCC | cv_CAS1 | 1 | OCC - Occitania.txt |
 | OCC | basic_battleship | 1 | OCC - Occitania.txt |
-| OCC | basic_battlecruiser | 1 | OCC - Occitania.txt |
 | OCC | improved_ship_hull_light | 1 | OCC - Occitania.txt |
 | OCC | improved_ship_hull_heavy | 1 | OCC - Occitania.txt |
 | OCC | basic_ship_hull_carrier | 1 | OCC - Occitania.txt |
@@ -6078,7 +5982,6 @@ Source: `history/countries/*.txt`
 | PAK | dispersed_industry | 1 | PAK - Pakistan.txt |
 | PAK | dispersed_industry2 | 1 | PAK - Pakistan.txt |
 | PAK | dispersed_industry3 | 1 | PAK - Pakistan.txt |
-| PAK | early_fighter | 1 | PAK - Pakistan.txt |
 | PAK | fighter1 | 1 | PAK - Pakistan.txt |
 | PAL | infantry_weapons | 1 | PAL - Palestine.txt |
 | PAL | tech_trucks | 1 | PAL - Palestine.txt |
@@ -6193,16 +6096,9 @@ Source: `history/countries/*.txt`
 | PER | gw_artillery | 1 | PER - Persia.txt |
 | PER | tech_military_police | 1 | PER - Persia.txt |
 | PER | tech_engineers | 1 | PER - Persia.txt |
-| PER | infantry_weapons | 1 | PER - Persia.txt |
-| PER | infantry_weapons1 | 1 | PER - Persia.txt |
-| PER | tech_trucks | 1 | PER - Persia.txt |
-| PER | tech_support | 1 | PER - Persia.txt |
-| PER | gw_artillery | 1 | PER - Persia.txt |
-| PER | tech_support | 1 | PER - Persia.txt |
 | PER | tech_recon | 1 | PER - Persia.txt |
 | PER | infantry_weapons2 | 1 | PER - Persia.txt |
 | PER | support_weapons | 1 | PER - Persia.txt |
-| PER | gw_artillery | 1 | PER - Persia.txt |
 | PER | interwar_antiair | 1 | PER - Persia.txt |
 | PER | interwar_artillery | 1 | PER - Persia.txt |
 | PER | electronic_mechanical_engineering | 1 | PER - Persia.txt |
@@ -6322,8 +6218,6 @@ Source: `history/countries/*.txt`
 | POL | basic_machine_tools | 1 | POL - Poland.txt |
 | POL | improved_machine_tools | 1 | POL - Poland.txt |
 | POL | advanced_machine_tools | 1 | POL - Poland.txt |
-| POL | synth_oil_experiments | 1 | POL - Poland.txt |
-| POL | fuel_silos | 1 | POL - Poland.txt |
 | POL | oil_processing | 1 | POL - Poland.txt |
 | POL | improved_oil_processing | 1 | POL - Poland.txt |
 | POL | construction1 | 1 | POL - Poland.txt |
@@ -6436,7 +6330,6 @@ Source: `history/countries/*.txt`
 | PRE | basic_heavy_tank_chassis | 1 | PRE - Prussia.txt |
 | PRE | transport | 1 | PRE - Prussia.txt |
 | PRE | mtg_transport | 1 | PRE - Prussia.txt |
-| PRE | improved_light_tank | 1 | PRE - Prussia.txt |
 | PRE | basic_medium_tank | 1 | PRE - Prussia.txt |
 | PRE | CAS2 | 1 | PRE - Prussia.txt |
 | PRE | heavy_fighter1 | 1 | PRE - Prussia.txt |
@@ -6683,7 +6576,6 @@ Source: `history/countries/*.txt`
 | RAJ | camelry | 1 | RAJ - British Raj.txt |
 | RAJ | gwtank | 1 | RAJ - British Raj.txt |
 | RAJ | gwtank_chassis | 1 | RAJ - British Raj.txt |
-| RAJ | early_fighter | 1 | RAJ - British Raj.txt |
 | RAJ | fighter1 | 1 | RAJ - British Raj.txt |
 | RAJ | electronic_mechanical_engineering | 1 | RAJ - British Raj.txt |
 | RAJ | radio | 1 | RAJ - British Raj.txt |
@@ -8774,7 +8666,6 @@ Source: `history/countries/*.txt`
 | SIL | cv_fighter1 | 1 | SIL - Silesia.txt |
 | SIL | cv_CAS1 | 1 | SIL - Silesia.txt |
 | SIL | basic_battleship | 1 | SIL - Silesia.txt |
-| SIL | basic_battlecruiser | 1 | SIL - Silesia.txt |
 | SIL | improved_ship_hull_light | 1 | SIL - Silesia.txt |
 | SIL | improved_ship_hull_heavy | 1 | SIL - Silesia.txt |
 | SIL | basic_ship_hull_carrier | 1 | SIL - Silesia.txt |
@@ -8992,7 +8883,6 @@ Source: `history/countries/*.txt`
 | SOV | infantry_weapons2 | 1 | SOV - Soviet union.txt |
 | SOV | support_weapons | 1 | SOV - Soviet union.txt |
 | SOV | support_weapons2 | 1 | SOV - Soviet union.txt |
-| SOV | paratroopers | 1 | SOV - Soviet union.txt |
 | SOV | electronic_mechanical_engineering | 1 | SOV - Soviet union.txt |
 | SOV | radio | 1 | SOV - Soviet union.txt |
 | SOV | mechanical_computing | 1 | SOV - Soviet union.txt |
@@ -9002,7 +8892,6 @@ Source: `history/countries/*.txt`
 | SOV | basic_machine_tools | 1 | SOV - Soviet union.txt |
 | SOV | improved_machine_tools | 1 | SOV - Soviet union.txt |
 | SOV | advanced_machine_tools | 1 | SOV - Soviet union.txt |
-| SOV | synth_oil_experiments | 1 | SOV - Soviet union.txt |
 | SOV | oil_processing | 1 | SOV - Soviet union.txt |
 | SOV | fuel_refining2 | 1 | SOV - Soviet union.txt |
 | SOV | construction1 | 1 | SOV - Soviet union.txt |
@@ -9014,15 +8903,12 @@ Source: `history/countries/*.txt`
 | SOV | improved_light_tank | 1 | SOV - Soviet union.txt |
 | SOV | basic_heavy_tank | 1 | SOV - Soviet union.txt |
 | SOV | basic_medium_tank | 1 | SOV - Soviet union.txt |
-| SOV | improved_light_tank_chassis | 1 | SOV - Soviet union.txt |
 | SOV | basic_heavy_tank_chassis | 1 | SOV - Soviet union.txt |
 | SOV | basic_medium_tank_chassis | 1 | SOV - Soviet union.txt |
-| SOV | basic_submarine | 1 | SOV - Soviet union.txt |
 | SOV | basic_destroyer | 1 | SOV - Soviet union.txt |
 | SOV | basic_heavy_cruiser | 1 | SOV - Soviet union.txt |
 | SOV | improved_ship_hull_light | 1 | SOV - Soviet union.txt |
 | SOV | improved_ship_hull_submarine | 1 | SOV - Soviet union.txt |
-| SOV | basic_ship_hull_cruiser | 1 | SOV - Soviet union.txt |
 | SPM | infantry_weapons | 1 | SPM - Sardinia Piedmont.txt |
 | SPM | infantry_weapons1 | 1 | SPM - Sardinia Piedmont.txt |
 | SPM | tech_support | 1 | SPM - Sardinia Piedmont.txt |
@@ -9224,9 +9110,7 @@ Source: `history/countries/*.txt`
 | SWE | early_ship_hull_carrier | 1 | SWE - Sweden.txt |
 | SWE | early_ship_hull_heavy | 1 | SWE - Sweden.txt |
 | SWE | armored_car1 | 1 | SWE - Sweden.txt |
-| SWE | early_bomber | 1 | SWE - Sweden.txt |
 | SWE | tactical_bomber1 | 1 | SWE - Sweden.txt |
-| SWE | gw_artillery | 1 | SWE - Sweden.txt |
 | SWE | interwar_artillery | 1 | SWE - Sweden.txt |
 | SWE | infantry_weapons2 | 1 | SWE - Sweden.txt |
 | SWE | support_weapons | 1 | SWE - Sweden.txt |
@@ -9252,7 +9136,6 @@ Source: `history/countries/*.txt`
 | SWE | basic_submarine | 1 | SWE - Sweden.txt |
 | SWE | early_carrier | 1 | SWE - Sweden.txt |
 | SWE | basic_ship_hull_cruiser | 1 | SWE - Sweden.txt |
-| SWE | early_ship_hull_carrier | 1 | SWE - Sweden.txt |
 | SWI | early_fighter | 1 | SWI - Switzerland.txt |
 | SWI | CAS1 | 1 | SWI - Switzerland.txt |
 | SWI | infantry_weapons | 1 | SWI - Switzerland.txt |
@@ -9322,7 +9205,6 @@ Source: `history/countries/*.txt`
 | TAJ | construction2 | 1 | TAJ - Tajikistan.txt |
 | TAJ | dispersed_industry | 1 | TAJ - Tajikistan.txt |
 | TAJ | dispersed_industry2 | 1 | TAJ - Tajikistan.txt |
-| TAN | infantry_weapons | 1 | TAN - Tannu Tuva.txt |
 | TAN | infantry_weapons | 1 | TAN - Tannu Tuva.txt |
 | TAN | electronic_mechanical_engineering | 1 | TAN - Tannu Tuva.txt |
 | TAN | radio | 1 | TAN - Tannu Tuva.txt |
@@ -9713,7 +9595,6 @@ Source: `history/countries/*.txt`
 | TUR | coastal_defense_ships | 1 | TUR - Turkey.txt |
 | TUR | mtg_transport | 1 | TUR - Turkey.txt |
 | TUR | fighter1 | 1 | TUR - Turkey.txt |
-| TUR | early_bomber | 1 | TUR - Turkey.txt |
 | TUR | tactical_bomber1 | 1 | TUR - Turkey.txt |
 | TUR | interwar_artillery | 1 | TUR - Turkey.txt |
 | TUR | infantry_weapons2 | 1 | TUR - Turkey.txt |
@@ -10006,7 +9887,6 @@ Source: `history/countries/*.txt`
 | USA | basic_large_airframe | 1 | USA - USA.txt |
 | USA | improved_small_airframe | 1 | USA - USA.txt |
 | USA | aa_hmg | 1 | USA - USA.txt |
-| USA | air_torpedoe_1 | 1 | USA - USA.txt |
 | USA | fighter1 | 1 | USA - USA.txt |
 | USA | cv_fighter1 | 1 | USA - USA.txt |
 | USA | heavy_fighter1 | 1 | USA - USA.txt |
@@ -10018,7 +9898,6 @@ Source: `history/countries/*.txt`
 | USA | infantry_weapons2 | 1 | USA - USA.txt |
 | USA | support_weapons | 1 | USA - USA.txt |
 | USA | support_weapons2 | 1 | USA - USA.txt |
-| USA | marines | 1 | USA - USA.txt |
 | USA | electronic_mechanical_engineering | 1 | USA - USA.txt |
 | USA | radio | 1 | USA - USA.txt |
 | USA | mechanical_computing | 1 | USA - USA.txt |
@@ -10501,7 +10380,6 @@ Source: `history/countries/*.txt`
 | WUR | basic_heavy_tank_chassis | 1 | WUR - Wurtemberg.txt |
 | WUR | transport | 1 | WUR - Wurtemberg.txt |
 | WUR | mtg_transport | 1 | WUR - Wurtemberg.txt |
-| WUR | improved_light_tank | 1 | WUR - Wurtemberg.txt |
 | WUR | basic_medium_tank | 1 | WUR - Wurtemberg.txt |
 | WUR | CAS2 | 1 | WUR - Wurtemberg.txt |
 | WUR | heavy_fighter1 | 1 | WUR - Wurtemberg.txt |

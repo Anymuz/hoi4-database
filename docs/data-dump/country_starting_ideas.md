@@ -16,7 +16,6 @@ Source: `history/countries/*.txt`
 | BEL | limited_conscription | 1939-01-01 | BEL - Belgium.txt |  |
 | BEL | BEL_language_barriers_ns | 1936-01-01 | BEL - Belgium.txt | No Compromise, No Surrender |
 | BEL | BEL_chasseurs_ardennais_ns | 1936-01-01 | BEL - Belgium.txt | No Compromise, No Surrender |
-| BEL | BEL_language_barriers_ns | 1936-01-01 | BEL - Belgium.txt | No Compromise, No Surrender |
 | BEL | BEL_chasseurs_ardennais_ns_ncns | 1936-01-01 | BEL - Belgium.txt | No Compromise, No Surrender |
 | BRA | SMB_MTG_naval_arms_race_legacy | 1936-01-01 | BRA - Brazil.txt | Trial of Allegiance |
 | BUL | BUL_second_national_catastrophe | 1936-01-01 | BUL - Bulgaria.txt | Arms Against Tyranny |
@@ -138,9 +137,6 @@ Source: `history/countries/*.txt`
 | GRE | GRE_schachtplan | 1936-01-01 | GRE - Greece.txt |  |
 | GRE | GRE_political_instability | 1936-01-01 | GRE - Greece.txt |  |
 | GRE | GRE_agrarian_society | 1936-01-01 | GRE - Greece.txt |  |
-| GRE | export_focus | 1936-01-01 | GRE - Greece.txt | Battle for the Bosporus |
-| GRE | limited_conscription | 1936-01-01 | GRE - Greece.txt | Battle for the Bosporus |
-| GRE | civilian_economy | 1936-01-01 | GRE - Greece.txt | Battle for the Bosporus |
 | GRE | partial_economic_mobilisation | 1939-01-01 | GRE - Greece.txt |  |
 | GRE | limited_conscription | 1939-01-01 | GRE - Greece.txt |  |
 | GRE | export_focus | 1939-01-01 | GRE - Greece.txt |  |
@@ -152,9 +148,6 @@ Source: `history/countries/*.txt`
 | GRE | GRE_schachtplan | 1939-01-01 | GRE - Greece.txt |  |
 | GRE | GRE_eon | 1939-01-01 | GRE - Greece.txt |  |
 | GRE | GRE_metaxism_2 | 1939-01-01 | GRE - Greece.txt |  |
-| GRE | partial_economic_mobilisation | 1939-01-01 | GRE - Greece.txt | Battle for the Bosporus |
-| GRE | export_focus | 1939-01-01 | GRE - Greece.txt | Battle for the Bosporus |
-| GRE | limited_conscription | 1939-01-01 | GRE - Greece.txt | Battle for the Bosporus |
 | GSM | CHI_warlord_looting_idea | 1936-01-01 | GSM - Gansu Ma.txt | No Compromise, No Surrender |
 | GSM | PRC_government_corruption | 1936-01-01 | GSM - Gansu Ma.txt | Waking the Tiger |
 | GSM | CHI_ineffective_bureaucracy_warlord | 1936-01-01 | GSM - Gansu Ma.txt | Waking the Tiger |
@@ -180,7 +173,6 @@ Source: `history/countries/*.txt`
 | HUN | disarmed_nation | 1936-01-01 | HUN - Hungary.txt | Gotterdammerung |
 | HUN | HUN_treaty_of_triannon_aat | 1936-01-01 | HUN - Hungary.txt | Arms Against Tyranny |
 | HUN | HUN_treaty_of_triannon | 1936-01-01 | HUN - Hungary.txt | Arms Against Tyranny |
-| HUN | disarmed_nation | 1936-01-01 | HUN - Hungary.txt | Gotterdammerung |
 | HUN | HUN_gombos_trade_treaty | 1936-01-01 | HUN - Hungary.txt | Gotterdammerung |
 | HUN | HUN_hungarian_national_defense_association | 1936-01-01 | HUN - Hungary.txt | Gotterdammerung |
 | HUN | HUN_levente_associations | 1936-01-01 | HUN - Hungary.txt | Gotterdammerung |
@@ -195,7 +187,6 @@ Source: `history/countries/*.txt`
 | ICE | ICE_christian_x | 1936-01-01 | ICE - Iceland.txt | Arms Against Tyranny |
 | ICE | disarmed_nation | 1936-01-01 | ICE - Iceland.txt | Arms Against Tyranny |
 | ICE | isolation | 1936-01-01 | ICE - Iceland.txt | Arms Against Tyranny |
-| ICE | disarmed_nation | 1936-01-01 | ICE - Iceland.txt | Arms Against Tyranny |
 | ICE | civilian_economy | 1936-01-01 | ICE - Iceland.txt | Arms Against Tyranny |
 | ITA | vittorio_emanuele | 1936-01-01 | ITA - Italy.txt | Gotterdammerung |
 | ITA | vittoria_mutilata | 1936-01-01 | ITA - Italy.txt | Gotterdammerung |
@@ -261,8 +252,6 @@ Source: `history/countries/*.txt`
 | MEN | MEN_pailingmiao_council_idea | 1936-01-01 | MEN - Mengkukuo.txt | No Compromise, No Surrender |
 | MEN | MEN_stretched_administration_idea | 1936-01-01 | MEN - Mengkukuo.txt | No Compromise, No Surrender |
 | MEN | MEN_mongol_banners_idea | 1936-01-01 | MEN - Mengkukuo.txt |  |
-| MEN | MEN_pailingmiao_council_idea | 1936-01-01 | MEN - Mengkukuo.txt |  |
-| MEN | MEN_stretched_administration_idea | 1936-01-01 | MEN - Mengkukuo.txt |  |
 | MEN | MEN_communist_revolutionaries_idea | 1936-01-01 | MEN - Mengkukuo.txt |  |
 | MEN | MEN_disorganized_army_idea | 1936-01-01 | MEN - Mengkukuo.txt |  |
 | MEX | MEX_callistas | 1936-01-01 | MEX - Mexico.txt | Man the Guns |
@@ -441,9 +430,6 @@ Source: `history/countries/*.txt`
 | TUR | TUR_disorganised_armed_forces | 1936-01-01 | TUR - Turkey.txt |  |
 | TUR | TUR_debt_council | 1936-01-01 | TUR - Turkey.txt |  |
 | TUR | TUR_widespread_illiteracy_idea | 1936-01-01 | TUR - Turkey.txt |  |
-| TUR | limited_conscription | 1936-01-01 | TUR - Turkey.txt | Battle for the Bosporus |
-| TUR | export_focus | 1936-01-01 | TUR - Turkey.txt | Battle for the Bosporus |
-| TUR | civilian_economy | 1936-01-01 | TUR - Turkey.txt | Battle for the Bosporus |
 | TUR | partial_economic_mobilisation | 1939-01-01 | TUR - Turkey.txt |  |
 | TUR | limited_conscription | 1939-01-01 | TUR - Turkey.txt |  |
 | TUR | export_focus | 1939-01-01 | TUR - Turkey.txt |  |
@@ -455,9 +441,6 @@ Source: `history/countries/*.txt`
 | TUR | TUR_sukru_saracoglu_prime_minister | 1939-01-01 | TUR - Turkey.txt |  |
 | TUR | TUR_fevzi_cakmak_command | 1939-01-01 | TUR - Turkey.txt |  |
 | TUR | TUR_sabiha_gokcen | 1939-01-01 | TUR - Turkey.txt |  |
-| TUR | partial_economic_mobilisation | 1939-01-01 | TUR - Turkey.txt | Battle for the Bosporus |
-| TUR | limited_conscription | 1939-01-01 | TUR - Turkey.txt | Battle for the Bosporus |
-| TUR | export_focus | 1939-01-01 | TUR - Turkey.txt | Battle for the Bosporus |
 | USA | USA_robert_taft | 1939-01-01 | USA - USA.txt |  |
 | USA | carl_spaatz | 1939-01-01 | USA - USA.txt |  |
 | USA | jimmy_doolittle | 1939-01-01 | USA - USA.txt |  |

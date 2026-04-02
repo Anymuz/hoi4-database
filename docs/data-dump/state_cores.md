@@ -62,12 +62,10 @@ Source: `history/states/*.txt`
 | 1032 | PRC | 1936-01-01 | 1032 - Yanan.txt |  |
 | 1032 | CHI | 1936-01-01 | 1032 - Yanan.txt |  |
 | 1032 | XIC | 1936-01-01 | 1032 - Yanan.txt |  |
-| 1032 | XIC | 1936-01-01 | 1032 - Yanan.txt | No Compromise, No Surrender |
 | 1033 | GXC | 1936-01-01 | 1033 - Fangchenggang.txt |  |
 | 1033 | GDC | 1936-01-01 | 1033 - Fangchenggang.txt |  |
 | 1033 | CHI | 1936-01-01 | 1033 - Fangchenggang.txt |  |
 | 1033 | PRC | 1936-01-01 | 1033 - Fangchenggang.txt |  |
-| 1033 | GDC | 1936-01-01 | 1033 - Fangchenggang.txt | No Compromise, No Surrender |
 | 1034 | CHI | 1936-01-01 | 1034 - Suzhou.txt |  |
 | 1034 | PRC | 1936-01-01 | 1034 - Suzhou.txt |  |
 | 1035 | CHI | 1936-01-01 | 1035 - Nanjing.txt |  |
@@ -77,32 +75,26 @@ Source: `history/states/*.txt`
 | 1037 | CHI | 1936-01-01 | 1037 - Chongqing.txt |  |
 | 1037 | PRC | 1936-01-01 | 1037 - Chongqing.txt |  |
 | 1037 | SIC | 1936-01-01 | 1037 - Chongqing.txt |  |
-| 1037 | SIC | 1936-01-01 | 1037 - Chongqing.txt | No Compromise, No Surrender |
 | 1038 | CHI | 1936-01-01 | 1038 - Jinan.txt |  |
 | 1038 | PRC | 1936-01-01 | 1038 - Jinan.txt |  |
 | 1038 | SND | 1936-01-01 | 1038 - Jinan.txt |  |
-| 1038 | SND | 1936-01-01 | 1038 - Jinan.txt | No Compromise, No Surrender |
 | 1039 | MEN | 1936-01-01 | 1039 - Hebei-Chahar.txt |  |
 | 1039 | CHI | 1936-01-01 | 1039 - Hebei-Chahar.txt |  |
 | 1039 | PRC | 1936-01-01 | 1039 - Hebei-Chahar.txt |  |
 | 1039 | HBC | 1936-01-01 | 1039 - Hebei-Chahar.txt |  |
-| 1039 | HBC | 1936-01-01 | 1039 - Hebei-Chahar.txt | No Compromise, No Surrender |
 | 104 | YUG | 1936-01-01 | 104-Bosnia.txt |  |
 | 104 | BOS | 1936-01-01 | 104-Bosnia.txt |  |
 | 1040 | XSM | 1936-01-01 | 1040 - Alxa.txt |  |
 | 1040 | CHI | 1936-01-01 | 1040 - Alxa.txt |  |
 | 1040 | PRC | 1936-01-01 | 1040 - Alxa.txt |  |
 | 1040 | NXM | 1936-01-01 | 1040 - Alxa.txt |  |
-| 1040 | NXM | 1936-01-01 | 1040 - Alxa.txt | No Compromise, No Surrender |
 | 1041 | CHI | 1936-01-01 | 1041 - Chengdu.txt |  |
 | 1041 | PRC | 1936-01-01 | 1041 - Chengdu.txt |  |
 | 1041 | SIC | 1936-01-01 | 1041 - Chengdu.txt |  |
-| 1041 | SIC | 1936-01-01 | 1041 - Chengdu.txt | No Compromise, No Surrender |
 | 1042 | SIK | 1936-01-01 | 1042 - Khotan.txt |  |
 | 1042 | CHI | 1936-01-01 | 1042 - Khotan.txt |  |
 | 1042 | PRC | 1936-01-01 | 1042 - Khotan.txt |  |
 | 1042 | KHM | 1936-01-01 | 1042 - Khotan.txt |  |
-| 1042 | KHM | 1936-01-01 | 1042 - Khotan.txt | No Compromise, No Surrender |
 | 1043 | SHX | 1936-01-01 | 1043 - Pailingmiao.txt |  |
 | 1043 | CHI | 1936-01-01 | 1043 - Pailingmiao.txt |  |
 | 1043 | PRC | 1936-01-01 | 1043 - Pailingmiao.txt |  |
@@ -111,12 +103,10 @@ Source: `history/states/*.txt`
 | 1044 | CHI | 1936-01-01 | 1044 - Wuwei.txt |  |
 | 1044 | PRC | 1936-01-01 | 1044 - Wuwei.txt |  |
 | 1044 | GSM | 1936-01-01 | 1044 - Wuwei.txt |  |
-| 1044 | GSM | 1936-01-01 | 1044 - Wuwei.txt | No Compromise, No Surrender |
 | 1045 | XSM | 1936-01-01 | 1045 - Guyuan.txt |  |
 | 1045 | CHI | 1936-01-01 | 1045 - Guyuan.txt |  |
 | 1045 | PRC | 1936-01-01 | 1045 - Guyuan.txt |  |
 | 1045 | NXM | 1936-01-01 | 1045 - Guyuan.txt |  |
-| 1045 | NXM | 1936-01-01 | 1045 - Guyuan.txt | No Compromise, No Surrender |
 | 1046 | PRC | 1936-01-01 | 1046 - Yulin.txt |  |
 | 1046 | CHI | 1936-01-01 | 1046 - Yulin.txt |  |
 | 105 | MNT | 1936-01-01 | 105-Montenegro.txt |  |
@@ -403,8 +393,6 @@ Source: `history/states/*.txt`
 | 283 | PRC | 1936-01-01 | 283-China.txt |  |
 | 283 | XIC | 1936-01-01 | 283-China.txt |  |
 | 283 | GSM | 1936-01-01 | 283-China.txt |  |
-| 283 | XIC | 1936-01-01 | 283-China.txt | No Compromise, No Surrender |
-| 283 | GSM | 1936-01-01 | 283-China.txt | No Compromise, No Surrender |
 | 284 | NZL | 1936-01-01 | 284-New Zealand.txt |  |
 | 285 | AST | 1936-01-01 | 285-Austraila.txt |  |
 | 286 | VIN | 1936-01-01 | 286-Indochina.txt |  |
@@ -413,7 +401,6 @@ Source: `history/states/*.txt`
 | 287 | CHI | 1936-01-01 | 287-Sinkiang.txt |  |
 | 287 | PRC | 1936-01-01 | 287-Sinkiang.txt |  |
 | 287 | KHM | 1936-01-01 | 287-Sinkiang.txt |  |
-| 287 | KHM | 1936-01-01 | 287-Sinkiang.txt | No Compromise, No Surrender |
 | 288 | BRM | 1936-01-01 | 288-Magwe.txt |  |
 | 289 | SIA | 1936-01-01 | 289-Siam.txt |  |
 | 29 | FRA | 1936-01-01 | 29-Pas de Calais.txt |  |
@@ -495,14 +482,11 @@ Source: `history/states/*.txt`
 | 35 | HOL | 1936-01-01 | 35-Gelderland.txt |  |
 | 350 | KUR | 1936-01-01 | 350-Diyarbekir.txt |  |
 | 350 | TUR | 1936-01-01 | 350-Diyarbekir.txt |  |
-| 350 | KUR | 1936-01-01 | 350-Diyarbekir.txt |  |
 | 351 | SOV | 1936-01-01 | 351-Vologda.txt |  |
 | 352 | KUR | 1936-01-01 | 352-Hakkari.txt |  |
 | 352 | TUR | 1936-01-01 | 352-Hakkari.txt |  |
-| 352 | KUR | 1936-01-01 | 352-Hakkari.txt |  |
 | 353 | KUR | 1936-01-01 | 353-Erzurum.txt |  |
 | 353 | TUR | 1936-01-01 | 353-Erzurum.txt |  |
-| 353 | KUR | 1936-01-01 | 353-Erzurum.txt |  |
 | 354 | TUR | 1936-01-01 | 354-Trabzon.txt |  |
 | 355 | TUR | 1936-01-01 | 355-Samsun.txt |  |
 | 356 | TUR | 1936-01-01 | 356-Sinop.txt |  |
@@ -853,17 +837,14 @@ Source: `history/states/*.txt`
 | 591 | GDC | 1936-01-01 | 591-Hainan.txt |  |
 | 591 | CHI | 1936-01-01 | 591-Hainan.txt |  |
 | 591 | PRC | 1936-01-01 | 591-Hainan.txt |  |
-| 591 | GDC | 1936-01-01 | 591-Hainan.txt | No Compromise, No Surrender |
 | 592 | GXC | 1936-01-01 | 592-Guangzhou.txt |  |
 | 592 | GDC | 1936-01-01 | 592-Guangzhou.txt |  |
 | 592 | CHI | 1936-01-01 | 592-Guangzhou.txt |  |
 | 592 | PRC | 1936-01-01 | 592-Guangzhou.txt |  |
-| 592 | GDC | 1936-01-01 | 592-Guangzhou.txt | No Compromise, No Surrender |
 | 593 | GXC | 1936-01-01 | 593-Guangdong.txt |  |
 | 593 | GDC | 1936-01-01 | 593-Guangdong.txt |  |
 | 593 | CHI | 1936-01-01 | 593-Guangdong.txt |  |
 | 593 | PRC | 1936-01-01 | 593-Guangdong.txt |  |
-| 593 | GDC | 1936-01-01 | 593-Guangdong.txt | No Compromise, No Surrender |
 | 594 | GXC | 1936-01-01 | 594-Nanning.txt |  |
 | 594 | CHI | 1936-01-01 | 594-Nanning.txt |  |
 | 594 | PRC | 1936-01-01 | 594-Nanning.txt |  |
@@ -874,7 +855,6 @@ Source: `history/states/*.txt`
 | 597 | CHI | 1936-01-01 | 597-Shandong.txt |  |
 | 597 | PRC | 1936-01-01 | 597-Shandong.txt |  |
 | 597 | SND | 1936-01-01 | 597-Shandong.txt |  |
-| 597 | SND | 1936-01-01 | 597-Shandong.txt | No Compromise, No Surrender |
 | 598 | CHI | 1936-01-01 | 598-Jiansu.txt |  |
 | 598 | PRC | 1936-01-01 | 598-Jiansu.txt |  |
 | 599 | GXC | 1936-01-01 | 599-Guanxi.txt |  |
@@ -898,7 +878,6 @@ Source: `history/states/*.txt`
 | 605 | CHI | 1936-01-01 | 605-China 5.txt |  |
 | 605 | PRC | 1936-01-01 | 605-China 5.txt |  |
 | 605 | SIC | 1936-01-01 | 605-China 5.txt |  |
-| 605 | SIC | 1936-01-01 | 605-China 5.txt | No Compromise, No Surrender |
 | 606 | CHI | 1936-01-01 | 606-China 6.txt |  |
 | 606 | PRC | 1936-01-01 | 606-China 6.txt |  |
 | 607 | CHI | 1936-01-01 | 607-China 7.txt |  |
@@ -906,11 +885,9 @@ Source: `history/states/*.txt`
 | 608 | CHI | 1936-01-01 | 608-Beijing.txt |  |
 | 608 | PRC | 1936-01-01 | 608-Beijing.txt |  |
 | 608 | HBC | 1936-01-01 | 608-Beijing.txt |  |
-| 608 | HBC | 1936-01-01 | 608-Beijing.txt | No Compromise, No Surrender |
 | 609 | CHI | 1936-01-01 | 609-China 8.txt |  |
 | 609 | PRC | 1936-01-01 | 609-China 8.txt |  |
 | 609 | HBC | 1936-01-01 | 609-China 8.txt |  |
-| 609 | HBC | 1936-01-01 | 609-China 8.txt | No Compromise, No Surrender |
 | 61 | GER | 1936-01-01 | 61-Mecklenburg.txt |  |
 | 61 | MEK | 1936-01-01 | 61-Mecklenburg.txt |  |
 | 610 | CHI | 1936-01-01 | 610-China 9.txt |  |
@@ -920,18 +897,15 @@ Source: `history/states/*.txt`
 | 611 | CHI | 1936-01-01 | 611-China 10.txt |  |
 | 611 | PRC | 1936-01-01 | 611-China 10.txt |  |
 | 611 | HBC | 1936-01-01 | 611-China 10.txt |  |
-| 611 | HBC | 1936-01-01 | 611-China 10.txt | No Compromise, No Surrender |
 | 612 | MEN | 1936-01-01 | 612-China 11.txt |  |
 | 612 | CHI | 1936-01-01 | 612-China 11.txt |  |
 | 612 | PRC | 1936-01-01 | 612-China 11.txt |  |
 | 612 | HBC | 1936-01-01 | 612-China 11.txt |  |
-| 612 | HBC | 1936-01-01 | 612-China 11.txt | No Compromise, No Surrender |
 | 613 | CHI | 1936-01-01 | 613-China 12.txt |  |
 | 613 | PRC | 1936-01-01 | 613-China 12.txt |  |
 | 614 | CHI | 1936-01-01 | 614-China 13.txt |  |
 | 614 | PRC | 1936-01-01 | 614-China 13.txt |  |
 | 614 | HBC | 1936-01-01 | 614-China 13.txt |  |
-| 614 | HBC | 1936-01-01 | 614-China 13.txt | No Compromise, No Surrender |
 | 615 | SHX | 1936-01-01 | 615-Shanxi.txt |  |
 | 615 | CHI | 1936-01-01 | 615-Shanxi.txt |  |
 | 615 | PRC | 1936-01-01 | 615-Shanxi.txt |  |
@@ -939,7 +913,6 @@ Source: `history/states/*.txt`
 | 616 | CHI | 1936-01-01 | 616-China 14.txt |  |
 | 616 | PRC | 1936-01-01 | 616-China 14.txt |  |
 | 616 | NXM | 1936-01-01 | 616-China 14.txt |  |
-| 616 | NXM | 1936-01-01 | 616-China 14.txt | No Compromise, No Surrender |
 | 617 | SIK | 1936-01-01 | 617-Xinjiang.txt |  |
 | 617 | CHI | 1936-01-01 | 617-Xinjiang.txt |  |
 | 617 | PRC | 1936-01-01 | 617-Xinjiang.txt |  |
@@ -1140,7 +1113,6 @@ Source: `history/states/*.txt`
 | 744 | PRC | 1936-01-01 | 744-Xian.txt |  |
 | 744 | CHI | 1936-01-01 | 744-Xian.txt |  |
 | 744 | XIC | 1936-01-01 | 744-Xian.txt |  |
-| 744 | XIC | 1936-01-01 | 744-Xian.txt | No Compromise, No Surrender |
 | 745 | CHI | 1936-01-01 | 745-Dalian.txt |  |
 | 745 | MAN | 1936-01-01 | 745-Dalian.txt |  |
 | 745 | PRC | 1936-01-01 | 745-Dalian.txt |  |
@@ -1161,16 +1133,13 @@ Source: `history/states/*.txt`
 | 751 | CHI | 1936-01-01 | 751-Liangshan.txt |  |
 | 751 | PRC | 1936-01-01 | 751-Liangshan.txt |  |
 | 751 | SIC | 1936-01-01 | 751-Liangshan.txt |  |
-| 751 | SIC | 1936-01-01 | 751-Liangshan.txt | No Compromise, No Surrender |
 | 752 | CHI | 1936-01-01 | 752-Chamdo.txt |  |
 | 752 | PRC | 1936-01-01 | 752-Chamdo.txt |  |
 | 752 | SIC | 1936-01-01 | 752-Chamdo.txt |  |
-| 752 | SIC | 1936-01-01 | 752-Chamdo.txt | No Compromise, No Surrender |
 | 753 | XSM | 1936-01-01 | 753-Gannan.txt |  |
 | 753 | CHI | 1936-01-01 | 753-Gannan.txt |  |
 | 753 | PRC | 1936-01-01 | 753-Gannan.txt |  |
 | 753 | SIC | 1936-01-01 | 753-Gannan.txt |  |
-| 753 | SIC | 1936-01-01 | 753-Gannan.txt | No Compromise, No Surrender |
 | 754 | XSM | 1936-01-01 | 754-Golog.txt |  |
 | 754 | CHI | 1936-01-01 | 754-Golog.txt |  |
 | 754 | PRC | 1936-01-01 | 754-Golog.txt |  |
@@ -1181,14 +1150,12 @@ Source: `history/states/*.txt`
 | 756 | CHI | 1936-01-01 | 756-Jiuquan.txt |  |
 | 756 | PRC | 1936-01-01 | 756-Jiuquan.txt |  |
 | 756 | GSM | 1936-01-01 | 756-Jiuquan.txt |  |
-| 756 | GSM | 1936-01-01 | 756-Jiuquan.txt | No Compromise, No Surrender |
 | 757 | TIB | 1936-01-01 | 757-Shigatse.txt |  |
 | 758 | TIB | 1936-01-01 | 758-Ngari.txt |  |
 | 759 | SIK | 1936-01-01 | 759-Kunlun.txt |  |
 | 759 | CHI | 1936-01-01 | 759-Kunlun.txt |  |
 | 759 | PRC | 1936-01-01 | 759-Kunlun.txt |  |
 | 759 | KHM | 1936-01-01 | 759-Kunlun.txt |  |
-| 759 | KHM | 1936-01-01 | 759-Kunlun.txt | No Compromise, No Surrender |
 | 76 | ROM | 1936-01-01 | 76-Northern Transylvania.txt |  |
 | 76 | TRA | 1936-01-01 | 76-Northern Transylvania.txt |  |
 | 760 | SIK | 1936-01-01 | 760-Dabancheng.txt |  |
@@ -1257,7 +1224,6 @@ Source: `history/states/*.txt`
 | 80 | UKR | 1936-01-01 | 80-Bocovina.txt |  |
 | 800 | KUR | 1936-01-01 | 800-Van.txt |  |
 | 800 | TUR | 1936-01-01 | 800-Van.txt |  |
-| 800 | KUR | 1936-01-01 | 800-Van.txt |  |
 | 801 | BUL | 1936-01-01 | 801-Moesia.txt |  |
 | 802 | YUG | 1936-01-01 | 802-Kosovo.txt |  |
 | 802 | KOS | 1936-01-01 | 802-Kosovo.txt |  |

@@ -57,7 +57,6 @@ Source: `history/countries/*.txt`
 | AST | destroyer_1 | Arunta Class | AST - Australia.txt |
 | AST | ship_hull_light_2 | Arunta Class | AST - Australia.txt |
 | BEL | light_tank_destroyer_chassis_1 | T13 B1 | BEL - Belgium.txt |
-| BEL | light_tank_destroyer_chassis_1 | T13 B1 | BEL - Belgium.txt |
 | BRA | ship_hull_heavy_1 | Minas Geraes Class | BRA - Brazil.txt |
 | BRA | ship_hull_cruiser_1 | Bahia Class | BRA - Brazil.txt |
 | BRA | ship_hull_light_1 | Para Class | BRA - Brazil.txt |
@@ -110,7 +109,6 @@ Source: `history/countries/*.txt`
 | DDR | heavy_cruiser_1 | Deutschland Class | DDR - East Germany.txt |
 | DDR | submarine_2 | Type VIIA | DDR - East Germany.txt |
 | DDR | destroyer_2 | Zerstörer 1936 | DDR - East Germany.txt |
-| DDR | heavy_cruiser_1 | Deutschland Class | DDR - East Germany.txt |
 | DDR | ship_hull_light_2 | Zerstörer 1936 Class | DDR - East Germany.txt |
 | DEN | ship_hull_submarine_1 | Rota Class | DEN - Denmark.txt |
 | DEN | ship_hull_cruiser_coastal_defense_ship | Herluf Trolle Class | DEN - Denmark.txt |
@@ -173,7 +171,6 @@ Source: `history/countries/*.txt`
 | ENG | ship_hull_light_3 | J/K/N Class | ENG - Britain.txt |
 | ENG | ship_hull_heavy_2 | King George V Class | ENG - Britain.txt |
 | ENG | ship_hull_heavy_2 | Lion Class | ENG - Britain.txt |
-| ENG | ship_hull_cruiser_coastal_defense_ship | Erebus Class | ENG - Britain.txt |
 | ENG | ship_hull_submarine_2 | T Class | ENG - Britain.txt |
 | ENG | ship_hull_submarine_2 | Grampus Class | ENG - Britain.txt |
 | ENG | ship_hull_submarine_1 | U Class | ENG - Britain.txt |
@@ -301,7 +298,6 @@ Source: `history/countries/*.txt`
 | GER | small_plane_airframe_1 | Bf 109 E | GER - Germany.txt |
 | GER | small_plane_airframe_1 | Bf 110 C | GER - Germany.txt |
 | GER | small_plane_airframe_1 | He 112 | GER - Germany.txt |
-| GER | heavy_cruiser_1 | Deutschland | GER - Germany.txt |
 | GRE | destroyer_1 | Hydra Class | GRE - Greece.txt |
 | GRE | ship_hull_submarine_1 | Katsonis Class | GRE - Greece.txt |
 | GRE | ship_hull_submarine_2 | Glafkos Class | GRE - Greece.txt |
@@ -383,7 +379,6 @@ Source: `history/countries/*.txt`
 | ITA | medium_plane_airframe_1 | Ca.135 | ITA - Italy.txt |
 | ITA | submarine_2 | Marcello Class | ITA - Italy.txt |
 | ITA | ship_hull_heavy_1 | Caio Duilio Class | ITA - Italy.txt |
-| ITA | ship_hull_cruiser_2 | Duca degli Abruzzi Class | ITA - Italy.txt |
 | ITA | ship_hull_light_2 | Soldati Class | ITA - Italy.txt |
 | ITA | ship_hull_submarine_2 | Marcello Class | ITA - Italy.txt |
 | ITA | light_tank_chassis_1 | L6/40 | ITA - Italy.txt |
@@ -455,7 +450,6 @@ Source: `history/countries/*.txt`
 | JAP | destroyer_2 | Kagero Class | JAP - Japan.txt |
 | JAP | ship_hull_carrier_2 | Shokaku Class | JAP - Japan.txt |
 | JAP | ship_hull_super_heavy_1 | Yamato Class | JAP - Japan.txt |
-| JAP | ship_hull_light_2 | Asashio Class | JAP - Japan.txt |
 | JAP | ship_hull_cruiser_2 | Katori Class | JAP - Japan.txt |
 | JAP | ship_hull_light_2 | Kagero Class | JAP - Japan.txt |
 | JAP | ship_hull_light_2 | Hatsutaka Class | JAP - Japan.txt |
@@ -538,8 +532,6 @@ Source: `history/countries/*.txt`
 | PAP | ship_hull_submarine_2 | Calvi Class | PAP - Papal States.txt |
 | PHI | convoy_1 | Casco Convoy | PHI - Philippines.txt |
 | PHI | ship_hull_light_1 | Clemson Class | PHI - Philippines.txt |
-| PHI | convoy_1 | Casco Convoy | PHI - Philippines.txt |
-| PHI | ship_hull_light_1 | Clemson Class | PHI - Philippines.txt |
 | PHI | ship_hull_light_2 | Patrol Boat | PHI - Philippines.txt |
 | POL | CAS_equipment_1 | PZL P.43 | POL - Poland.txt |
 | POL | small_plane_cas_airframe_1 | PZL P.43 | POL - Poland.txt |
@@ -549,10 +541,6 @@ Source: `history/countries/*.txt`
 | POL | small_plane_airframe_0 | PZL P.11 | POL - Poland.txt |
 | POL | small_plane_airframe_0 | PZL P.24 | POL - Poland.txt |
 | POL | small_plane_cas_airframe_1 | PZL P.23 | POL - Poland.txt |
-| POL | small_plane_cas_airframe_1 | PZL P.23 | POL - Poland.txt |
-| POL | light_tank_chassis_0 | TKS | POL - Poland.txt |
-| POL | light_tank_chassis_0 | 7TP dw | POL - Poland.txt |
-| POL | light_tank_chassis_0 | 7TP jw | POL - Poland.txt |
 | POL | light_tank_chassis_0 | TKS | POL - Poland.txt |
 | POL | light_tank_chassis_0 | 7TP dw | POL - Poland.txt |
 | POL | light_tank_chassis_0 | 7TP jw | POL - Poland.txt |
@@ -672,7 +660,6 @@ Source: `history/countries/*.txt`
 | SPR | ship_hull_cruiser_2 | Canarias Class | SPR - Spain.txt |
 | SPR | ship_hull_heavy_1 | España Class | SPR - Spain.txt |
 | SPR | ship_hull_submarine_2 | General Mola Class | SPR - Spain.txt |
-| SPR | ship_hull_light_1 | Melilla Class | SPR - Spain.txt |
 | SPR | ship_hull_light_1 | Melilla Class | SPR - Spain.txt |
 | SPR | ship_hull_light_2 | Eolo Class | SPR - Spain.txt |
 | SWE | submarine_1 | Draken Class | SWE - Sweden.txt |
