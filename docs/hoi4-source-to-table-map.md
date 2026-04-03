@@ -1,6 +1,6 @@
 # HOI4 Source to Table Map
 
-Status: **COMPLETE** (all 23 phases mapped — core + DLC + doctrines)
+Status: **COMPLETE** (all 23 phases + localisation mapped — core + DLC + doctrines + infrastructure)
 
 ## Purpose
 Complete mapping of every source file path to target database tables and transformation rules.
@@ -62,6 +62,7 @@ Complete mapping of every source file path to target database tables and transfo
 | `common/dynamic_modifiers/*.txt` | dynamic_modifiers, dynamic_modifier_effects | One block per modifier; extract key, icon, attacker_modifier. Modifier key-value pairs → dynamic_modifier_effects (static numeric or variable reference). | Various |
 | `common/scientist_traits/*.txt` | scientist_traits, scientist_trait_modifiers | One block per trait; extract key, icon. `modifier = { }` → scientist_trait_modifiers. | Götterdämmerung |
 | `common/peace_conference/**/*.txt` | peace_action_categories, peace_cost_modifiers | Category blocks → peace_action_categories (name, is_default). `cost_modifier = { }` sub-blocks → peace_cost_modifiers (category, peace_action_type, cost_multiplier). | By Blood Alone |
+| `localisation/english/*_l_english.yml` | localisation | YAML-like format: `key:0 "value"` per line under `l_english:` header. Regex extract `^\s+(\S+?):\d*\s+"(.+)"\s*$`. Deduplicate (later file wins). 189 files → 117,490 rows. | None (base game + all DLC) |
 
 ---
 
@@ -117,6 +118,7 @@ Complete mapping of every source file path to target database tables and transfo
 - [x] `common/dynamic_modifiers/*.txt`
 - [x] `common/scientist_traits/*.txt`
 - [x] `common/peace_conference/**/*.txt`
+- [x] `localisation/english/*_l_english.yml`
 
 ---
 

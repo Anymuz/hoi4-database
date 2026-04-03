@@ -41,6 +41,17 @@ Check `docs/data-dump/SUMMARY.md` for per-dataset row counts.
 
 > **Windows note:** If you see encoding errors, set `$env:PYTHONIOENCODING='utf-8'` first.
 
+### Step 1b: Extract Localisation
+
+```bash
+python tools/db_etl/export_localisation.py
+# Or with explicit path:
+python tools/db_etl/export_localisation.py --hoi4-root "/path/to/Hearts of Iron IV"
+```
+
+**Output:** `data/csv/localisation.csv` — 117,490 English display-name translations from 189 `*_l_english.yml` files.
+These are loaded separately from the main seed (the localisation table has no FK dependencies).
+
 ---
 
 ## Step 2: Convert Markdown → CSV
@@ -52,6 +63,7 @@ python tools/db_etl/md_to_csv.py
 ```
 
 **Output:** `data/csv/` — 127 CSV files (~218K rows), one per schema table.
+(Localisation CSV is produced separately by `export_localisation.py` — see Step 1b.)
 
 The converter handles column renames, multi-source merges (e.g., country_tags +
 countries_visuals + country_history → countries.csv), multi-target splits
@@ -98,13 +110,17 @@ docker cp data/csv              hoi4-db:/data_csv
 docker cp sql/seed-docker.sql   hoi4-db:/tmp/seed.sql
 docker cp sql/views.sql         hoi4-db:/tmp/views.sql
 
-# Load schema (127 tables, 50 indexes)
+# Load schema (129 tables, 50 indexes)
 docker exec hoi4-db psql -U hoi4 -d hoi4 -f /tmp/schema.sql
 
-# Load data (~218K rows across 7 FK-safe tiers)
+# Load data (~218K game rows across 7 FK-safe tiers)
 docker exec hoi4-db psql -U hoi4 -d hoi4 -f /tmp/seed.sql
 
-# Create API views (14 views)
+# Load localisation (~117K rows)
+docker cp data/csv/localisation.csv hoi4-db:/data_csv/localisation.csv
+docker exec hoi4-db psql -U hoi4 -d hoi4 -c "COPY localisation FROM '/data_csv/localisation.csv' CSV HEADER;"
+
+# Create API views (12 views + 2 functions)
 docker exec hoi4-db psql -U hoi4 -d hoi4 -f /tmp/views.sql
 ```
 
@@ -168,10 +184,10 @@ psql -f sql/schema.sql
 Run these after loading to confirm everything is correct:
 
 ```bash
-# Table count (expect 127)
+# Table count (expect 129)
 psql -d hoi4 -c "SELECT count(*) FROM information_schema.tables WHERE table_schema='public';"
 
-# Total row count (expect ~218K)
+# Total row count (expect ~335K)
 psql -d hoi4 -c "
   SELECT sum(n_live_tup)::int AS total_rows
   FROM pg_stat_user_tables;" 
@@ -205,7 +221,7 @@ python tools/db_etl/validate_data.py
 
 ## Step 5: API Views
 
-The 14 views are created during Step 3. To reload them independently:
+The 12 views + 2 functions are created during Step 3. To reload them independently:
 
 ```bash
 # Native
@@ -227,6 +243,7 @@ To reload all data from scratch (e.g., after a game patch or schema change):
 ```bash
 # Re-extract and re-convert
 python tools/db_etl/export_markdown_dump.py
+python tools/db_etl/export_localisation.py
 python tools/db_etl/md_to_csv.py
 python tools/db_etl/gen_seed_sql.py
 python tools/db_etl/gen_seed_docker.py
@@ -240,6 +257,7 @@ docker cp sql/seed-docker.sql   hoi4-db:/tmp/seed.sql
 docker cp sql/views.sql         hoi4-db:/tmp/views.sql
 docker exec hoi4-db psql -U hoi4 -d hoi4 -f /tmp/schema.sql
 docker exec hoi4-db psql -U hoi4 -d hoi4 -f /tmp/seed.sql
+docker exec hoi4-db psql -U hoi4 -d hoi4 -c "COPY localisation FROM '/data_csv/localisation.csv' CSV HEADER;"
 docker exec hoi4-db psql -U hoi4 -d hoi4 -f /tmp/views.sql
 ```
 

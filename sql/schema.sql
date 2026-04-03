@@ -1534,6 +1534,18 @@ CREATE INDEX ix_subdoctrines_track ON subdoctrines (track_key);
 CREATE INDEX ix_country_starting_doctrines_country ON country_starting_doctrines (country_tag);
 
 -- ============================================================
+-- Localisation table — English display names for game entities
+-- Source: localisation/english/*_l_english.yml (from HOI4 install)
+-- Keys map to state_name_key, technology_key, equipment_key, etc.
+-- ============================================================
+CREATE TABLE localisation (
+    loc_key     VARCHAR(250) PRIMARY KEY,
+    loc_value   TEXT         NOT NULL,
+    source_file TEXT
+);
+CREATE INDEX ix_localisation_key ON localisation (loc_key);
+
+-- ============================================================
 -- User annotation table and index (as per design recommendations)
 -- ============================================================
 CREATE TABLE user_annotations (

@@ -1,6 +1,6 @@
 # HOI4 Table Catalog
 
-Status: **COMPLETE** (127 tables across 23 phases)
+Status: **COMPLETE** (129 tables across 23 phases + infrastructure)
 
 ## How to Read This File
 - Each table section includes purpose, source files, columns, keys, and relationship notes.
@@ -2230,6 +2230,42 @@ Grand doctrines and subdoctrines pre-selected in country history files.
 
 ---
 
+## Infrastructure Tables
+
+### user_annotations
+- **Purpose**: API-facing user notes — free-form metadata on any entity
+- **Source files**: Created via API POST
+- **Grain**: One row per annotation
+- **Primary key**: `annotation_id` (SERIAL)
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| annotation_id | SERIAL | Yes (PK) | — | Auto-increment |
+| entity_type | VARCHAR(50) | Yes | API input | e.g. `country`, `state`, `technology` |
+| entity_key | VARCHAR(200) | Yes | API input | e.g. `GER`, `64`, `infantry_weapons` |
+| note | TEXT | Yes | API input | Free-text annotation |
+| created_at | TIMESTAMPTZ | Yes | DEFAULT now() | Creation timestamp |
+
+- **Row count**: 0 (user-generated)
+- **Relationship notes**: No FKs. Index on (entity_type, entity_key).
+
+### localisation
+- **Purpose**: English display names for game keys (states, technologies, ideas, etc.)
+- **Source files**: `localisation/english/*_l_english.yml` (189 files in HOI4 install)
+- **Grain**: One row per localisation key
+- **Primary key**: `loc_key`
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| loc_key | VARCHAR(250) | Yes (PK) | YAML key before `:` | e.g. `STATE_64`, `infantry_weapons` |
+| loc_value | TEXT | Yes | Quoted string value | e.g. `Brandenburg`, `Infantry Weapons I` |
+| source_file | TEXT | No | Filename | Provenance tracking |
+
+- **Row count**: 117,490
+- **Relationship notes**: No FKs. Referenced via LEFT JOIN from `api_country_detail` and `api_state_detail` functions.
+
+---
+
 ## Summary — New Tables Added in Phases 16–22
 
 | Phase | Domain | Tables Added | Total New Rows (est.) |
@@ -2242,9 +2278,10 @@ Grand doctrines and subdoctrines pre-selected in country history files.
 | 21 | BOP & Continuous Focuses | `balance_of_power_definitions`, `bop_sides`, `bop_ranges`, `bop_range_modifiers`, `continuous_focus_palettes`, `continuous_focuses`, `continuous_focus_modifiers` | ~340 |
 | 22 | Misc DLC | `technology_sharing_groups`, `dynamic_modifiers`, `dynamic_modifier_effects`, `scientist_traits`, `scientist_trait_modifiers`, `peace_action_categories`, `peace_cost_modifiers` | ~460 |
 | 23 | Doctrines (Officer Corps) | `doctrine_folders`, `doctrine_tracks`, `grand_doctrines`, `grand_doctrine_tracks`, `subdoctrines`, `country_starting_doctrines` | ~1,078 |
-| **Totals** | | **57 new tables** | **~6,478 rows** |
+| Infra | Infrastructure | `user_annotations`, `localisation` | ~117,490 |
+| **Totals** | | **57 new tables + 2 infra** | **~123,968 rows** |
 
-**Running total: 66 existing + 57 new + 4 schema-only = 127 tables**
+**Running total: 66 existing + 57 new + 4 schema-only + 2 infrastructure = 129 tables**
 
 (Note: `intelligence_agencies` is a revision of an existing table, so net new tables = 50; but the new child table `intelligence_agency_names` makes 51 new table definitions.)
 

@@ -8,9 +8,11 @@
 
 ## 1. Overview & Rationale
 
-A **hybrid REST + GraphQL** API serving the 127-table HOI4 database. Game data
+A **hybrid REST + GraphQL** API serving the 129-table HOI4 database. Game data
 is read-only. A single `user_annotations` table enables user-generated metadata
 (Option B scalability — extend user-facing features without touching game data).
+A `localisation` table (117K English translations) provides human-readable names
+for game keys in API responses.
 
 ### Why Hybrid?
 
@@ -402,10 +404,12 @@ from pydantic import BaseModel
 class OwnedState(BaseModel):
     state_id: int
     state_name_key: str
+    state_name: str | None = None
     controller_tag: str | None = None
 
 class StartingTech(BaseModel):
     technology_key: str
+    technology_name: str | None = None
     dlc_source: str | None = None
 
 class ColorRGB(BaseModel):
@@ -696,11 +700,13 @@ from typing import Optional
 class OwnedState:
     state_id: int
     state_name_key: str
+    state_name: Optional[str] = None
     controller_tag: Optional[str] = None
 
 @strawberry.type
 class StartingTech:
     technology_key: str
+    technology_name: Optional[str] = None
     dlc_source: Optional[str] = None
 
 @strawberry.type
@@ -1080,6 +1086,31 @@ CREATE TABLE user_annotations (
 CREATE INDEX idx_annotations_entity
     ON user_annotations(entity_type, entity_key);
 ```
+
+### 13c. Add Localisation Table & Join to Functions
+
+The `localisation` table stores 117,490 English display names extracted from
+HOI4's `localisation/english/*_l_english.yml` files. API functions LEFT JOIN
+to it so responses include human-readable names alongside raw game keys.
+
+```sql
+CREATE TABLE localisation (
+    loc_key    VARCHAR(250) PRIMARY KEY,
+    loc_value  TEXT         NOT NULL,
+    source_file TEXT
+);
+```
+
+**How it's used in functions:**
+
+`api_country_detail` builds jsonb objects for `owned_states` and
+`starting_technologies` that now include `state_name` and `technology_name`
+via `LEFT JOIN localisation` + `COALESCE(loc_value, raw_key)`.
+
+`api_state_detail` returns a `state_name TEXT` column via the same pattern.
+
+Coverage: 96% of states, 72% of technologies. COALESCE fallback means the raw
+key is returned when no translation exists — nothing breaks.
 
 ---
 

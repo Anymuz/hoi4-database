@@ -69,23 +69,27 @@ LANGUAGE sql STABLE AS $$
                 jsonb_build_object(
                     'state_id', o.state_id,
                     'state_name_key', s.state_name_key,
+                    'state_name', COALESCE(sl.loc_value, s.state_name_key),
                     'controller_tag', o.controller_tag
                 )
                 ORDER BY o.state_id
             )
             FROM ownership o
             JOIN states s ON s.state_id = o.state_id
+            LEFT JOIN localisation sl ON sl.loc_key = s.state_name_key
             WHERE o.owner_tag = c.tag
         ), '[]'::jsonb) AS owned_states,
         COALESCE((
             SELECT jsonb_agg(
                 jsonb_build_object(
                     'technology_key', t.technology_key,
+                    'technology_name', COALESCE(tl.loc_value, t.technology_key),
                     'dlc_source', t.dlc_source
                 )
                 ORDER BY t.technology_key, t.dlc_source
             )
             FROM tech t
+            LEFT JOIN localisation tl ON tl.loc_key = t.technology_key
             WHERE t.country_tag = c.tag
         ), '[]'::jsonb) AS starting_technologies
     FROM countries c;
@@ -98,6 +102,7 @@ CREATE OR REPLACE FUNCTION api_state_detail(p_date DATE DEFAULT '1936-01-01')
 RETURNS TABLE (
     state_id           INT,
     state_name_key     VARCHAR,
+    state_name         TEXT,
     state_category     VARCHAR,
     manpower           INT,
     local_supplies     NUMERIC,
@@ -166,6 +171,7 @@ LANGUAGE sql STABLE AS $$
     SELECT
         s.state_id,
         s.state_name_key,
+        COALESCE(sl.loc_value, s.state_name_key) AS state_name,
         s.state_category,
         s.manpower,
         s.local_supplies,
@@ -176,6 +182,7 @@ LANGUAGE sql STABLE AS $$
         COALESCE(pb.province_buildings, '[]'::jsonb) AS province_buildings,
         COALESCE(pl.provinces, '[]'::jsonb) AS provinces
     FROM states s
+    LEFT JOIN localisation sl ON sl.loc_key = s.state_name_key
     LEFT JOIN ownership o ON o.state_id = s.state_id
     LEFT JOIN resources_at_date r ON r.state_id = s.state_id
     LEFT JOIN state_buildings_at_date sb ON sb.state_id = s.state_id

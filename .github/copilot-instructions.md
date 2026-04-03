@@ -11,29 +11,35 @@ To point at the game install, use `--hoi4-root <path>`, the `HOI4_ROOT` env var,
 ## Current Project Status (as of April 2026)
 
 ### COMPLETED — Design Phase
-- **127-table schema** designed across **23 phases** (66 core + 61 DLC)
+- **129-table schema** designed across **23 phases** (66 core + 61 DLC + 2 infrastructure)
 - **ER diagram**: `docs/hoi4-er-diagram.mmd` — 127 entities, 133 relationships (Mermaid format)
-- **Table catalog**: `docs/hoi4-table-catalog.md` — ~1,900 lines, full column specs for every table
-- **Design document**: `docs/hoi4-database-design.md` — ~420 lines, phases, FK build order (123 steps), DLC register (38 entries)
-- **Source mapping**: `docs/hoi4-source-to-table-map.md` — all 23 phases mapped including DLC paths
+- **Table catalog**: `docs/hoi4-table-catalog.md` — ~2,100 lines, full column specs for every table
+- **Design document**: `docs/hoi4-database-design.md` — ~430 lines, phases, FK build order (125 steps), DLC register (38 entries)
+- **Source mapping**: `docs/hoi4-source-to-table-map.md` — all 23 phases + localisation mapped including DLC paths
 
 ### COMPLETED — Implementation
-- **SQL DDL**: `sql/schema.sql` has **all 127 tables** (127 CREATE TABLE, 4 ALTER TABLE, 50 CREATE INDEX) with all FK constraints enforced
+- **SQL DDL**: `sql/schema.sql` has **all 129 tables** (129 CREATE TABLE, 4 ALTER TABLE, 50 CREATE INDEX) with all FK constraints enforced
 - **Data extraction**: 137 markdown data-dump files in `docs/data-dump/` covering all 23 phases including DLC and doctrines
-- **Markdown → CSV conversion**: `tools/db_etl/md_to_csv.py` produces 127 PostgreSQL-ready CSVs in `data/csv/` (~218K rows)
-- **API views**: `sql/views.sql` has 14 API views across 3 slices
-- **Seed loading**: `sql/seed-load-order.sql` (native) and `sql/seed-docker.sql` (Docker) load all 127 tables in 7 FK-safe tiers
-- **Database loaded**: PostgreSQL 16 with 127 tables, ~218K rows, 0 errors
+- **Localisation**: 117,490 English display names extracted from 189 `*_l_english.yml` files via `tools/db_etl/export_localisation.py`
+- **Markdown → CSV conversion**: `tools/db_etl/md_to_csv.py` produces 127 PostgreSQL-ready CSVs in `data/csv/` (~218K game rows)
+- **API views**: `sql/views.sql` has 12 API views + 2 date-parameterised functions (LEFT JOIN localisation for human-readable names)
+- **Seed loading**: `sql/seed-load-order.sql` (native) and `sql/seed-docker.sql` (Docker) load all 127 game tables in 7 FK-safe tiers
+- **Database loaded**: PostgreSQL 16 with 129 tables, ~335K rows (218K game + 117K localisation), 0 errors
 - **Data validation**: `tools/db_etl/validate_data.py` runs FK, PK, NOT NULL checks — 0 errors, 0 warnings
 
 ### NOT YET DONE
-- REST API implementation (FastAPI + Strawberry GraphQL — see `docs/api-design.md`)
+- REST API implementation in progress (FastAPI + Strawberry GraphQL — see `docs/api-design.md`)
+  - Phase 0 (SQL fixes): **DONE**
+  - Phase 1 (scaffold + infrastructure): **DONE**
+  - Phase 2 (countries + states routers): **DONE**
+  - Localisation (cross-cutting): **DONE** — 117K English names, LEFT JOIN in SQL functions, name fields in schemas
+  - Phase 3+ (remaining routers, GraphQL, polish): NOT STARTED
 
 ---
 
 ## Schema Architecture
 
-### Phase Breakdown (23 phases, 127 tables)
+### Phase Breakdown (23 phases, 129 tables)
 
 | Phases | Domain | Tables | DLC |
 |--------|--------|--------|-----|
@@ -57,6 +63,7 @@ To point at the game install, use `--hoi4-root <path>`, the `HOI4_ROOT` env var,
 | 21 | Balance of Power & Continuous Focuses | 7 | Various |
 | 22 | Misc DLC (tech sharing, dynamic modifiers, scientist traits, peace conference) | 7 | Various |
 | 23 | Doctrines (Officer Corps: folders, tracks, grand doctrines, subdoctrines) | 6 | Götterdämmerung |
+| — | Infrastructure (user_annotations, localisation) | 2 | — |
 
 ### Key Design Decisions
 - **Natural keys** for game entities (`tag CHAR(3)`, `technology_key VARCHAR`)
@@ -122,6 +129,7 @@ Game data files (`.txt` under `common/`, `history/`, `events/`, etc. **inside th
 | Continuous focuses | `common/continuous_focus/` |
 | Scientist traits | `common/scientist_traits/` |
 | Peace conference | `common/peace_conference/` |
+| Localisation (English) | `localisation/english/` |
 
 ## Repository Structure
 
@@ -134,10 +142,11 @@ Game data files (`.txt` under `common/`, `history/`, `events/`, etc. **inside th
 | Sample data rows | `docs/hoi4-data-snapshots.md` |
 | API design | `docs/api-design.md` |
 | Extracted data dumps | `docs/data-dump/` (137 files + SUMMARY.md) |
-| PostgreSQL-ready CSVs | `data/csv/` (127 files, gitignored) |
+| PostgreSQL-ready CSVs | `data/csv/` (127 game + 1 localisation files, gitignored) |
 | SQL DDL / views / seed | `sql/` |
 | SQL design rationale | `sql/README.md` |
 | Extraction script | `tools/db_etl/export_markdown_dump.py` |
+| Localisation extractor | `tools/db_etl/export_localisation.py` |
 | MD → CSV converter | `tools/db_etl/md_to_csv.py` |
 
 | Seed SQL generator (native) | `tools/db_etl/gen_seed_sql.py` |

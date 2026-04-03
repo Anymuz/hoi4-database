@@ -1,15 +1,16 @@
 # HOI4 Database ETL — Module Manifest
 
-Status: **COMPLETE** — full pipeline extracts, converts, and loads all 127 schema tables (~218K rows).
+Status: **COMPLETE** — full pipeline extracts, converts, and loads all 129 schema tables (~335K rows).
 
 ## Overview
 
 The ETL pipeline has four stages:
 
 1. **Extract** — `export_markdown_dump.py` reads HOI4 game files and writes markdown tables to `docs/data-dump/` (137 files, ~218K rows across 23 schema phases). The script contains ~70 parser functions covering every table in the schema.
-2. **Transform** — `md_to_csv.py` reads those markdown tables, renames columns to match the schema, merges multi-source tables (e.g., countries), splits multi-target files (e.g., focus_links), and writes CSV files to `data/csv/`.
-3. **Generate** — `gen_seed_sql.py` produces `sql/seed-load-order.sql` (native `\copy` commands); `gen_seed_docker.py` produces `sql/seed-docker.sql` (Docker `COPY` commands). Both use explicit column lists and FK staging tables.
-4. **Load** — PostgreSQL loads via `psql -f sql/seed-load-order.sql` (native) or `psql -f sql/seed-docker.sql` (Docker container).
+2. **Extract localisation** — `export_localisation.py` reads 189 `*_l_english.yml` files from `localisation/english/` and writes `data/csv/localisation.csv` (117,490 English display-name translations).
+3. **Transform** — `md_to_csv.py` reads those markdown tables, renames columns to match the schema, merges multi-source tables (e.g., countries), splits multi-target files (e.g., focus_links), and writes CSV files to `data/csv/`.
+4. **Generate** — `gen_seed_sql.py` produces `sql/seed-load-order.sql` (native `\copy` commands); `gen_seed_docker.py` produces `sql/seed-docker.sql` (Docker `COPY` commands). Both use explicit column lists and FK staging tables.
+5. **Load** — PostgreSQL loads via `psql -f sql/seed-load-order.sql` (native) or `psql -f sql/seed-docker.sql` (Docker container). Localisation is loaded separately via `COPY localisation FROM ... CSV HEADER`.
 
 Each extraction module is a function in `export_markdown_dump.py`.
 
@@ -20,6 +21,7 @@ Each extraction module is a function in `export_markdown_dump.py`.
 | Script | Purpose | Input | Output |
 |---|---|---|---|
 | `export_markdown_dump.py` | Parse HOI4 game files | Game install directory | `docs/data-dump/` (137 .md files) |
+| `export_localisation.py` | Extract English display names | `localisation/english/` (game install) | `data/csv/localisation.csv` (117,490 rows) |
 | `md_to_csv.py` | Convert markdown → CSV | `docs/data-dump/` | `data/csv/` (127 .csv files) |
 | `gen_seed_sql.py` | Generate native seed SQL | `data/csv/` headers | `sql/seed-load-order.sql` |
 | `gen_seed_docker.py` | Generate Docker seed SQL | `sql/seed-load-order.sql` | `sql/seed-docker.sql` |

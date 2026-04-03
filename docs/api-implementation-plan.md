@@ -3,7 +3,7 @@
 > **Date:** 2026-04-02
 > **Branch:** `feature/api-v1`
 > **Design doc:** `docs/api-design.md` (FINAL, 2026-03-31)
-> **Database:** 127 tables, ~218K rows, 14 views, PostgreSQL 16
+> **Database:** 129 tables, ~335K rows, 12 views + 2 functions, PostgreSQL 16
 
 ---
 
@@ -40,11 +40,21 @@ Five issues identified during the design-vs-database audit:
 - [x] Test gate: health, openapi, date validation
 
 ### Phase 2: Slice A — Countries & States (Date-Sensitive)
-- [ ] 2.1 — Pydantic schemas (country, state)
-- [ ] 2.2 — Countries router
-- [ ] 2.3 — States router
-- [ ] 2.4 — Register routers in `main.py`
-- [ ] Test gate: list, detail, 404, pagination, date filtering
+- [x] 2.1 — Pydantic schemas (country, state)
+- [x] 2.2 — Countries router
+- [x] 2.3 — States router
+- [x] 2.4 — Register routers in `main.py`
+- [x] Test gate: list, detail, 404, pagination, date filtering
+
+### Localisation (cross-cutting, completed after Phase 2)
+- [x] Add `localisation` table to `sql/schema.sql` (loc_key PK, loc_value, source_file)
+- [x] Write `tools/db_etl/export_localisation.py` extraction script
+- [x] Extract 117,490 English loc entries from 189 `*_l_english.yml` files
+- [x] Load into live database via `COPY ... CSV HEADER`
+- [x] Update `api_country_detail` function — LEFT JOIN localisation for state_name + technology_name in jsonb
+- [x] Update `api_state_detail` function — add state_name column via LEFT JOIN localisation
+- [x] Update Pydantic schemas — add state_name/technology_name optional fields
+- [x] Update states router — add state_name to SELECT queries
 
 ### Phase 3: Slice B — Domain Catalogs (8 routers)
 - [ ] 3.1 — Technologies (schemas + router)
@@ -152,7 +162,7 @@ docker exec hoi4-db psql -U hoi4 -d hoi4 -c \
   "SELECT count(*) FROM user_annotations;"  -- expect 0
 ```
 
-**Exit criteria:** 127 tables + 1 `user_annotations` = 128 tables; 12 views + 2 functions; both date params work; 0 errors.
+**Exit criteria:** 127 tables + 1 `user_annotations` + 1 `localisation` = 129 tables; 12 views + 2 functions; both date params work; 0 errors.
 
 ---
 
@@ -268,14 +278,14 @@ This is the most complex slice — it exercises date parameterisation, jsonb nes
 
 Create `api/app/schemas/country.py`:
 - `ColorRGB` (r, g, b)
-- `OwnedState` (state_id, state_name_key, controller_tag)
-- `StartingTech` (technology_key, dlc_source)
+- `OwnedState` (state_id, state_name_key, state_name, controller_tag)
+- `StartingTech` (technology_key, technology_name, dlc_source)
 - `CountrySummary` (tag, capital_state_id, stability, war_support)
 - `CountryDetail` (full — includes color_rgb, graphical_culture, owned_states, starting_technologies)
 
 Create `api/app/schemas/state.py`:
 - Nested models for resources, buildings, province_buildings, provinces
-- `StateSummary` (state_id, state_name_key, state_category, owner_tag)
+- `StateSummary` (state_id, state_name_key, state_name, state_category, owner_tag)
 - `StateDetail` (full — includes manpower, local_supplies, nested arrays)
 
 ### Step 2.2 — Countries router

@@ -48,9 +48,14 @@ async def health_check():
     return {"status": "ok"}
 # End of health_check endpoint.
 
-# REST routers will be mounted here in later phases:
-#   app.include_router(countries.router)
-#   app.include_router(states.router)
+# Mount REST routers — each handles one domain under /api/v1/
+from app.routers import countries, states
+app.include_router(countries.router)
+app.include_router(states.router)
+
+# More routers will be added in later phases:
+#   app.include_router(technologies.router)
+#   app.include_router(characters.router)
 #   etc.
 #
 # GraphQL will be mounted here in Phase 5:

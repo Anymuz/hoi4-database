@@ -1,7 +1,7 @@
 # HOI4 Database Design — Complete Schema
 
 Status: **COMPLETE** — Schema designed, implemented, and loaded into PostgreSQL 16
-Total tables: **127** (66 core + 61 DLC) · **~218K rows loaded** · **14 API views**
+Total tables: **129** (66 core + 61 DLC + 2 infrastructure) · **~335K rows loaded** · **14 API views**
 
 ---
 
@@ -12,6 +12,8 @@ This document specifies a fully normalised (3NF) PostgreSQL relational database 
 **Core (Phases 1–15, 66 tables):** global references, geography, map connectivity, countries, technologies, characters, division/naval/air OOB, ideas, focus trees, governance, country extensions, bookmarks, decisions.
 
 **DLC (Phases 16–23, 61 tables):** espionage system (La Résistance), occupation & resistance, military-industrial organizations (Arms Against Tyranny), raids (Götterdämmerung), career profile medals & ribbons (By Blood Alone), balance of power, continuous focuses, technology sharing, dynamic modifiers, scientist traits, peace conference, doctrines (Officer Corps / Military Experience).
+
+**Infrastructure (2 tables):** `user_annotations` (API-facing user notes), `localisation` (117K English display-name translations extracted from HOI4 `localisation/english/*_l_english.yml` files — used by API views to return human-readable names alongside raw game keys).
 
 The database backs a REST API with primary access patterns:
 - `GET /countries/{tag}` — ≤3 joins for country detail
@@ -80,6 +82,7 @@ All DLC-conditional data is retained via nullable `dlc_source VARCHAR(50)` colum
 | `common/dynamic_modifiers/*.txt` | dynamic_modifiers, dynamic_modifier_effects | ~80 + ~300 |
 | `common/scientist_traits/*.txt` | scientist_traits, scientist_trait_modifiers | 7 + ~25 |
 | `common/peace_conference/**/*.txt` | peace_action_categories, peace_cost_modifiers | 11 + ~80 |
+| `localisation/english/*_l_english.yml` | localisation | 117,490 |
 
 ---
 
@@ -240,6 +243,9 @@ Tables must be created in this order (no forward FK references):
 121. grand_doctrine_tracks            → grand_doctrines, doctrine_tracks
 122. subdoctrines                     → doctrine_tracks
 123. country_starting_doctrines       → countries
+-- Infrastructure
+124. user_annotations                 (no FKs)
+125. localisation                     (no FKs)
 ```
 
 ---
@@ -305,6 +311,11 @@ The largest DLC system by row count (~3,200 total). `mio_templates` (~40 generic
 
 ### Phase 23 — Doctrines / Officer Corps (6 tables, Götterdämmerung)
 Doctrines are purchased with military experience (Army/Navy/Air XP) through the Officer Corps — distinct from the research-slot technology tree. `doctrine_folders` (3: land, naval, air) define the top-level categories. `doctrine_tracks` (12: 4 per branch) group subdoctrines by mastery category. `grand_doctrines` (10: 4 land, 3 naval, 3 air) are mutually-exclusive choices per folder; `grand_doctrine_tracks` (40 junction rows) maps tracks to grand doctrines. `subdoctrines` (~86) are slotted into tracks with mastery reward tiers. `country_starting_doctrines` (~927 rows) captures both `set_grand_doctrine` and `set_sub_doctrine` assignments from country history files, with date scoping for 1936/1939 bookmarks.
+
+### Infrastructure Tables (2 tables)
+`user_annotations` — API-facing user notes (entity_type + entity_key + note). No FK constraints; indexes on (entity_type, entity_key).
+
+`localisation` (117,490 rows) — English display-name translations extracted from 189 HOI4 `localisation/english/*_l_english.yml` files. Single table with `loc_key VARCHAR(250) PRIMARY KEY`, `loc_value TEXT NOT NULL`, `source_file TEXT`. Used by `api_country_detail` and `api_state_detail` functions via LEFT JOIN to resolve raw game keys (like `STATE_64`, `infantry_weapons`) into human-readable names (like "Brandenburg", "Infantry Weapons I"). Coverage: 96% of states, 72% of technologies. COALESCE fallback ensures the raw key is returned when no translation exists.
 
 ---
 
@@ -452,6 +463,7 @@ All DLC-gated data uses nullable `dlc_source VARCHAR(50)` columns:
 
 | Table | Estimated Rows |
 |---|---|
+| localisation | 117,490 |
 | province_building_positions | 65,659 |
 | provinces | 13,382 |
 | strategic_region_provinces | 13,437 |
