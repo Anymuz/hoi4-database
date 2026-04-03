@@ -2,7 +2,7 @@
 
 A fully normalised **PostgreSQL 16** database representing all Hearts of Iron IV starting-state game data — every country, state, technology, focus tree, OOB division, naval fleet, air wing, character, idea, and DLC system — loaded and ready to query.
 
-**127 tables · ~218K rows · 14 API views · all 37 DLCs covered**
+**129 tables · ~335K rows · 12 API views + 2 functions · REST API (in progress) · all 37 DLCs covered**
 
 ---
 
@@ -11,8 +11,9 @@ A fully normalised **PostgreSQL 16** database representing all Hearts of Iron IV
 ```bash
 git clone <repo-url> && cd hoi4-database
 
-# 1  Extract game data → markdown
+# 1  Extract game data → markdown + localisation
 python tools/db_etl/export_markdown_dump.py        # auto-detects HOI4 install
+python tools/db_etl/export_localisation.py          # 117K English display names
 
 # 2  Convert markdown → CSV
 python tools/db_etl/md_to_csv.py
@@ -20,8 +21,7 @@ python tools/db_etl/md_to_csv.py
 # 3a Deploy with Docker (recommended)
 python tools/db_etl/gen_seed_sql.py
 python tools/db_etl/gen_seed_docker.py
-docker run -d --name hoi4-db -e POSTGRES_USER=hoi4 -e POSTGRES_PASSWORD=hoi4pass \
-  -e POSTGRES_DB=hoi4 -p 5432:5432 -v hoi4_pgdata:/var/lib/postgresql/data postgres:16-alpine
+bash tools/start-db.sh                              # starts PostgreSQL via docker-compose
 docker cp sql/schema.sql    hoi4-db:/tmp/schema.sql
 docker cp data/csv           hoi4-db:/data_csv
 docker cp sql/seed-docker.sql hoi4-db:/tmp/seed.sql
@@ -35,6 +35,9 @@ createdb hoi4
 psql -d hoi4 -f sql/schema.sql
 psql -d hoi4 -f sql/seed-load-order.sql   # run from repo root
 psql -d hoi4 -f sql/views.sql
+
+# 4  Start the API (requires Python venv — see tools/setup-api.sh for first-time setup)
+bash tools/start-api.sh                             # http://localhost:8000/docs
 ```
 
 See [tools/db_etl/runbook.md](tools/db_etl/runbook.md) for full deployment instructions, prerequisites, verification steps, and troubleshooting.
@@ -57,32 +60,54 @@ The extraction script reads game files from your HOI4 installation. It resolves 
 
 ```
 hoi4-database/
+├── api/                               REST API (FastAPI + Strawberry GraphQL)
+│   ├── app/
+│   │   ├── main.py                    FastAPI app, CORS, router registration
+│   │   ├── config.py                  Pydantic settings (DATABASE_URL, etc.)
+│   │   ├── database.py                asyncpg pool lifecycle + JSONB codec
+│   │   ├── dependencies.py            Shared deps (date validation)
+│   │   ├── routers/                   Endpoint modules (countries, states, …)
+│   │   └── schemas/                   Pydantic response models
+│   ├── tests/                         pytest-asyncio integration tests (21 tests)
+│   ├── requirements.txt               Python dependencies
+│   └── .env.example                   Environment template
 ├── docs/                              Design & reference documentation
 │   ├── hoi4-database-design.md        Master design doc (23 phases, FK build order, DLC strategy)
 │   ├── hoi4-er-diagram.mmd            Mermaid ER diagram (127 entities, 133 relationships)
-│   ├── hoi4-table-catalog.md          Column-level specs for every table (~1,900 lines)
+│   ├── hoi4-table-catalog.md          Column-level specs for every table (~2,100 lines)
 │   ├── hoi4-source-to-table-map.md    Game file → target table mapping
 │   ├── hoi4-data-snapshots.md         Sample extracted rows per table
 │   ├── api-design.md                  API design (FastAPI + Strawberry GraphQL)
+│   ├── api-implementation-plan.md     API build plan & progress tracker
 │   └── data-dump/                     137 extracted markdown data files
 │       └── SUMMARY.md                 Index with row counts
 ├── data/
-│   └── csv/                           127 PostgreSQL-ready CSV files (generated, gitignored)
+│   └── csv/                           127 game + 1 localisation CSV files (generated, gitignored)
 ├── sql/
-│   ├── schema.sql                     DDL — 127 tables, 4 ALTER TABLE, 50 indexes
-│   ├── views.sql                      14 API views (3 slices)
+│   ├── schema.sql                     DDL — 129 tables, 4 ALTER TABLE, 50 indexes
+│   ├── views.sql                      12 API views + 2 date-parameterised functions
 │   ├── seed-load-order.sql            FK-safe \copy load (native psql)
 │   ├── seed-docker.sql                FK-safe COPY load (Docker container)
 │   └── README.md                      SQL design rationale
 ├── tools/
+│   ├── start-db.sh                    Start PostgreSQL container
+│   ├── stop-db.sh                     Stop PostgreSQL container
+│   ├── reload-db.sh                   Drop & reload schema + data
+│   ├── start-api.sh                   Start FastAPI (Uvicorn, port 8000)
+│   ├── stop-api.sh                    Stop FastAPI
+│   ├── restart-api.sh                 Restart FastAPI
+│   ├── setup-api.sh                   First-time venv + deps + tests
+│   ├── run-tests.sh                   Run pytest (no setup)
 │   └── db_etl/
 │       ├── export_markdown_dump.py    Game file parser → markdown dumps
+│       ├── export_localisation.py     English loc YAML → localisation.csv
 │       ├── md_to_csv.py               Markdown → CSV converter
 │       ├── gen_seed_sql.py            Generates seed-load-order.sql
 │       ├── gen_seed_docker.py         Generates seed-docker.sql
 │       ├── validate_data.py           FK/PK/NOT NULL validation
 │       ├── runbook.md                 Deployment & ETL guide (start here)
 │       └── manifest.md               Parser module inventory
+├── docker-compose.yml                 PostgreSQL 16 service definition
 └── .github/
     ├── copilot-instructions.md        VS Code Copilot workspace instructions
     ├── agents/                        Custom Copilot agents
@@ -93,7 +118,7 @@ hoi4-database/
 
 ## Schema Summary
 
-**127 tables** across **23 design phases**:
+**129 tables** across **23 design phases + infrastructure**:
 
 | Phases | Domain | Tables | DLC |
 |--------|--------|--------|-----|
@@ -111,6 +136,7 @@ hoi4-database/
 | 20 | Career profile (medals, ribbons, aces) | 8 | By Blood Alone |
 | 21–22 | Balance of power, continuous focuses, misc DLC | 13 | Various |
 | 23 | Doctrines (Officer Corps) | 6 | Götterdämmerung |
+| — | Infrastructure (localisation, user annotations) | 2 | — |
 
 All DLC-conditional rows have a nullable `dlc_source VARCHAR(50)` column (NULL = base game).
 
@@ -125,8 +151,7 @@ All DLC-conditional rows have a nullable `dlc_source VARCHAR(50)` column (NULL =
 | **3NF minimum** throughout | Every non-key column depends on the whole key and nothing but the key |
 | **Effective dates** on history tables | Supports both 1936 and 1939 bookmarks |
 | **Separate tables** for DLC systems | Operations, MIOs, raids, medals are distinct domains |
-| **Self-referencing FKs** as `DEFERRABLE INITIALLY DEFERRED` | Equipment inheritance chain loads correctly in a single transaction |
-
+| **Self-referencing FKs** as `DEFERRABLE INITIALLY DEFERRED` | Equipment inheritance chain loads correctly in a single transaction || **Localisation table** with LEFT JOIN + COALESCE | Human-readable names without breaking if a key has no translation |
 ---
 
 ## How 1936 / 1939 Start Dates Work
@@ -165,6 +190,7 @@ The file [docs/hoi4-er-diagram.mmd](docs/hoi4-er-diagram.mmd) is a **Mermaid erD
 | [docs/hoi4-source-to-table-map.md](docs/hoi4-source-to-table-map.md) | Game file → table mapping |
 | [docs/hoi4-data-snapshots.md](docs/hoi4-data-snapshots.md) | Sample rows per table (design-phase reference) |
 | [docs/api-design.md](docs/api-design.md) | API design (FastAPI + Strawberry GraphQL) |
+| [docs/api-implementation-plan.md](docs/api-implementation-plan.md) | API build plan & progress tracker |
 | [sql/README.md](sql/README.md) | SQL design rationale (indexes, views, staging) |
 | [tools/db_etl/manifest.md](tools/db_etl/manifest.md) | Parser module inventory |
 
@@ -174,15 +200,28 @@ The file [docs/hoi4-er-diagram.mmd](docs/hoi4-er-diagram.mmd) is a **Mermaid erD
 
 ### Complete
 
-- **Schema**: 127 tables, 4 ALTER TABLE, 50 indexes — all FK constraints enforced
+- **Schema**: 129 tables (127 game + localisation + user_annotations), 4 ALTER TABLE, 50 indexes — all FK constraints enforced
 - **Data extraction**: 137 markdown dumps covering all 23 phases including DLC
+- **Localisation**: 117,490 English display names extracted from 189 `*_l_english.yml` game files
 - **ETL pipeline**: markdown → CSV → PostgreSQL with 0 errors
-- **Database loaded**: 127 tables, ~218K rows, 14 API views
+- **Database loaded**: 129 tables, ~335K rows (218K game + 117K localisation), 12 views + 2 functions
 - **Validation**: FK, PK, NOT NULL checks — 0 errors, 0 warnings
+
+### In Progress
+
+- **REST API** (FastAPI + asyncpg + Strawberry GraphQL)
+  - Phase 0 (SQL pre-flight fixes): done
+  - Phase 1 (scaffold + infrastructure): done — health, config, CORS, 5 tests
+  - Phase 2 (countries + states routers): done — list/detail endpoints, 16 tests
+  - Localisation (cross-cutting): done — human-readable names in all responses
+  - Phase 3+ (remaining domain routers, GraphQL, polish): not started
+  - See [docs/api-implementation-plan.md](docs/api-implementation-plan.md) for full tracker
 
 ### Not Yet Done
 
-- REST API implementation (FastAPI + Strawberry GraphQL — see [docs/api-design.md](docs/api-design.md))
+- Phase 3 domain routers (technologies, characters, military, focus trees, equipment, ideas)
+- Strawberry GraphQL layer
+- API deployment & documentation polish
 
 ---
 
