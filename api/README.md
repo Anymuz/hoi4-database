@@ -19,6 +19,12 @@ REST + GraphQL API for the Hearts of Iron IV relational database.
 ## Quick Start
 
 ```bash
+bash tools/setup-api.sh    # creates venv, installs deps, copies .env, runs tests
+```
+
+Or manually:
+
+```bash
 cd api
 python -m venv .venv
 source .venv/bin/activate
@@ -26,6 +32,17 @@ pip install -r requirements.txt
 cp .env.example .env        # edit if your DB creds differ
 uvicorn app.main:app --reload
 ```
+
+## Utility Scripts
+
+All scripts are in `tools/` at the repo root. Run from WSL with `bash tools/<script>`.
+
+| Script | Purpose |
+|--------|---------|
+| `setup-api.sh` | Create venv, install deps, copy .env, run tests |
+| `start-db.sh` | Start (or create) the Docker PostgreSQL container |
+| `stop-db.sh` | Stop the container, preserve data volume |
+| `reload-db.sh` | Nuke and reload the database from scratch |
 
 ## Endpoints
 

@@ -30,14 +30,14 @@ Five issues identified during the design-vs-database audit:
 - [x] 0.4 — Verify SQL changes
 
 ### Phase 1: Project Scaffold & Core Infrastructure
-- [X] 1.1 — Create directory structure
+- [x] 1.1 — Create directory structure
 - [x] 1.2 — `requirements.txt`
-- [ ] 1.3 — `config.py`
-- [ ] 1.4 — `database.py`
-- [ ] 1.5 — `dependencies.py`
-- [ ] 1.6 — `main.py`
-- [ ] 1.7 — `.env.example`
-- [ ] Test gate: health, openapi, date validation
+- [x] 1.3 — `config.py`
+- [x] 1.4 — `database.py`
+- [x] 1.5 — `dependencies.py`
+- [x] 1.6 — `main.py`
+- [x] 1.7 — `.env.example`
+- [x] Test gate: health, openapi, date validation
 
 ### Phase 2: Slice A — Countries & States (Date-Sensitive)
 - [ ] 2.1 — Pydantic schemas (country, state)
@@ -78,8 +78,7 @@ Five issues identified during the design-vs-database audit:
 
 ## Phase 0: Pre-Flight — SQL & Docs Fixes
 
-Fix the 5 audit findings before writing any API code. Everything in this phase
-is SQL/docs changes — no Python yet.
+Fix the 5 audit findings before writing any API code. Everything in this phase is SQL/docs changes — no Python yet.
 
 ### Step 0.1 — Add `user_annotations` table to schema
 
@@ -180,7 +179,8 @@ api/
 ├── tests/
 │   ├── __init__.py
 │   ├── conftest.py
-│   └── test_health.py
+│   ├── test_health.py
+│   └── test_date_validation.py
 ├── requirements.txt
 ├── .env.example
 └── README.md
@@ -227,8 +227,9 @@ DATABASE_URL=postgresql://hoi4:hoi4pass@localhost:5432/hoi4
 
 ```
 tests/
-├── conftest.py       # shared fixtures: test client, DB override
-└── test_health.py    # GET /health returns 200
+├── conftest.py              # shared fixtures: test client, DB override
+├── test_health.py           # GET /health, OpenAPI schema
+└── test_date_validation.py  # ?date= parameter validation
 ```
 
 **`conftest.py` approach:**
@@ -236,17 +237,22 @@ tests/
 - Create a real asyncpg pool against the Docker database (test against real data)
 - Override `get_db` dependency to use the test pool
 
-**Tests:**
+**Tests (`test_health.py`):**
 | Test | Assertion |
 |---|---|
 | `test_health_200` | GET `/health` returns `{"status": "ok"}` |
 | `test_openapi_schema` | GET `/openapi.json` returns 200 with expected title |
-| `test_invalid_date_400` | `get_effective_date("2000-01-01")` raises 400 |
+
+**Tests (`test_date_validation.py`):**
+| Test | Assertion |
+|---|---|
 | `test_default_date` | `get_effective_date(None)` returns `1936-01-01` |
+| `test_valid_date_1939` | `get_effective_date("1939-08-14")` returns `1939-08-14` |
+| `test_invalid_date_400` | `get_effective_date("2000-01-01")` raises 400 |
 
 **Run:** `pytest tests/ -v`
 
-**Exit criteria:** All 4 tests pass; `uvicorn api.app.main:app --reload` starts without errors; `/docs` loads in browser.
+**Exit criteria:** All 5 tests pass; `uvicorn api.app.main:app --reload` starts without errors; `/docs` loads in browser.
 
 ---
 

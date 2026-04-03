@@ -123,7 +123,7 @@ from functools import lru_cache
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    database_url: str = "postgresql://postgres:postgres@localhost:5432/hoi4"
+    database_url: str = "postgresql://hoi4:hoi4pass@localhost:5432/hoi4"
     app_title: str = "HOI4 Database API"
     app_version: str = "1.0.0"
 
@@ -163,9 +163,7 @@ print(settings.default_date)      # "1936-01-01"
 
 ## 4. Database Connection (`database.py`)
 
-The connection pool lives on `app.state` and is created/destroyed via FastAPI's
-lifespan context manager. Every request borrows a connection from the pool via
-a dependency.
+The connection pool lives on `app.state` and is created/destroyed via FastAPI's lifespan context manager. Every request borrows a connection from the pool via a dependency.
 
 ```python
 import asyncpg
