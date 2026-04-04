@@ -1385,27 +1385,6 @@ Source: `history/units/*.txt excluding _naval_/_air_`
 | Zirhli Tümeni | cavalry | 1 | 3 | TUR_1936.txt |
 | Süvari Tümeni | cavalry | 1 | 2 | TUR_1939.txt |
 | Süvari Tümeni | cavalry | 1 | 3 | TUR_1939.txt |
-| Marines | marine | 0 | 0 | unlock_marines.txt |
-| Marines | marine | 0 | 1 | unlock_marines.txt |
-| Marines | marine | 1 | 0 | unlock_marines.txt |
-| Marines | marine | 1 | 1 | unlock_marines.txt |
-| Motorized-Division | motorized | 0 | 0 | unlock_motorized.txt |
-| Motorized-Division | motorized | 0 | 1 | unlock_motorized.txt |
-| Motorized-Division | motorized | 0 | 2 | unlock_motorized.txt |
-| Motorized-Division | motorized | 1 | 0 | unlock_motorized.txt |
-| Motorized-Division | motorized | 1 | 1 | unlock_motorized.txt |
-| Motorized-Division | motorized | 1 | 2 | unlock_motorized.txt |
-| Mountaineer-Division | mountaineers | 0 | 0 | unlock_mountineers.txt |
-| Mountaineer-Division | mountaineers | 0 | 1 | unlock_mountineers.txt |
-| Mountaineer-Division | mountaineers | 0 | 2 | unlock_mountineers.txt |
-| Paratroopers | paratrooper | 0 | 0 | unlock_paratroopers.txt |
-| Paratroopers | paratrooper | 0 | 1 | unlock_paratroopers.txt |
-| Paratroopers | paratrooper | 0 | 2 | unlock_paratroopers.txt |
-| Rangers | ranger_battalion | 0 | 0 | unlock_rangers.txt |
-| Rangers | ranger_battalion | 0 | 1 | unlock_rangers.txt |
-| Rangers | ranger_battalion | 0 | 2 | unlock_rangers.txt |
-| Armored-Division | light_armor | 0 | 2 | unlock_tanks.txt |
-| Armored-Division | infantry | 1 | 2 | unlock_tanks.txt |
 | National Guard Division | infantry | 0 | 0 | USA_1936.txt |
 | National Guard Division | infantry | 0 | 1 | USA_1936.txt |
 | National Guard Division | infantry | 0 | 2 | USA_1936.txt |
@@ -1468,3 +1447,24 @@ Source: `history/units/*.txt excluding _naval_/_air_`
 | Tenkovski Bataljon | infantry | 1 | 0 | YUG_1936.txt |
 | Tenkovski Bataljon | infantry | 1 | 1 | YUG_1936.txt |
 | Tenkovski Bataljon | infantry | 1 | 2 | YUG_1936.txt |
+| Marines | marine | 0 | 0 | unlock_marines.txt |
+| Marines | marine | 0 | 1 | unlock_marines.txt |
+| Marines | marine | 1 | 0 | unlock_marines.txt |
+| Marines | marine | 1 | 1 | unlock_marines.txt |
+| Motorized-Division | motorized | 0 | 0 | unlock_motorized.txt |
+| Motorized-Division | motorized | 0 | 1 | unlock_motorized.txt |
+| Motorized-Division | motorized | 0 | 2 | unlock_motorized.txt |
+| Motorized-Division | motorized | 1 | 0 | unlock_motorized.txt |
+| Motorized-Division | motorized | 1 | 1 | unlock_motorized.txt |
+| Motorized-Division | motorized | 1 | 2 | unlock_motorized.txt |
+| Mountaineer-Division | mountaineers | 0 | 0 | unlock_mountineers.txt |
+| Mountaineer-Division | mountaineers | 0 | 1 | unlock_mountineers.txt |
+| Mountaineer-Division | mountaineers | 0 | 2 | unlock_mountineers.txt |
+| Paratroopers | paratrooper | 0 | 0 | unlock_paratroopers.txt |
+| Paratroopers | paratrooper | 0 | 1 | unlock_paratroopers.txt |
+| Paratroopers | paratrooper | 0 | 2 | unlock_paratroopers.txt |
+| Rangers | ranger_battalion | 0 | 0 | unlock_rangers.txt |
+| Rangers | ranger_battalion | 0 | 1 | unlock_rangers.txt |
+| Rangers | ranger_battalion | 0 | 2 | unlock_rangers.txt |
+| Armored-Division | light_armor | 0 | 2 | unlock_tanks.txt |
+| Armored-Division | infantry | 1 | 2 | unlock_tanks.txt |

@@ -177,25 +177,41 @@ def parse_states() -> Tuple[int, int, int, int, int]:
             for rm in re.finditer(r"([a-zA-Z0-9_]+)\s*=\s*([0-9.]+)", res_block.group(1)):
                 res_rows.append([state_id, rm.group(1), rm.group(2), fp.name])
 
-        bld_m = re.search(r"\bbuildings\s*=\s*\{", txt)
-        if bld_m:
-            bld_body = extract_block(txt, bld_m.start())
-            # Province sub-blocks: "12345 = { ... }" — extract them first
-            # and remove them from the body to avoid cross-matching
+        # --- Helper to extract buildings from a buildings block ---
+        def _extract_buildings(bld_body: str, eff_date: str) -> None:
+            """Extract province-level and state-level buildings from a
+            buildings block, appending to building_rows with *eff_date*."""
             prov_blocks: List[Tuple[str, str]] = []
             for pb in re.finditer(r"\b([0-9]+)\s*=\s*\{", bld_body):
                 prov_id = pb.group(1)
                 prov_body = extract_block(bld_body, pb.start())
                 prov_blocks.append((prov_id, prov_body))
                 for bm in re.finditer(r"\b([a-zA-Z_]+)\s*=\s*([0-9]+)", prov_body):
-                    building_rows.append([state_id, "province", prov_id, bm.group(1), bm.group(2), fp.name])
-            # Remove province blocks from bld_body for safe state-level extraction
+                    building_rows.append([state_id, "province", prov_id, bm.group(1), bm.group(2), eff_date, fp.name])
             state_only = bld_body
             for prov_id, prov_body in prov_blocks:
                 state_only = state_only.replace(f"{prov_id} = {{{prov_body}}}", "", 1)
-            # State-level buildings from the remaining text (no province blocks)
             for bm in re.finditer(r"\b([a-zA-Z_]+)\s*=\s*([0-9]+)", state_only):
-                building_rows.append([state_id, "state", "state", bm.group(1), bm.group(2), fp.name])
+                building_rows.append([state_id, "state", "state", bm.group(1), bm.group(2), eff_date, fp.name])
+
+        # Top-level buildings (1936 baseline)
+        hist_m = re.search(r"\bhistory\s*=\s*\{", txt)
+        if hist_m:
+            hist_body = extract_block(txt, hist_m.start())
+            # Top-level buildings inside history block
+            bld_m = re.search(r"\bbuildings\s*=\s*\{", hist_body)
+            if bld_m:
+                bld_body = extract_block(hist_body, bld_m.start())
+                _extract_buildings(bld_body, "1936-01-01")
+
+            # Dated blocks inside history
+            for date_m in re.finditer(r"\b(\d{4}\.\d{1,2}\.\d{1,2})\s*=\s*\{", hist_body):
+                date_body = extract_block(hist_body, date_m.start())
+                dbld_m = re.search(r"\bbuildings\s*=\s*\{", date_body)
+                if dbld_m:
+                    iso = _pdx_date_to_iso(date_m.group(1))
+                    dbld_body = extract_block(date_body, dbld_m.start())
+                    _extract_buildings(dbld_body, iso)
 
         for vpm in re.finditer(r"victory_points\s*=\s*\{\s*([0-9]+)\s+([0-9]+)\s*\}", txt):
             vp_rows.append([state_id, vpm.group(1), vpm.group(2), fp.name])
@@ -207,10 +223,40 @@ def parse_states() -> Tuple[int, int, int, int, int]:
 
     write_md(OUT / "states.md", "States", ["state_id", "name_key", "manpower", "state_category", "owner", "buildings_max_level_factor", "local_supplies", "source_file"], state_rows, "history/states/*.txt")
     write_md(OUT / "state_resources.md", "State Resources", ["state_id", "resource_key", "amount", "source_file"], res_rows, "history/states/*.txt")
-    write_md(OUT / "state_buildings.md", "State Buildings", ["state_id", "scope", "key_or_province", "building_type", "level", "source_file"], building_rows, "history/states/*.txt")
+    write_md(OUT / "state_buildings.md", "State Buildings", ["state_id", "scope", "key_or_province", "building_type", "level", "effective_date", "source_file"], building_rows, "history/states/*.txt")
     write_md(OUT / "state_victory_points.md", "State Victory Points", ["state_id", "province_id", "points", "source_file"], vp_rows, "history/states/*.txt")
     write_md(OUT / "state_provinces.md", "State Provinces", ["state_id", "province_id", "source_file"], prov_rows, "history/states/*.txt")
     return len(state_rows), len(res_rows), len(building_rows), len(vp_rows), len(prov_rows)
+
+
+def _find_enclosing_date(txt: str, pos: int) -> str:
+    """Return the ISO date of the date-prefixed block enclosing *pos*, or
+    '1936-01-01' if *pos* is at the top level."""
+    for dm in re.finditer(r"(\d{4}\.\d{1,2}\.\d{1,2})\s*=\s*\{", txt):
+        if dm.start() < pos:
+            block_body = extract_block(txt, dm.start())
+            block_end = txt.find("{", dm.start()) + len(block_body) + 1
+            if block_end > pos:
+                return _pdx_date_to_iso(dm.group(1))
+    return "1936-01-01"
+
+
+def _find_enclosing_dlc(txt: str, pos: int) -> str:
+    """Return the DLC guard (has_dlc value) enclosing *pos*, or '' if none."""
+    preceding = txt[max(0, pos - 500):pos]
+    dlc_hits = re.findall(r'has_dlc\s*=\s*"([^"]+)"', preceding)
+    if dlc_hits:
+        # Verify the DLC guard actually encloses this position
+        for dm in re.finditer(r'has_dlc\s*=\s*"([^"]+)"', txt):
+            if dm.start() < pos:
+                # Find the enclosing if-block
+                if_m = txt.rfind("if", 0, dm.start())
+                if if_m >= 0:
+                    block_body = extract_block(txt, if_m)
+                    block_end = txt.find("{", if_m) + len(block_body) + 1
+                    if block_end > pos:
+                        return dm.group(1)
+    return ""
 
 
 def parse_country_history() -> Tuple[int, int]:
@@ -240,14 +286,16 @@ def parse_country_history() -> Tuple[int, int]:
         ])
 
         for block in re.finditer(r"set_technology\s*=\s*\{([\s\S]*?)\}", txt):
+            eff_date = _find_enclosing_date(txt, block.start())
+            dlc_src = _find_enclosing_dlc(txt, block.start())
             b = block.group(1)
             for tm in re.finditer(r"\b([a-zA-Z0-9_]+)\s*=\s*([0-9]+)", b):
-                tech_rows.append([tag, tm.group(1), tm.group(2), fp.name])
+                tech_rows.append([tag, tm.group(1), tm.group(2), eff_date, fp.name, dlc_src])
 
     rows = dedup_rows(rows, [0])
-    tech_rows = dedup_rows(tech_rows, [0, 1])
+    tech_rows = dedup_rows(tech_rows, [0, 1, 3])
     write_md(OUT / "country_history.md", "Country History", ["country_tag", "capital_state_id", "starting_train_buffer", "fuel_ratio", "research_slots", "stability", "war_support", "oob_key", "source_file"], rows, "history/countries/*.txt")
-    write_md(OUT / "country_starting_technologies.md", "Country Starting Technologies", ["country_tag", "technology_key", "enabled", "source_file"], tech_rows, "history/countries/*.txt")
+    write_md(OUT / "country_starting_technologies.md", "Country Starting Technologies", ["country_tag", "technology_key", "enabled", "effective_date", "source_file", "dlc_source"], tech_rows, "history/countries/*.txt")
     return len(rows), len(tech_rows)
 
 
@@ -1816,20 +1864,23 @@ def parse_equipment_variants_all() -> int:
             m = re.search(r"\bcreate_equipment_variant\s*=\s*\{", txt[pos:])
             if not m:
                 break
-            body = extract_block(txt, pos + m.start())
+            abs_pos = pos + m.start()
+            body = extract_block(txt, abs_pos)
             name = re.search(r'\bname\s*=\s*"([^"]+)"', body)
             eq_type = re.search(r"\btype\s*=\s*([a-zA-Z0-9_]+)", body)
+            eff_date = _find_enclosing_date(txt, abs_pos)
             rows.append([
                 tag,
                 eq_type.group(1) if eq_type else "",
                 name.group(1) if name else "",
+                eff_date,
                 fp.name,
             ])
-            pos = pos + m.start() + len(body) + 2
+            pos = abs_pos + len(body) + 2
 
-    rows = dedup_rows(rows, [0, 1, 2])
+    rows = dedup_rows(rows, [0, 1, 2, 3])
     write_md(OUT / "equipment_variants.md", "Equipment Variants",
-        ["owner_tag", "base_equipment_key", "version_name", "source_file"],
+        ["owner_tag", "base_equipment_key", "version_name", "effective_date", "source_file"],
         rows, "history/countries/*.txt")
     return len(rows)
 

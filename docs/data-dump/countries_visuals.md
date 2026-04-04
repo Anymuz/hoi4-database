@@ -46,6 +46,7 @@ Source: `common/countries/*.txt`
 | Burma | asian_gfx | asian_2d |  |  |  | Burma.txt |
 | Burundi | african_gfx | african_2d |  |  |  | Burundi.txt |
 | Buryatia | asian_gfx | asian_2d | 0 | 64 | 255 | Buryatia.txt |
+| CSA | western_european_gfx | western_european_2d | 145 | 163 | 176 | CSA.txt |
 | Cabo Verde | southamerican_gfx | southamerican_2d | 0 | 102 | 204 | Cabo Verde.txt |
 | Cambodia | asian_gfx | asian_2d | 160 | 71 | 102 | Cambodia.txt |
 | Cameroon | african_gfx | african_2d |  |  |  | Cameroon.txt |
@@ -63,15 +64,12 @@ Source: `common/countries/*.txt`
 | Chukotka | asian_gfx | asian_2d | 179 | 179 | 0 | Chukotka.txt |
 | Chuvashia | eastern_european_gfx | eastern_european_2d | 191 | 128 | 64 | Chuvashia.txt |
 | Colombia | southamerican_gfx | southamerican_2d | 222 | 187 | 91 | Colombia.txt |
-| colors |  |  |  |  |  | colors.txt |
 | ComChina | asian_gfx | asian_2d | 82 | 2 | 15 | ComChina.txt |
 | Congo | african_gfx | african_2d | 155 | 135 | 255 | Congo.txt |
 | Corsica | western_european_gfx | western_european_2d |  |  |  | Corsica.txt |
-| cosmetic |  |  |  |  |  | cosmetic.txt |
 | Costa Rica | southamerican_gfx | southamerican_2d | 152 | 130 | 191 | Costa Rica.txt |
 | Crimea | eastern_european_gfx | eastern_european_2d | 255 | 80 | 80 | Crimea.txt |
 | Croatia | eastern_european_gfx | eastern_european_2d | 245 | 70 | 70 | Croatia.txt |
-| CSA | western_european_gfx | western_european_2d | 145 | 163 | 176 | CSA.txt |
 | Cuba | southamerican_gfx | southamerican_2d | 152 | 130 | 191 | Cuba.txt |
 | Curacao | southamerican_gfx | southamerican_2d |  |  |  | Curacao.txt |
 | Cyprus | middle_eastern_gfx | middle_eastern_2d |  |  |  | Cyprus.txt |
@@ -402,6 +400,8 @@ Source: `common/countries/*.txt`
 | Turkey | eastern_european_gfx | eastern_european_2d | 171 | 190 | 152 | Turkey.txt |
 | Turkmenistan | asian_gfx | asian_2d |  |  |  | Turkmenistan.txt |
 | Tuscany | western_european_gfx | western_european_2d | 255 | 128 | 128 | Tuscany.txt |
+| USA | western_european_gfx | western_european_2d | 67 | 123 | 237 | USA.txt |
+| USB | western_european_gfx | western_european_2d | 167 | 123 | 237 | USB.txt |
 | Udmurtia | eastern_european_gfx | eastern_european_2d | 64 | 64 | 64 | Udmurtia.txt |
 | Uganda | african_gfx | african_2d |  |  |  | Uganda.txt |
 | Ukraine | eastern_european_gfx | eastern_european_2d | 255 | 255 | 95 | Ukraine.txt |
@@ -410,8 +410,6 @@ Source: `common/countries/*.txt`
 | United Kingdom | commonwealth_gfx | commonwealth_2d | 201 | 56 | 93 | United Kingdom.txt |
 | Upper Volta | african_gfx | african_2d |  |  |  | Upper Volta.txt |
 | Uruguay | southamerican_gfx | southamerican_2d | 171 | 190 | 152 | Uruguay.txt |
-| USA | western_european_gfx | western_european_2d | 67 | 123 | 237 | USA.txt |
-| USB | western_european_gfx | western_european_2d | 167 | 123 | 237 | USB.txt |
 | Uzbekistan | asian_gfx | asian_2d |  |  |  | Uzbekistan.txt |
 | Venezula | southamerican_gfx | southamerican_2d | 171 | 190 | 152 | Venezula.txt |
 | Vietnam | asian_gfx | asian_2d | 230 | 223 | 50 | Vietnam.txt |
@@ -434,3 +432,5 @@ Source: `common/countries/*.txt`
 | Yunnan | asian_gfx | asian_2d | 171 | 190 | 152 | Yunnan.txt |
 | Zambia | african_gfx | african_2d |  |  |  | Zambia.txt |
 | Zimbabwe | african_gfx | commonwealth_2d | 155 | 255 | 195 | Zimbabwe.txt |
+| colors |  |  |  |  |  | colors.txt |
+| cosmetic |  |  |  |  |  | cosmetic.txt |

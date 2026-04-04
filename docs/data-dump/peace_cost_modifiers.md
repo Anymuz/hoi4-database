@@ -39,16 +39,6 @@ Source: `common/peace_conference/cost_modifiers/*.txt`
 | ENG_operation_fork |  | puppet | 0.15 |  | ENG_peace.txt |
 | ETH_agreed_state_peace_cost_modifier | treaties_or_conferences | take_states | 0.55 |  | ETH_peace.txt |
 | ETH_end_of_civil_war_cost_modifier_low | treaties_or_conferences | take_states | 0.2 |  | ETH_peace.txt |
-| faction_rule_modifier_encourage_puppet |  | puppet | 0.8 |  | faction_peace_action_modifiers.txt |
-| faction_rule_modifier_discourage_puppet |  | puppet | 2 |  | faction_peace_action_modifiers.txt |
-| faction_rule_modifier_encourage_liberate |  | liberate | 0.8 |  | faction_peace_action_modifiers.txt |
-| faction_rule_modifier_encourage_force_government |  | force_government | 0.8 |  | faction_peace_action_modifiers.txt |
-| faction_rule_modifier_encourage_take_states |  | take_states | 0.9 |  | faction_peace_action_modifiers.txt |
-| faction_rule_modifier_encourage_take_claimed_states |  | take_states | 0.8 |  | faction_peace_action_modifiers.txt |
-| faction_rule_modifier_encourage_chinese_states |  | take_states puppet | 0.95 |  | faction_peace_action_modifiers.txt |
-| faction_rule_modifier_extra_cost_take_states |  | take_states | 1.05 |  | faction_peace_action_modifiers.txt |
-| faction_rule_modifier_extra_cost_puppet |  | puppet | 1.05 |  | faction_peace_action_modifiers.txt |
-| faction_rule_modifier_extra_cost_liberate |  | liberate | 1.05 |  | faction_peace_action_modifiers.txt |
 | FIN_expansionist_policies | events_or_focuses | take_states | 0.75 |  | FIN_peace.txt |
 | FIN_finnish_irredentism_desires | events_or_focuses | take_states | 0.65 |  | FIN_peace.txt |
 | FIN_crown_prince_of_finland_baltic_cores | events_or_focuses | take_states | 0.25 |  | FIN_peace.txt |
@@ -97,6 +87,16 @@ Source: `common/peace_conference/cost_modifiers/*.txt`
 | GER_RK_cost_reduction_RHD | events_or_focuses | take_states | 0.5 |  | RK_peace.txt |
 | GER_RK_cost_reduction_ROA | events_or_focuses | take_states | 0.5 |  | RK_peace.txt |
 | GER_RK_cost_reduction_RAA | events_or_focuses | take_states | 0.5 |  | RK_peace.txt |
+| faction_rule_modifier_encourage_puppet |  | puppet | 0.8 |  | faction_peace_action_modifiers.txt |
+| faction_rule_modifier_discourage_puppet |  | puppet | 2 |  | faction_peace_action_modifiers.txt |
+| faction_rule_modifier_encourage_liberate |  | liberate | 0.8 |  | faction_peace_action_modifiers.txt |
+| faction_rule_modifier_encourage_force_government |  | force_government | 0.8 |  | faction_peace_action_modifiers.txt |
+| faction_rule_modifier_encourage_take_states |  | take_states | 0.9 |  | faction_peace_action_modifiers.txt |
+| faction_rule_modifier_encourage_take_claimed_states |  | take_states | 0.8 |  | faction_peace_action_modifiers.txt |
+| faction_rule_modifier_encourage_chinese_states |  | take_states puppet | 0.95 |  | faction_peace_action_modifiers.txt |
+| faction_rule_modifier_extra_cost_take_states |  | take_states | 1.05 |  | faction_peace_action_modifiers.txt |
+| faction_rule_modifier_extra_cost_puppet |  | puppet | 1.05 |  | faction_peace_action_modifiers.txt |
+| faction_rule_modifier_extra_cost_liberate |  | liberate | 1.05 |  | faction_peace_action_modifiers.txt |
 | yalta_pls_poland_into_space | treaties_or_conferences | take_states | 0.1 |  | yalta_peace.txt |
 | yalta_pls_leave_poland_alone | treaties_or_conferences | take_states puppet liberate force_government | 3.0 |  | yalta_peace.txt |
 | yalta_pls_leave_wgr_alone | treaties_or_conferences | take_states puppet liberate force_government | 4.0 |  | yalta_peace.txt |

@@ -59,7 +59,6 @@ Source: `common/military_industrial_organization/organizations/*.txt`
 | AUS_graf_and_stift_organization | generic_motorized_mechanized_organization | GFX_idea_AUS_graf_and_stift | Arms Against Tyranny | AUS_organization.txt |
 | AUS_osterreichische_saurerwerke_organization | generic_motorized_mechanized_organization | GFX_idea_AUS_saurer | Arms Against Tyranny | AUS_organization.txt |
 | AUS_osterreichische_saurerwerke_organization_no_lar | generic_motorized_mechanized_organization | GFX_idea_AUS_saurer | Arms Against Tyranny | AUS_organization.txt |
-| BALTIC_RAF_organization | generic_medium_aircraft_organization | GFX_idea_generic_air_manufacturer_2 | No Step Back | baltic_organization.txt |
 | BEL_vickers_armstrong_bel_organization | generic_mobile_tank_organization | GFX_idea_vickers_armstrong_eng |  | BEL_organization.txt |
 | BEL_renault_organization | generic_infantry_tank_organization | GFX_idea_renault |  | BEL_organization.txt |
 | BEL_cockerill_shipyards_organization | generic_escort_ship_organization | GFX_idea_BEL_cockerill_shipyards_organization | Gotterdammerung | BEL_organization.txt |
@@ -305,7 +304,6 @@ Source: `common/military_industrial_organization/organizations/*.txt`
 | MEX_tnca_organization | generic_general_aircraft_organization | GFX_idea_MEX_tnca | Man the Guns | MEX_organization.txt |
 | MEX_fabrica_nacional_armas_organization | generic_infantry_equipment_organization | GFX_idea_generic_infantry_equipment_manufacturer_3 |  | MEX_organization.txt |
 | comesa_organization | generic_artillery_organization | GFX_idea_generic_artillery_manufacturer_1 |  | MEX_organization.txt |
-| my_mio_with_include | my_custom_mio | GFX_idea_generic_infantry_equipment_manufacturer_1 |  | mio.txt |
 | NOR_thunes_mekaniske_verksted_organization | generic_infantry_tank_organization | GFX_idea_NOR_thunes_mekaniske_vaerksted | Arms Against Tyranny | NOR_organization.txt |
 | NOR_akers_mekaniske_verksted_organization | generic_escort_ship_organization | GFX_idea_NOR_akers_mekaniske_verksted |  | NOR_organization.txt |
 | NOR_karljohansvern_verft_organization | generic_battle_line_ship_organization | GFX_idea_NOR_karljohansvern_verft | Arms Against Tyranny | NOR_organization.txt |
@@ -463,3 +461,5 @@ Source: `common/military_industrial_organization/organizations/*.txt`
 | YUG_rogozarski_organization | generic_medium_aircraft_organization | GFX_idea_YUG_rogozarski | Death or Dishonor | YUG_organization.txt |
 | YUG_zmaj_organization | generic_heavy_aircraft_organization | GFX_idea_YUG_zmaj | Death or Dishonor | YUG_organization.txt |
 | YUG_zastava_arms_organization | generic_infantry_equipment_organization | GFX_idea_zastava_arms |  | YUG_organization.txt |
+| BALTIC_RAF_organization | generic_medium_aircraft_organization | GFX_idea_generic_air_manufacturer_2 | No Step Back | baltic_organization.txt |
+| my_mio_with_include | my_custom_mio | GFX_idea_generic_infantry_equipment_manufacturer_1 |  | mio.txt |

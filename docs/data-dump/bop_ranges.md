@@ -4,9 +4,6 @@ Source: `common/bop/*.txt`
 
 | range_id | bop_key | side_id | min_value | max_value |
 |---|---|---|---|---|
-| mid_range | _test_balance | neutral | -0.1 | 0.1 |
-| left_side_range | _test_balance | neutral | -1 | -0.1 |
-| right_side_range | _test_balance | neutral | 0.1 | 1 |
 | BRA_unstable_government | BRA_political_military_balance | neutral | -0.1 | 0.1 |
 | BRA_independent_civilian_government | BRA_political_military_balance | neutral | -1 | -0.7 |
 | BRA_strong_civilian_government | BRA_political_military_balance | neutral | -0.7 | -0.4 |
@@ -114,3 +111,6 @@ Source: `common/bop/*.txt`
 | SWI_centralization_bop_very_cantons | SWI_centralization_bop | neutral | 0.25 | 0.75 |
 | SWI_centralization_bop_fully_council | SWI_centralization_bop | neutral | -1 | -0.75 |
 | SWI_centralization_bop_very_council | SWI_centralization_bop | neutral | -0.75 | -0.25 |
+| mid_range | _test_balance | neutral | -0.1 | 0.1 |
+| left_side_range | _test_balance | neutral | -1 | -0.1 |
+| right_side_range | _test_balance | neutral | 0.1 | 1 |

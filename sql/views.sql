@@ -36,6 +36,7 @@
 CREATE OR REPLACE FUNCTION api_country_detail(p_date DATE DEFAULT '1936-01-01')
 RETURNS TABLE (
     tag              CHAR(3),
+    country_name     TEXT,
     capital_state_id INT,
     stability        NUMERIC,
     war_support      NUMERIC,
@@ -58,6 +59,7 @@ LANGUAGE sql STABLE AS $$
     )
     SELECT
         c.tag,
+        COALESCE(cl.loc_value, c.tag) AS country_name,
         c.capital_state_id,
         c.stability,
         c.war_support,
@@ -92,7 +94,8 @@ LANGUAGE sql STABLE AS $$
             LEFT JOIN localisation tl ON tl.loc_key = t.technology_key
             WHERE t.country_tag = c.tag
         ), '[]'::jsonb) AS starting_technologies
-    FROM countries c;
+    FROM countries c
+    LEFT JOIN localisation cl ON cl.loc_key = c.tag;
 $$;
 
 -- Same pattern as api_country_detail above — function with a date parameter.
@@ -198,17 +201,20 @@ CREATE OR REPLACE VIEW api_country_technologies AS
 SELECT
     cst.country_tag,
     cst.technology_key,
+    COALESCE(l.loc_value, cst.technology_key) AS technology_name,
     t.start_year,
     t.research_cost,
     t.folder_name,
     cst.dlc_source,
     cst.effective_date
 FROM country_starting_technologies cst
-JOIN technologies t ON t.technology_key = cst.technology_key;
+JOIN technologies t ON t.technology_key = cst.technology_key
+LEFT JOIN localisation l ON l.loc_key = cst.technology_key;
 
 CREATE OR REPLACE VIEW api_technology_tree AS
 SELECT
     t.technology_key,
+    COALESCE(l.loc_value, t.technology_key) AS technology_name,
     t.start_year,
     t.research_cost,
     t.folder_name,
@@ -232,7 +238,8 @@ SELECT
         FROM technology_enables_units tu
         WHERE tu.technology_key = t.technology_key
     ), '[]'::jsonb) AS enables_units
-FROM technologies t;
+FROM technologies t
+LEFT JOIN localisation l ON l.loc_key = t.technology_key;
 
 -- ============================================================
 -- Slice B — Characters

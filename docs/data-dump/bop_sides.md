@@ -4,9 +4,6 @@ Source: `common/bop/*.txt`
 
 | bop_key | side_id | side_position | icon |
 |---|---|---|---|
-| _test_balance | neutral | neutral |  |
-| _test_balance | default_left_side | left | GFX_idea_generic_agrarian_society |
-| _test_balance | default_right_side | right | GFX_idea_generic_degauss_ship_hulls |
 | BRA_political_military_balance | neutral | neutral |  |
 | BRA_political_military_balance | BRA_bop_left_side | left | GFX_bop_ETH_communist_side |
 | BRA_political_military_balance | BRA_bop_right_side | right | GFX_bop_ETH_anarchist_side |
@@ -44,3 +41,6 @@ Source: `common/bop/*.txt`
 | SWI_centralization_bop | neutral | neutral |  |
 | SWI_centralization_bop | SWI_centralization_bop_canton | right | GFX_bop_SWI_centralization_canton_side |
 | SWI_centralization_bop | SWI_centralization_bop_council | left | GFX_bop_SWI_centralization_council_side |
+| _test_balance | neutral | neutral |  |
+| _test_balance | default_left_side | left | GFX_idea_generic_agrarian_society |
+| _test_balance | default_right_side | right | GFX_idea_generic_degauss_ship_hulls |

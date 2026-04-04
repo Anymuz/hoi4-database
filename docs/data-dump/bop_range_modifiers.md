@@ -4,11 +4,6 @@ Source: `common/bop/*.txt`
 
 | range_id | modifier_key | modifier_value |
 |---|---|---|
-| mid_range | war_support_weekly | 0.5 |
-| left_side_range | war_support_weekly | 0.1 |
-| right_side_range | war_support_weekly | 0.9 |
-| left_side_range | war_support_weekly | 0.1 |
-| right_side_range | war_support_weekly | 0.9 |
 | BRA_independent_civilian_government | stability_factor | 0.15 |
 | BRA_independent_civilian_government | political_power_factor | 0.15 |
 | BRA_independent_civilian_government | trade_laws_cost_factor | -0.2 |
@@ -1099,3 +1094,8 @@ Source: `common/bop/*.txt`
 | SWI_centralization_bop_very_council | war_support_factor | 0.1 |
 | SWI_centralization_bop_very_council | political_advisor_cost_factor | -0.25 |
 | SWI_centralization_bop_very_council | surrender_limit | -0.1 |
+| mid_range | war_support_weekly | 0.5 |
+| left_side_range | war_support_weekly | 0.1 |
+| right_side_range | war_support_weekly | 0.9 |
+| left_side_range | war_support_weekly | 0.1 |
+| right_side_range | war_support_weekly | 0.9 |

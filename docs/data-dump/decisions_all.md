@@ -4,114 +4,6 @@ Source: `common/decisions/*.txt`
 
 | decision_key | category_key | icon | cost | fire_only_once | dlc_source | source_file |
 |---|---|---|---|---|---|---|
-| debug_show_decisions | debug_decisions |  |  |  |  | _debug_decisions.txt |
-| debug_hide_decisions | debug_decisions |  |  |  |  | _debug_decisions.txt |
-| debug_max_infleunce | debug_decisions |  |  |  |  | _debug_decisions.txt |
-| debug_calc_resources | debug_decisions |  |  |  |  | _debug_decisions.txt |
-| research_all_tank_techs_nsb | debug_decisions | generic_tank |  |  |  | _debug_decisions.txt |
-| add_efficiency_growth_debug | debug_decisions | generic_research | 0 |  |  | _debug_decisions.txt |
-| remove_efficiency_growth_debug | debug_decisions | generic_research | 0 |  |  | _debug_decisions.txt |
-| decrease_efficiency_growth_debug | debug_decisions | generic_research | 0 |  |  | _debug_decisions.txt |
-| history_entry_debug | debug_decisions | generic_research | 0 |  |  | _debug_decisions.txt |
-| create_operative_debug | debug_decisions | generic_research | 0 |  |  | _debug_decisions.txt |
-| create_recruitable_operative_not_to_spy_master_debug | debug_decisions | generic_research | 0 |  |  | _debug_decisions.txt |
-| create_recruitable_operative_debug | debug_decisions | generic_research | 0 |  |  | _debug_decisions.txt |
-| FRA_capture_operative_debug | debug_decisions |  | 0 |  |  | _debug_decisions.txt |
-| FRA_turn_operative_debug | debug_decisions |  | 0 |  |  | _debug_decisions.txt |
-| harm_operative_debug | debug_decisions |  | 0 |  |  | _debug_decisions.txt |
-| add_random_nationality | debug_decisions |  | 0 |  |  | _debug_decisions.txt |
-| add_1_convoy | debug_decisions |  | 0 |  |  | _debug_decisions.txt |
-| slot_machine | debug_decisions |  |  |  |  | _debug_decisions.txt |
-| decryption_tech_1 | debug_decisions |  |  |  |  | _debug_decisions.txt |
-| decryption_tech_2 | debug_decisions |  |  |  |  | _debug_decisions.txt |
-| decryption_tech_3 | debug_decisions |  |  |  |  | _debug_decisions.txt |
-| encryption_tech_1 | debug_decisions |  |  |  |  | _debug_decisions.txt |
-| encryption_tech_2 | debug_decisions |  |  |  |  | _debug_decisions.txt |
-| encryption_tech_3 | debug_decisions |  |  |  |  | _debug_decisions.txt |
-| plane_generator_test | debug_decisions |  |  |  |  | _debug_decisions.txt |
-| debug_clr_dreadnought_flags | debug_decisions | GFX_decision_generic_naval | 0 |  |  | _debug_decisions.txt |
-| unlock_supersonic_jet | debug_decisions |  |  |  |  | _debug_decisions.txt |
-| unlock_all_radars | debug_decisions |  |  |  |  | _debug_decisions.txt |
-| debug_gain_claimed_states | debug_decisions |  |  |  |  | _debug_decisions.txt |
-| request_reinstatement | governments_in_exile | generic_independence | 10 |  |  | _exiled_governments_decisions.txt |
-| grant_parliamentary_audience | governments_in_exile | eng_install_government |  |  |  | _exiled_governments_decisions.txt |
-| lobby_for_parliamentary_support | governments_in_exile | eng_install_government |  |  |  | _exiled_governments_decisions.txt |
-| public_support_for_from | governments_in_exile | eng_install_government |  |  |  | _exiled_governments_decisions.txt |
-| exile_recruitment_campaign | governments_in_exile | eng_propaganda_campaigns |  |  |  | _exiled_governments_decisions.txt |
-| exile_extraction_campaign | governments_in_exile | oppression | 0 |  |  | _exiled_governments_decisions.txt |
-| purge_infiltrators | governments_in_exile | generic_political_discourse |  |  |  | _exiled_governments_decisions.txt |
-| expatriate_donations | governments_in_exile | ger_military_buildup | 25 |  |  | _exiled_governments_decisions.txt |
-| request_control_of_navy | governments_in_exile | generic_naval | 25 | yes |  | _exiled_governments_decisions.txt |
-| weapons_for_the_resistance | category_exile_forces | generic_ignite_civil_war | 50 |  |  | _exiled_governments_decisions.txt |
-| unity_parade | category_exile_forces | generic_nationalism | 50 | yes |  | _exiled_governments_decisions.txt |
-| joint_training_exercise | category_exile_forces | eng_blackshirt_march | 0 |  |  | _exiled_governments_decisions.txt |
-| targeted_race_for_the_bomb | political_actions | generic_research |  |  |  | _generic_decisions.txt |
-| improved_worker_conditions | political_actions | generic_industry | 100 |  |  | _generic_decisions.txt |
-| dismantle_maginot | economy_decisions | generic_construction | 50 | yes |  | _generic_decisions.txt |
-| restructure_supply_system | economy_decisions | GFX_decision_generic_construction |  | yes |  | _generic_decisions.txt |
-| seize_some_trains_woo | economy_decisions | GFX_decision_hol_draw_up_staff_plans |  |  |  | _generic_decisions.txt |
-| war_propaganda | propaganda_efforts | generic_prepare_civil_war | 150 |  | La Resistance | _generic_decisions.txt |
-| war_propaganda_casualties | propaganda_efforts | generic_prepare_civil_war | 100 |  |  | _generic_decisions.txt |
-| war_propaganda_convoys | propaganda_efforts | GFX_decision_generic_naval | 100 |  |  | _generic_decisions.txt |
-| war_propaganda_bombing | propaganda_efforts | GFX_decision_generic_air | 100 |  |  | _generic_decisions.txt |
-| war_propaganda_radio_industry | propaganda_efforts | generic_prepare_civil_war | 75 | yes | Trial of Allegiance | _generic_decisions.txt |
-| war_propaganda_film_industry | propaganda_efforts | generic_prepare_civil_war | 100 | yes | La Resistance | _generic_decisions.txt |
-| blow_suez_canal | operations | GFX_decision_generic_ignite_civil_war | 75 |  | Waking the Tiger | _generic_decisions.txt |
-| blow_panama_canal | operations | GFX_decision_generic_ignite_civil_war | 75 |  | Waking the Tiger | _generic_decisions.txt |
-| rebuild_suez_canal | special_projects | GFX_decision_generic_special_project | 120 |  |  | _generic_decisions.txt |
-| rebuild_panama_canal | special_projects | GFX_decision_generic_special_project | 400 |  |  | _generic_decisions.txt |
-| emergency_factory_conversion_defensive | war_measures | generic_industry | 100 |  |  | _generic_decisions.txt |
-| emergency_factory_conversion_offensive | war_measures | generic_industry | 100 |  |  | _generic_decisions.txt |
-| desperate_defense | war_measures | generic_prepare_civil_war | 50 |  |  | _generic_decisions.txt |
-| women_in_the_workforce | war_measures | generic_industry | 100 |  |  | _generic_decisions.txt |
-| war_bonds | war_measures | generic_industry |  |  |  | _generic_decisions.txt |
-| diversify_special_forces | war_measures | GFX_decision_generic_military | 50 | yes | Arms Against Tyranny | _generic_decisions.txt |
-| object_to_attaches | foreign_politics |  | 50 |  | Waking the Tiger | _generic_decisions.txt |
-| infrastructure_building_slot | economy_decisions | generic_construction | 100 |  |  | _generic_decisions.txt |
-| war_building_slot | economy_decisions | generic_construction | 50 |  | Man the Guns | _generic_decisions.txt |
-| CHI_close_burma_road | foreign_support |  | 0 |  |  | _generic_decisions.txt |
-| CHI_reopen_burma_road | foreign_support |  | 0 |  |  | _generic_decisions.txt |
-| CHI_close_ledo_road | foreign_support |  | 0 |  |  | _generic_decisions.txt |
-| CHI_reopen_ledo_road | foreign_support |  | 0 |  |  | _generic_decisions.txt |
-| CHI_close_the_hump | foreign_support |  | 0 |  |  | _generic_decisions.txt |
-| CHI_reopen_the_hump | foreign_support |  | 0 |  |  | _generic_decisions.txt |
-| CHI_close_hanoi_route | foreign_support |  | 0 |  |  | _generic_decisions.txt |
-| purchase_ships_eng | generic_purchase_old_ships_category | GFX_decision_generic_naval | 50 |  |  | _generic_decisions.txt |
-| purchase_ships_sov | generic_purchase_old_ships_category | GFX_decision_generic_naval | 50 |  |  | _generic_decisions.txt |
-| purchase_ships_ger | generic_purchase_old_ships_category | GFX_decision_generic_naval | 50 |  |  | _generic_decisions.txt |
-| purchase_ships_usa | generic_purchase_old_ships_category | GFX_decision_generic_naval | 50 |  |  | _generic_decisions.txt |
-| refit_to_destroyer | generic_refit_civilian_ships_category | GFX_decision_generic_merge_plant_ship | 15 |  | Man the Guns | _generic_decisions.txt |
-| refit_to_cruiser | generic_refit_civilian_ships_category | GFX_decision_generic_merge_plant_ship | 30 |  | Man the Guns | _generic_decisions.txt |
-| invite_GER_henschel_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
-| invite_GER_heinkel_organization | foreign_mio_decisions_category | generic_air | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
-| invite_GER_junkers_organization | foreign_mio_decisions_category | generic_air | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
-| invite_GER_opel_organization | foreign_mio_decisions_category | generic_motorized | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
-| invite_GER_mauser_organization | foreign_mio_decisions_category | generic_prepare_civil_war | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
-| invite_SOV_okmo_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
-| invite_SOV_nevskoye_design_bureau_organization | foreign_mio_decisions_category | generic_naval | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
-| invite_SOV_ilyushin_design_bureau_organization | foreign_mio_decisions_category | generic_air | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
-| invite_SOV_gaz_organization | foreign_mio_decisions_category | generic_motorized | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
-| invite_ENG_vickers_armstrong_eng_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
-| invite_ENG_yarrow_shipbuilders_organization | foreign_mio_decisions_category | generic_naval | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
-| invite_ENG_john_brown_organization | foreign_mio_decisions_category | generic_naval | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
-| invite_ENG_fairey_aviation_organization | foreign_mio_decisions_category | generic_air | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
-| invite_ENG_vauxhall_organization | foreign_mio_decisions_category | generic_motorized | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
-| invite_ITA_fiat_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
-| invite_ITA_crda_organization | foreign_mio_decisions_category | generic_naval | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
-| invite_ITA_lancia_organization | foreign_mio_decisions_category | generic_motorized | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
-| invite_CZE_ckd_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
-| invite_CZE_skoda_armor_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
-| invite_CZE_avia_organization | foreign_mio_decisions_category | generic_air | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
-| invite_CZE_skoda_artillery_organization | foreign_mio_decisions_category | generic_industry | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
-| invite_FRA_renault_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
-| invite_FRA_bloch_organization | foreign_mio_decisions_category | generic_air | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
-| invite_FRA_mas_organization | foreign_mio_decisions_category | generic_prepare_civil_war | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
-| invite_JAP_maizuru_naval_arsenal_organization | foreign_mio_decisions_category | generic_naval | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
-| invite_JAP_mitsubishi_organization | foreign_mio_decisions_category | generic_air | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
-| invite_JAP_nissan_organization | foreign_mio_decisions_category | generic_motorized | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
-| invite_SWE_landsverk_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
-| invite_SWE_volvo_organization | foreign_mio_decisions_category | generic_motorized | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
-| invite_SWE_bofors_organization | foreign_mio_decisions_category | generic_industry | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
 | AFG_propose_oil_concession_deal | AFG_oil_concessions_category | GFX_decision_oil | 0 |  |  | AFG.txt |
 | AFG_nationalize_oil | AFG_oil_concessions_category | GFX_decision_oil | 0 |  |  | AFG.txt |
 | AFG_radical_students_countdown | AFG_radical_students_category | GFX_decision_revolt |  |  |  | AFG.txt |
@@ -145,20 +37,6 @@ Source: `common/decisions/*.txt`
 | AFG_mughal_core_state | political_actions | GFX_decision_infiltrate_state | 35 | yes |  | AFG.txt |
 | AFG_move_the_capital_to_delhi_decision | political_actions |  | 50 |  | Graveyard of Empires | AFG.txt |
 | AFG_sikh_recruitment | AFG_sikh_recruitment_cat | GFX_decision_generic_prepare_civil_war | 30 | yes |  | AFG.txt |
-| invite_to_org | african_union_category | GFX_decision_generic_orginization_of_african_unity | 15 |  |  | African_Union_decisions.txt |
-| invite_to_ACB | african_union_category | GFX_decision_gre_paying_ifc_debt | 25 |  |  | African_Union_decisions.txt |
-| invite_to_exec_council | african_union_category | GFX_decision_eng_trade_unions_support | 50 |  |  | African_Union_decisions.txt |
-| integrate_into_org | african_union_category | GFX_decision_generic_form_nation |  | yes |  | African_Union_decisions.txt |
-| invite_to_org_alliance | african_union_category | GFX_decision_generic_military | 25 |  |  | African_Union_decisions.txt |
-| leave_org_of_african_unity | african_union_category | GFX_decision_generic_break_treaty | 150 | yes |  | African_Union_decisions.txt |
-| threaten_member_state | african_union_category | GFX_decision_generic_assassination | 25 |  |  | African_Union_decisions.txt |
-| detect_infiltration | communist_infiltration | generic_army_support | 100 |  |  | anti_japan_infiltration.txt |
-| communist_infiltration_in_east_hebei | communist_infiltration | generic_civil_support | 10 |  |  | anti_japan_infiltration.txt |
-| communist_infiltration_in_jehol | communist_infiltration | generic_civil_support | 10 |  |  | anti_japan_infiltration.txt |
-| communist_infiltration_in_south_chahar | communist_infiltration | generic_civil_support | 10 |  |  | anti_japan_infiltration.txt |
-| communist_infiltration_in_chahar | communist_infiltration | generic_civil_support | 10 |  |  | anti_japan_infiltration.txt |
-| communist_infiltration_in_heilungkiang | communist_infiltration | generic_civil_support | 10 |  |  | anti_japan_infiltration.txt |
-| communist_infiltration_in_liaoning | communist_infiltration | generic_civil_support | 10 |  |  | anti_japan_infiltration.txt |
 | ARG_federal_intervention_in_state | ARG_intervenciones_federales_decisions | GFX_decision_eng_trade_unions_demand | 50 | yes |  | ARG.txt |
 | ARG_loan_from_britain | ARG_international_loan_decisions | GFX_decision_gre_paying_ifc_debt | 75 |  |  | ARG.txt |
 | ARG_pay_back_britain | ARG_international_loan_decisions | GFX_decision_gre_paying_ifc_debt | 75 |  |  | ARG.txt |
@@ -211,6 +89,13 @@ Source: `common/decisions/*.txt`
 | AUS_demand_liberation_of_workers_decision | AUS_danubian_communism_category | GFX_decision_generic_political_rally | 150 | yes |  | AUS.txt |
 | AUS_reintegrate_FROM_italy_decision | AUS_reintegrating_the_empire_category | GFX_decision_category_generic_propaganda | 100 | yes |  | AUS.txt |
 | AUS_reintegrate_FROM_switzerland_decision | AUS_reintegrating_the_empire_category | GFX_decision_category_generic_propaganda | 100 | yes |  | AUS.txt |
+| invite_to_org | african_union_category | GFX_decision_generic_orginization_of_african_unity | 15 |  |  | African_Union_decisions.txt |
+| invite_to_ACB | african_union_category | GFX_decision_gre_paying_ifc_debt | 25 |  |  | African_Union_decisions.txt |
+| invite_to_exec_council | african_union_category | GFX_decision_eng_trade_unions_support | 50 |  |  | African_Union_decisions.txt |
+| integrate_into_org | african_union_category | GFX_decision_generic_form_nation |  | yes |  | African_Union_decisions.txt |
+| invite_to_org_alliance | african_union_category | GFX_decision_generic_military | 25 |  |  | African_Union_decisions.txt |
+| leave_org_of_african_unity | african_union_category | GFX_decision_generic_break_treaty | 150 | yes |  | African_Union_decisions.txt |
+| threaten_member_state | african_union_category | GFX_decision_generic_assassination | 25 |  |  | African_Union_decisions.txt |
 | formalize_the_entente | BALTIC_entente | GFX_decision_hol_exchange_intelligence_data |  | yes | No Compromise, No Surrender | BALTIC.txt |
 | abandon_the_entente | BALTIC_entente | GFX_decision_generic_break_treaty |  | yes |  | BALTIC.txt |
 | BALTIC_promote_communism | convert_neighbours_baltic_cat | hol_draw_up_staff_plans | 50 |  |  | BALTIC.txt |
@@ -1145,170 +1030,6 @@ Source: `common/decisions/*.txt`
 | FIN_integrate_ingria_states | FIN_confederated_finno_russian_republics_category | GFX_decision_infiltrate_state |  |  |  | FIN.txt |
 | FIN_integrate_ingria_additional_states | FIN_confederated_finno_russian_republics_category | GFX_decision_infiltrate_state |  |  |  | FIN.txt |
 | FIN_integrate_leningrad | FIN_confederated_finno_russian_republics_category | GFX_decision_infiltrate_state |  |  |  | FIN.txt |
-| nation_building | foreign_influence | eng_propaganda_campaigns |  |  |  | foreign_influence.txt |
-| socialist_education | foreign_influence | eng_propaganda_campaigns |  |  |  | foreign_influence.txt |
-| paramilitary_training | foreign_influence | eng_propaganda_campaigns |  |  |  | foreign_influence.txt |
-| military_parade | foreign_influence | eng_propaganda_campaigns |  |  |  | foreign_influence.txt |
-| police_action | foreign_influence | generic_prepare_civil_war | 50 |  |  | foreign_influence.txt |
-| fraternal_republic | foreign_influence | generic_prepare_civil_war | 50 |  |  | foreign_influence.txt |
-| ultranationalist_coup | foreign_influence | generic_prepare_civil_war | 50 |  |  | foreign_influence.txt |
-| military_dictatorship | foreign_influence | generic_prepare_civil_war | 50 |  |  | foreign_influence.txt |
-| instantiate_collaboration | foreign_influence | generic_prepare_civil_war | 0 |  |  | foreign_influence.txt |
-| form_scandinavia | form_scandinavia_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| form_nordic_league | form_nordic_league_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| form_north_sea_empire | form_north_sea_category | generic_form_nation |  |  | Arms Against Tyranny | formable_nation_decisions.txt |
-| form_baltic_sea_empire | form_baltic_sea_empire_category | generic_form_nation |  |  | Arms Against Tyranny | formable_nation_decisions.txt |
-| form_gran_colombia | form_gran_colombia_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| form_austria_hungary | form_austria_hungary_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| reintegrate_austro_hungarian_empire | form_austria_hungary_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| form_commonwealth | form_commonwealth_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| form_united_netherlands | form_united_netherlands_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| form_united_central_america | form_united_central_america_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| integrate_northern_gran_colombia | form_united_central_america_category | GFX_decision_eng_trade_unions_support |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| integrate_yucatan | form_united_central_america_category | GFX_decision_eng_trade_unions_support |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| form_baltic_federation | form_baltic_federation_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| form_ottoman_empire | form_ottoman_empire_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| ott_reform_the_eyalet_of_rumelia | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| ott_merge_the_eyalets_of_morea_crete_and_kibris | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| ott_enlarge_the_vilayet_of_bosnia | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| ott_restore_the_vilayet_of_the_danube_and_moldova | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| ott_restore_the_vilayet_of_halep | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| ott_restore_the_vilayet_of_beirut | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| ott_restore_the_vilayet_of_baghdad | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| ott_extend_the_lasha_eyalet | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| ott_merge_the_eyalets_of_jeddah_habesh_and_yemen | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| ott_integrate_the_khedivate_of_egypt | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| ott_restore_the_vilayet_of_tripolitania | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| ott_absorb_the_tunis_and_algerian_eyalets | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| form_european_union | form_european_union_category | generic_form_nation |  |  | Gotterdammerung | formable_nation_decisions.txt |
-| EU_alpine_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
-| EU_iberian_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
-| EU_west_slavic_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
-| EU_baltic_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
-| EU_british_isles_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
-| EU_scandinavian_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
-| EU_karelo_finnish_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
-| EU_balkan_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 150 |  | Gotterdammerung | formable_nation_decisions.txt |
-| EU_aegean_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
-| EU_belarusian_and_ukrainian_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
-| EU_caucasian_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
-| EU_kuban_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
-| EU_russian_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 150 |  | Gotterdammerung | formable_nation_decisions.txt |
-| form_mutapa | form_mutapa_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| form_roman_empire | form_roman_empire_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| reintigrate_hispania | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
-| reintigrate_dacia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
-| reintigrate_moesia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
-| reintigrate_aegyptus | form_roman_empire_category | GFX_decision_generic_nationalism | 75 |  | Waking the Tiger | formable_nation_decisions.txt |
-| restore_mesopotamia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
-| reconquer_galatia_et_cappadocia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
-| integrate_armenian_lands | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
-| restore_order_in_arabia_petra | form_roman_empire_category | GFX_decision_generic_nationalism | 75 |  | Waking the Tiger | formable_nation_decisions.txt |
-| restore_order_in_mauretania | form_roman_empire_category | GFX_decision_generic_nationalism | 75 |  | Waking the Tiger | formable_nation_decisions.txt |
-| return_to_pannonia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
-| restore_roman_rule_to_raetia_et_noricum | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
-| restore_roman_rule_to_gaul | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
-| restore_roman_rule_to_belgica | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
-| occupy_iberia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
-| return_to_britannia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
-| conquer_hibernia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
-| conquer_caledonia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
-| avenge_teutoburg | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
-| reestablish_the_bosporan_kingdom | form_roman_empire_category | GFX_decision_generic_nationalism | 120 |  | Waking the Tiger | formable_nation_decisions.txt |
-| form_persian_empire | form_persian_empire_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| form_byzantine_empire | form_byzantine_empire_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| byz_restore_byzantium | form_byzantine_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| byz_triumph_for_the_balkans | form_byzantine_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| byz_triumph_for_italy | form_byzantine_empire_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| byz_triumph_for_middle_east | form_byzantine_empire_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| byz_triumph_for_egypt_and_tunis | form_byzantine_empire_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| form_arabia | form_arabia_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| integrate_the_fertile_crescent | form_arabia_category | GFX_decision_generic_nationalism |  | yes | Waking the Tiger | formable_nation_decisions.txt |
-| integrate_the_levantine_states | form_arabia_category | GFX_decision_generic_nationalism |  | yes | Waking the Tiger | formable_nation_decisions.txt |
-| integrate_the_western_mashriq | form_arabia_category | GFX_decision_generic_nationalism |  | yes | Waking the Tiger | formable_nation_decisions.txt |
-| integrate_the_eastern_maghreb | form_arabia_category | GFX_decision_generic_nationalism |  | yes | Waking the Tiger | formable_nation_decisions.txt |
-| integrate_the_al_maghribiyah_and_al_jazair | form_arabia_category | GFX_decision_generic_nationalism |  | yes | Waking the Tiger | formable_nation_decisions.txt |
-| integrate_the_west_sahara | form_arabia_category | GFX_decision_generic_nationalism |  | yes | Waking the Tiger | formable_nation_decisions.txt |
-| form_majapahit_empire | form_majapahit_empire_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| integrate_papua | form_majapahit_empire_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
-| integrate_the_northern_malays | form_majapahit_empire_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
-| integrate_the_philippines | form_majapahit_empire_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
-| form_maphilindo | form_maphilindo_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
-| integrate_siam | form_maphilindo_category |  |  | yes |  | formable_nation_decisions.txt |
-| integrate_indochina | form_maphilindo_category |  |  | yes |  | formable_nation_decisions.txt |
-| integrate_burma | form_maphilindo_category |  |  | yes |  | formable_nation_decisions.txt |
-| form_rattanakosin_kingdom | form_rattanakosin_kingdom_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
-| form_hre | form_hre_category | generic_form_nation |  |  | Gotterdammerung | formable_nation_decisions.txt |
-| form_greater_german_reich | form_greater_german_reich_category | generic_form_nation | 25 |  | Waking the Tiger | formable_nation_decisions.txt |
-| form_greater_proletarian_state | form_greater_german_state_category | generic_form_nation |  |  | Gotterdammerung | formable_nation_decisions.txt |
-| form_andalusia | form_andalusia_category | generic_form_nation |  |  | La Resistance | formable_nation_decisions.txt |
-| adu_restore_sultanate_of_africa | form_andalusia_category | generic_form_nation |  |  | La Resistance | formable_nation_decisions.txt |
-| adu_mediterrenean_emirates | form_andalusia_category | generic_form_nation |  |  | La Resistance | formable_nation_decisions.txt |
-| adu_restore_umayyad_caliphate | form_andalusia_category | generic_form_nation |  |  | La Resistance | formable_nation_decisions.txt |
-| adu_recreate_rashid_expansion | form_andalusia_category | generic_form_nation |  |  | La Resistance | formable_nation_decisions.txt |
-| adu_northern_expansion | form_andalusia_category | generic_form_nation |  |  | La Resistance | formable_nation_decisions.txt |
-| unite_maghreb | maghreb_formable_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| form_polynesia | form_polynesia_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| NZL_demand_islands | form_polynesia_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| form_greater_greece | form_greater_greece_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| GRE_appoint_aristotle_onassis_as_prime_minister | form_greater_greece_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
-| rename_antalya | form_greater_greece_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
-| rename_gjirokaster | form_greater_greece_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
-| GRE_move_capital_to_constantinople | form_greater_greece_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
-| move_capital_to_thessaloniki | form_greater_greece_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
-| form_macedonian_empire | form_macedonian_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| form_turan | form_turan_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
-| TUR_appoint_nihal_atziz_as_president | form_turan_category | GFX_decision_generic_political_address |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
-| integrate_the_magyars | form_turan_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
-| assimilate_the_chinese_turks | form_turan_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
-| unite_with_the_finno_ugrians | form_turan_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
-| form_turkestan | form_turkestan_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| form_mountainous_republic | form_mountainous_republic_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
-| form_transcaucasian_republic | form_transcaucasus_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
-| unite_azeris | form_transcaucasus_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
-| claim_northern_caucasus | form_transcaucasus_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
-| liberate_anatolian_peoples | form_transcaucasus_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
-| restore_kalmyks | form_transcaucasus_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
-| restore_crimean_khanate | form_transcaucasus_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
-| release_turkish_kurdistan | form_transcaucasus_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
-| form_siberian_republic | form_siberia_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
-| conquer_the_fareast | form_siberia_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
-| push_to_the_urals | form_siberia_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
-| liberate_the_ainu | form_siberia_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
-| liberate_manchuria | form_siberia_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
-| form_idel_uralic_republic | form_idel_ural_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
-| form_empire_of_axum | form_ethiopian_empire_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| ETH_move_capital_to_axum | form_ethiopian_empire_category | generic_form_nation | 50 | yes |  | formable_nation_decisions.txt |
-| form_empire_of_solomon | form_ethiopian_empire_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| ETH_move_capital_to_jerusalem | form_ethiopian_empire_category | generic_form_nation | 50 | yes |  | formable_nation_decisions.txt |
-| form_empire_of_zion | form_ethiopian_empire_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| form_east_africa | form_east_africa_category | generic_form_nation |  |  | Gotterdammerung | formable_nation_decisions.txt |
-| integrate_ruanda_urundi | form_east_africa_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
-| dominate_malawi | form_east_africa_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
-| liberate_sidamo | form_east_africa_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
-| unite_the_somalis | form_east_africa_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
-| conquer_the_comoros | form_east_africa_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
-| form_the_horn_of_africa | form_horn_of_africa_africa_category | generic_form_nation |  |  | By Blood Alone | formable_nation_decisions.txt |
-| conquer_socotra | form_horn_of_africa_africa_category | generic_form_nation |  |  | By Blood Alone | formable_nation_decisions.txt |
-| integrate_the_south | form_horn_of_africa_africa_category | generic_form_nation |  |  | By Blood Alone | formable_nation_decisions.txt |
-| the_upper_nile | form_horn_of_africa_africa_category | generic_form_nation |  |  | By Blood Alone | formable_nation_decisions.txt |
-| proclaim_greater_italy | greater_italy_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| proclaim_sweden_hungary | form_sweden_hungary_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| unite_the_antilles | antilles_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| integrate_the_netherlands_antilles | antilles_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| integrate_trinidad_and_tobago | antilles_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| unite_latin_africa | latin_africa_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| declare_germany_reunified_decision | germany_formable_category | generic_form_nation | 100 |  |  | formable_nation_decisions.txt |
-| reintegrate_luxemburg | germany_formable_category | generic_form_nation | 25 |  |  | formable_nation_decisions.txt |
-| reintegrate_elsass_lothringen | germany_formable_category | generic_form_nation | 25 |  |  | formable_nation_decisions.txt |
-| reintegrate_south_jutland | germany_formable_category | generic_form_nation | 25 |  |  | formable_nation_decisions.txt |
-| reintegrate_east_prussia | germany_formable_category | generic_form_nation | 50 |  |  | formable_nation_decisions.txt |
-| reintegrate_silesia | germany_formable_category | generic_form_nation | 50 |  |  | formable_nation_decisions.txt |
-| reintegrate_posen_west_prussia | germany_formable_category | generic_form_nation | 75 |  |  | formable_nation_decisions.txt |
-| neo_assyrian_empire_decision | neo_assyrian_empire_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| neo_mesopotamia_decision | neo_mesopotamia_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| unite_greater_mongolia | greater_mongolia_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
-| unite_hui_states | greater_hui_state_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
 | FRA_communist_civil_war_decision | FRA_civil_unrest_category | generic_civil_support |  |  |  | FRA.txt |
 | FRA_fascist_civil_war_decision | FRA_civil_unrest_category | generic_civil_support |  |  |  | FRA.txt |
 | FRA_scuttle_the_fleet | FRA_vichy_france | generic_ignite_civil_war | 0 |  |  | FRA.txt |
@@ -2070,22 +1791,6 @@ Source: `common/decisions/*.txt`
 | BRM_blow_up_the_oil_fields | BRM_burmah_oils_oil_fields | GFX_decision_generic_ignite_civil_war | 25 |  |  | JAP.txt |
 | BRM_repair_the_oil_fields | BRM_burmah_oils_oil_fields | GFX_decision_generic_construction | 25 |  |  | JAP.txt |
 | KOR_regain_core_on_state_decision | foreign_politics | GFX_decision_infiltrate_state |  | yes |  | KOR.txt |
-| recruit_in_europe | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
-| recruit_in_europe_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
-| recruit_in_north_america | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
-| recruit_in_north_america_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
-| recruit_in_south_america | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
-| recruit_in_south_america_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
-| recruit_in_africa | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
-| recruit_in_africa_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
-| recruit_in_middle_east | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
-| recruit_in_middle_east_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
-| recruit_in_asia | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
-| recruit_in_asia_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
-| recruit_in_australia | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
-| recruit_in_australia_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
-| recruit_in_india | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
-| recruit_in_india_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
 | LAT_perkonkrust_uprising | LAT_perkonkrust_revolt_category | GFX_decision_revolt |  | yes |  | LAT.txt |
 | LAT_equality_campaigns | LAT_delay_perkonkrust_decisions |  | 50 |  |  | LAT.txt |
 | LAT_empower_democrats | LAT_delay_perkonkrust_decisions |  |  | yes |  | LAT.txt |
@@ -2444,59 +2149,6 @@ Source: `common/decisions/*.txt`
 | POL_appoint_nationalist_ministers | POL_sanacja_falanga_decisions | decision_generic_nationalism | 50 |  |  | POL.txt |
 | POL_promote_falangism | POL_promote_falangism_decisions | hol_draw_up_staff_plans | 50 |  |  | POL.txt |
 | POL_promote_falangism_in_major | POL_promote_falangism_decisions | hol_draw_up_staff_plans | 100 |  |  | POL.txt |
-| prepare_for_fascist_civil_war | fascism_on_the_rise | generic_prepare_civil_war | 50 | yes |  | political_decisions.txt |
-| expand_civil_fascism_support | fascism_on_the_rise | generic_civil_support | 25 |  |  | political_decisions.txt |
-| army_support_for_fascist_civil_war | fascism_on_the_rise | generic_army_support | 50 |  |  | political_decisions.txt |
-| ensure_general_loyalty_for_fascist_civil_war | fascism_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
-| ensure_marshal_loyalty_for_fascist_civil_war | fascism_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
-| siphon_equipment_stockpiles_for_fascist_civil_war | fascism_on_the_rise | generic_prepare_civil_war | 50 |  |  | political_decisions.txt |
-| formulate_surprise_attack_plan_for_fascist_civil_war | fascism_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
-| ignite_the_fascist_civil_war_single_state | fascism_on_the_rise | generic_ignite_civil_war | 50 | yes |  | political_decisions.txt |
-| ignite_the_fascist_civil_war | fascism_on_the_rise | generic_ignite_civil_war | 50 | yes |  | political_decisions.txt |
-| rebuild_the_nation_fascism | fascism_on_the_rise | generic_construction | 25 | yes |  | political_decisions.txt |
-| open_up_political_discourse_fascism | fascism_on_the_rise | generic_political_discourse | 75 | yes |  | political_decisions.txt |
-| discredit_government_fascism | fascism_on_the_rise | generic_political_discourse | 50 | yes |  | political_decisions.txt |
-| hold_the_fascist_national_referendum | fascism_on_the_rise | generic_political_discourse | 100 | yes | Trial of Allegiance | political_decisions.txt |
-| prepare_for_democratic_civil_war | democratic_on_the_rise | generic_prepare_civil_war | 50 | yes |  | political_decisions.txt |
-| expand_civil_democratic_support | democratic_on_the_rise | generic_civil_support | 25 |  |  | political_decisions.txt |
-| army_support_for_democratic_civil_war | democratic_on_the_rise | generic_army_support | 50 |  |  | political_decisions.txt |
-| ensure_general_loyalty_for_democratic_civil_war | democratic_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
-| ensure_marshal_loyalty_for_democratic_civil_war | democratic_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
-| siphon_equipment_stockpiles_for_democratic_civil_war | democratic_on_the_rise | generic_prepare_civil_war | 50 |  |  | political_decisions.txt |
-| formulate_surprise_attack_plan_for_democratic_civil_war | democratic_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
-| ignite_the_democratic_civil_war_single_state | democratic_on_the_rise | generic_ignite_civil_war | 50 | yes |  | political_decisions.txt |
-| ignite_the_democratic_civil_war | democratic_on_the_rise | generic_ignite_civil_war | 50 | yes |  | political_decisions.txt |
-| rebuild_the_nation_democratic | democratic_on_the_rise | generic_construction | 25 | yes |  | political_decisions.txt |
-| open_up_political_discourse_democratic | democratic_on_the_rise | generic_political_discourse | 75 | yes |  | political_decisions.txt |
-| discredit_government_democratic | democratic_on_the_rise | generic_political_discourse | 50 | yes |  | political_decisions.txt |
-| hold_the_democratic_national_referendum | democratic_on_the_rise | generic_political_discourse | 100 | yes | Arms Against Tyranny | political_decisions.txt |
-| prepare_for_communist_civil_war | communism_on_the_rise | generic_prepare_civil_war | 50 | yes |  | political_decisions.txt |
-| expand_civil_communist_support | communism_on_the_rise | generic_civil_support | 25 |  |  | political_decisions.txt |
-| army_support_for_communist_civil_war | communism_on_the_rise | generic_army_support | 50 |  |  | political_decisions.txt |
-| ensure_general_loyalty_for_communist_civil_war | communism_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
-| ensure_marshal_loyalty_for_communist_civil_war | communism_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
-| siphon_equipment_stockpiles_for_communist_civil_war | communism_on_the_rise | generic_prepare_civil_war | 50 |  |  | political_decisions.txt |
-| formulate_surprise_attack_plan_for_communist_civil_war | communism_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
-| ignite_the_communist_civil_war_single_state | communism_on_the_rise | generic_ignite_civil_war | 50 | yes |  | political_decisions.txt |
-| ignite_the_communist_civil_war | communism_on_the_rise | generic_ignite_civil_war | 50 | yes |  | political_decisions.txt |
-| rebuild_the_nation_communism | communism_on_the_rise | generic_construction | 25 | yes |  | political_decisions.txt |
-| open_up_political_discourse_communist | communism_on_the_rise | generic_political_discourse | 75 | yes |  | political_decisions.txt |
-| discredit_government_communism | communism_on_the_rise | generic_political_discourse | 50 | yes |  | political_decisions.txt |
-| hold_the_communist_national_referendum | communism_on_the_rise | generic_political_discourse | 100 | yes | Arms Against Tyranny | political_decisions.txt |
-| give_refuge_ger | political_actions | generic_research | 100 | yes |  | political_decisions.txt |
-| give_refuge_ita | political_actions | generic_research | 100 | yes |  | political_decisions.txt |
-| anti_fascist_raids | political_actions | generic_civil_support | 50 |  | Gotterdammerung | political_decisions.txt |
-| anti_democratic_raids | political_actions | generic_civil_support | 50 |  |  | political_decisions.txt |
-| anti_communist_raids | political_actions | generic_civil_support | 50 |  | No Compromise, No Surrender | political_decisions.txt |
-| anti_neutrality_raids | political_actions | generic_civil_support | 50 |  |  | political_decisions.txt |
-| ban_fascist_party | political_actions | generic_civil_support | 100 |  | Graveyard of Empires | political_decisions.txt |
-| ban_democratic_party | political_actions | generic_civil_support | 100 |  | Battle for the Bosporus | political_decisions.txt |
-| ban_communist_party | political_actions | generic_civil_support | 100 |  | Trial of Allegiance | political_decisions.txt |
-| ban_neutrality_party | political_actions | generic_civil_support | 100 |  |  | political_decisions.txt |
-| institute_press_censorship_fascist_state | political_actions | generic_political_discourse | 150 |  | Battle for the Bosporus | political_decisions.txt |
-| institute_press_censorship_democratic_state | political_actions | generic_political_discourse | 150 |  | Battle for the Bosporus | political_decisions.txt |
-| institute_press_censorship_communist_state | political_actions | generic_political_discourse | 150 |  | Battle for the Bosporus | political_decisions.txt |
-| institute_press_censorship_neutrality_state | political_actions | generic_political_discourse | 150 |  | Battle for the Bosporus | political_decisions.txt |
 | POR_angola_overseas_province | POR_overseas_provinces | infiltrate_state | 0 | yes |  | POR.txt |
 | POR_mozambique_overseas_territory | POR_overseas_provinces | infiltrate_state | 0 | yes |  | POR.txt |
 | POR_buy_artillery_in_britain | POR_arms_purchases | generic_industry | 0 |  | Arms Against Tyranny | POR.txt |
@@ -2705,122 +2357,6 @@ Source: `common/decisions/*.txt`
 | RAJ_congress_shipbuilding_effort | RAJ_concessions_to_the_congress_cat | generic_naval |  |  |  | RAJ_GOE.txt |
 | RAJ_congress_construction_effort | RAJ_concessions_to_the_congress_cat | generic_construction |  |  |  | RAJ_GOE.txt |
 | RAJ_congress_war_propaganda | RAJ_concessions_to_the_congress_cat | eng_propaganda_campaigns |  |  |  | RAJ_GOE.txt |
-| develop_shandong_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
-| develop_suiyuan_steel_deposits | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
-| develop_daqing_deposits | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_daqing_deposits_2 | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_yunnan_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
-| develop_kirin_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
-| develop_sichuan_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
-| develop_nauru_tungsten_deposits | prospect_for_resources | tungsten | 25 | yes |  | resource_prospecting.txt |
-| develop_tonkin_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
-| develop_singapore_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
-| develop_sirte_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_benghazi_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_tasmania_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
-| develop_west_africa_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
-| develop_west_africa_aluminium_deposits_2 | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
-| develop_madagascar_rubber_plantations | prospect_for_resources | rubber | 25 | yes |  | resource_prospecting.txt |
-| develop_madagascar_rubber_plantations_2 | prospect_for_resources | rubber | 25 | yes |  | resource_prospecting.txt |
-| develop_sidamo_rubber_plantations | prospect_for_resources | rubber | 25 | yes |  | resource_prospecting.txt |
-| develop_nigeria_rubber_plantations | prospect_for_resources | rubber | 25 | yes |  | resource_prospecting.txt |
-| develop_ems_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_matzen_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_friesland_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| expand_eregli_steel_works | prospect_for_resources | steel | 25 | yes | Battle for the Bosporus | resource_prospecting.txt |
-| develop_newfoundland_steel | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
-| develop_quebec_steel | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
-| develop_cuba_steel | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
-| develop_arkansas_aluminium_deposits | prospect_for_resources | aluminium | 25 |  |  | resource_prospecting.txt |
-| develop_new_york_aluminium_deposits | prospect_for_resources | aluminium | 25 |  |  | resource_prospecting.txt |
-| develop_tennessee_aluminium_deposits | prospect_for_resources | aluminium | 25 |  |  | resource_prospecting.txt |
-| develop_washington_aluminium_deposits | prospect_for_resources | aluminium | 25 |  |  | resource_prospecting.txt |
-| develop_idaho_tungsten_deposits | prospect_for_resources | tungsten | 25 |  |  | resource_prospecting.txt |
-| develop_california_tungsten_deposits | prospect_for_resources | tungsten | 25 |  |  | resource_prospecting.txt |
-| develop_minnesota_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
-| develop_pennsylvania_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
-| develop_ohio_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
-| develop_indiana_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
-| develop_montana_chromium_deposits | prospect_for_resources | chromium | 25 |  |  | resource_prospecting.txt |
-| develop_katanga_cobalt_deposits | prospect_for_resources | chromium | 25 | yes | Gotterdammerung | resource_prospecting.txt |
-| develop_katanga_cobalt_deposits_2 | prospect_for_resources | chromium | 25 | yes |  | resource_prospecting.txt |
-| develop_california_chromium_deposits | prospect_for_resources | chromium | 25 |  |  | resource_prospecting.txt |
-| develop_oregon_chromium_deposits | prospect_for_resources | chromium | 25 |  |  | resource_prospecting.txt |
-| develop_alaska_chromium_deposits | prospect_for_resources | chromium | 25 |  |  | resource_prospecting.txt |
-| develop_south_sakhalin_oil_deposits | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_palau_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
-| develop_taiwan_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
-| develop_taiwan_oil_deposits | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_cornwall_tungsten_deposits_1 | prospect_for_resources | tungsten | 25 | yes |  | resource_prospecting.txt |
-| develop_cornwall_tungsten_deposits_2 | prospect_for_resources | tungsten | 25 | yes |  | resource_prospecting.txt |
-| develop_leningrad_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
-| develop_kamensk_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
-| develop_stalingrad_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
-| develop_caucasus_tungsten_deposits_1 | prospect_for_resources | tungsten | 25 | yes |  | resource_prospecting.txt |
-| develop_caucasus_tungsten_deposits_2 | prospect_for_resources | tungsten | 25 | yes |  | resource_prospecting.txt |
-| develop_kyzyl_tungsten_deposits | prospect_for_resources | tungsten | 25 | yes |  | resource_prospecting.txt |
-| develop_chelyabinsk_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
-| develop_zlatoust_steel_deposits_1 | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
-| develop_zlatoust_steel_deposits_2 | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
-| develop_kursk_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
-| develop_kursk_steel_deposits_2 | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
-| develop_kursk_steel_deposits_3 | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
-| develop_Belgorod_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
-| develop_Belgorod_steel_deposits_2 | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
-| develop_Belgorod_steel_deposits_3 | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
-| develop_uralsk_chromium_deposits_1 | prospect_for_resources | chromium | 25 | yes |  | resource_prospecting.txt |
-| develop_uralsk_chromium_deposits_2 | prospect_for_resources | chromium | 25 | yes |  | resource_prospecting.txt |
-| develop_liaotung_iron_ore_deposits | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
-| develop_chosen_tungsten_deposits | prospect_for_resources | tungsten | 25 |  |  | resource_prospecting.txt |
-| develop_abu_dhabi_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_kuwait_oil_fields | prospect_for_resources | oil | 25 |  |  | resource_prospecting.txt |
-| develop_omani_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_khuzestan_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_fars_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_baghdad_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_mosul_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_nejd_oil_fields | prospect_for_resources | oil | 25 |  |  | resource_prospecting.txt |
-| develop_eastern_desert_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_qatar_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_malatya_chromium_deposits | prospect_for_resources | chromium | 25 | yes |  | resource_prospecting.txt |
-| develop_mersin_chromium_mines | prospect_for_resources | chromium | 25 | yes |  | resource_prospecting.txt |
-| utilize_diyarbakir_chromium_deposits | prospect_for_resources | chromium | 25 | yes |  | resource_prospecting.txt |
-| expand_the_kirikkale_steel_mills | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
-| develop_the_iron_mines_in_divrigi | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
-| exploit_the_raman_oil_field | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| drill_in_the_garzan_oil_field | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| expand_the_west_raman_oil_field | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
-| develop_tripoli_oil_fields | prospect_for_resources | oil | 25 |  |  | resource_prospecting.txt |
-| develop_tripoli_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
-| develop_transdanubia_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
-| expand_the_rudabanya_iron_mine | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
-| develop_derna_oilfield | prospect_for_resources | oil | 50 | yes |  | resource_prospecting.txt |
-| HUN_tap_the_nagylengyel_oil_field | prospect_for_resources | oil | 75 | yes | Gotterdammerung | resource_prospecting.txt |
-| HUN_explore_the_oil_fields_around_nagykanizsa | prospect_for_resources | oil | 50 | yes | Gotterdammerung | resource_prospecting.txt |
-| deeper_swedish_mines | prospect_for_resources | steel | 50 | yes |  | resource_prospecting.txt |
-| expand_greenlands_mines | prospect_for_resources | steel | 50 |  |  | resource_prospecting.txt |
-| drill_for_oil_in_chaco_boreal | prospect_for_resources | oil | 50 | yes |  | resource_prospecting.txt |
-| drill_for_oil_in_chaco_boreal_2 | prospect_for_resources | oil | 50 | yes |  | resource_prospecting.txt |
-| AUS_develop_bleiberger_mines | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
-| CHI_develop_hunan_tungsten_mines | prospect_for_resources | tungsten | 25 | yes | No Compromise, No Surrender | resource_prospecting.txt |
-| CHI_develop_jiangxi_tungsten_mines | prospect_for_resources | tungsten | 25 | yes | No Compromise, No Surrender | resource_prospecting.txt |
-| CHI_develop_coal_mines | prospect_for_resources | coal | 25 | yes | No Compromise, No Surrender | resource_prospecting.txt |
-| develop_rio_grande_sul_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
-| develop_guapore_casserite_deposits | prospect_for_resources | aluminium | 25 | yes | Trial of Allegiance | resource_prospecting.txt |
-| develop_la_libertad_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
-| develop_western_visayas_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
-| expand_tomsk_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
-| expand_sofia_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
-| expand_north_transdanubia_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
-| expand_bosnia_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
-| expand_lima_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
-| expand_antofagasta_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
-| develop_mendoza_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
-| develop_western_slovakia_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
-| expand_tesinsko_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
-| expand_german_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
-| expand_transvaal_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
-| expand_bihar_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
 | RNG_core_state | foreign_politics | GFX_decision_infiltrate_state | 75 | yes |  | RNG.txt |
 | ROM_change_sides_to_allies | ROM_change_sides | decision_generic_nationalism | 0 | yes |  | ROM.txt |
 | ROM_change_sides_to_commintern | ROM_change_sides | decision_generic_nationalism | 0 | yes |  | ROM.txt |
@@ -3336,16 +2872,6 @@ Source: `common/decisions/*.txt`
 | SS_recruitment_britain | SS_recruitment | generic_army_support | 25 | yes |  | SS.txt |
 | SS_recruitment_scotland | SS_recruitment | generic_army_support | 25 | yes |  | SS.txt |
 | SS_recruitment_sweden | SS_recruitment | generic_army_support | 25 | yes |  | SS.txt |
-| draft_dodging | crisis | generic_civil_support | 0 |  |  | stability_war_support.txt |
-| strikes_1 | crisis | generic_civil_support | 0 |  |  | stability_war_support.txt |
-| draft_dodging_mission | crisis | generic_civil_support |  |  |  | stability_war_support.txt |
-| strikes_mission | crisis | generic_civil_support |  |  |  | stability_war_support.txt |
-| mutiny_1 | crisis | generic_civil_support | 5 |  |  | stability_war_support.txt |
-| mutiny_mission | crisis | generic_civil_support |  |  |  | stability_war_support.txt |
-| demobilization_economic | demobilization | generic_industry | 50 |  |  | stability_war_support.txt |
-| demob_economic_mission | demobilization | revolt |  |  |  | stability_war_support.txt |
-| demobilization_manpower | demobilization | generic_prepare_civil_war | 50 |  |  | stability_war_support.txt |
-| demob_manpower_mission | demobilization | revolt |  |  |  | stability_war_support.txt |
 | SWE_hungershield_dummy | SWE_hungershield_cat | generic_civil_support |  |  |  | SWE.txt |
 | SWE_hungershield_worse_dummy | SWE_hungershield_cat | generic_civil_support |  |  |  | SWE.txt |
 | SWE_hungershield_mission | SWE_hungershield_cat | generic_civil_support |  |  |  | SWE.txt |
@@ -3786,3 +3312,477 @@ Source: `common/decisions/*.txt`
 | YUG_croat_raid_cooldown | YUG_progress_crushing_decisions | generic_ignite_civil_war |  | yes |  | YUG.txt |
 | YUG_shut_down_recruitment_centers_cooldown | YUG_progress_crushing_decisions | generic_ignite_civil_war |  | yes |  | YUG.txt |
 | YUG_arrest_ustasa_leaders_cooldown | YUG_progress_crushing_decisions | generic_ignite_civil_war |  | yes |  | YUG.txt |
+| debug_show_decisions | debug_decisions |  |  |  |  | _debug_decisions.txt |
+| debug_hide_decisions | debug_decisions |  |  |  |  | _debug_decisions.txt |
+| debug_max_infleunce | debug_decisions |  |  |  |  | _debug_decisions.txt |
+| debug_calc_resources | debug_decisions |  |  |  |  | _debug_decisions.txt |
+| research_all_tank_techs_nsb | debug_decisions | generic_tank |  |  |  | _debug_decisions.txt |
+| add_efficiency_growth_debug | debug_decisions | generic_research | 0 |  |  | _debug_decisions.txt |
+| remove_efficiency_growth_debug | debug_decisions | generic_research | 0 |  |  | _debug_decisions.txt |
+| decrease_efficiency_growth_debug | debug_decisions | generic_research | 0 |  |  | _debug_decisions.txt |
+| history_entry_debug | debug_decisions | generic_research | 0 |  |  | _debug_decisions.txt |
+| create_operative_debug | debug_decisions | generic_research | 0 |  |  | _debug_decisions.txt |
+| create_recruitable_operative_not_to_spy_master_debug | debug_decisions | generic_research | 0 |  |  | _debug_decisions.txt |
+| create_recruitable_operative_debug | debug_decisions | generic_research | 0 |  |  | _debug_decisions.txt |
+| FRA_capture_operative_debug | debug_decisions |  | 0 |  |  | _debug_decisions.txt |
+| FRA_turn_operative_debug | debug_decisions |  | 0 |  |  | _debug_decisions.txt |
+| harm_operative_debug | debug_decisions |  | 0 |  |  | _debug_decisions.txt |
+| add_random_nationality | debug_decisions |  | 0 |  |  | _debug_decisions.txt |
+| add_1_convoy | debug_decisions |  | 0 |  |  | _debug_decisions.txt |
+| slot_machine | debug_decisions |  |  |  |  | _debug_decisions.txt |
+| decryption_tech_1 | debug_decisions |  |  |  |  | _debug_decisions.txt |
+| decryption_tech_2 | debug_decisions |  |  |  |  | _debug_decisions.txt |
+| decryption_tech_3 | debug_decisions |  |  |  |  | _debug_decisions.txt |
+| encryption_tech_1 | debug_decisions |  |  |  |  | _debug_decisions.txt |
+| encryption_tech_2 | debug_decisions |  |  |  |  | _debug_decisions.txt |
+| encryption_tech_3 | debug_decisions |  |  |  |  | _debug_decisions.txt |
+| plane_generator_test | debug_decisions |  |  |  |  | _debug_decisions.txt |
+| debug_clr_dreadnought_flags | debug_decisions | GFX_decision_generic_naval | 0 |  |  | _debug_decisions.txt |
+| unlock_supersonic_jet | debug_decisions |  |  |  |  | _debug_decisions.txt |
+| unlock_all_radars | debug_decisions |  |  |  |  | _debug_decisions.txt |
+| debug_gain_claimed_states | debug_decisions |  |  |  |  | _debug_decisions.txt |
+| request_reinstatement | governments_in_exile | generic_independence | 10 |  |  | _exiled_governments_decisions.txt |
+| grant_parliamentary_audience | governments_in_exile | eng_install_government |  |  |  | _exiled_governments_decisions.txt |
+| lobby_for_parliamentary_support | governments_in_exile | eng_install_government |  |  |  | _exiled_governments_decisions.txt |
+| public_support_for_from | governments_in_exile | eng_install_government |  |  |  | _exiled_governments_decisions.txt |
+| exile_recruitment_campaign | governments_in_exile | eng_propaganda_campaigns |  |  |  | _exiled_governments_decisions.txt |
+| exile_extraction_campaign | governments_in_exile | oppression | 0 |  |  | _exiled_governments_decisions.txt |
+| purge_infiltrators | governments_in_exile | generic_political_discourse |  |  |  | _exiled_governments_decisions.txt |
+| expatriate_donations | governments_in_exile | ger_military_buildup | 25 |  |  | _exiled_governments_decisions.txt |
+| request_control_of_navy | governments_in_exile | generic_naval | 25 | yes |  | _exiled_governments_decisions.txt |
+| weapons_for_the_resistance | category_exile_forces | generic_ignite_civil_war | 50 |  |  | _exiled_governments_decisions.txt |
+| unity_parade | category_exile_forces | generic_nationalism | 50 | yes |  | _exiled_governments_decisions.txt |
+| joint_training_exercise | category_exile_forces | eng_blackshirt_march | 0 |  |  | _exiled_governments_decisions.txt |
+| targeted_race_for_the_bomb | political_actions | generic_research |  |  |  | _generic_decisions.txt |
+| improved_worker_conditions | political_actions | generic_industry | 100 |  |  | _generic_decisions.txt |
+| dismantle_maginot | economy_decisions | generic_construction | 50 | yes |  | _generic_decisions.txt |
+| restructure_supply_system | economy_decisions | GFX_decision_generic_construction |  | yes |  | _generic_decisions.txt |
+| seize_some_trains_woo | economy_decisions | GFX_decision_hol_draw_up_staff_plans |  |  |  | _generic_decisions.txt |
+| war_propaganda | propaganda_efforts | generic_prepare_civil_war | 150 |  | La Resistance | _generic_decisions.txt |
+| war_propaganda_casualties | propaganda_efforts | generic_prepare_civil_war | 100 |  |  | _generic_decisions.txt |
+| war_propaganda_convoys | propaganda_efforts | GFX_decision_generic_naval | 100 |  |  | _generic_decisions.txt |
+| war_propaganda_bombing | propaganda_efforts | GFX_decision_generic_air | 100 |  |  | _generic_decisions.txt |
+| war_propaganda_radio_industry | propaganda_efforts | generic_prepare_civil_war | 75 | yes | Trial of Allegiance | _generic_decisions.txt |
+| war_propaganda_film_industry | propaganda_efforts | generic_prepare_civil_war | 100 | yes | La Resistance | _generic_decisions.txt |
+| blow_suez_canal | operations | GFX_decision_generic_ignite_civil_war | 75 |  | Waking the Tiger | _generic_decisions.txt |
+| blow_panama_canal | operations | GFX_decision_generic_ignite_civil_war | 75 |  | Waking the Tiger | _generic_decisions.txt |
+| rebuild_suez_canal | special_projects | GFX_decision_generic_special_project | 120 |  |  | _generic_decisions.txt |
+| rebuild_panama_canal | special_projects | GFX_decision_generic_special_project | 400 |  |  | _generic_decisions.txt |
+| emergency_factory_conversion_defensive | war_measures | generic_industry | 100 |  |  | _generic_decisions.txt |
+| emergency_factory_conversion_offensive | war_measures | generic_industry | 100 |  |  | _generic_decisions.txt |
+| desperate_defense | war_measures | generic_prepare_civil_war | 50 |  |  | _generic_decisions.txt |
+| women_in_the_workforce | war_measures | generic_industry | 100 |  |  | _generic_decisions.txt |
+| war_bonds | war_measures | generic_industry |  |  |  | _generic_decisions.txt |
+| diversify_special_forces | war_measures | GFX_decision_generic_military | 50 | yes | Arms Against Tyranny | _generic_decisions.txt |
+| object_to_attaches | foreign_politics |  | 50 |  | Waking the Tiger | _generic_decisions.txt |
+| infrastructure_building_slot | economy_decisions | generic_construction | 100 |  |  | _generic_decisions.txt |
+| war_building_slot | economy_decisions | generic_construction | 50 |  | Man the Guns | _generic_decisions.txt |
+| CHI_close_burma_road | foreign_support |  | 0 |  |  | _generic_decisions.txt |
+| CHI_reopen_burma_road | foreign_support |  | 0 |  |  | _generic_decisions.txt |
+| CHI_close_ledo_road | foreign_support |  | 0 |  |  | _generic_decisions.txt |
+| CHI_reopen_ledo_road | foreign_support |  | 0 |  |  | _generic_decisions.txt |
+| CHI_close_the_hump | foreign_support |  | 0 |  |  | _generic_decisions.txt |
+| CHI_reopen_the_hump | foreign_support |  | 0 |  |  | _generic_decisions.txt |
+| CHI_close_hanoi_route | foreign_support |  | 0 |  |  | _generic_decisions.txt |
+| purchase_ships_eng | generic_purchase_old_ships_category | GFX_decision_generic_naval | 50 |  |  | _generic_decisions.txt |
+| purchase_ships_sov | generic_purchase_old_ships_category | GFX_decision_generic_naval | 50 |  |  | _generic_decisions.txt |
+| purchase_ships_ger | generic_purchase_old_ships_category | GFX_decision_generic_naval | 50 |  |  | _generic_decisions.txt |
+| purchase_ships_usa | generic_purchase_old_ships_category | GFX_decision_generic_naval | 50 |  |  | _generic_decisions.txt |
+| refit_to_destroyer | generic_refit_civilian_ships_category | GFX_decision_generic_merge_plant_ship | 15 |  | Man the Guns | _generic_decisions.txt |
+| refit_to_cruiser | generic_refit_civilian_ships_category | GFX_decision_generic_merge_plant_ship | 30 |  | Man the Guns | _generic_decisions.txt |
+| invite_GER_henschel_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
+| invite_GER_heinkel_organization | foreign_mio_decisions_category | generic_air | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
+| invite_GER_junkers_organization | foreign_mio_decisions_category | generic_air | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
+| invite_GER_opel_organization | foreign_mio_decisions_category | generic_motorized | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
+| invite_GER_mauser_organization | foreign_mio_decisions_category | generic_prepare_civil_war | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
+| invite_SOV_okmo_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
+| invite_SOV_nevskoye_design_bureau_organization | foreign_mio_decisions_category | generic_naval | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
+| invite_SOV_ilyushin_design_bureau_organization | foreign_mio_decisions_category | generic_air | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
+| invite_SOV_gaz_organization | foreign_mio_decisions_category | generic_motorized | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
+| invite_ENG_vickers_armstrong_eng_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
+| invite_ENG_yarrow_shipbuilders_organization | foreign_mio_decisions_category | generic_naval | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
+| invite_ENG_john_brown_organization | foreign_mio_decisions_category | generic_naval | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
+| invite_ENG_fairey_aviation_organization | foreign_mio_decisions_category | generic_air | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
+| invite_ENG_vauxhall_organization | foreign_mio_decisions_category | generic_motorized | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
+| invite_ITA_fiat_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
+| invite_ITA_crda_organization | foreign_mio_decisions_category | generic_naval | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
+| invite_ITA_lancia_organization | foreign_mio_decisions_category | generic_motorized | 50 | yes | Battle for the Bosporus | aat_mio_decisions.txt |
+| invite_CZE_ckd_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
+| invite_CZE_skoda_armor_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
+| invite_CZE_avia_organization | foreign_mio_decisions_category | generic_air | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
+| invite_CZE_skoda_artillery_organization | foreign_mio_decisions_category | generic_industry | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
+| invite_FRA_renault_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
+| invite_FRA_bloch_organization | foreign_mio_decisions_category | generic_air | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
+| invite_FRA_mas_organization | foreign_mio_decisions_category | generic_prepare_civil_war | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
+| invite_JAP_maizuru_naval_arsenal_organization | foreign_mio_decisions_category | generic_naval | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
+| invite_JAP_mitsubishi_organization | foreign_mio_decisions_category | generic_air | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
+| invite_JAP_nissan_organization | foreign_mio_decisions_category | generic_motorized | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
+| invite_SWE_landsverk_organization | foreign_mio_decisions_category | generic_tank | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
+| invite_SWE_volvo_organization | foreign_mio_decisions_category | generic_motorized | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
+| invite_SWE_bofors_organization | foreign_mio_decisions_category | generic_industry | 50 | yes | By Blood Alone | aat_mio_decisions.txt |
+| detect_infiltration | communist_infiltration | generic_army_support | 100 |  |  | anti_japan_infiltration.txt |
+| communist_infiltration_in_east_hebei | communist_infiltration | generic_civil_support | 10 |  |  | anti_japan_infiltration.txt |
+| communist_infiltration_in_jehol | communist_infiltration | generic_civil_support | 10 |  |  | anti_japan_infiltration.txt |
+| communist_infiltration_in_south_chahar | communist_infiltration | generic_civil_support | 10 |  |  | anti_japan_infiltration.txt |
+| communist_infiltration_in_chahar | communist_infiltration | generic_civil_support | 10 |  |  | anti_japan_infiltration.txt |
+| communist_infiltration_in_heilungkiang | communist_infiltration | generic_civil_support | 10 |  |  | anti_japan_infiltration.txt |
+| communist_infiltration_in_liaoning | communist_infiltration | generic_civil_support | 10 |  |  | anti_japan_infiltration.txt |
+| nation_building | foreign_influence | eng_propaganda_campaigns |  |  |  | foreign_influence.txt |
+| socialist_education | foreign_influence | eng_propaganda_campaigns |  |  |  | foreign_influence.txt |
+| paramilitary_training | foreign_influence | eng_propaganda_campaigns |  |  |  | foreign_influence.txt |
+| military_parade | foreign_influence | eng_propaganda_campaigns |  |  |  | foreign_influence.txt |
+| police_action | foreign_influence | generic_prepare_civil_war | 50 |  |  | foreign_influence.txt |
+| fraternal_republic | foreign_influence | generic_prepare_civil_war | 50 |  |  | foreign_influence.txt |
+| ultranationalist_coup | foreign_influence | generic_prepare_civil_war | 50 |  |  | foreign_influence.txt |
+| military_dictatorship | foreign_influence | generic_prepare_civil_war | 50 |  |  | foreign_influence.txt |
+| instantiate_collaboration | foreign_influence | generic_prepare_civil_war | 0 |  |  | foreign_influence.txt |
+| form_scandinavia | form_scandinavia_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| form_nordic_league | form_nordic_league_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| form_north_sea_empire | form_north_sea_category | generic_form_nation |  |  | Arms Against Tyranny | formable_nation_decisions.txt |
+| form_baltic_sea_empire | form_baltic_sea_empire_category | generic_form_nation |  |  | Arms Against Tyranny | formable_nation_decisions.txt |
+| form_gran_colombia | form_gran_colombia_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| form_austria_hungary | form_austria_hungary_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| reintegrate_austro_hungarian_empire | form_austria_hungary_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| form_commonwealth | form_commonwealth_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| form_united_netherlands | form_united_netherlands_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| form_united_central_america | form_united_central_america_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| integrate_northern_gran_colombia | form_united_central_america_category | GFX_decision_eng_trade_unions_support |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| integrate_yucatan | form_united_central_america_category | GFX_decision_eng_trade_unions_support |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| form_baltic_federation | form_baltic_federation_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| form_ottoman_empire | form_ottoman_empire_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| ott_reform_the_eyalet_of_rumelia | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| ott_merge_the_eyalets_of_morea_crete_and_kibris | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| ott_enlarge_the_vilayet_of_bosnia | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| ott_restore_the_vilayet_of_the_danube_and_moldova | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| ott_restore_the_vilayet_of_halep | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| ott_restore_the_vilayet_of_beirut | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| ott_restore_the_vilayet_of_baghdad | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| ott_extend_the_lasha_eyalet | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| ott_merge_the_eyalets_of_jeddah_habesh_and_yemen | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| ott_integrate_the_khedivate_of_egypt | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| ott_restore_the_vilayet_of_tripolitania | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| ott_absorb_the_tunis_and_algerian_eyalets | form_ottoman_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| form_european_union | form_european_union_category | generic_form_nation |  |  | Gotterdammerung | formable_nation_decisions.txt |
+| EU_alpine_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
+| EU_iberian_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
+| EU_west_slavic_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
+| EU_baltic_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
+| EU_british_isles_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
+| EU_scandinavian_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
+| EU_karelo_finnish_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
+| EU_balkan_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 150 |  | Gotterdammerung | formable_nation_decisions.txt |
+| EU_aegean_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
+| EU_belarusian_and_ukrainian_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
+| EU_caucasian_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
+| EU_kuban_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 100 |  | Gotterdammerung | formable_nation_decisions.txt |
+| EU_russian_expansion_decision | form_european_union_category | GFX_decision_generic_nationalism | 150 |  | Gotterdammerung | formable_nation_decisions.txt |
+| form_mutapa | form_mutapa_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| form_roman_empire | form_roman_empire_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| reintigrate_hispania | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
+| reintigrate_dacia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
+| reintigrate_moesia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
+| reintigrate_aegyptus | form_roman_empire_category | GFX_decision_generic_nationalism | 75 |  | Waking the Tiger | formable_nation_decisions.txt |
+| restore_mesopotamia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
+| reconquer_galatia_et_cappadocia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
+| integrate_armenian_lands | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
+| restore_order_in_arabia_petra | form_roman_empire_category | GFX_decision_generic_nationalism | 75 |  | Waking the Tiger | formable_nation_decisions.txt |
+| restore_order_in_mauretania | form_roman_empire_category | GFX_decision_generic_nationalism | 75 |  | Waking the Tiger | formable_nation_decisions.txt |
+| return_to_pannonia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
+| restore_roman_rule_to_raetia_et_noricum | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
+| restore_roman_rule_to_gaul | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
+| restore_roman_rule_to_belgica | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
+| occupy_iberia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
+| return_to_britannia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
+| conquer_hibernia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
+| conquer_caledonia | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
+| avenge_teutoburg | form_roman_empire_category | GFX_decision_generic_nationalism | 100 |  | Waking the Tiger | formable_nation_decisions.txt |
+| reestablish_the_bosporan_kingdom | form_roman_empire_category | GFX_decision_generic_nationalism | 120 |  | Waking the Tiger | formable_nation_decisions.txt |
+| form_persian_empire | form_persian_empire_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| form_byzantine_empire | form_byzantine_empire_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| byz_restore_byzantium | form_byzantine_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| byz_triumph_for_the_balkans | form_byzantine_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| byz_triumph_for_italy | form_byzantine_empire_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| byz_triumph_for_middle_east | form_byzantine_empire_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| byz_triumph_for_egypt_and_tunis | form_byzantine_empire_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| form_arabia | form_arabia_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| integrate_the_fertile_crescent | form_arabia_category | GFX_decision_generic_nationalism |  | yes | Waking the Tiger | formable_nation_decisions.txt |
+| integrate_the_levantine_states | form_arabia_category | GFX_decision_generic_nationalism |  | yes | Waking the Tiger | formable_nation_decisions.txt |
+| integrate_the_western_mashriq | form_arabia_category | GFX_decision_generic_nationalism |  | yes | Waking the Tiger | formable_nation_decisions.txt |
+| integrate_the_eastern_maghreb | form_arabia_category | GFX_decision_generic_nationalism |  | yes | Waking the Tiger | formable_nation_decisions.txt |
+| integrate_the_al_maghribiyah_and_al_jazair | form_arabia_category | GFX_decision_generic_nationalism |  | yes | Waking the Tiger | formable_nation_decisions.txt |
+| integrate_the_west_sahara | form_arabia_category | GFX_decision_generic_nationalism |  | yes | Waking the Tiger | formable_nation_decisions.txt |
+| form_majapahit_empire | form_majapahit_empire_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| integrate_papua | form_majapahit_empire_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
+| integrate_the_northern_malays | form_majapahit_empire_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
+| integrate_the_philippines | form_majapahit_empire_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
+| form_maphilindo | form_maphilindo_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
+| integrate_siam | form_maphilindo_category |  |  | yes |  | formable_nation_decisions.txt |
+| integrate_indochina | form_maphilindo_category |  |  | yes |  | formable_nation_decisions.txt |
+| integrate_burma | form_maphilindo_category |  |  | yes |  | formable_nation_decisions.txt |
+| form_rattanakosin_kingdom | form_rattanakosin_kingdom_category | generic_form_nation |  |  | Waking the Tiger | formable_nation_decisions.txt |
+| form_hre | form_hre_category | generic_form_nation |  |  | Gotterdammerung | formable_nation_decisions.txt |
+| form_greater_german_reich | form_greater_german_reich_category | generic_form_nation | 25 |  | Waking the Tiger | formable_nation_decisions.txt |
+| form_greater_proletarian_state | form_greater_german_state_category | generic_form_nation |  |  | Gotterdammerung | formable_nation_decisions.txt |
+| form_andalusia | form_andalusia_category | generic_form_nation |  |  | La Resistance | formable_nation_decisions.txt |
+| adu_restore_sultanate_of_africa | form_andalusia_category | generic_form_nation |  |  | La Resistance | formable_nation_decisions.txt |
+| adu_mediterrenean_emirates | form_andalusia_category | generic_form_nation |  |  | La Resistance | formable_nation_decisions.txt |
+| adu_restore_umayyad_caliphate | form_andalusia_category | generic_form_nation |  |  | La Resistance | formable_nation_decisions.txt |
+| adu_recreate_rashid_expansion | form_andalusia_category | generic_form_nation |  |  | La Resistance | formable_nation_decisions.txt |
+| adu_northern_expansion | form_andalusia_category | generic_form_nation |  |  | La Resistance | formable_nation_decisions.txt |
+| unite_maghreb | maghreb_formable_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| form_polynesia | form_polynesia_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| NZL_demand_islands | form_polynesia_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| form_greater_greece | form_greater_greece_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| GRE_appoint_aristotle_onassis_as_prime_minister | form_greater_greece_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
+| rename_antalya | form_greater_greece_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
+| rename_gjirokaster | form_greater_greece_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
+| GRE_move_capital_to_constantinople | form_greater_greece_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
+| move_capital_to_thessaloniki | form_greater_greece_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
+| form_macedonian_empire | form_macedonian_empire_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| form_turan | form_turan_category | generic_form_nation |  |  | Battle for the Bosporus | formable_nation_decisions.txt |
+| TUR_appoint_nihal_atziz_as_president | form_turan_category | GFX_decision_generic_political_address |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
+| integrate_the_magyars | form_turan_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
+| assimilate_the_chinese_turks | form_turan_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
+| unite_with_the_finno_ugrians | form_turan_category | generic_form_nation |  | yes | Battle for the Bosporus | formable_nation_decisions.txt |
+| form_turkestan | form_turkestan_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| form_mountainous_republic | form_mountainous_republic_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
+| form_transcaucasian_republic | form_transcaucasus_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
+| unite_azeris | form_transcaucasus_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
+| claim_northern_caucasus | form_transcaucasus_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
+| liberate_anatolian_peoples | form_transcaucasus_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
+| restore_kalmyks | form_transcaucasus_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
+| restore_crimean_khanate | form_transcaucasus_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
+| release_turkish_kurdistan | form_transcaucasus_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
+| form_siberian_republic | form_siberia_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
+| conquer_the_fareast | form_siberia_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
+| push_to_the_urals | form_siberia_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
+| liberate_the_ainu | form_siberia_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
+| liberate_manchuria | form_siberia_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
+| form_idel_uralic_republic | form_idel_ural_category | generic_form_nation |  |  | No Step Back | formable_nation_decisions.txt |
+| form_empire_of_axum | form_ethiopian_empire_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| ETH_move_capital_to_axum | form_ethiopian_empire_category | generic_form_nation | 50 | yes |  | formable_nation_decisions.txt |
+| form_empire_of_solomon | form_ethiopian_empire_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| ETH_move_capital_to_jerusalem | form_ethiopian_empire_category | generic_form_nation | 50 | yes |  | formable_nation_decisions.txt |
+| form_empire_of_zion | form_ethiopian_empire_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| form_east_africa | form_east_africa_category | generic_form_nation |  |  | Gotterdammerung | formable_nation_decisions.txt |
+| integrate_ruanda_urundi | form_east_africa_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
+| dominate_malawi | form_east_africa_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
+| liberate_sidamo | form_east_africa_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
+| unite_the_somalis | form_east_africa_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
+| conquer_the_comoros | form_east_africa_category | generic_form_nation |  | yes |  | formable_nation_decisions.txt |
+| form_the_horn_of_africa | form_horn_of_africa_africa_category | generic_form_nation |  |  | By Blood Alone | formable_nation_decisions.txt |
+| conquer_socotra | form_horn_of_africa_africa_category | generic_form_nation |  |  | By Blood Alone | formable_nation_decisions.txt |
+| integrate_the_south | form_horn_of_africa_africa_category | generic_form_nation |  |  | By Blood Alone | formable_nation_decisions.txt |
+| the_upper_nile | form_horn_of_africa_africa_category | generic_form_nation |  |  | By Blood Alone | formable_nation_decisions.txt |
+| proclaim_greater_italy | greater_italy_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| proclaim_sweden_hungary | form_sweden_hungary_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| unite_the_antilles | antilles_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| integrate_the_netherlands_antilles | antilles_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| integrate_trinidad_and_tobago | antilles_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| unite_latin_africa | latin_africa_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| declare_germany_reunified_decision | germany_formable_category | generic_form_nation | 100 |  |  | formable_nation_decisions.txt |
+| reintegrate_luxemburg | germany_formable_category | generic_form_nation | 25 |  |  | formable_nation_decisions.txt |
+| reintegrate_elsass_lothringen | germany_formable_category | generic_form_nation | 25 |  |  | formable_nation_decisions.txt |
+| reintegrate_south_jutland | germany_formable_category | generic_form_nation | 25 |  |  | formable_nation_decisions.txt |
+| reintegrate_east_prussia | germany_formable_category | generic_form_nation | 50 |  |  | formable_nation_decisions.txt |
+| reintegrate_silesia | germany_formable_category | generic_form_nation | 50 |  |  | formable_nation_decisions.txt |
+| reintegrate_posen_west_prussia | germany_formable_category | generic_form_nation | 75 |  |  | formable_nation_decisions.txt |
+| neo_assyrian_empire_decision | neo_assyrian_empire_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| neo_mesopotamia_decision | neo_mesopotamia_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| unite_greater_mongolia | greater_mongolia_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| unite_hui_states | greater_hui_state_category | generic_form_nation |  |  |  | formable_nation_decisions.txt |
+| recruit_in_europe | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
+| recruit_in_europe_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
+| recruit_in_north_america | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
+| recruit_in_north_america_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
+| recruit_in_south_america | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
+| recruit_in_south_america_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
+| recruit_in_africa | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
+| recruit_in_africa_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
+| recruit_in_middle_east | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
+| recruit_in_middle_east_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
+| recruit_in_asia | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
+| recruit_in_asia_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
+| recruit_in_australia | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
+| recruit_in_australia_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
+| recruit_in_india | lar_local_recruitment |  | 50 | yes |  | lar_agent_recruitment_decisions.txt |
+| recruit_in_india_state | lar_local_recruitment | onmap_recruit_operative | 0 |  |  | lar_agent_recruitment_decisions.txt |
+| prepare_for_fascist_civil_war | fascism_on_the_rise | generic_prepare_civil_war | 50 | yes |  | political_decisions.txt |
+| expand_civil_fascism_support | fascism_on_the_rise | generic_civil_support | 25 |  |  | political_decisions.txt |
+| army_support_for_fascist_civil_war | fascism_on_the_rise | generic_army_support | 50 |  |  | political_decisions.txt |
+| ensure_general_loyalty_for_fascist_civil_war | fascism_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
+| ensure_marshal_loyalty_for_fascist_civil_war | fascism_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
+| siphon_equipment_stockpiles_for_fascist_civil_war | fascism_on_the_rise | generic_prepare_civil_war | 50 |  |  | political_decisions.txt |
+| formulate_surprise_attack_plan_for_fascist_civil_war | fascism_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
+| ignite_the_fascist_civil_war_single_state | fascism_on_the_rise | generic_ignite_civil_war | 50 | yes |  | political_decisions.txt |
+| ignite_the_fascist_civil_war | fascism_on_the_rise | generic_ignite_civil_war | 50 | yes |  | political_decisions.txt |
+| rebuild_the_nation_fascism | fascism_on_the_rise | generic_construction | 25 | yes |  | political_decisions.txt |
+| open_up_political_discourse_fascism | fascism_on_the_rise | generic_political_discourse | 75 | yes |  | political_decisions.txt |
+| discredit_government_fascism | fascism_on_the_rise | generic_political_discourse | 50 | yes |  | political_decisions.txt |
+| hold_the_fascist_national_referendum | fascism_on_the_rise | generic_political_discourse | 100 | yes | Trial of Allegiance | political_decisions.txt |
+| prepare_for_democratic_civil_war | democratic_on_the_rise | generic_prepare_civil_war | 50 | yes |  | political_decisions.txt |
+| expand_civil_democratic_support | democratic_on_the_rise | generic_civil_support | 25 |  |  | political_decisions.txt |
+| army_support_for_democratic_civil_war | democratic_on_the_rise | generic_army_support | 50 |  |  | political_decisions.txt |
+| ensure_general_loyalty_for_democratic_civil_war | democratic_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
+| ensure_marshal_loyalty_for_democratic_civil_war | democratic_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
+| siphon_equipment_stockpiles_for_democratic_civil_war | democratic_on_the_rise | generic_prepare_civil_war | 50 |  |  | political_decisions.txt |
+| formulate_surprise_attack_plan_for_democratic_civil_war | democratic_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
+| ignite_the_democratic_civil_war_single_state | democratic_on_the_rise | generic_ignite_civil_war | 50 | yes |  | political_decisions.txt |
+| ignite_the_democratic_civil_war | democratic_on_the_rise | generic_ignite_civil_war | 50 | yes |  | political_decisions.txt |
+| rebuild_the_nation_democratic | democratic_on_the_rise | generic_construction | 25 | yes |  | political_decisions.txt |
+| open_up_political_discourse_democratic | democratic_on_the_rise | generic_political_discourse | 75 | yes |  | political_decisions.txt |
+| discredit_government_democratic | democratic_on_the_rise | generic_political_discourse | 50 | yes |  | political_decisions.txt |
+| hold_the_democratic_national_referendum | democratic_on_the_rise | generic_political_discourse | 100 | yes | Arms Against Tyranny | political_decisions.txt |
+| prepare_for_communist_civil_war | communism_on_the_rise | generic_prepare_civil_war | 50 | yes |  | political_decisions.txt |
+| expand_civil_communist_support | communism_on_the_rise | generic_civil_support | 25 |  |  | political_decisions.txt |
+| army_support_for_communist_civil_war | communism_on_the_rise | generic_army_support | 50 |  |  | political_decisions.txt |
+| ensure_general_loyalty_for_communist_civil_war | communism_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
+| ensure_marshal_loyalty_for_communist_civil_war | communism_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
+| siphon_equipment_stockpiles_for_communist_civil_war | communism_on_the_rise | generic_prepare_civil_war | 50 |  |  | political_decisions.txt |
+| formulate_surprise_attack_plan_for_communist_civil_war | communism_on_the_rise | generic_army_support | 50 | yes |  | political_decisions.txt |
+| ignite_the_communist_civil_war_single_state | communism_on_the_rise | generic_ignite_civil_war | 50 | yes |  | political_decisions.txt |
+| ignite_the_communist_civil_war | communism_on_the_rise | generic_ignite_civil_war | 50 | yes |  | political_decisions.txt |
+| rebuild_the_nation_communism | communism_on_the_rise | generic_construction | 25 | yes |  | political_decisions.txt |
+| open_up_political_discourse_communist | communism_on_the_rise | generic_political_discourse | 75 | yes |  | political_decisions.txt |
+| discredit_government_communism | communism_on_the_rise | generic_political_discourse | 50 | yes |  | political_decisions.txt |
+| hold_the_communist_national_referendum | communism_on_the_rise | generic_political_discourse | 100 | yes | Arms Against Tyranny | political_decisions.txt |
+| give_refuge_ger | political_actions | generic_research | 100 | yes |  | political_decisions.txt |
+| give_refuge_ita | political_actions | generic_research | 100 | yes |  | political_decisions.txt |
+| anti_fascist_raids | political_actions | generic_civil_support | 50 |  | Gotterdammerung | political_decisions.txt |
+| anti_democratic_raids | political_actions | generic_civil_support | 50 |  |  | political_decisions.txt |
+| anti_communist_raids | political_actions | generic_civil_support | 50 |  | No Compromise, No Surrender | political_decisions.txt |
+| anti_neutrality_raids | political_actions | generic_civil_support | 50 |  |  | political_decisions.txt |
+| ban_fascist_party | political_actions | generic_civil_support | 100 |  | Graveyard of Empires | political_decisions.txt |
+| ban_democratic_party | political_actions | generic_civil_support | 100 |  | Battle for the Bosporus | political_decisions.txt |
+| ban_communist_party | political_actions | generic_civil_support | 100 |  | Trial of Allegiance | political_decisions.txt |
+| ban_neutrality_party | political_actions | generic_civil_support | 100 |  |  | political_decisions.txt |
+| institute_press_censorship_fascist_state | political_actions | generic_political_discourse | 150 |  | Battle for the Bosporus | political_decisions.txt |
+| institute_press_censorship_democratic_state | political_actions | generic_political_discourse | 150 |  | Battle for the Bosporus | political_decisions.txt |
+| institute_press_censorship_communist_state | political_actions | generic_political_discourse | 150 |  | Battle for the Bosporus | political_decisions.txt |
+| institute_press_censorship_neutrality_state | political_actions | generic_political_discourse | 150 |  | Battle for the Bosporus | political_decisions.txt |
+| develop_shandong_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
+| develop_suiyuan_steel_deposits | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
+| develop_daqing_deposits | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_daqing_deposits_2 | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_yunnan_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
+| develop_kirin_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
+| develop_sichuan_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
+| develop_nauru_tungsten_deposits | prospect_for_resources | tungsten | 25 | yes |  | resource_prospecting.txt |
+| develop_tonkin_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
+| develop_singapore_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
+| develop_sirte_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_benghazi_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_tasmania_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
+| develop_west_africa_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
+| develop_west_africa_aluminium_deposits_2 | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
+| develop_madagascar_rubber_plantations | prospect_for_resources | rubber | 25 | yes |  | resource_prospecting.txt |
+| develop_madagascar_rubber_plantations_2 | prospect_for_resources | rubber | 25 | yes |  | resource_prospecting.txt |
+| develop_sidamo_rubber_plantations | prospect_for_resources | rubber | 25 | yes |  | resource_prospecting.txt |
+| develop_nigeria_rubber_plantations | prospect_for_resources | rubber | 25 | yes |  | resource_prospecting.txt |
+| develop_ems_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_matzen_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_friesland_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| expand_eregli_steel_works | prospect_for_resources | steel | 25 | yes | Battle for the Bosporus | resource_prospecting.txt |
+| develop_newfoundland_steel | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
+| develop_quebec_steel | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
+| develop_cuba_steel | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
+| develop_arkansas_aluminium_deposits | prospect_for_resources | aluminium | 25 |  |  | resource_prospecting.txt |
+| develop_new_york_aluminium_deposits | prospect_for_resources | aluminium | 25 |  |  | resource_prospecting.txt |
+| develop_tennessee_aluminium_deposits | prospect_for_resources | aluminium | 25 |  |  | resource_prospecting.txt |
+| develop_washington_aluminium_deposits | prospect_for_resources | aluminium | 25 |  |  | resource_prospecting.txt |
+| develop_idaho_tungsten_deposits | prospect_for_resources | tungsten | 25 |  |  | resource_prospecting.txt |
+| develop_california_tungsten_deposits | prospect_for_resources | tungsten | 25 |  |  | resource_prospecting.txt |
+| develop_minnesota_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
+| develop_pennsylvania_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
+| develop_ohio_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
+| develop_indiana_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
+| develop_montana_chromium_deposits | prospect_for_resources | chromium | 25 |  |  | resource_prospecting.txt |
+| develop_katanga_cobalt_deposits | prospect_for_resources | chromium | 25 | yes | Gotterdammerung | resource_prospecting.txt |
+| develop_katanga_cobalt_deposits_2 | prospect_for_resources | chromium | 25 | yes |  | resource_prospecting.txt |
+| develop_california_chromium_deposits | prospect_for_resources | chromium | 25 |  |  | resource_prospecting.txt |
+| develop_oregon_chromium_deposits | prospect_for_resources | chromium | 25 |  |  | resource_prospecting.txt |
+| develop_alaska_chromium_deposits | prospect_for_resources | chromium | 25 |  |  | resource_prospecting.txt |
+| develop_south_sakhalin_oil_deposits | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_palau_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
+| develop_taiwan_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
+| develop_taiwan_oil_deposits | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_cornwall_tungsten_deposits_1 | prospect_for_resources | tungsten | 25 | yes |  | resource_prospecting.txt |
+| develop_cornwall_tungsten_deposits_2 | prospect_for_resources | tungsten | 25 | yes |  | resource_prospecting.txt |
+| develop_leningrad_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
+| develop_kamensk_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
+| develop_stalingrad_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
+| develop_caucasus_tungsten_deposits_1 | prospect_for_resources | tungsten | 25 | yes |  | resource_prospecting.txt |
+| develop_caucasus_tungsten_deposits_2 | prospect_for_resources | tungsten | 25 | yes |  | resource_prospecting.txt |
+| develop_kyzyl_tungsten_deposits | prospect_for_resources | tungsten | 25 | yes |  | resource_prospecting.txt |
+| develop_chelyabinsk_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
+| develop_zlatoust_steel_deposits_1 | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
+| develop_zlatoust_steel_deposits_2 | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
+| develop_kursk_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
+| develop_kursk_steel_deposits_2 | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
+| develop_kursk_steel_deposits_3 | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
+| develop_Belgorod_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
+| develop_Belgorod_steel_deposits_2 | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
+| develop_Belgorod_steel_deposits_3 | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
+| develop_uralsk_chromium_deposits_1 | prospect_for_resources | chromium | 25 | yes |  | resource_prospecting.txt |
+| develop_uralsk_chromium_deposits_2 | prospect_for_resources | chromium | 25 | yes |  | resource_prospecting.txt |
+| develop_liaotung_iron_ore_deposits | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
+| develop_chosen_tungsten_deposits | prospect_for_resources | tungsten | 25 |  |  | resource_prospecting.txt |
+| develop_abu_dhabi_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_kuwait_oil_fields | prospect_for_resources | oil | 25 |  |  | resource_prospecting.txt |
+| develop_omani_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_khuzestan_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_fars_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_baghdad_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_mosul_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_nejd_oil_fields | prospect_for_resources | oil | 25 |  |  | resource_prospecting.txt |
+| develop_eastern_desert_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_qatar_oil_fields | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_malatya_chromium_deposits | prospect_for_resources | chromium | 25 | yes |  | resource_prospecting.txt |
+| develop_mersin_chromium_mines | prospect_for_resources | chromium | 25 | yes |  | resource_prospecting.txt |
+| utilize_diyarbakir_chromium_deposits | prospect_for_resources | chromium | 25 | yes |  | resource_prospecting.txt |
+| expand_the_kirikkale_steel_mills | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
+| develop_the_iron_mines_in_divrigi | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
+| exploit_the_raman_oil_field | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| drill_in_the_garzan_oil_field | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| expand_the_west_raman_oil_field | prospect_for_resources | oil | 25 | yes |  | resource_prospecting.txt |
+| develop_tripoli_oil_fields | prospect_for_resources | oil | 25 |  |  | resource_prospecting.txt |
+| develop_tripoli_steel_deposits | prospect_for_resources | steel | 25 |  |  | resource_prospecting.txt |
+| develop_transdanubia_aluminium_deposits | prospect_for_resources | aluminium | 25 | yes |  | resource_prospecting.txt |
+| expand_the_rudabanya_iron_mine | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
+| develop_derna_oilfield | prospect_for_resources | oil | 50 | yes |  | resource_prospecting.txt |
+| HUN_tap_the_nagylengyel_oil_field | prospect_for_resources | oil | 75 | yes | Gotterdammerung | resource_prospecting.txt |
+| HUN_explore_the_oil_fields_around_nagykanizsa | prospect_for_resources | oil | 50 | yes | Gotterdammerung | resource_prospecting.txt |
+| deeper_swedish_mines | prospect_for_resources | steel | 50 | yes |  | resource_prospecting.txt |
+| expand_greenlands_mines | prospect_for_resources | steel | 50 |  |  | resource_prospecting.txt |
+| drill_for_oil_in_chaco_boreal | prospect_for_resources | oil | 50 | yes |  | resource_prospecting.txt |
+| drill_for_oil_in_chaco_boreal_2 | prospect_for_resources | oil | 50 | yes |  | resource_prospecting.txt |
+| AUS_develop_bleiberger_mines | prospect_for_resources | steel | 25 | yes |  | resource_prospecting.txt |
+| CHI_develop_hunan_tungsten_mines | prospect_for_resources | tungsten | 25 | yes | No Compromise, No Surrender | resource_prospecting.txt |
+| CHI_develop_jiangxi_tungsten_mines | prospect_for_resources | tungsten | 25 | yes | No Compromise, No Surrender | resource_prospecting.txt |
+| CHI_develop_coal_mines | prospect_for_resources | coal | 25 | yes | No Compromise, No Surrender | resource_prospecting.txt |
+| develop_rio_grande_sul_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
+| develop_guapore_casserite_deposits | prospect_for_resources | aluminium | 25 | yes | Trial of Allegiance | resource_prospecting.txt |
+| develop_la_libertad_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
+| develop_western_visayas_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
+| expand_tomsk_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
+| expand_sofia_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
+| expand_north_transdanubia_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
+| expand_bosnia_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
+| expand_lima_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
+| expand_antofagasta_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
+| develop_mendoza_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
+| develop_western_slovakia_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
+| expand_tesinsko_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
+| expand_german_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
+| expand_transvaal_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
+| expand_bihar_coal_mines | prospect_for_resources | coal | 25 | yes |  | resource_prospecting.txt |
+| draft_dodging | crisis | generic_civil_support | 0 |  |  | stability_war_support.txt |
+| strikes_1 | crisis | generic_civil_support | 0 |  |  | stability_war_support.txt |
+| draft_dodging_mission | crisis | generic_civil_support |  |  |  | stability_war_support.txt |
+| strikes_mission | crisis | generic_civil_support |  |  |  | stability_war_support.txt |
+| mutiny_1 | crisis | generic_civil_support | 5 |  |  | stability_war_support.txt |
+| mutiny_mission | crisis | generic_civil_support |  |  |  | stability_war_support.txt |
+| demobilization_economic | demobilization | generic_industry | 50 |  |  | stability_war_support.txt |
+| demob_economic_mission | demobilization | revolt |  |  |  | stability_war_support.txt |
+| demobilization_manpower | demobilization | generic_prepare_civil_war | 50 |  |  | stability_war_support.txt |
+| demob_manpower_mission | demobilization | revolt |  |  |  | stability_war_support.txt |

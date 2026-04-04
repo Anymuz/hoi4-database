@@ -611,8 +611,9 @@ CREATE TABLE equipment_variants (
     owner_tag                   CHAR(3) NOT NULL REFERENCES countries(tag),
     base_equipment_key          VARCHAR(120) NOT NULL REFERENCES equipment_definitions(equipment_key),
     version_name                VARCHAR(120),
+    effective_date              DATE NOT NULL DEFAULT '1936-01-01',
     source_file                 TEXT NOT NULL,
-    UNIQUE (owner_tag, base_equipment_key, version_name)
+    UNIQUE (owner_tag, base_equipment_key, version_name, effective_date)
 );
 
 -- FK build order #49 → countries, provinces

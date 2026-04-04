@@ -356,13 +356,16 @@ Eight routers covering non-date-sensitive views plus the 3 date-sensitive milita
 **Design ref:** §6.3
 
 Schemas (`schemas/technology.py`):
-- `TechTreeItem` — technology_key, start_year, research_cost, folder_name, dlc_source, prerequisites[], categories[], enables_equipment[], enables_units[]
-- `CountryTech` — country_tag, technology_key, start_year, research_cost, folder_name, dlc_source
+- `TechSummary` — technology_key, start_year, research_cost, folder_name, dlc_source (lightweight, for list)
+- `TechTreeItem` — everything in TechSummary + prerequisites[], categories[], enables_equipment[], enables_units[] (full, for detail)
+- `CountryTech` — country_tag, technology_key, technology_name, dlc_source
+
+The list endpoint queries the `technologies` table directly — no jsonb subqueries — returning `TechSummary`. Only the detail endpoint hits `api_technology_tree` (4 correlated jsonb subqueries). This mirrors the `CountrySummary`/`CountryDetail` split.
 
 Router (`routers/technologies.py`):
-- `GET /api/v1/technologies` — from `api_technology_tree` view, supports `?folder=`
-- `GET /api/v1/technologies/{key}` — single tech or 404
-- `GET /api/v1/countries/{tag}/technologies` — from `api_country_technologies` view, date-sensitive via `WHERE effective_date <= $date`
+- `GET /api/v1/technologies` — from `technologies` table (not the view), returns `list[TechSummary]`, supports `?folder=`
+- `GET /api/v1/technologies/{key}` — from `api_technology_tree` view, returns `TechTreeItem` or 404
+- `GET /api/v1/countries/{tag}/technologies` — from `api_country_technologies` view, returns `list[CountryTech]`, date-sensitive via `WHERE effective_date <= $date`
 
 ### Step 3.2 — Characters
 

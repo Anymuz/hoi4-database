@@ -1,7 +1,7 @@
 # Markdown Extraction Summary
 
 
-Output directory: `C:/Users/joshu/hoi4-database/docs/data-dump`
+Output directory: `/mnt/c/Users/joshu/hoi4-database/docs/data-dump`
 
 | dataset | rows |
 |---|---:|
@@ -34,7 +34,7 @@ Output directory: `C:/Users/joshu/hoi4-database/docs/data-dump`
 | country_history | 352 |
 | country_starting_doctrines | 927 |
 | country_starting_ideas | 489 |
-| country_starting_technologies | 10618 |
+| country_starting_technologies | 10710 |
 | country_tags | 428 |
 | decision_categories | 540 |
 | decisions_all | 3782 |
@@ -51,8 +51,8 @@ Output directory: `C:/Users/joshu/hoi4-database/docs/data-dump`
 | dynamic_modifiers | 584 |
 | equipment_all | 470 |
 | equipment_resources_all | 454 |
-| equipment_variants | 818 |
-| fleets_all | 82 |
+| equipment_variants | 823 |
+| fleets_all | 77 |
 | focus_links_all | 11535 |
 | focus_links_germany | 570 |
 | focus_trees | 1 |
@@ -112,8 +112,8 @@ Output directory: `C:/Users/joshu/hoi4-database/docs/data-dump`
 | ribbons | 32 |
 | scientist_trait_modifiers | 25 |
 | scientist_traits | 21 |
-| ships_all | 2127 |
-| state_buildings | 2817 |
+| ships_all | 1866 |
+| state_buildings | 3048 |
 | state_categories | 13 |
 | state_cores | 1551 |
 | state_ownership_history | 1103 |
@@ -126,7 +126,7 @@ Output directory: `C:/Users/joshu/hoi4-database/docs/data-dump`
 | sub_ideologies | 22 |
 | subdoctrines | 86 |
 | supply_nodes | 727 |
-| task_forces_all | 247 |
+| task_forces_all | 212 |
 | technologies_all | 574 |
 | technologies_infantry | 12 |
 | technology_categories | 110 |

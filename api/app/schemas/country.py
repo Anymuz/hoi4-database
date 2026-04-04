@@ -1,5 +1,6 @@
 # app/schemas/country.py
 from pydantic import BaseModel  # For defining data models and validation 
+from app.schemas.technology import StartingTech # For nested starting technologies in CountryDetail
 
 # Pydantic schema (response models) for a Country, for API responses and data validation.
 
@@ -18,27 +19,17 @@ class OwnedState(BaseModel):
     controller_tag: str | None = None      # State controller (different from owner if occupied)
 # End of OwnedState model
 
-# Starting technology for a country
-class StartingTech(BaseModel):
-    technology_key: str                    # Tech key (e.g. "infantry_weapons")
-    technology_name: str | None = None     # Human-readable name (e.g. "Infantry Weapons")
-    dlc_source: str | None = None          # DLC source, null if base game
-# End of StartingTech model
-
 # Summary of a country (lightweight for lists)
 class CountrySummary(BaseModel):
     tag: str                            # 3-letter country tag (e.g. GER, ENG)
+    country_name: str | None = None     # Human-readable name (e.g. "Germany")
     capital_state_id: int | None = None # ID of the capital state
     stability: float | None = None      # Country stability (0-1)
     war_support: float | None = None    # Country war support (0-1)
 # End of CountrySummary model
 
 # Full details of a country, includes all data including states and tech.
-class CountryDetail(BaseModel):
-    tag: str                                # 3-letter country tag (e.g. GER, ENG)
-    capital_state_id: int | None = None     # ID of the capital state
-    stability: float | None = None          # Country stability (0-1)
-    war_support: float | None = None        # Country war support (0-1)
+class CountryDetail(CountrySummary):
     graphical_culture: str | None = None    # Graphical culture for unit appearances
     graphical_culture_2d: str | None = None # Graphical culture for 2D UI elements
     color_rgb: ColorRGB | None = None       # Country color for UI elements

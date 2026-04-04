@@ -18,7 +18,7 @@ async def list_countries(
 ):
     rows = await db.fetch(
         """
-        SELECT tag, capital_state_id, stability, war_support
+        SELECT tag, country_name, capital_state_id, stability, war_support
         FROM api_country_detail($1)
         ORDER BY tag
         LIMIT $2 OFFSET $3

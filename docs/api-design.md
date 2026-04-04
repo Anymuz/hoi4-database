@@ -445,11 +445,17 @@ against the nested models automatically.
 
 | Method | Path | SQL Source | Description |
 |--------|------|------------|-------------|
-| GET | `/api/v1/technologies` | `api_technology_tree` view | Full tech tree |
-| GET | `/api/v1/technologies/{key}` | `api_technology_tree` view | Single tech |
+| GET | `/api/v1/technologies` | `technologies` table | List all techs (lightweight) |
+| GET | `/api/v1/technologies/{key}` | `api_technology_tree` view | Single tech (full detail) |
 | GET | `/api/v1/countries/{tag}/technologies` | `api_country_technologies` view | Country starting techs |
 
 **Query params:** `?folder=infantry&limit=50&offset=0`
+
+The list endpoint queries the `technologies` table directly (no jsonb
+subqueries), returning a lightweight `TechSummary`. The detail endpoint hits
+`api_technology_tree` which runs 4 correlated jsonb subqueries — acceptable
+for a single row, too expensive for 574. This mirrors the
+`CountrySummary`/`CountryDetail` split in §6.2.
 
 Country techs are date-sensitive (uses `effective_date` column in the view):
 ```python
@@ -463,17 +469,35 @@ rows = await db.fetch(
 )
 ```
 
-**Response model (`TechTreeItem`):**
+**Response models:**
+
+`TechSummary` (list endpoint — lightweight):
 ```
 technology_key: str
+technology_name: str | None
 start_year: int | None
 research_cost: float | None
 folder_name: str | None
-dlc_source: str | None
+```
+
+`TechTreeItem` (detail endpoint — full, inherits TechSummary):
+```
+technology_key: str
+technology_name: str | None
+start_year: int | None
+research_cost: float | None
+folder_name: str | None
 prerequisites: list[str]          # jsonb array from view
 categories: list[str]
 enables_equipment: list[str]
 enables_units: list[str]
+```
+
+`StartingTech` (country techs endpoint):
+```
+technology_key: str
+technology_name: str | None
+dlc_source: str | None          # only populated here (from country_starting_technologies)
 ```
 
 ### 6.4 Characters (Slice B)

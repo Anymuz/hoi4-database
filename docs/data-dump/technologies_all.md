@@ -4,6 +4,132 @@ Source: `common/technologies/*.txt`
 
 | technology_key | research_cost | start_year | folder_name | folder_x | folder_y | category | source_file |
 |---|---|---|---|---|---|---|---|
+| early_ship_hull_light | 1.5 | 1922 | mtgnavalfolder | 0 | 2 | naval_equipment | MTG_naval.txt |
+| basic_ship_hull_light | 1.5 | 1936 | mtgnavalfolder | 0 | 8 | naval_equipment | MTG_naval.txt |
+| improved_ship_hull_light | 1.5 | 1939 | mtgnavalfolder | 0 | 14 | naval_equipment | MTG_naval.txt |
+| advanced_ship_hull_light | 2 | 1943 | mtgnavalfolder | 0 | 20 | naval_equipment | MTG_naval.txt |
+| smoke_generator | 0.75 | 1922 | mtgnavalfolder | 1 | 2 | naval_equipment | MTG_naval.txt |
+| basic_depth_charges | 1.5 | 1922 | mtgnavalfolder | 1 | 4 | naval_equipment | MTG_naval.txt |
+| improved_depth_charges | 1.5 | 1936 | mtgnavalfolder | 1 | 8 | naval_equipment | MTG_naval.txt |
+| advanced_depth_charges | 1.5 | 1939 | mtgnavalfolder | 1 | 14 | naval_equipment | MTG_naval.txt |
+| modern_depth_charges | 1.5 | 1943 | mtgnavalfolder | 1 | 20 | naval_equipment | MTG_naval.txt |
+| sonar | 1.5 | 1922 | mtgnavalfolder | 2 | 1 | naval_equipment | MTG_naval.txt |
+| improved_sonar | 1 | 1936 | mtgnavalfolder | 2 | 7 | naval_equipment | MTG_naval.txt |
+| advanced_sonar | 1 | 1939 | mtgnavalfolder | 2 | 13 | naval_equipment | MTG_naval.txt |
+| modern_sonar | 1 | 1943 | mtgnavalfolder | 2 | 19 | naval_equipment | MTG_naval.txt |
+| early_ship_hull_cruiser | 1.5 | 1922 | mtgnavalfolder | -1 | 2 | naval_equipment | MTG_naval.txt |
+| basic_ship_hull_cruiser | 1.5 | 1936 | mtgnavalfolder | -1 | 8 | naval_equipment | MTG_naval.txt |
+| improved_ship_hull_cruiser | 1.5 | 1939 | mtgnavalfolder | -1 | 14 | naval_equipment | MTG_naval.txt |
+| advanced_ship_hull_cruiser | 1.5 | 1943 | mtgnavalfolder | -1 | 20 | naval_equipment | MTG_naval.txt |
+| basic_cruiser_armor_scheme | 0.5 | 1922 | mtgnavalfolder | 0 | 2 | naval_armor | MTG_naval.txt |
+| early_ship_hull_heavy | 1.75 | 1922 | mtgnavalfolder | 0 | 2 | naval_equipment | MTG_naval.txt |
+| basic_ship_hull_heavy | 1.5 | 1936 | mtgnavalfolder | 0 | 8 | naval_equipment | MTG_naval.txt |
+| ship_hull_super_heavy | 1.5 | 1936 |  |  |  | naval_equipment | MTG_naval.txt |
+| improved_ship_hull_heavy | 1.5 | 1939 | mtgnavalfolder | 0 | 14 | naval_equipment | MTG_naval.txt |
+| advanced_ship_hull_heavy | 1.5 | 1943 | mtgnavalfolder | 0 | 20 | naval_equipment | MTG_naval.txt |
+| basic_heavy_armor_scheme | 1.25 | 1936 | mtgnavalfolder | 0 | 8 | naval_armor | MTG_naval.txt |
+| improved_heavy_armor_scheme | 1.25 |  | mtgnavalfolder | 0 | 14 | naval_armor | MTG_naval.txt |
+| early_ship_hull_carrier | 1.75 | 1922 | mtgnavalfolder | -1 | 2 | naval_equipment | MTG_naval.txt |
+| basic_ship_hull_carrier | 1.5 | 1936 | mtgnavalfolder | -1 | 8 | naval_equipment | MTG_naval.txt |
+| improved_ship_hull_carrier | 1.5 | 1939 | mtgnavalfolder | -1 | 14 | naval_equipment | MTG_naval.txt |
+| advanced_ship_hull_carrier | 1.5 | 1943 | mtgnavalfolder | -1 | 20 | naval_equipment | MTG_naval.txt |
+| early_ship_hull_submarine | 1.5 | 1922 | mtgnavalfolder | -2 | 2 | naval_equipment | MTG_naval.txt |
+| basic_ship_hull_submarine | 1.5 | 1936 | mtgnavalfolder | -2 | 8 | naval_equipment | MTG_naval.txt |
+| improved_ship_hull_submarine | 2.0 | 1939 | mtgnavalfolder | -2 | 14 | naval_equipment | MTG_naval.txt |
+| advanced_ship_hull_submarine | 2.0 | 1943 | mtgnavalfolder | -2 | 20 | naval_equipment | MTG_naval.txt |
+| basic_submarine_snorkel | 1 | 1939 | mtgnavalfolder | -1 | 13 | naval_equipment | MTG_naval.txt |
+| improved_submarine_snorkel | 2 | 1943 | mtgnavalfolder | -1 | 19 | naval_equipment | MTG_naval.txt |
+| panzerschiffe | 1 | 1936 |  |  |  |  | MTG_naval.txt |
+| torpedo_cruiser_mtg | 1 | 1936 |  |  |  |  | MTG_naval.txt |
+| pre_dreadnoughts | 1 | 1936 |  |  |  |  | MTG_naval.txt |
+| coastal_defense_ships | 1 | 1936 |  |  |  |  | MTG_naval.txt |
+| cruiser_submarines | 1 | 1936 |  |  |  |  | MTG_naval.txt |
+| midget_submarines | 1 | 1936 |  |  |  |  | MTG_naval.txt |
+| sp_aip_engine_improved_tech | 2 | 1939 | mtgnavalfolder | 1 | 13 | naval_equipment | MTG_naval.txt |
+| sp_aip_engine_advanced_tech | 2 | 1943 | mtgnavalfolder | 1 | 19 | naval_equipment | MTG_naval.txt |
+| sp_refined_pykrete | 1 | 1942 | mtgnavalfolder | 0 | 17 | naval_equipment | MTG_naval.txt |
+| sp_ice_composite_runawayas | 1 | 1944 | mtgnavalfolder | 0 | 23 | naval_equipment | MTG_naval.txt |
+| sp_naval_proximity_fuze_tech | 1 | 1940 |  |  |  |  | MTG_naval.txt |
+| sp_naval_underway_replenishment_pick_a | 1 | 1940 |  |  |  |  | MTG_naval.txt |
+| sp_naval_underway_replenishment_pick_b | 1 | 1940 |  |  |  |  | MTG_naval.txt |
+| sp_naval_support_ships_pick_a | 1 | 1940 |  |  |  |  | MTG_naval.txt |
+| sp_naval_support_ships_pick_b | 1 | 1940 |  |  |  |  | MTG_naval.txt |
+| sp_naval_support_ships_pick_c | 1 | 1940 |  |  |  |  | MTG_naval.txt |
+| sp_naval_repair_ships_pick_a | 1 | 1940 |  |  |  |  | MTG_naval.txt |
+| sp_naval_repair_ships_pick_b | 1 | 1940 |  |  |  |  | MTG_naval.txt |
+| sp_naval_repair_ships_pick_c | 1 | 1940 |  |  |  |  | MTG_naval.txt |
+| basic_battery | 1 | 1922 | mtgnavalsupportfolder | 0 | 1 | naval_artillery | MTG_naval_Support.txt |
+| basic_light_battery | 1 | 1936 | mtgnavalsupportfolder | -3 | 5 | naval_artillery | MTG_naval_Support.txt |
+| basic_light_shell | 0.5 | 1936 | mtgnavalsupportfolder | -3 | 7 | naval_artillery | MTG_naval_Support.txt |
+| improved_light_battery | 1 | 1939 | mtgnavalsupportfolder | -3 | 11 | naval_artillery | MTG_naval_Support.txt |
+| improved_light_shell | 0.5 | 1942 | mtgnavalsupportfolder | -3 | 16 | naval_artillery | MTG_naval_Support.txt |
+| advanced_light_battery | 1 | 1944 | mtgnavalsupportfolder | -3 | 19 | naval_artillery | MTG_naval_Support.txt |
+| basic_heavy_battery | 1 | 1936 | mtgnavalsupportfolder | 3 | 5 | naval_artillery | MTG_naval_Support.txt |
+| improved_heavy_battery | 1 | 1939 | mtgnavalsupportfolder | 3 | 11 | naval_artillery | MTG_naval_Support.txt |
+| advanced_heavy_battery | 1 | 1944 | mtgnavalsupportfolder | 3 | 19 | naval_artillery | MTG_naval_Support.txt |
+| basic_heavy_shell | 0.5 | 1936 | mtgnavalsupportfolder | 3 | 7 | naval_artillery | MTG_naval_Support.txt |
+| improved_heavy_shell | 0.5 | 1942 | mtgnavalsupportfolder | 3 | 16 | naval_artillery | MTG_naval_Support.txt |
+| basic_dp_light_battery | 1 | 1939 | mtgnavalsupportfolder | 0 | 11 | naval_artillery | MTG_naval_Support.txt |
+| improved_dp_light_battery | 1 | 1940 | mtgnavalsupportfolder | 0 | 13 | naval_artillery | MTG_naval_Support.txt |
+| advanced_dp_light_battery | 1 | 1944 | mtgnavalsupportfolder | 0 | 19 | naval_artillery | MTG_naval_Support.txt |
+| basic_torpedo | 2.0 | 1922 | mtgnavalsupportfolder | 0 | 1 | naval_equipment | MTG_naval_Support.txt |
+| magnetic_detonator | 2.5 | 1936 | mtgnavalsupportfolder | 0 | 7 | naval_equipment | MTG_naval_Support.txt |
+| homing_torpedo | 2.5 | 1942 | mtgnavalsupportfolder | 0 | 16 | naval_equipment | MTG_naval_Support.txt |
+| improved_ship_torpedo_launcher | 1.5 | 1936 | mtgnavalsupportfolder | 0 | 5 | naval_equipment | MTG_naval_Support.txt |
+| advanced_ship_torpedo_launcher | 1.5 | 1940 | mtgnavalsupportfolder | 0 | 13 | naval_equipment | MTG_naval_Support.txt |
+| modern_ship_torpedo_launcher | 1.5 | 1944 | mtgnavalsupportfolder | 0 | 19 | naval_equipment | MTG_naval_Support.txt |
+| damage_control_1 | 2.5 |  | mtgnavalsupportfolder | 0 | 1 | naval_equipment | MTG_naval_Support.txt |
+| damage_control_2 | 2.5 |  | mtgnavalsupportfolder | 0 | 6 | naval_equipment | MTG_naval_Support.txt |
+| damage_control_3 | 2.5 |  | mtgnavalsupportfolder | 0 | 12 | naval_equipment | MTG_naval_Support.txt |
+| fire_control_methods_1 | 2.5 |  | mtgnavalsupportfolder | 0 | 1 | naval_equipment | MTG_naval_Support.txt |
+| fire_control_methods_2 | 2.5 |  | mtgnavalsupportfolder | 0 | 6 | naval_equipment | MTG_naval_Support.txt |
+| fire_control_methods_3 | 2.5 |  | mtgnavalsupportfolder | 0 | 12 | naval_equipment | MTG_naval_Support.txt |
+| basic_naval_mines | 2 | 1922 | mtgnavalsupportfolder | 0 | 1 | naval_mines | MTG_naval_Support.txt |
+| submarine_mine_laying | 2 | 1922 | mtgnavalsupportfolder | 2 | 1 | naval_mines | MTG_naval_Support.txt |
+| improved_submarine_mine_laying | 2 | 1940 | mtgnavalsupportfolder | 2 | 13 | naval_mines | MTG_naval_Support.txt |
+| improved_naval_mines | 2 | 1936 | mtgnavalsupportfolder | 0 | 6 | naval_mines | MTG_naval_Support.txt |
+| degaussing | 1 | 1938 | mtgnavalsupportfolder | 1 | 10 | naval_mines | MTG_naval_Support.txt |
+| advanced_naval_mines | 2 | 1940 | mtgnavalsupportfolder | 0 | 13 | naval_mines | MTG_naval_Support.txt |
+| airdrop_mines | 2 | 1942 | mtgnavalsupportfolder | 2 | 16 | naval_mines | MTG_naval_Support.txt |
+| airdrop_mines_bba | 1 | 1942 | mtgnavalsupportfolder | 2 | 16 | naval_mines | MTG_naval_Support.txt |
+| airsweep_mines | 2 | 1942 | mtgnavalsupportfolder | 0 | 16 | naval_mines | MTG_naval_Support.txt |
+| airsweep_mines_bba | 1 | 1942 | mtgnavalsupportfolder | 0 | 16 | naval_mines | MTG_naval_Support.txt |
+| mtg_transport | 1.5 | 1922 | mtgnavalsupportfolder | 0 | 1 | naval_equipment | MTG_naval_Support.txt |
+| mtg_landing_craft | 2 | 1940 | mtgnavalsupportfolder | 0 | 13 | naval_equipment | MTG_naval_Support.txt |
+| mtg_tank_landing_craft | 2 | 1944 | mtgnavalsupportfolder | 0 | 19 | naval_equipment | MTG_naval_Support.txt |
+| sp_multi_product_supply_ships | 2.0 | 1938 | mtgnavalsupportfolder | 1 | 10 | naval_equipment | MTG_naval_Support.txt |
+| sp_standard_tenshioned_replenishment_alongside_method | 2.5 | 1943 | mtgnavalsupportfolder | 1 | 17 | naval_equipment | MTG_naval_Support.txt |
+| sp_improved_support_ship | 2 | 1942 | mtgnavalsupportfolder | -2 | 17 | naval_equipment | MTG_naval_Support.txt |
+| sp_improved_repair_ship | 2 | 1942 | mtgnavalsupportfolder | 0 | 17 | naval_equipment | MTG_naval_Support.txt |
+| gwtank_chassis | 2 | 1918 | nsb_armour_folder | 2 | 0 | armor | NSB_armor.txt |
+| basic_light_tank_chassis | 2 | 1934 | nsb_armour_folder | -1 | 2 | armor | NSB_armor.txt |
+| improved_light_tank_chassis | 2 | 1936 | nsb_armour_folder | -1 | 4 | armor | NSB_armor.txt |
+| amphibious_tank_chassis | 2 | 1938 | nsb_armour_folder | -4 | 5 | armor | NSB_armor.txt |
+| amphibious_drive | 2 | 1941 | nsb_armour_folder | -4 | 8 | armor | NSB_armor.txt |
+| advanced_light_tank_chassis | 2 | 1941 | nsb_armour_folder | -1 | 8 | armor | NSB_armor.txt |
+| basic_medium_tank_chassis | 2 | 1938 | nsb_armour_folder | 2 | @1937 | armor | NSB_armor.txt |
+| improved_medium_tank_chassis | 2 | 1940 | nsb_armour_folder | 2 | @1940 | armor | NSB_armor.txt |
+| advanced_medium_tank_chassis | 2 | 1943 | nsb_armour_folder | 2 | @1943 | armor | NSB_armor.txt |
+| main_battle_tank_chassis | 2.5 | 1945 | nsb_armour_folder | 2 | @1945 | armor | NSB_armor.txt |
+| basic_heavy_tank_chassis | 2 | 1934 | nsb_armour_folder | 5 | 2 | armor | NSB_armor.txt |
+| improved_heavy_tank_chassis | 2.5 | 1940 | nsb_armour_folder | 5 | @1940 | armor | NSB_armor.txt |
+| advanced_heavy_tank_chassis | 2.5 | 1943 | nsb_armour_folder | 5 | @1943 | armor | NSB_armor.txt |
+| super_heavy_tank_chassis | 3 | 1941 | nsb_armour_folder | 9 | @1941 | armor | NSB_armor.txt |
+| armor_tech_1 | 1 | 1936 | nsb_armour_folder | 3 | @1935 | armor | NSB_armor.txt |
+| armor_tech_2 | 1 | 1938 | nsb_armour_folder | 3 | @1938 | armor | NSB_armor.txt |
+| armor_tech_3 | 1 | 1941 | nsb_armour_folder | 3 | @1941 | armor | NSB_armor.txt |
+| armor_tech_4 | 1 | 1944 | nsb_armour_folder | 3 | @1944 | armor | NSB_armor.txt |
+| engine_tech_1 | 1 | 1934 | nsb_armour_folder | 2 | @1935 | armor | NSB_armor.txt |
+| engine_tech_2 | 1 | 1938 | nsb_armour_folder | 2 | @1938 | armor | NSB_armor.txt |
+| engine_tech_3 | 1 | 1941 | nsb_armour_folder | 2 | @1941 | armor | NSB_armor.txt |
+| engine_tech_4 | 1 | 1944 | nsb_armour_folder | 2 | @1944 | armor | NSB_armor.txt |
+| NOR_rikstanken_tech | 1 | 1936 |  |  |  | armor | NSB_armor.txt |
+| sp_armored_advanced_flamethrower_tech | 1 | 1941 | nsb_armour_folder | 12 | @1941 | armor | NSB_armor.txt |
+| sp_armored_lc_naval_engine_conversion_tech | 1 | 1943 | nsb_armour_folder | 7 | @1943 | armor | NSB_armor.txt |
+| sp_armored_lc_transmission_improvements_tech | 1 | 1943 | nsb_armour_folder | 9 | @1943 | armor | NSB_armor.txt |
+| sp_armored_lc_specialized_field_manuals_tech | 1 | 1943 | nsb_armour_folder | 11 | @1943 | armor | NSB_armor.txt |
+| sp_armored_lc_weapon_fire_control_tech | 1 | 1945 | nsb_armour_folder | 9 | @1945 | armor | NSB_armor.txt |
+| sp_armored_lc_high_impact_obliterator_cannon_tech | 1 | 1943 | nsb_armour_folder | 13 | @1943 | armor | NSB_armor.txt |
 | early_transport_plane | 2 | 1933 | air_techs_folder | 1 | 2 | air_equipment | air_techs.txt |
 | improved_transport_plane | 2 | 1940 | air_techs_folder | 1 | 6 | air_equipment | air_techs.txt |
 | strategic_airlifter | 2 | 1948 | air_techs_folder | 1 | 12 | air_equipment | air_techs.txt |
@@ -331,103 +457,6 @@ Source: `common/technologies/*.txt`
 | uranium_tipped_bullets | 1 | 1947 |  |  |  |  | infantry.txt |
 | PHI_battalion_combat_teams | 1 |  |  |  |  |  | infantry.txt |
 | revolutionary_mass_assault |  |  |  |  |  |  | infantry.txt |
-| early_ship_hull_light | 1.5 | 1922 | mtgnavalfolder | 0 | 2 | naval_equipment | MTG_naval.txt |
-| basic_ship_hull_light | 1.5 | 1936 | mtgnavalfolder | 0 | 8 | naval_equipment | MTG_naval.txt |
-| improved_ship_hull_light | 1.5 | 1939 | mtgnavalfolder | 0 | 14 | naval_equipment | MTG_naval.txt |
-| advanced_ship_hull_light | 2 | 1943 | mtgnavalfolder | 0 | 20 | naval_equipment | MTG_naval.txt |
-| smoke_generator | 0.75 | 1922 | mtgnavalfolder | 1 | 2 | naval_equipment | MTG_naval.txt |
-| basic_depth_charges | 1.5 | 1922 | mtgnavalfolder | 1 | 4 | naval_equipment | MTG_naval.txt |
-| improved_depth_charges | 1.5 | 1936 | mtgnavalfolder | 1 | 8 | naval_equipment | MTG_naval.txt |
-| advanced_depth_charges | 1.5 | 1939 | mtgnavalfolder | 1 | 14 | naval_equipment | MTG_naval.txt |
-| modern_depth_charges | 1.5 | 1943 | mtgnavalfolder | 1 | 20 | naval_equipment | MTG_naval.txt |
-| sonar | 1.5 | 1922 | mtgnavalfolder | 2 | 1 | naval_equipment | MTG_naval.txt |
-| improved_sonar | 1 | 1936 | mtgnavalfolder | 2 | 7 | naval_equipment | MTG_naval.txt |
-| advanced_sonar | 1 | 1939 | mtgnavalfolder | 2 | 13 | naval_equipment | MTG_naval.txt |
-| modern_sonar | 1 | 1943 | mtgnavalfolder | 2 | 19 | naval_equipment | MTG_naval.txt |
-| early_ship_hull_cruiser | 1.5 | 1922 | mtgnavalfolder | -1 | 2 | naval_equipment | MTG_naval.txt |
-| basic_ship_hull_cruiser | 1.5 | 1936 | mtgnavalfolder | -1 | 8 | naval_equipment | MTG_naval.txt |
-| improved_ship_hull_cruiser | 1.5 | 1939 | mtgnavalfolder | -1 | 14 | naval_equipment | MTG_naval.txt |
-| advanced_ship_hull_cruiser | 1.5 | 1943 | mtgnavalfolder | -1 | 20 | naval_equipment | MTG_naval.txt |
-| basic_cruiser_armor_scheme | 0.5 | 1922 | mtgnavalfolder | 0 | 2 | naval_armor | MTG_naval.txt |
-| early_ship_hull_heavy | 1.75 | 1922 | mtgnavalfolder | 0 | 2 | naval_equipment | MTG_naval.txt |
-| basic_ship_hull_heavy | 1.5 | 1936 | mtgnavalfolder | 0 | 8 | naval_equipment | MTG_naval.txt |
-| ship_hull_super_heavy | 1.5 | 1936 |  |  |  | naval_equipment | MTG_naval.txt |
-| improved_ship_hull_heavy | 1.5 | 1939 | mtgnavalfolder | 0 | 14 | naval_equipment | MTG_naval.txt |
-| advanced_ship_hull_heavy | 1.5 | 1943 | mtgnavalfolder | 0 | 20 | naval_equipment | MTG_naval.txt |
-| basic_heavy_armor_scheme | 1.25 | 1936 | mtgnavalfolder | 0 | 8 | naval_armor | MTG_naval.txt |
-| improved_heavy_armor_scheme | 1.25 |  | mtgnavalfolder | 0 | 14 | naval_armor | MTG_naval.txt |
-| early_ship_hull_carrier | 1.75 | 1922 | mtgnavalfolder | -1 | 2 | naval_equipment | MTG_naval.txt |
-| basic_ship_hull_carrier | 1.5 | 1936 | mtgnavalfolder | -1 | 8 | naval_equipment | MTG_naval.txt |
-| improved_ship_hull_carrier | 1.5 | 1939 | mtgnavalfolder | -1 | 14 | naval_equipment | MTG_naval.txt |
-| advanced_ship_hull_carrier | 1.5 | 1943 | mtgnavalfolder | -1 | 20 | naval_equipment | MTG_naval.txt |
-| early_ship_hull_submarine | 1.5 | 1922 | mtgnavalfolder | -2 | 2 | naval_equipment | MTG_naval.txt |
-| basic_ship_hull_submarine | 1.5 | 1936 | mtgnavalfolder | -2 | 8 | naval_equipment | MTG_naval.txt |
-| improved_ship_hull_submarine | 2.0 | 1939 | mtgnavalfolder | -2 | 14 | naval_equipment | MTG_naval.txt |
-| advanced_ship_hull_submarine | 2.0 | 1943 | mtgnavalfolder | -2 | 20 | naval_equipment | MTG_naval.txt |
-| basic_submarine_snorkel | 1 | 1939 | mtgnavalfolder | -1 | 13 | naval_equipment | MTG_naval.txt |
-| improved_submarine_snorkel | 2 | 1943 | mtgnavalfolder | -1 | 19 | naval_equipment | MTG_naval.txt |
-| panzerschiffe | 1 | 1936 |  |  |  |  | MTG_naval.txt |
-| torpedo_cruiser_mtg | 1 | 1936 |  |  |  |  | MTG_naval.txt |
-| pre_dreadnoughts | 1 | 1936 |  |  |  |  | MTG_naval.txt |
-| coastal_defense_ships | 1 | 1936 |  |  |  |  | MTG_naval.txt |
-| cruiser_submarines | 1 | 1936 |  |  |  |  | MTG_naval.txt |
-| midget_submarines | 1 | 1936 |  |  |  |  | MTG_naval.txt |
-| sp_aip_engine_improved_tech | 2 | 1939 | mtgnavalfolder | 1 | 13 | naval_equipment | MTG_naval.txt |
-| sp_aip_engine_advanced_tech | 2 | 1943 | mtgnavalfolder | 1 | 19 | naval_equipment | MTG_naval.txt |
-| sp_refined_pykrete | 1 | 1942 | mtgnavalfolder | 0 | 17 | naval_equipment | MTG_naval.txt |
-| sp_ice_composite_runawayas | 1 | 1944 | mtgnavalfolder | 0 | 23 | naval_equipment | MTG_naval.txt |
-| sp_naval_proximity_fuze_tech | 1 | 1940 |  |  |  |  | MTG_naval.txt |
-| sp_naval_underway_replenishment_pick_a | 1 | 1940 |  |  |  |  | MTG_naval.txt |
-| sp_naval_underway_replenishment_pick_b | 1 | 1940 |  |  |  |  | MTG_naval.txt |
-| sp_naval_support_ships_pick_a | 1 | 1940 |  |  |  |  | MTG_naval.txt |
-| sp_naval_support_ships_pick_b | 1 | 1940 |  |  |  |  | MTG_naval.txt |
-| sp_naval_support_ships_pick_c | 1 | 1940 |  |  |  |  | MTG_naval.txt |
-| sp_naval_repair_ships_pick_a | 1 | 1940 |  |  |  |  | MTG_naval.txt |
-| sp_naval_repair_ships_pick_b | 1 | 1940 |  |  |  |  | MTG_naval.txt |
-| sp_naval_repair_ships_pick_c | 1 | 1940 |  |  |  |  | MTG_naval.txt |
-| basic_battery | 1 | 1922 | mtgnavalsupportfolder | 0 | 1 | naval_artillery | MTG_naval_Support.txt |
-| basic_light_battery | 1 | 1936 | mtgnavalsupportfolder | -3 | 5 | naval_artillery | MTG_naval_Support.txt |
-| basic_light_shell | 0.5 | 1936 | mtgnavalsupportfolder | -3 | 7 | naval_artillery | MTG_naval_Support.txt |
-| improved_light_battery | 1 | 1939 | mtgnavalsupportfolder | -3 | 11 | naval_artillery | MTG_naval_Support.txt |
-| improved_light_shell | 0.5 | 1942 | mtgnavalsupportfolder | -3 | 16 | naval_artillery | MTG_naval_Support.txt |
-| advanced_light_battery | 1 | 1944 | mtgnavalsupportfolder | -3 | 19 | naval_artillery | MTG_naval_Support.txt |
-| basic_heavy_battery | 1 | 1936 | mtgnavalsupportfolder | 3 | 5 | naval_artillery | MTG_naval_Support.txt |
-| improved_heavy_battery | 1 | 1939 | mtgnavalsupportfolder | 3 | 11 | naval_artillery | MTG_naval_Support.txt |
-| advanced_heavy_battery | 1 | 1944 | mtgnavalsupportfolder | 3 | 19 | naval_artillery | MTG_naval_Support.txt |
-| basic_heavy_shell | 0.5 | 1936 | mtgnavalsupportfolder | 3 | 7 | naval_artillery | MTG_naval_Support.txt |
-| improved_heavy_shell | 0.5 | 1942 | mtgnavalsupportfolder | 3 | 16 | naval_artillery | MTG_naval_Support.txt |
-| basic_dp_light_battery | 1 | 1939 | mtgnavalsupportfolder | 0 | 11 | naval_artillery | MTG_naval_Support.txt |
-| improved_dp_light_battery | 1 | 1940 | mtgnavalsupportfolder | 0 | 13 | naval_artillery | MTG_naval_Support.txt |
-| advanced_dp_light_battery | 1 | 1944 | mtgnavalsupportfolder | 0 | 19 | naval_artillery | MTG_naval_Support.txt |
-| basic_torpedo | 2.0 | 1922 | mtgnavalsupportfolder | 0 | 1 | naval_equipment | MTG_naval_Support.txt |
-| magnetic_detonator | 2.5 | 1936 | mtgnavalsupportfolder | 0 | 7 | naval_equipment | MTG_naval_Support.txt |
-| homing_torpedo | 2.5 | 1942 | mtgnavalsupportfolder | 0 | 16 | naval_equipment | MTG_naval_Support.txt |
-| improved_ship_torpedo_launcher | 1.5 | 1936 | mtgnavalsupportfolder | 0 | 5 | naval_equipment | MTG_naval_Support.txt |
-| advanced_ship_torpedo_launcher | 1.5 | 1940 | mtgnavalsupportfolder | 0 | 13 | naval_equipment | MTG_naval_Support.txt |
-| modern_ship_torpedo_launcher | 1.5 | 1944 | mtgnavalsupportfolder | 0 | 19 | naval_equipment | MTG_naval_Support.txt |
-| damage_control_1 | 2.5 |  | mtgnavalsupportfolder | 0 | 1 | naval_equipment | MTG_naval_Support.txt |
-| damage_control_2 | 2.5 |  | mtgnavalsupportfolder | 0 | 6 | naval_equipment | MTG_naval_Support.txt |
-| damage_control_3 | 2.5 |  | mtgnavalsupportfolder | 0 | 12 | naval_equipment | MTG_naval_Support.txt |
-| fire_control_methods_1 | 2.5 |  | mtgnavalsupportfolder | 0 | 1 | naval_equipment | MTG_naval_Support.txt |
-| fire_control_methods_2 | 2.5 |  | mtgnavalsupportfolder | 0 | 6 | naval_equipment | MTG_naval_Support.txt |
-| fire_control_methods_3 | 2.5 |  | mtgnavalsupportfolder | 0 | 12 | naval_equipment | MTG_naval_Support.txt |
-| basic_naval_mines | 2 | 1922 | mtgnavalsupportfolder | 0 | 1 | naval_mines | MTG_naval_Support.txt |
-| submarine_mine_laying | 2 | 1922 | mtgnavalsupportfolder | 2 | 1 | naval_mines | MTG_naval_Support.txt |
-| improved_submarine_mine_laying | 2 | 1940 | mtgnavalsupportfolder | 2 | 13 | naval_mines | MTG_naval_Support.txt |
-| improved_naval_mines | 2 | 1936 | mtgnavalsupportfolder | 0 | 6 | naval_mines | MTG_naval_Support.txt |
-| degaussing | 1 | 1938 | mtgnavalsupportfolder | 1 | 10 | naval_mines | MTG_naval_Support.txt |
-| advanced_naval_mines | 2 | 1940 | mtgnavalsupportfolder | 0 | 13 | naval_mines | MTG_naval_Support.txt |
-| airdrop_mines | 2 | 1942 | mtgnavalsupportfolder | 2 | 16 | naval_mines | MTG_naval_Support.txt |
-| airdrop_mines_bba | 1 | 1942 | mtgnavalsupportfolder | 2 | 16 | naval_mines | MTG_naval_Support.txt |
-| airsweep_mines | 2 | 1942 | mtgnavalsupportfolder | 0 | 16 | naval_mines | MTG_naval_Support.txt |
-| airsweep_mines_bba | 1 | 1942 | mtgnavalsupportfolder | 0 | 16 | naval_mines | MTG_naval_Support.txt |
-| mtg_transport | 1.5 | 1922 | mtgnavalsupportfolder | 0 | 1 | naval_equipment | MTG_naval_Support.txt |
-| mtg_landing_craft | 2 | 1940 | mtgnavalsupportfolder | 0 | 13 | naval_equipment | MTG_naval_Support.txt |
-| mtg_tank_landing_craft | 2 | 1944 | mtgnavalsupportfolder | 0 | 19 | naval_equipment | MTG_naval_Support.txt |
-| sp_multi_product_supply_ships | 2.0 | 1938 | mtgnavalsupportfolder | 1 | 10 | naval_equipment | MTG_naval_Support.txt |
-| sp_standard_tenshioned_replenishment_alongside_method | 2.5 | 1943 | mtgnavalsupportfolder | 1 | 17 | naval_equipment | MTG_naval_Support.txt |
-| sp_improved_support_ship | 2 | 1942 | mtgnavalsupportfolder | -2 | 17 | naval_equipment | MTG_naval_Support.txt |
-| sp_improved_repair_ship | 2 | 1942 | mtgnavalsupportfolder | 0 | 17 | naval_equipment | MTG_naval_Support.txt |
 | early_destroyer | 1.5 | 1922 | naval_folder | 0 | 1 | naval_equipment | naval.txt |
 | basic_destroyer | 2 | 1936 | naval_folder | 0 | 7 | naval_equipment | naval.txt |
 | improved_destroyer | 2 | 1940 | naval_folder | 0 | 13 | naval_equipment | naval.txt |
@@ -461,35 +490,6 @@ Source: `common/technologies/*.txt`
 | advanced_submarine | 2 | 1944 | naval_folder | 0 | 19 | naval_equipment | naval.txt |
 | torpedo_cruiser | 1 | 1936 |  |  |  |  | naval.txt |
 | fleet_submarines |  |  |  |  |  |  | naval.txt |
-| gwtank_chassis | 2 | 1918 | nsb_armour_folder | 2 | 0 | armor | NSB_armor.txt |
-| basic_light_tank_chassis | 2 | 1934 | nsb_armour_folder | -1 | 2 | armor | NSB_armor.txt |
-| improved_light_tank_chassis | 2 | 1936 | nsb_armour_folder | -1 | 4 | armor | NSB_armor.txt |
-| amphibious_tank_chassis | 2 | 1938 | nsb_armour_folder | -4 | 5 | armor | NSB_armor.txt |
-| amphibious_drive | 2 | 1941 | nsb_armour_folder | -4 | 8 | armor | NSB_armor.txt |
-| advanced_light_tank_chassis | 2 | 1941 | nsb_armour_folder | -1 | 8 | armor | NSB_armor.txt |
-| basic_medium_tank_chassis | 2 | 1938 | nsb_armour_folder | 2 | @1937 | armor | NSB_armor.txt |
-| improved_medium_tank_chassis | 2 | 1940 | nsb_armour_folder | 2 | @1940 | armor | NSB_armor.txt |
-| advanced_medium_tank_chassis | 2 | 1943 | nsb_armour_folder | 2 | @1943 | armor | NSB_armor.txt |
-| main_battle_tank_chassis | 2.5 | 1945 | nsb_armour_folder | 2 | @1945 | armor | NSB_armor.txt |
-| basic_heavy_tank_chassis | 2 | 1934 | nsb_armour_folder | 5 | 2 | armor | NSB_armor.txt |
-| improved_heavy_tank_chassis | 2.5 | 1940 | nsb_armour_folder | 5 | @1940 | armor | NSB_armor.txt |
-| advanced_heavy_tank_chassis | 2.5 | 1943 | nsb_armour_folder | 5 | @1943 | armor | NSB_armor.txt |
-| super_heavy_tank_chassis | 3 | 1941 | nsb_armour_folder | 9 | @1941 | armor | NSB_armor.txt |
-| armor_tech_1 | 1 | 1936 | nsb_armour_folder | 3 | @1935 | armor | NSB_armor.txt |
-| armor_tech_2 | 1 | 1938 | nsb_armour_folder | 3 | @1938 | armor | NSB_armor.txt |
-| armor_tech_3 | 1 | 1941 | nsb_armour_folder | 3 | @1941 | armor | NSB_armor.txt |
-| armor_tech_4 | 1 | 1944 | nsb_armour_folder | 3 | @1944 | armor | NSB_armor.txt |
-| engine_tech_1 | 1 | 1934 | nsb_armour_folder | 2 | @1935 | armor | NSB_armor.txt |
-| engine_tech_2 | 1 | 1938 | nsb_armour_folder | 2 | @1938 | armor | NSB_armor.txt |
-| engine_tech_3 | 1 | 1941 | nsb_armour_folder | 2 | @1941 | armor | NSB_armor.txt |
-| engine_tech_4 | 1 | 1944 | nsb_armour_folder | 2 | @1944 | armor | NSB_armor.txt |
-| NOR_rikstanken_tech | 1 | 1936 |  |  |  | armor | NSB_armor.txt |
-| sp_armored_advanced_flamethrower_tech | 1 | 1941 | nsb_armour_folder | 12 | @1941 | armor | NSB_armor.txt |
-| sp_armored_lc_naval_engine_conversion_tech | 1 | 1943 | nsb_armour_folder | 7 | @1943 | armor | NSB_armor.txt |
-| sp_armored_lc_transmission_improvements_tech | 1 | 1943 | nsb_armour_folder | 9 | @1943 | armor | NSB_armor.txt |
-| sp_armored_lc_specialized_field_manuals_tech | 1 | 1943 | nsb_armour_folder | 11 | @1943 | armor | NSB_armor.txt |
-| sp_armored_lc_weapon_fire_control_tech | 1 | 1945 | nsb_armour_folder | 9 | @1945 | armor | NSB_armor.txt |
-| sp_armored_lc_high_impact_obliterator_cannon_tech | 1 | 1943 | nsb_armour_folder | 13 | @1943 | armor | NSB_armor.txt |
 | special_forces_mountaineers | 2.25 |  | special_forces_doctrine_folder | 0 | 0 | special_forces_doctrine | special_forces_doctrine.txt |
 | ski_troops | 4.5 |  | special_forces_doctrine_folder | -1 | 2 | special_forces_doctrine | special_forces_doctrine.txt |
 | rangers | 4.5 |  | special_forces_doctrine_folder | 1 | 2 | special_forces_doctrine | special_forces_doctrine.txt |

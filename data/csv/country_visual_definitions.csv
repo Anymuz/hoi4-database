@@ -41,6 +41,7 @@ BUL,eastern_european_gfx,eastern_european_2d
 BRM,asian_gfx,asian_2d
 BRD,african_gfx,african_2d
 BYA,asian_gfx,asian_2d
+CSA,western_european_gfx,western_european_2d
 CBV,southamerican_gfx,southamerican_2d
 CAM,asian_gfx,asian_2d
 CMR,african_gfx,african_2d
@@ -64,7 +65,6 @@ COR,western_european_gfx,western_european_2d
 COS,southamerican_gfx,southamerican_2d
 CRI,eastern_european_gfx,eastern_european_2d
 CRO,eastern_european_gfx,eastern_european_2d
-CSA,western_european_gfx,western_european_2d
 CUB,southamerican_gfx,southamerican_2d
 CRC,southamerican_gfx,southamerican_2d
 CYP,middle_eastern_gfx,middle_eastern_2d
@@ -359,6 +359,8 @@ TUN,middle_eastern_gfx,middle_eastern_2d
 TUR,eastern_european_gfx,eastern_european_2d
 TMS,asian_gfx,asian_2d
 TOS,western_european_gfx,western_european_2d
+USA,western_european_gfx,western_european_2d
+USB,western_european_gfx,western_european_2d
 UDM,eastern_european_gfx,eastern_european_2d
 UGA,african_gfx,african_2d
 UKR,eastern_european_gfx,eastern_european_2d
@@ -367,8 +369,6 @@ UBD,eastern_european_gfx,eastern_european_2d
 ENG,commonwealth_gfx,commonwealth_2d
 VOL,african_gfx,african_2d
 URG,southamerican_gfx,southamerican_2d
-USA,western_european_gfx,western_european_2d
-USB,western_european_gfx,western_european_2d
 UZB,asian_gfx,asian_2d
 VEN,southamerican_gfx,southamerican_2d
 VIN,asian_gfx,asian_2d

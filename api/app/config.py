@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     allowed_dates: list[str] = ["1936-01-01", "1939-08-14"] # Allowed dates for queries, reject anything else.
  
     # Configuration settings for loading from .env file.
-    model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
+    model_config = {"env_file": ".env", "env_file_encoding": "utf-8", "extra": "ignore"}
 # End of Settings class.
 
 # Optimisation: Cache the settings instance to avoid reloading on every access, settings are resource-intensive to create.

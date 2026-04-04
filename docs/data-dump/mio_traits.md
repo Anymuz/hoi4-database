@@ -584,22 +584,6 @@ Source: `common/military_industrial_organization/organizations/*.txt`
 | JAP_mio_trait_special_government_contracts_nissan_trait | JAP_nissan_organization | organization | add_trait | JAP_mio_trait_special_government_contracts_nissan_trait | GFX_generic_mio_trait_icon_efficiency_cap | yes | 1 | 2 | generic_mio_trait_closed_chassi |
 | JAP_mio_trait_cooperation_with_kurogane | JAP_nissan_organization | organization | add_trait | JAP_mio_trait_cooperation_with_kurogane | GFX_generic_mio_department_icon_facilities | yes | 1 | 0 | generic_mio_trait_closed_chassi |
 | PHI_mio_trait_widened_tires | JAP_tokyo_automobile_industries_organization | organization | add_trait | PHI_mio_trait_widened_tires | GFX_generic_mio_trait_icon_maximum_speed | yes | 0 | 1 | generic_mio_trait_reinforced_wheels |
-| custom_1 | my_custom_mio | template | trait |  |  |  | 0 | 0 |  |
-| custom_2 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 4 | 0 |  |
-| custom_3 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 8 | 0 |  |
-| custom_4 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 7 | 1 |  |
-| custom_5 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 9 | 1 |  |
-| custom_6 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 0 | 2 |  |
-| custom_7 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 4 | 2 |  |
-| custom_8 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 8 | 2 |  |
-| custom_9 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 2 | 3 |  |
-| custom_10 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 6 | 3 |  |
-| custom_11 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 0 | 4 |  |
-| custom_12 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 4 | 4 |  |
-| custom_13 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 8 | 4 |  |
-| custom_14 | my_mio_with_include | organization | add_trait |  | GFX_industrial_org_trait_placeholder |  | 2 | 1 |  |
-| set_capacity_to_0 | my_task_decrease_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 0 | 0 |  |
-| set_capacity_to_1 | my_task_decrease_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 1 | 0 |  |
 | NOR_mio_trait_convoy_production | NOR_akers_mekaniske_verksted_organization | organization | trait | NOR_shipping_capitalist | GFX_generic_mio_trait_icon_supply_consumption |  | 0 | 0 |  |
 | NOR_mio_trait_forsvarets_forskningsinstitutt | NOR_karljohansvern_verft_organization | organization | trait | NOR_mio_trait_forsvarets_forskningsinstitutt | GFX_generic_mio_department_icon_facilities |  | 9 | 0 |  |
 | NOR_mio_trait_trondhjems_mekaniske_vaerksted | NOR_karljohansvern_verft_organization | organization | trait | NOR_mio_trait_trondhjems_mekaniske_vaerksted | GFX_generic_mio_department_icon_ship_general_production |  | 3 | 0 |  |
@@ -686,3 +670,19 @@ Source: `common/military_industrial_organization/organizations/*.txt`
 | USA_mio_trait_smooth_finish | USA_grumman_organization | organization | add_trait | USA_mio_trait_smooth_finish | GFX_generic_mio_trait_icon_air_agility | yes | 2 | 1 | generic_mio_trait_reinforced_fuselage |
 | USA_mio_trait_jet_fighter_design | USA_grumman_organization | organization | add_trait | USA_mio_trait_jet_fighter_design | GFX_generic_mio_trait_icon_maximum_speed | yes | 1 | 1 | generic_mio_water_injection |
 | PHI_mio_trait_naval_caliber_artillery | USA_rock_island_arsenal_organization | organization | add_trait | PHI_mio_trait_naval_caliber_artillery | GFX_generic_mio_trait_icon_soft_attack | yes | 7 | 1 |  |
+| custom_1 | my_custom_mio | template | trait |  |  |  | 0 | 0 |  |
+| custom_2 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 4 | 0 |  |
+| custom_3 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 8 | 0 |  |
+| custom_4 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 7 | 1 |  |
+| custom_5 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 9 | 1 |  |
+| custom_6 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 0 | 2 |  |
+| custom_7 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 4 | 2 |  |
+| custom_8 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 8 | 2 |  |
+| custom_9 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 2 | 3 |  |
+| custom_10 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 6 | 3 |  |
+| custom_11 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 0 | 4 |  |
+| custom_12 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 4 | 4 |  |
+| custom_13 | my_custom_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 8 | 4 |  |
+| custom_14 | my_mio_with_include | organization | add_trait |  | GFX_industrial_org_trait_placeholder |  | 2 | 1 |  |
+| set_capacity_to_0 | my_task_decrease_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 0 | 0 |  |
+| set_capacity_to_1 | my_task_decrease_mio | template | trait |  | GFX_industrial_org_trait_placeholder |  | 1 | 0 |  |

@@ -44,14 +44,8 @@ class StateSummary(BaseModel):
 # End of StateSummary model
 
 # Full details of a state, includes all nested data
-class StateDetail(BaseModel):
-    state_id: int                                       # Unique state ID
-    state_name_key: str                                 # Localisation key
-    state_name: str | None = None                       # Human-readable name (e.g. "Brandenburg")
-    state_category: str | None = None                   # e.g. "large_city", "rural"
-    manpower: int | None = None                         # Base manpower
+class StateDetail(StateSummary):
     local_supplies: float | None = None                 # Supply value (decimal)
-    owner_tag: str | None = None                        # Owning country tag
     controller_tag: str | None = None                   # Controlling country tag (differs if occupied)
     resources: list[StateResource] = []                 # Steel, oil, etc.
     state_buildings: list[StateBuilding] = []           # Arms factories, civs, etc.

@@ -4,6 +4,13 @@ Source: `common/national_focus/*.txt`
 
 | focus_id | link_type | linked_focus_id | source_file |
 |---|---|---|---|
+| GXC_question_chiangs_authority | prerequisite | GXC_the_japanese_visit | TSR_lingguang_incident_joint_branch.txt |
+| GXC_rumors_of_deposition | prerequisite | GXC_the_japanese_visit | TSR_lingguang_incident_joint_branch.txt |
+| GXC_the_scorched_earth_speech | prerequisite | GXC_question_chiangs_authority | TSR_lingguang_incident_joint_branch.txt |
+| GXC_denounce_chiang | prerequisite | GXC_rumors_of_deposition | TSR_lingguang_incident_joint_branch.txt |
+| GXC_formation_of_the_nraja | prerequisite | GXC_denounce_chiang | TSR_lingguang_incident_joint_branch.txt |
+| GXC_formation_of_the_nraja | prerequisite | GXC_the_scorched_earth_speech | TSR_lingguang_incident_joint_branch.txt |
+| GXC_declare_opposition | prerequisite | GXC_formation_of_the_nraja | TSR_lingguang_incident_joint_branch.txt |
 | AFG_sugar_processing | prerequisite | AFG_expand_telegraph_network | afghanistan.txt |
 | AFG_fruit_packing | prerequisite | AFG_expand_telegraph_network | afghanistan.txt |
 | AFG_clear_malarial_swamps | prerequisite | AFG_expand_telegraph_network | afghanistan.txt |
@@ -10729,13 +10736,6 @@ Source: `common/national_focus/*.txt`
 | SMB_jungle_warfare_training | prerequisite | SMB_regular_infantry | toa_shared_military_branch.txt |
 | SMB_jungle_pioneers | prerequisite | SMB_jungle_warfare_training | toa_shared_military_branch.txt |
 | SMB_brown_water_navy | prerequisite | SMB_jungle_warfare_training | toa_shared_military_branch.txt |
-| GXC_question_chiangs_authority | prerequisite | GXC_the_japanese_visit | TSR_lingguang_incident_joint_branch.txt |
-| GXC_rumors_of_deposition | prerequisite | GXC_the_japanese_visit | TSR_lingguang_incident_joint_branch.txt |
-| GXC_the_scorched_earth_speech | prerequisite | GXC_question_chiangs_authority | TSR_lingguang_incident_joint_branch.txt |
-| GXC_denounce_chiang | prerequisite | GXC_rumors_of_deposition | TSR_lingguang_incident_joint_branch.txt |
-| GXC_formation_of_the_nraja | prerequisite | GXC_denounce_chiang | TSR_lingguang_incident_joint_branch.txt |
-| GXC_formation_of_the_nraja | prerequisite | GXC_the_scorched_earth_speech | TSR_lingguang_incident_joint_branch.txt |
-| GXC_declare_opposition | prerequisite | GXC_formation_of_the_nraja | TSR_lingguang_incident_joint_branch.txt |
 | TUR_continue_the_policy_of_etatism | prerequisite | TUR_the_montreux_convention | turkey.txt |
 | TUR_continue_the_policy_of_etatism | mutually_exclusive | TUR_fully_integrate_the_is_bank | turkey.txt |
 | TUR_fully_integrate_the_is_bank | prerequisite | TUR_the_montreux_convention | turkey.txt |

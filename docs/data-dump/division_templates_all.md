@@ -240,11 +240,6 @@ Source: `history/units/*.txt excluding _naval_/_air_`
 | Bogazi Tugay | TUR_GAR_01 | TUR_1936.txt |
 | Süvari Tümeni | TUR_CAV_01 | TUR_1936.txt |
 | Zirhli Tümeni | TUR_ARM_01 | TUR_1936.txt |
-| Marines |  | unlock_marines.txt |
-| Motorized-Division |  | unlock_motorized.txt |
-| Mountaineer-Division |  | unlock_mountineers.txt |
-| Paratroopers |  | unlock_paratroopers.txt |
-| Rangers |  | unlock_rangers.txt |
 | National Guard Division | USA_INF_01 | USA_1936.txt |
 | Garrison Brigade | USA_GAR_01 | USA_1936.txt |
 | Marine Brigade | USA_MAR_01 | USA_1936.txt |
@@ -255,3 +250,8 @@ Source: `history/units/*.txt excluding _naval_/_air_`
 | Gorska Pesadija | YUG_MTN_01 | YUG_1936.txt |
 | Konjička Divizija | YUG_CAV_01 | YUG_1936.txt |
 | Tenkovski Bataljon | YUG_ARM_01 | YUG_1936.txt |
+| Marines |  | unlock_marines.txt |
+| Motorized-Division |  | unlock_motorized.txt |
+| Mountaineer-Division |  | unlock_mountineers.txt |
+| Paratroopers |  | unlock_paratroopers.txt |
+| Rangers |  | unlock_rangers.txt |

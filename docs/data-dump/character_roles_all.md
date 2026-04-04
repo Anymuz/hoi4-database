@@ -5192,6 +5192,27 @@ Source: `common/characters/*.txt`
 | VOL_ncs | advisor |  | VOL.txt |
 | VOL_awt | advisor |  | VOL.txt |
 | VOL_acas | advisor |  | VOL.txt |
+| WLS_acr | advisor |  | WLS.txt |
+| WLS_stc | advisor |  | WLS.txt |
+| WLS_awt | advisor |  | WLS.txt |
+| WLS_pot | advisor |  | WLS.txt |
+| WLS_mt | advisor |  | WLS.txt |
+| WLS_ncm | advisor |  | WLS.txt |
+| WLS_nt | advisor |  | WLS.txt |
+| WLS_acd2 | advisor |  | WLS.txt |
+| WLS_fascist_guy | advisor |  | WLS.txt |
+| WLS_ncs | advisor |  | WLS.txt |
+| WLS_nccr | advisor |  | WLS.txt |
+| WLS_aco2 | advisor |  | WLS.txt |
+| WLS_communist_guy | advisor |  | WLS.txt |
+| WLS_ai2 | advisor |  | WLS.txt |
+| WLS_ar | advisor |  | WLS.txt |
+| WLS_coi | advisor |  | WLS.txt |
+| WLS_acas | advisor |  | WLS.txt |
+| WLS_acgs | advisor |  | WLS.txt |
+| WLS_aa2 | advisor |  | WLS.txt |
+| WLS_democratic_guy | advisor |  | WLS.txt |
+| WUR_philipp_albrecht | country_leader | despotism | WUR.txt |
 | SIK_sheng_shicai | country_leader | stalinism | Warlords_China.txt |
 | SIK_chiang_yufen | corps_commander |  | Warlords_China.txt |
 | SIK_sheng_shiqi | corps_commander |  | Warlords_China.txt |
@@ -5337,27 +5358,6 @@ Source: `common/characters/*.txt`
 | KHM_ma_shaowu | advisor |  | Warlords_China.txt |
 | KHM_khoya_niyaz | advisor |  | Warlords_China.txt |
 | KHM_muhammad_amin_bughra | advisor |  | Warlords_China.txt |
-| WLS_acr | advisor |  | WLS.txt |
-| WLS_stc | advisor |  | WLS.txt |
-| WLS_awt | advisor |  | WLS.txt |
-| WLS_pot | advisor |  | WLS.txt |
-| WLS_mt | advisor |  | WLS.txt |
-| WLS_ncm | advisor |  | WLS.txt |
-| WLS_nt | advisor |  | WLS.txt |
-| WLS_acd2 | advisor |  | WLS.txt |
-| WLS_fascist_guy | advisor |  | WLS.txt |
-| WLS_ncs | advisor |  | WLS.txt |
-| WLS_nccr | advisor |  | WLS.txt |
-| WLS_aco2 | advisor |  | WLS.txt |
-| WLS_communist_guy | advisor |  | WLS.txt |
-| WLS_ai2 | advisor |  | WLS.txt |
-| WLS_ar | advisor |  | WLS.txt |
-| WLS_coi | advisor |  | WLS.txt |
-| WLS_acas | advisor |  | WLS.txt |
-| WLS_acgs | advisor |  | WLS.txt |
-| WLS_aa2 | advisor |  | WLS.txt |
-| WLS_democratic_guy | advisor |  | WLS.txt |
-| WUR_philipp_albrecht | country_leader | despotism | WUR.txt |
 | YAK_pavel_pevznyak | country_leader | stalinism | YAK.txt |
 | YAK_anatoly_pepelyayev | country_leader | oligarchism | YAK.txt |
 | YEM_imam_yahya | country_leader | despotism | YEM.txt |

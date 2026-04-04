@@ -115,7 +115,7 @@ COPY bop_ranges (range_id, bop_key, side_id, min_value, max_value) FROM '/data_c
 COPY strategic_region_provinces (strategic_region_id, province_id) FROM '/data_csv/strategic_region_provinces.csv' WITH (FORMAT csv, HEADER);
 COPY state_provinces (state_id, province_id, source_file) FROM '/data_csv/state_provinces.csv' WITH (FORMAT csv, HEADER);
 COPY state_resources (state_id, resource_key, amount, source_file) FROM '/data_csv/state_resources.csv' WITH (FORMAT csv, HEADER);
-COPY state_buildings (state_id, building_key, level, source_file) FROM '/data_csv/state_buildings.csv' WITH (FORMAT csv, HEADER);
+COPY state_buildings (state_id, building_key, level, effective_date, source_file) FROM '/data_csv/state_buildings.csv' WITH (FORMAT csv, HEADER);
 COPY state_victory_points (state_id, province_id, victory_points, source_file) FROM '/data_csv/state_victory_points.csv' WITH (FORMAT csv, HEADER);
 COPY province_buildings (province_id, state_id, building_key, effective_date, level, source_file, dlc_source) FROM '/data_csv/province_buildings.csv' WITH (FORMAT csv, HEADER);
 COPY countries (tag, country_file_path, graphical_culture, graphical_culture_2d, color_r, color_g, color_b, capital_state_id, stability, war_support) FROM '/data_csv/countries.csv' WITH (FORMAT csv, HEADER);
@@ -131,11 +131,11 @@ COPY bop_range_modifiers (range_id, modifier_key, modifier_value) FROM '/data_cs
 COPY state_ownership_history (state_id, effective_date, owner_tag, controller_tag, source_file, dlc_source) FROM '/data_csv/state_ownership_history.csv' WITH (FORMAT csv, HEADER);
 COPY province_controller_history (province_id, state_id, effective_date, controller_tag, source_file, dlc_source) FROM '/data_csv/province_controller_history.csv' WITH (FORMAT csv, HEADER);
 COPY state_cores (state_id, country_tag, effective_date, source_file, dlc_source) FROM '/data_csv/state_cores.csv' WITH (FORMAT csv, HEADER);
-COPY country_starting_technologies (country_tag, technology_key, source_file) FROM '/data_csv/country_starting_technologies.csv' WITH (FORMAT csv, HEADER);
+COPY country_starting_technologies (country_tag, technology_key, effective_date, source_file, dlc_source) FROM '/data_csv/country_starting_technologies.csv' WITH (FORMAT csv, HEADER);
 COPY country_starting_ideas (country_tag, idea_key, effective_date, source_file, dlc_source) FROM '/data_csv/country_starting_ideas.csv' WITH (FORMAT csv, HEADER);
 COPY characters (character_id, name_key, gender, source_file) FROM '/data_csv/characters.csv' WITH (FORMAT csv, HEADER);
 COPY division_templates (template_name, division_names_group, source_file) FROM '/data_csv/division_templates.csv' WITH (FORMAT csv, HEADER);
-COPY equipment_variants (owner_tag, base_equipment_key, version_name, source_file) FROM '/data_csv/equipment_variants.csv' WITH (FORMAT csv, HEADER);
+COPY equipment_variants (owner_tag, base_equipment_key, version_name, effective_date, source_file) FROM '/data_csv/equipment_variants.csv' WITH (FORMAT csv, HEADER);
 COPY fleets (country_tag, fleet_name, naval_base_province_id, source_file) FROM '/data_csv/fleets.csv' WITH (FORMAT csv, HEADER);
 COPY air_wings (country_tag, location_state_id, wing_name, equipment_type, amount, version_name, source_file) FROM '/data_csv/air_wings.csv' WITH (FORMAT csv, HEADER);
 COPY focus_trees (focus_tree_id, initial_x, initial_y, source_file) FROM '/data_csv/focus_trees.csv' WITH (FORMAT csv, HEADER);

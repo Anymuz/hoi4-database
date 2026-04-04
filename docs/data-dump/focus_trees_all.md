@@ -4,6 +4,7 @@ Source: `common/national_focus/*.txt`
 
 | focus_tree_id | initial_x | initial_y | source_file |
 |---|---|---|---|
+| TSR_lingguang_incident_joint_branch_shared |  |  | TSR_lingguang_incident_joint_branch.txt |
 | afghanistan_tree |  |  | afghanistan.txt |
 | argentine_focus_tree | 25 | 0 | argentina.txt |
 | australian_focus |  |  | australia.txt |
@@ -71,7 +72,6 @@ Source: `common/national_focus/*.txt`
 | sweden_focus | 37 | 0 | sweden.txt |
 | swiss_focus | 36 | 0 | switzerland.txt |
 | toa_shared_military_branch_shared |  |  | toa_shared_military_branch.txt |
-| TSR_lingguang_incident_joint_branch_shared |  |  | TSR_lingguang_incident_joint_branch.txt |
 | turkish_focus | 20 | 0 | turkey.txt |
 | british_focus |  |  | uk.txt |
 | uruguay_focus | 10 | 0 | uruguay.txt |

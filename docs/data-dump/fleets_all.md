@@ -14,11 +14,6 @@ Source: `history/units/*naval*.txt excluding legacy`
 | CHL | Armada de Chile | 8222 | CHL_1936_naval_mtg.txt |
 | COL | Armada Nacional | 12790 | COL_1936_naval_mtg.txt |
 | DEN | Den Danske Flåde | 6287 | DEN_1936_naval_mtg.txt |
-| ENG | Home Command | 11064 | ENG_1936_Naval.txt |
-| ENG | Mediterranean Command | 4076 | ENG_1936_Naval.txt |
-| ENG | North and South Americas Command | 2038 | ENG_1936_Naval.txt |
-| ENG | Far East Command | 12299 | ENG_1936_Naval.txt |
-| ENG | Foreign Stations Command | 11064 | ENG_1939_Naval.txt |
 | EST | Eesti Sojalaevastikl | 3152 | EST_1939_naval_mtg.txt |
 | FIN | Suomen Merivoimat | 11105 | FIN_1936_naval_mtg.txt |
 | FRA | Amiral Nord | 575 | FRA_1936_naval_mtg.txt |

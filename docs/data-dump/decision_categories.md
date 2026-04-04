@@ -94,7 +94,6 @@ Source: `common/decisions/categories/*.txt`
 | AFG_kabul_conference_category | GFX_decision_category_border_conflicts |  | 40 | AFG_decision_categories.txt |
 | AFG_turkestan_legion_cat | GFX_decision_category_ger_reichskommissariats |  | 20 | AFG_decision_categories.txt |
 | AFG_sikh_recruitment_cat | GFX_decision_category_army_reform |  | 5 | AFG_decision_categories.txt |
-| african_union_category | GFX_decision_category_ETH_orginization_of_african_unity | GFX_decision_cat_picture_generic_african_unity |  | African_Union_decision_categories.txt |
 | ARG_intervenciones_federales_decisions | GFX_decision_category_generic_political_actions | GFX_decision_cat_picture_soviet_comecon | 35 | ARG_decision_categories.txt |
 | ARG_international_loan_decisions | GFX_decision_category_gre_paying_ifc_debt | GFX_decision_cat_picture_ARG_international_loan_decisions | 35 | ARG_decision_categories.txt |
 | ARG_balancing_act_decisions | GFX_decision_category_power_struggle | GFX_decision_cat_picture_soviet_national_academy_of_sciences | 35 | ARG_decision_categories.txt |
@@ -108,6 +107,7 @@ Source: `common/decisions/categories/*.txt`
 | AUS_the_danubian_federation_category | GFX_decision_generic_political_address | GFX_decision_cat_picture_danubian_federation | 80 | AUS_decision_categories.txt |
 | AUS_danubian_communism_category | GFX_decision_category_SOV_permanent_revolution | GFX_decision_cat_picture_chi_political_support | 80 | AUS_decision_categories.txt |
 | AUS_reintegrating_the_empire_category | GFX_decision_category_generic_political_actions |  | 80 | AUS_decision_categories.txt |
+| african_union_category | GFX_decision_category_ETH_orginization_of_african_unity | GFX_decision_cat_picture_generic_african_unity |  | African_Union_decision_categories.txt |
 | LIT_iron_wolf_coup | saf_anti_colonialist_crusade |  | 10 | BALTIC_decision_categories.txt |
 | LIT_iron_wolf_appeasement | saf_anti_colonialist_crusade |  | 9 | BALTIC_decision_categories.txt |
 | support_polish_falange_decisions | saf_anti_colonialist_crusade |  | 9 | BALTIC_decision_categories.txt |
@@ -328,7 +328,6 @@ Source: `common/decisions/categories/*.txt`
 | HUN_balkan_union_category | generic_formable_nations |  | 30 | HUN_decision_categories.txt |
 | ICE_infiltrate_the_british_isles_category | GFX_decision_category_ICE_infiltrate_the_british_isles |  | 50 | ICE_decision_categories.txt |
 | ICE_improve_the_viking_spirit | GFX_decision_category_ICE_the_viking_spirit |  | 100 | ICE_decision_categories.txt |
-| communist_infiltration |  |  |  | infiltration_decision_categories.txt |
 | IRQ_arab_free_legion_cat | GFX_decision_category_ger_reichskommissariats |  | 20 | IRQ_decision_categories.txt |
 | greater_iraq_decision_cat | GFX_decision_category_generic_political_actions |  | 20 | IRQ_decision_categories.txt |
 | united_arab_republic_cat | GFX_decision_category_generic_political_actions |  | 20 | IRQ_decision_categories.txt |
@@ -375,6 +374,8 @@ Source: `common/decisions/categories/*.txt`
 | MEX_category_territorial_integration | border_war |  | 90 | MEX_decision_categories.txt |
 | MEX_category_church_power | power_struggle |  | 80 | MEX_decision_categories.txt |
 | MEX_category_hispanic_solidarity | generic_political_actions |  | 90 | MEX_decision_categories.txt |
+| NORDIC_debug_decisions_category | saf_anti_colonialist_crusade |  | 69 | NORDIC_decision_categories.txt |
+| NORDIC_cooperation_decisions_category |  |  | 70 | NORDIC_decision_categories.txt |
 | NOR_debug_decisions_category | saf_anti_colonialist_crusade |  | 1000 | NOR_decision_categories.txt |
 | NOR_exile_decisions_category | generic_formable_nations | GFX_decision_cat_picture_NOR_ship_building | 9 | NOR_decision_categories.txt |
 | NOR_democratic_preparation_decisions_category | GFX_decision_category_generic_industry | GFX_decision_cat_generic_mefo_bills | 7 | NOR_decision_categories.txt |
@@ -387,8 +388,6 @@ Source: `common/decisions/categories/*.txt`
 | NOR_monarchist_preparation_decisions_category | GFX_decision_category_generic_monarchism | GFX_decision_cat_picture_NOR_monarchism | 7 | NOR_decision_categories.txt |
 | NOR_mobile_government_decisions_category | GFX_decision_category_generic_crisis | GFX_decision_cat_picture_NOR_olav_and_haakon | 8 | NOR_decision_categories.txt |
 | NOR_convert_merchant_ships_decisions_category | GFX_decision_category_generic_crisis |  | 8 | NOR_decision_categories.txt |
-| NORDIC_debug_decisions_category | saf_anti_colonialist_crusade |  | 69 | NORDIC_decision_categories.txt |
-| NORDIC_cooperation_decisions_category |  |  | 70 | NORDIC_decision_categories.txt |
 | PER_profit_from_war_category | GFX_decision_category_generic_economy | GFX_decision_cat_picture_seize_gold_reserves | 35 | PER_decision_categories.txt |
 | PER_integrate_anatolia_decisions_category | GFX_decision_category_generic_political_actions | GFX_decision_cat_picture_integrate_anatolia | 35 | PER_decision_categories.txt |
 | PER_absorb_byzantines_category | GFX_decision_category_generic_political_actions | GFX_decision_cat_generic_byzantine_empire | 35 | PER_decision_categories.txt |
@@ -445,7 +444,6 @@ Source: `common/decisions/categories/*.txt`
 | PRC_rural_surveyer_decision_cat | GFX_decision_category_generic_communist_revolution |  | 1 | PRC_decision_categories.txt |
 | PRC_integration_decision_cat | GFX_decision_category_generic_communist_revolution |  | 1 | PRC_decision_categories.txt |
 | PRU_pastaza_conflict | GFX_decision_category_border_conflicts |  | 100 | PRU_decision_categories.txt |
-| RAJ_population_decisions | generic_prospect_for_resources |  | 101 | RAJ_decision_categories.txt |
 | RAJ_GOE_independence_movement | GFX_decision_category_spr_the_seeds_of_revolution |  | 101 | RAJ_GOE_decision_categories.txt |
 | RAJ_GOE_tea_exports_cat | GFX_decision_category_gre_investment_decisions |  |  | RAJ_GOE_decision_categories.txt |
 | RAJ_GOE_sikh_recruitment_cat | GFX_decision_category_army_reform |  |  | RAJ_GOE_decision_categories.txt |
@@ -463,6 +461,7 @@ Source: `common/decisions/categories/*.txt`
 | RAJ_peasant_uprisings_cat | GFX_decision_category_NOR_fascist_deploy_prep |  | 100 | RAJ_GOE_decision_categories.txt |
 | RAJ_work_with_local_leaders_cat | GFX_decision_category_generic_industry |  | 110 | RAJ_GOE_decision_categories.txt |
 | RAJ_concessions_to_the_congress_cat | eng_concessions_to_the_trade_unions | GFX_decision_cat_picture_concessions_to_the_trade_unions | 105 | RAJ_GOE_decision_categories.txt |
+| RAJ_population_decisions | generic_prospect_for_resources |  | 101 | RAJ_decision_categories.txt |
 | ROM_change_sides | GFX_decision_category_generic_political_actions |  |  | ROM_decision_categories.txt |
 | ROM_dividing_yugo | GFX_decision_category_generic_fascism |  |  | ROM_decision_categories.txt |
 | SOV_paranoia_system | SOV_paranoia |  | 101 | SOV_decision_categories.txt |
@@ -544,3 +543,4 @@ Source: `common/decisions/categories/*.txt`
 | YUG_crush_ustasa | saf_anti_colonialist_crusade |  |  | YUG_decision_categories.txt |
 | YUG_delay_ustasa_uprising | saf_anti_colonialist_crusade |  |  | YUG_decision_categories.txt |
 | YUG_progress_crushing_decisions | saf_anti_colonialist_crusade |  |  | YUG_decision_categories.txt |
+| communist_infiltration |  |  |  | infiltration_decision_categories.txt |
