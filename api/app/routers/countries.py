@@ -5,11 +5,10 @@ from app.database import get_db
 from app.dependencies import get_effective_date
 from app.schemas.country import CountrySummary, CountryDetail
 
-# All country endpoints live under /api/v1/countries
-router = APIRouter(prefix="/api/v1/countries", tags=["Countries"])
+router = APIRouter(prefix="/api/v1", tags=["Countries"])
 
 # GET /api/v1/countries, list all countries (paginated, date-sensitive)
-@router.get("", response_model=list[CountrySummary])
+@router.get("/countries", response_model=list[CountrySummary])
 async def list_countries(
     effective_date: date = Depends(get_effective_date),
     limit: int = Query(50, ge=1, le=500),
@@ -29,7 +28,7 @@ async def list_countries(
 # End of country list endpoint
 
 # GET /api/v1/countries/{tag}, full detail for one country (date-sensitive)
-@router.get("/{tag}", response_model=CountryDetail)
+@router.get("/countries/{tag}", response_model=CountryDetail)
 async def get_country(
     tag: str,
     effective_date: date = Depends(get_effective_date),

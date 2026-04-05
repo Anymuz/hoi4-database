@@ -5,12 +5,11 @@ from app.database import get_db
 from app.dependencies import get_effective_date
 from app.schemas.state import StateSummary, StateDetail
 
-# All state endpoints live under /api/v1/states
-router = APIRouter(prefix="/api/v1/states", tags=["States"])
+router = APIRouter(prefix="/api/v1", tags=["States"])
 
 # GET /api/v1/states, list all states (paginated, date-sensitive)
 # Optional ?owner_tag=GER to filter by owning country
-@router.get("", response_model=list[StateSummary])
+@router.get("/states", response_model=list[StateSummary])
 async def list_states(
     effective_date: date = Depends(get_effective_date),
     owner_tag: str | None = Query(None, description="Filter by owner country tag (e.g. GER)"),
@@ -43,7 +42,7 @@ async def list_states(
 # End of state list endpoint
 
 # GET /api/v1/states/{state_id}, full detail for one state (date-sensitive)
-@router.get("/{state_id}", response_model=StateDetail)
+@router.get("/states/{state_id}", response_model=StateDetail)
 async def get_state(
     state_id: int,
     effective_date: date = Depends(get_effective_date),

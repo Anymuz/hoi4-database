@@ -30,9 +30,9 @@ class CountrySummary(BaseModel):
 
 # Full details of a country, includes all data including states and tech.
 class CountryDetail(CountrySummary):
-    graphical_culture: str | None = None    # Graphical culture for unit appearances
-    graphical_culture_2d: str | None = None # Graphical culture for 2D UI elements
-    color_rgb: ColorRGB | None = None       # Country color for UI elements
+    graphical_culture: str | None = None             # Graphical culture for unit appearances
+    graphical_culture_2d: str | None = None          # Graphical culture for 2D UI elements
+    color_rgb: ColorRGB | None = None                # Country color for UI elements
     owned_states: list[OwnedState] = []              # List of states owned by the country
     starting_technologies: list[StartingTech] = []   # List of starting technologies for the country
 # End of CountryDetail model

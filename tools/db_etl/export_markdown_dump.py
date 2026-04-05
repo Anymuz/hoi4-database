@@ -1189,7 +1189,9 @@ def parse_characters_all() -> Tuple[int, int]:
                 continue
             name = re.search(r"\bname\s*=\s*([A-Za-z0-9_]+)", blk)
             gender = re.search(r"\bgender\s*=\s*([a-z]+)", blk)
-            crows.append([cid, name.group(1) if name else "", gender.group(1) if gender else "male", fp.name])
+            # Derive country_tag from character_id prefix (e.g. GER_erwin_rommel → GER)
+            country_tag = cid.split("_")[0] if "_" in cid else ""
+            crows.append([cid, name.group(1) if name else "", country_tag, gender.group(1) if gender else "male", fp.name])
             if "country_leader" in blk:
                 ide = re.search(r"country_leader\s*=\s*\{[\s\S]*?ideology\s*=\s*([a-zA-Z0-9_]+)", blk)
                 rrows.append([cid, "country_leader", ide.group(1) if ide else "", fp.name])
@@ -1201,7 +1203,7 @@ def parse_characters_all() -> Tuple[int, int]:
                 rrows.append([cid, "advisor", "", fp.name])
     crows = dedup_rows(crows, [0])
     rrows = dedup_rows(rrows, [0, 1])
-    write_md(OUT / "characters_all.md", "Characters (All Files)", ["character_id", "name_key", "gender", "source_file"], crows, "common/characters/*.txt")
+    write_md(OUT / "characters_all.md", "Characters (All Files)", ["character_id", "name_key", "country_tag", "gender", "source_file"], crows, "common/characters/*.txt")
     write_md(OUT / "character_roles_all.md", "Character Roles (All Files)", ["character_id", "role_type", "ideology", "source_file"], rrows, "common/characters/*.txt")
     return len(crows), len(rrows)
 

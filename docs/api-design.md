@@ -504,12 +504,38 @@ dlc_source: str | None          # only populated here (from country_starting_tec
 
 | Method | Path | SQL Source | Description |
 |--------|------|------------|-------------|
-| GET | `/api/v1/countries/{tag}/characters` | `api_country_characters` view | All characters for a country |
-| GET | `/api/v1/characters/{character_id}` | `api_country_characters` view | Single character |
+| GET | `/api/v1/countries/{tag}/characters` | `api_country_characters` view | List characters (lightweight, no roles) |
+| GET | `/api/v1/characters/{character_id}` | `api_country_characters` view | Single character (full, with roles) |
 
 Not date-sensitive — characters don't change between bookmarks.
 
-**Response model (`CharacterDetail`):**
+**SQL Queries:**
+
+List characters for a country (paginated, lightweight — omit roles):
+```sql
+SELECT character_id, name_key, country_tag, gender
+FROM api_country_characters
+WHERE country_tag = $1
+ORDER BY character_id
+LIMIT $2 OFFSET $3
+```
+
+Single character by ID (full, with roles):
+```sql
+SELECT character_id, name_key, country_tag, gender, roles
+FROM api_country_characters
+WHERE character_id = $1
+```
+
+**Response model (`CharacterSummary` — for the list endpoint):**
+```
+character_id: str
+name_key: str
+country_tag: str
+gender: str | None
+```
+
+**Response model (`CharacterDetail` — for the detail endpoint):**
 ```
 character_id: str
 name_key: str
@@ -546,14 +572,40 @@ oob_file suffix to the requested date:
 ```python
 # Determine which OOB file suffix matches the requested date
 oob_suffix = "1936" if effective_date.year == 1936 else "1939"
-rows = await db.fetch(
-    """
-    SELECT * FROM api_country_divisions
-    WHERE country_tag = $1
-      AND (oob_file LIKE '%_' || $2 || '%' OR oob_file IS NULL)
-    """,
-    tag.upper(), oob_suffix,
-)
+```
+
+**SQL Queries:**
+
+Divisions for a country (date-filtered via OOB file):
+```sql
+SELECT country_tag, division_template_id, template_name, oob_file,
+       regiments, support, deployed_divisions
+FROM api_country_divisions
+WHERE country_tag = $1
+  AND (oob_file LIKE '%_' || $2 || '%' OR oob_file IS NULL OR oob_file = '')
+ORDER BY template_name
+```
+- `$1` = country tag (e.g. `'GER'`)
+- `$2` = OOB year suffix (e.g. `'1936'` or `'1939'`)
+
+Naval forces for a country (date-filtered via OOB file):
+```sql
+SELECT country_tag, fleet_id, fleet_name, naval_base_province_id, oob_file,
+       task_forces
+FROM api_country_naval
+WHERE country_tag = $1
+  AND (oob_file LIKE '%_' || $2 || '%' OR oob_file IS NULL OR oob_file = '')
+ORDER BY fleet_name
+```
+
+Air wings for a country (date-filtered via OOB file):
+```sql
+SELECT country_tag, location_state_id, state_name_key,
+       equipment_type, amount, wing_name, version_name, oob_file
+FROM api_country_air
+WHERE country_tag = $1
+  AND (oob_file LIKE '%_' || $2 || '%' OR oob_file IS NULL OR oob_file = '')
+ORDER BY location_state_id
 ```
 
 **Division response model:**
@@ -567,6 +619,41 @@ support: list[SupportCompany]       # [{unit_type_key, grid_x, grid_y}]
 deployed_divisions: list[Deployed]  # [{location_province_id, start_experience_factor}]
 ```
 
+**Naval response model (`NavalDetail`):**
+```
+country_tag: str
+fleet_id: int
+fleet_name: str
+naval_base_province_id: int | None
+oob_file: str | None
+task_forces: list[TaskForce]
+
+# Where TaskForce is:
+task_force_id: int
+task_force_name: str
+location_province_id: int | None
+ships: list[Ship]
+
+# Where Ship is:
+ship_name: str
+definition: str
+hull_equipment_key: str
+version_name: str | None
+pride_of_the_fleet: bool | None
+```
+
+**Air response model (`AirWingItem`):**
+```
+country_tag: str
+location_state_id: int
+state_name_key: str
+equipment_type: str
+amount: int
+wing_name: str | None
+version_name: str | None
+oob_file: str | None
+```
+
 ### 6.6 Focus Trees (Slice B)
 
 | Method | Path | SQL Source | Description |
@@ -576,6 +663,53 @@ deployed_divisions: list[Deployed]  # [{location_province_id, start_experience_f
 | GET | `/api/v1/countries/{tag}/focus-tree` | `api_focus_tree_detail` view | Tree for a country |
 
 Not date-sensitive. Focus trees are static.
+
+**SQL Queries:**
+
+List all focus trees (paginated, lightweight — omit the focuses array):
+```sql
+SELECT focus_tree_id, country_tag
+FROM api_focus_tree_detail
+ORDER BY focus_tree_id
+LIMIT $1 OFFSET $2
+```
+
+Single focus tree with all focuses:
+```sql
+SELECT focus_tree_id, country_tag, focuses
+FROM api_focus_tree_detail
+WHERE focus_tree_id = $1
+```
+
+Focus tree for a country:
+```sql
+SELECT focus_tree_id, country_tag, focuses
+FROM api_focus_tree_detail
+WHERE country_tag = $1
+```
+
+**Response model (`FocusTreeSummary` — for the list endpoint):**
+```
+focus_tree_id: str
+country_tag: str | None
+```
+
+**Response model (`FocusTreeDetail` — for single tree / country endpoints):**
+```
+focus_tree_id: str
+country_tag: str | None
+focuses: list[FocusItem]
+
+# Where FocusItem is:
+focus_id: str
+cost: float | None
+x_pos: int | None
+y_pos: int | None
+icon: str | None
+dlc_source: str | None
+prerequisites: list[FocusPrereq]        # [{group, required_focus_id}]
+mutually_exclusive: list[str]            # [focus_id, ...]
+```
 
 ### 6.7 Equipment Catalog (Slice B)
 
@@ -588,6 +722,75 @@ Not date-sensitive. Focus trees are static.
 
 Not date-sensitive. Equipment definitions don't change between bookmarks.
 
+**SQL Queries:**
+
+List all equipment (paginated):
+```sql
+SELECT equipment_key, is_archetype, archetype_key, parent_key, year,
+       build_cost_ic, reliability, maximum_speed, defense, breakthrough,
+       soft_attack, hard_attack, ap_attack, air_attack, armor_value,
+       hardness, dlc_source, resources
+FROM api_equipment_catalog
+ORDER BY equipment_key
+LIMIT $1 OFFSET $2
+```
+
+Filter by archetype:
+```sql
+SELECT equipment_key, is_archetype, archetype_key, parent_key, year,
+       build_cost_ic, reliability, maximum_speed, defense, breakthrough,
+       soft_attack, hard_attack, ap_attack, air_attack, armor_value,
+       hardness, dlc_source, resources
+FROM api_equipment_catalog
+WHERE archetype_key = $1
+ORDER BY equipment_key
+LIMIT $2 OFFSET $3
+```
+
+Filter by is_archetype flag:
+```sql
+SELECT equipment_key, is_archetype, archetype_key, parent_key, year,
+       build_cost_ic, reliability, maximum_speed, defense, breakthrough,
+       soft_attack, hard_attack, ap_attack, air_attack, armor_value,
+       hardness, dlc_source, resources
+FROM api_equipment_catalog
+WHERE is_archetype = $1
+ORDER BY equipment_key
+LIMIT $2 OFFSET $3
+```
+
+Single equipment item:
+```sql
+SELECT equipment_key, is_archetype, archetype_key, parent_key, year,
+       build_cost_ic, reliability, maximum_speed, defense, breakthrough,
+       soft_attack, hard_attack, ap_attack, air_attack, armor_value,
+       hardness, dlc_source, resources
+FROM api_equipment_catalog
+WHERE equipment_key = $1
+```
+
+**Response model (`EquipmentItem`):**
+```
+equipment_key: str
+is_archetype: bool
+archetype_key: str | None
+parent_key: str | None
+year: int | None
+build_cost_ic: float | None
+reliability: float | None
+maximum_speed: float | None
+defense: float | None
+breakthrough: float | None
+soft_attack: float | None
+hard_attack: float | None
+ap_attack: float | None
+air_attack: float | None
+armor_value: float | None
+hardness: float | None
+dlc_source: str | None
+resources: list[EquipmentResource]   # [{resource_key, amount}]
+```
+
 ### 6.8 Ideas & National Spirits (Slice B)
 
 | Method | Path | SQL Source | Description |
@@ -596,6 +799,59 @@ Not date-sensitive. Equipment definitions don't change between bookmarks.
 | GET | `/api/v1/ideas/{idea_key}` | `api_ideas_detail` view | Single idea |
 
 **Query params:** `?slot=economy&is_law=true`
+
+Not date-sensitive. Ideas and laws are static definitions.
+
+**SQL Queries:**
+
+List all ideas (paginated):
+```sql
+SELECT idea_key, slot, is_law, cost, removal_cost, is_default,
+       dlc_source, modifiers
+FROM api_ideas_detail
+ORDER BY idea_key
+LIMIT $1 OFFSET $2
+```
+
+Filter by slot:
+```sql
+SELECT idea_key, slot, is_law, cost, removal_cost, is_default,
+       dlc_source, modifiers
+FROM api_ideas_detail
+WHERE slot = $1
+ORDER BY idea_key
+LIMIT $2 OFFSET $3
+```
+
+Filter by is_law:
+```sql
+SELECT idea_key, slot, is_law, cost, removal_cost, is_default,
+       dlc_source, modifiers
+FROM api_ideas_detail
+WHERE is_law = $1
+ORDER BY idea_key
+LIMIT $2 OFFSET $3
+```
+
+Single idea:
+```sql
+SELECT idea_key, slot, is_law, cost, removal_cost, is_default,
+       dlc_source, modifiers
+FROM api_ideas_detail
+WHERE idea_key = $1
+```
+
+**Response model (`IdeaDetail`):**
+```
+idea_key: str
+slot: str | None
+is_law: bool
+cost: float | None
+removal_cost: float | None
+is_default: bool
+dlc_source: str | None
+modifiers: list[IdeaModifier]      # [{modifier_key, modifier_value}]
+```
 
 ### 6.9 DLC Systems (Slice C)
 

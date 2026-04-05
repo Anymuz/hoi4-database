@@ -5,15 +5,11 @@ from app.database import get_db
 from app.dependencies import get_effective_date
 from app.schemas.technology import TechSummary, TechTreeItem, StartingTech
 
-# Tech-list and tech-detail endpoints live under /api/v1/technologies
-router = APIRouter(prefix="/api/v1/technologies", tags=["Technologies"])
-
-# Country starting-tech endpoint lives under /api/v1/countries/{tag}/technologies
-country_tech_router = APIRouter(prefix="/api/v1/countries", tags=["Technologies"])
+router = APIRouter(prefix="/api/v1", tags=["Technologies"])
 
 # GET /api/v1/technologies, list all techs (lightweight, paginated)
 # Optional ?folder= to filter by tech tree folder (e.g. infantry_folder)
-@router.get("", response_model=list[TechSummary])
+@router.get("/technologies", response_model=list[TechSummary])
 async def list_technologies(
     folder: str | None = Query(None, description="Filter by folder (e.g. infantry_folder)"),
     limit: int = Query(50, ge=1, le=500),
@@ -51,7 +47,7 @@ async def list_technologies(
 # End of technology list endpoint
 
 # GET /api/v1/technologies/{key}, full detail for one technology
-@router.get("/{key}", response_model=TechTreeItem)
+@router.get("/technologies/{key}", response_model=TechTreeItem)
 async def get_technology(
     key: str,
     db=Depends(get_db),
@@ -66,7 +62,7 @@ async def get_technology(
 # End of technology detail endpoint
 
 # GET /api/v1/countries/{tag}/technologies, starting techs for a country (date-sensitive)
-@country_tech_router.get("/{tag}/technologies", response_model=list[StartingTech])
+@router.get("/countries/{tag}/technologies", response_model=list[StartingTech])
 async def list_country_technologies(
     tag: str,
     effective_date: date = Depends(get_effective_date),
