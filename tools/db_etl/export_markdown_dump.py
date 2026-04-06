@@ -1120,7 +1120,15 @@ def parse_focuses_all() -> Tuple[int, int, int]:
                 continue
             tree_id = tid.group(1)
             init = re.search(r"initial_show_position\s*=\s*\{\s*x\s*=\s*([\-0-9]+)\s*y\s*=\s*([\-0-9]+)", tree_body)
-            tree_rows.append([tree_id, init.group(1) if init else "", init.group(2) if init else "", fp.name])
+            # Extract country_tag from country = { modifier = { ... tag = XXX } }
+            country_tag = ""
+            cm = re.search(r"\bcountry\s*=\s*\{", tree_body)
+            if cm:
+                country_block = extract_block(tree_body, cm.start())
+                tm = re.search(r"\btag\s*=\s*([A-Z]{3})\b", country_block)
+                if tm:
+                    country_tag = tm.group(1)
+            tree_rows.append([tree_id, country_tag, init.group(1) if init else "", init.group(2) if init else "", fp.name])
             # Find focus blocks inside tree, unwrapping if/else DLC guards
             for fkey, fbody, _ in find_game_blocks(tree_body):
                 if fkey != "focus":
@@ -1153,7 +1161,7 @@ def parse_focuses_all() -> Tuple[int, int, int]:
             # Create a synthetic tree entry per source file (once)
             if shared_tree_id is None:
                 shared_tree_id = fp.stem + "_shared"
-                tree_rows.append([shared_tree_id, "", "", fp.name])
+                tree_rows.append([shared_tree_id, "", "", "", fp.name])
             focus_id = fid.group(1)
             x = re.search(r"\bx\s*=\s*([\-0-9]+)", sbody)
             y = re.search(r"\by\s*=\s*([\-0-9]+)", sbody)
@@ -1169,7 +1177,7 @@ def parse_focuses_all() -> Tuple[int, int, int]:
     tree_rows = dedup_rows(tree_rows, [0])
     focus_rows = dedup_rows(focus_rows, [0])
     link_rows = dedup_rows(link_rows, [0, 1, 2])
-    write_md(OUT / "focus_trees_all.md", "Focus Trees (All Files)", ["focus_tree_id", "initial_x", "initial_y", "source_file"], tree_rows, "common/national_focus/*.txt")
+    write_md(OUT / "focus_trees_all.md", "Focus Trees (All Files)", ["focus_tree_id", "country_tag", "initial_x", "initial_y", "source_file"], tree_rows, "common/national_focus/*.txt")
     write_md(OUT / "focuses_all.md", "Focuses (All Files)", ["focus_id", "focus_tree_id", "x", "y", "cost", "icon", "source_file"], focus_rows, "common/national_focus/*.txt")
     write_md(OUT / "focus_links_all.md", "Focus Links (All Files)", ["focus_id", "link_type", "linked_focus_id", "source_file"], link_rows, "common/national_focus/*.txt")
     return len(tree_rows), len(focus_rows), len(link_rows)

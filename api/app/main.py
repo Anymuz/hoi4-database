@@ -49,11 +49,15 @@ async def health_check():
 # End of health_check endpoint.
 
 # Mount REST routers — each handles one domain under /api/v1/
-from app.routers import characters, countries, states, technologies
+from app.routers import characters, countries, equipment, focuses, ideas, military, states, technologies
 app.include_router(countries.router)
 app.include_router(states.router)
 app.include_router(technologies.router)
 app.include_router(characters.router)
+app.include_router(military.router)
+app.include_router(focuses.router)
+app.include_router(equipment.router)
+app.include_router(ideas.router)
 
 # More routers will be added in later phases:
 #   app.include_router(characters.router)

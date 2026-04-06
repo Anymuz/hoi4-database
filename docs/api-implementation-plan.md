@@ -58,8 +58,8 @@ Five issues identified during the design-vs-database audit:
 
 ### Phase 3: Slice B — Domain Catalogs (8 routers)
 - [x] 3.1 — Technologies (schemas + router)
-- [ ] 3.2 — Characters (schemas + router)
-- [ ] 3.3 — Military — land / naval / air (schemas + router)
+- [x] 3.2 — Characters (schemas + router)
+- [x] 3.3 — Military — land / naval / air (schemas + router)
 - [ ] 3.4 — Focus Trees (schemas + router)
 - [ ] 3.5 — Equipment (schemas + router)
 - [ ] 3.6 — Ideas (schemas + router)

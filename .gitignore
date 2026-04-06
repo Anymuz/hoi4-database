@@ -21,3 +21,6 @@ Thumbs.db
 *.bak
 redundant-docs/
 .env
+
+# Generated data (reproducible via tools/db_etl/md_to_csv.py)
+data/csv/

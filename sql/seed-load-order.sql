@@ -135,11 +135,11 @@ BEGIN;
 \copy country_starting_technologies(country_tag, technology_key, effective_date, source_file, dlc_source) FROM 'data/csv/country_starting_technologies.csv' WITH (FORMAT csv, HEADER);
 \copy country_starting_ideas(country_tag, idea_key, effective_date, source_file, dlc_source) FROM 'data/csv/country_starting_ideas.csv' WITH (FORMAT csv, HEADER);
 \copy characters(character_id, name_key, gender, source_file) FROM 'data/csv/characters.csv' WITH (FORMAT csv, HEADER);
-\copy division_templates(template_name, division_names_group, source_file) FROM 'data/csv/division_templates.csv' WITH (FORMAT csv, HEADER);
+\copy division_templates(template_name, division_names_group, source_file, country_tag, oob_file) FROM 'data/csv/division_templates.csv' WITH (FORMAT csv, HEADER);
 \copy equipment_variants(owner_tag, base_equipment_key, version_name, effective_date, source_file) FROM 'data/csv/equipment_variants.csv' WITH (FORMAT csv, HEADER);
-\copy fleets(country_tag, fleet_name, naval_base_province_id, source_file) FROM 'data/csv/fleets.csv' WITH (FORMAT csv, HEADER);
-\copy air_wings(country_tag, location_state_id, wing_name, equipment_type, amount, version_name, source_file) FROM 'data/csv/air_wings.csv' WITH (FORMAT csv, HEADER);
-\copy focus_trees(focus_tree_id, initial_x, initial_y, source_file) FROM 'data/csv/focus_trees.csv' WITH (FORMAT csv, HEADER);
+\copy fleets(country_tag, fleet_name, naval_base_province_id, source_file, oob_file) FROM 'data/csv/fleets.csv' WITH (FORMAT csv, HEADER);
+\copy air_wings(country_tag, location_state_id, wing_name, equipment_type, amount, version_name, source_file, oob_file) FROM 'data/csv/air_wings.csv' WITH (FORMAT csv, HEADER);
+\copy focus_trees(focus_tree_id, country_tag, initial_x, initial_y, source_file) FROM 'data/csv/focus_trees.csv' WITH (FORMAT csv, HEADER);
 \copy country_visual_definitions(country_tag, graphical_culture, graphical_culture_2d) FROM 'data/csv/country_visual_definitions.csv' WITH (FORMAT csv, HEADER);
 \copy intelligence_agencies(agency_id, picture_gfx, default_tag, available_tag, dlc_source, source_file) FROM 'data/csv/intelligence_agencies.csv' WITH (FORMAT csv, HEADER);
 \copy bookmarks(bookmark_name, bookmark_date, picture_gfx, default_country_tag) FROM 'data/csv/bookmarks.csv' WITH (FORMAT csv, HEADER);
@@ -149,7 +149,7 @@ BEGIN;
 -- TIER 5 — Depends on Tier 4 (9 tables, 4 need FK staging)
 -- ============================================================
 \copy character_roles(character_id, role_type, sub_ideology_key, source_file) FROM 'data/csv/character_roles.csv' WITH (FORMAT csv, HEADER);
-\copy divisions(template_name, location_province_id, start_experience_factor, source_file) FROM 'data/csv/divisions.csv' WITH (FORMAT csv, HEADER);
+\copy divisions(template_name, location_province_id, start_experience_factor, source_file, country_tag, oob_file) FROM 'data/csv/divisions.csv' WITH (FORMAT csv, HEADER);
 \copy focuses(focus_id, focus_tree_id, x_pos, y_pos, cost, icon, source_file) FROM 'data/csv/focuses.csv' WITH (FORMAT csv, HEADER);
 \copy intelligence_agency_names(agency_id, name) FROM 'data/csv/intelligence_agency_names.csv' WITH (FORMAT csv, HEADER);
 \copy decisions(decision_key, category_key, icon, cost, fire_only_once, dlc_source) FROM 'data/csv/decisions.csv' WITH (FORMAT csv, HEADER);
