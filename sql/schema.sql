@@ -1,4 +1,4 @@
--- HOI4 PostgreSQL Schema — Complete (127 tables, 23 phases)
+-- HOI4 PostgreSQL Schema — Complete (149 tables, 28 phases)
 -- Source: docs/hoi4-table-catalog.md (authoritative column spec)
 -- Build order: docs/hoi4-database-design.md (123-step FK dependency order)
 --
@@ -1443,6 +1443,229 @@ COMMENT ON COLUMN country_starting_doctrines.doctrine_type IS 'grand or sub';
 COMMENT ON COLUMN country_starting_doctrines.doctrine_key IS 'References grand_doctrines.doctrine_key or subdoctrines.subdoctrine_key';
 
 -- ============================================================
+-- Phase 24 — Factions (Ride of the Valkyries)
+-- ============================================================
+
+CREATE TABLE faction_rule_groups (
+    rule_group_key              VARCHAR(80) PRIMARY KEY,
+    source_file                 TEXT NOT NULL
+);
+
+COMMENT ON TABLE faction_rule_groups IS 'Groups that classify faction rules (ideology, geographical, war, peace, etc.)';
+
+CREATE TABLE faction_rules (
+    rule_key                    VARCHAR(120) PRIMARY KEY,
+    rule_type                   VARCHAR(60) NOT NULL,
+    rule_group_key              VARCHAR(80) REFERENCES faction_rule_groups(rule_group_key),
+    source_file                 TEXT NOT NULL,
+    dlc_source                  VARCHAR(50)
+);
+
+COMMENT ON TABLE faction_rules IS 'Individual faction rules (joining, dismissal, war declaration, peace, etc.)';
+COMMENT ON COLUMN faction_rules.rule_type IS 'From type = field: joining_rules, peace_conference_rules, etc.';
+
+CREATE TABLE faction_rule_group_members (
+    rule_group_key              VARCHAR(80) NOT NULL REFERENCES faction_rule_groups(rule_group_key),
+    rule_key                    VARCHAR(120) NOT NULL REFERENCES faction_rules(rule_key),
+    PRIMARY KEY (rule_group_key, rule_key)
+);
+
+COMMENT ON TABLE faction_rule_group_members IS 'Junction: which rules belong to which rule groups';
+
+CREATE TABLE faction_manifests (
+    manifest_key                VARCHAR(120) PRIMARY KEY,
+    name_loc                    VARCHAR(120),
+    description_loc             VARCHAR(120),
+    is_manifest                 BOOLEAN NOT NULL DEFAULT true,
+    total_amount                INTEGER,
+    source_file                 TEXT NOT NULL,
+    dlc_source                  VARCHAR(50)
+);
+
+COMMENT ON TABLE faction_manifests IS 'Faction manifestos — ratio progress targets for faction objectives';
+COMMENT ON COLUMN faction_manifests.total_amount IS 'From ratio_progress.total_amount';
+
+CREATE TABLE faction_goals (
+    goal_key                    VARCHAR(120) PRIMARY KEY,
+    name_loc                    VARCHAR(120),
+    description_loc             VARCHAR(120),
+    category                    VARCHAR(20) NOT NULL,
+    goal_group                  VARCHAR(80),
+    source_file                 TEXT NOT NULL,
+    dlc_source                  VARCHAR(50)
+);
+
+COMMENT ON TABLE faction_goals IS 'Faction goals (short/medium/long-term objectives for faction members)';
+COMMENT ON COLUMN faction_goals.category IS 'short_term, medium_term, or long_term';
+COMMENT ON COLUMN faction_goals.goal_group IS 'From group = FOCUS_FILTER_xxx';
+
+CREATE TABLE faction_templates (
+    template_key                VARCHAR(120) PRIMARY KEY,
+    name_loc                    VARCHAR(120),
+    manifest_key                VARCHAR(120) REFERENCES faction_manifests(manifest_key),
+    icon                        VARCHAR(120),
+    can_leader_join_other       BOOLEAN,
+    source_file                 TEXT NOT NULL,
+    dlc_source                  VARCHAR(50)
+);
+
+COMMENT ON TABLE faction_templates IS 'Faction template definitions (Allies, Axis, Comintern, generic, etc.)';
+COMMENT ON COLUMN faction_templates.can_leader_join_other IS 'From can_leader_join_other_factions';
+
+CREATE TABLE faction_template_goals (
+    template_key                VARCHAR(120) NOT NULL REFERENCES faction_templates(template_key),
+    goal_key                    VARCHAR(120) NOT NULL REFERENCES faction_goals(goal_key),
+    PRIMARY KEY (template_key, goal_key)
+);
+
+COMMENT ON TABLE faction_template_goals IS 'Junction: goals assigned to each faction template';
+
+CREATE TABLE faction_template_rules (
+    template_key                VARCHAR(120) NOT NULL REFERENCES faction_templates(template_key),
+    rule_key                    VARCHAR(120) NOT NULL REFERENCES faction_rules(rule_key),
+    PRIMARY KEY (template_key, rule_key)
+);
+
+COMMENT ON TABLE faction_template_rules IS 'Junction: default rules assigned to each faction template';
+
+CREATE TABLE faction_member_upgrade_groups (
+    group_key                   VARCHAR(80) PRIMARY KEY,
+    name_loc                    VARCHAR(120),
+    description_loc             VARCHAR(120),
+    default_upgrade_key         VARCHAR(80),
+    upgrade_type                VARCHAR(80),
+    icon                        VARCHAR(120),
+    source_file                 TEXT NOT NULL,
+    dlc_source                  VARCHAR(50)
+);
+
+COMMENT ON TABLE faction_member_upgrade_groups IS 'Groups for faction member upgrades (e.g. manpower contribution tiers)';
+
+CREATE TABLE faction_member_upgrades (
+    upgrade_key                 VARCHAR(80) PRIMARY KEY,
+    group_key                   VARCHAR(80) REFERENCES faction_member_upgrade_groups(group_key),
+    bonus                       NUMERIC(8,4),
+    description_loc             VARCHAR(120),
+    source_file                 TEXT NOT NULL,
+    dlc_source                  VARCHAR(50)
+);
+
+COMMENT ON TABLE faction_member_upgrades IS 'Individual member upgrade tiers within a group';
+COMMENT ON COLUMN faction_member_upgrades.bonus IS 'Numeric bonus value applied by this upgrade tier';
+
+-- ============================================================
+-- Phase 25 — Special Projects (Götterdämmerung)
+-- ============================================================
+
+CREATE TABLE special_project_specializations (
+    specialization_key          VARCHAR(40) PRIMARY KEY,
+    source_file                 TEXT NOT NULL,
+    dlc_source                  VARCHAR(50)
+);
+
+COMMENT ON TABLE special_project_specializations IS 'R&D specialization categories (land, naval, air, nuclear)';
+
+CREATE TABLE special_project_tags (
+    tag_key                     VARCHAR(40) PRIMARY KEY,
+    dlc_source                  VARCHAR(50)
+);
+
+COMMENT ON TABLE special_project_tags IS 'Classification tags for grouping special projects (tank, aircraft, etc.)';
+
+CREATE TABLE special_projects (
+    project_key                 VARCHAR(120) PRIMARY KEY,
+    specialization_key          VARCHAR(40) NOT NULL REFERENCES special_project_specializations(specialization_key),
+    project_tag                 VARCHAR(40) REFERENCES special_project_tags(tag_key),
+    complexity                  VARCHAR(40),
+    prototype_time              VARCHAR(40),
+    source_file                 TEXT NOT NULL,
+    dlc_source                  VARCHAR(50)
+);
+
+COMMENT ON TABLE special_projects IS 'Special R&D projects (flamethrower tanks, jet engines, nuclear bombs, etc.)';
+COMMENT ON COLUMN special_projects.complexity IS 'Scripted value reference like sp_complexity.small';
+COMMENT ON COLUMN special_projects.prototype_time IS 'Scripted value reference like sp_time.prototype.short';
+
+CREATE TABLE special_project_rewards (
+    reward_key                  VARCHAR(120) PRIMARY KEY,
+    specialization_key          VARCHAR(40) REFERENCES special_project_specializations(specialization_key),
+    fire_only_once              BOOLEAN NOT NULL DEFAULT false,
+    threshold_min               INTEGER,
+    threshold_max               INTEGER,
+    source_file                 TEXT NOT NULL,
+    dlc_source                  VARCHAR(50)
+);
+
+COMMENT ON TABLE special_project_rewards IS 'Prototype rewards triggered during project iteration';
+COMMENT ON COLUMN special_project_rewards.threshold_min IS 'Minimum progress % to trigger';
+COMMENT ON COLUMN special_project_rewards.threshold_max IS 'Maximum progress % to trigger';
+
+CREATE TABLE special_project_reward_links (
+    project_key                 VARCHAR(120) NOT NULL REFERENCES special_projects(project_key),
+    reward_key                  VARCHAR(120) NOT NULL REFERENCES special_project_rewards(reward_key),
+    PRIMARY KEY (project_key, reward_key)
+);
+
+COMMENT ON TABLE special_project_reward_links IS 'Junction: generic prototype rewards assigned to each project';
+
+-- ============================================================
+-- Phase 26 — Collections
+-- ============================================================
+
+CREATE TABLE collections (
+    collection_key              VARCHAR(120) PRIMARY KEY,
+    name_loc                    VARCHAR(120),
+    input_source                VARCHAR(120),
+    source_file                 TEXT NOT NULL,
+    dlc_source                  VARCHAR(50)
+);
+
+COMMENT ON TABLE collections IS 'Scripted collection definitions used by faction manifests and triggers';
+COMMENT ON COLUMN collections.input_source IS 'From input = game:all_countries, game:scope, collection:X';
+
+-- ============================================================
+-- Phase 27 — AI Faction Theaters
+-- ============================================================
+
+CREATE TABLE ai_faction_theaters (
+    theater_key                 VARCHAR(80) PRIMARY KEY,
+    name_loc                    VARCHAR(80),
+    source_file                 TEXT NOT NULL,
+    dlc_source                  VARCHAR(50)
+);
+
+COMMENT ON TABLE ai_faction_theaters IS 'AI theater definitions for faction military planning';
+
+CREATE TABLE ai_faction_theater_regions (
+    theater_key                 VARCHAR(80) NOT NULL REFERENCES ai_faction_theaters(theater_key),
+    region_id                   INT NOT NULL REFERENCES strategic_regions(strategic_region_id),
+    PRIMARY KEY (theater_key, region_id)
+);
+
+COMMENT ON TABLE ai_faction_theater_regions IS 'Junction: strategic regions assigned to each AI theater';
+
+-- ============================================================
+-- Phase 28 — Timed Activities
+-- ============================================================
+
+CREATE TABLE timed_activities (
+    activity_key                VARCHAR(80) PRIMARY KEY,
+    source_file                 TEXT NOT NULL,
+    dlc_source                  VARCHAR(50)
+);
+
+COMMENT ON TABLE timed_activities IS 'Timed activity definitions (e.g. stage_coup)';
+
+CREATE TABLE timed_activity_equipment (
+    activity_key                VARCHAR(80) NOT NULL REFERENCES timed_activities(activity_key),
+    equipment_key               VARCHAR(120) NOT NULL,
+    amount                      INTEGER NOT NULL,
+    PRIMARY KEY (activity_key, equipment_key)
+);
+
+COMMENT ON TABLE timed_activity_equipment IS 'Equipment requirements for timed activities';
+
+-- ============================================================
 -- Deferred FK constraints on existing tables → new parent tables
 -- ============================================================
 
@@ -1533,6 +1756,21 @@ CREATE INDEX ix_doctrine_tracks_folder ON doctrine_tracks (folder_key);
 CREATE INDEX ix_grand_doctrines_folder ON grand_doctrines (folder_key);
 CREATE INDEX ix_subdoctrines_track ON subdoctrines (track_key);
 CREATE INDEX ix_country_starting_doctrines_country ON country_starting_doctrines (country_tag);
+
+-- Phase 24
+CREATE INDEX ix_faction_rules_group ON faction_rules (rule_group_key);
+CREATE INDEX ix_faction_rules_type ON faction_rules (rule_type);
+CREATE INDEX ix_faction_goals_category ON faction_goals (category);
+CREATE INDEX ix_faction_templates_manifest ON faction_templates (manifest_key);
+CREATE INDEX ix_faction_member_upgrades_group ON faction_member_upgrades (group_key);
+
+-- Phase 25
+CREATE INDEX ix_special_projects_specialization ON special_projects (specialization_key);
+CREATE INDEX ix_special_projects_tag ON special_projects (project_tag);
+CREATE INDEX ix_special_project_rewards_spec ON special_project_rewards (specialization_key);
+
+-- Phase 27
+CREATE INDEX ix_ai_faction_theater_regions_region ON ai_faction_theater_regions (region_id);
 
 -- ============================================================
 -- Localisation table — English display names for game entities

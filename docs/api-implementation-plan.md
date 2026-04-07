@@ -3,7 +3,7 @@
 > **Date:** 2026-04-02
 > **Branch:** `feature/api-v1`
 > **Design doc:** `docs/api-design.md` (FINAL, 2026-03-31)
-> **Database:** 129 tables, ~335K rows, 12 views + 2 functions, PostgreSQL 16
+> **Database:** 149 tables, ~219K rows, 14 views + 2 functions, PostgreSQL 16
 
 ---
 
@@ -67,7 +67,7 @@ Five issues identified during the design-vs-database audit:
 - [ ] Test gate: all 8 routers with filters and nested models
 
 ### Phase 4: Slice C — DLC Systems + Annotations (Read/Write)
-- [ ] 4.1 — DLC router (MIOs, operations, BoP)
+- [ ] 4.1 — DLC router (MIOs, operations, BoP, factions, special projects)
 - [ ] 4.2 — Annotations router (CRUD)
 - [ ] 4.3 — Register routers in `main.py`
 - [ ] Test gate: DLC reads + annotation CRUD lifecycle
@@ -162,7 +162,7 @@ docker exec hoi4-db psql -U hoi4 -d hoi4 -c \
   "SELECT count(*) FROM user_annotations;"  -- expect 0
 ```
 
-**Exit criteria:** 127 tables + 1 `user_annotations` + 1 `localisation` = 129 tables; 12 views + 2 functions; both date params work; 0 errors.
+**Exit criteria:** 149 tables; 14 views + 2 functions; both date params work; 0 errors.
 
 ---
 
@@ -891,13 +891,45 @@ Schemas (`schemas/dlc.py`):
 - `MioDetail` — organization_key, template_key, icon, equipment_types[], traits[] with nested bonuses[]
 - `OperationDetail` — operation_key, name, stats, awarded_tokens[], equipment_requirements[], phase_groups[]
 - `BopDetail` — bop_key, initial_value, sides, decision_category, sides[], ranges[] with nested modifiers[]
+- `FactionDetail` — template_key, name_loc, manifest_key, icon, goals[], rules[], member_upgrade_groups[]
+- `SpecialProjectDetail` — project_key, specialization_key, project_tag, complexity, prototype_time, rewards[]
 
 Router (`routers/dlc.py`):
 - `GET /api/v1/mios` + `/{organization_key}` — 459 MIO organisations
 - `GET /api/v1/operations` + `/{operation_key}` — 37 espionage operations
 - `GET /api/v1/bop` + `/{bop_key}` — Balance of Power definitions
+- `GET /api/v1/factions` + `/{template_key}` — 65 faction templates (DLC: Götterdämmerung)
+- `GET /api/v1/special-projects` + `/{project_key}` — 48 special projects (DLC: Götterdämmerung)
 
 None are date-sensitive.
+
+**SQL for factions** (list, paginated):
+```sql
+SELECT template_key, name_loc, manifest_key, icon, can_leader_join_other,
+       dlc_source, goals, rules, member_upgrade_groups
+FROM api_faction_detail
+ORDER BY template_key
+LIMIT $1 OFFSET $2
+```
+
+**SQL for single faction:**
+```sql
+SELECT * FROM api_faction_detail WHERE template_key = $1
+```
+
+**SQL for special projects** (list, paginated):
+```sql
+SELECT project_key, specialization_key, project_tag, complexity,
+       prototype_time, dlc_source, rewards
+FROM api_special_project_detail
+ORDER BY project_key
+LIMIT $1 OFFSET $2
+```
+
+**SQL for single special project:**
+```sql
+SELECT * FROM api_special_project_detail WHERE project_key = $1
+```
 
 ### Step 4.2 — Annotations router (read/write)
 
@@ -921,9 +953,9 @@ Router (`routers/annotations.py`):
 
 **Scope:** DLC-specific read endpoints and the annotations CRUD lifecycle all work correctly.
 
-#### `test_dlc.py` (9 tests)
+#### `test_dlc.py` (15 tests)
 
-Three DLC subsystems, each with list + detail + 404. For the detail tests, fetch the list with `?limit=1` first to get a valid key.
+Five DLC subsystems, each with list + detail + 404. For the detail tests, fetch the list with `?limit=1` first to get a valid key.
 
 **MIOs** (`/api/v1/mios`):
 
@@ -949,6 +981,22 @@ Three DLC subsystems, each with list + detail + 404. For the detail tests, fetch
 | `test_bop_detail` | `GET /api/v1/bop/{key}` | Has `sides` (list) and `ranges` (list) |
 | `test_bop_detail_404` | `GET /api/v1/bop/nonexistent_bop_xyz` | Status 404 |
 
+**Factions** (`/api/v1/factions`):
+
+| Test | URL | What to check |
+|---|---|---|
+| `test_list_factions_200` | `GET /api/v1/factions` | Status 200, non-empty list |
+| `test_faction_detail` | `GET /api/v1/factions/{key}` | `template_key` matches, `goals` is a list, `rules` is a list |
+| `test_faction_detail_404` | `GET /api/v1/factions/nonexistent_faction_xyz` | Status 404 |
+
+**Special Projects** (`/api/v1/special-projects`):
+
+| Test | URL | What to check |
+|---|---|---|
+| `test_list_special_projects_200` | `GET /api/v1/special-projects` | Status 200, non-empty list |
+| `test_special_project_detail` | `GET /api/v1/special-projects/{key}` | `project_key` matches, `rewards` is a list |
+| `test_special_project_detail_404` | `GET /api/v1/special-projects/nonexistent_sp_xyz` | Status 404 |
+
 #### `test_annotations.py` (7 tests)
 
 Annotations are the only **write** endpoint (POST + DELETE). Tests must run as a lifecycle: create → read → list → delete → verify deletion.
@@ -967,7 +1015,7 @@ Annotations are the only **write** endpoint (POST + DELETE). Tests must run as a
 
 **Run:** `pytest tests/ -v`
 
-**Exit criteria:** All REST endpoints implemented and tested. Full Swagger docs at `/docs` show all 14 tags with correct models. Annotations CRUD works end-to-end.
+**Exit criteria:** All REST endpoints implemented and tested. Full Swagger docs at `/docs` show all 16 tags with correct models. Annotations CRUD works end-to-end.
 
 ---
 
@@ -1157,7 +1205,7 @@ Phase 2  Slice A: countries + states (date-sensitive, jsonb)
 Phase 3  Slice B: techs, characters, military, focuses, equipment, ideas
    │     └─ TEST GATE: all 8 routers with filters and nested models
    │
-Phase 4  Slice C: DLC + annotations (first write endpoint)
+Phase 4  Slice C: DLC + annotations (MIOs, ops, BoP, factions, special projects, CRUD)
    │     └─ TEST GATE: DLC reads + annotation CRUD lifecycle
    │
 Phase 5  GraphQL layer (types, resolvers, schema, mount)
@@ -1167,6 +1215,6 @@ Phase 6  Polish (CORS, docs, integration smoke test)
          └─ FINAL TEST GATE: full suite + manual smoke
 ```
 
-**Estimated test count:** ~72 tests across 10 test files.
+**Estimated test count:** ~78 tests across 10 test files.
 
 **Files created:** ~30 Python files + 2 SQL changes + 3 doc updates.

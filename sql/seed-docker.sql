@@ -1,4 +1,4 @@
--- HOI4 PostgreSQL Seed Load Order — All 127 Tables (FK-safe)
+-- HOI4 PostgreSQL Seed Load Order — All 147 Tables (FK-safe)
 --
 -- Every \copy uses an explicit column list so that SERIAL/BIGSERIAL PKs are
 -- auto-generated and CSV column order does not need to match the schema.
@@ -11,7 +11,7 @@
 BEGIN;
 
 -- ============================================================
--- TIER 0 — Root reference tables (32 tables, no FK dependencies)
+-- TIER 0 — Root reference tables (41 tables, no FK dependencies)
 -- ============================================================
 COPY continents (continent_id, continent_key) FROM '/data_csv/continents.csv' WITH (FORMAT csv, HEADER);
 COPY terrain_types (terrain_type) FROM '/data_csv/terrain_types.csv' WITH (FORMAT csv, HEADER);
@@ -45,9 +45,18 @@ COPY occupation_laws (occupation_law_key, icon_index, sound_effect, gui_order, m
 COPY decision_categories (category_key, icon, picture_gfx, priority) FROM '/data_csv/decision_categories.csv' WITH (FORMAT csv, HEADER);
 COPY balance_of_power_definitions (bop_key, initial_value, left_side, right_side, decision_category, source_file) FROM '/data_csv/balance_of_power_definitions.csv' WITH (FORMAT csv, HEADER);
 COPY doctrine_folders (folder_key, name_loc, ledger, xp_type) FROM '/data_csv/doctrine_folders.csv' WITH (FORMAT csv, HEADER);
+COPY faction_rule_groups (rule_group_key, source_file) FROM '/data_csv/faction_rule_groups.csv' WITH (FORMAT csv, HEADER);
+COPY faction_manifests (manifest_key, name_loc, description_loc, is_manifest, total_amount, dlc_source, source_file) FROM '/data_csv/faction_manifests.csv' WITH (FORMAT csv, HEADER);
+COPY faction_goals (goal_key, name_loc, description_loc, category, goal_group, dlc_source, source_file) FROM '/data_csv/faction_goals.csv' WITH (FORMAT csv, HEADER);
+COPY faction_member_upgrade_groups (group_key, name_loc, description_loc, default_upgrade_key, upgrade_type, icon, dlc_source, source_file) FROM '/data_csv/faction_member_upgrade_groups.csv' WITH (FORMAT csv, HEADER);
+COPY special_project_specializations (specialization_key, source_file) FROM '/data_csv/special_project_specializations.csv' WITH (FORMAT csv, HEADER);
+COPY special_project_tags (tag_key) FROM '/data_csv/special_project_tags.csv' WITH (FORMAT csv, HEADER);
+COPY collections (collection_key, name_loc, input_source, dlc_source, source_file) FROM '/data_csv/collections.csv' WITH (FORMAT csv, HEADER);
+COPY ai_faction_theaters (theater_key, name_loc, dlc_source, source_file) FROM '/data_csv/ai_faction_theaters.csv' WITH (FORMAT csv, HEADER);
+COPY timed_activities (activity_key, dlc_source, source_file) FROM '/data_csv/timed_activities.csv' WITH (FORMAT csv, HEADER);
 
 -- ============================================================
--- TIER 1 — Depends only on Tier 0 (32 tables)
+-- TIER 1 — Depends only on Tier 0 (38 tables)
 -- ============================================================
 COPY terrain_combat_modifiers (terrain_type, unit_class, modifier_key, modifier_value) FROM '/data_csv/terrain_combat_modifiers.csv' WITH (FORMAT csv, HEADER);
 COPY terrain_building_limits (terrain_type, building_key, max_level) FROM '/data_csv/terrain_building_limits.csv' WITH (FORMAT csv, HEADER);
@@ -81,9 +90,15 @@ COPY bop_sides (bop_key, side_id, side_position, icon) FROM '/data_csv/bop_sides
 COPY ideas (idea_key, slot, is_law, cost, removal_cost, is_default, source_file) FROM '/data_csv/ideas.csv' WITH (FORMAT csv, HEADER);
 COPY grand_doctrine_tracks (doctrine_key, track_key, ordinal) FROM '/data_csv/grand_doctrine_tracks.csv' WITH (FORMAT csv, HEADER);
 COPY subdoctrines (subdoctrine_key, track_key, name_loc, xp_cost, xp_type, reward_count, source_file) FROM '/data_csv/subdoctrines.csv' WITH (FORMAT csv, HEADER);
+COPY faction_rules (rule_key, rule_type, dlc_source, source_file) FROM '/data_csv/faction_rules.csv' WITH (FORMAT csv, HEADER);
+COPY faction_templates (template_key, name_loc, manifest_key, icon, can_leader_join_other, dlc_source, source_file) FROM '/data_csv/faction_templates.csv' WITH (FORMAT csv, HEADER);
+COPY faction_member_upgrades (upgrade_key, group_key, bonus, description_loc, dlc_source, source_file) FROM '/data_csv/faction_member_upgrades.csv' WITH (FORMAT csv, HEADER);
+COPY special_projects (project_key, specialization_key, project_tag, complexity, prototype_time, dlc_source, source_file) FROM '/data_csv/special_projects.csv' WITH (FORMAT csv, HEADER);
+COPY special_project_rewards (reward_key, specialization_key, fire_only_once, threshold_min, threshold_max, dlc_source, source_file) FROM '/data_csv/special_project_rewards.csv' WITH (FORMAT csv, HEADER);
+COPY timed_activity_equipment (activity_key, equipment_key, amount) FROM '/data_csv/timed_activity_equipment.csv' WITH (FORMAT csv, HEADER);
 
 -- ============================================================
--- TIER 2 — Depends on Tier 0 + 1 (23 tables)
+-- TIER 2 — Depends on Tier 0 + 1 (27 tables)
 -- ============================================================
 COPY equipment_resources (equipment_key, resource_key, amount, source_file) FROM '/data_csv/equipment_resources.csv' WITH (FORMAT csv, HEADER);
 COPY technology_categories_junction (technology_key, category_key) FROM '/data_csv/technology_categories_junction.csv' WITH (FORMAT csv, HEADER);
@@ -108,9 +123,13 @@ COPY mio_traits (trait_token, owner_key, owner_type, trait_type, name, icon, spe
 COPY raid_equipment_requirements (raid_key, requirement_group, equipment_type, amount_min, amount_max) FROM '/data_csv/raid_equipment_requirements.csv' WITH (FORMAT csv, HEADER);
 COPY continuous_focus_modifiers (focus_id, modifier_key, modifier_value) FROM '/data_csv/continuous_focus_modifiers.csv' WITH (FORMAT csv, HEADER);
 COPY bop_ranges (range_id, bop_key, side_id, min_value, max_value) FROM '/data_csv/bop_ranges.csv' WITH (FORMAT csv, HEADER);
+COPY faction_rule_group_members (rule_group_key, rule_key) FROM '/data_csv/faction_rule_group_members.csv' WITH (FORMAT csv, HEADER);
+COPY faction_template_goals (template_key, goal_key) FROM '/data_csv/faction_template_goals.csv' WITH (FORMAT csv, HEADER);
+COPY faction_template_rules (template_key, rule_key) FROM '/data_csv/faction_template_rules.csv' WITH (FORMAT csv, HEADER);
+COPY special_project_reward_links (project_key, reward_key) FROM '/data_csv/special_project_reward_links.csv' WITH (FORMAT csv, HEADER);
 
 -- ============================================================
--- TIER 3 — Depends on Tier 0 + 1 + 2 (12 tables)
+-- TIER 3 — Depends on Tier 0 + 1 + 2 (13 tables)
 -- ============================================================
 COPY strategic_region_provinces (strategic_region_id, province_id) FROM '/data_csv/strategic_region_provinces.csv' WITH (FORMAT csv, HEADER);
 COPY state_provinces (state_id, province_id, source_file) FROM '/data_csv/state_provinces.csv' WITH (FORMAT csv, HEADER);
@@ -120,6 +139,7 @@ COPY state_victory_points (state_id, province_id, victory_points, source_file) F
 COPY province_buildings (province_id, state_id, building_key, effective_date, level, source_file, dlc_source) FROM '/data_csv/province_buildings.csv' WITH (FORMAT csv, HEADER);
 COPY countries (tag, country_file_path, graphical_culture, graphical_culture_2d, color_r, color_g, color_b, capital_state_id, stability, war_support) FROM '/data_csv/countries.csv' WITH (FORMAT csv, HEADER);
 COPY operation_phase_options (operation_key, sequence_index, phase_key, base_weight) FROM '/data_csv/operation_phase_options.csv' WITH (FORMAT csv, HEADER);
+COPY ai_faction_theater_regions (theater_key, region_id) FROM '/data_csv/ai_faction_theater_regions.csv' WITH (FORMAT csv, HEADER);
 COPY mio_trait_bonuses (trait_token, bonus_category, bonus_key, bonus_value) FROM '/data_csv/mio_trait_bonuses.csv' WITH (FORMAT csv, HEADER);
 COPY mio_trait_prerequisites (trait_token, parent_token, requirement_type) FROM '/data_csv/mio_trait_prerequisites.csv' WITH (FORMAT csv, HEADER);
 COPY mio_trait_exclusions (trait_token_a, trait_token_b) FROM '/data_csv/mio_trait_exclusions.csv' WITH (FORMAT csv, HEADER);
@@ -133,7 +153,14 @@ COPY province_controller_history (province_id, state_id, effective_date, control
 COPY state_cores (state_id, country_tag, effective_date, source_file, dlc_source) FROM '/data_csv/state_cores.csv' WITH (FORMAT csv, HEADER);
 COPY country_starting_technologies (country_tag, technology_key, effective_date, source_file, dlc_source) FROM '/data_csv/country_starting_technologies.csv' WITH (FORMAT csv, HEADER);
 COPY country_starting_ideas (country_tag, idea_key, effective_date, source_file, dlc_source) FROM '/data_csv/country_starting_ideas.csv' WITH (FORMAT csv, HEADER);
-COPY characters (character_id, name_key, gender, source_file) FROM '/data_csv/characters.csv' WITH (FORMAT csv, HEADER);
+-- characters: filter rows with orphan country_tags
+CREATE TEMP TABLE _stage_chars (character_id TEXT, name_key TEXT, country_tag TEXT, gender TEXT, source_file TEXT);
+COPY _stage_chars FROM '/data_csv/characters.csv' WITH (FORMAT csv, HEADER);
+INSERT INTO characters (character_id, name_key, country_tag, gender, source_file)
+  SELECT s.character_id, NULLIF(s.name_key, ''), s.country_tag, s.gender, s.source_file
+  FROM _stage_chars s
+  JOIN countries c ON c.tag = s.country_tag;
+DROP TABLE _stage_chars;
 COPY division_templates (template_name, division_names_group, source_file, country_tag, oob_file) FROM '/data_csv/division_templates.csv' WITH (FORMAT csv, HEADER);
 COPY equipment_variants (owner_tag, base_equipment_key, version_name, effective_date, source_file) FROM '/data_csv/equipment_variants.csv' WITH (FORMAT csv, HEADER);
 COPY fleets (country_tag, fleet_name, naval_base_province_id, source_file, oob_file) FROM '/data_csv/fleets.csv' WITH (FORMAT csv, HEADER);
@@ -147,7 +174,14 @@ COPY country_starting_doctrines (country_tag, date, doctrine_type, doctrine_key)
 -- ============================================================
 -- TIER 5 — Depends on Tier 4 (9 tables, 4 need FK staging)
 -- ============================================================
-COPY character_roles (character_id, role_type, sub_ideology_key, source_file) FROM '/data_csv/character_roles.csv' WITH (FORMAT csv, HEADER);
+-- character_roles: filter rows with orphan character_ids
+CREATE TEMP TABLE _stage_cr (character_id TEXT, role_type TEXT, sub_ideology_key TEXT, source_file TEXT);
+COPY _stage_cr FROM '/data_csv/character_roles.csv' WITH (FORMAT csv, HEADER);
+INSERT INTO character_roles (character_id, role_type, sub_ideology_key, source_file)
+  SELECT s.character_id, s.role_type, NULLIF(s.sub_ideology_key, ''), s.source_file
+  FROM _stage_cr s
+  JOIN characters ch ON ch.character_id = s.character_id;
+DROP TABLE _stage_cr;
 COPY divisions (template_name, location_province_id, start_experience_factor, source_file, country_tag, oob_file) FROM '/data_csv/divisions.csv' WITH (FORMAT csv, HEADER);
 COPY focuses (focus_id, focus_tree_id, x_pos, y_pos, cost, icon, source_file) FROM '/data_csv/focuses.csv' WITH (FORMAT csv, HEADER);
 COPY intelligence_agency_names (agency_id, name) FROM '/data_csv/intelligence_agency_names.csv' WITH (FORMAT csv, HEADER);

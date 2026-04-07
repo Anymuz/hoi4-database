@@ -1,6 +1,6 @@
 # HOI4 Table Catalog
 
-Status: **COMPLETE** (129 tables across 23 phases + infrastructure)
+Status: **COMPLETE** (149 tables across 28 phases + infrastructure)
 
 ## How to Read This File
 - Each table section includes purpose, source files, columns, keys, and relationship notes.
@@ -2230,6 +2230,332 @@ Grand doctrines and subdoctrines pre-selected in country history files.
 
 ---
 
+## Phase 24 — Factions (Ride of the Valkyries)
+
+### faction_rule_groups
+
+Groups that classify faction rules (ideology, geographical, war declaration, peace, etc.).
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| rule_group_key | VARCHAR(80) | Yes (PK) | block key | e.g. `rule_group_ideology` |
+| source_file | TEXT | Yes | — | Provenance |
+
+- **Source**: `common/factions/rules/groups/rule_groups.txt`
+- **Row count**: ~15
+- **Relationship notes**: Parent of `faction_rule_group_members`.
+
+### faction_rules
+
+Individual faction rules (joining, dismissal, war declaration, peace, etc.).
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| rule_key | VARCHAR(120) | Yes (PK) | block key | e.g. `joining_rule_non_fascist` |
+| rule_type | VARCHAR(60) | Yes | type | `joining_rules`, `peace_conference_rules`, etc. |
+| rule_group_key | VARCHAR(80) | No (FK) | derived | From rule_groups membership |
+| source_file | TEXT | Yes | — | Provenance |
+| dlc_source | VARCHAR(50) | No | DLC guard | NULL = base game |
+
+- **Source**: `common/factions/rules/*.txt`
+- **Row count**: ~53
+- **Relationship notes**: FK → `faction_rule_groups`. Parent of `faction_template_rules`.
+
+### faction_rule_group_members
+
+Junction: which rules belong to which rule groups.
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| rule_group_key | VARCHAR(80) | Yes (PK, FK) | parent block | Rule group key |
+| rule_key | VARCHAR(120) | Yes (PK, FK) | child entry | Rule key |
+
+- **Source**: `common/factions/rules/groups/rule_groups.txt`
+- **Row count**: ~60
+- **Relationship notes**: FK → `faction_rule_groups`, `faction_rules`.
+
+### faction_manifests
+
+Faction manifestos — ratio progress targets for faction objectives.
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| manifest_key | VARCHAR(120) | Yes (PK) | block key | e.g. `faction_manifest_defense_of_democracy` |
+| name_loc | VARCHAR(120) | No | name | Localisation key |
+| description_loc | VARCHAR(120) | No | description | Localisation key |
+| is_manifest | BOOLEAN | Yes | is_manifest | Always true in data |
+| total_amount | INTEGER | No | ratio_progress.total_amount | Target count for completion ratio |
+| source_file | TEXT | Yes | — | Provenance |
+| dlc_source | VARCHAR(50) | No | DLC guard | NULL = base game |
+
+- **Source**: `common/factions/goals/faction_manifests.txt`
+- **Row count**: ~36
+- **Relationship notes**: Parent of `faction_templates`.
+
+### faction_goals
+
+Faction goals (short/medium/long-term objectives for faction members).
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| goal_key | VARCHAR(120) | Yes (PK) | block key | e.g. `faction_goal_one_germany` |
+| name_loc | VARCHAR(120) | No | name | Localisation key |
+| description_loc | VARCHAR(120) | No | description | Localisation key |
+| category | VARCHAR(20) | Yes | filename/category | `short_term`, `medium_term`, or `long_term` |
+| goal_group | VARCHAR(80) | No | group | e.g. `FOCUS_FILTER_ANNEXATION` |
+| source_file | TEXT | Yes | — | Provenance |
+| dlc_source | VARCHAR(50) | No | DLC guard | NULL = base game |
+
+- **Source**: `common/factions/goals/faction_goals_*.txt`
+- **Row count**: ~156
+- **Relationship notes**: Parent of `faction_template_goals`.
+
+### faction_templates
+
+Faction template definitions (Allies, Axis, Comintern, generic, etc.).
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| template_key | VARCHAR(120) | Yes (PK) | block key | e.g. `faction_template_allies` |
+| name_loc | VARCHAR(120) | No | name | Display name or loc key |
+| manifest_key | VARCHAR(120) | No (FK) | manifest | Manifest reference |
+| icon | VARCHAR(120) | No | icon | GFX sprite name |
+| can_leader_join_other | BOOLEAN | No | can_leader_join_other_factions | Default NULL |
+| source_file | TEXT | Yes | — | Provenance |
+| dlc_source | VARCHAR(50) | No | DLC guard | NULL = base game |
+
+- **Source**: `common/factions/templates/*.txt`
+- **Row count**: ~65
+- **Relationship notes**: FK → `faction_manifests`. Parent of `faction_template_goals`, `faction_template_rules`.
+
+### faction_template_goals
+
+Junction: goals assigned to each faction template.
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| template_key | VARCHAR(120) | Yes (PK, FK) | parent template | Template key |
+| goal_key | VARCHAR(120) | Yes (PK, FK) | goals list entry | Goal key |
+
+- **Source**: `common/factions/templates/*.txt` (goals block)
+- **Row count**: ~200
+- **Relationship notes**: FK → `faction_templates`, `faction_goals`.
+
+### faction_template_rules
+
+Junction: default rules assigned to each faction template.
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| template_key | VARCHAR(120) | Yes (PK, FK) | parent template | Template key |
+| rule_key | VARCHAR(120) | Yes (PK, FK) | default_rules entry | Rule key |
+
+- **Source**: `common/factions/templates/*.txt` (default_rules block)
+- **Row count**: ~250
+- **Relationship notes**: FK → `faction_templates`, `faction_rules`.
+
+### faction_member_upgrade_groups
+
+Groups for faction member upgrades (e.g. manpower contribution tiers).
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| group_key | VARCHAR(80) | Yes (PK) | block key | e.g. `faction_member_upgrade_manpower_group` |
+| name_loc | VARCHAR(120) | No | name | Localisation key |
+| description_loc | VARCHAR(120) | No | desc | Localisation key |
+| default_upgrade_key | VARCHAR(80) | No | default_upgrade | Default member upgrade |
+| upgrade_type | VARCHAR(80) | No | upgrade_type | Type identifier |
+| icon | VARCHAR(120) | No | icon | GFX sprite name |
+| source_file | TEXT | Yes | — | Provenance |
+| dlc_source | VARCHAR(50) | No | DLC guard | NULL = base game |
+
+- **Source**: `common/factions/member_upgrades/member_groups/member_upgrade_groups.txt`
+- **Row count**: ~1
+- **Relationship notes**: Parent of `faction_member_upgrades`.
+
+### faction_member_upgrades
+
+Individual member upgrade tiers within a group.
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| upgrade_key | VARCHAR(80) | Yes (PK) | block key | e.g. `faction_manpower_sharing1` |
+| group_key | VARCHAR(80) | No (FK) | parent group | FK to upgrade groups |
+| bonus | NUMERIC(8,4) | No | bonus | Numeric bonus value |
+| description_loc | VARCHAR(120) | No | desc | Localisation key |
+| source_file | TEXT | Yes | — | Provenance |
+| dlc_source | VARCHAR(50) | No | DLC guard | NULL = base game |
+
+- **Source**: `common/factions/member_upgrades/member_upgrades.txt`
+- **Row count**: ~4
+- **Relationship notes**: FK → `faction_member_upgrade_groups`.
+
+---
+
+## Phase 25 — Special Projects (Götterdämmerung)
+
+### special_project_specializations
+
+R&D specialization categories (land, naval, air, nuclear).
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| specialization_key | VARCHAR(40) | Yes (PK) | block key | e.g. `specialization_land` |
+| source_file | TEXT | Yes | — | Provenance |
+| dlc_source | VARCHAR(50) | No | DLC guard | NULL = base game |
+
+- **Source**: `common/special_projects/specialization/specializations.txt`
+- **Row count**: 4
+- **Relationship notes**: Parent of `special_projects`, `special_project_rewards`.
+
+### special_project_tags
+
+Classification tags for grouping special projects.
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| tag_key | VARCHAR(40) | Yes (PK) | list entry | e.g. `sp_tag_tank` |
+| dlc_source | VARCHAR(50) | No | DLC guard | NULL = base game |
+
+- **Source**: `common/special_projects/project_tags/tags.txt`
+- **Row count**: 14
+- **Relationship notes**: Parent of `special_projects`.
+
+### special_projects
+
+Special R&D projects (flamethrower tanks, jet engines, nuclear bombs, etc.).
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| project_key | VARCHAR(120) | Yes (PK) | block key | e.g. `sp_land_flamethrower_tank` |
+| specialization_key | VARCHAR(40) | Yes (FK) | specialization | R&D category |
+| project_tag | VARCHAR(40) | No (FK) | project_tags | Classification tag |
+| complexity | VARCHAR(40) | No | complexity | Scripted value ref |
+| prototype_time | VARCHAR(40) | No | prototype_time | Scripted value ref |
+| source_file | TEXT | Yes | — | Provenance |
+| dlc_source | VARCHAR(50) | No | allowed DLC guard | NULL = base game |
+
+- **Source**: `common/special_projects/projects/*.txt`
+- **Row count**: ~48
+- **Relationship notes**: FK → `special_project_specializations`, `special_project_tags`. Parent of `special_project_reward_links`.
+
+### special_project_rewards
+
+Prototype rewards triggered during project iteration.
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| reward_key | VARCHAR(120) | Yes (PK) | block key | e.g. `sp_land_generic_reward_scientist_xp_1` |
+| specialization_key | VARCHAR(40) | No (FK) | derived from filename | R&D category |
+| fire_only_once | BOOLEAN | Yes | fire_only_once | Default false |
+| threshold_min | INTEGER | No | threshold.min | Min progress % |
+| threshold_max | INTEGER | No | threshold.max | Max progress % |
+| source_file | TEXT | Yes | — | Provenance |
+| dlc_source | VARCHAR(50) | No | DLC guard | NULL = base game |
+
+- **Source**: `common/special_projects/prototype_rewards/*.txt`
+- **Row count**: ~82
+- **Relationship notes**: FK → `special_project_specializations`. Parent of `special_project_reward_links`.
+
+### special_project_reward_links
+
+Junction: generic prototype rewards assigned to each project.
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| project_key | VARCHAR(120) | Yes (PK, FK) | parent project | Project |
+| reward_key | VARCHAR(120) | Yes (PK, FK) | generic_prototype_rewards entry | Reward |
+
+- **Source**: `common/special_projects/projects/*.txt` (generic_prototype_rewards block)
+- **Row count**: ~300
+- **Relationship notes**: FK → `special_projects`, `special_project_rewards`.
+
+---
+
+## Phase 26 — Collections
+
+### collections
+
+Scripted collection definitions used by faction manifests and triggers.
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| collection_key | VARCHAR(120) | Yes (PK) | block key | e.g. `world_at_peace_countries` |
+| name_loc | VARCHAR(120) | No | name | Localisation key |
+| input_source | VARCHAR(120) | No | input | `game:all_countries`, `game:scope`, `collection:X` |
+| source_file | TEXT | Yes | — | Provenance |
+| dlc_source | VARCHAR(50) | No | DLC guard | NULL = base game |
+
+- **Source**: `common/collections/*.txt`
+- **Row count**: ~72
+- **Relationship notes**: Referenced by faction manifests (completed_amount_collection).
+
+---
+
+## Phase 27 — AI Faction Theaters
+
+### ai_faction_theaters
+
+AI theater definitions for faction military planning.
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| theater_key | VARCHAR(80) | Yes (PK) | block key | e.g. `western_europe` |
+| name_loc | VARCHAR(80) | No | name | Localisation key |
+| source_file | TEXT | Yes | — | Provenance |
+| dlc_source | VARCHAR(50) | No | DLC guard | NULL = base game |
+
+- **Source**: `common/ai_faction_theaters/ai_faction_theaters.txt`
+- **Row count**: ~30
+- **Relationship notes**: Parent of `ai_faction_theater_regions`.
+
+### ai_faction_theater_regions
+
+Junction: strategic regions assigned to each AI theater.
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| theater_key | VARCHAR(80) | Yes (PK, FK) | parent theater | Theater key |
+| region_id | INT | Yes (PK, FK) | regions list entry | Strategic region ID |
+
+- **Source**: `common/ai_faction_theaters/ai_faction_theaters.txt` (regions block)
+- **Row count**: ~180
+- **Relationship notes**: FK → `ai_faction_theaters`, `strategic_regions`.
+
+---
+
+## Phase 28 — Timed Activities
+
+### timed_activities
+
+Timed activity definitions (e.g. stage_coup).
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| activity_key | VARCHAR(80) | Yes (PK) | block key | e.g. `stage_coup` |
+| source_file | TEXT | Yes | — | Provenance |
+| dlc_source | VARCHAR(50) | No | DLC guard | NULL = base game |
+
+- **Source**: `common/timed_activities/*.txt`
+- **Row count**: 1
+- **Relationship notes**: Parent of `timed_activity_equipment`.
+
+### timed_activity_equipment
+
+Equipment requirements for timed activities.
+
+| Column | Type | NOT NULL | Source field | Notes |
+|---|---|---|---|---|
+| activity_key | VARCHAR(80) | Yes (PK, FK) | parent activity | Activity key |
+| equipment_key | VARCHAR(120) | Yes (PK) | equipment_need key | Equipment identifier |
+| amount | INTEGER | Yes | equipment_need value | Required quantity |
+
+- **Source**: `common/timed_activities/*.txt` (equipment_need block)
+- **Row count**: 1
+- **Relationship notes**: FK → `timed_activities`.
+
+---
+
 ## Infrastructure Tables
 
 ### user_annotations
@@ -2278,10 +2604,15 @@ Grand doctrines and subdoctrines pre-selected in country history files.
 | 21 | BOP & Continuous Focuses | `balance_of_power_definitions`, `bop_sides`, `bop_ranges`, `bop_range_modifiers`, `continuous_focus_palettes`, `continuous_focuses`, `continuous_focus_modifiers` | ~340 |
 | 22 | Misc DLC | `technology_sharing_groups`, `dynamic_modifiers`, `dynamic_modifier_effects`, `scientist_traits`, `scientist_trait_modifiers`, `peace_action_categories`, `peace_cost_modifiers` | ~460 |
 | 23 | Doctrines (Officer Corps) | `doctrine_folders`, `doctrine_tracks`, `grand_doctrines`, `grand_doctrine_tracks`, `subdoctrines`, `country_starting_doctrines` | ~1,078 |
+| 24 | Factions | `faction_rule_groups`, `faction_rules`, `faction_rule_group_members`, `faction_manifests`, `faction_goals`, `faction_templates`, `faction_template_goals`, `faction_template_rules`, `faction_member_upgrade_groups`, `faction_member_upgrades` | ~584 |
+| 25 | Special Projects | `special_project_specializations`, `special_project_tags`, `special_projects`, `special_project_rewards`, `special_project_reward_links` | ~448 |
+| 26 | Collections | `collections` | ~72 |
+| 27 | AI Faction Theaters | `ai_faction_theaters`, `ai_faction_theater_regions` | ~210 |
+| 28 | Timed Activities | `timed_activities`, `timed_activity_equipment` | ~2 |
 | Infra | Infrastructure | `user_annotations`, `localisation` | ~117,490 |
-| **Totals** | | **57 new tables + 2 infra** | **~123,968 rows** |
+| **Totals** | | **77 new tables + 2 infra** | **~125,284 rows** |
 
-**Running total: 66 existing + 57 new + 4 schema-only + 2 infrastructure = 129 tables**
+**Running total: 66 existing + 77 new + 4 schema-only + 2 infrastructure = 149 tables**
 
 (Note: `intelligence_agencies` is a revision of an existing table, so net new tables = 50; but the new child table `intelligence_agency_names` makes 51 new table definitions.)
 
@@ -2361,11 +2692,41 @@ Tables must be created in this order to satisfy FK constraints:
 54. scientist_trait_modifiers               (FK → scientist_traits)
 55. peace_action_categories
 56. peace_cost_modifiers                    (FK → peace_action_categories)
+
+-- Phase 24: Factions
+57. faction_rule_groups
+58. faction_rules                           (FK → faction_rule_groups)
+59. faction_rule_group_members              (FK → faction_rule_groups, faction_rules)
+60. faction_manifests
+61. faction_goals
+62. faction_templates                       (FK → faction_manifests)
+63. faction_template_goals                  (FK → faction_templates, faction_goals)
+64. faction_template_rules                  (FK → faction_templates, faction_rules)
+65. faction_member_upgrade_groups
+66. faction_member_upgrades                 (FK → faction_member_upgrade_groups)
+
+-- Phase 25: Special Projects
+67. special_project_specializations
+68. special_project_tags
+69. special_projects                        (FK → special_project_specializations, special_project_tags)
+70. special_project_rewards                 (FK → special_project_specializations)
+71. special_project_reward_links            (FK → special_projects, special_project_rewards)
+
+-- Phase 26: Collections
+72. collections
+
+-- Phase 27: AI Faction Theaters
+73. ai_faction_theaters
+74. ai_faction_theater_regions              (FK → ai_faction_theaters, strategic_regions)
+
+-- Phase 28: Timed Activities
+75. timed_activities
+76. timed_activity_equipment                (FK → timed_activities)
 ```
 
 ---
 
-## Index Recommendations (Phases 16–22)
+## Index Recommendations (Phases 16–28)
 
 | Table | Index | Rationale |
 |---|---|---|
@@ -2382,10 +2743,19 @@ Tables must be created in this order to satisfy FK constraints:
 | `unit_medal_modifiers` | `idx_umm_medal` ON (medal_key) | Modifiers per medal |
 | `raids` | `idx_raids_category` ON (category_key) | Raids by category |
 | `continuous_focuses` | `idx_cf_palette` ON (palette_id) | Focuses per palette |
+| `faction_rules` | `idx_faction_rules_group` ON (rule_group_key) | Rules per group |
+| `faction_rules` | `idx_faction_rules_type` ON (rule_type) | Rules by type |
+| `faction_goals` | `idx_faction_goals_category` ON (category) | Goals by category |
+| `faction_templates` | `idx_faction_templates_manifest` ON (manifest_key) | Templates per manifest |
+| `faction_member_upgrades` | `idx_fmu_group` ON (group_key) | Upgrades per group |
+| `special_projects` | `idx_sp_specialization` ON (specialization_key) | Projects per specialization |
+| `special_projects` | `idx_sp_tag` ON (project_tag) | Projects per tag |
+| `special_project_rewards` | `idx_spr_spec` ON (specialization_key) | Rewards per specialization |
+| `ai_faction_theater_regions` | `idx_aftr_region` ON (region_id) | Theater lookup by region |
 
 ---
 
-## DLC Field Register (Phases 16–22)
+## DLC Field Register (Phases 16–28)
 
 | Table | Column / Scope | DLC Guard | Notes |
 |---|---|---|---|
@@ -2413,3 +2783,16 @@ Tables must be created in this order to satisfy FK constraints:
 | `scientist_traits` | Entire table | "Gotterdammerung" | |
 | `peace_action_categories` | Entire table | "By Blood Alone" | Peace overhaul |
 | `peace_cost_modifiers` | `dlc_source` | "By Blood Alone" | |
+| `faction_rule_groups` | Entire table | "Ride of the Valkyries" | Faction system |
+| `faction_rules` | `dlc_source` | "Ride of the Valkyries" | |
+| `faction_manifests` | `dlc_source` | "Ride of the Valkyries" | |
+| `faction_goals` | `dlc_source` | "Ride of the Valkyries" | |
+| `faction_templates` | `dlc_source` | "Ride of the Valkyries" | |
+| `faction_member_upgrade_groups` | Entire table | "Ride of the Valkyries" | |
+| `faction_member_upgrades` | `dlc_source` | "Ride of the Valkyries" | |
+| `special_project_specializations` | `dlc_source` | "Gotterdammerung" | R&D projects |
+| `special_project_tags` | `dlc_source` | "Gotterdammerung" | |
+| `special_projects` | `dlc_source` | Various | Per-project DLC guards |
+| `special_project_rewards` | `dlc_source` | "Gotterdammerung" | |
+| `collections` | Entire table | "Ride of the Valkyries" | Used by factions |
+| `ai_faction_theaters` | Entire table | "Ride of the Valkyries" | AI faction planning |

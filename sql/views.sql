@@ -1,6 +1,6 @@
 -- HOI4 PostgreSQL API Views & Functions
 --
--- 2 functions (date-parameterised) + 12 views across 3 slices.
+-- 2 functions (date-parameterised) + 14 views across 3 slices.
 --
 -- Slice A — Country & State:   api_country_detail (function),
 --                              api_state_detail (function)
@@ -10,7 +10,8 @@
 --                              api_focus_tree_detail, api_equipment_catalog,
 --                              api_ideas_detail
 -- Slice C — DLC Systems:       api_mio_organization_detail, api_operation_detail,
---                              api_bop_detail
+--                              api_bop_detail, api_faction_detail,
+--                              api_special_project_detail
 
 -- ============================================================
 -- Slice A — Country & State Detail
@@ -622,3 +623,95 @@ SELECT
         WHERE bs.bop_key = bop.bop_key
     ), '[]'::jsonb) AS sides
 FROM balance_of_power_definitions bop;
+
+-- ============================================================
+-- Slice C — DLC: Factions (Götterdämmerung)
+-- ============================================================
+
+CREATE OR REPLACE VIEW api_faction_detail AS
+SELECT
+    ft.template_key,
+    ft.name_loc,
+    ft.manifest_key,
+    ft.icon,
+    ft.can_leader_join_other,
+    ft.dlc_source,
+    COALESCE((
+        SELECT jsonb_agg(
+            jsonb_build_object(
+                'goal_key', fg.goal_key,
+                'name_loc', fg.name_loc,
+                'category', fg.category,
+                'goal_group', fg.goal_group
+            )
+            ORDER BY fg.goal_key
+        )
+        FROM faction_template_goals ftg
+        JOIN faction_goals fg ON fg.goal_key = ftg.goal_key
+        WHERE ftg.template_key = ft.template_key
+    ), '[]'::jsonb) AS goals,
+    COALESCE((
+        SELECT jsonb_agg(
+            jsonb_build_object(
+                'rule_key', fr.rule_key,
+                'rule_type', fr.rule_type,
+                'rule_group_key', fr.rule_group_key
+            )
+            ORDER BY fr.rule_key
+        )
+        FROM faction_template_rules ftr
+        JOIN faction_rules fr ON fr.rule_key = ftr.rule_key
+        WHERE ftr.template_key = ft.template_key
+    ), '[]'::jsonb) AS rules,
+    COALESCE((
+        SELECT jsonb_agg(
+            jsonb_build_object(
+                'group_key', mug.group_key,
+                'name_loc', mug.name_loc,
+                'upgrade_type', mug.upgrade_type,
+                'upgrades', COALESCE((
+                    SELECT jsonb_agg(
+                        jsonb_build_object(
+                            'upgrade_key', mu.upgrade_key,
+                            'bonus', mu.bonus,
+                            'description_loc', mu.description_loc
+                        )
+                        ORDER BY mu.upgrade_key
+                    )
+                    FROM faction_member_upgrades mu
+                    WHERE mu.group_key = mug.group_key
+                ), '[]'::jsonb)
+            )
+            ORDER BY mug.group_key
+        )
+        FROM faction_member_upgrade_groups mug
+    ), '[]'::jsonb) AS member_upgrade_groups
+FROM faction_templates ft;
+
+-- ============================================================
+-- Slice C — DLC: Special Projects (Götterdämmerung)
+-- ============================================================
+
+CREATE OR REPLACE VIEW api_special_project_detail AS
+SELECT
+    sp.project_key,
+    sp.specialization_key,
+    sp.project_tag,
+    sp.complexity,
+    sp.prototype_time,
+    sp.dlc_source,
+    COALESCE((
+        SELECT jsonb_agg(
+            jsonb_build_object(
+                'reward_key', spr.reward_key,
+                'fire_only_once', spr.fire_only_once,
+                'threshold_min', spr.threshold_min,
+                'threshold_max', spr.threshold_max
+            )
+            ORDER BY spr.reward_key
+        )
+        FROM special_project_reward_links sprl
+        JOIN special_project_rewards spr ON spr.reward_key = sprl.reward_key
+        WHERE sprl.project_key = sp.project_key
+    ), '[]'::jsonb) AS rewards
+FROM special_projects sp;

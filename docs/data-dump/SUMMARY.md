@@ -8,6 +8,8 @@ Output directory: `/mnt/c/Users/joshu/hoi4-database/docs/data-dump`
 | ace_modifier_effects | 24 |
 | ace_modifier_equipment_types | 21 |
 | ace_modifiers | 9 |
+| ai_faction_theater_regions | 293 |
+| ai_faction_theaters | 30 |
 | air_wings_all | 501 |
 | autonomy_state_modifiers | 172 |
 | autonomy_states | 19 |
@@ -24,6 +26,7 @@ Output directory: `/mnt/c/Users/joshu/hoi4-database/docs/data-dump`
 | character_traits | 1277 |
 | characters_all | 5138 |
 | characters_ger | 142 |
+| collections | 73 |
 | compliance_modifier_effects | 6 |
 | compliance_modifiers | 5 |
 | continents | 8 |
@@ -52,6 +55,16 @@ Output directory: `/mnt/c/Users/joshu/hoi4-database/docs/data-dump`
 | equipment_all | 470 |
 | equipment_resources_all | 454 |
 | equipment_variants | 823 |
+| faction_goals | 156 |
+| faction_manifests | 37 |
+| faction_member_upgrade_groups | 1 |
+| faction_member_upgrades | 4 |
+| faction_rule_group_members | 63 |
+| faction_rule_groups | 19 |
+| faction_rules | 64 |
+| faction_template_goals | 139 |
+| faction_template_rules | 235 |
+| faction_templates | 65 |
 | fleets_all | 77 |
 | focus_links_all | 11535 |
 | focus_links_germany | 570 |
@@ -113,6 +126,11 @@ Output directory: `/mnt/c/Users/joshu/hoi4-database/docs/data-dump`
 | scientist_trait_modifiers | 25 |
 | scientist_traits | 21 |
 | ships_all | 1866 |
+| special_project_reward_links | 663 |
+| special_project_rewards | 82 |
+| special_project_specializations | 4 |
+| special_project_tags | 13 |
+| special_projects | 48 |
 | state_buildings | 3048 |
 | state_categories | 13 |
 | state_cores | 1551 |
@@ -139,6 +157,8 @@ Output directory: `/mnt/c/Users/joshu/hoi4-database/docs/data-dump`
 | terrain_building_limits | 16 |
 | terrain_combat_modifiers | 12 |
 | terrain_types | 17 |
+| timed_activities | 1 |
+| timed_activity_equipment | 1 |
 | unit_medal_modifiers | 163 |
 | unit_medals | 99 |
 | unit_types_all | 125 |

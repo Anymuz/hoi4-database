@@ -1,12 +1,11 @@
 # tests/test_ideas.py
 import pytest
+# Phase 3 tests: verify idea list and detail endpoints.
 
+# Mark every test in this file as async so pytest-asyncio will run them.
 pytestmark = pytest.mark.asyncio(loop_scope="session")
 
-# ---
-# List ideas
-# ---
-
+# List ideas tests:
 async def test_list_ideas_200(client):
     resp = await client.get("/api/v1/ideas")
     assert resp.status_code == 200
@@ -38,11 +37,9 @@ async def test_list_ideas_law_filter(client):
     for item in data:
         assert item["is_law"] is True
 # End of test_list_ideas_law_filter
+# ----------------------------------------------
 
-# ---
-# Idea detail
-# ---
-
+# Idea detail tests:
 async def test_idea_detail(client):
     resp = await client.get("/api/v1/ideas?limit=1")
     assert resp.status_code == 200
@@ -72,3 +69,4 @@ async def test_idea_detail_404(client):
     resp = await client.get("/api/v1/ideas/nonexistent_idea_xyz")
     assert resp.status_code == 404
 # End of test_idea_detail_404
+# ----------------------------------------------

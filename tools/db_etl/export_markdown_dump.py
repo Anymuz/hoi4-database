@@ -3449,6 +3449,436 @@ def parse_country_starting_doctrines() -> int:
     return len(rows)
 
 
+# ── Phase 24: Factions ────────────────────────────────────────────────
+
+def parse_faction_rule_groups() -> Tuple[int, int]:
+    """Parse common/factions/rules/groups/rule_groups.txt
+    Returns (group_count, member_count)."""
+    p = ROOT / "common" / "factions" / "rules" / "groups" / "rule_groups.txt"
+    group_rows: List[List[str]] = []
+    member_rows: List[List[str]] = []
+    if not p.exists():
+        return 0, 0
+    txt = strip_comments(p.read_text(encoding="utf-8", errors="ignore"))
+    for key, body, _ in find_top_level_blocks(txt):
+        group_rows.append([key, p.name])
+        # Extract rules list
+        rules_m = re.search(r'\brules\s*=\s*\{', body)
+        if rules_m:
+            rules_body = extract_block(body, rules_m.start())
+            for rule_key in re.findall(r'\b([a-zA-Z_][a-zA-Z0-9_]+)\b', rules_body):
+                member_rows.append([key, rule_key])
+    write_md(OUT / "faction_rule_groups.md", "Faction Rule Groups",
+        ["rule_group_key", "source_file"], group_rows,
+        "common/factions/rules/groups/rule_groups.txt")
+    write_md(OUT / "faction_rule_group_members.md", "Faction Rule Group Members",
+        ["rule_group_key", "rule_key"], member_rows,
+        "common/factions/rules/groups/rule_groups.txt")
+    return len(group_rows), len(member_rows)
+
+
+def parse_faction_rules_all() -> int:
+    """Parse common/factions/rules/*.txt (excluding groups/)."""
+    d = ROOT / "common" / "factions" / "rules"
+    rows: List[List[str]] = []
+    if not d.exists():
+        return 0
+    for fp in sorted(d.glob("*.txt")):
+        txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+        for key, body, _ in find_top_level_blocks(txt):
+            rtype = re.search(r'\btype\s*=\s*(\S+)', body)
+            dlc = re.search(r'has_dlc\s*=\s*"([^"]+)"', body)
+            rows.append([key, rtype.group(1) if rtype else "", dlc.group(1) if dlc else "", fp.name])
+    rows = dedup_rows(rows, [0])
+    write_md(OUT / "faction_rules.md", "Faction Rules",
+        ["rule_key", "rule_type", "dlc_source", "source_file"], rows,
+        "common/factions/rules/*.txt")
+    return len(rows)
+
+
+def parse_faction_manifests_all() -> int:
+    """Parse common/factions/goals/faction_manifests.txt."""
+    p = ROOT / "common" / "factions" / "goals" / "faction_manifests.txt"
+    rows: List[List[str]] = []
+    if not p.exists():
+        return 0
+    txt = strip_comments(p.read_text(encoding="utf-8", errors="ignore"))
+    for key, body, _ in find_top_level_blocks(txt):
+        name = re.search(r'\bname\s*=\s*(\S+)', body)
+        desc = re.search(r'\bdescription\s*=\s*(\S+)', body)
+        is_manifest = "yes" if "is_manifest" in body else ""
+        total = re.search(r'\btotal_amount\s*=\s*([0-9]+)', body)
+        dlc = re.search(r'has_dlc\s*=\s*"([^"]+)"', body)
+        rows.append([key,
+            name.group(1) if name else "",
+            desc.group(1) if desc else "",
+            is_manifest,
+            total.group(1) if total else "",
+            dlc.group(1) if dlc else "",
+            p.name])
+    write_md(OUT / "faction_manifests.md", "Faction Manifests",
+        ["manifest_key", "name_loc", "description_loc", "is_manifest", "total_amount", "dlc_source", "source_file"],
+        rows, "common/factions/goals/faction_manifests.txt")
+    return len(rows)
+
+
+def parse_faction_goals_all() -> int:
+    """Parse common/factions/goals/faction_goals_*.txt."""
+    d = ROOT / "common" / "factions" / "goals"
+    rows: List[List[str]] = []
+    if not d.exists():
+        return 0
+    for fp in sorted(d.glob("faction_goals_*.txt")):
+        # Derive category from filename: faction_goals_short_term.txt → short_term
+        cat = fp.stem.replace("faction_goals_", "")
+        txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+        for key, body, _ in find_top_level_blocks(txt):
+            name = re.search(r'\bname\s*=\s*(\S+)', body)
+            desc = re.search(r'\bdescription\s*=\s*(\S+)', body)
+            group = re.search(r'\bgroup\s*=\s*(\S+)', body)
+            cat_field = re.search(r'\bcategory\s*=\s*(\S+)', body)
+            dlc = re.search(r'has_dlc\s*=\s*"([^"]+)"', body)
+            actual_cat = cat_field.group(1) if cat_field else cat
+            rows.append([key,
+                name.group(1) if name else "",
+                desc.group(1) if desc else "",
+                actual_cat,
+                group.group(1) if group else "",
+                dlc.group(1) if dlc else "",
+                fp.name])
+    rows = dedup_rows(rows, [0])
+    write_md(OUT / "faction_goals.md", "Faction Goals",
+        ["goal_key", "name_loc", "description_loc", "category", "goal_group", "dlc_source", "source_file"],
+        rows, "common/factions/goals/faction_goals_*.txt")
+    return len(rows)
+
+
+def parse_faction_templates_all() -> Tuple[int, int, int]:
+    """Parse common/factions/templates/*.txt.
+    Returns (template_count, goal_junction_count, rule_junction_count)."""
+    d = ROOT / "common" / "factions" / "templates"
+    tmpl_rows: List[List[str]] = []
+    goal_rows: List[List[str]] = []
+    rule_rows: List[List[str]] = []
+    if not d.exists():
+        return 0, 0, 0
+    for fp in sorted(d.glob("*.txt")):
+        txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+        for key, body, _ in find_top_level_blocks(txt):
+            name = re.search(r'\bname\s*=\s*(\S+)', body)
+            manifest = re.search(r'\bmanifest\s*=\s*(\S+)', body)
+            icon = re.search(r'\bicon\s*=\s*(\S+)', body)
+            cljof = re.search(r'\bcan_leader_join_other_factions\s*=\s*(\S+)', body)
+            dlc = re.search(r'has_dlc\s*=\s*"([^"]+)"', body)
+            tmpl_rows.append([key,
+                name.group(1) if name else "",
+                manifest.group(1) if manifest else "",
+                icon.group(1) if icon else "",
+                cljof.group(1) if cljof else "",
+                dlc.group(1) if dlc else "",
+                fp.name])
+            # goals junction
+            goals_m = re.search(r'\bgoals\s*=\s*\{', body)
+            if goals_m:
+                goals_body = extract_block(body, goals_m.start())
+                for gk in re.findall(r'\b(faction_goal_\w+)\b', goals_body):
+                    goal_rows.append([key, gk])
+            # default_rules junction
+            rules_m = re.search(r'\bdefault_rules\s*=\s*\{', body)
+            if rules_m:
+                rules_body = extract_block(body, rules_m.start())
+                for rk in re.findall(r'\b([a-zA-Z_][a-zA-Z0-9_]+)\b', rules_body):
+                    rule_rows.append([key, rk])
+    tmpl_rows = dedup_rows(tmpl_rows, [0])
+    goal_rows = dedup_rows(goal_rows, [0, 1])
+    rule_rows = dedup_rows(rule_rows, [0, 1])
+    write_md(OUT / "faction_templates.md", "Faction Templates",
+        ["template_key", "name_loc", "manifest_key", "icon", "can_leader_join_other", "dlc_source", "source_file"],
+        tmpl_rows, "common/factions/templates/*.txt")
+    write_md(OUT / "faction_template_goals.md", "Faction Template Goals",
+        ["template_key", "goal_key"], goal_rows,
+        "common/factions/templates/*.txt")
+    write_md(OUT / "faction_template_rules.md", "Faction Template Rules",
+        ["template_key", "rule_key"], rule_rows,
+        "common/factions/templates/*.txt")
+    return len(tmpl_rows), len(goal_rows), len(rule_rows)
+
+
+def parse_faction_member_upgrades_all() -> Tuple[int, int]:
+    """Parse member_upgrades and member_upgrade_groups.
+    Returns (group_count, upgrade_count)."""
+    d = ROOT / "common" / "factions" / "member_upgrades"
+    group_rows: List[List[str]] = []
+    upgrade_rows: List[List[str]] = []
+    if not d.exists():
+        return 0, 0
+    # Parse member upgrade groups
+    gf = d / "member_groups" / "member_upgrade_groups.txt"
+    group_map: Dict[str, str] = {}  # upgrade_key → group_key
+    if gf.exists():
+        txt = strip_comments(gf.read_text(encoding="utf-8", errors="ignore"))
+        for key, body, _ in find_top_level_blocks(txt):
+            name = re.search(r'\bname\s*=\s*(\S+)', body)
+            desc = re.search(r'\bdesc\s*=\s*(\S+)', body)
+            default_up = re.search(r'\bdefault_upgrade\s*=\s*(\S+)', body)
+            up_type = re.search(r'\bupgrade_type\s*=\s*(\S+)', body)
+            icon = re.search(r'\bicon\s*=\s*(\S+)', body)
+            dlc = re.search(r'has_dlc\s*=\s*"([^"]+)"', body)
+            group_rows.append([key,
+                name.group(1) if name else "",
+                desc.group(1) if desc else "",
+                default_up.group(1) if default_up else "",
+                up_type.group(1) if up_type else "",
+                icon.group(1) if icon else "",
+                dlc.group(1) if dlc else "",
+                gf.name])
+            # Map upgrades listed in this group
+            ups_m = re.search(r'\bupgrades\s*=\s*\{', body)
+            if ups_m:
+                ups_body = extract_block(body, ups_m.start())
+                for uk in re.findall(r'\b([a-zA-Z_][a-zA-Z0-9_]+)\b', ups_body):
+                    group_map[uk] = key
+    # Parse member upgrades
+    uf = d / "member_upgrades.txt"
+    if uf.exists():
+        txt = strip_comments(uf.read_text(encoding="utf-8", errors="ignore"))
+        for key, body, _ in find_top_level_blocks(txt):
+            bonus = re.search(r'\bbonus\s*=\s*([0-9.\-]+)', body)
+            desc = re.search(r'\bdesc\s*=\s*(\S+)', body)
+            dlc = re.search(r'has_dlc\s*=\s*"([^"]+)"', body)
+            upgrade_rows.append([key,
+                group_map.get(key, ""),
+                bonus.group(1) if bonus else "",
+                desc.group(1) if desc else "",
+                dlc.group(1) if dlc else "",
+                uf.name])
+    write_md(OUT / "faction_member_upgrade_groups.md", "Faction Member Upgrade Groups",
+        ["group_key", "name_loc", "description_loc", "default_upgrade_key", "upgrade_type", "icon", "dlc_source", "source_file"],
+        group_rows, "common/factions/member_upgrades/member_groups/*.txt")
+    write_md(OUT / "faction_member_upgrades.md", "Faction Member Upgrades",
+        ["upgrade_key", "group_key", "bonus", "description_loc", "dlc_source", "source_file"],
+        upgrade_rows, "common/factions/member_upgrades/member_upgrades.txt")
+    return len(group_rows), len(upgrade_rows)
+
+
+# ── Phase 25: Special Projects ────────────────────────────────────────
+
+def parse_special_project_specializations() -> int:
+    """Parse common/special_projects/specialization/specializations.txt."""
+    p = ROOT / "common" / "special_projects" / "specialization" / "specializations.txt"
+    rows: List[List[str]] = []
+    if not p.exists():
+        return 0
+    txt = strip_comments(p.read_text(encoding="utf-8", errors="ignore"))
+    for key, body, _ in find_top_level_blocks(txt):
+        rows.append([key, p.name])
+    write_md(OUT / "special_project_specializations.md", "Special Project Specializations",
+        ["specialization_key", "source_file"], rows,
+        "common/special_projects/specialization/specializations.txt")
+    return len(rows)
+
+
+def parse_special_project_tags() -> int:
+    """Parse common/special_projects/project_tags/tags.txt."""
+    p = ROOT / "common" / "special_projects" / "project_tags" / "tags.txt"
+    rows: List[List[str]] = []
+    if not p.exists():
+        return 0
+    txt = strip_comments(p.read_text(encoding="utf-8", errors="ignore"))
+    # Tags are in project_tags = { ... } wrapper
+    m = re.search(r'\bproject_tags\s*=\s*\{', txt)
+    if not m:
+        return 0
+    body = extract_block(txt, m.start())
+    for tag_key in re.findall(r'\b(sp_tag_\w+)\b', body):
+        rows.append([tag_key])
+    rows = dedup_rows(rows, [0])
+    write_md(OUT / "special_project_tags.md", "Special Project Tags",
+        ["tag_key"], rows, "common/special_projects/project_tags/tags.txt")
+    return len(rows)
+
+
+def parse_special_projects_all() -> Tuple[int, int]:
+    """Parse common/special_projects/projects/*.txt.
+    Returns (project_count, reward_link_count)."""
+    d = ROOT / "common" / "special_projects" / "projects"
+    proj_rows: List[List[str]] = []
+    link_rows: List[List[str]] = []
+    if not d.exists():
+        return 0, 0
+    for fp in sorted(d.glob("*.txt")):
+        txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+        for key, body, _ in find_top_level_blocks(txt):
+            spec = re.search(r'\bspecialization\s*=\s*(\S+)', body)
+            # project_tags can be simple (project_tags = sp_tag_x) or block ({ sp_tag_x })
+            ptag_block_m = re.search(r'\bproject_tags\s*=\s*\{', body)
+            if ptag_block_m:
+                ptag_body = extract_block(body, ptag_block_m.start())
+                ptag_val = re.search(r'\b(sp_tag_\w+)\b', ptag_body)
+                ptag_str = ptag_val.group(1) if ptag_val else ""
+            else:
+                ptag_simple = re.search(r'\bproject_tags\s*=\s*(sp_tag_\w+)', body)
+                ptag_str = ptag_simple.group(1) if ptag_simple else ""
+            compl = re.search(r'\bcomplexity\s*=\s*(\S+)', body)
+            ptime = re.search(r'\bprototype_time\s*=\s*(\S+)', body)
+            dlc = re.search(r'has_dlc\s*=\s*"([^"]+)"', body)
+            proj_rows.append([key,
+                spec.group(1) if spec else "",
+                ptag_str,
+                compl.group(1) if compl else "",
+                ptime.group(1) if ptime else "",
+                dlc.group(1) if dlc else "",
+                fp.name])
+            # generic_prototype_rewards junction
+            rewards_m = re.search(r'\bgeneric_prototype_rewards\s*=\s*\{', body)
+            if rewards_m:
+                rewards_body = extract_block(body, rewards_m.start())
+                for rk in re.findall(r'\b(sp_\w+)\b', rewards_body):
+                    link_rows.append([key, rk])
+    proj_rows = dedup_rows(proj_rows, [0])
+    link_rows = dedup_rows(link_rows, [0, 1])
+    write_md(OUT / "special_projects.md", "Special Projects",
+        ["project_key", "specialization_key", "project_tag", "complexity", "prototype_time", "dlc_source", "source_file"],
+        proj_rows, "common/special_projects/projects/*.txt")
+    write_md(OUT / "special_project_reward_links.md", "Special Project Reward Links",
+        ["project_key", "reward_key"], link_rows,
+        "common/special_projects/projects/*.txt")
+    return len(proj_rows), len(link_rows)
+
+
+def parse_special_project_rewards_all() -> int:
+    """Parse common/special_projects/prototype_rewards/*.txt."""
+    d = ROOT / "common" / "special_projects" / "prototype_rewards"
+    rows: List[List[str]] = []
+    if not d.exists():
+        return 0
+    spec_map = {
+        "land": "specialization_land",
+        "naval": "specialization_naval",
+        "air": "specialization_air",
+        "nuclear": "specialization_nuclear",
+        "rocket": "specialization_nuclear",  # rockets use nuclear facility
+    }
+    for fp in sorted(d.glob("*.txt")):
+        # Derive specialization from filename: generic_land_prototype_rewards.txt → land
+        fname = fp.stem
+        spec_key = ""
+        for k, v in spec_map.items():
+            if k in fname:
+                spec_key = v
+                break
+        txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+        for key, body, _ in find_top_level_blocks(txt):
+            fire_once = "yes" if "fire_only_once = yes" in body else "no"
+            thr_min = re.search(r'\bmin\s*=\s*([0-9]+)', body)
+            thr_max = re.search(r'\bmax\s*=\s*([0-9]+)', body)
+            dlc = re.search(r'has_dlc\s*=\s*"([^"]+)"', body)
+            rows.append([key,
+                spec_key,
+                fire_once,
+                thr_min.group(1) if thr_min else "",
+                thr_max.group(1) if thr_max else "",
+                dlc.group(1) if dlc else "",
+                fp.name])
+    rows = dedup_rows(rows, [0])
+    write_md(OUT / "special_project_rewards.md", "Special Project Rewards",
+        ["reward_key", "specialization_key", "fire_only_once", "threshold_min", "threshold_max", "dlc_source", "source_file"],
+        rows, "common/special_projects/prototype_rewards/*.txt")
+    return len(rows)
+
+
+# ── Phase 26: Collections ─────────────────────────────────────────────
+
+def parse_collections_all() -> int:
+    """Parse common/collections/*.txt."""
+    d = ROOT / "common" / "collections"
+    rows: List[List[str]] = []
+    if not d.exists():
+        return 0
+    for fp in sorted(d.glob("*.txt")):
+        txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+        for key, body, _ in find_top_level_blocks(txt):
+            name = re.search(r'\bname\s*=\s*(\S+)', body)
+            input_src = re.search(r'\binput\s*=\s*(\S+)', body)
+            dlc = re.search(r'has_dlc\s*=\s*"([^"]+)"', body)
+            rows.append([key,
+                name.group(1) if name else "",
+                input_src.group(1) if input_src else "",
+                dlc.group(1) if dlc else "",
+                fp.name])
+    rows = dedup_rows(rows, [0])
+    write_md(OUT / "collections.md", "Collections",
+        ["collection_key", "name_loc", "input_source", "dlc_source", "source_file"],
+        rows, "common/collections/*.txt")
+    return len(rows)
+
+
+# ── Phase 27: AI Faction Theaters ─────────────────────────────────────
+
+def parse_ai_faction_theaters_all() -> Tuple[int, int]:
+    """Parse common/ai_faction_theaters/*.txt.
+    Returns (theater_count, region_junction_count)."""
+    d = ROOT / "common" / "ai_faction_theaters"
+    theater_rows: List[List[str]] = []
+    region_rows: List[List[str]] = []
+    if not d.exists():
+        return 0, 0
+    for fp in sorted(d.glob("*.txt")):
+        txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+        for key, body, _ in find_top_level_blocks(txt):
+            name = re.search(r'\bname\s*=\s*(\S+)', body)
+            dlc = re.search(r'has_dlc\s*=\s*"([^"]+)"', body)
+            theater_rows.append([key,
+                name.group(1) if name else "",
+                dlc.group(1) if dlc else "",
+                fp.name])
+            # regions junction
+            regions_m = re.search(r'\bregions\s*=\s*\{', body)
+            if regions_m:
+                regions_body = extract_block(body, regions_m.start())
+                for rid in re.findall(r'\b(\d+)\b', regions_body):
+                    region_rows.append([key, rid])
+    theater_rows = dedup_rows(theater_rows, [0])
+    region_rows = dedup_rows(region_rows, [0, 1])
+    write_md(OUT / "ai_faction_theaters.md", "AI Faction Theaters",
+        ["theater_key", "name_loc", "dlc_source", "source_file"],
+        theater_rows, "common/ai_faction_theaters/*.txt")
+    write_md(OUT / "ai_faction_theater_regions.md", "AI Faction Theater Regions",
+        ["theater_key", "region_id"], region_rows,
+        "common/ai_faction_theaters/*.txt")
+    return len(theater_rows), len(region_rows)
+
+
+# ── Phase 28: Timed Activities ────────────────────────────────────────
+
+def parse_timed_activities_all() -> Tuple[int, int]:
+    """Parse common/timed_activities/*.txt.
+    Returns (activity_count, equipment_count)."""
+    d = ROOT / "common" / "timed_activities"
+    act_rows: List[List[str]] = []
+    equip_rows: List[List[str]] = []
+    if not d.exists():
+        return 0, 0
+    for fp in sorted(d.glob("*.txt")):
+        txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+        for key, body, _ in find_top_level_blocks(txt):
+            dlc = re.search(r'has_dlc\s*=\s*"([^"]+)"', body)
+            act_rows.append([key, dlc.group(1) if dlc else "", fp.name])
+            # equipment_need block
+            en_m = re.search(r'\bequipment_need\s*=\s*\{', body)
+            if en_m:
+                en_body = extract_block(body, en_m.start())
+                for eq_m in re.finditer(r'\b([a-zA-Z_][a-zA-Z0-9_]+)\s*=\s*([0-9]+)', en_body):
+                    equip_rows.append([key, eq_m.group(1), eq_m.group(2)])
+    write_md(OUT / "timed_activities.md", "Timed Activities",
+        ["activity_key", "dlc_source", "source_file"],
+        act_rows, "common/timed_activities/*.txt")
+    write_md(OUT / "timed_activity_equipment.md", "Timed Activity Equipment",
+        ["activity_key", "equipment_key", "amount"],
+        equip_rows, "common/timed_activities/*.txt")
+    return len(act_rows), len(equip_rows)
+
+
 def main() -> None:
     global ROOT
 
@@ -3716,6 +4146,42 @@ def main() -> None:
 
     stats["subdoctrines"] = parse_subdoctrines()
     stats["country_starting_doctrines"] = parse_country_starting_doctrines()
+
+    # ── Phase 24: Factions ──
+    frg_n, frgm_n = parse_faction_rule_groups()
+    stats["faction_rule_groups"] = frg_n
+    stats["faction_rule_group_members"] = frgm_n
+    stats["faction_rules"] = parse_faction_rules_all()
+    stats["faction_manifests"] = parse_faction_manifests_all()
+    stats["faction_goals"] = parse_faction_goals_all()
+    ft_n, ftg_n, ftr_n = parse_faction_templates_all()
+    stats["faction_templates"] = ft_n
+    stats["faction_template_goals"] = ftg_n
+    stats["faction_template_rules"] = ftr_n
+    fmg_n, fmu_n = parse_faction_member_upgrades_all()
+    stats["faction_member_upgrade_groups"] = fmg_n
+    stats["faction_member_upgrades"] = fmu_n
+
+    # ── Phase 25: Special Projects ──
+    stats["special_project_specializations"] = parse_special_project_specializations()
+    stats["special_project_tags"] = parse_special_project_tags()
+    sp_n, srl_n = parse_special_projects_all()
+    stats["special_projects"] = sp_n
+    stats["special_project_reward_links"] = srl_n
+    stats["special_project_rewards"] = parse_special_project_rewards_all()
+
+    # ── Phase 26: Collections ──
+    stats["collections"] = parse_collections_all()
+
+    # ── Phase 27: AI Faction Theaters ──
+    aft_n, aftr_n = parse_ai_faction_theaters_all()
+    stats["ai_faction_theaters"] = aft_n
+    stats["ai_faction_theater_regions"] = aftr_n
+
+    # ── Phase 28: Timed Activities ──
+    ta_n, tae_n = parse_timed_activities_all()
+    stats["timed_activities"] = ta_n
+    stats["timed_activity_equipment"] = tae_n
 
     summary_lines = ["# Markdown Extraction Summary", "", f"Output directory: `{OUT.as_posix()}`", "", "| dataset | rows |", "|---|---:|"]
     for k in sorted(stats.keys()):

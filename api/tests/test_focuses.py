@@ -1,12 +1,11 @@
 # tests/test_focuses.py
+# Phase 3 tests: verify focus tree list, detail, and country focus tree endpoints.
 import pytest
 
+# Mark every test in this file as async so pytest-asyncio will run them.
 pytestmark = pytest.mark.asyncio(loop_scope="session")
 
-# ---
-# List focus trees
-# ---
-
+# List focus trees tests:
 async def test_list_focus_trees_200(client):
     resp = await client.get("/api/v1/focus-trees")
     assert resp.status_code == 200
@@ -29,11 +28,9 @@ async def test_list_focus_trees_summary_only(client):
         assert "country_tag" in tree
         assert "focuses" not in tree
 # End of test_list_focus_trees_summary_only
+# ----------------------------------------------
 
-# ---
-# Focus tree detail
-# ---
-
+# Focus tree detail tests:
 async def test_focus_tree_detail(client):
     # Grab a valid focus_tree_id from the list
     list_resp = await client.get("/api/v1/focus-trees?limit=1")
@@ -64,11 +61,9 @@ async def test_focus_tree_detail_404(client):
     resp = await client.get("/api/v1/focus-trees/nonexistent_tree_xyz")
     assert resp.status_code == 404
 # End of test_focus_tree_detail_404
+# ----------------------------------------------
 
-# ---
-# Country focus tree
-# ---
-
+# Country focus tree tests:
 async def test_country_focus_tree_ger(client):
     resp = await client.get("/api/v1/countries/GER/focus-tree")
     assert resp.status_code == 200
@@ -82,3 +77,4 @@ async def test_country_focus_tree_404(client):
     resp = await client.get("/api/v1/countries/ZZZ/focus-tree")
     assert resp.status_code == 404
 # End of test_country_focus_tree_404
+# ----------------------------------------------

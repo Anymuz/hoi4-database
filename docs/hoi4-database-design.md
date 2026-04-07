@@ -243,9 +243,34 @@ Tables must be created in this order (no forward FK references):
 121. grand_doctrine_tracks            → grand_doctrines, doctrine_tracks
 122. subdoctrines                     → doctrine_tracks
 123. country_starting_doctrines       → countries
+-- Phase 24: Factions (Ride of the Valkyries)
+124. faction_rule_groups
+125. faction_rules                    → faction_rule_groups
+126. faction_rule_group_members       → faction_rule_groups, faction_rules
+127. faction_manifests
+128. faction_goals
+129. faction_templates                → faction_manifests
+130. faction_template_goals           → faction_templates, faction_goals
+131. faction_template_rules           → faction_templates, faction_rules
+132. faction_member_upgrade_groups
+133. faction_member_upgrades          → faction_member_upgrade_groups
+-- Phase 25: Special Projects (Götterdämmerung)
+134. special_project_specializations
+135. special_project_tags
+136. special_projects                 → special_project_specializations, special_project_tags
+137. special_project_rewards          → special_project_specializations
+138. special_project_reward_links     → special_projects, special_project_rewards
+-- Phase 26: Collections
+139. collections
+-- Phase 27: AI Faction Theaters
+140. ai_faction_theaters
+141. ai_faction_theater_regions       → ai_faction_theaters, strategic_regions
+-- Phase 28: Timed Activities
+142. timed_activities
+143. timed_activity_equipment         → timed_activities
 -- Infrastructure
-124. user_annotations                 (no FKs)
-125. localisation                     (no FKs)
+144. user_annotations                 (no FKs)
+145. localisation                     (no FKs)
 ```
 
 ---
@@ -311,6 +336,21 @@ The largest DLC system by row count (~3,200 total). `mio_templates` (~40 generic
 
 ### Phase 23 — Doctrines / Officer Corps (6 tables, Götterdämmerung)
 Doctrines are purchased with military experience (Army/Navy/Air XP) through the Officer Corps — distinct from the research-slot technology tree. `doctrine_folders` (3: land, naval, air) define the top-level categories. `doctrine_tracks` (12: 4 per branch) group subdoctrines by mastery category. `grand_doctrines` (10: 4 land, 3 naval, 3 air) are mutually-exclusive choices per folder; `grand_doctrine_tracks` (40 junction rows) maps tracks to grand doctrines. `subdoctrines` (~86) are slotted into tracks with mastery reward tiers. `country_starting_doctrines` (~927 rows) captures both `set_grand_doctrine` and `set_sub_doctrine` assignments from country history files, with date scoping for 1936/1939 bookmarks.
+
+### Phase 24 — Factions (10 tables, Ride of the Valkyries)
+`faction_rule_groups` (15) classify rules into categories (ideology, geographical, war declaration, peace, etc.). `faction_rules` (53 across 9 type categories) define joining conditions, dismissal criteria, war declaration permissions, and peace conference behaviour; `faction_rule_group_members` (~60 junction rows) maps rules into groups. `faction_manifests` (36) define faction ratio-progress objectives with collection-based completion tracking. `faction_goals` (156: 63 short-term, 72 medium-term, 21 long-term) are assignable objectives with category and group filters. `faction_templates` (65) define named factions (Allies, Axis, Comintern, generics) linking a manifest and listing goals/rules; `faction_template_goals` (~200) and `faction_template_rules` (~250) are junction tables. `faction_member_upgrade_groups` (1: manpower contribution) and `faction_member_upgrades` (4 tiers) model member-level faction upgrades.
+
+### Phase 25 — Special Projects (5 tables, Götterdämmerung)
+`special_project_specializations` (4: land, naval, air, nuclear) categorize R&D facilities. `special_project_tags` (14) classify projects by equipment domain (tank, aircraft, submarine, etc.). `special_projects` (48: land 8, air 8, naval 19, nuclear 6, radar 1, rocket 6) define individual R&D projects with complexity and prototype time. `special_project_rewards` (82 generic prototype rewards across 5 specialization files) trigger during project iteration with progress thresholds. `special_project_reward_links` (~300 junction rows) assigns generic rewards to projects.
+
+### Phase 26 — Collections (1 table)
+`collections` (72) define scripted filter queries used by faction manifests and triggers. Each collection has an input source (all countries, faction scope, or another collection) and filter operators. Collections are referenced by manifests' `completed_amount_collection` fields.
+
+### Phase 27 — AI Faction Theaters (2 tables)
+`ai_faction_theaters` (30) define geographic theatres for AI military planning. `ai_faction_theater_regions` (~180 junction rows) maps strategic regions to each theatre. Theatres have cancel conditions and AI weighting but these are stored as scripted triggers, not in the DB.
+
+### Phase 28 — Timed Activities (2 tables)
+`timed_activities` (1: stage_coup) and `timed_activity_equipment` (1 row: infantry_equipment × 1000) model staged activities with equipment prerequisites. Minimal system in v1.17.
 
 ### Infrastructure Tables (2 tables)
 `user_annotations` — API-facing user notes (entity_type + entity_key + note). No FK constraints; indexes on (entity_type, entity_key).

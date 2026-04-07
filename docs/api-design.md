@@ -8,7 +8,7 @@
 
 ## 1. Overview & Rationale
 
-A **hybrid REST + GraphQL** API serving the 129-table HOI4 database. Game data
+A **hybrid REST + GraphQL** API serving the 149-table HOI4 database. Game data
 is read-only. A single `user_annotations` table enables user-generated metadata
 (Option B scalability — extend user-facing features without touching game data).
 A `localisation` table (117K English translations) provides human-readable names
@@ -863,8 +863,36 @@ modifiers: list[IdeaModifier]      # [{modifier_key, modifier_value}]
 | GET | `/api/v1/operations/{operation_key}` | `api_operation_detail` view | Single operation |
 | GET | `/api/v1/bop` | `api_bop_detail` view | Balance of Power definitions |
 | GET | `/api/v1/bop/{bop_key}` | `api_bop_detail` view | Single BOP |
+| GET | `/api/v1/factions` | `api_faction_detail` view | Faction templates (DLC: Götterdämmerung) |
+| GET | `/api/v1/factions/{template_key}` | `api_faction_detail` view | Single faction template with goals & rules |
+| GET | `/api/v1/special-projects` | `api_special_project_detail` view | Special projects (DLC: Götterdämmerung) |
+| GET | `/api/v1/special-projects/{project_key}` | `api_special_project_detail` view | Single project with rewards |
 
 None are date-sensitive.
+
+**Faction response model (`FactionDetail`):**
+```
+template_key: str
+name_loc: str | None
+manifest_key: str | None
+icon: str | None
+can_leader_join_other: bool | None
+dlc_source: str | None
+goals: list[FactionGoal]              # [{goal_key, name_loc, category, goal_group}]
+rules: list[FactionRule]               # [{rule_key, rule_type, rule_group_key}]
+member_upgrade_groups: list[UpgradeGroup]  # [{group_key, name_loc, upgrades: [{upgrade_key, bonus}]}]
+```
+
+**Special project response model (`SpecialProjectDetail`):**
+```
+project_key: str
+specialization_key: str
+project_tag: str | None
+complexity: str | None
+prototype_time: str | None
+dlc_source: str | None
+rewards: list[ProjectReward]           # [{reward_key, fire_only_once, threshold_min, threshold_max}]
+```
 
 ### 6.10 Annotations (User Data — Read/Write)
 
@@ -1171,6 +1199,8 @@ tags_metadata = [
     {"name": "MIOs",             "description": "Military-Industrial Organizations (DLC: Arms Against Tyranny)"},
     {"name": "Operations",       "description": "Espionage operations (DLC: La Résistance)"},
     {"name": "Balance of Power", "description": "Balance of power mechanics (DLC: various)"},
+    {"name": "Factions",         "description": "AI faction templates, goals, rules (DLC: Götterdämmerung)"},
+    {"name": "Special Projects", "description": "Special projects: nuclear, rocket, science (DLC: Götterdämmerung)"},
     {"name": "Annotations",      "description": "User-created notes on game entities"},
 ]
 ```
@@ -1409,7 +1439,7 @@ key is returned when no translation exists — nothing breaks.
 | 9 | **Characters router** | `routers/characters.py`, `schemas/character.py` | Non-date-sensitive endpoint |
 | 10 | **Military routers** | `routers/military.py`, `schemas/military.py` | OOB file suffix filtering |
 | 11 | **Focus trees, equipment, ideas routers** | 3 router files + 3 schema files | Batch of simple view-backed endpoints |
-| 12 | **DLC routers** | `routers/dlc.py`, `schemas/dlc.py` | MIOs, operations, BOP |
+| 12 | **DLC routers** | `routers/dlc.py`, `schemas/dlc.py` | MIOs, operations, BOP, factions, special projects |
 | 13 | **Annotations router** | `routers/annotations.py`, `schemas/annotation.py` | POST/DELETE (first write endpoint) |
 | 14 | **Expand GraphQL** — add remaining types/resolvers | `graphql/types.py`, `graphql/resolvers.py` | Full GraphQL coverage |
 | 15 | **README + .env.example + OpenAPI polish** | `api/README.md` | Documentation |
@@ -1428,5 +1458,8 @@ pattern — you'll be copy-pasting and adjusting field names.
 | **Rate limiting** | When API goes public | `slowapi` or reverse proxy |
 | **Full-text search** | v2 | `?q=panzer` across entities; PostgreSQL `tsvector` |
 | **Docker Compose** | v2 | API + PostgreSQL in one `docker-compose.yml` |
+| **Scripted collections endpoint** | v2 | `scripted_collections` table — internal engine plumbing, low consumer value |
+| **AI faction theaters endpoint** | v2 | `ai_faction_theaters` + `ai_faction_theater_regions` — AI behavior tuning, niche |
+| **Timed activities endpoint** | v2 | `timed_activities` + `timed_activity_modifiers` — only 1 entry currently |
 | **WebSocket** | Unlikely | No real-time use case for static game data |
 | **GraphQL subscriptions** | Unlikely | Same reason — data doesn't change at runtime |

@@ -1,12 +1,12 @@
 # tests/test_equipment.py
+# Phase 3 tests: verify equipment list and detail endpoints.
+
 import pytest
 
+# Mark every test in this file as async so pytest-asyncio will run them.
 pytestmark = pytest.mark.asyncio(loop_scope="session")
 
-# ---
-# List equipment
-# ---
-
+# List equipment tests:
 async def test_list_equipment_200(client):
     resp = await client.get("/api/v1/equipment")
     assert resp.status_code == 200
@@ -38,11 +38,9 @@ async def test_list_equipment_parent_filter(client):
     for item in data:
         assert item["archetype_key"] == "infantry_equipment"
 # End of test_list_equipment_parent_filter
+# ----------------------------------------------
 
-# ---
-# Equipment detail
-# ---
-
+# Equipment detail tests:
 async def test_equipment_detail(client):
     resp = await client.get("/api/v1/equipment/infantry_equipment_0")
     assert resp.status_code == 200
@@ -64,3 +62,4 @@ async def test_equipment_detail_404(client):
     resp = await client.get("/api/v1/equipment/nonexistent_equip_xyz")
     assert resp.status_code == 404
 # End of test_equipment_detail_404
+# ----------------------------------------------
