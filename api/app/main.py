@@ -22,6 +22,8 @@ tags_metadata = [
     {"name": "MIOs",             "description": "Military-Industrial Organizations (DLC: Arms Against Tyranny)"},
     {"name": "Operations",       "description": "Espionage operations (DLC: La Résistance)"},
     {"name": "Balance of Power", "description": "Balance of power mechanics (DLC: various)"},
+    {"name": "Factions",         "description": "Faction templates, goals, rules (DLC: Götterdämmerung)"},
+    {"name": "Special Projects", "description": "Special R&D projects (DLC: Götterdämmerung)"},
     {"name": "Annotations",      "description": "User-created notes on game entities"},
 ]
 
@@ -49,7 +51,8 @@ async def health_check():
 # End of health_check endpoint.
 
 # Mount REST routers — each handles one domain under /api/v1/
-from app.routers import characters, countries, equipment, focuses, ideas, military, states, technologies
+from app.routers import characters, countries, equipment, focuses, ideas, military, states, technologies, dlc, annotations
+
 app.include_router(countries.router)
 app.include_router(states.router)
 app.include_router(technologies.router)
@@ -58,7 +61,8 @@ app.include_router(military.router)
 app.include_router(focuses.router)
 app.include_router(equipment.router)
 app.include_router(ideas.router)
-
+app.include_router(dlc.router)
+app.include_router(annotations.router)
 # More routers will be added in later phases:
 #   app.include_router(characters.router)
 #   etc.

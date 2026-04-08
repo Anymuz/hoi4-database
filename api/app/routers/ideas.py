@@ -50,6 +50,7 @@ async def list_ideas(
             limit, offset,
         )
     return [dict(row) for row in rows]
+# End of idea list endpoint
 
 # GET /api/v1/ideas/{idea_key} — single idea
 @router.get("/ideas/{idea_key}", response_model=IdeaDetail)
@@ -69,3 +70,4 @@ async def get_idea(
     if not row:
         raise HTTPException(404, detail=f"Idea '{idea_key}' not found")
     return dict(row)
+# End of idea detail endpoint

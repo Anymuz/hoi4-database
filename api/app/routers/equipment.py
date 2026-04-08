@@ -56,6 +56,7 @@ async def list_equipment(
             limit, offset,
         )
     return [dict(row) for row in rows]
+# End of equipment list endpoint
 
 # GET /api/v1/equipment/{equipment_key} — single equipment item
 @router.get("/equipment/{equipment_key}", response_model=EquipmentItem)
@@ -77,3 +78,4 @@ async def get_equipment(
     if not row:
         raise HTTPException(404, detail=f"Equipment '{equipment_key}' not found")
     return dict(row)
+# End of equipment detail endpoint

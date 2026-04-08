@@ -870,6 +870,156 @@ modifiers: list[IdeaModifier]      # [{modifier_key, modifier_value}]
 
 None are date-sensitive.
 
+**SQL Queries:**
+
+MIO list (paginated):
+```sql
+SELECT organization_key, template_key, icon, dlc_source, template_icon,
+       equipment_types, traits
+FROM api_mio_organization_detail
+ORDER BY organization_key
+LIMIT $1 OFFSET $2
+```
+
+Single MIO:
+```sql
+SELECT * FROM api_mio_organization_detail WHERE organization_key = $1
+```
+
+Operation list (paginated):
+```sql
+SELECT operation_key, name, days, network_strength, operatives,
+       risk_chance, experience, dlc_source,
+       awarded_tokens, equipment_requirements, phase_groups
+FROM api_operation_detail
+ORDER BY operation_key
+LIMIT $1 OFFSET $2
+```
+
+Single operation:
+```sql
+SELECT * FROM api_operation_detail WHERE operation_key = $1
+```
+
+Balance of Power list (paginated):
+```sql
+SELECT bop_key, initial_value, left_side, right_side,
+       decision_category, sides
+FROM api_bop_detail
+ORDER BY bop_key
+LIMIT $1 OFFSET $2
+```
+
+Single BOP:
+```sql
+SELECT * FROM api_bop_detail WHERE bop_key = $1
+```
+
+Faction list (paginated):
+```sql
+SELECT template_key, name_loc, manifest_key, icon, can_leader_join_other,
+       dlc_source, goals, rules, member_upgrade_groups
+FROM api_faction_detail
+ORDER BY template_key
+LIMIT $1 OFFSET $2
+```
+
+Single faction:
+```sql
+SELECT * FROM api_faction_detail WHERE template_key = $1
+```
+
+Special project list (paginated):
+```sql
+SELECT project_key, specialization_key, project_tag, complexity,
+       prototype_time, dlc_source, rewards
+FROM api_special_project_detail
+ORDER BY project_key
+LIMIT $1 OFFSET $2
+```
+
+Single special project:
+```sql
+SELECT * FROM api_special_project_detail WHERE project_key = $1
+```
+
+**MIO response model (`MioDetail`):**
+```
+organization_key: str
+template_key: str | None
+icon: str | None
+dlc_source: str | None
+template_icon: str | None
+equipment_types: list[str]               # ["infantry_equipment", "support_equipment", ...]
+traits: list[MioTrait]
+
+# Where MioTrait is:
+trait_token: str
+trait_type: str | None
+name: str | None
+position_x: int | None
+position_y: int | None
+bonuses: list[MioTraitBonus]             # [{category, key, value}]
+
+# Where MioTraitBonus is:
+category: str
+key: str
+value: float
+```
+
+**Operation response model (`OperationDetail`):**
+```
+operation_key: str
+name: str | None
+days: int | None
+network_strength: int | None
+operatives: int | None
+risk_chance: float | None
+experience: float | None
+dlc_source: str | None
+awarded_tokens: list[str]                # ["token_key_1", "token_key_2", ...]
+equipment_requirements: list[OperationEquipment]   # [{equipment_key, amount}]
+phase_groups: list[PhaseGroup]
+
+# Where OperationEquipment is:
+equipment_key: str
+amount: int
+
+# Where PhaseGroup is:
+sequence_index: int
+options: list[PhaseOption]               # [{phase_key, base_weight}]
+
+# Where PhaseOption is:
+phase_key: str
+base_weight: float | None
+```
+
+**Balance of Power response model (`BopDetail`):**
+```
+bop_key: str
+initial_value: float | None
+left_side: str | None
+right_side: str | None
+decision_category: str | None
+sides: list[BopSide]
+
+# Where BopSide is:
+side_id: int
+side_position: str | None
+icon: str | None
+ranges: list[BopRange]
+
+# Where BopRange is:
+range_id: int
+min_value: float | None
+max_value: float | None
+modifiers: list[BopRangeModifier]        # [{modifier_key, modifier_value}]
+
+# Where BopRangeModifier is:
+modifier_key: str
+modifier_value: str
+```
+
 **Faction response model (`FactionDetail`):**
 ```
 template_key: str

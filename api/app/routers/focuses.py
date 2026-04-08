@@ -22,6 +22,7 @@ async def list_focus_trees(
         limit, offset,
     )
     return [dict(row) for row in rows]
+# End of focus tree list endpoint
 
 # GET /api/v1/focus-trees/{focus_tree_id} — single tree with all focuses
 @router.get("/focus-trees/{focus_tree_id}", response_model=FocusTreeDetail)
@@ -40,6 +41,7 @@ async def get_focus_tree(
     if not row:
         raise HTTPException(404, detail=f"Focus tree '{focus_tree_id}' not found")
     return dict(row)
+# End of focus tree detail endpoint
 
 # GET /api/v1/countries/{tag}/focus-tree — tree for a country
 @router.get("/countries/{tag}/focus-tree", response_model=FocusTreeDetail)
@@ -58,3 +60,4 @@ async def get_country_focus_tree(
     if not row:
         raise HTTPException(404, detail=f"No focus tree for country '{tag.upper()}'")
     return dict(row)
+# End of country focus tree endpoint

@@ -60,11 +60,11 @@ Five issues identified during the design-vs-database audit:
 - [x] 3.1 — Technologies (schemas + router)
 - [x] 3.2 — Characters (schemas + router)
 - [x] 3.3 — Military — land / naval / air (schemas + router)
-- [ ] 3.4 — Focus Trees (schemas + router)
-- [ ] 3.5 — Equipment (schemas + router)
-- [ ] 3.6 — Ideas (schemas + router)
-- [ ] 3.7 — Register all Phase 3 routers
-- [ ] Test gate: all 8 routers with filters and nested models
+- [x] 3.4 — Focus Trees (schemas + router)
+- [x] 3.5 — Equipment (schemas + router)
+- [x] 3.6 — Ideas (schemas + router)
+- [x] 3.7 — Register all Phase 3 routers
+- [x] Test gate: all 8 routers with filters and nested models
 
 ### Phase 4: Slice C — DLC Systems + Annotations (Read/Write)
 - [ ] 4.1 — DLC router (MIOs, operations, BoP, factions, special projects)
@@ -888,11 +888,11 @@ Ideas have two filters (`?slot=` and `?is_law=`). Same loop-and-assert pattern a
 **Design ref:** §6.9
 
 Schemas (`schemas/dlc.py`):
-- `MioDetail` — organization_key, template_key, icon, equipment_types[], traits[] with nested bonuses[]
-- `OperationDetail` — operation_key, name, stats, awarded_tokens[], equipment_requirements[], phase_groups[]
-- `BopDetail` — bop_key, initial_value, sides, decision_category, sides[], ranges[] with nested modifiers[]
-- `FactionDetail` — template_key, name_loc, manifest_key, icon, goals[], rules[], member_upgrade_groups[]
-- `SpecialProjectDetail` — project_key, specialization_key, project_tag, complexity, prototype_time, rewards[]
+- `MioSummary` / `MioDetail` — detail adds traits[] with nested bonuses[]
+- `OperationSummary` / `OperationDetail` — detail adds awarded_tokens[], equipment_requirements[], phase_groups[]
+- `BopSummary` / `BopDetail` — detail adds sides[] with nested ranges[] and modifiers[]
+- `FactionSummary` / `FactionDetail` — detail adds goals[], rules[], member_upgrade_groups[]
+- `SpecialProjectSummary` / `SpecialProjectDetail` — detail adds rewards[]
 
 Router (`routers/dlc.py`):
 - `GET /api/v1/mios` + `/{organization_key}` — 459 MIO organisations
@@ -903,30 +903,30 @@ Router (`routers/dlc.py`):
 
 None are date-sensitive.
 
-**SQL for factions** (list, paginated):
+**SQL for factions list** (paginated, lightweight — omit goals/rules/upgrades):
 ```sql
-SELECT template_key, name_loc, manifest_key, icon, can_leader_join_other,
-       dlc_source, goals, rules, member_upgrade_groups
+SELECT template_key, name_loc, manifest_key, icon,
+       can_leader_join_other, dlc_source
 FROM api_faction_detail
 ORDER BY template_key
 LIMIT $1 OFFSET $2
 ```
 
-**SQL for single faction:**
+**SQL for single faction** (full, with goals + rules + member_upgrade_groups):
 ```sql
 SELECT * FROM api_faction_detail WHERE template_key = $1
 ```
 
-**SQL for special projects** (list, paginated):
+**SQL for special projects list** (paginated, lightweight — omit rewards):
 ```sql
 SELECT project_key, specialization_key, project_tag, complexity,
-       prototype_time, dlc_source, rewards
+       prototype_time, dlc_source
 FROM api_special_project_detail
 ORDER BY project_key
 LIMIT $1 OFFSET $2
 ```
 
-**SQL for single special project:**
+**SQL for single special project** (full, with rewards):
 ```sql
 SELECT * FROM api_special_project_detail WHERE project_key = $1
 ```
