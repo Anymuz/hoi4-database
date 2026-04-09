@@ -1,7 +1,7 @@
 # HOI4 Database Design — Complete Schema
 
 Status: **COMPLETE** — Schema designed, implemented, and loaded into PostgreSQL 16
-Total tables: **129** (66 core + 61 DLC + 2 infrastructure) · **~335K rows loaded** · **14 API views**
+Total tables: **151** (66 core + 83 DLC/extended + 2 infrastructure) · **~225K game rows loaded** · **14 API views + 2 functions**
 
 ---
 

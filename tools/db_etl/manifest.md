@@ -1,12 +1,12 @@
 # HOI4 Database ETL — Module Manifest
 
-Status: **COMPLETE** — full pipeline extracts, converts, and loads all 149 schema tables (~337K rows).
+Status: **COMPLETE** — full pipeline extracts, converts, and loads all 151 schema tables (~225K rows).
 
 ## Overview
 
 The ETL pipeline has four stages:
 
-1. **Extract** — `export_markdown_dump.py` reads HOI4 game files and writes markdown tables to `docs/data-dump/` (157 files, ~220K rows across 28 schema phases). The script contains ~85 parser functions covering every table in the schema.
+1. **Extract** — `export_markdown_dump.py` reads HOI4 game files and writes markdown tables to `docs/data-dump/` (160 files, ~220K rows across 23 schema phases). The script contains ~85 parser functions covering every table in the schema.
 2. **Extract localisation** — `export_localisation.py` reads 189 `*_l_english.yml` files from `localisation/english/` and writes `data/csv/localisation.csv` (117,490 English display-name translations).
 3. **Transform** — `md_to_csv.py` reads those markdown tables, renames columns to match the schema, merges multi-source tables (e.g., countries), splits multi-target files (e.g., focus_links), and writes CSV files to `data/csv/`.
 4. **Generate** — `gen_seed_sql.py` produces `sql/seed-load-order.sql` (native `\copy` commands); `gen_seed_docker.py` produces `sql/seed-docker.sql` (Docker `COPY` commands). Both use explicit column lists and FK staging tables.
@@ -20,9 +20,9 @@ Each extraction module is a function in `export_markdown_dump.py`.
 
 | Script | Purpose | Input | Output |
 |---|---|---|---|
-| `export_markdown_dump.py` | Parse HOI4 game files | Game install directory | `docs/data-dump/` (137 .md files) |
+| `export_markdown_dump.py` | Parse HOI4 game files | Game install directory | `docs/data-dump/` (160 .md files) |
 | `export_localisation.py` | Extract English display names | `localisation/english/` (game install) | `data/csv/localisation.csv` (117,490 rows) |
-| `md_to_csv.py` | Convert markdown → CSV | `docs/data-dump/` | `data/csv/` (147 .csv files) |
+| `md_to_csv.py` | Convert markdown → CSV | `docs/data-dump/` | `data/csv/` (149 .csv files) |
 | `gen_seed_sql.py` | Generate native seed SQL | `data/csv/` headers | `sql/seed-load-order.sql` |
 | `gen_seed_docker.py` | Generate Docker seed SQL | `sql/seed-load-order.sql` | `sql/seed-docker.sql` |
 | `validate_data.py` | FK/PK/NOT NULL checks | `docs/data-dump/` | Console report |

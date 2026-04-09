@@ -2,8 +2,8 @@
 
 > **Date:** 2026-04-02
 > **Branch:** `feature/api-v1`
-> **Design doc:** `docs/api-design.md` (FINAL, 2026-03-31)
-> **Database:** 149 tables, ~219K rows, 14 views + 2 functions, PostgreSQL 16
+> **Design doc:** `docs/plans/v1/api-design.md` (FINAL, 2026-03-31)
+> **Database:** 151 tables, ~225K rows, 14 views + 2 functions, PostgreSQL 16
 
 ---
 
@@ -67,22 +67,22 @@ Five issues identified during the design-vs-database audit:
 - [x] Test gate: all 8 routers with filters and nested models
 
 ### Phase 4: Slice C — DLC Systems + Annotations (Read/Write)
-- [ ] 4.1 — DLC router (MIOs, operations, BoP, factions, special projects)
-- [ ] 4.2 — Annotations router (CRUD)
-- [ ] 4.3 — Register routers in `main.py`
-- [ ] Test gate: DLC reads + annotation CRUD lifecycle
+- [x] 4.1 — DLC router (MIOs, operations, BoP, factions, special projects)
+- [x] 4.2 — Annotations router (CRUD)
+- [x] 4.3 — Register routers in `main.py`
+- [x] Test gate: DLC reads + annotation CRUD lifecycle
 
 ### Phase 5: GraphQL Layer
-- [ ] 5.1 — Strawberry types
-- [ ] 5.2 — Resolvers
-- [ ] 5.3 — Schema & mount
-- [ ] Test gate: all queries, field selection, date params
+- [x] 5.1 — Strawberry types
+- [x] 5.2 — Resolvers
+- [x] 5.3 — Schema & mount
+- [x] Test gate: all queries, field selection, date params
 
 ### Phase 6: Polish & Integration Testing
-- [ ] 6.1 — CORS configuration
-- [ ] 6.2 — API README
-- [ ] 6.3 — Update repo-level docs
-- [ ] Final test gate: full suite + manual smoke
+- [x] 6.1 — CORS configuration
+- [x] 6.2 — API README
+- [x] 6.3 — Update repo-level docs
+- [x] Final test gate: full suite + manual smoke
 
 ---
 
@@ -1134,7 +1134,6 @@ Create `api/README.md` with:
 
 Update the following to reflect the API's existence:
 - `README.md` — add API section with quick start
-- `.github/copilot-instructions.md` — update "NOT YET DONE" section, add API paths to repository structure
 - `tools/db_etl/runbook.md` — mention API views → functions change
 
 ### Final Test Gate: Full Integration

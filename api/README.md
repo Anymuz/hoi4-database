@@ -39,7 +39,10 @@ All scripts are in `tools/` at the repo root. Run from WSL with `bash tools/<scr
 
 | Script | Purpose |
 |--------|---------|
-| `setup-api.sh` | Create venv, install deps, copy .env, run tests |
+| `setup-api.sh` | Create venv, install deps, copy .env, run tests || `start-api.sh` | Start FastAPI (Uvicorn, port 8000) |
+| `stop-api.sh` | Stop the FastAPI server |
+| `restart-api.sh` | Restart FastAPI |
+| `run-tests.sh` | Run pytest (no setup) |
 | `start-db.sh` | Start (or create) the Docker PostgreSQL container |
 | `stop-db.sh` | Stop the container, preserve data volume |
 | `reload-db.sh` | Nuke and reload the database from scratch |
@@ -61,18 +64,14 @@ All scripts are in `tools/` at the repo root. Run from WSL with `bash tools/<scr
 | `/api/v1/countries/{tag}/air` | Air OOB |
 | `/api/v1/focus-trees` | National focus trees |
 | `/api/v1/equipment` | Equipment catalog |
+| `/api/v1/equipment-variants` | Equipment variants (modules, upgrades) |
 | `/api/v1/ideas` | Ideas & national spirits |
 | `/api/v1/mios` | Military-industrial orgs (AAT DLC) |
 | `/api/v1/operations` | Espionage operations (LaR DLC) |
 | `/api/v1/bop` | Balance of power (BBA DLC) |
+| `/api/v1/factions` | Faction templates (DLC: Götterdämmerung) |
+| `/api/v1/special-projects` | Special R&D projects (DLC: Götterdämmerung) |
 | `/api/v1/annotations` | User annotations (CRUD) |
-
-## Date Filtering
-
-Country and state endpoints accept `?date=` with two valid values:
-
-- `1936-01-01` (default) — pre-war start
-- `1939-08-14` — late start
 
 ## Running Tests
 
@@ -80,6 +79,8 @@ Country and state endpoints accept `?date=` with two valid values:
 cd api
 pytest tests/ -v
 ```
+
+105 tests across 13 test files.
 
 ## Project Structure
 

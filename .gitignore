@@ -9,6 +9,9 @@ venv/
 
 docs/call.md
 
+# Copilot customization (local only)
+.github/
+
 # IDE
 .vscode/
 .idea/

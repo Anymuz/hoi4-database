@@ -8,10 +8,10 @@ This directory contains four files that together define the complete PostgreSQL 
 
 | File | Purpose | Size |
 |---|---|---|
-| `schema.sql` | DDL — creates all 127 tables, 4 deferred FKs, 50 indexes | ~1,330 lines |
-| `views.sql` | 14 read-only API views that pre-join and aggregate related tables | ~530 lines |
-| `seed-load-order.sql` | Native data loading — FK-safe `\copy` commands with explicit column lists across 7 tiers, plus staging tables for FK resolution, wrapped in a transaction | ~210 lines |
-| `seed-docker.sql` | Docker data loading — server-side `COPY` variant of `seed-load-order.sql` for use inside a Docker container | ~210 lines |
+| `schema.sql` | DDL — creates all 151 tables, 4 deferred FKs, 63 indexes | ~1,820 lines |
+| `views.sql` | 14 read-only API views + 2 date-parameterised functions that pre-join and aggregate related tables | ~720 lines |
+| `seed-load-order.sql` | Native data loading — FK-safe `\copy` commands with explicit column lists across 7 tiers, plus staging tables for FK resolution, wrapped in a transaction | ~280 lines |
+| `seed-docker.sql` | Docker data loading — server-side `COPY` variant of `seed-load-order.sql` for use inside a Docker container | ~280 lines |
 
 ---
 
@@ -39,7 +39,7 @@ This ordering matters because PostgreSQL requires referenced tables to exist bef
 
 ### Why "Slice A" appears first
 
-The first 15 tables (`countries`, `states`, `provinces`, etc.) were built during an early prototyping phase ("Slice A") and already had working DDL. Rather than rewriting them, they were preserved at the top of the file. The remaining 112 tables follow in phase order below. The deferred `ALTER TABLE` statements at the bottom tie Slice A tables to Phase 1 reference tables that didn't exist when Slice A was written.
+The first 15 tables (`countries`, `states`, `provinces`, etc.) were built during an early prototyping phase ("Slice A") and already had working DDL. Rather than rewriting them, they were preserved at the top of the file. The remaining 136 tables follow in phase order below. The deferred `ALTER TABLE` statements at the bottom tie Slice A tables to Phase 1 reference tables that didn't exist when Slice A was written.
 
 ### Key design patterns
 
@@ -133,11 +133,11 @@ All other FK constraints (126 total) are fully enforced. DLC data loads successf
 
 ### Index strategy
 
-50 indexes (3 UNIQUE + 47 regular B-tree) are defined after all table definitions. They are grouped by phase, matching the table ordering, and follow the naming convention `ix_<table>_<column_description>` (or `uq_` for unique constraints).
+63 indexes (2 UNIQUE + 61 regular B-tree) are defined after all table definitions. They are grouped by phase, matching the table ordering, and follow the naming convention `ix_<table>_<column_description>` (or `uq_` for unique constraints).
 
 #### Why indexes are placed at the end of schema.sql
 
-All 50 `CREATE INDEX` statements live after the final `ALTER TABLE`. This lets PostgreSQL build each index on the fully populated table in a single pass during initial load, rather than maintaining the index row-by-row across thousands of `COPY` inserts. For the seed workflow (load via `seed-load-order.sql`, then `\i schema.sql` to add indexes), this ordering gives the fastest possible bulk load.
+All 63 `CREATE INDEX` statements live after the final `ALTER TABLE`. This lets PostgreSQL build each index on the fully populated table in a single pass during initial load, rather than maintaining the index row-by-row across thousands of `COPY` inserts. For the seed workflow (load via `seed-load-order.sql`, then `\i schema.sql` to add indexes), this ordering gives the fastest possible bulk load.
 
 #### Category 1 — UNIQUE indexes (3)
 

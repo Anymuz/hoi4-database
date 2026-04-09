@@ -8,7 +8,7 @@
 
 ## 1. Overview & Rationale
 
-A **hybrid REST + GraphQL** API serving the 149-table HOI4 database. Game data
+A **hybrid REST + GraphQL** API serving the 151-table HOI4 database. Game data
 is read-only. A single `user_annotations` table enables user-generated metadata
 (Option B scalability — extend user-facing features without touching game data).
 A `localisation` table (117K English translations) provides human-readable names
