@@ -63,10 +63,10 @@ app.include_router(equipment.router)
 app.include_router(ideas.router)
 app.include_router(dlc.router)
 app.include_router(annotations.router)
-# More routers will be added in later phases:
-#   app.include_router(characters.router)
-#   etc.
-#   etc.
-#
-# GraphQL will be mounted here in Phase 5:
-#   app.include_router(GraphQLRouter(schema), prefix="/graphql")
+
+# Mount GraphQL endpoint — shares the same asyncpg pool as REST.
+from strawberry.fastapi import GraphQLRouter
+from app.graphql.schema import schema
+
+graphql_app = GraphQLRouter(schema)
+app.include_router(graphql_app, prefix="/graphql")

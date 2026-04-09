@@ -616,6 +616,22 @@ CREATE TABLE equipment_variants (
     UNIQUE (owner_tag, base_equipment_key, version_name, effective_date)
 );
 
+-- FK build order #48b → equipment_variants
+CREATE TABLE equipment_variant_modules (
+    equipment_variant_id        INT NOT NULL REFERENCES equipment_variants(equipment_variant_id),
+    slot_name                   VARCHAR(120) NOT NULL,
+    module_key                  VARCHAR(120) NOT NULL,
+    PRIMARY KEY (equipment_variant_id, slot_name)
+);
+
+-- FK build order #48c → equipment_variants
+CREATE TABLE equipment_variant_upgrades (
+    equipment_variant_id        INT NOT NULL REFERENCES equipment_variants(equipment_variant_id),
+    upgrade_key                 VARCHAR(120) NOT NULL,
+    upgrade_level               INT NOT NULL DEFAULT 0,
+    PRIMARY KEY (equipment_variant_id, upgrade_key)
+);
+
 -- FK build order #49 → countries, provinces
 CREATE TABLE fleets (
     fleet_id                    SERIAL PRIMARY KEY,
@@ -1712,6 +1728,8 @@ CREATE INDEX ix_divisions_template ON divisions (division_template_id);
 
 -- Phase 7
 CREATE INDEX ix_equipment_variants_owner ON equipment_variants (owner_tag);
+CREATE INDEX ix_equipment_variant_modules_variant ON equipment_variant_modules (equipment_variant_id);
+CREATE INDEX ix_equipment_variant_upgrades_variant ON equipment_variant_upgrades (equipment_variant_id);
 CREATE INDEX ix_ships_task_force ON ships (task_force_id);
 
 -- Phase 8

@@ -63,3 +63,46 @@ async def test_equipment_detail_404(client):
     assert resp.status_code == 404
 # End of test_equipment_detail_404
 # ----------------------------------------------
+
+# Equipment variant tests:
+async def test_list_variants_200(client):
+    resp = await client.get("/api/v1/equipment-variants")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert isinstance(data, list)
+    assert len(data) > 0
+
+
+async def test_list_variants_filter_owner(client):
+    resp = await client.get("/api/v1/equipment-variants?owner_tag=GER")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert len(data) > 0
+    for v in data:
+        assert v["owner_tag"] == "GER"
+
+
+async def test_list_variants_pagination(client):
+    resp = await client.get("/api/v1/equipment-variants?limit=3&offset=0")
+    assert resp.status_code == 200
+    assert len(resp.json()) == 3
+
+
+async def test_variant_detail_has_modules(client):
+    # Get a variant ID from the list first
+    resp = await client.get("/api/v1/equipment-variants?owner_tag=GER&limit=1")
+    data = resp.json()
+    assert len(data) > 0
+    vid = data[0]["equipment_variant_id"]
+    resp2 = await client.get(f"/api/v1/equipment-variants/{vid}")
+    assert resp2.status_code == 200
+    detail = resp2.json()
+    assert "modules" in detail
+    assert "upgrades" in detail
+    assert isinstance(detail["modules"], list)
+    assert isinstance(detail["upgrades"], list)
+
+
+async def test_variant_detail_404(client):
+    resp = await client.get("/api/v1/equipment-variants/999999")
+    assert resp.status_code == 404

@@ -1823,7 +1823,7 @@ def parse_country_starting_ideas_all() -> int:
                     current_date = date_stack.pop()
                     depth = 0
 
-            # Look for add_ideas blocks (both inline and multi-line)
+         # Look for add_ideas blocks (both inline and multi-line)
         # Re-parse using regex for add_ideas blocks
         for aim in re.finditer(r"add_ideas\s*=\s*\{([^}]*)\}", txt, flags=re.S):
             ideas_body = aim.group(1)
@@ -1857,11 +1857,14 @@ def parse_country_starting_ideas_all() -> int:
     return len(rows)
 
 
-def parse_equipment_variants_all() -> int:
-    """Extract equipment_variants from create_equipment_variant blocks in
+def parse_equipment_variants_all() -> Tuple[int, int, int]:
+    """Extract equipment_variants, equipment_variant_modules, and
+    equipment_variant_upgrades from create_equipment_variant blocks in
     history/countries/*.txt."""
     dirp = ROOT / "history" / "countries"
     rows: List[List[str]] = []
+    mod_rows: List[List[str]] = []
+    upg_rows: List[List[str]] = []
     for fp in sorted(dirp.glob("*.txt")):
         txt = fp.read_text(encoding="utf-8", errors="ignore")
         tag_m = re.match(r"^([A-Z0-9]+)", fp.name)
@@ -1879,6 +1882,8 @@ def parse_equipment_variants_all() -> int:
             name = re.search(r'\bname\s*=\s*"([^"]+)"', body)
             eq_type = re.search(r"\btype\s*=\s*([a-zA-Z0-9_]+)", body)
             eff_date = _find_enclosing_date(txt, abs_pos)
+            variant_key = (tag, eq_type.group(1) if eq_type else "",
+                           name.group(1) if name else "", eff_date)
             rows.append([
                 tag,
                 eq_type.group(1) if eq_type else "",
@@ -1886,13 +1891,55 @@ def parse_equipment_variants_all() -> int:
                 eff_date,
                 fp.name,
             ])
+
+            # --- modules sub-block ---
+            mod_m = re.search(r"\bmodules\s*=\s*\{", body)
+            if mod_m:
+                mod_body = extract_block(body, mod_m.start())
+                for slot_m in re.finditer(
+                    r"\b([a-zA-Z_][a-zA-Z0-9_]*)\s*=\s*([a-zA-Z_][a-zA-Z0-9_]*)",
+                    mod_body,
+                ):
+                    mod_rows.append([
+                        variant_key[0], variant_key[1], variant_key[2],
+                        variant_key[3],
+                        slot_m.group(1), slot_m.group(2),
+                    ])
+
+            # --- upgrades sub-block ---
+            upg_m = re.search(r"\bupgrades\s*=\s*\{", body)
+            if upg_m:
+                upg_body = extract_block(body, upg_m.start())
+                for u_m in re.finditer(
+                    r"\b([a-zA-Z_][a-zA-Z0-9_]*)\s*=\s*(\d+)",
+                    upg_body,
+                ):
+                    upg_rows.append([
+                        variant_key[0], variant_key[1], variant_key[2],
+                        variant_key[3],
+                        u_m.group(1), u_m.group(2),
+                    ])
+
             pos = abs_pos + len(body) + 2
 
     rows = dedup_rows(rows, [0, 1, 2, 3])
+    mod_rows = dedup_rows(mod_rows, [0, 1, 2, 3, 4])
+    upg_rows = dedup_rows(upg_rows, [0, 1, 2, 3, 4])
     write_md(OUT / "equipment_variants.md", "Equipment Variants",
         ["owner_tag", "base_equipment_key", "version_name", "effective_date", "source_file"],
         rows, "history/countries/*.txt")
-    return len(rows)
+
+    write_md(OUT / "equipment_variant_modules.md", "Equipment Variant Modules",
+        ["owner_tag", "base_equipment_key", "version_name", "effective_date",
+         "slot_name", "module_key"],
+        mod_rows, "history/countries/*.txt")
+
+    write_md(OUT / "equipment_variant_upgrades.md", "Equipment Variant Upgrades",
+        ["owner_tag", "base_equipment_key", "version_name", "effective_date",
+         "upgrade_key", "upgrade_level"],
+        upg_rows, "history/countries/*.txt")
+
+    return len(rows), len(mod_rows), len(upg_rows)
 
 
 def parse_mio_traits_all() -> Tuple[int, int, int, int]:
@@ -4003,7 +4050,10 @@ def main() -> None:
     stats["character_role_traits"] = crt
 
     stats["country_starting_ideas"] = parse_country_starting_ideas_all()
-    stats["equipment_variants"] = parse_equipment_variants_all()
+    ev, evm, evu = parse_equipment_variants_all()
+    stats["equipment_variants"] = ev
+    stats["equipment_variant_modules"] = evm
+    stats["equipment_variant_upgrades"] = evu
 
     te_bld, te_mod = parse_terrain_extended()
     stats["terrain_building_limits"] = te_bld

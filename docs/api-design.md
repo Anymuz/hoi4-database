@@ -1377,7 +1377,7 @@ app.add_middleware(
 )
 ```
 
-Lock down `allow_origins` to specific domains if/when the API goes public.
+Lock down `allow_origins` to specific domains for public API.
 
 ---
 

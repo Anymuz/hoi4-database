@@ -24,5 +24,6 @@ Thumbs.db
 redundant-docs/
 .env
 
-# Generated data (reproducible via tools/db_etl/md_to_csv.py)
+# Generated data (reproducible via ETL scripts)
+docs/data-dump/
 data/csv/

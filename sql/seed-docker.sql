@@ -223,6 +223,30 @@ INSERT INTO bookmark_countries (bookmark_id, country_tag, ideology_key)
   JOIN bookmarks b ON b.bookmark_name = s.bookmark_name;
 DROP TABLE _stage_bc;
 
+-- equipment_variant_modules: resolve natural key → equipment_variant_id
+CREATE TEMP TABLE _stage_evm (owner_tag TEXT, base_equipment_key TEXT, version_name TEXT, effective_date TEXT, slot_name TEXT, module_key TEXT);
+COPY _stage_evm FROM '/data_csv/equipment_variant_modules.csv' WITH (FORMAT csv, HEADER);
+INSERT INTO equipment_variant_modules (equipment_variant_id, slot_name, module_key)
+  SELECT ev.equipment_variant_id, s.slot_name, s.module_key
+  FROM _stage_evm s
+  JOIN equipment_variants ev ON ev.owner_tag = s.owner_tag
+    AND ev.base_equipment_key = s.base_equipment_key
+    AND ev.version_name = s.version_name
+    AND ev.effective_date = s.effective_date::date;
+DROP TABLE _stage_evm;
+
+-- equipment_variant_upgrades: resolve natural key → equipment_variant_id
+CREATE TEMP TABLE _stage_evu (owner_tag TEXT, base_equipment_key TEXT, version_name TEXT, effective_date TEXT, upgrade_key TEXT, upgrade_level TEXT);
+COPY _stage_evu FROM '/data_csv/equipment_variant_upgrades.csv' WITH (FORMAT csv, HEADER);
+INSERT INTO equipment_variant_upgrades (equipment_variant_id, upgrade_key, upgrade_level)
+  SELECT ev.equipment_variant_id, s.upgrade_key, s.upgrade_level::int
+  FROM _stage_evu s
+  JOIN equipment_variants ev ON ev.owner_tag = s.owner_tag
+    AND ev.base_equipment_key = s.base_equipment_key
+    AND ev.version_name = s.version_name
+    AND ev.effective_date = s.effective_date::date;
+DROP TABLE _stage_evu;
+
 -- ============================================================
 -- TIER 6 — Leaf tables (4 tables, 2 need FK staging)
 -- ============================================================

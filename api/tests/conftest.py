@@ -42,6 +42,10 @@ async def client(db_pool):
     # Override the get_db dependency in the app.
     app.dependency_overrides[get_db] = _test_get_db
 
+    # Expose the test pool on app.state so GraphQL resolvers can access it.
+    # (ASGITransport does not trigger FastAPI lifespan, so db_pool is not set.)
+    app.state.db_pool = db_pool
+
     # Use ASGITransport to simulate real HTTP requests without network overhead.
     transport = ASGITransport(app=app)
 

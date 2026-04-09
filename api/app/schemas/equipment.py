@@ -26,3 +26,26 @@ class EquipmentItem(BaseModel):
     hardness: float | None = None
     dlc_source: str | None = None
     resources: list[EquipmentResource] = []
+
+
+class VariantModule(BaseModel):
+    slot_name: str
+    module_key: str
+
+
+class VariantUpgrade(BaseModel):
+    upgrade_key: str
+    upgrade_level: int
+
+
+class EquipmentVariantSummary(BaseModel):
+    equipment_variant_id: int
+    owner_tag: str
+    base_equipment_key: str
+    version_name: str | None = None
+    effective_date: str
+
+
+class EquipmentVariantDetail(EquipmentVariantSummary):
+    modules: list[VariantModule] = []
+    upgrades: list[VariantUpgrade] = []
