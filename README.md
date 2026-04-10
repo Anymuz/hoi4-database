@@ -1,6 +1,6 @@
 # HOI4 Database
 
-A fully normalised **PostgreSQL 16** database representing all Hearts of Iron IV starting-state game data — every country, state, technology, focus tree, OOB division, naval fleet, air wing, character, idea, and DLC system — loaded and ready to query.
+A fully normalised **PostgreSQL 16** database representing all Hearts of Iron IV starting-state game data, every country, state, technology, focus tree, OOB division, naval fleet, air wing, character, idea, and DLC system, loaded and ready to query.
 
 **151 tables · ~225K game rows · 14 API views + 2 functions · REST + GraphQL API · all 37 DLCs covered**
 
@@ -119,21 +119,21 @@ hoi4-database/
 
 | Phases | Domain | Tables | DLC |
 |--------|--------|--------|-----|
-| 1 | Global refs (terrain, resources, buildings, ideologies, equipment) | 12 | — |
-| 2 | Geography (provinces, strategic regions, supply nodes, adjacencies) | 10 | — |
-| 3 | Countries (tags, history, starting techs/ideas, visuals) | 8 | — |
-| 4 | Technologies (categories, prerequisites, unlocks) | 4 | — |
-| 5 | Characters (leaders, generals, advisors, traits) | 4 | — |
-| 6–8 | Military OOB (land divisions, naval fleets, air wings) | 9 | — |
-| 9–10 | Ideas, national spirits, focus trees | 6 | — |
-| 11–15 | Governance, intel agencies, bookmarks, decisions | 13 | — |
+| 1 | Global refs (terrain, resources, buildings, ideologies, equipment) | 12 | - |
+| 2 | Geography (provinces, strategic regions, supply nodes, adjacencies) | 10 | - |
+| 3 | Countries (tags, history, starting techs/ideas, visuals) | 8 | - |
+| 4 | Technologies (categories, prerequisites, unlocks) | 4 | - |
+| 5 | Characters (leaders, generals, advisors, traits) | 4 | - |
+| 6–8 | Military OOB (land divisions, naval fleets, air wings) | 9 | - |
+| 9–10 | Ideas, national spirits, focus trees | 6 | - |
+| 11–15 | Governance, intel agencies, bookmarks, decisions | 13 | - |
 | 16–17 | Espionage & resistance | 19 | La Résistance |
 | 18 | Military-industrial organisations | 12 | Arms Against Tyranny |
 | 19 | Raids | 3 | Götterdämmerung |
 | 20 | Career profile (medals, ribbons, aces) | 8 | By Blood Alone |
 | 21–22 | Balance of power, continuous focuses, misc DLC | 13 | Various |
 | 23 | Doctrines (Officer Corps) | 6 | Götterdämmerung |
-| — | Infrastructure (localisation, user annotations) | 2 | — |
+| — | Infrastructure (localisation, user annotations) | 2 | - |
 
 All DLC-conditional rows have a nullable `dlc_source VARCHAR(50)` column (NULL = base game).
 
@@ -156,9 +156,9 @@ All DLC-conditional rows have a nullable `dlc_source VARCHAR(50)` column (NULL =
 
 HOI4 offers two start dates. Three mechanisms create distinct starting states:
 
-1. **Bookmarks** (`common/bookmarks/`) — define selectable dates (1936.1.1, 1939.8.14)
-2. **Date-prefixed history blocks** — game engine replays `date = { … }` blocks where `date ≤ start_date`
-3. **Separate OOB files** — `GER_1936.txt` vs `GER_1939.txt`, selected via `set_oob`
+1. **Bookmarks** (`common/bookmarks/`) - define selectable dates (1936.1.1, 1939.8.14)
+2. **Date-prefixed history blocks** - game engine replays `date = { … }` blocks where `date ≤ start_date`
+3. **Separate OOB files** - `GER_1936.txt` vs `GER_1939.txt`, selected via `set_oob`
 
 History tables use `effective_date DATE` columns. Query with `WHERE effective_date <= :bookmark_date`.
 
@@ -187,9 +187,6 @@ The file [docs/hoi4-er-diagram.md](docs/hoi4-er-diagram.md) is a **Mermaid erDia
 | [docs/hoi4-er-diagram.md](docs/hoi4-er-diagram.md) | ER diagram (Mermaid) |
 | [docs/hoi4-source-to-table-map.md](docs/hoi4-source-to-table-map.md) | Game file → table mapping |
 | [docs/hoi4-data-snapshots.md](docs/hoi4-data-snapshots.md) | Sample rows per table (design-phase reference) |
-| [docs/plans/v1/api-design.md](docs/plans/v1/api-design.md) | API v1 design (FastAPI + Strawberry GraphQL) |
-| [docs/plans/v1/api-implementation-plan.md](docs/plans/v1/api-implementation-plan.md) | API v1 build plan & progress tracker |
-| [docs/plans/v2/api-v2-implementation-plan.md](docs/plans/v2/api-v2-implementation-plan.md) | API v2 plan (events, diplomacy, wargoals, effects) |
 | [sql/README.md](sql/README.md) | SQL design rationale (indexes, views, staging) |
 | [tools/db_etl/manifest.md](tools/db_etl/manifest.md) | Parser module inventory |
 
@@ -197,22 +194,15 @@ The file [docs/hoi4-er-diagram.md](docs/hoi4-er-diagram.md) is a **Mermaid erDia
 
 ## Project Status
 
-### Complete
-
-- **Schema**: 151 tables (149 game + localisation + user_annotations), 4 ALTER TABLE, 63 indexes — all FK constraints enforced
+- **Schema**: 151 tables (149 game + localisation + user_annotations), 4 ALTER TABLE, 63 indexes - all FK constraints enforced
 - **Data extraction**: 160 markdown dumps covering all 23 phases including DLC
 - **Localisation**: 117,490 English display names extracted from 189 `*_l_english.yml` game files
-- **ETL pipeline**: markdown → CSV → PostgreSQL with 0 errors
+- **ETL pipeline**: markdown -> CSV -> PostgreSQL with 0 errors
 - **Database loaded**: 151 tables, ~225K game rows, 14 views + 2 functions
-- **Validation**: FK, PK, NOT NULL checks — 0 errors, 0 warnings
-- **REST API** (FastAPI + asyncpg) — 35 endpoints across 10 routers (countries, states, technologies, characters, military, focus trees, equipment, ideas, DLC systems, annotations)
-- **GraphQL API** (Strawberry) — 17 query resolvers mounted at `/graphql`, full field selection
-- **Test suite**: 105 integration tests across 13 test files — all passing
-- See [docs/plans/v1/api-implementation-plan.md](docs/plans/v1/api-implementation-plan.md) for full tracker
-
-### Not Yet Done
-
-- API deployment & final documentation polish
+- **Validation**: FK, PK, NOT NULL checks - 0 errors, 0 warnings
+- **REST API** (FastAPI + asyncpg) - 35 endpoints across 10 routers (countries, states, technologies, characters, military, focus trees, equipment, ideas, DLC systems, annotations)
+- **GraphQL API** (Strawberry) - 17 query resolvers mounted at `/graphql`, full field selection
+- **Test suite**: 105 integration tests across 13 test files - all passing
 
 ---
 
