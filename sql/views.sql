@@ -745,3 +745,39 @@ SELECT
     ), '[]'::jsonb) AS members
 FROM starting_factions sf
 LEFT JOIN localisation ll ON ll.loc_key = sf.leader_tag;
+
+-- ============================================================
+-- Slice E - Events
+-- ============================================================
+
+CREATE OR REPLACE VIEW api_event_detail AS
+SELECT
+    e.event_key,
+    e.event_type,
+    e.title_key,
+    COALESCE(lt.loc_value, e.title_key) AS title_text,
+    e.description_key,
+    e.picture,
+    e.is_triggered_only,
+    e.is_major,
+    e.fire_only_once,
+    e.hidden,
+    e.namespace,
+    e.source_file,
+    COALESCE((
+        SELECT jsonb_agg(
+            jsonb_build_object(
+                'event_option_id', eo.event_option_id,
+                'option_name', eo.option_name,
+                'option_index', eo.option_index,
+                'ai_chance_factor', eo.ai_chance_factor,
+                'trigger_block', eo.trigger_block,
+                'effect_block', eo.effect_block
+            )
+            ORDER BY eo.option_index
+        )
+        FROM event_options eo
+        WHERE eo.event_key = e.event_key
+    ), '[]'::jsonb) AS options
+FROM events e
+LEFT JOIN localisation lt ON lt.loc_key = e.title_key;

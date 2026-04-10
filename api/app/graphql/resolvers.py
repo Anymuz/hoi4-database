@@ -12,7 +12,7 @@ from app.graphql.types import (
     FocusTree, Equipment, EquipmentVariant, EquipmentVariantModule,
     EquipmentVariantUpgrade, Idea, Mio, Operation, Bop,
     Faction, SpecialProject, Annotation, Wargoal,
-    DiplomaticRelation, StartingFaction,
+    DiplomaticRelation, StartingFaction, Event, Decision,
 )
 
 # Helper function to get the asyncpg pool from the FastAPI app context.
@@ -457,4 +457,48 @@ class Query:
             )
             return [StartingFaction.from_row(r) for r in rows]
     # End of starting_factions resolver.
+
+    # Events with nested options from the api_event_detail view.
+    @strawberry.field
+    async def events(self, info: Info, event_type: Optional[str] = None, namespace: Optional[str] = None) -> list[Event]:
+        pool = await get_pool(info)
+        async with pool.acquire() as conn:
+            if event_type and namespace:
+                rows = await conn.fetch(
+                    "SELECT * FROM api_event_detail WHERE event_type = $1 AND namespace LIKE '%' || $2 || '%' ORDER BY event_key",
+                    event_type, namespace,
+                )
+            elif event_type:
+                rows = await conn.fetch(
+                    "SELECT * FROM api_event_detail WHERE event_type = $1 ORDER BY event_key",
+                    event_type,
+                )
+            elif namespace:
+                rows = await conn.fetch(
+                    "SELECT * FROM api_event_detail WHERE namespace LIKE '%' || $1 || '%' ORDER BY event_key",
+                    namespace,
+                )
+            else:
+                rows = await conn.fetch(
+                    "SELECT * FROM api_event_detail ORDER BY event_key"
+                )
+            return [Event.from_row(r) for r in rows]
+    # End of events resolver.
+
+    # Decisions with scripted effect blocks.
+    @strawberry.field
+    async def decisions(self, info: Info, category: Optional[str] = None) -> list[Decision]:
+        pool = await get_pool(info)
+        async with pool.acquire() as conn:
+            if category:
+                rows = await conn.fetch(
+                    "SELECT * FROM decisions WHERE category_key = $1 ORDER BY decision_key",
+                    category,
+                )
+            else:
+                rows = await conn.fetch(
+                    "SELECT * FROM decisions ORDER BY decision_key"
+                )
+            return [Decision.from_row(r) for r in rows]
+    # End of decisions resolver.
 # End of Query class.

@@ -1871,5 +1871,32 @@ CREATE TABLE starting_faction_members (
     source_file             VARCHAR(200)
 );
 
+-- Phase 10: Events
+CREATE TABLE events (
+    event_key               VARCHAR(120) PRIMARY KEY,
+    event_type              VARCHAR(30) NOT NULL,
+    title_key               VARCHAR(200),
+    description_key         VARCHAR(200),
+    picture                 VARCHAR(200),
+    is_triggered_only       BOOLEAN,
+    is_major                BOOLEAN,
+    fire_only_once          BOOLEAN,
+    hidden                  BOOLEAN,
+    namespace               TEXT,
+    source_file             VARCHAR(200)
+);
+
+CREATE TABLE event_options (
+    event_option_id         SERIAL PRIMARY KEY,
+    event_key               VARCHAR(120) NOT NULL REFERENCES events(event_key),
+    option_name             VARCHAR(200),
+    option_index            SMALLINT NOT NULL DEFAULT 0,
+    ai_chance_factor        VARCHAR(20),
+    trigger_block           TEXT,
+    effect_block            TEXT
+);
+
+-- Phase 11: Decisions API (schema already exists, no new tables)
+
 -- End of schema definition
 COMMIT;

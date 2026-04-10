@@ -2447,6 +2447,77 @@ def parse_wargoal_types() -> int:
     return len(rows)
 
 
+# -- Phase 10: Events ----------------------------------------------------
+
+def parse_events_all() -> Tuple[int, int]:
+    """Parse events/*.txt -> events_all.md + event_options_all.md"""
+    d = ROOT / "events"
+    event_rows: List[List[str]] = []
+    option_rows: List[List[str]] = []
+    if not d.exists():
+        return 0, 0
+    EVENT_TYPES = {"country_event", "news_event", "state_event", "unit_leader_event", "operative_event"}
+    for fp in sorted(d.glob("*.txt")):
+        txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+        # extract namespace declarations
+        namespaces = re.findall(r'add_namespace\s*=\s*(\S+)', txt)
+        ns_str = ";".join(namespaces) if namespaces else ""
+        for ev_type, ev_body, _ in find_top_level_blocks(txt):
+            if ev_type not in EVENT_TYPES:
+                continue
+            eid = re.search(r'\bid\s*=\s*(\S+)', ev_body)
+            if not eid:
+                continue
+            event_key = eid.group(1)
+            title = re.search(r'\btitle\s*=\s*(\S+)', ev_body)
+            # desc can be simple or block; grab simple first
+            desc = re.search(r'\bdesc\s*=\s*(\S+)', ev_body)
+            picture = re.search(r'\bpicture\s*=\s*(\S+)', ev_body)
+            trig_only = "true" if re.search(r'\bis_triggered_only\s*=\s*yes', ev_body) else ""
+            major = "true" if re.search(r'\bmajor\s*=\s*yes', ev_body) else ""
+            fire_once = "true" if re.search(r'\bfire_only_once\s*=\s*yes', ev_body) else ""
+            hidden_ev = "true" if re.search(r'\bhidden\s*=\s*yes', ev_body) else ""
+            event_rows.append([
+                event_key, ev_type,
+                title.group(1) if title else "",
+                desc.group(1) if desc else "",
+                picture.group(1) if picture else "",
+                trig_only, major, fire_once, hidden_ev,
+                ns_str, fp.name,
+            ])
+            # extract options
+            opt_idx = 0
+            for opt_key, opt_body, _ in find_top_level_blocks(ev_body):
+                if opt_key != "option":
+                    continue
+                opt_name = re.search(r'\bname\s*=\s*(\S+)', opt_body)
+                ai_ch = re.search(r'\bfactor\s*=\s*([0-9.]+)', opt_body)
+                trigger_block = extract_named_block(opt_body, "trigger")
+                option_rows.append([
+                    event_key,
+                    opt_name.group(1) if opt_name else "",
+                    str(opt_idx),
+                    ai_ch.group(1) if ai_ch else "",
+                    trigger_block if trigger_block else "",
+                    "",  # effect_block placeholder - options contain inline effects
+                ])
+                opt_idx += 1
+    write_md(
+        OUT / "events_all.md", "Events (All Files)",
+        ["event_key", "event_type", "title_key", "description_key", "picture",
+         "is_triggered_only", "is_major", "fire_only_once", "hidden",
+         "namespace", "source_file"],
+        event_rows, "events/*.txt",
+    )
+    write_md(
+        OUT / "event_options_all.md", "Event Options (All Files)",
+        ["event_key", "option_name", "option_index", "ai_chance_factor",
+         "trigger_block", "effect_block"],
+        option_rows, "events/*.txt",
+    )
+    return len(event_rows), len(option_rows)
+
+
 # -- Phase 16: Espionage (La Résistance) ---------------------------------
 
 def parse_operation_tokens_all() -> int:
@@ -4242,6 +4313,11 @@ def main() -> None:
     stats["decision_categories"] = parse_decision_categories_all()
     stats["decisions_all"] = parse_decisions_all()
     stats["wargoal_types"] = parse_wargoal_types()
+
+    # -- Phase 10: Events --
+    ev_n, eo_n = parse_events_all()
+    stats["events_all"] = ev_n
+    stats["event_options_all"] = eo_n
 
     # -- Phase 16: Espionage --
     stats["operation_tokens"] = parse_operation_tokens_all()

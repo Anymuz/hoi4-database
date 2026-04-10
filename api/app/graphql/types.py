@@ -811,3 +811,70 @@ class StartingFaction:
     # End of from_row class method.
 # End of StartingFaction type.
 # ------------------------------------------------------
+
+# Event-related types, use the api_event_detail view:
+# EventOption represents one selectable option within an event.
+@strawberry.type
+class EventOption:
+    event_option_id: int
+    option_name: Optional[str] = None
+    option_index: int = 0
+    ai_chance_factor: Optional[str] = None
+    trigger_block: Optional[str] = None
+    effect_block: Optional[str] = None
+# End of EventOption type.
+
+# Event represents a country_event, news_event, or other event type with nested options.
+@strawberry.type
+class Event:
+    event_key: str
+    event_type: str
+    title_key: Optional[str] = None
+    title_text: Optional[str] = None
+    description_key: Optional[str] = None
+    picture: Optional[str] = None
+    is_triggered_only: Optional[bool] = None
+    is_major: Optional[bool] = None
+    fire_only_once: Optional[bool] = None
+    hidden: Optional[bool] = None
+    namespace: Optional[str] = None
+    source_file: Optional[str] = None
+    options: list[EventOption] = strawberry.field(default_factory=list)
+
+    # Classmethod to convert from a database row into an Event object, handling the nested options JSONB column.
+    @classmethod
+    def from_row(cls, row):
+        d = dict(row)
+        opts_raw = d.pop("options", [])
+        import json
+        if isinstance(opts_raw, str):
+            opts_raw = json.loads(opts_raw)
+        d["options"] = [EventOption(**o) for o in opts_raw]
+        return cls(**d)
+    # End of from_row class method.
+# End of Event type.
+# ------------------------------------------------------
+
+# Decision-related types:
+# Decision represents a political/military decision with scripted effect blocks.
+@strawberry.type
+class Decision:
+    decision_key: str
+    category_key: str
+    icon: Optional[str] = None
+    cost: Optional[int] = None
+    allowed: Optional[str] = None
+    available: Optional[str] = None
+    visible: Optional[str] = None
+    complete_effect: Optional[str] = None
+    remove_effect: Optional[str] = None
+    fire_only_once: Optional[bool] = None
+    dlc_source: Optional[str] = None
+
+    # Classmethod to convert from a database row into a Decision object.
+    @classmethod
+    def from_row(cls, row):
+        return cls(**dict(row))
+    # End of from_row class method.
+# End of Decision type.
+# ------------------------------------------------------

@@ -44,6 +44,7 @@ TIER0 = [
     "faction_member_upgrade_groups", "faction_rule_groups", "localisation",
     "special_project_specializations", "special_project_tags", "timed_activities",
     "wargoal_types",
+    "events",
 ]
 
 TIER1 = [
@@ -60,6 +61,7 @@ TIER1 = [
     "ideas", "grand_doctrine_tracks", "subdoctrines",
     "faction_member_upgrades", "faction_rules", "faction_templates",
     "special_projects", "special_project_rewards", "timed_activity_equipment",
+    "event_options",
 ]
 
 TIER2 = [
