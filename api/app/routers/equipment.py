@@ -5,7 +5,7 @@ from app.schemas.equipment import EquipmentItem, EquipmentVariantSummary, Equipm
 
 router = APIRouter(prefix="/api/v1", tags=["Equipment"])
 
-# GET /api/v1/equipment — list equipment, optional filters: ?archetype=, ?is_archetype=
+# GET /api/v1/equipment - list equipment, optional filters: ?archetype=, ?is_archetype=
 @router.get("/equipment", response_model=list[EquipmentItem])
 async def list_equipment(
     archetype: str | None = Query(None, description="Filter by archetype_key"),
@@ -58,7 +58,7 @@ async def list_equipment(
     return [dict(row) for row in rows]
 # End of equipment list endpoint
 
-# GET /api/v1/equipment/{equipment_key} — single equipment item
+# GET /api/v1/equipment/{equipment_key} - single equipment item
 @router.get("/equipment/{equipment_key}", response_model=EquipmentItem)
 async def get_equipment(
     equipment_key: str,
@@ -81,7 +81,7 @@ async def get_equipment(
 # End of equipment detail endpoint
 
 
-# GET /api/v1/equipment-variants — list equipment variants, optional owner_tag filter
+# GET /api/v1/equipment-variants - list equipment variants, optional owner_tag filter
 @router.get("/equipment-variants", response_model=list[EquipmentVariantSummary], tags=["Equipment Variants"])
 async def list_equipment_variants(
     owner_tag: str | None = Query(None, description="Filter by country tag (e.g. GER)"),
@@ -132,7 +132,7 @@ async def list_equipment_variants(
     return [dict(row) for row in rows]
 
 
-# GET /api/v1/equipment-variants/{variant_id} — detail with modules and upgrades
+# GET /api/v1/equipment-variants/{variant_id} - detail with modules and upgrades
 @router.get("/equipment-variants/{variant_id}", response_model=EquipmentVariantDetail, tags=["Equipment Variants"])
 async def get_equipment_variant(
     variant_id: int,

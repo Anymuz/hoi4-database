@@ -1,6 +1,6 @@
-# HOI4 Database Design — Complete Schema
+# HOI4 Database Design - Complete Schema
 
-Status: **COMPLETE** — Schema designed, implemented, and loaded into PostgreSQL 16
+Status: **COMPLETE** - Schema designed, implemented, and loaded into PostgreSQL 16
 Total tables: **151** (66 core + 83 DLC/extended + 2 infrastructure) · **~225K game rows loaded** · **14 API views + 2 functions**
 
 ---
@@ -13,14 +13,14 @@ This document specifies a fully normalised (3NF) PostgreSQL relational database 
 
 **DLC (Phases 16–23, 61 tables):** espionage system (La Résistance), occupation & resistance, military-industrial organizations (Arms Against Tyranny), raids (Götterdämmerung), career profile medals & ribbons (By Blood Alone), balance of power, continuous focuses, technology sharing, dynamic modifiers, scientist traits, peace conference, doctrines (Officer Corps / Military Experience).
 
-**Infrastructure (2 tables):** `user_annotations` (API-facing user notes), `localisation` (117K English display-name translations extracted from HOI4 `localisation/english/*_l_english.yml` files — used by API views to return human-readable names alongside raw game keys).
+**Infrastructure (2 tables):** `user_annotations` (API-facing user notes), `localisation` (117K English display-name translations extracted from HOI4 `localisation/english/*_l_english.yml` files - used by API views to return human-readable names alongside raw game keys).
 
 The database backs a REST API with primary access patterns:
-- `GET /countries/{tag}` — ≤3 joins for country detail
-- `GET /states/{id}` — ≤2 joins for state detail
-- `GET /countries/{tag}/technologies` — 1 join
-- `GET /countries/{tag}/characters` — 2 joins
-- `GET /countries/{tag}/divisions` — 2 joins
+- `GET /countries/{tag}` - ≤3 joins for country detail
+- `GET /states/{id}` - ≤2 joins for state detail
+- `GET /countries/{tag}/technologies` - 1 join
+- `GET /countries/{tag}/characters` - 2 joins
+- `GET /countries/{tag}/divisions` - 2 joins
 
 All DLC-conditional data is retained via nullable `dlc_source VARCHAR(50)` columns. Entirely DLC-specific systems (operations, MIOs, raids, medals) have dedicated table groups rather than being shoehorned into base tables. The schema uses surrogate keys (SERIAL/BIGSERIAL) for junction tables and natural keys (game identifiers) for entity tables where the game defines a stable unique key.
 
@@ -116,158 +116,158 @@ Tables must be created in this order (no forward FK references):
  4. resource_types                    (existing)
  5. building_types                    (existing)
  6. ideologies
- 7. sub_ideologies                    → ideologies
+ 7. sub_ideologies                    -> ideologies
  8. technology_categories
  9. technologies                      (existing)
 10. unit_types
-11. equipment_definitions             → self-ref (archetype, parent)
-12. equipment_resources               → equipment_definitions, resource_types
+11. equipment_definitions             -> self-ref (archetype, parent)
+12. equipment_resources               -> equipment_definitions, resource_types
 13. provinces                          (existing)
-14. province_building_positions       → provinces
+14. province_building_positions       -> provinces
 15. strategic_regions
-16. strategic_region_provinces        → strategic_regions, provinces
-17. supply_nodes                      → provinces
+16. strategic_region_provinces        -> strategic_regions, provinces
+17. supply_nodes                      -> provinces
 18. states                            (existing)
-19. state_provinces                   (existing) → states, provinces
-20. state_resources                   (existing) → states, resource_types
-21. state_buildings                   (existing) → states, building_types
-22. state_victory_points              (existing) → states, provinces
-23. province_buildings                (existing) → provinces, states, building_types
-24. countries                          (existing) → states (deferred)
-25. state_ownership_history           (existing) → states, countries
-26. province_controller_history       (existing) → provinces, states, countries
-27. state_cores                       (existing) → states, countries
-28. country_starting_technologies     (existing) → countries, technologies
-29. technology_categories_junction    → technologies, technology_categories
-30. technology_prerequisites          → technologies (self-ref)
-31. technology_enables_equipment      → technologies, equipment_definitions
-32. technology_enables_units          → technologies, unit_types
+19. state_provinces                   (existing) -> states, provinces
+20. state_resources                   (existing) -> states, resource_types
+21. state_buildings                   (existing) -> states, building_types
+22. state_victory_points              (existing) -> states, provinces
+23. province_buildings                (existing) -> provinces, states, building_types
+24. countries                          (existing) -> states (deferred)
+25. state_ownership_history           (existing) -> states, countries
+26. province_controller_history       (existing) -> provinces, states, countries
+27. state_cores                       (existing) -> states, countries
+28. country_starting_technologies     (existing) -> countries, technologies
+29. technology_categories_junction    -> technologies, technology_categories
+30. technology_prerequisites          -> technologies (self-ref)
+31. technology_enables_equipment      -> technologies, equipment_definitions
+32. technology_enables_units          -> technologies, unit_types
 33. character_traits
-34. characters                        → countries
-35. character_roles                   → characters, sub_ideologies
-36. character_role_traits             → character_roles, character_traits
+34. characters                        -> countries
+35. character_roles                   -> characters, sub_ideologies
+36. character_role_traits             -> character_roles, character_traits
 37. ideas
-38. idea_modifiers                    → ideas
-39. country_starting_ideas            → countries, ideas
-40. focus_trees                       → countries (nullable)
-41. focuses                           → focus_trees
-42. focus_prerequisites               → focuses (self-ref)
-43. focus_mutually_exclusive          → focuses (self-ref)
-44. division_templates                → countries
-45. division_template_regiments       → division_templates, unit_types
-46. division_template_support         → division_templates, unit_types
-47. divisions                         → division_templates, provinces
-48. equipment_variants                → countries, equipment_definitions
-49. fleets                            → countries, provinces
-50. task_forces                       → fleets, provinces
-51. ships                             → task_forces, equipment_definitions, countries
-52. air_wings                         → countries, states
+38. idea_modifiers                    -> ideas
+39. country_starting_ideas            -> countries, ideas
+40. focus_trees                       -> countries (nullable)
+41. focuses                           -> focus_trees
+42. focus_prerequisites               -> focuses (self-ref)
+43. focus_mutually_exclusive          -> focuses (self-ref)
+44. division_templates                -> countries
+45. division_template_regiments       -> division_templates, unit_types
+46. division_template_support         -> division_templates, unit_types
+47. divisions                         -> division_templates, provinces
+48. equipment_variants                -> countries, equipment_definitions
+49. fleets                            -> countries, provinces
+50. task_forces                       -> fleets, provinces
+51. ships                             -> task_forces, equipment_definitions, countries
+52. air_wings                         -> countries, states
 -- Phase 11: Governance
 53. autonomy_states
-54. autonomy_state_modifiers          → autonomy_states
-55. occupation_laws                   → self-ref (fallback)
-56. occupation_law_modifiers          → occupation_laws
+54. autonomy_state_modifiers          -> autonomy_states
+55. occupation_laws                   -> self-ref (fallback)
+56. occupation_law_modifiers          -> occupation_laws
 -- Phase 12-15: Extensions
-57. country_visual_definitions        → countries
-58. intelligence_agencies             → countries
-59. intelligence_agency_names         → intelligence_agencies
-60. bookmarks                         → countries
-61. bookmark_countries                → bookmarks, countries, ideologies
+57. country_visual_definitions        -> countries
+58. intelligence_agencies             -> countries
+59. intelligence_agency_names         -> intelligence_agencies
+60. bookmarks                         -> countries
+61. bookmark_countries                -> bookmarks, countries, ideologies
 62. decision_categories
-63. decisions                         → decision_categories
+63. decisions                         -> decision_categories
 -- Phase 16: Espionage
 64. operation_tokens
 65. operation_phase_definitions
-66. operation_phase_equipment         → operation_phase_definitions
+66. operation_phase_equipment         -> operation_phase_definitions
 67. operations
-68. operation_awarded_tokens          → operations, operation_tokens
-69. operation_equipment_requirements  → operations
-70. operation_phase_groups            → operations
-71. operation_phase_options           → operation_phase_groups, operation_phase_definitions
+68. operation_awarded_tokens          -> operations, operation_tokens
+69. operation_equipment_requirements  -> operations
+70. operation_phase_groups            -> operations
+71. operation_phase_options           -> operation_phase_groups, operation_phase_definitions
 72. intel_agency_upgrade_branches
-73. intel_agency_upgrades             → intel_agency_upgrade_branches
-74. intel_agency_upgrade_levels       → intel_agency_upgrades
-75. intel_agency_upgrade_progress_modifiers → intel_agency_upgrades
+73. intel_agency_upgrades             -> intel_agency_upgrade_branches
+74. intel_agency_upgrade_levels       -> intel_agency_upgrades
+75. intel_agency_upgrade_progress_modifiers -> intel_agency_upgrades
 -- Phase 17: Occupation & Resistance
 76. compliance_modifiers
-77. compliance_modifier_effects       → compliance_modifiers
+77. compliance_modifier_effects       -> compliance_modifiers
 78. resistance_modifiers
-79. resistance_modifier_effects       → resistance_modifiers
+79. resistance_modifier_effects       -> resistance_modifiers
 80. resistance_activities
 -- Phase 18: MIO
 81. mio_equipment_groups
-82. mio_equipment_group_members       → mio_equipment_groups
+82. mio_equipment_group_members       -> mio_equipment_groups
 83. mio_templates
-84. mio_organizations                 → mio_templates, countries
-85. mio_organization_equipment_types  → mio_templates | mio_organizations
-86. mio_initial_traits                → mio_templates | mio_organizations
-87. mio_traits                        → mio_templates | mio_organizations
-88. mio_trait_bonuses                 → mio_traits
-89. mio_trait_prerequisites           → mio_traits (self-ref)
-90. mio_trait_exclusions              → mio_traits (self-ref)
+84. mio_organizations                 -> mio_templates, countries
+85. mio_organization_equipment_types  -> mio_templates | mio_organizations
+86. mio_initial_traits                -> mio_templates | mio_organizations
+87. mio_traits                        -> mio_templates | mio_organizations
+88. mio_trait_bonuses                 -> mio_traits
+89. mio_trait_prerequisites           -> mio_traits (self-ref)
+90. mio_trait_exclusions              -> mio_traits (self-ref)
 91. mio_policies
-92. mio_policy_bonuses                → mio_policies
+92. mio_policy_bonuses                -> mio_policies
 -- Phase 19: Raids
 93. raid_categories
-94. raids                             → raid_categories
-95. raid_equipment_requirements       → raids
+94. raids                             -> raid_categories
+95. raid_equipment_requirements       -> raids
 -- Phase 20: Career Profile
 96. medals
-97. medal_tiers                       → medals
+97. medal_tiers                       -> medals
 98. ribbons
 99. ace_modifiers
-100. ace_modifier_effects             → ace_modifiers
-101. ace_modifier_equipment_types     → ace_modifiers
+100. ace_modifier_effects             -> ace_modifiers
+101. ace_modifier_equipment_types     -> ace_modifiers
 102. unit_medals
-103. unit_medal_modifiers             → unit_medals
+103. unit_medal_modifiers             -> unit_medals
 -- Phase 21: BOP & Continuous Focuses
-104. balance_of_power_definitions     → countries
-105. bop_sides                        → balance_of_power_definitions
-106. bop_ranges                       → bop_sides
-107. bop_range_modifiers              → bop_ranges
+104. balance_of_power_definitions     -> countries
+105. bop_sides                        -> balance_of_power_definitions
+106. bop_ranges                       -> bop_sides
+107. bop_range_modifiers              -> bop_ranges
 108. continuous_focus_palettes
-109. continuous_focuses               → continuous_focus_palettes
-110. continuous_focus_modifiers       → continuous_focuses
+109. continuous_focuses               -> continuous_focus_palettes
+110. continuous_focus_modifiers       -> continuous_focuses
 -- Phase 22: Misc DLC
 111. technology_sharing_groups
 112. dynamic_modifiers
-113. dynamic_modifier_effects         → dynamic_modifiers
+113. dynamic_modifier_effects         -> dynamic_modifiers
 114. scientist_traits
-115. scientist_trait_modifiers        → scientist_traits
+115. scientist_trait_modifiers        -> scientist_traits
 116. peace_action_categories
-117. peace_cost_modifiers             → peace_action_categories
+117. peace_cost_modifiers             -> peace_action_categories
 -- Phase 23: Doctrines (Officer Corps / Military Experience)
 118. doctrine_folders
-119. doctrine_tracks                  → doctrine_folders
-120. grand_doctrines                  → doctrine_folders
-121. grand_doctrine_tracks            → grand_doctrines, doctrine_tracks
-122. subdoctrines                     → doctrine_tracks
-123. country_starting_doctrines       → countries
+119. doctrine_tracks                  -> doctrine_folders
+120. grand_doctrines                  -> doctrine_folders
+121. grand_doctrine_tracks            -> grand_doctrines, doctrine_tracks
+122. subdoctrines                     -> doctrine_tracks
+123. country_starting_doctrines       -> countries
 -- Phase 24: Factions (Ride of the Valkyries)
 124. faction_rule_groups
-125. faction_rules                    → faction_rule_groups
-126. faction_rule_group_members       → faction_rule_groups, faction_rules
+125. faction_rules                    -> faction_rule_groups
+126. faction_rule_group_members       -> faction_rule_groups, faction_rules
 127. faction_manifests
 128. faction_goals
-129. faction_templates                → faction_manifests
-130. faction_template_goals           → faction_templates, faction_goals
-131. faction_template_rules           → faction_templates, faction_rules
+129. faction_templates                -> faction_manifests
+130. faction_template_goals           -> faction_templates, faction_goals
+131. faction_template_rules           -> faction_templates, faction_rules
 132. faction_member_upgrade_groups
-133. faction_member_upgrades          → faction_member_upgrade_groups
+133. faction_member_upgrades          -> faction_member_upgrade_groups
 -- Phase 25: Special Projects (Götterdämmerung)
 134. special_project_specializations
 135. special_project_tags
-136. special_projects                 → special_project_specializations, special_project_tags
-137. special_project_rewards          → special_project_specializations
-138. special_project_reward_links     → special_projects, special_project_rewards
+136. special_projects                 -> special_project_specializations, special_project_tags
+137. special_project_rewards          -> special_project_specializations
+138. special_project_reward_links     -> special_projects, special_project_rewards
 -- Phase 26: Collections
 139. collections
 -- Phase 27: AI Faction Theaters
 140. ai_faction_theaters
-141. ai_faction_theater_regions       → ai_faction_theaters, strategic_regions
+141. ai_faction_theater_regions       -> ai_faction_theaters, strategic_regions
 -- Phase 28: Timed Activities
 142. timed_activities
-143. timed_activity_equipment         → timed_activities
+143. timed_activity_equipment         -> timed_activities
 -- Infrastructure
 144. user_annotations                 (no FKs)
 145. localisation                     (no FKs)
@@ -277,85 +277,85 @@ Tables must be created in this order (no forward FK references):
 
 ## Table Build Notes
 
-### Phase 1 — Global Reference Tables (9 tables)
+### Phase 1 - Global Reference Tables (9 tables)
 No FK dependencies. Create first. `continents`, `terrain_types`, `state_categories` are small enum-like lookup tables. `ideologies` (4 rows) and `sub_ideologies` (~25 rows) define the political system. `technology_categories` (~40 rows) for the tech tree categorization. `unit_types` (125 rows) and `equipment_definitions` (308 rows) define the military unit/equipment catalog. `equipment_resources` (454 rows) links equipment to raw material costs.
 
-### Phase 2 — Geography (4 new tables)
-`province_building_positions` (65,659 rows) is the largest table by volume — it stores 3D coordinates for every building slot marker on the map. `strategic_regions` (298) and `strategic_region_provinces` (13,437) map the air/weather zone system. `supply_nodes` (727) replaces the expected `supply_areas` table — only `supply_nodes.txt` exists in this installation.
+### Phase 2 - Geography (4 new tables)
+`province_building_positions` (65,659 rows) is the largest table by volume - it stores 3D coordinates for every building slot marker on the map. `strategic_regions` (298) and `strategic_region_provinces` (13,437) map the air/weather zone system. `supply_nodes` (727) replaces the expected `supply_areas` table - only `supply_nodes.txt` exists in this installation.
 
-### Phase 3 — Countries (1 new table)
+### Phase 3 - Countries (1 new table)
 Most country tables exist from Slice A. The only addition is `country_starting_ideas` for the `add_ideas = { }` blocks.
 
-### Phase 4 — Technologies (4 new tables)
+### Phase 4 - Technologies (4 new tables)
 `technology_categories_junction` handles the M:N relationship between techs and categories. `technology_prerequisites` (421 rows) is the directed graph of `leads_to_tech` links. `technology_enables_equipment` and `technology_enables_units` capture what each tech unlocks.
 
-### Phase 5 — Characters (4 new tables)
+### Phase 5 - Characters (4 new tables)
 `characters` (5,160 rows) holds the master character record. `character_roles` (5,469 rows) allows one character to hold multiple roles (leader + general + advisor). Skill fields (attack, defense, planning, logistics) are nullable since they only apply to military roles. `character_traits` and `character_role_traits` form the trait junction.
 
-### Phase 6 — Division Templates & OOB (4 new tables)
+### Phase 6 - Division Templates & OOB (4 new tables)
 `division_templates` (797 rows) define the blueprint; `division_template_regiments` (4,580 rows) and `division_template_support` (~1,200 rows) specify the grid layout. `divisions` (4,991 rows) are deployed instances referencing templates by name.
 
-### Phase 7 — Naval OOB (4 new tables)
-Three-level hierarchy: `fleets` → `task_forces` → `ships`. `equipment_variants` (~500 rows) holds named design variants (e.g., "Leipzig" class cruiser). Ships reference both the hull equipment type and the variant name.
+### Phase 7 - Naval OOB (4 new tables)
+Three-level hierarchy: `fleets` -> `task_forces` -> `ships`. `equipment_variants` (~500 rows) holds named design variants (e.g., "Leipzig" class cruiser). Ships reference both the hull equipment type and the variant name.
 
-### Phase 8 — Air OOB (1 new table)
+### Phase 8 - Air OOB (1 new table)
 `air_wings` combines wing metadata with equipment assignment in a single table. Each row is one wing with its equipment type, amount, and location state.
 
-### Phase 9 — Ideas (2 new tables + 1 from Phase 3)
+### Phase 9 - Ideas (2 new tables + 1 from Phase 3)
 `ideas` (5,947 rows) covers laws, national spirits, hidden ideas, and advisor slots. `idea_modifiers` (11,105 rows) stores the key-value modifier pairs. `country_starting_ideas` (from Phase 3) completes the junction.
 
-### Phase 10 — Focus Trees (4 new tables)
+### Phase 10 - Focus Trees (4 new tables)
 `focus_trees` (63 rows) are containers. `focuses` (8,498 rows) are the nodes. `focus_prerequisites` and `focus_mutually_exclusive` encode the graph edges from the 9,673 total links extracted.
 
-### Phase 11 — Governance (4 tables)
+### Phase 11 - Governance (4 tables)
 `autonomy_states` (19 rows) define puppet/dominion/colony autonomy levels with modifier key-value pairs in `autonomy_state_modifiers` (~150 rows). `occupation_laws` (~10 rows) define garrison policies with self-referential fallback chains and separate modifier tables for normal vs. suppressed state modifiers.
 
-### Phase 12–15 — Extensions (6 tables)
+### Phase 12–15 - Extensions (6 tables)
 `country_visual_definitions` (430 rows) stores graphical culture assignments. `intelligence_agencies` (~50 rows) holds agency definitions with `intelligence_agency_names` child table for multiple possible display names. `bookmarks` (2 rows) and `bookmark_countries` (~30 rows) define game start scenarios. `decision_categories` (~30 rows) and `decisions` (~500 rows) cover the political decision system.
 
-### Phase 16 — Espionage System (14 tables, La Résistance)
-The operations system is the most complex DLC addition. `operations` (36 rows) define mission templates with duration, risk, network requirements. `operation_phase_groups` and `operation_phase_options` model the sequential phase selection mechanic (each operation has 1-N phase groups, each containing weighted phase alternatives). `operation_phase_definitions` (~60 rows) are reusable phase templates referenced across operations. `operation_tokens` (5 rows) are intel resources awarded on success. Intelligence agency upgrades use a 3-level hierarchy: `intel_agency_upgrade_branches` (6) → `intel_agency_upgrades` (~30) → `intel_agency_upgrade_levels` (~100), with separate `progress_modifiers` for construction-phase effects.
+### Phase 16 - Espionage System (14 tables, La Résistance)
+The operations system is the most complex DLC addition. `operations` (36 rows) define mission templates with duration, risk, network requirements. `operation_phase_groups` and `operation_phase_options` model the sequential phase selection mechanic (each operation has 1-N phase groups, each containing weighted phase alternatives). `operation_phase_definitions` (~60 rows) are reusable phase templates referenced across operations. `operation_tokens` (5 rows) are intel resources awarded on success. Intelligence agency upgrades use a 3-level hierarchy: `intel_agency_upgrade_branches` (6) -> `intel_agency_upgrades` (~30) -> `intel_agency_upgrade_levels` (~100), with separate `progress_modifiers` for construction-phase effects.
 
-### Phase 17 — Occupation & Resistance (5 tables, La Résistance)
+### Phase 17 - Occupation & Resistance (5 tables, La Résistance)
 `compliance_modifiers` (5 thresholds: 15/25/40/60/80) and `resistance_modifiers` (thresholds: 25/50/75/90) define state-level modifier tiers that activate based on compliance/resistance percentages. Each has a child `*_effects` table for key-value state modifiers. `resistance_activities` (~15 rows) define sabotage types like `sabotage_arms_factory` and `sabotage_infrastructure`.
 
-### Phase 18 — Military-Industrial Organizations (12 tables, Arms Against Tyranny)
+### Phase 18 - Military-Industrial Organizations (12 tables, Arms Against Tyranny)
 The largest DLC system by row count (~3,200 total). `mio_templates` (~40 generic templates) serve as base definitions inherited by `mio_organizations` (~300 country-specific orgs). Each org has a trait tree modeled via `mio_traits` (~900 nodes) with `mio_trait_bonuses` (~1,500 key-value modifier rows), `mio_trait_prerequisites` (parent dependencies), and `mio_trait_exclusions` (mutual exclusion pairs). `mio_policies` (~75) provide separate modifier sets. `mio_equipment_groups` (~25) categorize equipment types the MIO applies to.
 
-### Phase 19 — Raids (3 tables, Götterdämmerung)
+### Phase 19 - Raids (3 tables, Götterdämmerung)
 `raid_categories` (4 rows: air, paratrooper, nuclear, land infiltration) define category-level properties. `raids` (~20 definitions) specify individual raid missions with preparation time, command power cost, and target types. `raid_equipment_requirements` (~40 rows) specifies essential and additional equipment per raid.
 
-### Phase 20 — Career Profile (8 tables, By Blood Alone)
+### Phase 20 - Career Profile (8 tables, By Blood Alone)
 `medals` (~30) and `medal_tiers` (~90) model the 3-tier career achievement system (bronze/silver/gold thresholds tracking gameplay statistics). `ribbons` (~20) are achievement markers with scripted trigger conditions. `ace_modifiers` (9 entries for fighter/bomber/support × good/unique/genius) define ace pilot combat bonuses. `unit_medals` (~50) are per-country military decorations with `unit_medal_modifiers` (~150 modifier key-values).
 
-### Phase 21 — Balance of Power & Continuous Focuses (7 tables)
+### Phase 21 - Balance of Power & Continuous Focuses (7 tables)
 `balance_of_power_definitions` (8 country-specific BOP instances) each have two `bop_sides` with hierarchical `bop_ranges` containing threshold-based `bop_range_modifiers`. `continuous_focus_palettes` (~5) contain `continuous_focuses` (~40) with daily PP cost and modifier key-values.
 
-### Phase 22 — Misc DLC Systems (7 tables)
+### Phase 22 - Misc DLC Systems (7 tables)
 `technology_sharing_groups` (~15 groups across multiple DLCs) enable research sharing bonuses within factions/blocs. `dynamic_modifiers` (~80) and their child `dynamic_modifier_effects` (~300) store runtime-applied modifier templates. `scientist_traits` (7) define special project bonuses. `peace_action_categories` (11) and `peace_cost_modifiers` (~80) model the By Blood Alone peace conference overhaul.
 
-### Phase 23 — Doctrines / Officer Corps (6 tables, Götterdämmerung)
-Doctrines are purchased with military experience (Army/Navy/Air XP) through the Officer Corps — distinct from the research-slot technology tree. `doctrine_folders` (3: land, naval, air) define the top-level categories. `doctrine_tracks` (12: 4 per branch) group subdoctrines by mastery category. `grand_doctrines` (10: 4 land, 3 naval, 3 air) are mutually-exclusive choices per folder; `grand_doctrine_tracks` (40 junction rows) maps tracks to grand doctrines. `subdoctrines` (~86) are slotted into tracks with mastery reward tiers. `country_starting_doctrines` (~927 rows) captures both `set_grand_doctrine` and `set_sub_doctrine` assignments from country history files, with date scoping for 1936/1939 bookmarks.
+### Phase 23 - Doctrines / Officer Corps (6 tables, Götterdämmerung)
+Doctrines are purchased with military experience (Army/Navy/Air XP) through the Officer Corps - distinct from the research-slot technology tree. `doctrine_folders` (3: land, naval, air) define the top-level categories. `doctrine_tracks` (12: 4 per branch) group subdoctrines by mastery category. `grand_doctrines` (10: 4 land, 3 naval, 3 air) are mutually-exclusive choices per folder; `grand_doctrine_tracks` (40 junction rows) maps tracks to grand doctrines. `subdoctrines` (~86) are slotted into tracks with mastery reward tiers. `country_starting_doctrines` (~927 rows) captures both `set_grand_doctrine` and `set_sub_doctrine` assignments from country history files, with date scoping for 1936/1939 bookmarks.
 
-### Phase 24 — Factions (10 tables, Ride of the Valkyries)
+### Phase 24 - Factions (10 tables, Ride of the Valkyries)
 `faction_rule_groups` (15) classify rules into categories (ideology, geographical, war declaration, peace, etc.). `faction_rules` (53 across 9 type categories) define joining conditions, dismissal criteria, war declaration permissions, and peace conference behaviour; `faction_rule_group_members` (~60 junction rows) maps rules into groups. `faction_manifests` (36) define faction ratio-progress objectives with collection-based completion tracking. `faction_goals` (156: 63 short-term, 72 medium-term, 21 long-term) are assignable objectives with category and group filters. `faction_templates` (65) define named factions (Allies, Axis, Comintern, generics) linking a manifest and listing goals/rules; `faction_template_goals` (~200) and `faction_template_rules` (~250) are junction tables. `faction_member_upgrade_groups` (1: manpower contribution) and `faction_member_upgrades` (4 tiers) model member-level faction upgrades.
 
-### Phase 25 — Special Projects (5 tables, Götterdämmerung)
+### Phase 25 - Special Projects (5 tables, Götterdämmerung)
 `special_project_specializations` (4: land, naval, air, nuclear) categorize R&D facilities. `special_project_tags` (14) classify projects by equipment domain (tank, aircraft, submarine, etc.). `special_projects` (48: land 8, air 8, naval 19, nuclear 6, radar 1, rocket 6) define individual R&D projects with complexity and prototype time. `special_project_rewards` (82 generic prototype rewards across 5 specialization files) trigger during project iteration with progress thresholds. `special_project_reward_links` (~300 junction rows) assigns generic rewards to projects.
 
-### Phase 26 — Collections (1 table)
+### Phase 26 - Collections (1 table)
 `collections` (72) define scripted filter queries used by faction manifests and triggers. Each collection has an input source (all countries, faction scope, or another collection) and filter operators. Collections are referenced by manifests' `completed_amount_collection` fields.
 
-### Phase 27 — AI Faction Theaters (2 tables)
+### Phase 27 - AI Faction Theaters (2 tables)
 `ai_faction_theaters` (30) define geographic theatres for AI military planning. `ai_faction_theater_regions` (~180 junction rows) maps strategic regions to each theatre. Theatres have cancel conditions and AI weighting but these are stored as scripted triggers, not in the DB.
 
-### Phase 28 — Timed Activities (2 tables)
+### Phase 28 - Timed Activities (2 tables)
 `timed_activities` (1: stage_coup) and `timed_activity_equipment` (1 row: infantry_equipment × 1000) model staged activities with equipment prerequisites. Minimal system in v1.17.
 
 ### Infrastructure Tables (2 tables)
-`user_annotations` — API-facing user notes (entity_type + entity_key + note). No FK constraints; indexes on (entity_type, entity_key).
+`user_annotations` - API-facing user notes (entity_type + entity_key + note). No FK constraints; indexes on (entity_type, entity_key).
 
-`localisation` (117,490 rows) — English display-name translations extracted from 189 HOI4 `localisation/english/*_l_english.yml` files. Single table with `loc_key VARCHAR(250) PRIMARY KEY`, `loc_value TEXT NOT NULL`, `source_file TEXT`. Used by `api_country_detail` and `api_state_detail` functions via LEFT JOIN to resolve raw game keys (like `STATE_64`, `infantry_weapons`) into human-readable names (like "Brandenburg", "Infantry Weapons I"). Coverage: 96% of states, 72% of technologies. COALESCE fallback ensures the raw key is returned when no translation exists.
+`localisation` (117,490 rows) - English display-name translations extracted from 189 HOI4 `localisation/english/*_l_english.yml` files. Single table with `loc_key VARCHAR(250) PRIMARY KEY`, `loc_value TEXT NOT NULL`, `source_file TEXT`. Used by `api_country_detail` and `api_state_detail` functions via LEFT JOIN to resolve raw game keys (like `STATE_64`, `infantry_weapons`) into human-readable names (like "Brandenburg", "Infantry Weapons I"). Coverage: 96% of states, 72% of technologies. COALESCE fallback ensures the raw key is returned when no translation exists.
 
 ---
 
@@ -391,7 +391,7 @@ characters JOIN character_roles LEFT JOIN character_role_traits
 | Index | Purpose |
 |---|---|
 | `countries(tag)` PK | Country lookup |
-| `state_ownership_history(owner_tag, effective_date)` | Country→states |
+| `state_ownership_history(owner_tag, effective_date)` | Country->states |
 | `state_resources(state_id)` | State detail |
 | `state_buildings(state_id)` | State detail |
 | `country_starting_technologies(country_tag)` | Tech list per country |
@@ -424,8 +424,8 @@ characters JOIN character_roles LEFT JOIN character_role_traits
 ## DLC-Conditional Field Strategy
 
 All DLC-gated data uses nullable `dlc_source VARCHAR(50)` columns:
-- `NULL` → base-game data (always valid)
-- Populated → DLC name gating this record (e.g., `"No Step Back"`, `"Man the Guns"`, `"By Blood Alone"`)
+- `NULL` -> base-game data (always valid)
+- Populated -> DLC name gating this record (e.g., `"No Step Back"`, `"Man the Guns"`, `"By Blood Alone"`)
 
 ### DLC Field Register
 
@@ -537,10 +537,10 @@ All DLC-gated data uses nullable `dlc_source VARCHAR(50)` columns:
 
 ## Persisted Deliverables Checklist
 
-- [x] `docs/hoi4-database-design.md` — This file
-- [x] `docs/hoi4-table-catalog.md` — Table-by-table specifications
-- [x] `docs/hoi4-data-snapshots.md` — Sample rows per table
-- [x] `docs/hoi4-source-to-table-map.md` — Complete source→table mapping
-- [x] `docs/hoi4-er-diagram.mmd` — Complete Mermaid ER diagram
-- [x] `tools/db_etl/manifest.md` — ETL module inventory
-- [x] `tools/db_etl/runbook.md` — Extraction pipeline runbook
+- [x] `docs/hoi4-database-design.md` - This file
+- [x] `docs/hoi4-table-catalog.md` - Table-by-table specifications
+- [x] `docs/hoi4-data-snapshots.md` - Sample rows per table
+- [x] `docs/hoi4-source-to-table-map.md` - Complete source->table mapping
+- [x] `docs/hoi4-er-diagram.mmd` - Complete Mermaid ER diagram
+- [x] `tools/db_etl/manifest.md` - ETL module inventory
+- [x] `tools/db_etl/runbook.md` - Extraction pipeline runbook

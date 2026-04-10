@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# HOI4 Database API — Smoke Test Script
+# HOI4 Database API - Smoke Test Script
 # Run from WSL: bash tools/smoke-test.sh
 # Assumes the API is running on localhost:8000
 

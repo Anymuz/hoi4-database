@@ -1,7 +1,7 @@
-# HOI4 Database — Deployment & ETL Runbook
+# HOI4 Database - Deployment & ETL Runbook
 
 Complete guide for extracting HOI4 game data, converting it to CSV, and loading
-it into PostgreSQL — with both Docker and native deployment options.
+it into PostgreSQL - with both Docker and native deployment options.
 
 ---
 
@@ -9,7 +9,7 @@ it into PostgreSQL — with both Docker and native deployment options.
 
 | Requirement | Version | Notes |
 |---|---|---|
-| Python | 3.10+ | Standard library only — no pip packages needed |
+| Python | 3.10+ | Standard library only - no pip packages needed |
 | HOI4 installation | Any | Default Steam path, or specify via `--hoi4-root` / `HOI4_ROOT` |
 | **Docker** (Option A) | 20+ | Docker Desktop on Windows/Mac, or Docker Engine on Linux |
 | **PostgreSQL** (Option B) | 15+ | With `psql` and `createdb` on PATH |
@@ -28,7 +28,7 @@ The extraction script finds your HOI4 install in this order:
 
 ---
 
-## Step 1: Extract Game Data → Markdown
+## Step 1: Extract Game Data -> Markdown
 
 ```bash
 python tools/db_etl/export_markdown_dump.py
@@ -36,7 +36,7 @@ python tools/db_etl/export_markdown_dump.py
 python tools/db_etl/export_markdown_dump.py --hoi4-root "/path/to/Hearts of Iron IV"
 ```
 
-**Output:** `docs/data-dump/` — 160 markdown files (~225K rows across 23 schema phases).
+**Output:** `docs/data-dump/` - 160 markdown files (~225K rows across 23 schema phases).
 Check `docs/data-dump/SUMMARY.md` for per-dataset row counts.
 
 > **Windows note:** If you see encoding errors, set `$env:PYTHONIOENCODING='utf-8'` first.
@@ -49,12 +49,12 @@ python tools/db_etl/export_localisation.py
 python tools/db_etl/export_localisation.py --hoi4-root "/path/to/Hearts of Iron IV"
 ```
 
-**Output:** `data/csv/localisation.csv` — 117,490 English display-name translations from 189 `*_l_english.yml` files.
+**Output:** `data/csv/localisation.csv` - 117,490 English display-name translations from 189 `*_l_english.yml` files.
 These are loaded separately from the main seed (the localisation table has no FK dependencies).
 
 ---
 
-## Step 2: Convert Markdown → CSV
+## Step 2: Convert Markdown -> CSV
 
 ```bash
 # Convert markdown dumps to PostgreSQL-ready CSVs
@@ -62,12 +62,12 @@ python tools/db_etl/md_to_csv.py
 
 ```
 
-**Output:** `data/csv/` — 149 CSV files (~225K rows), one per schema table.
-(Localisation CSV is produced separately by `export_localisation.py` — see Step 1b.)
+**Output:** `data/csv/` - 149 CSV files (~225K rows), one per schema table.
+(Localisation CSV is produced separately by `export_localisation.py` - see Step 1b.)
 
 The converter handles column renames, multi-source merges (e.g., country_tags +
-countries_visuals + country_history → countries.csv), multi-target splits
-(e.g., focus_links → focus_prerequisites + focus_mutually_exclusive), and
+countries_visuals + country_history -> countries.csv), multi-target splits
+(e.g., focus_links -> focus_prerequisites + focus_mutually_exclusive), and
 subset filtering.
 
 ### Step 2b: Regenerate Seed SQL (only if schema or CSV columns changed)
@@ -86,7 +86,7 @@ commands with explicit column lists. Re-run after any schema or CSV column chang
 
 ### Option A: Docker (Recommended)
 
-Docker is the simplest option — no local PostgreSQL installation needed.
+Docker is the simplest option - no local PostgreSQL installation needed.
 
 **1. Start the container:**
 
@@ -282,13 +282,13 @@ psql -d hoi4 -f sql/views.sql
 ## ETL Pipeline Summary
 
 ```
-export_markdown_dump.py     HOI4 game files → 160 markdown dumps
-        ↓
-md_to_csv.py                Markdown → 149 CSV files (renames, merges, splits)
-        ↓
+export_markdown_dump.py     HOI4 game files -> 160 markdown dumps
+        v
+md_to_csv.py                Markdown -> 149 CSV files (renames, merges, splits)
+        v
 gen_seed_sql.py             Generates seed-load-order.sql (native \copy)
 gen_seed_docker.py          Generates seed-docker.sql (Docker COPY)
-        ↓
+        v
 psql -f schema.sql          Create 151 tables + indexes
 psql -f seed[-docker].sql   Load ~225K rows in FK-safe tier order
 psql -f views.sql           Create 14 API views + 2 functions
@@ -301,9 +301,9 @@ psql -f views.sql           Create 14 API views + 2 functions
 | Symptom | Cause | Fix |
 |---|---|---|
 | Encoding errors on Windows | Non-UTF-8 console | Set `$env:PYTHONIOENCODING='utf-8'` before running Python scripts |
-| FK violation during load | CSV data loaded out of tier order | Always use the generated seed script — it handles FK ordering |
+| FK violation during load | CSV data loaded out of tier order | Always use the generated seed script - it handles FK ordering |
 | Duplicate PK error | Re-loading without clearing data | Drop and recreate: `DROP SCHEMA public CASCADE; CREATE SCHEMA public;` then reload |
-| CSV column mismatch | Schema changed after CSV generation | Re-run `md_to_csv.py` → `gen_seed_sql.py` |
+| CSV column mismatch | Schema changed after CSV generation | Re-run `md_to_csv.py` -> `gen_seed_sql.py` |
 | Missing DLC data | DLC not installed in HOI4 | Check `HOI4_ROOT/dlc/` directory; parsers skip missing files gracefully |
 | 0 rows from air/naval parser | Wrong file pattern | Verify `history/units/` filenames match `*_naval_*` / `*_air_*` patterns |
 | `seed-docker.sql` not found | Not generated yet | Run `python tools/db_etl/gen_seed_docker.py` |

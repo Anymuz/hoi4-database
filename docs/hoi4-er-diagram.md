@@ -1,7 +1,7 @@
 ```mermaid
 erDiagram
     %% ============================================================
-    %% HOI4 Complete ER Diagram — 127 tables (66 base + 61 DLC)
+    %% HOI4 Complete ER Diagram - 127 tables (66 base + 61 DLC)
     %% Phases 1-15: 66 core tables (geography, countries, techs,
     %%   characters, OOB, ideas, focuses, bookmarks, decisions)
     %% Phases 16-23: 61 DLC tables (espionage, occupation/resistance,
@@ -549,7 +549,7 @@ erDiagram
     %% Relationships
     %% ============================================================
 
-    %% Phase 1 — reference table relationships
+    %% Phase 1 - reference table relationships
     ideologies ||--o{ sub_ideologies : has
     equipment_definitions ||--o{ equipment_definitions : "archetype/parent"
     equipment_definitions ||--o{ equipment_resources : consumes
@@ -561,7 +561,7 @@ erDiagram
     occupation_laws ||--o{ occupation_law_modifiers : "modified_by"
     occupation_laws ||--o| occupation_laws : "fallback"
 
-    %% Phase 2 — geography relationships
+    %% Phase 2 - geography relationships
     terrain_types ||--o{ provinces : "terrain_of"
     continents ||--o{ provinces : "contains"
     provinces ||--o{ province_building_positions : has
@@ -585,7 +585,7 @@ erDiagram
     states ||--o{ state_victory_points : has
     provinces ||--o{ state_victory_points : at
 
-    %% Phase 3 — country relationships
+    %% Phase 3 - country relationships
     states ||--o| countries : "capital_of"
     countries ||--|| country_visual_definitions : "visuals"
     countries ||--o{ state_ownership_history : owns
@@ -602,7 +602,7 @@ erDiagram
     countries ||--o{ intelligence_agencies : "has_agency"
     countries ||--o{ intelligence_agencies : "available_for"
 
-    %% Phase 4 — technology relationships
+    %% Phase 4 - technology relationships
     technologies ||--o{ technology_categories_junction : categorized
     technology_categories ||--o{ technology_categories_junction : groups
     technologies ||--o{ technology_prerequisites : "leads_to"
@@ -612,14 +612,14 @@ erDiagram
     technologies ||--o{ technology_enables_units : unlocks
     unit_types ||--o{ technology_enables_units : unlocked_by
 
-    %% Phase 5 — character relationships
+    %% Phase 5 - character relationships
     countries ||--o{ characters : has
     characters ||--o{ character_roles : holds
     sub_ideologies ||--o{ character_roles : "ideology_of"
     character_roles ||--o{ character_role_traits : assigned
     character_traits ||--o{ character_role_traits : applied
 
-    %% Phase 6 — land OOB relationships
+    %% Phase 6 - land OOB relationships
     countries ||--o{ division_templates : defines
     division_templates ||--o{ division_template_regiments : has_regiment
     unit_types ||--o{ division_template_regiments : typed
@@ -629,7 +629,7 @@ erDiagram
     division_templates ||--o{ divisions : instantiated
     provinces ||--o{ divisions : stationed
 
-    %% Phase 7 — naval OOB relationships
+    %% Phase 7 - naval OOB relationships
     countries ||--o{ equipment_variants : designs
     equipment_definitions ||--o{ equipment_variants : based_on
     countries ||--o{ fleets : commands
@@ -640,27 +640,27 @@ erDiagram
     equipment_definitions ||--o{ ships : hull
     countries ||--o{ ships : owned_by
 
-    %% Phase 8 — air OOB relationships
+    %% Phase 8 - air OOB relationships
     countries ||--o{ air_wings : operates
     states ||--o{ air_wings : based_at
 
-    %% Phase 9 — ideas relationships
+    %% Phase 9 - ideas relationships
     ideas ||--o{ idea_modifiers : modified_by
 
-    %% Phase 10 — focus tree relationships
+    %% Phase 10 - focus tree relationships
     countries ||--o{ focus_trees : has_tree
     focus_trees ||--o{ focuses : contains
     focuses ||--o{ focus_prerequisites : requires
     focuses ||--o{ focus_prerequisites : "required_by"
     focuses ||--o{ focus_mutually_exclusive : excludes
 
-    %% Phase 11 — bookmark relationships
+    %% Phase 11 - bookmark relationships
     countries ||--o{ bookmark_countries : "featured_in"
     bookmarks ||--o{ bookmark_countries : "includes"
     countries ||--o| bookmarks : "default_for"
     ideologies ||--o{ bookmark_countries : "starts_as"
 
-    %% Phase 12 — decision relationships
+    %% Phase 12 - decision relationships
     decision_categories ||--o{ decisions : "contains"
 
     %% === Phase 16: Espionage System (La Résistance) ===
@@ -1106,7 +1106,7 @@ erDiagram
     %% Phase 16–22 Relationships
     %% ============================================================
 
-    %% Phase 16 — espionage relationships
+    %% Phase 16 - espionage relationships
     operations ||--o{ operation_awarded_tokens : "awards"
     operation_tokens ||--o{ operation_awarded_tokens : "awarded_by"
     operations ||--o{ operation_equipment_requirements : "requires"
@@ -1119,11 +1119,11 @@ erDiagram
     intel_agency_upgrades ||--o{ intel_agency_upgrade_levels : "has_level"
     intel_agency_upgrades ||--o{ intel_agency_upgrade_progress_modifiers : "modified_by"
 
-    %% Phase 17 — occupation & resistance relationships
+    %% Phase 17 - occupation & resistance relationships
     compliance_modifiers ||--o{ compliance_modifier_effects : "applies"
     resistance_modifiers ||--o{ resistance_modifier_effects : "applies"
 
-    %% Phase 18 — MIO relationships
+    %% Phase 18 - MIO relationships
     mio_equipment_groups ||--o{ mio_equipment_group_members : "contains"
     mio_templates ||--o{ mio_organizations : "instantiates"
     countries ||--o{ mio_organizations : "owns"
@@ -1134,17 +1134,17 @@ erDiagram
     mio_traits ||--o{ mio_trait_exclusions : "excludes_b"
     mio_policies ||--o{ mio_policy_bonuses : "grants"
 
-    %% Phase 19 — raid relationships
+    %% Phase 19 - raid relationships
     raid_categories ||--o{ raids : "contains"
     raids ||--o{ raid_equipment_requirements : "requires"
 
-    %% Phase 20 — career profile relationships
+    %% Phase 20 - career profile relationships
     medals ||--o{ medal_tiers : "has_tier"
     ace_modifiers ||--o{ ace_modifier_effects : "applies"
     ace_modifiers ||--o{ ace_modifier_equipment_types : "applies_to"
     unit_medals ||--o{ unit_medal_modifiers : "modified_by"
 
-    %% Phase 21 — BOP & continuous focus relationships
+    %% Phase 21 - BOP & continuous focus relationships
     countries ||--o{ balance_of_power_definitions : "has_bop"
     balance_of_power_definitions ||--o{ bop_sides : "has_side"
     balance_of_power_definitions ||--o{ bop_ranges : "has_range"
@@ -1152,13 +1152,13 @@ erDiagram
     continuous_focus_palettes ||--o{ continuous_focuses : "contains"
     continuous_focuses ||--o{ continuous_focus_modifiers : "modified_by"
 
-    %% Phase 22 — misc DLC relationships
+    %% Phase 22 - misc DLC relationships
     dynamic_modifiers ||--o{ dynamic_modifier_effects : "applies"
     scientist_traits ||--o{ scientist_trait_modifiers : "modified_by"
     peace_action_categories ||--o{ peace_cost_modifiers : "has_modifier"
 
     %% ============================================================
-    %% Phase 23 — Doctrines (Officer Corps)
+    %% Phase 23 - Doctrines (Officer Corps)
     %% ============================================================
 
     doctrine_folders {

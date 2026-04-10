@@ -9,7 +9,7 @@ from typing import Dict, List, Optional, Tuple
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT = REPO_ROOT / "docs" / "data-dump"
 
-# ── HOI4 install detection ──────────────────────────────────────────────
+# -- HOI4 install detection ----------------------------------------------
 _STEAM_COMMON = Path(r"C:\Program Files (x86)\Steam\steamapps\common\Hearts of Iron IV")
 _STEAM_COMMON_ALT = Path.home() / ".steam" / "steam" / "steamapps" / "common" / "Hearts of Iron IV"
 
@@ -47,7 +47,7 @@ def _detect_hoi4_root(cli_path: Optional[str] = None) -> Path:
     )
     sys.exit(1)
 
-# Placeholder — set by main() after CLI parsing
+# Placeholder - set by main() after CLI parsing
 ROOT: Path = Path(".")
 
 
@@ -611,7 +611,7 @@ def parse_air_oob_ger() -> int:
     return len(rows)
 
 
-# ── All-country naval OOB ───────────────────────────────────────────
+# -- All-country naval OOB -------------------------------------------
 def parse_naval_oob_all() -> Tuple[int, int, int]:
     """Parse fleet/task_force/ship data from ALL naval OOB files.
 
@@ -726,7 +726,7 @@ def parse_naval_oob_all() -> Tuple[int, int, int]:
     return len(fleet_rows), len(tf_rows), len(ship_rows)
 
 
-# ── All-country air OOB ─────────────────────────────────────────────
+# -- All-country air OOB ---------------------------------------------
 def parse_air_oob_all() -> int:
     """Parse air wing data from ALL *_air_bba.txt files (By Blood Alone DLC)."""
     d = ROOT / "history" / "units"
@@ -1067,7 +1067,7 @@ def parse_technologies_all() -> Tuple[int, int, int]:
             if cat:
                 cats = re.findall(r"\b([a-zA-Z0-9_]+)\b", cat.group(1))
                 cat_first = cats[0] if cats else ""
-            # Always emit — some techs (e.g. militia_tech) have no metadata
+            # Always emit - some techs (e.g. militia_tech) have no metadata
             tech_rows.append([
                 key,
                 rc.group(1) if rc else "",
@@ -1081,7 +1081,7 @@ def parse_technologies_all() -> Tuple[int, int, int]:
             for lm in re.finditer(r"leads_to_tech\s*=\s*([a-zA-Z0-9_]+)", body):
                 coeff = re.search(r"\bresearch_cost_coeff\s*=\s*([0-9.]+)", body)
                 link_rows.append([key, lm.group(1), coeff.group(1) if coeff else "", fp.name])
-            # enable_equipments — use extract_block to handle nested DLC guards
+            # enable_equipments - use extract_block to handle nested DLC guards
             for um in re.finditer(r"\benable_equipments\s*=\s*\{", body):
                 eq_body = extract_block(body, um.start())
                 for eq in _extract_equipment_tokens(eq_body):
@@ -1150,7 +1150,7 @@ def parse_focuses_all() -> Tuple[int, int, int]:
                     norm_a, norm_b = (a, b) if a < b else (b, a)
                     link_rows.append([norm_a, "mutually_exclusive", norm_b, fp.name])
 
-        # ── Handle shared_focus and joint_focus blocks (not inside a focus_tree) ──
+        # -- Handle shared_focus and joint_focus blocks (not inside a focus_tree) --
         shared_tree_id = None
         for skey, sbody, _ in find_game_blocks(txt):
             if skey not in ("shared_focus", "joint_focus"):
@@ -1197,7 +1197,7 @@ def parse_characters_all() -> Tuple[int, int]:
                 continue
             name = re.search(r"\bname\s*=\s*([A-Za-z0-9_]+)", blk)
             gender = re.search(r"\bgender\s*=\s*([a-z]+)", blk)
-            # Derive country_tag from character_id prefix (e.g. GER_erwin_rommel → GER)
+            # Derive country_tag from character_id prefix (e.g. GER_erwin_rommel -> GER)
             country_tag = cid.split("_")[0] if "_" in cid else ""
             crows.append([cid, name.group(1) if name else "", country_tag, gender.group(1) if gender else "male", fp.name])
             if "country_leader" in blk:
@@ -1259,7 +1259,7 @@ def _parse_idea_entries(slot_key: str, slot_body: str, filename: str,
     for idea_key, idea_body, _ in find_top_level_blocks(slot_body):
         if idea_key in skip_keys:
             continue
-        # Must look like an idea — has modifier, cost, removal_cost, or default
+        # Must look like an idea - has modifier, cost, removal_cost, or default
         has_idea_markers = any(k in idea_body for k in [
             "modifier", "removal_cost", "cost", "default = yes",
             "allowed", "available", "cancel_if_invalid", "on_add",
@@ -1292,7 +1292,7 @@ def parse_land_oob_all() -> Tuple[int, int, int, int]:
         if "_naval_" in name or "_air_" in name:
             continue
         txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
-        # Division templates — use extract_block for proper nested parsing
+        # Division templates - use extract_block for proper nested parsing
         for tm in re.finditer(r"division_template\s*=\s*\{", txt):
             b = extract_block(txt, tm.start())
             if not b:
@@ -1313,7 +1313,7 @@ def parse_land_oob_all() -> Tuple[int, int, int, int]:
                 sup_body = extract_block(b, sup_m.start())
                 for sm in re.finditer(r"([a-zA-Z0-9_]+)\s*=\s*\{\s*x\s*=\s*([0-9]+)\s*y\s*=\s*([0-9]+)\s*\}", sup_body):
                     srows.append([tname, sm.group(1), sm.group(2), sm.group(3), fp.name])
-        # Divisions — use extract_block for proper nested parsing
+        # Divisions - use extract_block for proper nested parsing
         for dm in re.finditer(r"\bdivision\s*=\s*\{", txt):
             b = extract_block(txt, dm.start())
             if not b:
@@ -1402,7 +1402,7 @@ def parse_equipment_all() -> Tuple[int, int]:
             continue
         txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
 
-        # ── Handle duplicate_archetypes blocks (x_tank_chassis, x_plane_airframes) ──
+        # -- Handle duplicate_archetypes blocks (x_tank_chassis, x_plane_airframes) --
         dup_m = re.search(r"\bduplicate_archetypes\s*=\s*\{", txt)
         if dup_m:
             dup_body = extract_block(txt, dup_m.start())
@@ -1416,7 +1416,7 @@ def parse_equipment_all() -> Tuple[int, int]:
                 equip_rows.append([
                     key, "yes",
                     arch_key, "",  # archetype, parent
-                    "", "", "", "", "", "", "", "", "", "", "", "", "",  # stats — inherited
+                    "", "", "", "", "", "", "", "", "", "", "", "", "",  # stats - inherited
                     fp.name,
                 ])
                 # Generate derived version entries from variant_name blocks
@@ -1486,10 +1486,10 @@ def parse_equipment_all() -> Tuple[int, int]:
     equip_rows = dedup_rows(equip_rows, [0])
     res_rows = dedup_rows(res_rows, [0, 1])
 
-    # ── Synthesize auto-generated versioned entries from duplicate_archetypes ──
-    # Build map: archetype_key → set of version numbers from extracted rows
+    # -- Synthesize auto-generated versioned entries from duplicate_archetypes --
+    # Build map: archetype_key -> set of version numbers from extracted rows
     existing_keys = {r[0] for r in equip_rows}
-    arch_versions: dict = {}  # archetype → [0, 1, 2, ...]
+    arch_versions: dict = {}  # archetype -> [0, 1, 2, ...]
     for r in equip_rows:
         m = re.match(r"^(.+?)_(\d+)$", r[0])
         if m:
@@ -1550,7 +1550,7 @@ def parse_terrain_types() -> int:
     """
     terrains: set = set()
 
-    # Source 1: common/terrain/*.txt — gameplay terrain categories
+    # Source 1: common/terrain/*.txt - gameplay terrain categories
     d = ROOT / "common" / "terrain"
     if d.exists():
         for fp in sorted(d.glob("*.txt")):
@@ -1562,7 +1562,7 @@ def parse_terrain_types() -> int:
             for key, _body, _pos in find_top_level_blocks(body):
                 terrains.add(key)
 
-    # Source 2: map/definition.csv column 5 — province terrain markers
+    # Source 2: map/definition.csv column 5 - province terrain markers
     defn = ROOT / "map" / "definition.csv"
     if defn.exists():
         with defn.open("r", encoding="utf-8", errors="ignore") as f:
@@ -1578,7 +1578,7 @@ def parse_terrain_types() -> int:
 
 
 # ═══════════════════════════════════════════════════════════════════════
-# GAP FILLERS — tables that had no data dumps
+# GAP FILLERS - tables that had no data dumps
 # ═══════════════════════════════════════════════════════════════════════
 
 
@@ -1642,7 +1642,7 @@ def parse_state_history_extended() -> Tuple[int, int, int, int]:
                 own_rows.append([state_id, iso_date, ow.group(1),
                                  ct.group(1) if ct else "", fp.name, dlc])
             elif ct:
-                # controller change without ownership change → province_controller_history
+                # controller change without ownership change -> province_controller_history
                 ctrl_rows.append(["", state_id, iso_date, ct.group(1), fp.name, dlc])
 
             # add_core_of in dated block
@@ -2058,14 +2058,14 @@ def parse_terrain_extended() -> Tuple[int, int]:
     cat_body = extract_block(txt, cat_m.start())
 
     for terrain_key, terrain_body, _ in find_top_level_blocks(cat_body):
-        # buildings_max_level block → terrain_building_limits
+        # buildings_max_level block -> terrain_building_limits
         blm = re.search(r"\bbuildings_max_level\s*=\s*\{", terrain_body)
         if blm:
             bl_body = extract_block(terrain_body, blm.start())
             for bm in re.finditer(r"\b([a-zA-Z_]+)\s*=\s*([0-9]+)", bl_body):
                 bld_rows.append([terrain_key, bm.group(1), bm.group(2)])
 
-        # units block → terrain_combat_modifiers
+        # units block -> terrain_combat_modifiers
         um = re.search(r"\bunits\s*=\s*\{", terrain_body)
         if um:
             u_body = extract_block(terrain_body, um.start())
@@ -2083,7 +2083,7 @@ def parse_terrain_extended() -> Tuple[int, int]:
 
 
 # ═══════════════════════════════════════════════════════════════════════
-# DLC PARSERS — Phases 11–22
+# DLC PARSERS - Phases 11–22
 # ═══════════════════════════════════════════════════════════════════════
 
 
@@ -2099,7 +2099,7 @@ def _resolve_at_vars(text: str) -> str:
     return re.sub(r"@(\w+)", _sub, text)
 
 
-# ── Phase 11: Map Connectivity ──────────────────────────────────────────
+# -- Phase 11: Map Connectivity ------------------------------------------
 
 def parse_province_adjacencies() -> int:
     p = ROOT / "map" / "adjacencies.csv"
@@ -2155,7 +2155,7 @@ def parse_province_railways() -> int:
     return len(rows)
 
 
-# ── Phase 12: Governance ────────────────────────────────────────────────
+# -- Phase 12: Governance ------------------------------------------------
 
 def parse_autonomy_states_all() -> Tuple[int, int]:
     d = ROOT / "common" / "autonomous_states"
@@ -2250,7 +2250,7 @@ def parse_occupation_laws_all() -> Tuple[int, int]:
     return len(law_rows), len(mod_rows)
 
 
-# ── Phase 14: Bookmarks ─────────────────────────────────────────────────
+# -- Phase 14: Bookmarks -------------------------------------------------
 
 def parse_bookmarks_all() -> Tuple[int, int]:
     d = ROOT / "common" / "bookmarks"
@@ -2284,7 +2284,7 @@ def parse_bookmarks_all() -> Tuple[int, int]:
                 is_default,
                 fp.name,
             ])
-            # country entries: "TAG" = { ... } — quoted tags
+            # country entries: "TAG" = { ... } - quoted tags
             for cm in re.finditer(r'"([A-Z0-9_]+)"\s*=\s*\{', bm_body):
                 tag = cm.group(1)
                 c_body = extract_block(bm_body, cm.start())
@@ -2310,7 +2310,7 @@ def parse_bookmarks_all() -> Tuple[int, int]:
     return len(bm_rows), len(bc_rows)
 
 
-# ── Phase 15: Decisions ──────────────────────────────────────────────────
+# -- Phase 15: Decisions --------------------------------------------------
 
 def parse_decision_categories_all() -> int:
     d = ROOT / "common" / "decisions" / "categories"
@@ -2359,7 +2359,7 @@ def parse_decisions_all() -> int:
     return len(rows)
 
 
-# ── Phase 16: Espionage (La Résistance) ─────────────────────────────────
+# -- Phase 16: Espionage (La Résistance) ---------------------------------
 
 def parse_operation_tokens_all() -> int:
     d = ROOT / "common" / "operation_tokens"
@@ -2611,7 +2611,7 @@ def parse_intel_agency_upgrades_all() -> Tuple[int, int, int, int]:
     return len(branch_rows), len(upgrade_rows), len(level_rows), len(prog_rows)
 
 
-# ── Phase 17: Occupation & Resistance ────────────────────────────────────
+# -- Phase 17: Occupation & Resistance ------------------------------------
 
 def parse_compliance_modifiers_all() -> Tuple[int, int]:
     p = ROOT / "common" / "resistance_compliance_modifiers" / "compliance_modifiers.txt"
@@ -2689,7 +2689,7 @@ def parse_resistance_activities_all() -> int:
     return len(rows)
 
 
-# ── Phase 18: MIO (Arms Against Tyranny) ────────────────────────────────
+# -- Phase 18: MIO (Arms Against Tyranny) --------------------------------
 
 def parse_mio_equipment_groups_all() -> Tuple[int, int]:
     p = ROOT / "common" / "equipment_groups" / "mio_equipment_groups.txt"
@@ -2797,7 +2797,7 @@ def parse_mio_policies_all() -> Tuple[int, int]:
     return len(pol_rows), len(bonus_rows)
 
 
-# ── Phase 19: Raids ─────────────────────────────────────────────────────
+# -- Phase 19: Raids -----------------------------------------------------
 
 def parse_raid_categories_all() -> int:
     p = ROOT / "common" / "raids" / "categories" / "raid_categories.txt"
@@ -2885,7 +2885,7 @@ def parse_raids_all() -> Tuple[int, int]:
     return len(raid_rows), len(equip_rows)
 
 
-# ── Phase 20: Career Profile ────────────────────────────────────────────
+# -- Phase 20: Career Profile --------------------------------------------
 
 def parse_medals_all() -> Tuple[int, int]:
     p = ROOT / "common" / "medals" / "00_medals.txt"
@@ -3028,7 +3028,7 @@ def parse_unit_medals_all() -> Tuple[int, int]:
     return len(medal_rows), len(mod_rows)
 
 
-# ── Phase 21: BOP & Continuous Focuses ──────────────────────────────────
+# -- Phase 21: BOP & Continuous Focuses ----------------------------------
 
 def parse_bop_all() -> Tuple[int, int, int, int]:
     d = ROOT / "common" / "bop"
@@ -3167,7 +3167,7 @@ def parse_continuous_focuses_all() -> Tuple[int, int, int]:
     return len(pal_rows), len(foc_rows), len(fmod_rows)
 
 
-# ── Phase 22: Misc DLC ──────────────────────────────────────────────────
+# -- Phase 22: Misc DLC --------------------------------------------------
 
 def parse_technology_sharing_all() -> int:
     d = ROOT / "common" / "technology_sharing"
@@ -3321,11 +3321,11 @@ def parse_peace_cost_modifiers_all() -> int:
 
 
 # ════════════════════════════════════════════════════════════════
-# Phase 23 — Doctrines (Officer Corps / Military Experience)
+# Phase 23 - Doctrines (Officer Corps / Military Experience)
 # ════════════════════════════════════════════════════════════════
 
 def parse_doctrine_folders() -> int:
-    """Parse common/doctrines/folders/doctrine_folders.txt → doctrine_folders.md."""
+    """Parse common/doctrines/folders/doctrine_folders.txt -> doctrine_folders.md."""
     fp = ROOT / "common" / "doctrines" / "folders" / "doctrine_folders.txt"
     if not fp.exists():
         return 0
@@ -3347,7 +3347,7 @@ def parse_doctrine_folders() -> int:
 
 
 def parse_doctrine_tracks() -> int:
-    """Parse common/doctrines/tracks/*.txt → doctrine_tracks.md."""
+    """Parse common/doctrines/tracks/*.txt -> doctrine_tracks.md."""
     d = ROOT / "common" / "doctrines" / "tracks"
     if not d.exists():
         return 0
@@ -3378,7 +3378,7 @@ def parse_doctrine_tracks() -> int:
 
 
 def parse_grand_doctrines() -> Tuple[int, int]:
-    """Parse common/doctrines/grand_doctrines/*.txt → grand_doctrines.md + grand_doctrine_tracks.md."""
+    """Parse common/doctrines/grand_doctrines/*.txt -> grand_doctrines.md + grand_doctrine_tracks.md."""
     d = ROOT / "common" / "doctrines" / "grand_doctrines"
     if not d.exists():
         return 0, 0
@@ -3415,7 +3415,7 @@ def parse_grand_doctrines() -> Tuple[int, int]:
 
 
 def parse_subdoctrines() -> int:
-    """Parse common/doctrines/subdoctrines/**/*.txt → subdoctrines.md."""
+    """Parse common/doctrines/subdoctrines/**/*.txt -> subdoctrines.md."""
     d = ROOT / "common" / "doctrines" / "subdoctrines"
     if not d.exists():
         return 0
@@ -3449,7 +3449,7 @@ def parse_subdoctrines() -> int:
 
 
 def parse_country_starting_doctrines() -> int:
-    """Extract set_grand_doctrine / set_sub_doctrine from history/countries/*.txt → country_starting_doctrines.md."""
+    """Extract set_grand_doctrine / set_sub_doctrine from history/countries/*.txt -> country_starting_doctrines.md."""
     dirp = ROOT / "history" / "countries"
     rows: List[List[str]] = []
     for fp in sorted(dirp.glob("*.txt")):
@@ -3496,7 +3496,7 @@ def parse_country_starting_doctrines() -> int:
     return len(rows)
 
 
-# ── Phase 24: Factions ────────────────────────────────────────────────
+# -- Phase 24: Factions ------------------------------------------------
 
 def parse_faction_rule_groups() -> Tuple[int, int]:
     """Parse common/factions/rules/groups/rule_groups.txt
@@ -3576,7 +3576,7 @@ def parse_faction_goals_all() -> int:
     if not d.exists():
         return 0
     for fp in sorted(d.glob("faction_goals_*.txt")):
-        # Derive category from filename: faction_goals_short_term.txt → short_term
+        # Derive category from filename: faction_goals_short_term.txt -> short_term
         cat = fp.stem.replace("faction_goals_", "")
         txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
         for key, body, _ in find_top_level_blocks(txt):
@@ -3661,7 +3661,7 @@ def parse_faction_member_upgrades_all() -> Tuple[int, int]:
         return 0, 0
     # Parse member upgrade groups
     gf = d / "member_groups" / "member_upgrade_groups.txt"
-    group_map: Dict[str, str] = {}  # upgrade_key → group_key
+    group_map: Dict[str, str] = {}  # upgrade_key -> group_key
     if gf.exists():
         txt = strip_comments(gf.read_text(encoding="utf-8", errors="ignore"))
         for key, body, _ in find_top_level_blocks(txt):
@@ -3708,7 +3708,7 @@ def parse_faction_member_upgrades_all() -> Tuple[int, int]:
     return len(group_rows), len(upgrade_rows)
 
 
-# ── Phase 25: Special Projects ────────────────────────────────────────
+# -- Phase 25: Special Projects ----------------------------------------
 
 def parse_special_project_specializations() -> int:
     """Parse common/special_projects/specialization/specializations.txt."""
@@ -3807,7 +3807,7 @@ def parse_special_project_rewards_all() -> int:
         "rocket": "specialization_nuclear",  # rockets use nuclear facility
     }
     for fp in sorted(d.glob("*.txt")):
-        # Derive specialization from filename: generic_land_prototype_rewards.txt → land
+        # Derive specialization from filename: generic_land_prototype_rewards.txt -> land
         fname = fp.stem
         spec_key = ""
         for k, v in spec_map.items():
@@ -3834,7 +3834,7 @@ def parse_special_project_rewards_all() -> int:
     return len(rows)
 
 
-# ── Phase 26: Collections ─────────────────────────────────────────────
+# -- Phase 26: Collections ---------------------------------------------
 
 def parse_collections_all() -> int:
     """Parse common/collections/*.txt."""
@@ -3860,7 +3860,7 @@ def parse_collections_all() -> int:
     return len(rows)
 
 
-# ── Phase 27: AI Faction Theaters ─────────────────────────────────────
+# -- Phase 27: AI Faction Theaters -------------------------------------
 
 def parse_ai_faction_theaters_all() -> Tuple[int, int]:
     """Parse common/ai_faction_theaters/*.txt.
@@ -3896,7 +3896,7 @@ def parse_ai_faction_theaters_all() -> Tuple[int, int]:
     return len(theater_rows), len(region_rows)
 
 
-# ── Phase 28: Timed Activities ────────────────────────────────────────
+# -- Phase 28: Timed Activities ----------------------------------------
 
 def parse_timed_activities_all() -> Tuple[int, int]:
     """Parse common/timed_activities/*.txt.
@@ -4034,7 +4034,7 @@ def main() -> None:
     stats["state_categories"] = parse_state_categories()
     stats["terrain_types"] = parse_terrain_types()
 
-    # ── Gap fillers: missing tables ──
+    # -- Gap fillers: missing tables --
     sc, so, pb, pch = parse_state_history_extended()
     stats["state_cores"] = sc
     stats["state_ownership_history"] = so
@@ -4059,11 +4059,11 @@ def main() -> None:
     stats["terrain_building_limits"] = te_bld
     stats["terrain_combat_modifiers"] = te_mod
 
-    # ── Phase 11: Map Connectivity ──
+    # -- Phase 11: Map Connectivity --
     stats["province_adjacencies"] = parse_province_adjacencies()
     stats["province_railways"] = parse_province_railways()
 
-    # ── Phase 12: Governance ──
+    # -- Phase 12: Governance --
     auto_s, auto_m = parse_autonomy_states_all()
     stats["autonomy_states"] = auto_s
     stats["autonomy_state_modifiers"] = auto_m
@@ -4072,16 +4072,16 @@ def main() -> None:
     stats["occupation_laws"] = occ_l
     stats["occupation_law_modifiers"] = occ_m
 
-    # ── Phase 14: Bookmarks ──
+    # -- Phase 14: Bookmarks --
     bm_b, bm_c = parse_bookmarks_all()
     stats["bookmarks"] = bm_b
     stats["bookmark_countries"] = bm_c
 
-    # ── Phase 15: Decisions ──
+    # -- Phase 15: Decisions --
     stats["decision_categories"] = parse_decision_categories_all()
     stats["decisions_all"] = parse_decisions_all()
 
-    # ── Phase 16: Espionage ──
+    # -- Phase 16: Espionage --
     stats["operation_tokens"] = parse_operation_tokens_all()
 
     opd_p, opd_e = parse_operation_phase_definitions_all()
@@ -4105,7 +4105,7 @@ def main() -> None:
     stats["intel_agency_upgrade_levels"] = iau_l
     stats["intel_agency_upgrade_progress_modifiers"] = iau_p
 
-    # ── Phase 17: Resistance ──
+    # -- Phase 17: Resistance --
     cm_m, cm_e = parse_compliance_modifiers_all()
     stats["compliance_modifiers"] = cm_m
     stats["compliance_modifier_effects"] = cm_e
@@ -4116,7 +4116,7 @@ def main() -> None:
 
     stats["resistance_activities"] = parse_resistance_activities_all()
 
-    # ── Phase 18: MIO ──
+    # -- Phase 18: MIO --
     mio_g, mio_gm = parse_mio_equipment_groups_all()
     stats["mio_equipment_groups"] = mio_g
     stats["mio_equipment_group_members"] = mio_gm
@@ -4137,14 +4137,14 @@ def main() -> None:
     stats["mio_trait_prerequisites"] = miotp
     stats["mio_trait_exclusions"] = miote
 
-    # ── Phase 19: Raids ──
+    # -- Phase 19: Raids --
     stats["raid_categories"] = parse_raid_categories_all()
 
     raid_r, raid_e = parse_raids_all()
     stats["raids"] = raid_r
     stats["raid_equipment_requirements"] = raid_e
 
-    # ── Phase 20: Career Profile ──
+    # -- Phase 20: Career Profile --
     med_m, med_t = parse_medals_all()
     stats["medals"] = med_m
     stats["medal_tiers"] = med_t
@@ -4160,7 +4160,7 @@ def main() -> None:
     stats["unit_medals"] = um_m
     stats["unit_medal_modifiers"] = um_mod
 
-    # ── Phase 21: BOP & Continuous Focuses ──
+    # -- Phase 21: BOP & Continuous Focuses --
     bop_b, bop_s, bop_r, bop_rm = parse_bop_all()
     stats["balance_of_power_definitions"] = bop_b
     stats["bop_sides"] = bop_s
@@ -4172,7 +4172,7 @@ def main() -> None:
     stats["continuous_focuses"] = cf_f
     stats["continuous_focus_modifiers"] = cf_m
 
-    # ── Phase 22: Misc DLC ──
+    # -- Phase 22: Misc DLC --
     stats["technology_sharing_groups"] = parse_technology_sharing_all()
 
     dm_m, dm_e = parse_dynamic_modifiers_all()
@@ -4186,7 +4186,7 @@ def main() -> None:
     stats["peace_action_categories"] = parse_peace_action_categories_all()
     stats["peace_cost_modifiers"] = parse_peace_cost_modifiers_all()
 
-    # ── Phase 23: Doctrines ──
+    # -- Phase 23: Doctrines --
     stats["doctrine_folders"] = parse_doctrine_folders()
     stats["doctrine_tracks"] = parse_doctrine_tracks()
 
@@ -4197,7 +4197,7 @@ def main() -> None:
     stats["subdoctrines"] = parse_subdoctrines()
     stats["country_starting_doctrines"] = parse_country_starting_doctrines()
 
-    # ── Phase 24: Factions ──
+    # -- Phase 24: Factions --
     frg_n, frgm_n = parse_faction_rule_groups()
     stats["faction_rule_groups"] = frg_n
     stats["faction_rule_group_members"] = frgm_n
@@ -4212,7 +4212,7 @@ def main() -> None:
     stats["faction_member_upgrade_groups"] = fmg_n
     stats["faction_member_upgrades"] = fmu_n
 
-    # ── Phase 25: Special Projects ──
+    # -- Phase 25: Special Projects --
     stats["special_project_specializations"] = parse_special_project_specializations()
     stats["special_project_tags"] = parse_special_project_tags()
     sp_n, srl_n = parse_special_projects_all()
@@ -4220,15 +4220,15 @@ def main() -> None:
     stats["special_project_reward_links"] = srl_n
     stats["special_project_rewards"] = parse_special_project_rewards_all()
 
-    # ── Phase 26: Collections ──
+    # -- Phase 26: Collections --
     stats["collections"] = parse_collections_all()
 
-    # ── Phase 27: AI Faction Theaters ──
+    # -- Phase 27: AI Faction Theaters --
     aft_n, aftr_n = parse_ai_faction_theaters_all()
     stats["ai_faction_theaters"] = aft_n
     stats["ai_faction_theater_regions"] = aftr_n
 
-    # ── Phase 28: Timed Activities ──
+    # -- Phase 28: Timed Activities --
     ta_n, tae_n = parse_timed_activities_all()
     stats["timed_activities"] = ta_n
     stats["timed_activity_equipment"] = tae_n

@@ -3,7 +3,7 @@ from pydantic import BaseModel  # For defining data models and validation
 
 # Pydantic schema (response models) for a State, for API responses and data validation.
 # The api_state_detail() function returns jsonb columns for nested data.
-# asyncpg automatically converts jsonb → Python list[dict].
+# asyncpg automatically converts jsonb -> Python list[dict].
 # Pydantic validates each dict against the nested model below.
 
 # Resource entry inside a state (e.g. {"resource_key": "steel", "amount": 24})

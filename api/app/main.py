@@ -6,7 +6,7 @@ from app.database import lifespan # Import the DB connection pool lifespan conte
 
 settings = get_settings() # From config.py, loads settings from .env or defaults (cached for efficiency)
 
-# OpenAPI tag list — controls how endpoints are grouped in Swagger UI (/docs).
+# OpenAPI tag list - controls how endpoints are grouped in Swagger UI (/docs).
 # Each tag maps to a router, defined here so the categories appear in order.
 tags_metadata = [
     {"name": "Countries",        "description": "Country tags, starting stats, owned states, technologies"},
@@ -50,7 +50,7 @@ async def health_check():
     return {"status": "ok"}
 # End of health_check endpoint.
 
-# Mount REST routers — each handles one domain under /api/v1/
+# Mount REST routers - each handles one domain under /api/v1/
 from app.routers import characters, countries, equipment, focuses, ideas, military, states, technologies, dlc, annotations
 
 app.include_router(countries.router)
@@ -64,7 +64,7 @@ app.include_router(ideas.router)
 app.include_router(dlc.router)
 app.include_router(annotations.router)
 
-# Mount GraphQL endpoint — shares the same asyncpg pool as REST.
+# Mount GraphQL endpoint - shares the same asyncpg pool as REST.
 from strawberry.fastapi import GraphQLRouter
 from app.graphql.schema import schema
 

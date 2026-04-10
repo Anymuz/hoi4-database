@@ -36,4 +36,4 @@ txt = re.sub(
 with open("sql/seed-docker.sql", "w") as f:
     f.write(txt)
 
-print("Done — sql/seed-docker.sql written")
+print("Done - sql/seed-docker.sql written")

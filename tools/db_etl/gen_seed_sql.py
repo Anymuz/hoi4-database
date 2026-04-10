@@ -28,7 +28,7 @@ def copy_cmd(table):
     cols = ", ".join(_quote_col(c) for c in HEADERS[table])
     return f"\\copy {table}({cols}) FROM 'data/csv/{table}.csv' WITH (FORMAT csv, HEADER);"
 
-# ── Tier ordering (from FK dependency analysis) ──
+# -- Tier ordering (from FK dependency analysis) --
 TIER0 = [
     "continents", "terrain_types", "state_categories", "resource_types",
     "building_types", "ideologies", "technology_categories", "character_traits",
@@ -92,10 +92,10 @@ TIER5_SIMPLE = [
 
 TIER6_SIMPLE = ["focus_prerequisites", "focus_mutually_exclusive"]
 
-# ── Build the SQL ──
+# -- Build the SQL --
 lines = []
 
-lines.append("-- HOI4 PostgreSQL Seed Load Order — All 127 Tables (FK-safe)")
+lines.append("-- HOI4 PostgreSQL Seed Load Order - All 127 Tables (FK-safe)")
 lines.append("--")
 lines.append("-- Every \\copy uses an explicit column list so that SERIAL/BIGSERIAL PKs are")
 lines.append("-- auto-generated and CSV column order does not need to match the schema.")
@@ -117,21 +117,21 @@ def add_tier(label, tables):
         lines.append(copy_cmd(t))
     lines.append("")
 
-add_tier("TIER 0 — Root reference tables (32 tables, no FK dependencies)", TIER0)
-add_tier("TIER 1 — Depends only on Tier 0 (32 tables)", TIER1)
-add_tier("TIER 2 — Depends on Tier 0 + 1 (23 tables)", TIER2)
-add_tier("TIER 3 — Depends on Tier 0 + 1 + 2 (12 tables)", TIER3)
-add_tier("TIER 4 — Depends on countries / Tier 3 (15 tables)", TIER4)
+add_tier("TIER 0 - Root reference tables (32 tables, no FK dependencies)", TIER0)
+add_tier("TIER 1 - Depends only on Tier 0 (32 tables)", TIER1)
+add_tier("TIER 2 - Depends on Tier 0 + 1 (23 tables)", TIER2)
+add_tier("TIER 3 - Depends on Tier 0 + 1 + 2 (12 tables)", TIER3)
+add_tier("TIER 4 - Depends on countries / Tier 3 (15 tables)", TIER4)
 
-# ── Tier 5 (5 simple + 4 FK staging) ──
+# -- Tier 5 (5 simple + 4 FK staging) --
 lines.append("-- ============================================================")
-lines.append("-- TIER 5 — Depends on Tier 4 (9 tables, 4 need FK staging)")
+lines.append("-- TIER 5 - Depends on Tier 4 (9 tables, 4 need FK staging)")
 lines.append("-- ============================================================")
 for t in TIER5_SIMPLE:
     lines.append(copy_cmd(t))
 
 lines.append("")
-lines.append("-- division_template_regiments: resolve template_name → division_template_id")
+lines.append("-- division_template_regiments: resolve template_name -> division_template_id")
 lines.append("CREATE TEMP TABLE _stage_dtr (template_name TEXT, unit_type_key TEXT, grid_x TEXT, grid_y TEXT);")
 lines.append("\\copy _stage_dtr FROM 'data/csv/division_template_regiments.csv' WITH (FORMAT csv, HEADER);")
 lines.append("INSERT INTO division_template_regiments (division_template_id, unit_type_key, grid_x, grid_y)")
@@ -141,7 +141,7 @@ lines.append("  JOIN division_templates dt ON dt.template_name = s.template_name
 lines.append("DROP TABLE _stage_dtr;")
 
 lines.append("")
-lines.append("-- division_template_support: resolve template_name → division_template_id")
+lines.append("-- division_template_support: resolve template_name -> division_template_id")
 lines.append("CREATE TEMP TABLE _stage_dts (template_name TEXT, unit_type_key TEXT, grid_x TEXT, grid_y TEXT);")
 lines.append("\\copy _stage_dts FROM 'data/csv/division_template_support.csv' WITH (FORMAT csv, HEADER);")
 lines.append("INSERT INTO division_template_support (division_template_id, unit_type_key, grid_x, grid_y)")
@@ -151,7 +151,7 @@ lines.append("  JOIN division_templates dt ON dt.template_name = s.template_name
 lines.append("DROP TABLE _stage_dts;")
 
 lines.append("")
-lines.append("-- task_forces: resolve (country_tag, fleet_name) → fleet_id")
+lines.append("-- task_forces: resolve (country_tag, fleet_name) -> fleet_id")
 lines.append("CREATE TEMP TABLE _stage_tf (country_tag TEXT, fleet_name TEXT, task_force_name TEXT, location_province_id TEXT, source_file TEXT);")
 lines.append("\\copy _stage_tf FROM 'data/csv/task_forces.csv' WITH (FORMAT csv, HEADER);")
 lines.append("INSERT INTO task_forces (fleet_id, task_force_name, location_province_id)")
@@ -161,7 +161,7 @@ lines.append("  JOIN fleets f ON f.country_tag = s.country_tag AND f.fleet_name 
 lines.append("DROP TABLE _stage_tf;")
 
 lines.append("")
-lines.append("-- bookmark_countries: resolve bookmark_name → bookmark_id")
+lines.append("-- bookmark_countries: resolve bookmark_name -> bookmark_id")
 lines.append("CREATE TEMP TABLE _stage_bc (bookmark_name TEXT, country_tag TEXT, ideology_key TEXT);")
 lines.append("\\copy _stage_bc FROM 'data/csv/bookmark_countries.csv' WITH (FORMAT csv, HEADER);")
 lines.append("INSERT INTO bookmark_countries (bookmark_id, country_tag, ideology_key)")
@@ -172,15 +172,15 @@ lines.append("DROP TABLE _stage_bc;")
 
 lines.append("")
 
-# ── Tier 6 (2 simple + 2 FK staging) ──
+# -- Tier 6 (2 simple + 2 FK staging) --
 lines.append("-- ============================================================")
-lines.append("-- TIER 6 — Leaf tables (4 tables, 2 need FK staging)")
+lines.append("-- TIER 6 - Leaf tables (4 tables, 2 need FK staging)")
 lines.append("-- ============================================================")
 for t in TIER6_SIMPLE:
     lines.append(copy_cmd(t))
 
 lines.append("")
-lines.append("-- character_role_traits: resolve (character_id, role_type) → character_role_id")
+lines.append("-- character_role_traits: resolve (character_id, role_type) -> character_role_id")
 lines.append("CREATE TEMP TABLE _stage_crt (character_id TEXT, role_type TEXT, trait_key TEXT, source_file TEXT);")
 lines.append("\\copy _stage_crt FROM 'data/csv/character_role_traits.csv' WITH (FORMAT csv, HEADER);")
 lines.append("INSERT INTO character_role_traits (character_role_id, trait_key)")
@@ -190,7 +190,7 @@ lines.append("  JOIN character_roles cr ON cr.character_id = s.character_id AND 
 lines.append("DROP TABLE _stage_crt;")
 
 lines.append("")
-lines.append("-- ships: resolve (country_tag, fleet_name, task_force_name) → task_force_id")
+lines.append("-- ships: resolve (country_tag, fleet_name, task_force_name) -> task_force_id")
 lines.append("CREATE TEMP TABLE _stage_ships (")
 lines.append("  country_tag TEXT, fleet_name TEXT, task_force_name TEXT, ship_name TEXT,")
 lines.append("  definition TEXT, hull_equipment_key TEXT, owner_tag TEXT, version_name TEXT,")

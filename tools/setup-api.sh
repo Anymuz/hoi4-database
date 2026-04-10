@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# tools/setup-api.sh — Create venv, install deps, copy .env, run tests.
+# tools/setup-api.sh - Create venv, install deps, copy .env, run tests.
 # Usage: sudo bash tools/setup-api.sh
 
 set -euo pipefail
@@ -15,7 +15,7 @@ python3 -m pip install --upgrade pip -q
 python3 -m pip install -r requirements.txt -q
 
 if [ ! -f .env ]; then
-    echo "=== Copying .env.example → .env ==="
+    echo "=== Copying .env.example -> .env ==="
     cp .env.example .env
 else
     echo "=== .env already exists, skipping ==="

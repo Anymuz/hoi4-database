@@ -4,11 +4,11 @@ REST + GraphQL API for the Hearts of Iron IV relational database.
 
 ## Stack
 
-- **FastAPI** — REST endpoints + OpenAPI docs
-- **Strawberry GraphQL** — GraphQL layer mounted at `/graphql`
-- **asyncpg** — async PostgreSQL driver
-- **Pydantic v2** — request/response validation
-- **pytest + httpx** — async test suite
+- **FastAPI** - REST endpoints + OpenAPI docs
+- **Strawberry GraphQL** - GraphQL layer mounted at `/graphql`
+- **asyncpg** - async PostgreSQL driver
+- **Pydantic v2** - request/response validation
+- **pytest + httpx** - async test suite
 
 ## Prerequisites
 
@@ -86,16 +86,16 @@ pytest tests/ -v
 
 ```
 api/
-├── app/
-│   ├── main.py          # FastAPI app, lifespan, router mounts
-│   ├── config.py        # pydantic-settings config
-│   ├── database.py      # asyncpg pool + get_db dependency
-│   ├── dependencies.py  # shared deps (date validation)
-│   ├── routers/         # one file per endpoint group
-│   ├── schemas/         # Pydantic models
-│   └── graphql/         # Strawberry types, resolvers, schema
-├── tests/               # pytest suite
-├── requirements.txt
-├── .env.example
-└── README.md
+├-- app/
+│   ├-- main.py          # FastAPI app, lifespan, router mounts
+│   ├-- config.py        # pydantic-settings config
+│   ├-- database.py      # asyncpg pool + get_db dependency
+│   ├-- dependencies.py  # shared deps (date validation)
+│   ├-- routers/         # one file per endpoint group
+│   ├-- schemas/         # Pydantic models
+│   └-- graphql/         # Strawberry types, resolvers, schema
+├-- tests/               # pytest suite
+├-- requirements.txt
+├-- .env.example
+└-- README.md
 ```

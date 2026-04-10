@@ -5,7 +5,7 @@ from app.schemas.idea import IdeaDetail
 
 router = APIRouter(prefix="/api/v1", tags=["Ideas"])
 
-# GET /api/v1/ideas — list ideas, optional filters: ?slot=, ?is_law=
+# GET /api/v1/ideas - list ideas, optional filters: ?slot=, ?is_law=
 @router.get("/ideas", response_model=list[IdeaDetail])
 async def list_ideas(
     slot: str | None = Query(None, description="Filter by slot (e.g. economy, trade_laws)"),
@@ -52,7 +52,7 @@ async def list_ideas(
     return [dict(row) for row in rows]
 # End of idea list endpoint
 
-# GET /api/v1/ideas/{idea_key} — single idea
+# GET /api/v1/ideas/{idea_key} - single idea
 @router.get("/ideas/{idea_key}", response_model=IdeaDetail)
 async def get_idea(
     idea_key: str,

@@ -112,7 +112,7 @@ def check_fk(
     if orphans:
         sample = sorted(orphans)[:10]
         msg = (
-            f"FK violation: {child_label}.{child_col} → {parent_label}: "
+            f"FK violation: {child_label}.{child_col} -> {parent_label}: "
             f"{len(orphans)} orphan(s): {sample}"
         )
         if soft:
@@ -121,12 +121,12 @@ def check_fk(
             result.error(msg)
     elif expected:
         result.note(
-            f"FK OK: {child_label}.{child_col} → {parent_label} ({len(child_rows)} rows checked, "
+            f"FK OK: {child_label}.{child_col} -> {parent_label} ({len(child_rows)} rows checked, "
             f"{len(expected)} known-gap values skipped: doctrines/mods)"
         )
     else:
         result.note(
-            f"FK OK: {child_label}.{child_col} → {parent_label} ({len(child_rows)} rows checked)"
+            f"FK OK: {child_label}.{child_col} -> {parent_label} ({len(child_rows)} rows checked)"
         )
 
 
@@ -181,7 +181,7 @@ def run_validation(dump_dir: Path) -> ValidationResult:
             result.warn(f"Empty or missing: {fn}")
         return rows
 
-    # ── Tier 0: Root tables ──────────────────────────────────────
+    # -- Tier 0: Root tables --------------------------------------
     countries_rows = load("countries", "country_tags.md")
     country_pk = build_pk_index(countries_rows, "tag")
 
@@ -325,7 +325,7 @@ def run_validation(dump_dir: Path) -> ValidationResult:
 
     tech_sharing_rows = load("technology_sharing_groups", "technology_sharing_groups.md")
 
-    # ── Child tables ─────────────────────────────────────────────
+    # -- Child tables ---------------------------------------------
 
     # Geography FK checks
     sp_rows = load("state_provinces", "state_provinces.md")
@@ -445,7 +445,7 @@ def run_validation(dump_dir: Path) -> ValidationResult:
     if divisions_rows:
         check_fk(result, divisions_rows, "country_tag", country_pk, "divisions", "countries")
 
-    # ── DLC FK checks ────────────────────────────────────────────
+    # -- DLC FK checks --------------------------------------------
 
     # Phase 11: Governance
     asm_rows = load("autonomy_state_modifiers", "autonomy_state_modifiers.md")
@@ -623,7 +623,7 @@ def run_validation(dump_dir: Path) -> ValidationResult:
         sub_csd = [r for r in csd_rows if r.get("doctrine_type", "").strip() == "sub"]
         check_fk(result, sub_csd, "doctrine_key", subdoctrine_pk, "country_starting_doctrines(sub)", "subdoctrines")
 
-    # ── Unique / PK checks ───────────────────────────────────────
+    # -- Unique / PK checks ---------------------------------------
 
     if countries_rows:
         check_unique(result, countries_rows, ["tag"], "countries")
@@ -656,7 +656,7 @@ def run_validation(dump_dir: Path) -> ValidationResult:
     if subdoctrine_rows:
         check_unique(result, subdoctrine_rows, ["subdoctrine_key"], "subdoctrines")
 
-    # ── NOT NULL checks on critical columns ──────────────────────
+    # -- NOT NULL checks on critical columns ----------------------
 
     if states_rows:
         check_not_null(result, states_rows, "state_id", "states")
@@ -668,7 +668,7 @@ def run_validation(dump_dir: Path) -> ValidationResult:
         check_not_null(result, sp_rows, "state_id", "state_provinces")
         check_not_null(result, sp_rows, "province_id", "state_provinces")
 
-    # ── Row-count summary ────────────────────────────────────────
+    # -- Row-count summary ----------------------------------------
 
     result.note("")
     result.note("=== ROW COUNT SUMMARY ===")

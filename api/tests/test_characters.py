@@ -26,7 +26,7 @@ async def test_list_characters_summary_fields(client):
         assert "name_key" in char
         assert "country_tag" in char
         assert "gender" in char
-        assert "roles" not in char  # list endpoint is lightweight — no roles
+        assert "roles" not in char  # list endpoint is lightweight - no roles
 # End of character list summary fields test
 
 async def test_list_characters_pagination(client):
@@ -37,7 +37,7 @@ async def test_list_characters_pagination(client):
 # End of character list pagination test
 
 async def test_list_characters_lowercase_tag(client):
-    # Tags should be case-insensitive — /countries/ger/characters should work
+    # Tags should be case-insensitive - /countries/ger/characters should work
     resp = await client.get("/api/v1/countries/ger/characters")
     assert resp.status_code == 200
     assert len(resp.json()) > 0
@@ -78,7 +78,7 @@ async def test_character_detail_roles_have_required_fields(client):
         # traits is always a list (may be empty for some roles)
         assert "traits" in role
         assert isinstance(role["traits"], list)
-        # skill fields exist (they may be null — that's OK)
+        # skill fields exist (they may be null - that's OK)
         assert "skill" in role
         assert "attack_skill" in role
         assert "defense_skill" in role

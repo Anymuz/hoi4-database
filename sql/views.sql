@@ -2,19 +2,19 @@
 --
 -- 2 functions (date-parameterised) + 14 views across 3 slices.
 --
--- Slice A — Country & State:   api_country_detail (function),
+-- Slice A - Country & State:   api_country_detail (function),
 --                              api_state_detail (function)
--- Slice B — Domain Catalogs:   api_country_technologies, api_technology_tree,
+-- Slice B - Domain Catalogs:   api_country_technologies, api_technology_tree,
 --                              api_country_characters, api_country_divisions,
 --                              api_country_naval, api_country_air,
 --                              api_focus_tree_detail, api_equipment_catalog,
 --                              api_ideas_detail
--- Slice C — DLC Systems:       api_mio_organization_detail, api_operation_detail,
+-- Slice C - DLC Systems:       api_mio_organization_detail, api_operation_detail,
 --                              api_bop_detail, api_faction_detail,
 --                              api_special_project_detail
 
 -- ============================================================
--- Slice A — Country & State Detail
+-- Slice A - Country & State Detail
 -- ============================================================
 
 -- This is a FUNCTION, not a view. The difference:
@@ -26,7 +26,7 @@
 -- LANGUAGE sql means the body is plain SQL (not a different language).
 -- STABLE tells PostgreSQL "this function only reads data, never changes it"
 --    (helps the query planner optimise).
--- $$ ... $$ is just the way PostgreSQL wraps the function body — think of $$
+-- $$ ... $$ is just the way PostgreSQL wraps the function body - think of $$
 --    as opening and closing quotes around the SQL.
 --
 -- How to call it:
@@ -99,7 +99,7 @@ LANGUAGE sql STABLE AS $$
     LEFT JOIN localisation cl ON cl.loc_key = c.tag;
 $$;
 
--- Same pattern as api_country_detail above — function with a date parameter.
+-- Same pattern as api_country_detail above - function with a date parameter.
 -- See the comments on that function for explanation of the syntax.
 
 CREATE OR REPLACE FUNCTION api_state_detail(p_date DATE DEFAULT '1936-01-01')
@@ -195,7 +195,7 @@ LANGUAGE sql STABLE AS $$
 $$;
 
 -- ============================================================
--- Slice B — Technologies
+-- Slice B - Technologies
 -- ============================================================
 
 CREATE OR REPLACE VIEW api_country_technologies AS
@@ -243,7 +243,7 @@ FROM technologies t
 LEFT JOIN localisation l ON l.loc_key = t.technology_key;
 
 -- ============================================================
--- Slice B — Characters
+-- Slice B - Characters
 -- ============================================================
 
 CREATE OR REPLACE VIEW api_country_characters AS
@@ -279,7 +279,7 @@ SELECT
 FROM characters ch;
 
 -- ============================================================
--- Slice B — Land OOB
+-- Slice B - Land OOB
 -- ============================================================
 
 CREATE OR REPLACE VIEW api_country_divisions AS
@@ -325,7 +325,7 @@ SELECT
 FROM division_templates dt;
 
 -- ============================================================
--- Slice B — Naval OOB
+-- Slice B - Naval OOB
 -- ============================================================
 
 CREATE OR REPLACE VIEW api_country_naval AS
@@ -364,7 +364,7 @@ SELECT
 FROM fleets f;
 
 -- ============================================================
--- Slice B — Air OOB
+-- Slice B - Air OOB
 -- ============================================================
 
 CREATE OR REPLACE VIEW api_country_air AS
@@ -381,7 +381,7 @@ FROM air_wings aw
 JOIN states s ON s.state_id = aw.location_state_id;
 
 -- ============================================================
--- Slice B — Focus Trees
+-- Slice B - Focus Trees
 -- ============================================================
 
 CREATE OR REPLACE VIEW api_focus_tree_detail AS
@@ -424,7 +424,7 @@ SELECT
 FROM focus_trees ft;
 
 -- ============================================================
--- Slice B — Equipment Catalog
+-- Slice B - Equipment Catalog
 -- ============================================================
 
 CREATE OR REPLACE VIEW api_equipment_catalog AS
@@ -457,7 +457,7 @@ SELECT
 FROM equipment_definitions ed;
 
 -- ============================================================
--- Slice B — Ideas & National Spirits
+-- Slice B - Ideas & National Spirits
 -- ============================================================
 
 CREATE OR REPLACE VIEW api_ideas_detail AS
@@ -480,7 +480,7 @@ SELECT
 FROM ideas i;
 
 -- ============================================================
--- Slice C — DLC: Military-Industrial Organizations
+-- Slice C - DLC: Military-Industrial Organizations
 -- ============================================================
 
 CREATE OR REPLACE VIEW api_mio_organization_detail AS
@@ -529,7 +529,7 @@ FROM mio_organizations mo
 LEFT JOIN mio_templates mt ON mt.template_key = mo.template_key;
 
 -- ============================================================
--- Slice C — DLC: Espionage Operations
+-- Slice C - DLC: Espionage Operations
 -- ============================================================
 
 CREATE OR REPLACE VIEW api_operation_detail AS
@@ -579,7 +579,7 @@ SELECT
 FROM operations op;
 
 -- ============================================================
--- Slice C — DLC: Balance of Power
+-- Slice C - DLC: Balance of Power
 -- ============================================================
 
 CREATE OR REPLACE VIEW api_bop_detail AS
@@ -625,7 +625,7 @@ SELECT
 FROM balance_of_power_definitions bop;
 
 -- ============================================================
--- Slice C — DLC: Factions (Götterdämmerung)
+-- Slice C - DLC: Factions (Götterdämmerung)
 -- ============================================================
 
 CREATE OR REPLACE VIEW api_faction_detail AS
@@ -689,7 +689,7 @@ SELECT
 FROM faction_templates ft;
 
 -- ============================================================
--- Slice C — DLC: Special Projects (Götterdämmerung)
+-- Slice C - DLC: Special Projects (Götterdämmerung)
 -- ============================================================
 
 CREATE OR REPLACE VIEW api_special_project_detail AS

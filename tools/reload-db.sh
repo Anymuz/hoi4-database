@@ -1,19 +1,18 @@
 #!/usr/bin/env bash
-# ─────────────────────────────────────────────────────────────
-# reload-db.sh — Nuke and reload the HOI4 database from scratch
+# -------------------------------------------------------------
+# reload-db.sh - Nuke and reload the HOI4 database from scratch
 #
 # What it does:
 #   1. Drops everything in the database (tables, functions, views)
-#   2. Recreates the schema (all 128 tables)
+#   2. Recreates the schema (all 151 tables)
 #   3. Copies CSV files into the container
-#   4. Loads all data (~218K rows)
+#   4. Loads all data (~225K rows)
 #   5. Creates views/functions
 #   6. Prints a quick row-count sanity check
 #
-# Usage:
-#   cd /mnt/c/Users/joshu/hoi4-database
+# Usage (from the repo root):
 #   bash tools/reload-db.sh
-# ─────────────────────────────────────────────────────────────
+# -------------------------------------------------------------
 set -euo pipefail
 
 CONTAINER="hoi4-db"
@@ -50,7 +49,7 @@ docker exec "$CONTAINER" rm -rf /data_csv
 docker cp "$REPO_ROOT/data/csv" "$CONTAINER:/data_csv"
 
 # --- Step 4: Load data ---
-echo "[4/5] Loading data (~218K rows)..."
+echo "[4/5] Loading data (~225K rows)..."
 docker cp "$REPO_ROOT/sql/seed-docker.sql" "$CONTAINER:/tmp/seed.sql"
 docker exec "$CONTAINER" psql -U "$USER" -d "$DB" -f /tmp/seed.sql \
     > /dev/null

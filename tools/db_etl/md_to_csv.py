@@ -3,7 +3,7 @@
 Markdown-to-CSV converter for HOI4 Database ETL.
 
 Reads markdown data-dump files from docs/data-dump/ and writes PostgreSQL-ready
-CSV files to data/csv/.  Each CSV matches a target database table — column names
+CSV files to data/csv/.  Each CSV matches a target database table - column names
 are mapped, subsets are filtered, and multi-source tables are merged.
 
 Usage:
@@ -20,12 +20,12 @@ import sys
 from pathlib import Path
 from typing import TextIO
 
-# ── repo root (two levels up from this file) ─────────────────────────
+# -- repo root (two levels up from this file) -------------------------
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_DUMP_DIR = REPO_ROOT / "docs" / "data-dump"
 DEFAULT_CSV_DIR = REPO_ROOT / "data" / "csv"
 
-# ── subset files: extracted for human review only, NOT loaded ─────────
+# -- subset files: extracted for human review only, NOT loaded ---------
 SKIP_SUBSETS = {
     "character_roles_ger",
     "characters_ger",
@@ -44,7 +44,7 @@ SKIP_SUBSETS = {
     "focus_trees",  # 1-row subset; focus_trees_all is the full dataset
 }
 
-# ── simple renames: dump filename (without .md) → table name ─────────
+# -- simple renames: dump filename (without .md) -> table name ---------
 # Files with _all suffix auto-strip to the base table name unless
 # overridden here.
 RENAME_MAP = {
@@ -56,7 +56,7 @@ RENAME_MAP = {
     "technology_links_all":    "technology_prerequisites",
 }
 
-# ── column renames: (table_name, dump_col) → schema_col ──────────────
+# -- column renames: (table_name, dump_col) -> schema_col --------------
 COLUMN_RENAMES = {
     # equipment_definitions
     ("equipment_definitions", "archetype"):  "archetype_key",
@@ -75,7 +75,7 @@ COLUMN_RENAMES = {
     # sub_ideologies
     ("sub_ideologies", "sub_ideology"): "sub_ideology_key",
     ("sub_ideologies", "ideology"):     "ideology_key",
-    # country_tags  → countries (initial insert)
+    # country_tags  -> countries (initial insert)
     ("countries", "tag"):          "tag",
     ("countries", "country_file"): "country_file_path",
     # divisions
@@ -90,21 +90,21 @@ COLUMN_RENAMES = {
     # ships
     ("ships", "hull_key"):           "hull_equipment_key",
     ("ships", "owner"):              "owner_tag",
-    # task_forces — fleet_name used for FK resolution later
+    # task_forces - fleet_name used for FK resolution later
     ("task_forces", "location_province"): "location_province_id",
     # technology_prerequisites (from technology_links_all)
     ("technology_prerequisites", "from_technology"):       "technology_key",
     ("technology_prerequisites", "to_technology"):         "prerequisite_key",
     ("technology_prerequisites", "research_cost_coeff"):   None,  # drop
     # technologies
-    ("technologies", "category"): None,  # drop (→ technology_categories_junction)
+    ("technologies", "category"): None,  # drop (-> technology_categories_junction)
     ("technologies", "folder_x"): None,  # drop visual-only data
     ("technologies", "folder_y"): None,  # drop visual-only data
     # building_types
     ("building_types", "building_type"): "building_key",
     # states
     ("states", "name_key"): "state_name_key",
-    ("states", "owner"): None,            # drop (→ state_ownership_history)
+    ("states", "owner"): None,            # drop (-> state_ownership_history)
     ("states", "buildings_max_level_factor"): None,  # drop (not in schema)
     # state_victory_points
     ("state_victory_points", "points"): "victory_points",
@@ -166,10 +166,10 @@ COLUMN_RENAMES = {
     ("country_starting_doctrines", "source_file"): None,
 }
 
-# ── derived columns: computed from existing data ─────────────────────
-# table_name → list of { new_col, from_col, transform }
-#   "prefix"  → split on '_' and take the first part  (GER_1936.txt → GER)
-#   "copy"    → copy the source value unchanged
+# -- derived columns: computed from existing data ---------------------
+# table_name -> list of { new_col, from_col, transform }
+#   "prefix"  -> split on '_' and take the first part  (GER_1936.txt -> GER)
+#   "copy"    -> copy the source value unchanged
 DERIVED_COLUMNS: dict[str, list[dict[str, str]]] = {
     "division_templates": [
         {"new_col": "country_tag", "from_col": "source_file", "transform": "prefix"},
@@ -187,19 +187,19 @@ DERIVED_COLUMNS: dict[str, list[dict[str, str]]] = {
     ],
 }
 
-# ── columns to drop per table (after rename mapping) ─────────────────
+# -- columns to drop per table (after rename mapping) -----------------
 DROP_COLUMNS: dict[str, set[str]] = {}
 
-# ── row filters: applied BEFORE column renames/drops ─────────────────
-#    table_name → (column_name, keep_value)
+# -- row filters: applied BEFORE column renames/drops -----------------
+#    table_name -> (column_name, keep_value)
 #    Only rows where column_name == keep_value are kept.
 ROW_FILTERS = {
     "state_buildings": ("scope", "state"),
 }
 
-# ── multi-target split rules ────────────────────────────────────────
+# -- multi-target split rules ----------------------------------------
 # These dump files produce rows for MULTIPLE tables based on a column value.
-#   dump_name → { split_col, targets: { value → (table, col_map) } }
+#   dump_name -> { split_col, targets: { value -> (table, col_map) } }
 SPLIT_RULES = {
     "focus_links_all": {
         "split_col": "link_type",
@@ -244,7 +244,7 @@ SPLIT_RULES = {
     },
 }
 
-# ── countries merge: 3 source files → 1 table ───────────────────────
+# -- countries merge: 3 source files -> 1 table -----------------------
 COUNTRIES_SOURCES = {
     "country_tags": {
         "key_col": "tag",
@@ -255,7 +255,7 @@ COUNTRIES_SOURCES = {
     },
     "countries_visuals": {
         "key_col": "country_file_key",
-        # match by file path → country tag lookup
+        # match by file path -> country tag lookup
         "columns": {
             "graphical_culture":    "graphical_culture",
             "graphical_culture_2d": "graphical_culture_2d",
@@ -281,9 +281,9 @@ COUNTRIES_OUTPUT_COLS = [
 ]
 
 
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 # Markdown parsing
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 
 def parse_md_table(path: Path) -> tuple[list[str], list[list[str]]]:
     """Parse a data-dump .md file.  Returns (columns, rows)."""
@@ -342,9 +342,9 @@ def _split_pipe_row(line: str) -> list[str]:
     return [p.strip() for p in parts]
 
 
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 # CSV writing
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 
 def write_csv(path: Path, columns: list[str], rows: list[list[str]]) -> int:
     """Write a CSV file.  Returns row count."""
@@ -356,9 +356,9 @@ def write_csv(path: Path, columns: list[str], rows: list[list[str]]) -> int:
     return len(rows)
 
 
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 # Column transformation
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 
 def apply_column_renames(
     table_name: str,
@@ -425,9 +425,9 @@ def apply_derived_columns(
     return columns, rows
 
 
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 # Table name resolution
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 
 def resolve_table_name(dump_name: str) -> str | None:
     """Map a dump filename (without .md) to its target table name.
@@ -448,9 +448,9 @@ def resolve_table_name(dump_name: str) -> str | None:
     return dump_name
 
 
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 # Multi-target split processing
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 
 def process_split_file(
     dump_name: str,
@@ -494,22 +494,22 @@ def process_split_file(
         count = write_csv(csv_dir / f"{table}.csv", dst_cols, out_rows)
         results[table] = count
         if verbose:
-            print(f"  SPLIT {dump_name} → {table}.csv ({count} rows)")
+            print(f"  SPLIT {dump_name} -> {table}.csv ({count} rows)")
 
     return results
 
 
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 # Countries merge
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 
 def process_countries_merge(
     dump_dir: Path,
     csv_dir: Path,
     verbose: bool,
 ) -> int:
-    """Merge country_tags + countries_visuals + country_history → countries.csv."""
-    # Step 1: Load country_tags (primary source — defines all rows)
+    """Merge country_tags + countries_visuals + country_history -> countries.csv."""
+    # Step 1: Load country_tags (primary source - defines all rows)
     cols_tags, rows_tags = parse_md_table(dump_dir / "country_tags.md")
     tag_idx = cols_tags.index("tag")
     file_idx = cols_tags.index("country_file")
@@ -534,10 +534,10 @@ def process_countries_merge(
         vis_key_idx = cols_vis.index("country_file_key")
         vis_map = COUNTRIES_SOURCES["countries_visuals"]["columns"]
 
-        # Build file_key → tag lookup
+        # Build file_key -> tag lookup
         file_to_tag: dict[str, str] = {}
         for tag, fpath in tag_to_file.items():
-            # Normalise: "countries/Germany.txt" → "Germany" or similar
+            # Normalise: "countries/Germany.txt" -> "Germany" or similar
             key = Path(fpath).stem if fpath else ""
             file_to_tag[key] = tag
             file_to_tag[fpath] = tag
@@ -573,13 +573,13 @@ def process_countries_merge(
 
     count = write_csv(csv_dir / "countries.csv", COUNTRIES_OUTPUT_COLS, out_rows)
     if verbose:
-        print(f"  MERGE country_tags + countries_visuals + country_history → countries.csv ({count} rows)")
+        print(f"  MERGE country_tags + countries_visuals + country_history -> countries.csv ({count} rows)")
     return count
 
 
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 # Country visual definitions (needs tag lookup from country_tags)
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 
 def _process_country_visual_definitions(
     dump_dir: Path,
@@ -592,7 +592,7 @@ def _process_country_visual_definitions(
     if not visuals_path.exists() or not tags_path.exists():
         return -1
 
-    # Build file_path → tag lookup from country_tags
+    # Build file_path -> tag lookup from country_tags
     cols_tags, rows_tags = parse_md_table(tags_path)
     tag_idx = cols_tags.index("tag")
     file_idx = cols_tags.index("country_file")
@@ -620,13 +620,13 @@ def _process_country_visual_definitions(
 
     count = write_csv(csv_dir / "country_visual_definitions.csv", out_cols, out_rows)
     if verbose:
-        print(f"  RESOLVE countries_visuals → country_visual_definitions.csv ({count} rows)")
+        print(f"  RESOLVE countries_visuals -> country_visual_definitions.csv ({count} rows)")
     return count
 
 
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 # Main conversion loop
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 
 def convert_all(dump_dir: Path, csv_dir: Path, verbose: bool = False) -> None:
     """Convert all markdown dumps to CSV files."""
@@ -691,13 +691,13 @@ def convert_all(dump_dir: Path, csv_dir: Path, verbose: bool = False) -> None:
             count = write_csv(csv_dir / f"{table_name}.csv", columns, rows)
             stats[table_name] = count
             if verbose:
-                print(f"  {dump_name}.md → {table_name}.csv ({count} rows)")
+                print(f"  {dump_name}.md -> {table_name}.csv ({count} rows)")
         except Exception as e:
             errors.append(f"{dump_name}: {e}")
 
     # 5. Report
     print(f"\n{'=' * 60}")
-    print(f"HOI4 Markdown → CSV Conversion Complete")
+    print(f"HOI4 Markdown -> CSV Conversion Complete")
     print(f"{'=' * 60}")
     print(f"  CSV output dir : {csv_dir}")
     print(f"  Tables written : {len(stats)}")
@@ -713,9 +713,9 @@ def convert_all(dump_dir: Path, csv_dir: Path, verbose: bool = False) -> None:
     print()
 
 
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 # CLI
-# ─────────────────────────────────────────────────────────────────────
+# ---------------------------------------------------------------------
 
 def main() -> None:
     parser = argparse.ArgumentParser(

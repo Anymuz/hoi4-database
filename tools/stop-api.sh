@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# tools/stop-api.sh — Stop any running Uvicorn/FastAPI process.
+# tools/stop-api.sh - Stop any running Uvicorn/FastAPI process.
 # Usage: bash tools/stop-api.sh
 
 set -euo pipefail

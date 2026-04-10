@@ -49,7 +49,7 @@ async def get_mio(
     return dict(row)
 # End of MIO detail endpoint
 
-# GET /api/v1/operations — list all operations (summary)
+# GET /api/v1/operations - list all operations (summary)
 @router.get("/operations", response_model=list[OperationSummary], tags=["Operations"])
 async def list_operations(
     limit: int = Query(50, ge=1, le=500),
@@ -69,7 +69,7 @@ async def list_operations(
     return [dict(row) for row in rows]
 # End of operation list endpoint
 
-# GET /api/v1/operations/{operation_key} — single operation with phases & equipment
+# GET /api/v1/operations/{operation_key} - single operation with phases & equipment
 @router.get("/operations/{operation_key}", response_model=OperationDetail, tags=["Operations"])
 async def get_operation(
     operation_key: str,
@@ -87,7 +87,7 @@ async def get_operation(
     return dict(row)
 # End of operation detail endpoint
 
-# GET /api/v1/bop — list all BoP definitions (summary)
+# GET /api/v1/bop - list all BoP definitions (summary)
 @router.get("/bop", response_model=list[BOPSummary], tags=["Balance of Power"])
 async def list_bop(
     limit: int = Query(50, ge=1, le=500),
@@ -106,7 +106,7 @@ async def list_bop(
     return [dict(row) for row in rows]
 # End of BoP list endpoint
 
-# GET /api/v1/bop/{bop_key} — single BoP with sides, ranges, modifiers
+# GET /api/v1/bop/{bop_key} - single BoP with sides, ranges, modifiers
 @router.get("/bop/{bop_key}", response_model=BOPDetail, tags=["Balance of Power"])
 async def get_bop(
     bop_key: str,
@@ -124,7 +124,7 @@ async def get_bop(
     return dict(row)
 # End of BoP detail endpoint
 
-# GET /api/v1/factions — list all faction templates (summary)
+# GET /api/v1/factions - list all faction templates (summary)
 @router.get("/factions", response_model=list[FactionSummary], tags=["Factions"])
 async def list_factions(
     limit: int = Query(50, ge=1, le=500),
@@ -143,7 +143,7 @@ async def list_factions(
     )
     return [dict(row) for row in rows]
 
-# GET /api/v1/factions/{template_key} — single faction with goals, rules, upgrades
+# GET /api/v1/factions/{template_key} - single faction with goals, rules, upgrades
 @router.get("/factions/{template_key}", response_model=FactionDetail, tags=["Factions"])
 async def get_faction(
     template_key: str,
@@ -161,7 +161,7 @@ async def get_faction(
     return dict(row)
 # End of faction detail endpoint
 
-# GET /api/v1/special-projects — list all special projects (summary)
+# GET /api/v1/special-projects - list all special projects (summary)
 @router.get("/special-projects", response_model=list[SpecialProjectSummary], tags=["Special Projects"])
 async def list_special_projects(
     limit: int = Query(50, ge=1, le=500),
@@ -181,7 +181,7 @@ async def list_special_projects(
     return [dict(row) for row in rows]
 # End of special project list endpoint
 
-# GET /api/v1/special-projects/{project_key} — single project with rewards
+# GET /api/v1/special-projects/{project_key} - single project with rewards
 @router.get("/special-projects/{project_key}", response_model=SpecialProjectDetail, tags=["Special Projects"])
 async def get_special_project(
     project_key: str,

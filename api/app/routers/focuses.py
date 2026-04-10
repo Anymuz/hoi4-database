@@ -5,7 +5,7 @@ from app.schemas.focus import FocusTreeSummary, FocusTreeDetail
 
 router = APIRouter(prefix="/api/v1", tags=["Focus Trees"])
 
-# GET /api/v1/focus-trees — list all focus trees (lightweight, no focuses array)
+# GET /api/v1/focus-trees - list all focus trees (lightweight, no focuses array)
 @router.get("/focus-trees", response_model=list[FocusTreeSummary])
 async def list_focus_trees(
     limit: int = Query(50, ge=1, le=500),
@@ -24,7 +24,7 @@ async def list_focus_trees(
     return [dict(row) for row in rows]
 # End of focus tree list endpoint
 
-# GET /api/v1/focus-trees/{focus_tree_id} — single tree with all focuses
+# GET /api/v1/focus-trees/{focus_tree_id} - single tree with all focuses
 @router.get("/focus-trees/{focus_tree_id}", response_model=FocusTreeDetail)
 async def get_focus_tree(
     focus_tree_id: str,
@@ -43,7 +43,7 @@ async def get_focus_tree(
     return dict(row)
 # End of focus tree detail endpoint
 
-# GET /api/v1/countries/{tag}/focus-tree — tree for a country
+# GET /api/v1/countries/{tag}/focus-tree - tree for a country
 @router.get("/countries/{tag}/focus-tree", response_model=FocusTreeDetail)
 async def get_country_focus_tree(
     tag: str,

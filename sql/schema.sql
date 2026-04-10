@@ -1,4 +1,4 @@
--- HOI4 PostgreSQL Schema — Complete (149 tables, 28 phases)
+-- HOI4 PostgreSQL Schema - Complete (149 tables, 28 phases)
 -- Source: docs/hoi4-table-catalog.md (authoritative column spec)
 -- Build order: docs/hoi4-database-design.md (123-step FK dependency order)
 --
@@ -11,7 +11,7 @@
 BEGIN;
 
 -- ============================================================
--- SLICE A — Original 15 Tables (preserved)
+-- SLICE A - Original 15 Tables (preserved)
 -- ============================================================
 
 -- 1) Root reference tables
@@ -230,7 +230,7 @@ CREATE INDEX ix_province_buildings_state_date ON province_buildings (state_id, e
 CREATE INDEX ix_country_starting_technologies_country_date ON country_starting_technologies (country_tag, effective_date);
 
 -- ============================================================
--- PHASE 1 — New Global Reference Tables
+-- PHASE 1 - New Global Reference Tables
 -- ============================================================
 
 -- FK build order #1
@@ -288,7 +288,7 @@ CREATE TABLE ideologies (
     color_b                     SMALLINT NOT NULL
 );
 
--- FK build order #7 → ideologies
+-- FK build order #7 -> ideologies
 CREATE TABLE sub_ideologies (
     sub_ideology_key            VARCHAR(60) PRIMARY KEY,
     ideology_key                VARCHAR(40) NOT NULL REFERENCES ideologies(ideology_key)
@@ -317,7 +317,7 @@ CREATE TABLE unit_types (
     dlc_source                  VARCHAR(50)
 );
 
--- FK build order #11 → self (archetype, parent)
+-- FK build order #11 -> self (archetype, parent)
 CREATE TABLE equipment_definitions (
     equipment_key               VARCHAR(120) PRIMARY KEY,
     is_archetype                BOOLEAN NOT NULL,
@@ -343,7 +343,7 @@ CREATE TABLE equipment_definitions (
 COMMENT ON COLUMN equipment_definitions.archetype_key IS 'NULL for archetypes; references parent archetype for derived equipment';
 COMMENT ON COLUMN equipment_definitions.parent_key IS 'Previous entry in upgrade chain (self-ref)';
 
--- FK build order #12 → equipment_definitions, resource_types
+-- FK build order #12 -> equipment_definitions, resource_types
 CREATE TABLE equipment_resources (
     equipment_key               VARCHAR(120) NOT NULL REFERENCES equipment_definitions(equipment_key),
     resource_key                VARCHAR(40) NOT NULL REFERENCES resource_types(resource_key),
@@ -352,7 +352,7 @@ CREATE TABLE equipment_resources (
     PRIMARY KEY (equipment_key, resource_key)
 );
 
--- FK build order #7a → terrain_types, building_types
+-- FK build order #7a -> terrain_types, building_types
 CREATE TABLE terrain_building_limits (
     terrain_type                VARCHAR(40) NOT NULL REFERENCES terrain_types(terrain_type),
     building_key                VARCHAR(80) NOT NULL REFERENCES building_types(building_key),
@@ -361,10 +361,10 @@ CREATE TABLE terrain_building_limits (
 );
 
 -- ============================================================
--- PHASE 2 — New Geography Tables
+-- PHASE 2 - New Geography Tables
 -- ============================================================
 
--- FK build order #14 → provinces
+-- FK build order #14 -> provinces
 CREATE TABLE province_building_positions (
     position_id                 BIGSERIAL PRIMARY KEY,
     province_id                 INT NOT NULL REFERENCES provinces(province_id),
@@ -385,20 +385,20 @@ CREATE TABLE strategic_regions (
     source_file                 TEXT NOT NULL
 );
 
--- FK build order #16 → strategic_regions, provinces
+-- FK build order #16 -> strategic_regions, provinces
 CREATE TABLE strategic_region_provinces (
     strategic_region_id         INT NOT NULL REFERENCES strategic_regions(strategic_region_id),
     province_id                 INT NOT NULL REFERENCES provinces(province_id),
     PRIMARY KEY (strategic_region_id, province_id)
 );
 
--- FK build order #17 → provinces
+-- FK build order #17 -> provinces
 CREATE TABLE supply_nodes (
     province_id                 INT PRIMARY KEY REFERENCES provinces(province_id),
     level                       INT NOT NULL
 );
 
--- Province adjacencies (map/adjacencies.csv) → provinces
+-- Province adjacencies (map/adjacencies.csv) -> provinces
 CREATE TABLE province_adjacencies (
     id                          BIGSERIAL PRIMARY KEY,
     from_province_id            INT NOT NULL REFERENCES provinces(province_id),
@@ -413,7 +413,7 @@ CREATE TABLE province_adjacencies (
     comment                     VARCHAR(200)
 );
 
--- Province railways (map/railways.txt) → provinces
+-- Province railways (map/railways.txt) -> provinces
 CREATE TABLE province_railways (
     id                          BIGSERIAL PRIMARY KEY,
     from_province_id            INT NOT NULL REFERENCES provinces(province_id),
@@ -422,17 +422,17 @@ CREATE TABLE province_railways (
 );
 
 -- ============================================================
--- PHASE 4 — Technologies
+-- PHASE 4 - Technologies
 -- ============================================================
 
--- FK build order #29 → technologies, technology_categories
+-- FK build order #29 -> technologies, technology_categories
 CREATE TABLE technology_categories_junction (
     technology_key              VARCHAR(120) NOT NULL REFERENCES technologies(technology_key),
     category_key                VARCHAR(60) NOT NULL REFERENCES technology_categories(category_key),
     PRIMARY KEY (technology_key, category_key)
 );
 
--- FK build order #30 → technologies (self-ref)
+-- FK build order #30 -> technologies (self-ref)
 CREATE TABLE technology_prerequisites (
     technology_key              VARCHAR(120) NOT NULL REFERENCES technologies(technology_key),
     prerequisite_key            VARCHAR(120) NOT NULL REFERENCES technologies(technology_key),
@@ -440,7 +440,7 @@ CREATE TABLE technology_prerequisites (
     PRIMARY KEY (technology_key, prerequisite_key)
 );
 
--- FK build order #31 → technologies, equipment_definitions
+-- FK build order #31 -> technologies, equipment_definitions
 CREATE TABLE technology_enables_equipment (
     technology_key              VARCHAR(120) NOT NULL REFERENCES technologies(technology_key),
     equipment_key               VARCHAR(120) NOT NULL REFERENCES equipment_definitions(equipment_key),
@@ -448,7 +448,7 @@ CREATE TABLE technology_enables_equipment (
     PRIMARY KEY (technology_key, equipment_key)
 );
 
--- FK build order #32 → technologies, unit_types
+-- FK build order #32 -> technologies, unit_types
 CREATE TABLE technology_enables_units (
     technology_key              VARCHAR(120) NOT NULL REFERENCES technologies(technology_key),
     unit_type_key               VARCHAR(80) NOT NULL REFERENCES unit_types(unit_type_key),
@@ -457,7 +457,7 @@ CREATE TABLE technology_enables_units (
 );
 
 -- ============================================================
--- PHASE 5 — Characters
+-- PHASE 5 - Characters
 -- ============================================================
 
 -- FK build order #33
@@ -466,7 +466,7 @@ CREATE TABLE character_traits (
     trait_type                  VARCHAR(30)
 );
 
--- FK build order #34 → countries
+-- FK build order #34 -> countries
 CREATE TABLE characters (
     character_id                VARCHAR(120) PRIMARY KEY,
     name_key                    VARCHAR(120),
@@ -478,7 +478,7 @@ CREATE TABLE characters (
     source_file                 TEXT NOT NULL
 );
 
--- FK build order #35 → characters, sub_ideologies
+-- FK build order #35 -> characters, sub_ideologies
 CREATE TABLE character_roles (
     character_role_id           SERIAL PRIMARY KEY,
     character_id                VARCHAR(120) NOT NULL REFERENCES characters(character_id),
@@ -501,7 +501,7 @@ COMMENT ON COLUMN character_roles.sub_ideology_key IS 'Only for country_leader r
 COMMENT ON COLUMN character_roles.maneuvering_skill IS 'Admiral roles only (maneuvering)';
 COMMENT ON COLUMN character_roles.coordination_skill IS 'Admiral roles only (coordination)';
 
--- FK build order #36 → character_roles, character_traits
+-- FK build order #36 -> character_roles, character_traits
 CREATE TABLE character_role_traits (
     character_role_id           INT NOT NULL REFERENCES character_roles(character_role_id),
     trait_key                   VARCHAR(80) NOT NULL REFERENCES character_traits(trait_key),
@@ -509,7 +509,7 @@ CREATE TABLE character_role_traits (
 );
 
 -- ============================================================
--- PHASE 9 — Ideas & National Spirits
+-- PHASE 9 - Ideas & National Spirits
 -- (Created here because country_starting_ideas depends on ideas)
 -- ============================================================
 
@@ -529,7 +529,7 @@ CREATE TABLE ideas (
 COMMENT ON COLUMN ideas.slot IS 'economy, trade_laws, country, hidden_ideas, etc.';
 COMMENT ON COLUMN ideas.removal_cost IS '-1 = cannot remove';
 
--- FK build order #38 → ideas
+-- FK build order #38 -> ideas
 CREATE TABLE idea_modifiers (
     idea_modifier_id            BIGSERIAL PRIMARY KEY,
     idea_key                    VARCHAR(120) NOT NULL REFERENCES ideas(idea_key),
@@ -539,11 +539,11 @@ CREATE TABLE idea_modifiers (
 );
 
 -- ============================================================
--- PHASE 3 (continued) — Country Starting Ideas
+-- PHASE 3 (continued) - Country Starting Ideas
 -- ============================================================
 
--- FK build order #39 → countries, ideas
--- NOTE: idea_key is polymorphic — add_ideas can reference ideas, laws, or character advisors
+-- FK build order #39 -> countries, ideas
+-- NOTE: idea_key is polymorphic - add_ideas can reference ideas, laws, or character advisors
 CREATE TABLE country_starting_ideas (
     country_tag                 CHAR(3) NOT NULL REFERENCES countries(tag),
     idea_key                    VARCHAR(120) NOT NULL,
@@ -554,10 +554,10 @@ CREATE TABLE country_starting_ideas (
 );
 
 -- ============================================================
--- PHASE 6 — Division Templates & Land OOB
+-- PHASE 6 - Division Templates & Land OOB
 -- ============================================================
 
--- FK build order #44 → countries
+-- FK build order #44 -> countries
 CREATE TABLE division_templates (
     division_template_id        SERIAL PRIMARY KEY,
     country_tag                 CHAR(3) REFERENCES countries(tag),
@@ -568,7 +568,7 @@ CREATE TABLE division_templates (
     UNIQUE (country_tag, template_name, oob_file)
 );
 
--- FK build order #45 → division_templates, unit_types
+-- FK build order #45 -> division_templates, unit_types
 CREATE TABLE division_template_regiments (
     division_template_id        INT NOT NULL REFERENCES division_templates(division_template_id),
     unit_type_key               VARCHAR(80) NOT NULL REFERENCES unit_types(unit_type_key),
@@ -577,7 +577,7 @@ CREATE TABLE division_template_regiments (
     PRIMARY KEY (division_template_id, grid_x, grid_y)
 );
 
--- FK build order #46 → division_templates, unit_types
+-- FK build order #46 -> division_templates, unit_types
 CREATE TABLE division_template_support (
     division_template_id        INT NOT NULL REFERENCES division_templates(division_template_id),
     unit_type_key               VARCHAR(80) NOT NULL REFERENCES unit_types(unit_type_key),
@@ -586,7 +586,7 @@ CREATE TABLE division_template_support (
     PRIMARY KEY (division_template_id, grid_x, grid_y)
 );
 
--- FK build order #47 → division_templates, countries, provinces
+-- FK build order #47 -> division_templates, countries, provinces
 CREATE TABLE divisions (
     division_id                 SERIAL PRIMARY KEY,
     country_tag                 CHAR(3) REFERENCES countries(tag),
@@ -602,10 +602,10 @@ COMMENT ON COLUMN divisions.division_template_id IS 'Resolved by matching templa
 COMMENT ON COLUMN divisions.template_name IS 'Raw template name from division_template field in OOB file';
 
 -- ============================================================
--- PHASE 7 — Naval OOB
+-- PHASE 7 - Naval OOB
 -- ============================================================
 
--- FK build order #48 → countries, equipment_definitions
+-- FK build order #48 -> countries, equipment_definitions
 CREATE TABLE equipment_variants (
     equipment_variant_id        SERIAL PRIMARY KEY,
     owner_tag                   CHAR(3) NOT NULL REFERENCES countries(tag),
@@ -616,7 +616,7 @@ CREATE TABLE equipment_variants (
     UNIQUE (owner_tag, base_equipment_key, version_name, effective_date)
 );
 
--- FK build order #48b → equipment_variants
+-- FK build order #48b -> equipment_variants
 CREATE TABLE equipment_variant_modules (
     equipment_variant_id        INT NOT NULL REFERENCES equipment_variants(equipment_variant_id),
     slot_name                   VARCHAR(120) NOT NULL,
@@ -624,7 +624,7 @@ CREATE TABLE equipment_variant_modules (
     PRIMARY KEY (equipment_variant_id, slot_name)
 );
 
--- FK build order #48c → equipment_variants
+-- FK build order #48c -> equipment_variants
 CREATE TABLE equipment_variant_upgrades (
     equipment_variant_id        INT NOT NULL REFERENCES equipment_variants(equipment_variant_id),
     upgrade_key                 VARCHAR(120) NOT NULL,
@@ -632,7 +632,7 @@ CREATE TABLE equipment_variant_upgrades (
     PRIMARY KEY (equipment_variant_id, upgrade_key)
 );
 
--- FK build order #49 → countries, provinces
+-- FK build order #49 -> countries, provinces
 CREATE TABLE fleets (
     fleet_id                    SERIAL PRIMARY KEY,
     country_tag                 CHAR(3) NOT NULL REFERENCES countries(tag),
@@ -642,7 +642,7 @@ CREATE TABLE fleets (
     source_file                 TEXT NOT NULL
 );
 
--- FK build order #50 → fleets, provinces
+-- FK build order #50 -> fleets, provinces
 CREATE TABLE task_forces (
     task_force_id               SERIAL PRIMARY KEY,
     fleet_id                    INT NOT NULL REFERENCES fleets(fleet_id),
@@ -650,7 +650,7 @@ CREATE TABLE task_forces (
     location_province_id        INT REFERENCES provinces(province_id)
 );
 
--- FK build order #51 → task_forces, equipment_definitions, countries
+-- FK build order #51 -> task_forces, equipment_definitions, countries
 CREATE TABLE ships (
     ship_id                     SERIAL PRIMARY KEY,
     task_force_id               INT NOT NULL REFERENCES task_forces(task_force_id),
@@ -667,10 +667,10 @@ CREATE TABLE ships (
 COMMENT ON COLUMN ships.definition IS 'Role type: destroyer, submarine, light_cruiser, heavy_cruiser, battle_cruiser, battleship, carrier';
 
 -- ============================================================
--- PHASE 8 — Air OOB
+-- PHASE 8 - Air OOB
 -- ============================================================
 
--- FK build order #52 → countries, states
+-- FK build order #52 -> countries, states
 CREATE TABLE air_wings (
     air_wing_id                 SERIAL PRIMARY KEY,
     country_tag                 CHAR(3) NOT NULL REFERENCES countries(tag),
@@ -684,10 +684,10 @@ CREATE TABLE air_wings (
 );
 
 -- ============================================================
--- PHASE 10 — National Focus Trees
+-- PHASE 10 - National Focus Trees
 -- ============================================================
 
--- FK build order #40 → countries (nullable)
+-- FK build order #40 -> countries (nullable)
 CREATE TABLE focus_trees (
     focus_tree_id               VARCHAR(120) PRIMARY KEY,
     country_tag                 CHAR(3) REFERENCES countries(tag),
@@ -696,7 +696,7 @@ CREATE TABLE focus_trees (
     source_file                 TEXT NOT NULL
 );
 
--- FK build order #41 → focus_trees
+-- FK build order #41 -> focus_trees
 CREATE TABLE focuses (
     focus_id                    VARCHAR(120) PRIMARY KEY,
     focus_tree_id               VARCHAR(120) NOT NULL REFERENCES focus_trees(focus_tree_id),
@@ -711,7 +711,7 @@ CREATE TABLE focuses (
     dlc_source                  VARCHAR(50)
 );
 
--- FK build order #42 → focuses (self-ref)
+-- FK build order #42 -> focuses (self-ref)
 CREATE TABLE focus_prerequisites (
     focus_id                    VARCHAR(120) NOT NULL REFERENCES focuses(focus_id),
     prerequisite_group          SMALLINT NOT NULL DEFAULT 1,
@@ -721,7 +721,7 @@ CREATE TABLE focus_prerequisites (
 
 COMMENT ON COLUMN focus_prerequisites.prerequisite_group IS 'Same group = OR alternatives; all groups must be satisfied (AND)';
 
--- FK build order #43 → focuses (self-ref)
+-- FK build order #43 -> focuses (self-ref)
 CREATE TABLE focus_mutually_exclusive (
     focus_a_id                  VARCHAR(120) NOT NULL REFERENCES focuses(focus_id),
     focus_b_id                  VARCHAR(120) NOT NULL REFERENCES focuses(focus_id),
@@ -730,7 +730,7 @@ CREATE TABLE focus_mutually_exclusive (
 );
 
 -- ============================================================
--- PHASE 11 — Governance
+-- PHASE 11 - Governance
 -- ============================================================
 
 -- FK build order #53
@@ -743,7 +743,7 @@ CREATE TABLE autonomy_states (
     dlc_source                  VARCHAR(80)
 );
 
--- FK build order #54 → autonomy_states
+-- FK build order #54 -> autonomy_states
 CREATE TABLE autonomy_state_modifiers (
     id                          BIGSERIAL PRIMARY KEY,
     autonomy_key                VARCHAR(80) NOT NULL REFERENCES autonomy_states(autonomy_key),
@@ -751,7 +751,7 @@ CREATE TABLE autonomy_state_modifiers (
     modifier_value              NUMERIC(8,4) NOT NULL
 );
 
--- FK build order #55 → self (fallback_law_key)
+-- FK build order #55 -> self (fallback_law_key)
 CREATE TABLE occupation_laws (
     occupation_law_key          VARCHAR(80) PRIMARY KEY,
     icon_index                  INT,
@@ -761,7 +761,7 @@ CREATE TABLE occupation_laws (
     fallback_law_key            VARCHAR(80) REFERENCES occupation_laws(occupation_law_key)
 );
 
--- FK build order #56 → occupation_laws
+-- FK build order #56 -> occupation_laws
 CREATE TABLE occupation_law_modifiers (
     id                          BIGSERIAL PRIMARY KEY,
     occupation_law_key          VARCHAR(80) NOT NULL REFERENCES occupation_laws(occupation_law_key),
@@ -773,17 +773,17 @@ CREATE TABLE occupation_law_modifiers (
 COMMENT ON COLUMN occupation_law_modifiers.is_suppressed IS 'false = state_modifier block, true = suppressed_state_modifier block';
 
 -- ============================================================
--- PHASE 12–15 — Extensions
+-- PHASE 12–15 - Extensions
 -- ============================================================
 
--- FK build order #57 → countries
+-- FK build order #57 -> countries
 CREATE TABLE country_visual_definitions (
     country_tag                 CHAR(3) PRIMARY KEY REFERENCES countries(tag),
     graphical_culture           VARCHAR(80),
     graphical_culture_2d        VARCHAR(80)
 );
 
--- FK build order #58 → countries (REVISED from Phase 16)
+-- FK build order #58 -> countries (REVISED from Phase 16)
 CREATE TABLE intelligence_agencies (
     agency_id                   SERIAL PRIMARY KEY,
     picture_gfx                 VARCHAR(120) NOT NULL,
@@ -796,14 +796,14 @@ CREATE TABLE intelligence_agencies (
 COMMENT ON COLUMN intelligence_agencies.default_tag IS 'Country this agency is the default for';
 COMMENT ON COLUMN intelligence_agencies.available_tag IS 'Restricts which country can use this agency (original_tag check)';
 
--- FK build order #59 → intelligence_agencies
+-- FK build order #59 -> intelligence_agencies
 CREATE TABLE intelligence_agency_names (
     id                          SERIAL PRIMARY KEY,
     agency_id                   INT NOT NULL REFERENCES intelligence_agencies(agency_id),
     name                        VARCHAR(200) NOT NULL
 );
 
--- FK build order #60 → countries
+-- FK build order #60 -> countries
 CREATE TABLE bookmarks (
     bookmark_id                 SERIAL PRIMARY KEY,
     bookmark_name               VARCHAR(120) NOT NULL,
@@ -812,7 +812,7 @@ CREATE TABLE bookmarks (
     default_country_tag         CHAR(3) REFERENCES countries(tag)
 );
 
--- FK build order #61 → bookmarks, countries, ideologies
+-- FK build order #61 -> bookmarks, countries, ideologies
 CREATE TABLE bookmark_countries (
     bookmark_id                 INT NOT NULL REFERENCES bookmarks(bookmark_id),
     country_tag                 CHAR(3) NOT NULL REFERENCES countries(tag),
@@ -828,7 +828,7 @@ CREATE TABLE decision_categories (
     priority                    INT
 );
 
--- FK build order #63 → decision_categories
+-- FK build order #63 -> decision_categories
 CREATE TABLE decisions (
     decision_key                VARCHAR(120) PRIMARY KEY,
     category_key                VARCHAR(80) NOT NULL REFERENCES decision_categories(category_key),
@@ -839,7 +839,7 @@ CREATE TABLE decisions (
 );
 
 -- ============================================================
--- PHASE 16 — Espionage System (La Résistance)
+-- PHASE 16 - Espionage System (La Résistance)
 -- ============================================================
 
 -- FK build order #64
@@ -865,7 +865,7 @@ CREATE TABLE operation_phase_definitions (
     source_file                 TEXT NOT NULL
 );
 
--- FK build order #66 → operation_phase_definitions
+-- FK build order #66 -> operation_phase_definitions
 CREATE TABLE operation_phase_equipment (
     id                          SERIAL PRIMARY KEY,
     phase_key                   VARCHAR(120) NOT NULL REFERENCES operation_phase_definitions(phase_key),
@@ -895,14 +895,14 @@ CREATE TABLE operations (
     dlc_source                  VARCHAR(50)
 );
 
--- FK build order #68 → operations, operation_tokens
+-- FK build order #68 -> operations, operation_tokens
 CREATE TABLE operation_awarded_tokens (
     operation_key               VARCHAR(120) NOT NULL REFERENCES operations(operation_key),
     token_key                   VARCHAR(60) NOT NULL REFERENCES operation_tokens(token_key),
     PRIMARY KEY (operation_key, token_key)
 );
 
--- FK build order #69 → operations
+-- FK build order #69 -> operations
 CREATE TABLE operation_equipment_requirements (
     id                          SERIAL PRIMARY KEY,
     operation_key               VARCHAR(120) NOT NULL REFERENCES operations(operation_key),
@@ -910,14 +910,14 @@ CREATE TABLE operation_equipment_requirements (
     amount                      INT NOT NULL
 );
 
--- FK build order #70 → operations
+-- FK build order #70 -> operations
 CREATE TABLE operation_phase_groups (
     operation_key               VARCHAR(120) NOT NULL REFERENCES operations(operation_key),
     sequence_index              SMALLINT NOT NULL,
     PRIMARY KEY (operation_key, sequence_index)
 );
 
--- FK build order #71 → operation_phase_groups, operation_phase_definitions
+-- FK build order #71 -> operation_phase_groups, operation_phase_definitions
 CREATE TABLE operation_phase_options (
     id                          SERIAL PRIMARY KEY,
     operation_key               VARCHAR(120) NOT NULL,
@@ -932,7 +932,7 @@ CREATE TABLE intel_agency_upgrade_branches (
     branch_key                  VARCHAR(60) PRIMARY KEY
 );
 
--- FK build order #73 → intel_agency_upgrade_branches
+-- FK build order #73 -> intel_agency_upgrade_branches
 CREATE TABLE intel_agency_upgrades (
     upgrade_key                 VARCHAR(80) PRIMARY KEY,
     branch_key                  VARCHAR(60) NOT NULL REFERENCES intel_agency_upgrade_branches(branch_key),
@@ -941,7 +941,7 @@ CREATE TABLE intel_agency_upgrades (
     sound                       VARCHAR(120)
 );
 
--- FK build order #74 → intel_agency_upgrades
+-- FK build order #74 -> intel_agency_upgrades
 CREATE TABLE intel_agency_upgrade_levels (
     id                          SERIAL PRIMARY KEY,
     upgrade_key                 VARCHAR(80) NOT NULL REFERENCES intel_agency_upgrades(upgrade_key),
@@ -950,7 +950,7 @@ CREATE TABLE intel_agency_upgrade_levels (
     modifier_value              NUMERIC(8,4) NOT NULL
 );
 
--- FK build order #75 → intel_agency_upgrades
+-- FK build order #75 -> intel_agency_upgrades
 CREATE TABLE intel_agency_upgrade_progress_modifiers (
     id                          SERIAL PRIMARY KEY,
     upgrade_key                 VARCHAR(80) NOT NULL REFERENCES intel_agency_upgrades(upgrade_key),
@@ -959,7 +959,7 @@ CREATE TABLE intel_agency_upgrade_progress_modifiers (
 );
 
 -- ============================================================
--- PHASE 17 — Occupation & Resistance (La Résistance)
+-- PHASE 17 - Occupation & Resistance (La Résistance)
 -- ============================================================
 
 -- FK build order #76
@@ -974,7 +974,7 @@ CREATE TABLE compliance_modifiers (
     source_file                 TEXT
 );
 
--- FK build order #77 → compliance_modifiers
+-- FK build order #77 -> compliance_modifiers
 CREATE TABLE compliance_modifier_effects (
     id                          SERIAL PRIMARY KEY,
     modifier_key                VARCHAR(60) NOT NULL REFERENCES compliance_modifiers(modifier_key),
@@ -993,7 +993,7 @@ CREATE TABLE resistance_modifiers (
     source_file                 TEXT
 );
 
--- FK build order #79 → resistance_modifiers
+-- FK build order #79 -> resistance_modifiers
 CREATE TABLE resistance_modifier_effects (
     id                          SERIAL PRIMARY KEY,
     modifier_key                VARCHAR(60) NOT NULL REFERENCES resistance_modifiers(modifier_key),
@@ -1011,7 +1011,7 @@ CREATE TABLE resistance_activities (
 );
 
 -- ============================================================
--- PHASE 18 — Military-Industrial Organizations (Arms Against Tyranny)
+-- PHASE 18 - Military-Industrial Organizations (Arms Against Tyranny)
 -- ============================================================
 
 -- FK build order #81
@@ -1019,7 +1019,7 @@ CREATE TABLE mio_equipment_groups (
     group_key                   VARCHAR(80) PRIMARY KEY
 );
 
--- FK build order #82 → mio_equipment_groups
+-- FK build order #82 -> mio_equipment_groups
 CREATE TABLE mio_equipment_group_members (
     group_key                   VARCHAR(80) NOT NULL REFERENCES mio_equipment_groups(group_key),
     equipment_type              VARCHAR(120) NOT NULL,
@@ -1034,7 +1034,7 @@ CREATE TABLE mio_templates (
     dlc_source                  VARCHAR(50)
 );
 
--- FK build order #84 → mio_templates
+-- FK build order #84 -> mio_templates
 CREATE TABLE mio_organizations (
     organization_key            VARCHAR(120) PRIMARY KEY,
     template_key                VARCHAR(120) REFERENCES mio_templates(template_key),
@@ -1045,7 +1045,7 @@ CREATE TABLE mio_organizations (
 
 COMMENT ON COLUMN mio_organizations.template_key IS 'FK to generic template via include; NULL if standalone org';
 
--- FK build order #85 — polymorphic (mio_templates or mio_organizations)
+-- FK build order #85 - polymorphic (mio_templates or mio_organizations)
 CREATE TABLE mio_organization_equipment_types (
     id                          SERIAL PRIMARY KEY,
     owner_key                   VARCHAR(120) NOT NULL,
@@ -1055,7 +1055,7 @@ CREATE TABLE mio_organization_equipment_types (
 
 COMMENT ON COLUMN mio_organization_equipment_types.owner_type IS '''template'' or ''organization''';
 
--- FK build order #86 — polymorphic
+-- FK build order #86 - polymorphic
 CREATE TABLE mio_initial_traits (
     id                          SERIAL PRIMARY KEY,
     owner_key                   VARCHAR(120) NOT NULL,
@@ -1065,7 +1065,7 @@ CREATE TABLE mio_initial_traits (
 
 COMMENT ON COLUMN mio_initial_traits.owner_type IS '''template'' or ''organization''';
 
--- FK build order #87 — polymorphic (mio_templates or mio_organizations)
+-- FK build order #87 - polymorphic (mio_templates or mio_organizations)
 CREATE TABLE mio_traits (
     trait_token                 VARCHAR(120) PRIMARY KEY,
     owner_key                   VARCHAR(120) NOT NULL,
@@ -1082,7 +1082,7 @@ CREATE TABLE mio_traits (
 COMMENT ON COLUMN mio_traits.owner_type IS '''template'', ''organization''';
 COMMENT ON COLUMN mio_traits.trait_type IS '''trait'', ''add_trait'', ''override_trait''';
 
--- FK build order #88 → mio_traits
+-- FK build order #88 -> mio_traits
 CREATE TABLE mio_trait_bonuses (
     id                          SERIAL PRIMARY KEY,
     trait_token                 VARCHAR(120) NOT NULL REFERENCES mio_traits(trait_token),
@@ -1093,7 +1093,7 @@ CREATE TABLE mio_trait_bonuses (
 
 COMMENT ON COLUMN mio_trait_bonuses.bonus_category IS '''equipment_bonus'', ''production_bonus'', ''organization_modifier''';
 
--- FK build order #89 → mio_traits (self-ref ×2)
+-- FK build order #89 -> mio_traits (self-ref ×2)
 CREATE TABLE mio_trait_prerequisites (
     id                          SERIAL PRIMARY KEY,
     trait_token                 VARCHAR(120) NOT NULL REFERENCES mio_traits(trait_token),
@@ -1103,7 +1103,7 @@ CREATE TABLE mio_trait_prerequisites (
 
 COMMENT ON COLUMN mio_trait_prerequisites.requirement_type IS '''any_parent'' or ''all_parents''';
 
--- FK build order #90 → mio_traits (self-ref ×2)
+-- FK build order #90 -> mio_traits (self-ref ×2)
 CREATE TABLE mio_trait_exclusions (
     trait_token_a               VARCHAR(120) NOT NULL REFERENCES mio_traits(trait_token),
     trait_token_b               VARCHAR(120) NOT NULL REFERENCES mio_traits(trait_token),
@@ -1119,7 +1119,7 @@ CREATE TABLE mio_policies (
     dlc_source                  VARCHAR(50)
 );
 
--- FK build order #92 → mio_policies
+-- FK build order #92 -> mio_policies
 CREATE TABLE mio_policy_bonuses (
     id                          SERIAL PRIMARY KEY,
     policy_key                  VARCHAR(120) NOT NULL REFERENCES mio_policies(policy_key),
@@ -1129,7 +1129,7 @@ CREATE TABLE mio_policy_bonuses (
 );
 
 -- ============================================================
--- PHASE 19 — Raids (Götterdämmerung)
+-- PHASE 19 - Raids (Götterdämmerung)
 -- ============================================================
 
 -- FK build order #93
@@ -1141,7 +1141,7 @@ CREATE TABLE raid_categories (
     dlc_source                  VARCHAR(50)
 );
 
--- FK build order #94 → raid_categories
+-- FK build order #94 -> raid_categories
 CREATE TABLE raids (
     raid_key                    VARCHAR(80) PRIMARY KEY,
     category_key                VARCHAR(60) NOT NULL REFERENCES raid_categories(category_key),
@@ -1154,7 +1154,7 @@ CREATE TABLE raids (
     dlc_source                  VARCHAR(50)
 );
 
--- FK build order #95 → raids
+-- FK build order #95 -> raids
 CREATE TABLE raid_equipment_requirements (
     id                          SERIAL PRIMARY KEY,
     raid_key                    VARCHAR(80) NOT NULL REFERENCES raids(raid_key),
@@ -1167,7 +1167,7 @@ CREATE TABLE raid_equipment_requirements (
 COMMENT ON COLUMN raid_equipment_requirements.requirement_group IS 'Alternative groups: satisfy ANY one group to launch';
 
 -- ============================================================
--- PHASE 20 — Career Profile (By Blood Alone / Götterdämmerung)
+-- PHASE 20 - Career Profile (By Blood Alone / Götterdämmerung)
 -- ============================================================
 
 -- FK build order #96
@@ -1182,7 +1182,7 @@ CREATE TABLE medals (
     dlc_source                  VARCHAR(50)
 );
 
--- FK build order #97 → medals
+-- FK build order #97 -> medals
 CREATE TABLE medal_tiers (
     medal_key                   VARCHAR(80) NOT NULL REFERENCES medals(medal_key),
     tier                        VARCHAR(10) NOT NULL,
@@ -1212,7 +1212,7 @@ CREATE TABLE ace_modifiers (
     chance                      NUMERIC(4,3) NOT NULL
 );
 
--- FK build order #100 → ace_modifiers
+-- FK build order #100 -> ace_modifiers
 CREATE TABLE ace_modifier_effects (
     id                          SERIAL PRIMARY KEY,
     modifier_key                VARCHAR(60) NOT NULL REFERENCES ace_modifiers(modifier_key),
@@ -1220,7 +1220,7 @@ CREATE TABLE ace_modifier_effects (
     effect_value                NUMERIC(8,4) NOT NULL
 );
 
--- FK build order #101 → ace_modifiers
+-- FK build order #101 -> ace_modifiers
 CREATE TABLE ace_modifier_equipment_types (
     modifier_key                VARCHAR(60) NOT NULL REFERENCES ace_modifiers(modifier_key),
     equipment_type              VARCHAR(60) NOT NULL,
@@ -1236,7 +1236,7 @@ CREATE TABLE unit_medals (
     dlc_source                  VARCHAR(50)
 );
 
--- FK build order #103 → unit_medals
+-- FK build order #103 -> unit_medals
 CREATE TABLE unit_medal_modifiers (
     id                          SERIAL PRIMARY KEY,
     medal_key                   VARCHAR(80) NOT NULL REFERENCES unit_medals(medal_key),
@@ -1245,7 +1245,7 @@ CREATE TABLE unit_medal_modifiers (
 );
 
 -- ============================================================
--- PHASE 21 — Balance of Power & Continuous Focuses
+-- PHASE 21 - Balance of Power & Continuous Focuses
 -- ============================================================
 
 -- FK build order #104
@@ -1258,7 +1258,7 @@ CREATE TABLE balance_of_power_definitions (
     source_file                 TEXT NOT NULL
 );
 
--- FK build order #105 → balance_of_power_definitions
+-- FK build order #105 -> balance_of_power_definitions
 CREATE TABLE bop_sides (
     bop_key                     VARCHAR(80) NOT NULL REFERENCES balance_of_power_definitions(bop_key),
     side_id                     VARCHAR(80) NOT NULL,
@@ -1267,7 +1267,7 @@ CREATE TABLE bop_sides (
     PRIMARY KEY (bop_key, side_id)
 );
 
--- FK build order #106 → bop_sides
+-- FK build order #106 -> bop_sides
 CREATE TABLE bop_ranges (
     range_id                    VARCHAR(80) PRIMARY KEY,
     bop_key                     VARCHAR(80) NOT NULL,
@@ -1277,7 +1277,7 @@ CREATE TABLE bop_ranges (
     FOREIGN KEY (bop_key, side_id) REFERENCES bop_sides(bop_key, side_id)
 );
 
--- FK build order #107 → bop_ranges
+-- FK build order #107 -> bop_ranges
 CREATE TABLE bop_range_modifiers (
     id                          SERIAL PRIMARY KEY,
     range_id                    VARCHAR(80) NOT NULL REFERENCES bop_ranges(range_id),
@@ -1295,7 +1295,7 @@ CREATE TABLE continuous_focus_palettes (
     source_file                 TEXT NOT NULL
 );
 
--- FK build order #109 → continuous_focus_palettes
+-- FK build order #109 -> continuous_focus_palettes
 CREATE TABLE continuous_focuses (
     focus_id                    VARCHAR(120) PRIMARY KEY,
     palette_id                  VARCHAR(80) NOT NULL REFERENCES continuous_focus_palettes(palette_id),
@@ -1305,7 +1305,7 @@ CREATE TABLE continuous_focuses (
     dlc_source                  VARCHAR(50)
 );
 
--- FK build order #110 → continuous_focuses
+-- FK build order #110 -> continuous_focuses
 CREATE TABLE continuous_focus_modifiers (
     id                          SERIAL PRIMARY KEY,
     focus_id                    VARCHAR(120) NOT NULL REFERENCES continuous_focuses(focus_id),
@@ -1314,7 +1314,7 @@ CREATE TABLE continuous_focus_modifiers (
 );
 
 -- ============================================================
--- PHASE 22 — Miscellaneous DLC Systems
+-- PHASE 22 - Miscellaneous DLC Systems
 -- ============================================================
 
 -- FK build order #111
@@ -1337,7 +1337,7 @@ CREATE TABLE dynamic_modifiers (
     dlc_source                  VARCHAR(50)
 );
 
--- FK build order #113 → dynamic_modifiers
+-- FK build order #113 -> dynamic_modifiers
 CREATE TABLE dynamic_modifier_effects (
     id                          SERIAL PRIMARY KEY,
     modifier_key                VARCHAR(120) NOT NULL REFERENCES dynamic_modifiers(modifier_key),
@@ -1356,7 +1356,7 @@ CREATE TABLE scientist_traits (
     dlc_source                  VARCHAR(50)
 );
 
--- FK build order #115 → scientist_traits
+-- FK build order #115 -> scientist_traits
 CREATE TABLE scientist_trait_modifiers (
     id                          SERIAL PRIMARY KEY,
     trait_key                   VARCHAR(80) NOT NULL REFERENCES scientist_traits(trait_key),
@@ -1371,7 +1371,7 @@ CREATE TABLE peace_action_categories (
     is_default                  BOOLEAN
 );
 
--- FK build order #117 → peace_action_categories
+-- FK build order #117 -> peace_action_categories
 CREATE TABLE peace_cost_modifiers (
     modifier_key                VARCHAR(120) PRIMARY KEY,
     category_key                VARCHAR(60) REFERENCES peace_action_categories(category_key),
@@ -1384,7 +1384,7 @@ CREATE TABLE peace_cost_modifiers (
 COMMENT ON COLUMN peace_cost_modifiers.peace_action_type IS 'Comma-separated: take_states, puppet, liberate, force_government';
 
 -- ============================================================
--- PHASE 23 — Doctrines (Officer Corps / Military Experience)
+-- PHASE 23 - Doctrines (Officer Corps / Military Experience)
 -- ============================================================
 
 -- FK build order #118
@@ -1397,9 +1397,9 @@ CREATE TABLE doctrine_folders (
 
 COMMENT ON TABLE doctrine_folders IS 'Top-level doctrine categories: land, naval, air';
 COMMENT ON COLUMN doctrine_folders.ledger IS 'army, navy, or air';
-COMMENT ON COLUMN doctrine_folders.xp_type IS 'army, navy, or air — XP currency used';
+COMMENT ON COLUMN doctrine_folders.xp_type IS 'army, navy, or air - XP currency used';
 
--- FK build order #119 → doctrine_folders
+-- FK build order #119 -> doctrine_folders
 CREATE TABLE doctrine_tracks (
     track_key                   VARCHAR(40) PRIMARY KEY,
     folder_key                  VARCHAR(20) NOT NULL REFERENCES doctrine_folders(folder_key),
@@ -1409,7 +1409,7 @@ CREATE TABLE doctrine_tracks (
 
 COMMENT ON TABLE doctrine_tracks IS 'Tracks within a doctrine folder (e.g. infantry, armor, operations)';
 
--- FK build order #120 → doctrine_folders
+-- FK build order #120 -> doctrine_folders
 CREATE TABLE grand_doctrines (
     doctrine_key                VARCHAR(60) PRIMARY KEY,
     folder_key                  VARCHAR(20) NOT NULL REFERENCES doctrine_folders(folder_key),
@@ -1421,7 +1421,7 @@ CREATE TABLE grand_doctrines (
 
 COMMENT ON TABLE grand_doctrines IS 'Mutually-exclusive grand doctrines (e.g. Mobile Warfare, Fleet in Being)';
 
--- FK build order #121 → grand_doctrines, doctrine_tracks
+-- FK build order #121 -> grand_doctrines, doctrine_tracks
 CREATE TABLE grand_doctrine_tracks (
     doctrine_key                VARCHAR(60) NOT NULL REFERENCES grand_doctrines(doctrine_key),
     track_key                   VARCHAR(40) NOT NULL REFERENCES doctrine_tracks(track_key),
@@ -1431,7 +1431,7 @@ CREATE TABLE grand_doctrine_tracks (
 
 COMMENT ON TABLE grand_doctrine_tracks IS 'Junction: which tracks belong to each grand doctrine';
 
--- FK build order #122 → doctrine_tracks
+-- FK build order #122 -> doctrine_tracks
 CREATE TABLE subdoctrines (
     subdoctrine_key             VARCHAR(80) PRIMARY KEY,
     track_key                   VARCHAR(40) NOT NULL REFERENCES doctrine_tracks(track_key),
@@ -1445,7 +1445,7 @@ CREATE TABLE subdoctrines (
 COMMENT ON TABLE subdoctrines IS 'Subdoctrines slotted into tracks; unlocked with military XP';
 COMMENT ON COLUMN subdoctrines.reward_count IS 'Number of mastery reward tiers defined';
 
--- FK build order #123 → countries, grand_doctrines, subdoctrines
+-- FK build order #123 -> countries, grand_doctrines, subdoctrines
 CREATE TABLE country_starting_doctrines (
     id                          SERIAL PRIMARY KEY,
     country_tag                 CHAR(3) NOT NULL REFERENCES countries(tag),
@@ -1459,7 +1459,7 @@ COMMENT ON COLUMN country_starting_doctrines.doctrine_type IS 'grand or sub';
 COMMENT ON COLUMN country_starting_doctrines.doctrine_key IS 'References grand_doctrines.doctrine_key or subdoctrines.subdoctrine_key';
 
 -- ============================================================
--- Phase 24 — Factions (Ride of the Valkyries)
+-- Phase 24 - Factions (Ride of the Valkyries)
 -- ============================================================
 
 CREATE TABLE faction_rule_groups (
@@ -1498,7 +1498,7 @@ CREATE TABLE faction_manifests (
     dlc_source                  VARCHAR(50)
 );
 
-COMMENT ON TABLE faction_manifests IS 'Faction manifestos — ratio progress targets for faction objectives';
+COMMENT ON TABLE faction_manifests IS 'Faction manifestos - ratio progress targets for faction objectives';
 COMMENT ON COLUMN faction_manifests.total_amount IS 'From ratio_progress.total_amount';
 
 CREATE TABLE faction_goals (
@@ -1570,7 +1570,7 @@ COMMENT ON TABLE faction_member_upgrades IS 'Individual member upgrade tiers wit
 COMMENT ON COLUMN faction_member_upgrades.bonus IS 'Numeric bonus value applied by this upgrade tier';
 
 -- ============================================================
--- Phase 25 — Special Projects (Götterdämmerung)
+-- Phase 25 - Special Projects (Götterdämmerung)
 -- ============================================================
 
 CREATE TABLE special_project_specializations (
@@ -1625,7 +1625,7 @@ CREATE TABLE special_project_reward_links (
 COMMENT ON TABLE special_project_reward_links IS 'Junction: generic prototype rewards assigned to each project';
 
 -- ============================================================
--- Phase 26 — Collections
+-- Phase 26 - Collections
 -- ============================================================
 
 CREATE TABLE collections (
@@ -1640,7 +1640,7 @@ COMMENT ON TABLE collections IS 'Scripted collection definitions used by faction
 COMMENT ON COLUMN collections.input_source IS 'From input = game:all_countries, game:scope, collection:X';
 
 -- ============================================================
--- Phase 27 — AI Faction Theaters
+-- Phase 27 - AI Faction Theaters
 -- ============================================================
 
 CREATE TABLE ai_faction_theaters (
@@ -1661,7 +1661,7 @@ CREATE TABLE ai_faction_theater_regions (
 COMMENT ON TABLE ai_faction_theater_regions IS 'Junction: strategic regions assigned to each AI theater';
 
 -- ============================================================
--- Phase 28 — Timed Activities
+-- Phase 28 - Timed Activities
 -- ============================================================
 
 CREATE TABLE timed_activities (
@@ -1682,7 +1682,7 @@ CREATE TABLE timed_activity_equipment (
 COMMENT ON TABLE timed_activity_equipment IS 'Equipment requirements for timed activities';
 
 -- ============================================================
--- Deferred FK constraints on existing tables → new parent tables
+-- Deferred FK constraints on existing tables -> new parent tables
 -- ============================================================
 
 ALTER TABLE provinces
@@ -1791,7 +1791,7 @@ CREATE INDEX ix_special_project_rewards_spec ON special_project_rewards (special
 CREATE INDEX ix_ai_faction_theater_regions_region ON ai_faction_theater_regions (region_id);
 
 -- ============================================================
--- Localisation table — English display names for game entities
+-- Localisation table - English display names for game entities
 -- Source: localisation/english/*_l_english.yml (from HOI4 install)
 -- Keys map to state_name_key, technology_key, equipment_key, etc.
 -- ============================================================

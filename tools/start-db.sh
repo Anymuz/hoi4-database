@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# ─────────────────────────────────────────────────────────────
-# start-db.sh — Start the HOI4 PostgreSQL database container
+# -------------------------------------------------------------
+# start-db.sh - Start the HOI4 PostgreSQL database container
 #
 # If the container doesn't exist yet, creates it from docker-compose.
 # If it exists but is stopped, starts it.
@@ -8,7 +8,7 @@
 #
 # Usage:
 #   bash tools/start-db.sh
-# ─────────────────────────────────────────────────────────────
+# -------------------------------------------------------------
 set -euo pipefail
 
 CONTAINER="hoi4-db"
@@ -27,7 +27,7 @@ elif docker ps -a --format '{{.Names}}' | grep -q "^${CONTAINER}$"; then
     echo "Waiting for PostgreSQL to be ready..."
     sleep 3
 
-# --- Doesn't exist — create via docker-compose ---
+# --- Doesn't exist - create via docker-compose ---
 else
     echo "Creating container from docker-compose.yml..."
     docker compose -f "$REPO_ROOT/docker-compose.yml" up -d

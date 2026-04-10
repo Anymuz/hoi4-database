@@ -89,7 +89,7 @@ def main():
         rows = parse_loc_file(f)
         all_rows.extend(rows)
 
-    # Deduplicate — later files override earlier ones (same key)
+    # Deduplicate - later files override earlier ones (same key)
     seen = {}
     for key, value, source in all_rows:
         seen[key] = (key, value, source)

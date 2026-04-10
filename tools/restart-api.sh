@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# tools/restart-api.sh — Stop then start the FastAPI server.
+# tools/restart-api.sh - Stop then start the FastAPI server.
 # Usage: bash tools/restart-api.sh
 
 set -euo pipefail

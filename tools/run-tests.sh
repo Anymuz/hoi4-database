@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# tools/run-tests.sh — Activate existing venv and run the API test suite.
+# tools/run-tests.sh - Activate existing venv and run the API test suite.
 # Usage: bash tools/run-tests.sh [pytest args...]
 # Example: bash tools/run-tests.sh -v --tb=short -k test_countries
 

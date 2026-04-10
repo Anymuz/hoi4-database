@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# tools/start-api.sh — Start the FastAPI server (Uvicorn).
+# tools/start-api.sh - Start the FastAPI server (Uvicorn).
 # Activates the venv and launches on 0.0.0.0:8000 with auto-reload.
 # Usage: bash tools/start-api.sh
 

@@ -5,7 +5,7 @@ from app.schemas.annotation import AnnotationCreate, AnnotationOut
 
 router = APIRouter(prefix="/api/v1", tags=["Annotations"])
 
-# GET /api/v1/annotations — list annotations, optional filters: ?entity_type=, ?entity_key=
+# GET /api/v1/annotations - list annotations, optional filters: ?entity_type=, ?entity_key=
 @router.get("/annotations", response_model=list[AnnotationOut])
 async def list_annotations(
     entity_type: str | None = Query(None, description="Filter by entity type (e.g. country, technology)"),
@@ -49,7 +49,7 @@ async def list_annotations(
     return [dict(row) for row in rows]
 # End of annotation list endpoint
 
-# GET /api/v1/annotations/{annotation_id} — single annotation
+# GET /api/v1/annotations/{annotation_id} - single annotation
 @router.get("/annotations/{annotation_id}", response_model=AnnotationOut)
 async def get_annotation(
     annotation_id: int,
@@ -68,7 +68,7 @@ async def get_annotation(
     return dict(row)
 # End of annotation detail endpoint
 
-# POST /api/v1/annotations — create a new annotation
+# POST /api/v1/annotations - create a new annotation
 @router.post("/annotations", response_model=AnnotationOut, status_code=201)
 async def create_annotation(
     body: AnnotationCreate,
@@ -85,7 +85,7 @@ async def create_annotation(
     return dict(row)
 # End of annotation create endpoint
 
-# DELETE /api/v1/annotations/{annotation_id} — delete an annotation
+# DELETE /api/v1/annotations/{annotation_id} - delete an annotation
 @router.delete("/annotations/{annotation_id}", status_code=204)
 async def delete_annotation(
     annotation_id: int,

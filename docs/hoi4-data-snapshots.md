@@ -3,11 +3,11 @@
 Status: **COMPLETE** (all phases)
 
 ## Purpose
-Design-phase reference — sample extracted rows per table used to validate mapping accuracy during schema design. Row counts shown here are estimates from the design phase; see `docs/data-dump/SUMMARY.md` for actual extracted counts.
+Design-phase reference - sample extracted rows per table used to validate mapping accuracy during schema design. Row counts shown here are estimates from the design phase; see `docs/data-dump/SUMMARY.md` for actual extracted counts.
 
 ---
 
-## Phase 1 — Global Reference Tables
+## Phase 1 - Global Reference Tables
 
 ### continents
 Source: `map/continent.txt`
@@ -111,11 +111,11 @@ Source: `common/units/equipment/*.txt`
 
 | equipment_key | is_archetype | archetype_key | year | build_cost_ic | soft_attack | hard_attack | source_file |
 |---|---|---|---|---|---|---|---|
-| infantry_equipment | yes | — | 1933 | 0.5 | 6 | 1 | infantry.txt |
-| infantry_equipment_0 | no | infantry_equipment | 1933 | — | — | — | infantry.txt |
+| infantry_equipment | yes | - | 1933 | 0.5 | 6 | 1 | infantry.txt |
+| infantry_equipment_0 | no | infantry_equipment | 1933 | - | - | - | infantry.txt |
 | infantry_equipment_1 | no | infantry_equipment | 1936 | 0.5 | 6 | 1.5 | infantry.txt |
-| artillery_equipment | yes | — | 1934 | 3.5 | 25 | 2 | artillery.txt |
-| fighter_equipment_0 | no | fighter_equipment | 1933 | — | — | — | air_techs.txt |
+| artillery_equipment | yes | - | 1934 | 3.5 | 25 | 2 | artillery.txt |
+| fighter_equipment_0 | no | fighter_equipment | 1933 | - | - | - | air_techs.txt |
 
 ### equipment_resources (sample)
 Source: `common/units/equipment/*.txt`
@@ -141,7 +141,7 @@ Source: `common/technologies/*.txt`
 
 ---
 
-## Phase 2 — Geography
+## Phase 2 - Geography
 
 ### provinces (sample)
 Source: `map/definition.csv`
@@ -159,11 +159,11 @@ Source: `map/buildings.txt`
 
 | province_id | building_type | pos_x | pos_y | pos_z | rotation | linked_province_id |
 |---|---|---|---|---|---|---|
-| 1 | arms_factory | 2946.00 | 11.63 | 1364.00 | 0.45 | — |
-| 1 | industrial_complex | 2950.00 | 12.05 | 1361.00 | 3.12 | — |
-| 1 | air_base | 2948.38 | 11.60 | 1359.45 | 0.15 | — |
+| 1 | arms_factory | 2946.00 | 11.63 | 1364.00 | 0.45 | - |
+| 1 | industrial_complex | 2950.00 | 12.05 | 1361.00 | 3.12 | - |
+| 1 | air_base | 2948.38 | 11.60 | 1359.45 | 0.15 | - |
 | 1 | naval_base_spawn | 2954.00 | 9.70 | 1370.00 | 0.98 | 5579 |
-| 1 | bunker | 2946.00 | 11.63 | 1364.00 | 5.69 | — |
+| 1 | bunker | 2946.00 | 11.63 | 1364.00 | 5.69 | - |
 
 ### strategic_regions (sample)
 Source: `map/strategicregions/*.txt`
@@ -200,18 +200,18 @@ Source: `history/states/*.txt`
 
 ---
 
-## Phase 3 — Countries
+## Phase 3 - Countries
 
 ### countries (sample)
 Source: `common/country_tags/00_countries.txt`, `common/countries/*.txt`, `history/countries/*.txt`
 
 | tag | country_file_path | color_r | color_g | color_b | capital_state_id | stability | war_support |
 |---|---|---|---|---|---|---|---|
-| GER | countries/Germany.txt | 106 | 119 | 89 | 64 | — | — |
+| GER | countries/Germany.txt | 106 | 119 | 89 | 64 | - | - |
 | ENG | countries/United Kingdom.txt | 201 | 56 | 91 | 126 | 0.8 | 0.65 |
-| SOV | countries/Soviet Union.txt | 220 | 0 | 0 | 219 | — | — |
+| SOV | countries/Soviet Union.txt | 220 | 0 | 0 | 219 | - | - |
 | USA | countries/United States.txt | 83 | 101 | 164 | 361 | 0.96 | 0.1 |
-| JAP | countries/Japan.txt | 192 | 116 | 67 | 282 | — | — |
+| JAP | countries/Japan.txt | 192 | 116 | 67 | 282 | - | - |
 
 ### country_starting_technologies (sample)
 Source: `history/countries/*.txt`
@@ -237,7 +237,7 @@ Source: `history/countries/*.txt`
 
 ---
 
-## Phase 4 — Technologies
+## Phase 4 - Technologies
 
 ### technology_prerequisites (sample)
 Source: `common/technologies/*.txt`
@@ -263,7 +263,7 @@ Source: `common/technologies/*.txt`
 
 ---
 
-## Phase 5 — Characters
+## Phase 5 - Characters
 
 ### characters (sample)
 Source: `common/characters/*.txt`
@@ -281,15 +281,15 @@ Source: `common/characters/*.txt`
 
 | character_id | role_type | sub_ideology_key | skill | attack_skill | defense_skill |
 |---|---|---|---|---|---|
-| GER_adolf_hitler | country_leader | nazism | — | — | — |
-| GER_konrad_adenauer | country_leader | conservatism | — | — | — |
-| GER_werner_von_blomberg | field_marshal | — | 3 | 2 | 3 |
-| GER_erwin_rommel | advisor | — | — | — | — |
-| GER_karl_donitz | advisor | — | — | — | — |
+| GER_adolf_hitler | country_leader | nazism | - | - | - |
+| GER_konrad_adenauer | country_leader | conservatism | - | - | - |
+| GER_werner_von_blomberg | field_marshal | - | 3 | 2 | 3 |
+| GER_erwin_rommel | advisor | - | - | - | - |
+| GER_karl_donitz | advisor | - | - | - | - |
 
 ---
 
-## Phase 6 — Division Templates & OOB
+## Phase 6 - Division Templates & OOB
 
 ### division_templates (sample)
 Source: `history/units/*.txt`
@@ -302,7 +302,7 @@ Source: `history/units/*.txt`
 | SOV | Strelkovaya Divisiia | SOV_INF_01 | SOV_1936.txt |
 | USA | Infantry Division | USA_INF_01 | USA_1936.txt |
 
-### division_template_regiments (sample — GER Infanterie-Division)
+### division_template_regiments (sample - GER Infanterie-Division)
 Source: `history/units/GER_1936.txt`
 
 | template_name | unit_type_key | grid_x | grid_y |
@@ -314,7 +314,7 @@ Source: `history/units/GER_1936.txt`
 | Infanterie-Division | infantry | 1 | 1 |
 | Infanterie-Division | infantry | 1 | 2 |
 
-### division_template_support (sample — GER)
+### division_template_support (sample - GER)
 Source: `history/units/GER_1936.txt`
 
 | template_name | unit_type_key | grid_x | grid_y |
@@ -333,14 +333,14 @@ Source: `history/units/*.txt`
 | AFG | Royal Guard | 10737 | 0.3 | AFG_1936.txt |
 | GER | Infanterie-Division | 6389 | 0.3 | GER_1936.txt |
 | GER | Panzer-Division | 3562 | 0.3 | GER_1936.txt |
-| ENG | Infantry Division | 3839 | — | ENG_1936.txt |
-| SOV | Strelkovaya Divisiia | 217 | — | SOV_1936.txt |
+| ENG | Infantry Division | 3839 | - | ENG_1936.txt |
+| SOV | Strelkovaya Divisiia | 217 | - | SOV_1936.txt |
 
 ---
 
-## Phase 7 — Naval OOB
+## Phase 7 - Naval OOB
 
-### fleets (sample — GER)
+### fleets (sample - GER)
 Source: `history/units/GER_1936_naval_mtg.txt`
 
 | country_tag | fleet_name | naval_base_province_id | oob_file |
@@ -348,7 +348,7 @@ Source: `history/units/GER_1936_naval_mtg.txt`
 | GER | Kriegsmarine | 241 | GER_1936_naval_mtg.txt |
 | GER | Unterseeboots-Flotte | 6389 | GER_1936_naval_mtg.txt |
 
-### task_forces (sample — GER)
+### task_forces (sample - GER)
 Source: `history/units/GER_1936_naval_mtg.txt`
 
 | fleet_name | task_force_name | location_province_id |
@@ -359,7 +359,7 @@ Source: `history/units/GER_1936_naval_mtg.txt`
 | Unterseeboots-Flotte | I. U-Boots Flottille Weddigen | 6389 |
 | Unterseeboots-Flotte | II. U-Boots-Ausbildungs-Gruppe | 241 |
 
-### ships (sample — GER)
+### ships (sample - GER)
 Source: `history/units/GER_1936_naval_mtg.txt`
 
 | task_force_name | ship_name | definition | hull_equipment_key | version_name | owner_tag | pride_of_the_fleet |
@@ -372,22 +372,22 @@ Source: `history/units/GER_1936_naval_mtg.txt`
 
 ---
 
-## Phase 8 — Air OOB
+## Phase 8 - Air OOB
 
-### air_wings (sample — GER)
+### air_wings (sample - GER)
 Source: `history/units/GER_1936_air_bba.txt`
 
 | country_tag | location_state_id | wing_name | equipment_type | amount | version_name |
 |---|---|---|---|---|---|
-| GER | 763 | — | small_plane_airframe_0 | 40 | He 51 |
-| GER | 64 | — | small_plane_airframe_0 | 80 | He 51 |
+| GER | 763 | - | small_plane_airframe_0 | 40 | He 51 |
+| GER | 64 | - | small_plane_airframe_0 | 80 | He 51 |
 | GER | 64 | Jagdgeschwader 132 | medium_plane_airframe_0 | 80 | Do 23 |
-| GER | 64 | Kampfgeschwader 153 | transport_plane_equipment_1 | 80 | — |
-| GER | 58 | — | small_plane_naval_bomber_airframe_1 | 72 | Do 22 |
+| GER | 64 | Kampfgeschwader 153 | transport_plane_equipment_1 | 80 | - |
+| GER | 58 | - | small_plane_naval_bomber_airframe_1 | 72 | Do 22 |
 
 ---
 
-## Phase 9 — Ideas & National Spirits
+## Phase 9 - Ideas & National Spirits
 
 ### ideas (sample)
 Source: `common/ideas/*.txt`
@@ -398,7 +398,7 @@ Source: `common/ideas/*.txt`
 | war_economy | economy | yes | 150 | -1 | no | _economic.txt |
 | export_focus | trade_laws | yes | 150 | -1 | yes | _economic.txt |
 | free_trade | trade_laws | yes | 150 | -1 | no | _economic.txt |
-| fascist_assault_divisions | country | no | — | — | no | _event.txt |
+| fascist_assault_divisions | country | no | - | - | no | _event.txt |
 
 ### idea_modifiers (sample)
 Source: `common/ideas/*.txt`
@@ -413,7 +413,7 @@ Source: `common/ideas/*.txt`
 
 ---
 
-## Phase 10 — Focus Trees
+## Phase 10 - Focus Trees
 
 ### focus_trees (sample)
 Source: `common/national_focus/*.txt`
@@ -421,10 +421,10 @@ Source: `common/national_focus/*.txt`
 | focus_tree_id | country_tag | initial_x | initial_y | source_file |
 |---|---|---|---|---|
 | german_focus | GER | 76 | 0 | germany.txt |
-| generic_focus | — | — | — | generic.txt |
+| generic_focus | - | - | - | generic.txt |
 | argentine_focus_tree | ARG | 25 | 0 | argentina.txt |
 | finnish_focus | FIN | 23 | 0 | finland.txt |
-| french_focus | FRA | — | — | france.txt |
+| french_focus | FRA | - | - | france.txt |
 
 ### focuses (sample)
 Source: `common/national_focus/*.txt`

@@ -5,7 +5,7 @@ import pytest
 # Mark every test in this file as async so pytest-asyncio will run them.
 pytestmark = pytest.mark.asyncio(loop_scope="session")
 
-# Helper — create an annotation and return the response JSON.
+# Helper - create an annotation and return the response JSON.
 async def _create(client, entity_type="country", entity_key="GER", note="Test annotation"):
     resp = await client.post(
         "/api/v1/annotations",
