@@ -9,7 +9,7 @@ A fully normalised **PostgreSQL 16** database representing all Hearts of Iron IV
 ## Quick Start
 
 ```bash
-git clone <repo-url> && cd hoi4-database
+git clone https://github.com/Anymuz/hoi4-database.git && cd hoi4-database
 
 # 1  Extract game data → markdown + localisation
 python tools/db_etl/export_markdown_dump.py        # auto-detects HOI4 install
