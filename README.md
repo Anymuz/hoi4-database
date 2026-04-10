@@ -66,6 +66,7 @@ hoi4-database/
 │   │   ├── config.py                  Pydantic settings (DATABASE_URL, etc.)
 │   │   ├── database.py                asyncpg pool lifecycle + JSONB codec
 │   │   ├── dependencies.py            Shared deps (date validation)
+│   │   ├── graphQL/                   GraphQL implementation files
 │   │   ├── routers/                   Endpoint modules (countries, states, …)
 │   │   └── schemas/                   Pydantic response models
 │   ├── tests/                         pytest-asyncio integration tests (105 tests)
@@ -77,9 +78,6 @@ hoi4-database/
 │   ├── hoi4-table-catalog.md          Column-level specs for every table (~2,100 lines)
 │   ├── hoi4-source-to-table-map.md    Game file → target table mapping
 │   ├── hoi4-data-snapshots.md         Sample extracted rows per table
-│   ├── plans/
-│   │   ├── v1/                        API v1 design, implementation plan, testing guide
-│   │   └── v2/                        API v2 plan (events, diplomacy, wargoals, effects)
 │   └── data-dump/                     160 extracted markdown data files (gitignored)
 │       └── SUMMARY.md                 Index with row counts
 ├── data/
@@ -87,8 +85,6 @@ hoi4-database/
 ├── sql/
 │   ├── schema.sql                     DDL — 151 tables, 4 ALTER TABLE, 63 indexes
 │   ├── views.sql                      14 API views + 2 date-parameterised functions
-│   ├── seed-load-order.sql            FK-safe \copy load (native psql)
-│   ├── seed-docker.sql                FK-safe COPY load (Docker container)
 │   └── README.md                      SQL design rationale
 ├── tools/
 │   ├── start-db.sh                    Start PostgreSQL container
@@ -107,7 +103,7 @@ hoi4-database/
 │       ├── gen_seed_docker.py         Generates seed-docker.sql
 │       ├── validate_data.py           FK/PK/NOT NULL validation
 │       ├── runbook.md                 Deployment & ETL guide (start here)
-│       └── manifest.md               Parser module inventory
+│       └── manifest.md                Parser module inventory
 └── docker-compose.yml                 PostgreSQL 16 service definition
 ```
 
