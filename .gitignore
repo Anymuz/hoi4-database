@@ -8,8 +8,11 @@ build/
 venv/
 
 docs/call.md
+docs/plans/
 
-# Copilot customization (local only)
+sql/seed-load-order.sql
+sql/seed-docker.sql
+
 .github/
 
 # IDE
