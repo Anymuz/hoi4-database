@@ -7,7 +7,6 @@
 # If it's already running, just confirms the connection.
 #
 # Usage:
-#   cd /mnt/c/Users/joshu/hoi4-database
 #   bash tools/start-db.sh
 # ─────────────────────────────────────────────────────────────
 set -euo pipefail
