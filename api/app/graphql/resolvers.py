@@ -12,6 +12,7 @@ from app.graphql.types import (
     FocusTree, Equipment, EquipmentVariant, EquipmentVariantModule,
     EquipmentVariantUpgrade, Idea, Mio, Operation, Bop,
     Faction, SpecialProject, Annotation, Wargoal,
+    DiplomaticRelation, StartingFaction,
 )
 
 # Helper function to get the asyncpg pool from the FastAPI app context.
@@ -428,4 +429,32 @@ class Query:
             )
             return [Wargoal.from_row(r) for r in rows]
     # End of wargoals resolver.
+
+    # Diplomatic relations from country history files.
+    @strawberry.field
+    async def diplomatic_relations(self, info: Info, country_tag: Optional[str] = None) -> list[DiplomaticRelation]:
+        pool = await get_pool(info)
+        async with pool.acquire() as conn:
+            if country_tag:
+                rows = await conn.fetch(
+                    "SELECT * FROM diplomatic_relations WHERE country_tag = $1 ORDER BY target_tag",
+                    country_tag.upper(),
+                )
+            else:
+                rows = await conn.fetch(
+                    "SELECT * FROM diplomatic_relations ORDER BY country_tag, target_tag"
+                )
+            return [DiplomaticRelation.from_row(r) for r in rows]
+    # End of diplomatic_relations resolver.
+
+    # Starting factions with their members.
+    @strawberry.field
+    async def starting_factions(self, info: Info) -> list[StartingFaction]:
+        pool = await get_pool(info)
+        async with pool.acquire() as conn:
+            rows = await conn.fetch(
+                "SELECT * FROM api_starting_factions ORDER BY faction_template_key"
+            )
+            return [StartingFaction.from_row(r) for r in rows]
+    # End of starting_factions resolver.
 # End of Query class.

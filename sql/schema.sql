@@ -1843,5 +1843,33 @@ CREATE TABLE wargoal_types (
     source_file             VARCHAR(200)
 );
 
+-- Phase 9: Starting Diplomatic State
+CREATE TABLE diplomatic_relations (
+    diplomatic_relation_id  SERIAL PRIMARY KEY,
+    country_tag             CHAR(3) NOT NULL REFERENCES countries(tag),
+    target_tag              CHAR(3) NOT NULL REFERENCES countries(tag),
+    relation_type           VARCHAR(40) NOT NULL,
+    autonomy_type           VARCHAR(80),
+    freedom_level           NUMERIC(5,4),
+    effective_date          DATE NOT NULL DEFAULT '1936-01-01',
+    dlc_source              VARCHAR(120),
+    source_file             VARCHAR(200)
+);
+
+CREATE TABLE starting_factions (
+    starting_faction_id     SERIAL PRIMARY KEY,
+    faction_template_key    VARCHAR(120) NOT NULL,
+    leader_tag              CHAR(3) NOT NULL REFERENCES countries(tag),
+    effective_date          DATE NOT NULL DEFAULT '1936-01-01',
+    source_file             VARCHAR(200)
+);
+
+CREATE TABLE starting_faction_members (
+    starting_faction_member_id SERIAL PRIMARY KEY,
+    starting_faction_id     INT NOT NULL REFERENCES starting_factions(starting_faction_id),
+    member_tag              CHAR(3) NOT NULL REFERENCES countries(tag),
+    source_file             VARCHAR(200)
+);
+
 -- End of schema definition
 COMMIT;

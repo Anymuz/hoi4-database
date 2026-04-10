@@ -25,6 +25,7 @@ tags_metadata = [
     {"name": "Factions",         "description": "Faction templates, goals, rules (DLC: Götterdämmerung)"},
     {"name": "Special Projects", "description": "Special R&D projects (DLC: Götterdämmerung)"},
     {"name": "Wargoals",         "description": "Wargoal type definitions (casus belli)"},
+    {"name": "Diplomacy",        "description": "Starting diplomatic relations, autonomy, factions"},
     {"name": "Annotations",      "description": "User-created notes on game entities"},
 ]
 
@@ -52,7 +53,7 @@ async def health_check():
 # End of health_check endpoint.
 
 # Mount REST routers - each handles one domain under /api/v1/
-from app.routers import characters, countries, equipment, focuses, ideas, military, states, technologies, dlc, annotations, wargoals
+from app.routers import characters, countries, equipment, focuses, ideas, military, states, technologies, dlc, annotations, wargoals, diplomacy
 
 app.include_router(countries.router)
 app.include_router(states.router)
@@ -62,6 +63,7 @@ app.include_router(military.router)
 app.include_router(focuses.router)
 app.include_router(equipment.router)
 app.include_router(ideas.router)
+app.include_router(diplomacy.router)
 app.include_router(dlc.router)
 app.include_router(annotations.router)
 app.include_router(wargoals.router)

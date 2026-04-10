@@ -3584,6 +3584,79 @@ def parse_country_starting_doctrines() -> int:
     return len(rows)
 
 
+# -- Phase 9: Starting Diplomatic State --------------------------------
+
+def parse_starting_diplomacy() -> Tuple[int, int, int]:
+    """Extract diplomatic relations and starting factions from history/countries/*.txt.
+
+    Returns (diplomatic_relation_count, faction_count, faction_member_count).
+    """
+    dirp = ROOT / "history" / "countries"
+    diplo_rows: List[List[str]] = []
+    faction_rows: List[List[str]] = []
+    member_rows: List[List[str]] = []
+
+    for fp in sorted(dirp.glob("*.txt")):
+        tag_m = re.match(r"^([A-Z0-9]+)", fp.name)
+        if not tag_m:
+            continue
+        tag = tag_m.group(1)
+        txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+
+        # -- give_guarantee --
+        for m in re.finditer(r"\bgive_guarantee\s*=\s*([A-Z]{3})", txt):
+            eff_date = _find_enclosing_date(txt, m.start())
+            dlc_src = _find_enclosing_dlc(txt, m.start())
+            diplo_rows.append([tag, m.group(1), "guarantee", "", "", eff_date, dlc_src, fp.name])
+
+        # -- set_autonomy blocks --
+        for m in re.finditer(r"\bset_autonomy\s*=\s*\{", txt):
+            block = extract_block(txt, m.start())
+            tgt = re.search(r"\btarget\s*=\s*([A-Z]{3})", block)
+            aut = re.search(r"\bautonomous_state\s*=\s*(\S+)", block)
+            fl = re.search(r"\bfreedom_level\s*=\s*([0-9.]+)", block)
+            if tgt:
+                eff_date = _find_enclosing_date(txt, m.start())
+                dlc_src = _find_enclosing_dlc(txt, m.start())
+                diplo_rows.append([
+                    tag, tgt.group(1), "autonomy",
+                    aut.group(1) if aut else "",
+                    fl.group(1) if fl else "",
+                    eff_date, dlc_src, fp.name,
+                ])
+
+        # -- puppet (simple form, typically in else blocks) --
+        for m in re.finditer(r"\bpuppet\s*=\s*([A-Z]{3})", txt):
+            eff_date = _find_enclosing_date(txt, m.start())
+            dlc_src = _find_enclosing_dlc(txt, m.start())
+            diplo_rows.append([tag, m.group(1), "puppet", "", "", eff_date, dlc_src, fp.name])
+
+        # -- create_faction_from_template --
+        for m in re.finditer(r"\bcreate_faction_from_template\s*=\s*(\S+)", txt):
+            eff_date = _find_enclosing_date(txt, m.start())
+            faction_rows.append([m.group(1), tag, eff_date, fp.name])
+
+        # -- add_to_faction  (only top-level simple TAG references) --
+        for m in re.finditer(r"\badd_to_faction\s*=\s*([A-Z]{3})\b", txt):
+            member_rows.append([tag, m.group(1), fp.name])
+
+    diplo_rows = dedup_rows(diplo_rows, [0, 1, 2, 5])
+    faction_rows = dedup_rows(faction_rows, [0, 1])
+    member_rows = dedup_rows(member_rows, [0, 1])
+
+    write_md(OUT / "diplomatic_relations.md", "Diplomatic Relations",
+        ["country_tag", "target_tag", "relation_type", "autonomy_type",
+         "freedom_level", "effective_date", "dlc_source", "source_file"],
+        diplo_rows, "history/countries/*.txt")
+    write_md(OUT / "starting_factions.md", "Starting Factions",
+        ["faction_template_key", "leader_tag", "effective_date", "source_file"],
+        faction_rows, "history/countries/*.txt")
+    write_md(OUT / "starting_faction_members.md", "Starting Faction Members",
+        ["leader_tag", "member_tag", "source_file"],
+        member_rows, "history/countries/*.txt")
+    return len(diplo_rows), len(faction_rows), len(member_rows)
+
+
 # -- Phase 24: Factions ------------------------------------------------
 
 def parse_faction_rule_groups() -> Tuple[int, int]:
@@ -4285,6 +4358,12 @@ def main() -> None:
 
     stats["subdoctrines"] = parse_subdoctrines()
     stats["country_starting_doctrines"] = parse_country_starting_doctrines()
+
+    # -- Phase 9: Starting Diplomatic State --
+    diplo_n, sf_n, sfm_n = parse_starting_diplomacy()
+    stats["diplomatic_relations"] = diplo_n
+    stats["starting_factions"] = sf_n
+    stats["starting_faction_members"] = sfm_n
 
     # -- Phase 24: Factions --
     frg_n, frgm_n = parse_faction_rule_groups()

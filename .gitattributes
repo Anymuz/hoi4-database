@@ -1,1 +1,4 @@
+# Force LF line endings for all shell scripts and Unix-specific files
 *.sh text eol=lf
+*.bash text eol=lf
+Makefile text eol=lf

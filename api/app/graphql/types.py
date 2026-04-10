@@ -704,7 +704,7 @@ class SpecialProject:
 # ------------------------------------------------------
 
 # Annotation related types, use the api_annotation_detail view:
-# Annotation is a more generic type tha represents a user-created annotation for an entity in the game, with its ID, type, key, note content, and creation timestamp. 
+# Annotation is a more generic type that represents a user-created annotation for an entity in the game, with its ID, type, key, note content, and creation timestamp. 
 @strawberry.type
 class Annotation:
     annotation_id: int
@@ -751,4 +751,63 @@ class Wargoal:
         return cls(**d)
     # End of from_row class method.
 # End of Wargoal type.
+# ------------------------------------------------------
+
+# Diplomacy and faction related types, use the api_diplomatic_relation_detail view:
+# DiplomaticRelation represents a diplomatic relation between two countries, with its type, autonomy level, freedom level, effective date, and other details.
+@strawberry.type
+class DiplomaticRelation:
+    diplomatic_relation_id: int
+    country_tag: str
+    target_tag: str
+    relation_type: str
+    autonomy_type: Optional[str] = None
+    freedom_level: Optional[float] = None
+    effective_date: Optional[str] = None
+    dlc_source: Optional[str] = None
+    source_file: Optional[str] = None
+
+    # Classmethod to convert from a database row into a DiplomaticRelation object, handling the conversion of numeric fields and date fields.
+    @classmethod
+    def from_row(cls, row):
+        d = dict(row)
+        if d.get("freedom_level") is not None:
+            d["freedom_level"] = float(d["freedom_level"])
+        if d.get("effective_date") is not None:
+            d["effective_date"] = str(d["effective_date"])
+        return cls(**d)
+    # End of from_row class method.
+# End of DiplomaticRelation type.
+
+# StartingFactionMember represents a member of a starting faction, with their tag and name. Nested within the StartingFaction type.
+@strawberry.type
+class StartingFactionMember:
+    member_tag: str
+    member_name: Optional[str] = None
+# End of StartingFactionMember type.
+
+# StartingFaction represents a faction that exists at the start of the game, with its ID, template key, leader, effective date, and members.
+@strawberry.type
+class StartingFaction:
+    starting_faction_id: int
+    faction_template_key: str
+    leader_tag: str
+    leader_name: Optional[str] = None
+    effective_date: Optional[str] = None
+    members: list[StartingFactionMember] = strawberry.field(default_factory=list)
+
+    # Classmethod to convert from a database row into a StartingFaction object, handling the conversion of date fields and the nested members list.
+    @classmethod
+    def from_row(cls, row):
+        d = dict(row)
+        if d.get("effective_date") is not None:
+            d["effective_date"] = str(d["effective_date"])
+        members_raw = d.pop("members", [])
+        import json
+        if isinstance(members_raw, str):
+            members_raw = json.loads(members_raw)
+        d["members"] = [StartingFactionMember(**m) for m in members_raw]
+        return cls(**d)
+    # End of from_row class method.
+# End of StartingFaction type.
 # ------------------------------------------------------

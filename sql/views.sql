@@ -719,3 +719,29 @@ SELECT
         WHERE sprl.project_key = sp.project_key
     ), '[]'::jsonb) AS rewards
 FROM special_projects sp;
+
+-- ============================================================
+-- Slice D - Starting Diplomatic State
+-- ============================================================
+
+CREATE OR REPLACE VIEW api_starting_factions AS
+SELECT
+    sf.starting_faction_id,
+    sf.faction_template_key,
+    sf.leader_tag,
+    COALESCE(ll.loc_value, sf.leader_tag) AS leader_name,
+    sf.effective_date,
+    COALESCE((
+        SELECT jsonb_agg(
+            jsonb_build_object(
+                'member_tag', sfm.member_tag,
+                'member_name', COALESCE(ml.loc_value, sfm.member_tag)
+            )
+            ORDER BY sfm.member_tag
+        )
+        FROM starting_faction_members sfm
+        LEFT JOIN localisation ml ON ml.loc_key = sfm.member_tag
+        WHERE sfm.starting_faction_id = sf.starting_faction_id
+    ), '[]'::jsonb) AS members
+FROM starting_factions sf
+LEFT JOIN localisation ll ON ll.loc_key = sf.leader_tag;
