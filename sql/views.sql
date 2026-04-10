@@ -397,6 +397,7 @@ SELECT
                 'y_pos', f.y_pos,
                 'icon', f.icon,
                 'dlc_source', f.dlc_source,
+                'completion_reward', f.completion_reward,
                 'prerequisites', COALESCE((
                     SELECT jsonb_agg(
                         jsonb_build_object(
@@ -469,6 +470,9 @@ SELECT
     i.removal_cost,
     i.is_default,
     i.dlc_source,
+    i.on_add_effect,
+    i.on_remove_effect,
+    i.allowed_condition,
     COALESCE((
         SELECT jsonb_agg(
             jsonb_build_object('modifier_key', im.modifier_key, 'modifier_value', im.modifier_value)

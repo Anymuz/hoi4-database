@@ -78,3 +78,23 @@ async def test_country_focus_tree_404(client):
     assert resp.status_code == 404
 # End of test_country_focus_tree_404
 # ----------------------------------------------
+
+# Phase 7: Focus scripted effect tests:
+async def test_focus_has_completion_reward(client):
+    """At least one focus in Germany's tree has a completion_reward."""
+    resp = await client.get("/api/v1/countries/GER/focus-tree")
+    assert resp.status_code == 200
+    data = resp.json()
+    rewards = [f for f in data["focuses"] if f.get("completion_reward")]
+    assert len(rewards) > 0
+# End of test_focus_has_completion_reward
+
+async def test_focus_completion_reward_is_string(client):
+    """completion_reward should be a string when present."""
+    resp = await client.get("/api/v1/countries/GER/focus-tree")
+    data = resp.json()
+    rewards = [f for f in data["focuses"] if f.get("completion_reward")]
+    assert isinstance(rewards[0]["completion_reward"], str)
+    assert len(rewards[0]["completion_reward"]) > 5
+# End of test_focus_completion_reward_is_string
+# ----------------------------------------------

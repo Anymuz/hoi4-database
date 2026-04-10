@@ -15,4 +15,7 @@ class IdeaDetail(BaseModel):
     removal_cost: float | None = None
     is_default: bool
     dlc_source: str | None = None
+    on_add_effect: str | None = None
+    on_remove_effect: str | None = None
+    allowed_condition: str | None = None
     modifiers: list[IdeaModifier] = []

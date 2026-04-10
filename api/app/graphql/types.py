@@ -306,6 +306,7 @@ class Focus:
     y_pos: Optional[int] = None
     icon: Optional[str] = None
     dlc_source: Optional[str] = None
+    completion_reward: Optional[str] = None
     prerequisites: list[FocusPrereq]
     mutually_exclusive: list[str]
 
@@ -420,6 +421,9 @@ class Idea:
     removal_cost: Optional[float] = None
     is_default: bool
     dlc_source: Optional[str] = None
+    on_add_effect: Optional[str] = None
+    on_remove_effect: Optional[str] = None
+    allowed_condition: Optional[str] = None
     modifiers: list[IdeaModifier]
 
     # Classmethod to handle the complex nested data structure returned by the database.

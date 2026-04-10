@@ -40,6 +40,9 @@ TIER0 = [
     "scientist_traits", "peace_action_categories", "autonomy_states",
     "occupation_laws", "decision_categories", "balance_of_power_definitions",
     "doctrine_folders",
+    "ai_faction_theaters", "collections", "faction_goals", "faction_manifests",
+    "faction_member_upgrade_groups", "faction_rule_groups", "localisation",
+    "special_project_specializations", "special_project_tags", "timed_activities",
 ]
 
 TIER1 = [
@@ -54,6 +57,8 @@ TIER1 = [
     "unit_medal_modifiers", "continuous_focuses", "dynamic_modifier_effects",
     "scientist_trait_modifiers", "peace_cost_modifiers", "bop_sides",
     "ideas", "grand_doctrine_tracks", "subdoctrines",
+    "faction_member_upgrades", "faction_rules", "faction_templates",
+    "special_projects", "special_project_rewards", "timed_activity_equipment",
 ]
 
 TIER2 = [
@@ -67,6 +72,8 @@ TIER2 = [
     "intel_agency_upgrade_progress_modifiers",
     "mio_organization_equipment_types", "mio_initial_traits", "mio_traits",
     "raid_equipment_requirements", "continuous_focus_modifiers", "bop_ranges",
+    "faction_rule_group_members", "faction_template_goals",
+    "faction_template_rules", "special_project_reward_links",
 ]
 
 TIER3 = [
@@ -75,6 +82,7 @@ TIER3 = [
     "countries", "operation_phase_options",
     "mio_trait_bonuses", "mio_trait_prerequisites", "mio_trait_exclusions",
     "bop_range_modifiers",
+    "ai_faction_theater_regions",
 ]
 
 TIER4 = [
@@ -169,6 +177,32 @@ lines.append("  SELECT b.bookmark_id, s.country_tag, s.ideology_key")
 lines.append("  FROM _stage_bc s")
 lines.append("  JOIN bookmarks b ON b.bookmark_name = s.bookmark_name;")
 lines.append("DROP TABLE _stage_bc;")
+
+lines.append("")
+lines.append("-- equipment_variant_modules: resolve natural key -> equipment_variant_id")
+lines.append("CREATE TEMP TABLE _stage_evm (owner_tag TEXT, base_equipment_key TEXT, version_name TEXT, effective_date TEXT, slot_name TEXT, module_key TEXT);")
+lines.append("\\copy _stage_evm FROM 'data/csv/equipment_variant_modules.csv' WITH (FORMAT csv, HEADER);")
+lines.append("INSERT INTO equipment_variant_modules (equipment_variant_id, slot_name, module_key)")
+lines.append("  SELECT ev.equipment_variant_id, s.slot_name, s.module_key")
+lines.append("  FROM _stage_evm s")
+lines.append("  JOIN equipment_variants ev ON ev.owner_tag = s.owner_tag")
+lines.append("    AND ev.base_equipment_key = s.base_equipment_key")
+lines.append("    AND COALESCE(ev.version_name, '') = COALESCE(s.version_name, '')")
+lines.append("    AND ev.effective_date = s.effective_date::date;")
+lines.append("DROP TABLE _stage_evm;")
+
+lines.append("")
+lines.append("-- equipment_variant_upgrades: resolve natural key -> equipment_variant_id")
+lines.append("CREATE TEMP TABLE _stage_evu (owner_tag TEXT, base_equipment_key TEXT, version_name TEXT, effective_date TEXT, upgrade_key TEXT, upgrade_level TEXT);")
+lines.append("\\copy _stage_evu FROM 'data/csv/equipment_variant_upgrades.csv' WITH (FORMAT csv, HEADER);")
+lines.append("INSERT INTO equipment_variant_upgrades (equipment_variant_id, upgrade_key, upgrade_level)")
+lines.append("  SELECT ev.equipment_variant_id, s.upgrade_key, s.upgrade_level::int")
+lines.append("  FROM _stage_evu s")
+lines.append("  JOIN equipment_variants ev ON ev.owner_tag = s.owner_tag")
+lines.append("    AND ev.base_equipment_key = s.base_equipment_key")
+lines.append("    AND COALESCE(ev.version_name, '') = COALESCE(s.version_name, '')")
+lines.append("    AND ev.effective_date = s.effective_date::date;")
+lines.append("DROP TABLE _stage_evu;")
 
 lines.append("")
 

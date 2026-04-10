@@ -522,6 +522,9 @@ CREATE TABLE ideas (
     removal_cost                INT,
     is_default                  BOOLEAN,
     picture                     VARCHAR(120),
+    on_add_effect               TEXT,
+    on_remove_effect            TEXT,
+    allowed_condition           TEXT,
     source_file                 TEXT NOT NULL,
     dlc_source                  VARCHAR(50)
 );
@@ -707,6 +710,7 @@ CREATE TABLE focuses (
     cancel_if_invalid           BOOLEAN,
     continue_if_invalid         BOOLEAN,
     available_if_capitulated    BOOLEAN,
+    completion_reward            TEXT,
     source_file                 TEXT NOT NULL,
     dlc_source                  VARCHAR(50)
 );
@@ -834,6 +838,11 @@ CREATE TABLE decisions (
     category_key                VARCHAR(80) NOT NULL REFERENCES decision_categories(category_key),
     icon                        VARCHAR(120),
     cost                        INT,
+    allowed                     TEXT,
+    available                   TEXT,
+    visible                     TEXT,
+    complete_effect             TEXT,
+    remove_effect               TEXT,
     fire_only_once              BOOLEAN,
     dlc_source                  VARCHAR(80)
 );

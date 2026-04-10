@@ -59,7 +59,7 @@ def write_md(path: Path, title: str, table_headers: List[str], rows: List[List[s
         f.write("| " + " | ".join(table_headers) + " |\n")
         f.write("|" + "|".join(["---"] * len(table_headers)) + "|\n")
         for row in rows:
-            safe = [str(c).replace("|", "\\|") for c in row]
+            safe = [str(c).replace("|", "\\|").replace("\n", "\\n") for c in row]
             f.write("| " + " | ".join(safe) + " |\n")
 
 
@@ -96,6 +96,21 @@ def parse_country_tags() -> int:
             if m:
                 oob_tags.add(m.group(1))
         for tag in sorted(oob_tags - declared_tags):
+            rows.append([tag, ""])
+
+    # Also discover tags from character definitions inside character files.
+    chars_dir = ROOT / "common" / "characters"
+    if chars_dir.exists():
+        char_tags: set = set()
+        for fp in chars_dir.glob("*.txt"):
+            # filename-based
+            tag = fp.stem.upper()
+            if len(tag) <= 3 and tag.isalpha():
+                char_tags.add(tag)
+            # content-based: look for character id definitions like  TAG_name = {
+            for m2 in re.finditer(r'^\s+([A-Z]{2,3})_\w+\s*=\s*\{', fp.read_text(encoding="utf-8", errors="ignore"), re.MULTILINE):
+                char_tags.add(m2.group(1))
+        for tag in sorted(char_tags - declared_tags):
             rows.append([tag, ""])
 
     rows = dedup_rows(rows, [0])  # dedup by tag
@@ -930,6 +945,15 @@ def extract_block(text: str, start: int) -> str:
     return text[idx + 1 :]
 
 
+def extract_named_block(text: str, key: str) -> str | None:
+    """Find  key = { ... }  in *text* and return the brace-matched body, or None."""
+    m = re.search(rf"\b{re.escape(key)}\s*=\s*\{{", text)
+    if not m:
+        return None
+    body = extract_block(text, m.start())
+    return body.strip() if body else None
+
+
 def find_top_level_blocks(text: str, wrapper: str = "") -> list:
     """Find all top-level key = { ... } blocks inside an optional wrapper block.
     Returns list of (key, body_str, start_pos) tuples."""
@@ -1141,7 +1165,8 @@ def parse_focuses_all() -> Tuple[int, int, int]:
                 y = re.search(r"\by\s*=\s*([\-0-9]+)", fbody)
                 cost = re.search(r"\bcost\s*=\s*([0-9]+)", fbody)
                 icon = re.search(r"\bicon\s*=\s*([A-Za-z0-9_]+)", fbody)
-                focus_rows.append([focus_id, tree_id, x.group(1) if x else "", y.group(1) if y else "", cost.group(1) if cost else "", icon.group(1) if icon else "", fp.name])
+                cr = extract_named_block(fbody, "completion_reward")
+                focus_rows.append([focus_id, tree_id, x.group(1) if x else "", y.group(1) if y else "", cost.group(1) if cost else "", icon.group(1) if icon else "", cr if cr else "", fp.name])
                 for pr in re.finditer(r"prerequisite\s*=\s*\{\s*focus\s*=\s*([a-zA-Z0-9_-]+)", fbody):
                     link_rows.append([focus_id, "prerequisite", pr.group(1), fp.name])
                 for mx in re.finditer(r"mutually_exclusive\s*=\s*\{\s*focus\s*=\s*([a-zA-Z0-9_-]+)", fbody):
@@ -1167,7 +1192,8 @@ def parse_focuses_all() -> Tuple[int, int, int]:
             y = re.search(r"\by\s*=\s*([\-0-9]+)", sbody)
             cost = re.search(r"\bcost\s*=\s*([0-9]+)", sbody)
             icon = re.search(r"\bicon\s*=\s*([A-Za-z0-9_]+)", sbody)
-            focus_rows.append([focus_id, shared_tree_id, x.group(1) if x else "", y.group(1) if y else "", cost.group(1) if cost else "", icon.group(1) if icon else "", fp.name])
+            cr = extract_named_block(sbody, "completion_reward")
+            focus_rows.append([focus_id, shared_tree_id, x.group(1) if x else "", y.group(1) if y else "", cost.group(1) if cost else "", icon.group(1) if icon else "", cr if cr else "", fp.name])
             for pr in re.finditer(r"prerequisite\s*=\s*\{\s*focus\s*=\s*([a-zA-Z0-9_-]+)", sbody):
                 link_rows.append([focus_id, "prerequisite", pr.group(1), fp.name])
             for mx in re.finditer(r"mutually_exclusive\s*=\s*\{\s*focus\s*=\s*([a-zA-Z0-9_-]+)", sbody):
@@ -1178,7 +1204,7 @@ def parse_focuses_all() -> Tuple[int, int, int]:
     focus_rows = dedup_rows(focus_rows, [0])
     link_rows = dedup_rows(link_rows, [0, 1, 2])
     write_md(OUT / "focus_trees_all.md", "Focus Trees (All Files)", ["focus_tree_id", "country_tag", "initial_x", "initial_y", "source_file"], tree_rows, "common/national_focus/*.txt")
-    write_md(OUT / "focuses_all.md", "Focuses (All Files)", ["focus_id", "focus_tree_id", "x", "y", "cost", "icon", "source_file"], focus_rows, "common/national_focus/*.txt")
+    write_md(OUT / "focuses_all.md", "Focuses (All Files)", ["focus_id", "focus_tree_id", "x", "y", "cost", "icon", "completion_reward", "source_file"], focus_rows, "common/national_focus/*.txt")
     write_md(OUT / "focus_links_all.md", "Focus Links (All Files)", ["focus_id", "link_type", "linked_focus_id", "source_file"], link_rows, "common/national_focus/*.txt")
     return len(tree_rows), len(focus_rows), len(link_rows)
 
@@ -1247,7 +1273,7 @@ def parse_ideas_all() -> Tuple[int, int]:
 
     irows = dedup_rows(irows, [0])
     mrows = dedup_rows(mrows, [0, 1])
-    write_md(OUT / "ideas_all.md", "Ideas (All Files)", ["idea_key", "slot", "is_law", "cost", "removal_cost", "is_default", "source_file"], irows, "common/ideas/*.txt")
+    write_md(OUT / "ideas_all.md", "Ideas (All Files)", ["idea_key", "slot", "is_law", "cost", "removal_cost", "is_default", "on_add_effect", "on_remove_effect", "allowed_condition", "source_file"], irows, "common/ideas/*.txt")
     write_md(OUT / "idea_modifiers_all.md", "Idea Modifiers (All Files)", ["idea_key", "modifier_key", "modifier_value", "source_file"], mrows, "common/ideas/*.txt")
     return len(irows), len(mrows)
 
@@ -1271,8 +1297,13 @@ def _parse_idea_entries(slot_key: str, slot_body: str, filename: str,
         rem = re.search(r"\bremoval_cost\s*=\s*([0-9.\-]+)", idea_body)
         is_default = "yes" if "default = yes" in idea_body else "no"
         is_law = "yes" if is_law_slot or "law = yes" in idea_body else "no"
+        on_add = extract_named_block(idea_body, "on_add")
+        on_remove = extract_named_block(idea_body, "on_remove")
+        allowed_cond = extract_named_block(idea_body, "allowed")
         irows.append([idea_key, slot_key, is_law, cost.group(1) if cost else "",
-                       rem.group(1) if rem else "", is_default, filename])
+                       rem.group(1) if rem else "", is_default,
+                       on_add if on_add else "", on_remove if on_remove else "",
+                       allowed_cond if allowed_cond else "", filename])
         # Extract modifier block using brace matching
         mod_m = re.search(r"\bmodifier\s*=\s*\{", idea_body)
         if mod_m:
@@ -2350,10 +2381,19 @@ def parse_decisions_all() -> int:
                 cost = re.search(r'\bcost\s*=\s*([0-9]+)', dec_body)
                 fire = "yes" if "fire_only_once = yes" in dec_body else ""
                 dlc = re.search(r'has_dlc\s*=\s*"([^"]+)"', dec_body)
-                rows.append([dec_key, cat_key, icon.group(1) if icon else "", cost.group(1) if cost else "", fire, dlc.group(1) if dlc else "", fp.name])
+                d_allowed = extract_named_block(dec_body, "allowed")
+                d_available = extract_named_block(dec_body, "available")
+                d_visible = extract_named_block(dec_body, "visible")
+                d_complete = extract_named_block(dec_body, "complete_effect")
+                d_remove = extract_named_block(dec_body, "remove_effect")
+                rows.append([dec_key, cat_key, icon.group(1) if icon else "", cost.group(1) if cost else "", fire, dlc.group(1) if dlc else "",
+                             d_allowed if d_allowed else "", d_available if d_available else "",
+                             d_visible if d_visible else "", d_complete if d_complete else "",
+                             d_remove if d_remove else "", fp.name])
     write_md(
         OUT / "decisions_all.md", "Decisions (All Files)",
-        ["decision_key", "category_key", "icon", "cost", "fire_only_once", "dlc_source", "source_file"],
+        ["decision_key", "category_key", "icon", "cost", "fire_only_once", "dlc_source",
+         "allowed", "available", "visible", "complete_effect", "remove_effect", "source_file"],
         rows, "common/decisions/*.txt",
     )
     return len(rows)
