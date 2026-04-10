@@ -3,7 +3,7 @@
 Status: **COMPLETE** (all phases)
 
 ## Purpose
-Extracted sample rows per table to validate mapping accuracy before SQL generation.
+Design-phase reference — sample extracted rows per table used to validate mapping accuracy during schema design. Row counts shown here are estimates from the design phase; see `docs/data-dump/SUMMARY.md` for actual extracted counts.
 
 ---
 

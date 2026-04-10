@@ -7,6 +7,14 @@ build/
 .venv/
 venv/
 
+docs/call.md
+docs/plans/
+
+sql/seed-load-order.sql
+sql/seed-docker.sql
+
+.github/
+
 # IDE
 .vscode/
 .idea/
@@ -20,3 +28,8 @@ Thumbs.db
 # Project
 *.bak
 redundant-docs/
+.env
+
+# Generated data (reproducible via ETL scripts)
+docs/data-dump/
+data/csv/

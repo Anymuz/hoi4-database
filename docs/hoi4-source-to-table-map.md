@@ -1,6 +1,6 @@
 # HOI4 Source to Table Map
 
-Status: **COMPLETE** (all 23 phases mapped — core + DLC + doctrines)
+Status: **COMPLETE** (all 28 phases + localisation mapped — core + DLC + doctrines + factions + special projects + infrastructure)
 
 ## Purpose
 Complete mapping of every source file path to target database tables and transformation rules.
@@ -62,6 +62,21 @@ Complete mapping of every source file path to target database tables and transfo
 | `common/dynamic_modifiers/*.txt` | dynamic_modifiers, dynamic_modifier_effects | One block per modifier; extract key, icon, attacker_modifier. Modifier key-value pairs → dynamic_modifier_effects (static numeric or variable reference). | Various |
 | `common/scientist_traits/*.txt` | scientist_traits, scientist_trait_modifiers | One block per trait; extract key, icon. `modifier = { }` → scientist_trait_modifiers. | Götterdämmerung |
 | `common/peace_conference/**/*.txt` | peace_action_categories, peace_cost_modifiers | Category blocks → peace_action_categories (name, is_default). `cost_modifier = { }` sub-blocks → peace_cost_modifiers (category, peace_action_type, cost_multiplier). | By Blood Alone |
+| `common/factions/rules/groups/*.txt` | faction_rule_groups | Parse `rule_group_xxx = { rules = { ... } }` blocks. Key from block name; child list → faction_rule_group_members. | Ride of the Valkyries |
+| `common/factions/rules/*.txt` | faction_rules, faction_rule_group_members | Parse `rule_key = { type = ... }` blocks. Extract rule_key, type. Back-link to rule_group via rule_groups file. | Ride of the Valkyries |
+| `common/factions/goals/faction_manifests.txt` | faction_manifests | Parse top-level blocks. Extract name, description, is_manifest, total_amount from ratio_progress. | Ride of the Valkyries |
+| `common/factions/goals/faction_goals_*.txt` | faction_goals | Parse top-level blocks. Extract name, description, category (from filename: short/medium/long_term), group. | Ride of the Valkyries |
+| `common/factions/templates/*.txt` | faction_templates, faction_template_goals, faction_template_rules | Parse `faction_template_xxx = { }` blocks. Extract name, manifest, icon, can_leader_join_other_factions. `goals = { ... }` → junction. `default_rules = { ... }` → junction. | Ride of the Valkyries |
+| `common/factions/member_upgrades/*.txt` | faction_member_upgrades | Parse `upgrade_key = { bonus = N }` blocks. | Ride of the Valkyries |
+| `common/factions/member_upgrades/member_groups/*.txt` | faction_member_upgrade_groups | Parse group blocks with name, default_upgrade, upgrade_type, icon. | Ride of the Valkyries |
+| `common/special_projects/specialization/*.txt` | special_project_specializations | Parse `specialization_xxx = { }` blocks. | Götterdämmerung |
+| `common/special_projects/project_tags/tags.txt` | special_project_tags | Parse `project_tags = { tag_key... }` list. | Götterdämmerung |
+| `common/special_projects/projects/*.txt` | special_projects, special_project_reward_links | Parse `sp_xxx = { specialization, project_tags, complexity, prototype_time }`. `generic_prototype_rewards = { ... }` → junction. | Götterdämmerung |
+| `common/special_projects/prototype_rewards/*.txt` | special_project_rewards | Parse reward blocks. Extract fire_only_once, threshold min/max. | Götterdämmerung |
+| `common/collections/*.txt` | collections | Parse `collection_key = { input = ..., name = ... }` blocks. | Ride of the Valkyries |
+| `common/ai_faction_theaters/*.txt` | ai_faction_theaters, ai_faction_theater_regions | Parse `theater_key = { name = ..., regions = { id... } }` blocks. Region list → junction. | Ride of the Valkyries |
+| `common/timed_activities/*.txt` | timed_activities, timed_activity_equipment | Parse `activity_key = { equipment_need = { equip = N } }` blocks. | Base game |
+| `localisation/english/*_l_english.yml` | localisation | YAML-like format: `key:0 "value"` per line under `l_english:` header. Regex extract `^\s+(\S+?):\d*\s+"(.+)"\s*$`. Deduplicate (later file wins). 189 files → 117,490 rows. | None (base game + all DLC) |
 
 ---
 
@@ -117,6 +132,18 @@ Complete mapping of every source file path to target database tables and transfo
 - [x] `common/dynamic_modifiers/*.txt`
 - [x] `common/scientist_traits/*.txt`
 - [x] `common/peace_conference/**/*.txt`
+- [x] `common/factions/rules/**/*.txt`
+- [x] `common/factions/goals/*.txt`
+- [x] `common/factions/templates/*.txt`
+- [x] `common/factions/member_upgrades/**/*.txt`
+- [x] `common/special_projects/specialization/*.txt`
+- [x] `common/special_projects/project_tags/*.txt`
+- [x] `common/special_projects/projects/*.txt`
+- [x] `common/special_projects/prototype_rewards/*.txt`
+- [x] `common/collections/*.txt`
+- [x] `common/ai_faction_theaters/*.txt`
+- [x] `common/timed_activities/*.txt`
+- [x] `localisation/english/*_l_english.yml`
 
 ---
 
@@ -129,9 +156,4 @@ These source paths exist but are **not modeled** in the starting-state database 
 | `common/on_actions/*.txt` | Event triggers, not data |
 | `events/*.txt` | Event scripts, not starting state |
 | `common/ai_strategy/*.txt` | AI behavior, not game data |
-| `common/doctrines/folders/*.txt` | **Phase 23** — `doctrine_folders` |
-| `common/doctrines/tracks/*.txt` | **Phase 23** — `doctrine_tracks` |
-| `common/doctrines/grand_doctrines/*.txt` | **Phase 23** — `grand_doctrines`, `grand_doctrine_tracks` |
-| `common/doctrines/subdoctrines/**/*.txt` | **Phase 23** — `subdoctrines` |
-| `history/countries/*.txt` (doctrines) | **Phase 23** — `country_starting_doctrines` |
 | `common/names/*.txt` | Name generation lists, not starting state |

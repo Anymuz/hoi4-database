@@ -18,8 +18,14 @@ def get_headers():
 
 HEADERS = get_headers()
 
+# PostgreSQL reserved words that need quoting in column lists
+_RESERVED = {"desc", "order", "group", "limit", "offset", "user", "table", "column", "check", "default"}
+
+def _quote_col(c):
+    return f'"{c}"' if c.lower() in _RESERVED else c
+
 def copy_cmd(table):
-    cols = ", ".join(HEADERS[table])
+    cols = ", ".join(_quote_col(c) for c in HEADERS[table])
     return f"\\copy {table}({cols}) FROM 'data/csv/{table}.csv' WITH (FORMAT csv, HEADER);"
 
 # ── Tier ordering (from FK dependency analysis) ──

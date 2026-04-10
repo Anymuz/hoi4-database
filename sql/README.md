@@ -1,6 +1,6 @@
 # SQL Directory — Design Rationale
 
-This directory contains three files that together define the complete PostgreSQL database for Hearts of Iron IV game data. This document explains **what** each file does and **why** it is structured the way it is.
+This directory contains four files that together define the complete PostgreSQL database for Hearts of Iron IV game data. This document explains **what** each file does and **why** it is structured the way it is.
 
 ---
 
@@ -8,9 +8,10 @@ This directory contains three files that together define the complete PostgreSQL
 
 | File | Purpose | Size |
 |---|---|---|
-| `schema.sql` | DDL — creates all 127 tables, 4 deferred FKs, 50 indexes | ~1,400 lines |
-| `views.sql` | 14 read-only API views that pre-join and aggregate related tables | ~560 lines |
-| `seed-load-order.sql` | Data loading — FK-safe `\copy` commands with explicit column lists across 7 tiers, plus staging tables for FK resolution, wrapped in a transaction | ~230 lines |
+| `schema.sql` | DDL — creates all 151 tables, 4 deferred FKs, 63 indexes | ~1,820 lines |
+| `views.sql` | 14 read-only API views + 2 date-parameterised functions that pre-join and aggregate related tables | ~720 lines |
+| `seed-load-order.sql` | Native data loading — FK-safe `\copy` commands with explicit column lists across 7 tiers, plus staging tables for FK resolution, wrapped in a transaction | ~280 lines |
+| `seed-docker.sql` | Docker data loading — server-side `COPY` variant of `seed-load-order.sql` for use inside a Docker container | ~280 lines |
 
 ---
 
@@ -38,7 +39,7 @@ This ordering matters because PostgreSQL requires referenced tables to exist bef
 
 ### Why "Slice A" appears first
 
-The first 15 tables (`countries`, `states`, `provinces`, etc.) were built during an early prototyping phase ("Slice A") and already had working DDL. Rather than rewriting them, they were preserved at the top of the file. The remaining 112 tables follow in phase order below. The deferred `ALTER TABLE` statements at the bottom tie Slice A tables to Phase 1 reference tables that didn't exist when Slice A was written.
+The first 15 tables (`countries`, `states`, `provinces`, etc.) were built during an early prototyping phase ("Slice A") and already had working DDL. Rather than rewriting them, they were preserved at the top of the file. The remaining 136 tables follow in phase order below. The deferred `ALTER TABLE` statements at the bottom tie Slice A tables to Phase 1 reference tables that didn't exist when Slice A was written.
 
 ### Key design patterns
 
@@ -110,20 +111,33 @@ Four foreign keys are added via `ALTER TABLE` at the bottom of the file instead 
 
 Several tables reference themselves:
 
-- **`equipment_definitions`** — `archetype_key` and `parent_key` both point back to `equipment_definitions`. Equipment forms an inheritance chain (e.g., `infantry_equipment_1` → `infantry_equipment_0` → `infantry_equipment` archetype).
+- **`equipment_definitions`** — `archetype_key` and `parent_key` both point back to `equipment_definitions`. Equipment forms an inheritance chain (e.g., `infantry_equipment_1` → `infantry_equipment_0` → `infantry_equipment` archetype). Both FKs are declared `DEFERRABLE INITIALLY DEFERRED` so that bulk-loading equipment rows in any order succeeds — PostgreSQL defers constraint checking until `COMMIT`.
 - **`occupation_laws`** — `fallback_law_key` references another occupation law as a fallback.
 - **`focus_prerequisites` / `focus_mutually_exclusive`** — focuses reference other focuses.
 - **`mio_trait_prerequisites` / `mio_trait_exclusions`** — MIO traits form prerequisite trees and exclusion pairs.
 
 **Why:** These mirror actual game mechanics where entities form trees, chains, or peer relationships.
 
+#### Schema refinements after initial load
+
+The schema was originally designed from game file structures before full data extraction. Loading real data revealed mismatches that required refinements. All fixes were applied to the extraction script (`export_markdown_dump.py`) so the pipeline now produces clean data, but the schema also absorbed changes:
+
+| Category | Count | Examples |
+|---|---|---|
+| Column types widened | 5 | `operations.experience` INT → NUMERIC(5,2); `mio_*.owner_type` VARCHAR(10) → VARCHAR(15) |
+| NOT NULL relaxed | 8 | `medal_tiers.variable`, `province_adjacencies.adjacency_type`, `equipment_variants.version_name` |
+| Self-referential FKs made deferrable | 2 | `equipment_definitions.archetype_key`, `equipment_definitions.parent_key` |
+| FK intentionally omitted | 1 | `country_starting_ideas.idea_key` — character-advisor names are used as idea keys but don't exist as rows in `ideas` |
+
+All other FK constraints (126 total) are fully enforced. DLC data loads successfully — the extraction script now captures DLC equipment, sub-ideologies, focus trees, and technologies that were originally missing.
+
 ### Index strategy
 
-50 indexes (3 UNIQUE + 47 regular B-tree) are defined after all table definitions. They are grouped by phase, matching the table ordering, and follow the naming convention `ix_<table>_<column_description>` (or `uq_` for unique constraints).
+63 indexes (2 UNIQUE + 61 regular B-tree) are defined after all table definitions. They are grouped by phase, matching the table ordering, and follow the naming convention `ix_<table>_<column_description>` (or `uq_` for unique constraints).
 
 #### Why indexes are placed at the end of schema.sql
 
-All 50 `CREATE INDEX` statements live after the final `ALTER TABLE`. This lets PostgreSQL build each index on the fully populated table in a single pass during initial load, rather than maintaining the index row-by-row across thousands of `COPY` inserts. For the seed workflow (load via `seed-load-order.sql`, then `\i schema.sql` to add indexes), this ordering gives the fastest possible bulk load.
+All 63 `CREATE INDEX` statements live after the final `ALTER TABLE`. This lets PostgreSQL build each index on the fully populated table in a single pass during initial load, rather than maintaining the index row-by-row across thousands of `COPY` inserts. For the seed workflow (load via `seed-load-order.sql`, then `\i schema.sql` to add indexes), this ordering gives the fastest possible bulk load.
 
 #### Category 1 — UNIQUE indexes (3)
 
@@ -366,15 +380,9 @@ Six tables need FK resolution from natural keys (present in CSVs) to surrogate I
 
 The pattern is: load CSV into a temp table with all-TEXT columns, then `INSERT INTO ... SELECT ... JOIN` to resolve the natural keys, then drop the temp table.
 
-### The COPY template
+### `\copy` vs `COPY`
 
-The commented `\copy` block shows the exact PostgreSQL command syntax for loading each table:
-
-```sql
-\copy continents FROM '...' WITH (FORMAT csv, HEADER);
-```
-
-**Why `\copy` not `COPY`?** `\copy` is a psql client-side command that reads from the local filesystem. `COPY` is a server-side command that reads from the server's filesystem. For a local development database, `\copy` is simpler since the CSV files are on your machine.
+`\copy` is a psql client-side command that reads from the local filesystem. `COPY` is a server-side command that reads from the server's filesystem. `seed-load-order.sql` uses `\copy` for native installs where the CSV files are on your machine. `seed-docker.sql` uses `COPY` because the CSVs are copied into the container filesystem (see below).
 
 ### Reloading data
 
@@ -396,16 +404,48 @@ TRUNCATE continents, terrain_types, ... doctrine_folders CASCADE;
 
 ---
 
-## How the three files work together
+## seed-docker.sql
+
+### What it does
+
+A Docker-compatible variant of `seed-load-order.sql`. It is **generated** by `tools/db_etl/gen_seed_docker.py`, which performs two mechanical transformations:
+
+1. `\copy table(cols) FROM 'data/csv/file.csv'` → `COPY table (cols) FROM '/data_csv/file.csv'` — switches from client-side `\copy` to server-side `COPY` and remaps paths from the local `data/csv/` to the container mount `/data_csv/`.
+2. Removes the `\set ON_ERROR_STOP on` psql directive (not valid in plain SQL).
+
+The file retains the same `BEGIN`/`COMMIT` transaction wrapper, tier ordering, and staging-table logic as the native version.
+
+### Why a separate file?
+
+Inside a Docker container, psql runs as a server process. Server-side `COPY` reads from the container's filesystem, so CSVs must be copied into the container first (`docker cp data/csv/ hoi4-db:/data_csv/`). The client-side `\copy` command doesn't work when psql is executed via `docker exec`.
+
+See `tools/db_etl/runbook.md` → **Step 3 Option A** for the full Docker deployment workflow.
+
+---
+
+## How the four files work together
 
 ```
-1. schema.sql    →  Creates empty tables with all constraints
-2. seed-load-order.sql  →  Documents the safe order to fill them
-3. views.sql     →  Creates the read interface on top of filled tables
+1. schema.sql           →  Creates empty tables with all constraints
+2. seed-load-order.sql  →  Loads data (native PostgreSQL, uses \copy)
+   seed-docker.sql      →  Loads data (Docker container, uses COPY)
+3. views.sql            →  Creates the read interface on top of filled tables
 ```
 
-The intended workflow:
-1. Run `psql -f schema.sql` to create the database structure
-2. Run `psql -f seed-load-order.sql` to load data (uses the CSVs in `data/csv/`)
-3. Run `psql -f views.sql` to create the API views
-4. Query via views: `SELECT * FROM api_country_detail WHERE tag = 'GER'`
+### Native PostgreSQL workflow
+```bash
+psql -d hoi4 -f sql/schema.sql
+psql -d hoi4 -f sql/seed-load-order.sql   # reads data/csv/ from local filesystem
+psql -d hoi4 -f sql/views.sql
+```
+
+### Docker workflow
+```bash
+docker exec -i hoi4-db psql -U hoi4 -d hoi4 < sql/schema.sql
+docker cp data/csv/. hoi4-db:/data_csv/
+docker cp sql/seed-docker.sql hoi4-db:/tmp/seed.sql
+docker exec -i hoi4-db psql -U hoi4 -d hoi4 -f /tmp/seed.sql
+docker exec -i hoi4-db psql -U hoi4 -d hoi4 < sql/views.sql
+```
+
+Then query via views: `SELECT * FROM api_country_detail WHERE tag = 'GER'`

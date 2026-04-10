@@ -166,6 +166,27 @@ COLUMN_RENAMES = {
     ("country_starting_doctrines", "source_file"): None,
 }
 
+# ── derived columns: computed from existing data ─────────────────────
+# table_name → list of { new_col, from_col, transform }
+#   "prefix"  → split on '_' and take the first part  (GER_1936.txt → GER)
+#   "copy"    → copy the source value unchanged
+DERIVED_COLUMNS: dict[str, list[dict[str, str]]] = {
+    "division_templates": [
+        {"new_col": "country_tag", "from_col": "source_file", "transform": "prefix"},
+        {"new_col": "oob_file",    "from_col": "source_file", "transform": "copy"},
+    ],
+    "divisions": [
+        {"new_col": "country_tag", "from_col": "source_file", "transform": "prefix"},
+        {"new_col": "oob_file",    "from_col": "source_file", "transform": "copy"},
+    ],
+    "fleets": [
+        {"new_col": "oob_file",    "from_col": "source_file", "transform": "copy"},
+    ],
+    "air_wings": [
+        {"new_col": "oob_file",    "from_col": "source_file", "transform": "copy"},
+    ],
+}
+
 # ── columns to drop per table (after rename mapping) ─────────────────
 DROP_COLUMNS: dict[str, set[str]] = {}
 
@@ -365,6 +386,43 @@ def apply_column_renames(
 
     new_rows = [[row[i] for i in final_idxs] for row in rows]
     return final_cols, new_rows
+
+
+def apply_derived_columns(
+    table_name: str,
+    columns: list[str],
+    rows: list[list[str]],
+) -> tuple[list[str], list[list[str]]]:
+    """Add computed columns defined in DERIVED_COLUMNS."""
+    if table_name not in DERIVED_COLUMNS:
+        return columns, rows
+
+    _oob_tag_re = re.compile(r'^([A-Z]{3})_')
+
+    for spec in DERIVED_COLUMNS[table_name]:
+        new_col = spec["new_col"]
+        from_col = spec["from_col"]
+        transform = spec["transform"]
+
+        if from_col not in columns:
+            continue
+
+        src_idx = columns.index(from_col)
+        columns = columns + [new_col]
+
+        for row in rows:
+            val = row[src_idx]
+            if transform == "prefix":
+                # Extract 3-letter uppercase country tag from OOB filename
+                m = _oob_tag_re.match(val) if val else None
+                derived = m.group(1) if m else ""
+            elif transform == "copy":
+                derived = val
+            else:
+                derived = ""
+            row.append(derived)
+
+    return columns, rows
 
 
 # ─────────────────────────────────────────────────────────────────────
@@ -629,6 +687,7 @@ def convert_all(dump_dir: Path, csv_dir: Path, verbose: bool = False) -> None:
                     rows = [r for r in rows if r[fi] == keep_val]
 
             columns, rows = apply_column_renames(table_name, columns, rows)
+            columns, rows = apply_derived_columns(table_name, columns, rows)
             count = write_csv(csv_dir / f"{table_name}.csv", columns, rows)
             stats[table_name] = count
             if verbose:

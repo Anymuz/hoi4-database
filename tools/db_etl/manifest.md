@@ -1,16 +1,31 @@
 # HOI4 Database ETL — Module Manifest
 
-Status: **COMPLETE** — markdown extraction produces 137 data-dump files (~221K rows); `md_to_csv.py` converts them to 127 PostgreSQL-ready CSVs covering all 127 schema tables (~221K rows).
+Status: **COMPLETE** — full pipeline extracts, converts, and loads all 151 schema tables (~225K rows).
 
 ## Overview
 
-The ETL pipeline has two stages:
+The ETL pipeline has four stages:
 
-1. **Extract** — `export_markdown_dump.py` reads HOI4 game files and writes markdown tables to `docs/data-dump/` (137 files, ~221K rows across 23 schema phases). The script contains ~70 parser functions covering every table in the schema.
-2. **Transform** — `md_to_csv.py` reads those markdown tables, renames columns to match the schema, merges multi-source tables (e.g., countries), splits multi-target files (e.g., focus_links), and writes CSV files to `data/csv/`.
-3. **Load** — `gen_seed_sql.py` reads the CSV headers and generates `sql/seed-load-order.sql` with explicit column lists and FK staging tables. The CSVs are loaded into PostgreSQL via `psql -f sql/seed-load-order.sql`.
+1. **Extract** — `export_markdown_dump.py` reads HOI4 game files and writes markdown tables to `docs/data-dump/` (160 files, ~220K rows across 23 schema phases). The script contains ~85 parser functions covering every table in the schema.
+2. **Extract localisation** — `export_localisation.py` reads 189 `*_l_english.yml` files from `localisation/english/` and writes `data/csv/localisation.csv` (117,490 English display-name translations).
+3. **Transform** — `md_to_csv.py` reads those markdown tables, renames columns to match the schema, merges multi-source tables (e.g., countries), splits multi-target files (e.g., focus_links), and writes CSV files to `data/csv/`.
+4. **Generate** — `gen_seed_sql.py` produces `sql/seed-load-order.sql` (native `\copy` commands); `gen_seed_docker.py` produces `sql/seed-docker.sql` (Docker `COPY` commands). Both use explicit column lists and FK staging tables.
+5. **Load** — PostgreSQL loads via `psql -f sql/seed-load-order.sql` (native) or `psql -f sql/seed-docker.sql` (Docker container). Localisation is loaded separately via `COPY localisation FROM ... CSV HEADER`.
 
 Each extraction module is a function in `export_markdown_dump.py`.
+
+---
+
+## Pipeline Scripts
+
+| Script | Purpose | Input | Output |
+|---|---|---|---|
+| `export_markdown_dump.py` | Parse HOI4 game files | Game install directory | `docs/data-dump/` (160 .md files) |
+| `export_localisation.py` | Extract English display names | `localisation/english/` (game install) | `data/csv/localisation.csv` (117,490 rows) |
+| `md_to_csv.py` | Convert markdown → CSV | `docs/data-dump/` | `data/csv/` (149 .csv files) |
+| `gen_seed_sql.py` | Generate native seed SQL | `data/csv/` headers | `sql/seed-load-order.sql` |
+| `gen_seed_docker.py` | Generate Docker seed SQL | `sql/seed-load-order.sql` | `sql/seed-docker.sql` |
+| `validate_data.py` | FK/PK/NOT NULL checks | `docs/data-dump/` | Console report |
 
 ---
 
@@ -183,6 +198,11 @@ These are internal helper functions within `export_markdown_dump.py`:
 
 | Utility | Purpose |
 |---|---|
-| `extract_block()` | Recursive Paradox Script tokenizer → extracts `{ }` blocks |
+| `extract_block()` | Recursive Paradox Script tokenizer — extracts brace-matched `{ }` blocks |
+| `find_top_level_blocks()` | Finds all top-level named blocks in a file |
+| `find_game_blocks()` | Recursively unwraps DLC-guarded `if = { limit = { has_dlc } }` blocks |
+| `dedup_rows()` | Deduplicates row lists by specified key columns (first occurrence wins) |
+| `_pdx_date_to_iso()` | Converts Paradox `YYYY.M.D` dates to ISO `YYYY-MM-DD` |
+| `_extract_equipment_tokens()` | Extracts equipment keys from `enable_equipments` blocks, filtering Paradox keywords |
 | `write_md_table()` | Writes a list of dicts as a markdown table to the output directory |
 | `auto_detect_hoi4()` | Finds the HOI4 install via `--hoi4-root`, `HOI4_ROOT` env var, or default Steam paths |
