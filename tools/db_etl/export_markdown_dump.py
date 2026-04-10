@@ -98,6 +98,21 @@ def parse_country_tags() -> int:
         for tag in sorted(oob_tags - declared_tags):
             rows.append([tag, ""])
 
+    # Also discover tags from character definitions inside character files.
+    chars_dir = ROOT / "common" / "characters"
+    if chars_dir.exists():
+        char_tags: set = set()
+        for fp in chars_dir.glob("*.txt"):
+            # filename-based
+            tag = fp.stem.upper()
+            if len(tag) <= 3 and tag.isalpha():
+                char_tags.add(tag)
+            # content-based: look for character id definitions like  TAG_name = {
+            for m2 in re.finditer(r'^\s+([A-Z]{2,3})_\w+\s*=\s*\{', fp.read_text(encoding="utf-8", errors="ignore"), re.MULTILINE):
+                char_tags.add(m2.group(1))
+        for tag in sorted(char_tags - declared_tags):
+            rows.append([tag, ""])
+
     rows = dedup_rows(rows, [0])  # dedup by tag
     write_md(OUT / "country_tags.md", "Country Tags", ["tag", "country_file"], rows, "common/country_tags/*.txt")
     return len(rows)
