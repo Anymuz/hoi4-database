@@ -2399,6 +2399,54 @@ def parse_decisions_all() -> int:
     return len(rows)
 
 
+def parse_wargoal_types() -> int:
+    d = ROOT / "common" / "wargoals"
+    rows: List[List[str]] = []
+    if not d.exists():
+        return 0
+    for fp in sorted(d.glob("*.txt")):
+        txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+        # File has a single wrapper: wargoal_types = { ... }
+        for wg_key, wg_body, _ in find_top_level_blocks(txt, wrapper="wargoal_types"):
+            war_name = re.search(r'\bwar_name\s*=\s*(\S+)', wg_body)
+            base_cost = re.search(r'\bgenerate_base_cost\s*=\s*([0-9]+)', wg_body)
+            per_state_cost = re.search(r'\bgenerate_per_state_cost\s*=\s*([0-9]+)', wg_body)
+            ts_limit = re.search(r'\btake_states_limit\s*=\s*([0-9]+)', wg_body)
+            ts_cost = re.search(r'\btake_states_cost\s*=\s*(-?[0-9]+)', wg_body)
+            puppet_cost = re.search(r'\bpuppet_cost\s*=\s*(-?[0-9]+)', wg_body)
+            force_gov = re.search(r'\bforce_government_cost\s*=\s*(-?[0-9]+)', wg_body)
+            expire = re.search(r'\bexpire\s*=\s*([0-9]+)', wg_body)
+            threat = re.search(r'\bthreat\s*=\s*([0-9.]+)', wg_body)
+            ts_threat = re.search(r'\btake_states_threat_factor\s*=\s*([0-9.]+)', wg_body)
+            allowed = extract_named_block(wg_body, "allowed")
+            available = extract_named_block(wg_body, "available")
+            rows.append([
+                wg_key,
+                war_name.group(1) if war_name else "",
+                base_cost.group(1) if base_cost else "",
+                per_state_cost.group(1) if per_state_cost else "",
+                ts_limit.group(1) if ts_limit else "",
+                ts_cost.group(1) if ts_cost else "",
+                puppet_cost.group(1) if puppet_cost else "",
+                force_gov.group(1) if force_gov else "",
+                expire.group(1) if expire else "",
+                threat.group(1) if threat else "",
+                ts_threat.group(1) if ts_threat else "",
+                allowed if allowed else "",
+                available if available else "",
+                fp.name,
+            ])
+    write_md(
+        OUT / "wargoal_types.md", "Wargoal Types",
+        ["wargoal_key", "war_name_key", "generate_base_cost", "generate_per_state_cost",
+         "take_states_limit", "take_states_cost", "puppet_cost", "force_government_cost",
+         "expire", "threat", "take_states_threat_factor",
+         "allowed_block", "available_block", "source_file"],
+        rows, "common/wargoals/*.txt",
+    )
+    return len(rows)
+
+
 # -- Phase 16: Espionage (La Résistance) ---------------------------------
 
 def parse_operation_tokens_all() -> int:
@@ -4120,6 +4168,7 @@ def main() -> None:
     # -- Phase 15: Decisions --
     stats["decision_categories"] = parse_decision_categories_all()
     stats["decisions_all"] = parse_decisions_all()
+    stats["wargoal_types"] = parse_wargoal_types()
 
     # -- Phase 16: Espionage --
     stats["operation_tokens"] = parse_operation_tokens_all()

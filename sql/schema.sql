@@ -1823,5 +1823,25 @@ CREATE TABLE user_annotations (
 );
 CREATE INDEX ix_user_annotations_entity ON user_annotations (entity_type, entity_key);
 
+-- ============================================================
+-- Wargoal Types
+-- ============================================================
+CREATE TABLE wargoal_types (
+    wargoal_key             VARCHAR(80) PRIMARY KEY,
+    war_name_key            VARCHAR(200),
+    generate_base_cost      INT,
+    generate_per_state_cost INT,
+    take_states_limit       INT,
+    take_states_cost        INT,
+    puppet_cost             INT,
+    force_government_cost   INT,
+    expire                  INT,
+    threat                  NUMERIC(6,3),
+    take_states_threat_factor NUMERIC(6,3),
+    allowed_block           TEXT,
+    available_block         TEXT,
+    source_file             VARCHAR(200)
+);
+
 -- End of schema definition
 COMMIT;

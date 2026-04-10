@@ -43,6 +43,7 @@ TIER0 = [
     "ai_faction_theaters", "collections", "faction_goals", "faction_manifests",
     "faction_member_upgrade_groups", "faction_rule_groups", "localisation",
     "special_project_specializations", "special_project_tags", "timed_activities",
+    "wargoal_types",
 ]
 
 TIER1 = [

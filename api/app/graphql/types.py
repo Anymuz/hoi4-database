@@ -720,3 +720,35 @@ class Annotation:
     # End of from_row class method.
 # End of Annotation type.
 # ------------------------------------------------------
+
+# Wargoal related types, use the api_wargoal_detail view:
+# Wargoal represents a wargoal in the game, with its key, name, costs, threat, and other details. 
+@strawberry.type
+class Wargoal:
+    wargoal_key: str
+    war_name_key: Optional[str] = None
+    generate_base_cost: Optional[int] = None
+    generate_per_state_cost: Optional[int] = None
+    take_states_limit: Optional[int] = None
+    take_states_cost: Optional[int] = None
+    puppet_cost: Optional[int] = None
+    force_government_cost: Optional[int] = None
+    expire: Optional[int] = None
+    threat: Optional[float] = None
+    take_states_threat_factor: Optional[float] = None
+    allowed_block: Optional[str] = None
+    available_block: Optional[str] = None
+    source_file: Optional[str] = None
+
+    # Classmethod to convert from a database row into a Wargoal object.
+    @classmethod
+    def from_row(cls, row):
+        d = dict(row)
+        # Convert Decimal to float for numeric fields
+        for k in ("threat", "take_states_threat_factor"):
+            if d.get(k) is not None:
+                d[k] = float(d[k])
+        return cls(**d)
+    # End of from_row class method.
+# End of Wargoal type.
+# ------------------------------------------------------

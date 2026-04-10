@@ -11,7 +11,7 @@ from app.graphql.types import (
     Country, State, Technology, Character, Division,
     FocusTree, Equipment, EquipmentVariant, EquipmentVariantModule,
     EquipmentVariantUpgrade, Idea, Mio, Operation, Bop,
-    Faction, SpecialProject, Annotation,
+    Faction, SpecialProject, Annotation, Wargoal,
 )
 
 # Helper function to get the asyncpg pool from the FastAPI app context.
@@ -417,4 +417,15 @@ class Query:
                 )
             return [Annotation(**dict(r)) for r in rows]
     # End of annotations resolver.
+
+    # Wargoals are the objectives that countries can have in wars. Uses the wargoal_types table.
+    @strawberry.field
+    async def wargoals(self, info: Info) -> list[Wargoal]:
+        pool = await get_pool(info)
+        async with pool.acquire() as conn:
+            rows = await conn.fetch(
+                "SELECT * FROM wargoal_types ORDER BY wargoal_key"
+            )
+            return [Wargoal.from_row(r) for r in rows]
+    # End of wargoals resolver.
 # End of Query class.
