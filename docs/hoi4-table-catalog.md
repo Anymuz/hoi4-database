@@ -801,6 +801,9 @@ Status: **COMPLETE** (149 tables across 28 phases + infrastructure)
 | removal_cost | INT | No | removal_cost | -1 = cannot remove |
 | is_default | BOOLEAN | No | default = yes | |
 | picture | VARCHAR(120) | No | picture | |
+| on_add_effect | TEXT | No | on_add block | Scripted effect (V2) |
+| on_remove_effect | TEXT | No | on_remove block | Scripted effect (V2) |
+| allowed_condition | TEXT | No | allowed block | Scripted trigger (V2) |
 | source_file | TEXT | Yes | - | |
 | dlc_source | VARCHAR(50) | No | DLC gate | |
 
@@ -862,6 +865,7 @@ Status: **COMPLETE** (149 tables across 28 phases + infrastructure)
 | cancel_if_invalid | BOOLEAN | No | cancel_if_invalid | |
 | continue_if_invalid | BOOLEAN | No | continue_if_invalid | |
 | available_if_capitulated | BOOLEAN | No | available_if_capitulated | |
+| completion_reward | TEXT | No | completion_reward block | Scripted effect (V2) |
 | source_file | TEXT | Yes | - | |
 | dlc_source | VARCHAR(50) | No | DLC gate | |
 
@@ -1111,11 +1115,16 @@ Status: **COMPLETE** (149 tables across 28 phases + infrastructure)
 | category_key | VARCHAR(80) | Yes | Parent category block | FK |
 | icon | VARCHAR(120) | No | icon | GFX key |
 | cost | INT | No | cost | Political power cost |
+| allowed | TEXT | No | allowed block | Scripted trigger (V2) |
+| available | TEXT | No | available block | Scripted trigger (V2) |
+| visible | TEXT | No | visible block | Scripted trigger (V2) |
+| complete_effect | TEXT | No | complete_effect block | Scripted effect (V2) |
+| remove_effect | TEXT | No | remove_effect block | Scripted effect (V2) |
 | fire_only_once | BOOLEAN | No | fire_only_once | |
 | dlc_source | VARCHAR(80) | No | DLC gate | |
 
-- **Row count**: ~500+
-- **Relationship notes**: Child of `decision_categories`. Scripted triggers/effects stored as text if needed.
+- **Row count**: 3,782
+- **Relationship notes**: Child of `decision_categories`. Scripted triggers/effects stored as raw text blocks.
 
 ---
 
@@ -2592,7 +2601,137 @@ Equipment requirements for timed activities.
 
 ---
 
-## Summary - New Tables Added in Phases 16–22
+## V2 API Tables
+
+### wargoal_types
+- **Purpose**: Wargoal type definitions with cost/threat parameters
+- **Source files**: `common/wargoals/*.txt`
+- **Grain**: One row per wargoal type
+- **Primary key**: `wargoal_key`
+
+| Column | Type | Required | Source field | Notes |
+|---|---|---|---|---|
+| wargoal_key* | VARCHAR(80) | Yes | Block name | PK |
+| war_name_key | VARCHAR(200) | No | war_name | Localisation key |
+| generate_base_cost | INT | No | generate_cb_%.base_factor | Base generation cost |
+| generate_per_state_cost | INT | No | generate_cb_%.per_state_factor | Per-state cost |
+| take_states_limit | INT | No | take_states_limit | Max states claimable |
+| take_states_cost | INT | No | take_states_cost | Cost per state |
+| puppet_cost | INT | No | puppet_cost | Puppeting cost |
+| force_government_cost | INT | No | force_government_cost | Ideology imposition cost |
+| expire | INT | No | expire | Expiry in days |
+| threat | NUMERIC(6,3) | No | threat | World tension impact |
+| take_states_threat_factor | NUMERIC(6,3) | No | take_states_threat_factor | Per-state tension factor |
+| allowed_block | TEXT | No | allowed block | Scripted trigger |
+| available_block | TEXT | No | available block | Scripted trigger |
+| source_file | VARCHAR(200) | No | - | Provenance |
+
+- **Row count**: 10
+- **Relationship notes**: Standalone reference table.
+
+### diplomatic_relations
+- **Purpose**: Starting diplomatic relationships between countries (vassals, puppets, guarantees, etc.)
+- **Source files**: `history/countries/*.txt` (diplomatic commands), `history/diplomacy/*.txt`
+- **Grain**: One row per (country, target, relation_type) triple
+- **Primary key**: `diplomatic_relation_id` (SERIAL)
+- **Foreign keys**: `country_tag -> countries`, `target_tag -> countries`
+
+| Column | Type | Required | Source field | Notes |
+|---|---|---|---|---|
+| diplomatic_relation_id* | SERIAL | Yes | Auto | PK |
+| country_tag | CHAR(3) | Yes | Parent country | FK |
+| target_tag | CHAR(3) | Yes | Target country | FK |
+| relation_type | VARCHAR(40) | Yes | Command name | puppet, guarantee, give_military_access, etc. |
+| autonomy_type | VARCHAR(80) | No | autonomy_state | e.g. autonomy_puppet |
+| freedom_level | NUMERIC(5,4) | No | freedom_level | 0.0000–1.0000 |
+| effective_date | DATE | Yes | Date context | DEFAULT '1936-01-01' |
+| dlc_source | VARCHAR(120) | No | DLC gate | |
+| source_file | VARCHAR(200) | No | - | Provenance |
+
+- **Row count**: 48
+- **Relationship notes**: Both FKs reference `countries(tag)`.
+
+### starting_factions
+- **Purpose**: Pre-war faction definitions (e.g. Allies, Axis, Comintern)
+- **Source files**: `history/countries/*.txt` (create_faction commands)
+- **Grain**: One row per faction
+- **Primary key**: `starting_faction_id` (SERIAL)
+- **Foreign keys**: `leader_tag -> countries`
+
+| Column | Type | Required | Source field | Notes |
+|---|---|---|---|---|
+| starting_faction_id* | SERIAL | Yes | Auto | PK |
+| faction_template_key | VARCHAR(120) | Yes | create_faction template | Faction template reference |
+| leader_tag | CHAR(3) | Yes | Parent country | FK - faction leader |
+| effective_date | DATE | Yes | Date context | DEFAULT '1936-01-01' |
+| source_file | VARCHAR(200) | No | - | Provenance |
+
+- **Row count**: 5
+- **Relationship notes**: Parent of `starting_faction_members`. FK to `countries(tag)`.
+
+### starting_faction_members
+- **Purpose**: Countries that are members of starting factions
+- **Source files**: `history/countries/*.txt` (add_to_faction commands)
+- **Grain**: One row per member
+- **Primary key**: `starting_faction_member_id` (SERIAL)
+- **Foreign keys**: `starting_faction_id -> starting_factions`, `member_tag -> countries`
+
+| Column | Type | Required | Source field | Notes |
+|---|---|---|---|---|
+| starting_faction_member_id* | SERIAL | Yes | Auto | PK |
+| starting_faction_id | INT | Yes | Parent faction | FK |
+| member_tag | CHAR(3) | Yes | add_to_faction target | FK |
+| source_file | VARCHAR(200) | No | - | Provenance |
+
+- **Row count**: 12
+- **Relationship notes**: Child of `starting_factions`. FK to `countries(tag)`.
+
+### events
+- **Purpose**: Game event definitions (country, news, state events, etc.)
+- **Source files**: `events/*.txt`
+- **Grain**: One row per event
+- **Primary key**: `event_key`
+
+| Column | Type | Required | Source field | Notes |
+|---|---|---|---|---|
+| event_key* | VARCHAR(120) | Yes | id = X | PK |
+| event_type | VARCHAR(30) | Yes | Block type | country_event, news_event, state_event |
+| title_key | VARCHAR(200) | No | title | Localisation key |
+| description_key | VARCHAR(200) | No | desc | Localisation key |
+| picture | VARCHAR(200) | No | picture | GFX reference |
+| is_triggered_only | BOOLEAN | No | is_triggered_only | |
+| is_major | BOOLEAN | No | major | |
+| fire_only_once | BOOLEAN | No | fire_only_once | |
+| hidden | BOOLEAN | No | hidden | |
+| namespace | TEXT | No | namespace block | Event namespace |
+| source_file | VARCHAR(200) | No | - | Provenance |
+
+- **Row count**: 6,486
+- **Relationship notes**: Parent of `event_options`.
+
+### event_options
+- **Purpose**: Response options within events
+- **Source files**: `events/*.txt` (option blocks)
+- **Grain**: One row per option per event
+- **Primary key**: `event_option_id` (SERIAL)
+- **Foreign keys**: `event_key -> events`
+
+| Column | Type | Required | Source field | Notes |
+|---|---|---|---|---|
+| event_option_id* | SERIAL | Yes | Auto | PK |
+| event_key | VARCHAR(120) | Yes | Parent event | FK |
+| option_name | VARCHAR(200) | No | name | Localisation key |
+| option_index | SMALLINT | Yes | Positional order | DEFAULT 0 |
+| ai_chance_factor | VARCHAR(20) | No | ai_chance.factor | AI weight |
+| trigger_block | TEXT | No | trigger block | Scripted trigger |
+| effect_block | TEXT | No | effect block | Scripted effect |
+
+- **Row count**: 10,849
+- **Relationship notes**: Child of `events`. Ordered by `option_index`.
+
+---
+
+## Summary - New Tables Added in Phases 16–28 & V2
 
 | Phase | Domain | Tables Added | Total New Rows (est.) |
 |---|---|---|---|
@@ -2610,11 +2749,12 @@ Equipment requirements for timed activities.
 | 27 | AI Faction Theaters | `ai_faction_theaters`, `ai_faction_theater_regions` | ~210 |
 | 28 | Timed Activities | `timed_activities`, `timed_activity_equipment` | ~2 |
 | Infra | Infrastructure | `user_annotations`, `localisation` | ~117,490 |
-| **Totals** | | **77 new tables + 2 infra** | **~125,284 rows** |
+| V2 | Wargoals | `wargoal_types` | 10 |
+| V2 | Diplomacy & Factions | `diplomatic_relations`, `starting_factions`, `starting_faction_members` | 65 |
+| V2 | Events | `events`, `event_options` | ~17,335 |
+| **Totals** | | **83 new tables + 2 infra** | **~142,694 rows** |
 
-**Running total: 66 existing + 77 new + 4 schema-only + 2 infrastructure = 149 tables**
-
-(Note: `intelligence_agencies` is a revision of an existing table, so net new tables = 50; but the new child table `intelligence_agency_names` makes 51 new table definitions.)
+**Running total: 66 existing + 83 new + 4 schema-only + 2 infrastructure + 2 infrastructure-V2-events = 157 tables**
 
 ---
 
@@ -2722,6 +2862,14 @@ Tables must be created in this order to satisfy FK constraints:
 -- Phase 28: Timed Activities
 75. timed_activities
 76. timed_activity_equipment                (FK -> timed_activities)
+
+-- V2: Wargoals, Diplomacy, Events
+77. wargoal_types
+78. diplomatic_relations                    (FK -> countries ×2)
+79. starting_factions                       (FK -> countries)
+80. starting_faction_members                (FK -> starting_factions, countries)
+81. events
+82. event_options                           (FK -> events)
 ```
 
 ---

@@ -1,6 +1,6 @@
 # HOI4 Source to Table Map
 
-Status: **COMPLETE** (all 28 phases + localisation mapped - core + DLC + doctrines + factions + special projects + infrastructure)
+Status: **COMPLETE** (all 28 phases + V2 API phases + localisation mapped - core + DLC + doctrines + factions + special projects + events + diplomacy + wargoals + infrastructure)
 
 ## Purpose
 Complete mapping of every source file path to target database tables and transformation rules.
@@ -77,6 +77,10 @@ Complete mapping of every source file path to target database tables and transfo
 | `common/ai_faction_theaters/*.txt` | ai_faction_theaters, ai_faction_theater_regions | Parse `theater_key = { name = ..., regions = { id... } }` blocks. Region list -> junction. | Ride of the Valkyries |
 | `common/timed_activities/*.txt` | timed_activities, timed_activity_equipment | Parse `activity_key = { equipment_need = { equip = N } }` blocks. | Base game |
 | `localisation/english/*_l_english.yml` | localisation | YAML-like format: `key:0 "value"` per line under `l_english:` header. Regex extract `^\s+(\S+?):\d*\s+"(.+)"\s*$`. Deduplicate (later file wins). 189 files -> 117,490 rows. | None (base game + all DLC) |
+| `common/wargoals/*.txt` | wargoal_types | One block per wargoal type; extract key, generate_base_cost, puppet_cost, expire, threat, allowed/available blocks. | None |
+| `history/diplomacy/*.txt` | diplomatic_relations | Parse diplomatic blocks: `set_autonomy`, `give_guarantee`, `give_military_access`, `non_aggression_pact`. FK to countries. | dlc_source from DLC guards |
+| `history/countries/*.txt` (faction commands) | starting_factions, starting_faction_members | Two-pass: (1) `create_faction` -> starting_factions, (2) `add_to_faction` -> starting_faction_members. Leader tag from `create_faction` host country. | None |
+| `events/*.txt` | events, event_options | One block per event (country_event, news_event, state_event, unit_leader_event). Nested `option = { }` blocks -> event_options. 121 files, 6,486 events, 10,849 options. | dlc_source from DLC gates |
 
 ---
 
@@ -144,6 +148,9 @@ Complete mapping of every source file path to target database tables and transfo
 - [x] `common/ai_faction_theaters/*.txt`
 - [x] `common/timed_activities/*.txt`
 - [x] `localisation/english/*_l_english.yml`
+- [x] `common/wargoals/*.txt`
+- [x] `history/diplomacy/*.txt`
+- [x] `events/*.txt`
 
 ---
 
@@ -154,6 +161,5 @@ These source paths exist but are **not modeled** in the starting-state database 
 | Path | Reason for exclusion |
 |---|---|
 | `common/on_actions/*.txt` | Event triggers, not data |
-| `events/*.txt` | Event scripts, not starting state |
 | `common/ai_strategy/*.txt` | AI behavior, not game data |
 | `common/names/*.txt` | Name generation lists, not starting state |

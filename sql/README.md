@@ -8,8 +8,8 @@ This directory contains two checked-in SQL files (`schema.sql`, `views.sql`) plu
 
 | File | Purpose | Size |
 |---|---|---|
-| `schema.sql` | DDL - creates all 151 tables, 4 deferred FKs, 63 indexes | ~1,820 lines |
-| `views.sql` | 14 read-only API views + 2 date-parameterised functions that pre-join and aggregate related tables | ~720 lines |
+| `schema.sql` | DDL - creates all 157 tables, 4 deferred FKs, 61 indexes | ~1,910 lines |
+| `views.sql` | 16 read-only API views + 2 date-parameterised functions that pre-join and aggregate related tables | ~790 lines |
 | `seed-load-order.sql` | **Generated locally** - FK-safe `\copy` commands with explicit column lists across 7 tiers, plus staging tables for FK resolution, wrapped in a transaction. Run `python tools/db_etl/gen_seed_sql.py` to produce it. | ~280 lines |
 | `seed-docker.sql` | **Generated locally** - server-side `COPY` variant of `seed-load-order.sql` for use inside a Docker container. Run `python tools/db_etl/gen_seed_docker.py` to produce it. | ~280 lines |
 
@@ -27,19 +27,19 @@ PostgreSQL supports transactional DDL - unlike MySQL, a `CREATE TABLE` inside a 
 
 ### Organisation - Phases, not alphabetical
 
-Tables are grouped by **game domain** (Phases 1–23), not alphabetically. This mirrors how the game data is structured:
+Tables are grouped by **game domain** (Phases 1–28 + V2), not alphabetically. This mirrors how the game data is structured:
 
 - **Phase 1** creates root reference tables (terrain, resources, buildings, ideologies) that everything else depends on
 - **Phase 2** creates geography (provinces, strategic regions, supply nodes)
 - **Phase 3** creates countries and their history
-- Phases 4–22 build up increasingly specific game systems
-- **Phase 23** (Doctrines) is the newest, covering the Officer Corps system
+- Phases 4–28 build up increasingly specific game systems
+- **V2** adds wargoal types, starting diplomacy, and events
 
 This ordering matters because PostgreSQL requires referenced tables to exist before you can create an FK pointing at them. The phase order is a topological sort of the FK dependency graph.
 
 ### Why "Slice A" appears first
 
-The first 15 tables (`countries`, `states`, `provinces`, etc.) were built during an early prototyping phase ("Slice A") and already had working DDL. Rather than rewriting them, they were preserved at the top of the file. The remaining 136 tables follow in phase order below. The deferred `ALTER TABLE` statements at the bottom tie Slice A tables to Phase 1 reference tables that didn't exist when Slice A was written.
+The first 15 tables (`countries`, `states`, `provinces`, etc.) were built during an early prototyping phase ("Slice A") and already had working DDL. Rather than rewriting them, they were preserved at the top of the file. The remaining 142 tables follow in phase order below. The deferred `ALTER TABLE` statements at the bottom tie Slice A tables to Phase 1 reference tables that didn't exist when Slice A was written.
 
 ### Key design patterns
 
@@ -133,7 +133,7 @@ All other FK constraints (126 total) are fully enforced. DLC data loads successf
 
 ### Index strategy
 
-63 indexes (2 UNIQUE + 61 regular B-tree) are defined after all table definitions. They are grouped by phase, matching the table ordering, and follow the naming convention `ix_<table>_<column_description>` (or `uq_` for unique constraints).
+61 indexes (2 UNIQUE + 59 regular B-tree) are defined after all table definitions. They are grouped by phase, matching the table ordering, and follow the naming convention `ix_<table>_<column_description>` (or `uq_` for unique constraints).
 
 #### Why indexes are placed at the end of schema.sql
 
@@ -271,7 +271,7 @@ Not every FK column has an index. Indexes are omitted when:
 
 ### What it does
 
-Defines 14 `CREATE OR REPLACE VIEW` statements that pre-join related tables and aggregate child rows into JSONB arrays. These are the intended read interface for an eventual REST API.
+Defines 16 `CREATE OR REPLACE VIEW` statements plus 2 date-parameterised functions that pre-join related tables and aggregate child rows into JSONB arrays. These are the intended read interface for the REST + GraphQL API.
 
 ### Why views instead of direct queries?
 
@@ -279,7 +279,7 @@ Defines 14 `CREATE OR REPLACE VIEW` statements that pre-join related tables and 
 2. **Complex joins are defined once** - a country detail involves 5+ tables. Writing that join in every API handler is error-prone.
 3. **The views are not materialised** - they're regular views, so they always reflect current data. Materialisation would only help if the data were large and rarely updated, which doesn't apply to a game database that's loaded once.
 
-### The three slices
+### The five slices
 
 Views are grouped by access pattern:
 
@@ -287,9 +287,11 @@ Views are grouped by access pattern:
 |---|---|---|
 | **A** - Country & State | `api_country_detail`, `api_state_detail` | "Show me Germany" or "Show me State 64" - the most common queries |
 | **B** - Domain catalogs | `api_country_technologies`, `api_technology_tree`, `api_country_characters`, `api_country_divisions`, `api_country_naval`, `api_country_air`, `api_focus_tree_detail`, `api_equipment_catalog`, `api_ideas_detail` | Browse a specific game system across all countries or drill into one country's data |
-| **C** - DLC systems | `api_mio_organization_detail`, `api_operation_detail`, `api_bop_detail` | DLC-specific queries - only relevant when the DLC is owned |
+| **C** - DLC systems | `api_mio_organization_detail`, `api_operation_detail`, `api_bop_detail`, `api_faction_detail`, `api_special_project_detail` | DLC-specific queries - only relevant when the DLC is owned |
+| **D** - Diplomacy & Factions | `api_starting_factions` | Pre-war alliance structures |
+| **E** - Events | `api_event_detail` | Event catalogue with response options |
 
-**Why this grouping?** It matches how a strategy guide generator or game assistant would query the data. You'd ask "What does Germany start with?" (Slice A), then drill into "What's in Germany's focus tree?" (Slice B), then optionally "What MIOs does Germany have?" (Slice C).
+**Why this grouping?** It matches how a strategy guide generator or game assistant would query the data. You'd ask "What does Germany start with?" (Slice A), then drill into "What's in Germany's focus tree?" (Slice B), then optionally "What MIOs does Germany have?" (Slice C), then "Who are Germany's allies?" (Slice D) or "What events can fire?" (Slice E).
 
 ### The JSONB aggregation pattern
 
@@ -333,7 +335,7 @@ WITH ownership_1936 AS (
 
 ### What it does
 
-An executable psql script that loads all 127 tables in FK-safe order across 7 tiers. Every `\copy` command uses an explicit column list so SERIAL/BIGSERIAL primary keys are auto-generated and CSV column order does not need to match the schema. Six tables that need FK resolution from natural keys to surrogate IDs use staging temp tables with `INSERT ... SELECT ... JOIN`. The entire load is wrapped in `BEGIN`/`COMMIT` with `\set ON_ERROR_STOP on`, so any failure rolls back cleanly.
+An executable psql script that loads all 157 tables in FK-safe order across 7 tiers. Every `\copy` command uses an explicit column list so SERIAL/BIGSERIAL primary keys are auto-generated and CSV column order does not need to match the schema. Six tables that need FK resolution from natural keys to surrogate IDs use staging temp tables with `INSERT ... SELECT ... JOIN`. The entire load is wrapped in `BEGIN`/`COMMIT` with `\set ON_ERROR_STOP on`, so any failure rolls back cleanly.
 
 This file is generated by `tools/db_etl/gen_seed_sql.py`, which reads CSV headers and produces the column lists automatically. Re-run the generator after any schema or CSV column changes.
 

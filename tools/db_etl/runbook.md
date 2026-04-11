@@ -36,7 +36,7 @@ python tools/db_etl/export_markdown_dump.py
 python tools/db_etl/export_markdown_dump.py --hoi4-root "/path/to/Hearts of Iron IV"
 ```
 
-**Output:** `docs/data-dump/` - 160 markdown files (~225K rows across 23 schema phases).
+**Output:** `docs/data-dump/` - 166 markdown files (~360K rows across 28 schema phases + V2).
 Check `docs/data-dump/SUMMARY.md` for per-dataset row counts.
 
 > **Windows note:** If you see encoding errors, set `$env:PYTHONIOENCODING='utf-8'` first.
@@ -62,7 +62,7 @@ python tools/db_etl/md_to_csv.py
 
 ```
 
-**Output:** `data/csv/` - 149 CSV files (~225K rows), one per schema table.
+**Output:** `data/csv/` - 156 CSV files (~360K rows), one per schema table.
 (Localisation CSV is produced separately by `export_localisation.py` - see Step 1b.)
 
 The converter handles column renames, multi-source merges (e.g., country_tags +

@@ -2,7 +2,7 @@
 
 A fully normalised **PostgreSQL 16** database representing all Hearts of Iron IV starting-state game data, every country, state, technology, focus tree, OOB division, naval fleet, air wing, character, idea, and DLC system, loaded and ready to query.
 
-**151 tables · ~225K game rows · 14 API views + 2 functions · REST + GraphQL API · all 37 DLCs covered**
+**157 tables · ~360K game rows · 16 API views + 2 functions · REST + GraphQL API · all 37 DLCs covered**
 
 ---
 
@@ -69,22 +69,22 @@ hoi4-database/
 │   │   ├-- graphQL/                   GraphQL implementation files
 │   │   ├-- routers/                   Endpoint modules (countries, states, …)
 │   │   └-- schemas/                   Pydantic response models
-│   ├-- tests/                         pytest-asyncio integration tests (105 tests)
+│   ├-- tests/                         pytest-asyncio integration tests (130 tests)
 │   ├-- requirements.txt               Python dependencies
 │   └-- .env.example                   Environment template
 ├-- docs/                              Design & reference documentation
 │   ├-- hoi4-database-design.md        Master design doc (23 phases, FK build order, DLC strategy)
-│   ├-- hoi4-er-diagram.md             Mermaid ER diagram (127 entities, 133 relationships)
+│   ├-- hoi4-er-diagram.md             Mermaid ER diagram (133 entities, 138 relationships)
 │   ├-- hoi4-table-catalog.md          Column-level specs for every table (~2,100 lines)
 │   ├-- hoi4-source-to-table-map.md    Game file -> target table mapping
 │   ├-- hoi4-data-snapshots.md         Sample extracted rows per table
-│   └-- data-dump/                     160 extracted markdown data files (gitignored)
+│   └-- data-dump/                     166 extracted markdown data files (gitignored)
 │       └-- SUMMARY.md                 Index with row counts
 ├-- data/
-│   └-- csv/                           149 game + 1 localisation CSV files (generated, gitignored)
+│   └-- csv/                           156 game + 1 localisation CSV files (generated, gitignored)
 ├-- sql/
-│   ├-- schema.sql                     DDL - 151 tables, 4 ALTER TABLE, 63 indexes
-│   ├-- views.sql                      14 API views + 2 date-parameterised functions
+│   ├-- schema.sql                     DDL - 157 tables, 4 ALTER TABLE, 61 indexes
+│   ├-- views.sql                      16 API views + 2 date-parameterised functions
 │   └-- README.md                      SQL design rationale
 ├-- tools/
 │   ├-- start-db.sh                    Start PostgreSQL container
@@ -111,7 +111,7 @@ hoi4-database/
 
 ## Schema Summary
 
-**151 tables** across **23 design phases + infrastructure**:
+**157 tables** across **28 design phases + V2 + infrastructure**:
 
 | Phases | Domain | Tables | DLC |
 |--------|--------|--------|-----|
@@ -129,6 +129,10 @@ hoi4-database/
 | 20 | Career profile (medals, ribbons, aces) | 8 | By Blood Alone |
 | 21–22 | Balance of power, continuous focuses, misc DLC | 13 | Various |
 | 23 | Doctrines (Officer Corps) | 6 | Götterdämmerung |
+| 24 | Factions | 10 | Ride of the Valkyries |
+| 25 | Special Projects | 5 | Götterdämmerung |
+| 26–28 | Collections, AI theaters, timed activities | 5 | Various |
+| V2 | Wargoals, diplomacy, factions, events | 6 | - |
 | - | Infrastructure (localisation, user annotations) | 2 | - |
 
 All DLC-conditional rows have a nullable `dlc_source VARCHAR(50)` column (NULL = base game).
@@ -162,14 +166,14 @@ History tables use `effective_date DATE` columns. Query with `WHERE effective_da
 
 ## How to Read the ER Diagram
 
-The file [docs/hoi4-er-diagram.md](docs/hoi4-er-diagram.md) is a **Mermaid erDiagram** with 127 entities and 133 relationships. To render it:
+The file [docs/hoi4-er-diagram.md](docs/hoi4-er-diagram.md) is a **Mermaid erDiagram** with 133 entities and 138 relationships. To render it:
 
 - **VS Code**: Install "Markdown Preview Mermaid Support", open in preview
 - **GitHub**: GitHub renders Mermaid natively in `.md` files
 - **Online**: Copy the Mermaid block into [mermaid.live](https://mermaid.live)
 - **CLI**: `npx -p @mermaid-js/mermaid-cli mmdc -i docs/hoi4-er-diagram.md -o docs/hoi4-er-diagram.svg`
 
-> With 127 entities the full diagram is large. For focused viewing, copy only the phases you need.
+> With 133 entities the full diagram is large. For focused viewing, copy only the phases you need.
 
 ---
 
@@ -190,15 +194,15 @@ The file [docs/hoi4-er-diagram.md](docs/hoi4-er-diagram.md) is a **Mermaid erDia
 
 ## Project Status
 
-- **Schema**: 151 tables (149 game + localisation + user_annotations), 4 ALTER TABLE, 63 indexes - all FK constraints enforced
-- **Data extraction**: 160 markdown dumps covering all 23 phases including DLC
+- **Schema**: 157 tables (155 game + localisation + user_annotations), 4 ALTER TABLE, 61 indexes - all FK constraints enforced
+- **Data extraction**: 166 markdown dumps covering all 28 phases + V2 including DLC
 - **Localisation**: 117,490 English display names extracted from 189 `*_l_english.yml` game files
 - **ETL pipeline**: markdown -> CSV -> PostgreSQL with 0 errors
-- **Database loaded**: 151 tables, ~225K game rows, 14 views + 2 functions
+- **Database loaded**: 157 tables, ~360K game rows, 16 views + 2 functions
 - **Validation**: FK, PK, NOT NULL checks - 0 errors, 0 warnings
-- **REST API** (FastAPI + asyncpg) - 35 endpoints across 10 routers (countries, states, technologies, characters, military, focus trees, equipment, ideas, DLC systems, annotations)
-- **GraphQL API** (Strawberry) - 17 query resolvers mounted at `/graphql`, full field selection
-- **Test suite**: 105 integration tests across 13 test files - all passing
+- **REST API** (FastAPI + asyncpg) - 45 endpoints across 15 routers (countries, states, technologies, characters, military, focus trees, equipment, ideas, DLC systems, annotations, wargoals, diplomacy, events, decisions)
+- **GraphQL API** (Strawberry) - 22 query resolvers mounted at `/graphql`, full field selection
+- **Test suite**: 130 integration tests across 17 test files - all passing
 
 ---
 
