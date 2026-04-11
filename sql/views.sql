@@ -397,6 +397,7 @@ SELECT
                 'y_pos', f.y_pos,
                 'icon', f.icon,
                 'dlc_source', f.dlc_source,
+                'completion_reward', f.completion_reward,
                 'prerequisites', COALESCE((
                     SELECT jsonb_agg(
                         jsonb_build_object(
@@ -469,6 +470,9 @@ SELECT
     i.removal_cost,
     i.is_default,
     i.dlc_source,
+    i.on_add_effect,
+    i.on_remove_effect,
+    i.allowed_condition,
     COALESCE((
         SELECT jsonb_agg(
             jsonb_build_object('modifier_key', im.modifier_key, 'modifier_value', im.modifier_value)
@@ -715,3 +719,65 @@ SELECT
         WHERE sprl.project_key = sp.project_key
     ), '[]'::jsonb) AS rewards
 FROM special_projects sp;
+
+-- ============================================================
+-- Slice D - Starting Diplomatic State
+-- ============================================================
+
+CREATE OR REPLACE VIEW api_starting_factions AS
+SELECT
+    sf.starting_faction_id,
+    sf.faction_template_key,
+    sf.leader_tag,
+    COALESCE(ll.loc_value, sf.leader_tag) AS leader_name,
+    sf.effective_date,
+    COALESCE((
+        SELECT jsonb_agg(
+            jsonb_build_object(
+                'member_tag', sfm.member_tag,
+                'member_name', COALESCE(ml.loc_value, sfm.member_tag)
+            )
+            ORDER BY sfm.member_tag
+        )
+        FROM starting_faction_members sfm
+        LEFT JOIN localisation ml ON ml.loc_key = sfm.member_tag
+        WHERE sfm.starting_faction_id = sf.starting_faction_id
+    ), '[]'::jsonb) AS members
+FROM starting_factions sf
+LEFT JOIN localisation ll ON ll.loc_key = sf.leader_tag;
+
+-- ============================================================
+-- Slice E - Events
+-- ============================================================
+
+CREATE OR REPLACE VIEW api_event_detail AS
+SELECT
+    e.event_key,
+    e.event_type,
+    e.title_key,
+    COALESCE(lt.loc_value, e.title_key) AS title_text,
+    e.description_key,
+    e.picture,
+    e.is_triggered_only,
+    e.is_major,
+    e.fire_only_once,
+    e.hidden,
+    e.namespace,
+    e.source_file,
+    COALESCE((
+        SELECT jsonb_agg(
+            jsonb_build_object(
+                'event_option_id', eo.event_option_id,
+                'option_name', eo.option_name,
+                'option_index', eo.option_index,
+                'ai_chance_factor', eo.ai_chance_factor,
+                'trigger_block', eo.trigger_block,
+                'effect_block', eo.effect_block
+            )
+            ORDER BY eo.option_index
+        )
+        FROM event_options eo
+        WHERE eo.event_key = e.event_key
+    ), '[]'::jsonb) AS options
+FROM events e
+LEFT JOIN localisation lt ON lt.loc_key = e.title_key;

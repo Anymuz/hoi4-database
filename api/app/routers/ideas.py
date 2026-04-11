@@ -18,7 +18,8 @@ async def list_ideas(
         rows = await db.fetch(
             """
             SELECT idea_key, slot, is_law, cost, removal_cost, is_default,
-                   dlc_source, modifiers
+                   dlc_source, on_add_effect, on_remove_effect, allowed_condition,
+                   modifiers
             FROM api_ideas_detail
             WHERE slot = $1
             ORDER BY idea_key
@@ -30,7 +31,8 @@ async def list_ideas(
         rows = await db.fetch(
             """
             SELECT idea_key, slot, is_law, cost, removal_cost, is_default,
-                   dlc_source, modifiers
+                   dlc_source, on_add_effect, on_remove_effect, allowed_condition,
+                   modifiers
             FROM api_ideas_detail
             WHERE is_law = $1
             ORDER BY idea_key
@@ -42,7 +44,8 @@ async def list_ideas(
         rows = await db.fetch(
             """
             SELECT idea_key, slot, is_law, cost, removal_cost, is_default,
-                   dlc_source, modifiers
+                   dlc_source, on_add_effect, on_remove_effect, allowed_condition,
+                   modifiers
             FROM api_ideas_detail
             ORDER BY idea_key
             LIMIT $1 OFFSET $2
@@ -61,7 +64,8 @@ async def get_idea(
     row = await db.fetchrow(
         """
         SELECT idea_key, slot, is_law, cost, removal_cost, is_default,
-               dlc_source, modifiers
+               dlc_source, on_add_effect, on_remove_effect, allowed_condition,
+               modifiers
         FROM api_ideas_detail
         WHERE idea_key = $1
         """,

@@ -339,7 +339,7 @@ def _split_pipe_row(line: str) -> list[str]:
         parts = parts[1:]
     if parts and parts[-1].strip() == "":
         parts = parts[:-1]
-    return [p.strip() for p in parts]
+    return [p.strip().replace("\\n", "\n") for p in parts]
 
 
 # ---------------------------------------------------------------------

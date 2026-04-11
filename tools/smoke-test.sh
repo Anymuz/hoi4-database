@@ -75,6 +75,27 @@ check "GET /api/v1/operations" \
 check "GET /api/v1/bop" \
   "$(curl -s -o /dev/null -w '%{http_code}' "$BASE/api/v1/bop")"
 
+check "GET /api/v1/factions" \
+  "$(curl -s -o /dev/null -w '%{http_code}' "$BASE/api/v1/factions")"
+
+check "GET /api/v1/special-projects" \
+  "$(curl -s -o /dev/null -w '%{http_code}' "$BASE/api/v1/special-projects")"
+
+check "GET /api/v1/wargoals" \
+  "$(curl -s -o /dev/null -w '%{http_code}' "$BASE/api/v1/wargoals")"
+
+check "GET /api/v1/diplomacy" \
+  "$(curl -s -o /dev/null -w '%{http_code}' "$BASE/api/v1/diplomacy")"
+
+check "GET /api/v1/factions/starting" \
+  "$(curl -s -o /dev/null -w '%{http_code}' "$BASE/api/v1/factions/starting")"
+
+check "GET /api/v1/events?limit=5" \
+  "$(curl -s -o /dev/null -w '%{http_code}' "$BASE/api/v1/events?limit=5")"
+
+check "GET /api/v1/decisions?limit=5" \
+  "$(curl -s -o /dev/null -w '%{http_code}' "$BASE/api/v1/decisions?limit=5")"
+
 echo ""
 echo "=== GraphQL Smoke Test ==="
 
@@ -82,6 +103,11 @@ check "POST /graphql (country query)" \
   "$(curl -s -o /dev/null -w '%{http_code}' -X POST "$BASE/graphql" \
     -H "Content-Type: application/json" \
     -d '{"query": "{ country(tag: \"GER\") { tag stability ownedStates { stateId } } }"}')"
+
+check "POST /graphql (events query)" \
+  "$(curl -s -o /dev/null -w '%{http_code}' -X POST "$BASE/graphql" \
+    -H "Content-Type: application/json" \
+    -d '{"query": "{ events(limit: 3) { eventKey eventType titleKey } }"}')"
 
 echo ""
 echo "=== Annotations CRUD Lifecycle ==="

@@ -14,6 +14,7 @@ class FocusItem(BaseModel):
     y_pos: int | None = None
     icon: str | None = None
     dlc_source: str | None = None
+    completion_reward: str | None = None
     prerequisites: list[FocusPrereq] = []
     mutually_exclusive: list[str] = []
 

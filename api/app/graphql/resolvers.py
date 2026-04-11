@@ -11,7 +11,8 @@ from app.graphql.types import (
     Country, State, Technology, Character, Division,
     FocusTree, Equipment, EquipmentVariant, EquipmentVariantModule,
     EquipmentVariantUpgrade, Idea, Mio, Operation, Bop,
-    Faction, SpecialProject, Annotation,
+    Faction, SpecialProject, Annotation, Wargoal,
+    DiplomaticRelation, StartingFaction, Event, Decision,
 )
 
 # Helper function to get the asyncpg pool from the FastAPI app context.
@@ -417,4 +418,87 @@ class Query:
                 )
             return [Annotation(**dict(r)) for r in rows]
     # End of annotations resolver.
+
+    # Wargoals are the objectives that countries can have in wars. Uses the wargoal_types table.
+    @strawberry.field
+    async def wargoals(self, info: Info) -> list[Wargoal]:
+        pool = await get_pool(info)
+        async with pool.acquire() as conn:
+            rows = await conn.fetch(
+                "SELECT * FROM wargoal_types ORDER BY wargoal_key"
+            )
+            return [Wargoal.from_row(r) for r in rows]
+    # End of wargoals resolver.
+
+    # Diplomatic relations from country history files.
+    @strawberry.field
+    async def diplomatic_relations(self, info: Info, country_tag: Optional[str] = None) -> list[DiplomaticRelation]:
+        pool = await get_pool(info)
+        async with pool.acquire() as conn:
+            if country_tag:
+                rows = await conn.fetch(
+                    "SELECT * FROM diplomatic_relations WHERE country_tag = $1 ORDER BY target_tag",
+                    country_tag.upper(),
+                )
+            else:
+                rows = await conn.fetch(
+                    "SELECT * FROM diplomatic_relations ORDER BY country_tag, target_tag"
+                )
+            return [DiplomaticRelation.from_row(r) for r in rows]
+    # End of diplomatic_relations resolver.
+
+    # Starting factions with their members.
+    @strawberry.field
+    async def starting_factions(self, info: Info) -> list[StartingFaction]:
+        pool = await get_pool(info)
+        async with pool.acquire() as conn:
+            rows = await conn.fetch(
+                "SELECT * FROM api_starting_factions ORDER BY faction_template_key"
+            )
+            return [StartingFaction.from_row(r) for r in rows]
+    # End of starting_factions resolver.
+
+    # Events with nested options from the api_event_detail view.
+    @strawberry.field
+    async def events(self, info: Info, event_type: Optional[str] = None, namespace: Optional[str] = None) -> list[Event]:
+        pool = await get_pool(info)
+        async with pool.acquire() as conn:
+            if event_type and namespace:
+                rows = await conn.fetch(
+                    "SELECT * FROM api_event_detail WHERE event_type = $1 AND namespace LIKE '%' || $2 || '%' ORDER BY event_key",
+                    event_type, namespace,
+                )
+            elif event_type:
+                rows = await conn.fetch(
+                    "SELECT * FROM api_event_detail WHERE event_type = $1 ORDER BY event_key",
+                    event_type,
+                )
+            elif namespace:
+                rows = await conn.fetch(
+                    "SELECT * FROM api_event_detail WHERE namespace LIKE '%' || $1 || '%' ORDER BY event_key",
+                    namespace,
+                )
+            else:
+                rows = await conn.fetch(
+                    "SELECT * FROM api_event_detail ORDER BY event_key"
+                )
+            return [Event.from_row(r) for r in rows]
+    # End of events resolver.
+
+    # Decisions with scripted effect blocks.
+    @strawberry.field
+    async def decisions(self, info: Info, category: Optional[str] = None) -> list[Decision]:
+        pool = await get_pool(info)
+        async with pool.acquire() as conn:
+            if category:
+                rows = await conn.fetch(
+                    "SELECT * FROM decisions WHERE category_key = $1 ORDER BY decision_key",
+                    category,
+                )
+            else:
+                rows = await conn.fetch(
+                    "SELECT * FROM decisions ORDER BY decision_key"
+                )
+            return [Decision.from_row(r) for r in rows]
+    # End of decisions resolver.
 # End of Query class.

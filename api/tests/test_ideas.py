@@ -77,3 +77,23 @@ async def test_idea_detail_404(client):
     assert resp.status_code == 404
 # End of test_idea_detail_404
 # ----------------------------------------------
+
+# Phase 7: Idea scripted effect tests:
+async def test_idea_has_on_add_effect(client):
+    """At least one idea has an on_add_effect."""
+    resp = await client.get("/api/v1/ideas?slot=country&limit=500")
+    assert resp.status_code == 200
+    ideas = resp.json()
+    with_effects = [i for i in ideas if i.get("on_add_effect")]
+    assert len(with_effects) > 0
+# End of test_idea_has_on_add_effect
+
+async def test_idea_effect_fields_present(client):
+    """Idea detail includes the three new effect fields."""
+    resp = await client.get("/api/v1/ideas?limit=1")
+    first = resp.json()[0]
+    assert "on_add_effect" in first
+    assert "on_remove_effect" in first
+    assert "allowed_condition" in first
+# End of test_idea_effect_fields_present
+# ----------------------------------------------

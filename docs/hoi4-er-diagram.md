@@ -1,11 +1,12 @@
 ```mermaid
 erDiagram
     %% ============================================================
-    %% HOI4 Complete ER Diagram - 127 tables (66 base + 61 DLC)
+    %% HOI4 Complete ER Diagram - 133 tables (72 base + 61 DLC)
     %% Phases 1-15: 66 core tables (geography, countries, techs,
     %%   characters, OOB, ideas, focuses, bookmarks, decisions)
     %% Phases 16-23: 61 DLC tables (espionage, occupation/resistance,
     %%   MIO, raids, career profile, BOP, continuous focuses, misc, doctrines)
+    %% V2: 6 tables (wargoals, diplomacy, factions, events)
     %% ============================================================
 
     %% === Phase 1: Global Reference Tables ===
@@ -1213,4 +1214,81 @@ erDiagram
     doctrine_tracks ||--o{ grand_doctrine_tracks : "used_by"
     doctrine_tracks ||--o{ subdoctrines : "has_subdoctrine"
     countries ||--o{ country_starting_doctrines : "starts_with"
+
+    %% === V2: Wargoals, Diplomacy, Factions, Events ===
+
+    wargoal_types {
+        varchar wargoal_key PK
+        varchar war_name_key
+        int generate_base_cost
+        int generate_per_state_cost
+        int take_states_limit
+        int take_states_cost
+        int puppet_cost
+        int force_government_cost
+        int expire
+        numeric threat
+        numeric take_states_threat_factor
+        text allowed_block
+        text available_block
+        varchar source_file
+    }
+
+    diplomatic_relations {
+        serial diplomatic_relation_id PK
+        char country_tag FK
+        char target_tag FK
+        varchar relation_type
+        varchar autonomy_type
+        numeric freedom_level
+        date effective_date
+        varchar dlc_source
+        varchar source_file
+    }
+
+    starting_factions {
+        serial starting_faction_id PK
+        varchar faction_template_key
+        char leader_tag FK
+        date effective_date
+        varchar source_file
+    }
+
+    starting_faction_members {
+        serial starting_faction_member_id PK
+        int starting_faction_id FK
+        char member_tag FK
+        varchar source_file
+    }
+
+    events {
+        varchar event_key PK
+        varchar event_type
+        varchar title_key
+        varchar description_key
+        varchar picture
+        boolean is_triggered_only
+        boolean is_major
+        boolean fire_only_once
+        boolean hidden
+        text namespace
+        varchar source_file
+    }
+
+    event_options {
+        serial event_option_id PK
+        varchar event_key FK
+        varchar option_name
+        smallint option_index
+        varchar ai_chance_factor
+        text trigger_block
+        text effect_block
+    }
+
+    %% V2 relationships
+    countries ||--o{ diplomatic_relations : "has_relation"
+    countries ||--o{ starting_factions : "leads_faction"
+    starting_factions ||--o{ starting_faction_members : "has_member"
+    countries ||--o{ starting_faction_members : "member_of"
+    events ||--o{ event_options : "has_option"
 ```

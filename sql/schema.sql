@@ -522,6 +522,9 @@ CREATE TABLE ideas (
     removal_cost                INT,
     is_default                  BOOLEAN,
     picture                     VARCHAR(120),
+    on_add_effect               TEXT,
+    on_remove_effect            TEXT,
+    allowed_condition           TEXT,
     source_file                 TEXT NOT NULL,
     dlc_source                  VARCHAR(50)
 );
@@ -707,6 +710,7 @@ CREATE TABLE focuses (
     cancel_if_invalid           BOOLEAN,
     continue_if_invalid         BOOLEAN,
     available_if_capitulated    BOOLEAN,
+    completion_reward            TEXT,
     source_file                 TEXT NOT NULL,
     dlc_source                  VARCHAR(50)
 );
@@ -834,6 +838,11 @@ CREATE TABLE decisions (
     category_key                VARCHAR(80) NOT NULL REFERENCES decision_categories(category_key),
     icon                        VARCHAR(120),
     cost                        INT,
+    allowed                     TEXT,
+    available                   TEXT,
+    visible                     TEXT,
+    complete_effect             TEXT,
+    remove_effect               TEXT,
     fire_only_once              BOOLEAN,
     dlc_source                  VARCHAR(80)
 );
@@ -1813,6 +1822,81 @@ CREATE TABLE user_annotations (
     created_at     TIMESTAMPTZ  NOT NULL DEFAULT now()
 );
 CREATE INDEX ix_user_annotations_entity ON user_annotations (entity_type, entity_key);
+
+-- ============================================================
+-- Wargoal Types
+-- ============================================================
+CREATE TABLE wargoal_types (
+    wargoal_key             VARCHAR(80) PRIMARY KEY,
+    war_name_key            VARCHAR(200),
+    generate_base_cost      INT,
+    generate_per_state_cost INT,
+    take_states_limit       INT,
+    take_states_cost        INT,
+    puppet_cost             INT,
+    force_government_cost   INT,
+    expire                  INT,
+    threat                  NUMERIC(6,3),
+    take_states_threat_factor NUMERIC(6,3),
+    allowed_block           TEXT,
+    available_block         TEXT,
+    source_file             VARCHAR(200)
+);
+
+-- Phase 9: Starting Diplomatic State
+CREATE TABLE diplomatic_relations (
+    diplomatic_relation_id  SERIAL PRIMARY KEY,
+    country_tag             CHAR(3) NOT NULL REFERENCES countries(tag),
+    target_tag              CHAR(3) NOT NULL REFERENCES countries(tag),
+    relation_type           VARCHAR(40) NOT NULL,
+    autonomy_type           VARCHAR(80),
+    freedom_level           NUMERIC(5,4),
+    effective_date          DATE NOT NULL DEFAULT '1936-01-01',
+    dlc_source              VARCHAR(120),
+    source_file             VARCHAR(200)
+);
+
+CREATE TABLE starting_factions (
+    starting_faction_id     SERIAL PRIMARY KEY,
+    faction_template_key    VARCHAR(120) NOT NULL,
+    leader_tag              CHAR(3) NOT NULL REFERENCES countries(tag),
+    effective_date          DATE NOT NULL DEFAULT '1936-01-01',
+    source_file             VARCHAR(200)
+);
+
+CREATE TABLE starting_faction_members (
+    starting_faction_member_id SERIAL PRIMARY KEY,
+    starting_faction_id     INT NOT NULL REFERENCES starting_factions(starting_faction_id),
+    member_tag              CHAR(3) NOT NULL REFERENCES countries(tag),
+    source_file             VARCHAR(200)
+);
+
+-- Phase 10: Events
+CREATE TABLE events (
+    event_key               VARCHAR(120) PRIMARY KEY,
+    event_type              VARCHAR(30) NOT NULL,
+    title_key               VARCHAR(200),
+    description_key         VARCHAR(200),
+    picture                 VARCHAR(200),
+    is_triggered_only       BOOLEAN,
+    is_major                BOOLEAN,
+    fire_only_once          BOOLEAN,
+    hidden                  BOOLEAN,
+    namespace               TEXT,
+    source_file             VARCHAR(200)
+);
+
+CREATE TABLE event_options (
+    event_option_id         SERIAL PRIMARY KEY,
+    event_key               VARCHAR(120) NOT NULL REFERENCES events(event_key),
+    option_name             VARCHAR(200),
+    option_index            SMALLINT NOT NULL DEFAULT 0,
+    ai_chance_factor        VARCHAR(20),
+    trigger_block           TEXT,
+    effect_block            TEXT
+);
+
+-- Phase 11: Decisions API (schema already exists, no new tables)
 
 -- End of schema definition
 COMMIT;

@@ -306,6 +306,7 @@ class Focus:
     y_pos: Optional[int] = None
     icon: Optional[str] = None
     dlc_source: Optional[str] = None
+    completion_reward: Optional[str] = None
     prerequisites: list[FocusPrereq]
     mutually_exclusive: list[str]
 
@@ -420,6 +421,9 @@ class Idea:
     removal_cost: Optional[float] = None
     is_default: bool
     dlc_source: Optional[str] = None
+    on_add_effect: Optional[str] = None
+    on_remove_effect: Optional[str] = None
+    allowed_condition: Optional[str] = None
     modifiers: list[IdeaModifier]
 
     # Classmethod to handle the complex nested data structure returned by the database.
@@ -700,7 +704,7 @@ class SpecialProject:
 # ------------------------------------------------------
 
 # Annotation related types, use the api_annotation_detail view:
-# Annotation is a more generic type tha represents a user-created annotation for an entity in the game, with its ID, type, key, note content, and creation timestamp. 
+# Annotation is a more generic type that represents a user-created annotation for an entity in the game, with its ID, type, key, note content, and creation timestamp. 
 @strawberry.type
 class Annotation:
     annotation_id: int
@@ -715,4 +719,162 @@ class Annotation:
         return cls(**dict(row))
     # End of from_row class method.
 # End of Annotation type.
+# ------------------------------------------------------
+
+# Wargoal related types, use the api_wargoal_detail view:
+# Wargoal represents a wargoal in the game, with its key, name, costs, threat, and other details. 
+@strawberry.type
+class Wargoal:
+    wargoal_key: str
+    war_name_key: Optional[str] = None
+    generate_base_cost: Optional[int] = None
+    generate_per_state_cost: Optional[int] = None
+    take_states_limit: Optional[int] = None
+    take_states_cost: Optional[int] = None
+    puppet_cost: Optional[int] = None
+    force_government_cost: Optional[int] = None
+    expire: Optional[int] = None
+    threat: Optional[float] = None
+    take_states_threat_factor: Optional[float] = None
+    allowed_block: Optional[str] = None
+    available_block: Optional[str] = None
+    source_file: Optional[str] = None
+
+    # Classmethod to convert from a database row into a Wargoal object.
+    @classmethod
+    def from_row(cls, row):
+        d = dict(row)
+        # Convert Decimal to float for numeric fields
+        for k in ("threat", "take_states_threat_factor"):
+            if d.get(k) is not None:
+                d[k] = float(d[k])
+        return cls(**d)
+    # End of from_row class method.
+# End of Wargoal type.
+# ------------------------------------------------------
+
+# Diplomacy and faction related types, use the api_diplomatic_relation_detail view:
+# DiplomaticRelation represents a diplomatic relation between two countries, with its type, autonomy level, freedom level, effective date, and other details.
+@strawberry.type
+class DiplomaticRelation:
+    diplomatic_relation_id: int
+    country_tag: str
+    target_tag: str
+    relation_type: str
+    autonomy_type: Optional[str] = None
+    freedom_level: Optional[float] = None
+    effective_date: Optional[str] = None
+    dlc_source: Optional[str] = None
+    source_file: Optional[str] = None
+
+    # Classmethod to convert from a database row into a DiplomaticRelation object, handling the conversion of numeric fields and date fields.
+    @classmethod
+    def from_row(cls, row):
+        d = dict(row)
+        if d.get("freedom_level") is not None:
+            d["freedom_level"] = float(d["freedom_level"])
+        if d.get("effective_date") is not None:
+            d["effective_date"] = str(d["effective_date"])
+        return cls(**d)
+    # End of from_row class method.
+# End of DiplomaticRelation type.
+
+# StartingFactionMember represents a member of a starting faction, with their tag and name. Nested within the StartingFaction type.
+@strawberry.type
+class StartingFactionMember:
+    member_tag: str
+    member_name: Optional[str] = None
+# End of StartingFactionMember type.
+
+# StartingFaction represents a faction that exists at the start of the game, with its ID, template key, leader, effective date, and members.
+@strawberry.type
+class StartingFaction:
+    starting_faction_id: int
+    faction_template_key: str
+    leader_tag: str
+    leader_name: Optional[str] = None
+    effective_date: Optional[str] = None
+    members: list[StartingFactionMember] = strawberry.field(default_factory=list)
+
+    # Classmethod to convert from a database row into a StartingFaction object, handling the conversion of date fields and the nested members list.
+    @classmethod
+    def from_row(cls, row):
+        d = dict(row)
+        if d.get("effective_date") is not None:
+            d["effective_date"] = str(d["effective_date"])
+        members_raw = d.pop("members", [])
+        import json
+        if isinstance(members_raw, str):
+            members_raw = json.loads(members_raw)
+        d["members"] = [StartingFactionMember(**m) for m in members_raw]
+        return cls(**d)
+    # End of from_row class method.
+# End of StartingFaction type.
+# ------------------------------------------------------
+
+# Event-related types, use the api_event_detail view:
+# EventOption represents one selectable option within an event.
+@strawberry.type
+class EventOption:
+    event_option_id: int
+    option_name: Optional[str] = None
+    option_index: int = 0
+    ai_chance_factor: Optional[str] = None
+    trigger_block: Optional[str] = None
+    effect_block: Optional[str] = None
+# End of EventOption type.
+
+# Event represents a country_event, news_event, or other event type with nested options.
+@strawberry.type
+class Event:
+    event_key: str
+    event_type: str
+    title_key: Optional[str] = None
+    title_text: Optional[str] = None
+    description_key: Optional[str] = None
+    picture: Optional[str] = None
+    is_triggered_only: Optional[bool] = None
+    is_major: Optional[bool] = None
+    fire_only_once: Optional[bool] = None
+    hidden: Optional[bool] = None
+    namespace: Optional[str] = None
+    source_file: Optional[str] = None
+    options: list[EventOption] = strawberry.field(default_factory=list)
+
+    # Classmethod to convert from a database row into an Event object, handling the nested options JSONB column.
+    @classmethod
+    def from_row(cls, row):
+        d = dict(row)
+        opts_raw = d.pop("options", [])
+        import json
+        if isinstance(opts_raw, str):
+            opts_raw = json.loads(opts_raw)
+        d["options"] = [EventOption(**o) for o in opts_raw]
+        return cls(**d)
+    # End of from_row class method.
+# End of Event type.
+# ------------------------------------------------------
+
+# Decision-related types:
+# Decision represents a political/military decision with scripted effect blocks.
+@strawberry.type
+class Decision:
+    decision_key: str
+    category_key: str
+    icon: Optional[str] = None
+    cost: Optional[int] = None
+    allowed: Optional[str] = None
+    available: Optional[str] = None
+    visible: Optional[str] = None
+    complete_effect: Optional[str] = None
+    remove_effect: Optional[str] = None
+    fire_only_once: Optional[bool] = None
+    dlc_source: Optional[str] = None
+
+    # Classmethod to convert from a database row into a Decision object.
+    @classmethod
+    def from_row(cls, row):
+        return cls(**dict(row))
+    # End of from_row class method.
+# End of Decision type.
 # ------------------------------------------------------

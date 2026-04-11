@@ -43,6 +43,7 @@ TIER0 = [
     "ai_faction_theaters", "collections", "faction_goals", "faction_manifests",
     "faction_member_upgrade_groups", "faction_rule_groups", "localisation",
     "special_project_specializations", "special_project_tags", "timed_activities",
+    "wargoal_types", "events",
 ]
 
 TIER1 = [
@@ -59,6 +60,7 @@ TIER1 = [
     "ideas", "grand_doctrine_tracks", "subdoctrines",
     "faction_member_upgrades", "faction_rules", "faction_templates",
     "special_projects", "special_project_rewards", "timed_activity_equipment",
+    "event_options",
 ]
 
 TIER2 = [
@@ -91,6 +93,7 @@ TIER4 = [
     "characters", "division_templates", "equipment_variants",
     "fleets", "air_wings", "focus_trees", "country_visual_definitions",
     "intelligence_agencies", "bookmarks", "country_starting_doctrines",
+    "diplomatic_relations", "starting_factions",
 ]
 
 TIER5_SIMPLE = [
@@ -177,6 +180,16 @@ lines.append("  SELECT b.bookmark_id, s.country_tag, s.ideology_key")
 lines.append("  FROM _stage_bc s")
 lines.append("  JOIN bookmarks b ON b.bookmark_name = s.bookmark_name;")
 lines.append("DROP TABLE _stage_bc;")
+
+lines.append("")
+lines.append("-- starting_faction_members: resolve leader_tag -> starting_faction_id")
+lines.append("CREATE TEMP TABLE _stage_sfm (leader_tag TEXT, member_tag TEXT, source_file TEXT);")
+lines.append("\\copy _stage_sfm FROM 'data/csv/starting_faction_members.csv' WITH (FORMAT csv, HEADER);")
+lines.append("INSERT INTO starting_faction_members (starting_faction_id, member_tag, source_file)")
+lines.append("  SELECT sf.starting_faction_id, s.member_tag, s.source_file")
+lines.append("  FROM _stage_sfm s")
+lines.append("  JOIN starting_factions sf ON sf.leader_tag = s.leader_tag;")
+lines.append("DROP TABLE _stage_sfm;")
 
 lines.append("")
 lines.append("-- equipment_variant_modules: resolve natural key -> equipment_variant_id")

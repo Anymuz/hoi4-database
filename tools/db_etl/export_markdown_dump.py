@@ -59,7 +59,7 @@ def write_md(path: Path, title: str, table_headers: List[str], rows: List[List[s
         f.write("| " + " | ".join(table_headers) + " |\n")
         f.write("|" + "|".join(["---"] * len(table_headers)) + "|\n")
         for row in rows:
-            safe = [str(c).replace("|", "\\|") for c in row]
+            safe = [str(c).replace("|", "\\|").replace("\n", "\\n") for c in row]
             f.write("| " + " | ".join(safe) + " |\n")
 
 
@@ -945,6 +945,15 @@ def extract_block(text: str, start: int) -> str:
     return text[idx + 1 :]
 
 
+def extract_named_block(text: str, key: str) -> str | None:
+    """Find  key = { ... }  in *text* and return the brace-matched body, or None."""
+    m = re.search(rf"\b{re.escape(key)}\s*=\s*\{{", text)
+    if not m:
+        return None
+    body = extract_block(text, m.start())
+    return body.strip() if body else None
+
+
 def find_top_level_blocks(text: str, wrapper: str = "") -> list:
     """Find all top-level key = { ... } blocks inside an optional wrapper block.
     Returns list of (key, body_str, start_pos) tuples."""
@@ -1156,7 +1165,8 @@ def parse_focuses_all() -> Tuple[int, int, int]:
                 y = re.search(r"\by\s*=\s*([\-0-9]+)", fbody)
                 cost = re.search(r"\bcost\s*=\s*([0-9]+)", fbody)
                 icon = re.search(r"\bicon\s*=\s*([A-Za-z0-9_]+)", fbody)
-                focus_rows.append([focus_id, tree_id, x.group(1) if x else "", y.group(1) if y else "", cost.group(1) if cost else "", icon.group(1) if icon else "", fp.name])
+                cr = extract_named_block(fbody, "completion_reward")
+                focus_rows.append([focus_id, tree_id, x.group(1) if x else "", y.group(1) if y else "", cost.group(1) if cost else "", icon.group(1) if icon else "", cr if cr else "", fp.name])
                 for pr in re.finditer(r"prerequisite\s*=\s*\{\s*focus\s*=\s*([a-zA-Z0-9_-]+)", fbody):
                     link_rows.append([focus_id, "prerequisite", pr.group(1), fp.name])
                 for mx in re.finditer(r"mutually_exclusive\s*=\s*\{\s*focus\s*=\s*([a-zA-Z0-9_-]+)", fbody):
@@ -1182,7 +1192,8 @@ def parse_focuses_all() -> Tuple[int, int, int]:
             y = re.search(r"\by\s*=\s*([\-0-9]+)", sbody)
             cost = re.search(r"\bcost\s*=\s*([0-9]+)", sbody)
             icon = re.search(r"\bicon\s*=\s*([A-Za-z0-9_]+)", sbody)
-            focus_rows.append([focus_id, shared_tree_id, x.group(1) if x else "", y.group(1) if y else "", cost.group(1) if cost else "", icon.group(1) if icon else "", fp.name])
+            cr = extract_named_block(sbody, "completion_reward")
+            focus_rows.append([focus_id, shared_tree_id, x.group(1) if x else "", y.group(1) if y else "", cost.group(1) if cost else "", icon.group(1) if icon else "", cr if cr else "", fp.name])
             for pr in re.finditer(r"prerequisite\s*=\s*\{\s*focus\s*=\s*([a-zA-Z0-9_-]+)", sbody):
                 link_rows.append([focus_id, "prerequisite", pr.group(1), fp.name])
             for mx in re.finditer(r"mutually_exclusive\s*=\s*\{\s*focus\s*=\s*([a-zA-Z0-9_-]+)", sbody):
@@ -1193,7 +1204,7 @@ def parse_focuses_all() -> Tuple[int, int, int]:
     focus_rows = dedup_rows(focus_rows, [0])
     link_rows = dedup_rows(link_rows, [0, 1, 2])
     write_md(OUT / "focus_trees_all.md", "Focus Trees (All Files)", ["focus_tree_id", "country_tag", "initial_x", "initial_y", "source_file"], tree_rows, "common/national_focus/*.txt")
-    write_md(OUT / "focuses_all.md", "Focuses (All Files)", ["focus_id", "focus_tree_id", "x", "y", "cost", "icon", "source_file"], focus_rows, "common/national_focus/*.txt")
+    write_md(OUT / "focuses_all.md", "Focuses (All Files)", ["focus_id", "focus_tree_id", "x", "y", "cost", "icon", "completion_reward", "source_file"], focus_rows, "common/national_focus/*.txt")
     write_md(OUT / "focus_links_all.md", "Focus Links (All Files)", ["focus_id", "link_type", "linked_focus_id", "source_file"], link_rows, "common/national_focus/*.txt")
     return len(tree_rows), len(focus_rows), len(link_rows)
 
@@ -1262,7 +1273,7 @@ def parse_ideas_all() -> Tuple[int, int]:
 
     irows = dedup_rows(irows, [0])
     mrows = dedup_rows(mrows, [0, 1])
-    write_md(OUT / "ideas_all.md", "Ideas (All Files)", ["idea_key", "slot", "is_law", "cost", "removal_cost", "is_default", "source_file"], irows, "common/ideas/*.txt")
+    write_md(OUT / "ideas_all.md", "Ideas (All Files)", ["idea_key", "slot", "is_law", "cost", "removal_cost", "is_default", "on_add_effect", "on_remove_effect", "allowed_condition", "source_file"], irows, "common/ideas/*.txt")
     write_md(OUT / "idea_modifiers_all.md", "Idea Modifiers (All Files)", ["idea_key", "modifier_key", "modifier_value", "source_file"], mrows, "common/ideas/*.txt")
     return len(irows), len(mrows)
 
@@ -1286,8 +1297,13 @@ def _parse_idea_entries(slot_key: str, slot_body: str, filename: str,
         rem = re.search(r"\bremoval_cost\s*=\s*([0-9.\-]+)", idea_body)
         is_default = "yes" if "default = yes" in idea_body else "no"
         is_law = "yes" if is_law_slot or "law = yes" in idea_body else "no"
+        on_add = extract_named_block(idea_body, "on_add")
+        on_remove = extract_named_block(idea_body, "on_remove")
+        allowed_cond = extract_named_block(idea_body, "allowed")
         irows.append([idea_key, slot_key, is_law, cost.group(1) if cost else "",
-                       rem.group(1) if rem else "", is_default, filename])
+                       rem.group(1) if rem else "", is_default,
+                       on_add if on_add else "", on_remove if on_remove else "",
+                       allowed_cond if allowed_cond else "", filename])
         # Extract modifier block using brace matching
         mod_m = re.search(r"\bmodifier\s*=\s*\{", idea_body)
         if mod_m:
@@ -2365,13 +2381,141 @@ def parse_decisions_all() -> int:
                 cost = re.search(r'\bcost\s*=\s*([0-9]+)', dec_body)
                 fire = "yes" if "fire_only_once = yes" in dec_body else ""
                 dlc = re.search(r'has_dlc\s*=\s*"([^"]+)"', dec_body)
-                rows.append([dec_key, cat_key, icon.group(1) if icon else "", cost.group(1) if cost else "", fire, dlc.group(1) if dlc else "", fp.name])
+                d_allowed = extract_named_block(dec_body, "allowed")
+                d_available = extract_named_block(dec_body, "available")
+                d_visible = extract_named_block(dec_body, "visible")
+                d_complete = extract_named_block(dec_body, "complete_effect")
+                d_remove = extract_named_block(dec_body, "remove_effect")
+                rows.append([dec_key, cat_key, icon.group(1) if icon else "", cost.group(1) if cost else "", fire, dlc.group(1) if dlc else "",
+                             d_allowed if d_allowed else "", d_available if d_available else "",
+                             d_visible if d_visible else "", d_complete if d_complete else "",
+                             d_remove if d_remove else "", fp.name])
     write_md(
         OUT / "decisions_all.md", "Decisions (All Files)",
-        ["decision_key", "category_key", "icon", "cost", "fire_only_once", "dlc_source", "source_file"],
+        ["decision_key", "category_key", "icon", "cost", "fire_only_once", "dlc_source",
+         "allowed", "available", "visible", "complete_effect", "remove_effect", "source_file"],
         rows, "common/decisions/*.txt",
     )
     return len(rows)
+
+
+def parse_wargoal_types() -> int:
+    d = ROOT / "common" / "wargoals"
+    rows: List[List[str]] = []
+    if not d.exists():
+        return 0
+    for fp in sorted(d.glob("*.txt")):
+        txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+        # File has a single wrapper: wargoal_types = { ... }
+        for wg_key, wg_body, _ in find_top_level_blocks(txt, wrapper="wargoal_types"):
+            war_name = re.search(r'\bwar_name\s*=\s*(\S+)', wg_body)
+            base_cost = re.search(r'\bgenerate_base_cost\s*=\s*([0-9]+)', wg_body)
+            per_state_cost = re.search(r'\bgenerate_per_state_cost\s*=\s*([0-9]+)', wg_body)
+            ts_limit = re.search(r'\btake_states_limit\s*=\s*([0-9]+)', wg_body)
+            ts_cost = re.search(r'\btake_states_cost\s*=\s*(-?[0-9]+)', wg_body)
+            puppet_cost = re.search(r'\bpuppet_cost\s*=\s*(-?[0-9]+)', wg_body)
+            force_gov = re.search(r'\bforce_government_cost\s*=\s*(-?[0-9]+)', wg_body)
+            expire = re.search(r'\bexpire\s*=\s*([0-9]+)', wg_body)
+            threat = re.search(r'\bthreat\s*=\s*([0-9.]+)', wg_body)
+            ts_threat = re.search(r'\btake_states_threat_factor\s*=\s*([0-9.]+)', wg_body)
+            allowed = extract_named_block(wg_body, "allowed")
+            available = extract_named_block(wg_body, "available")
+            rows.append([
+                wg_key,
+                war_name.group(1) if war_name else "",
+                base_cost.group(1) if base_cost else "",
+                per_state_cost.group(1) if per_state_cost else "",
+                ts_limit.group(1) if ts_limit else "",
+                ts_cost.group(1) if ts_cost else "",
+                puppet_cost.group(1) if puppet_cost else "",
+                force_gov.group(1) if force_gov else "",
+                expire.group(1) if expire else "",
+                threat.group(1) if threat else "",
+                ts_threat.group(1) if ts_threat else "",
+                allowed if allowed else "",
+                available if available else "",
+                fp.name,
+            ])
+    write_md(
+        OUT / "wargoal_types.md", "Wargoal Types",
+        ["wargoal_key", "war_name_key", "generate_base_cost", "generate_per_state_cost",
+         "take_states_limit", "take_states_cost", "puppet_cost", "force_government_cost",
+         "expire", "threat", "take_states_threat_factor",
+         "allowed_block", "available_block", "source_file"],
+        rows, "common/wargoals/*.txt",
+    )
+    return len(rows)
+
+
+# -- Phase 10: Events ----------------------------------------------------
+
+def parse_events_all() -> Tuple[int, int]:
+    """Parse events/*.txt -> events_all.md + event_options_all.md"""
+    d = ROOT / "events"
+    event_rows: List[List[str]] = []
+    option_rows: List[List[str]] = []
+    if not d.exists():
+        return 0, 0
+    EVENT_TYPES = {"country_event", "news_event", "state_event", "unit_leader_event", "operative_event"}
+    for fp in sorted(d.glob("*.txt")):
+        txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+        # extract namespace declarations
+        namespaces = re.findall(r'add_namespace\s*=\s*(\S+)', txt)
+        ns_str = ";".join(namespaces) if namespaces else ""
+        for ev_type, ev_body, _ in find_top_level_blocks(txt):
+            if ev_type not in EVENT_TYPES:
+                continue
+            eid = re.search(r'\bid\s*=\s*(\S+)', ev_body)
+            if not eid:
+                continue
+            event_key = eid.group(1)
+            title = re.search(r'\btitle\s*=\s*(\S+)', ev_body)
+            # desc can be simple or block; grab simple first
+            desc = re.search(r'\bdesc\s*=\s*(\S+)', ev_body)
+            picture = re.search(r'\bpicture\s*=\s*(\S+)', ev_body)
+            trig_only = "true" if re.search(r'\bis_triggered_only\s*=\s*yes', ev_body) else ""
+            major = "true" if re.search(r'\bmajor\s*=\s*yes', ev_body) else ""
+            fire_once = "true" if re.search(r'\bfire_only_once\s*=\s*yes', ev_body) else ""
+            hidden_ev = "true" if re.search(r'\bhidden\s*=\s*yes', ev_body) else ""
+            event_rows.append([
+                event_key, ev_type,
+                title.group(1) if title else "",
+                desc.group(1) if desc else "",
+                picture.group(1) if picture else "",
+                trig_only, major, fire_once, hidden_ev,
+                ns_str, fp.name,
+            ])
+            # extract options
+            opt_idx = 0
+            for opt_key, opt_body, _ in find_top_level_blocks(ev_body):
+                if opt_key != "option":
+                    continue
+                opt_name = re.search(r'\bname\s*=\s*(\S+)', opt_body)
+                ai_ch = re.search(r'\bfactor\s*=\s*([0-9.]+)', opt_body)
+                trigger_block = extract_named_block(opt_body, "trigger")
+                option_rows.append([
+                    event_key,
+                    opt_name.group(1) if opt_name else "",
+                    str(opt_idx),
+                    ai_ch.group(1) if ai_ch else "",
+                    trigger_block if trigger_block else "",
+                    "",  # effect_block placeholder - options contain inline effects
+                ])
+                opt_idx += 1
+    write_md(
+        OUT / "events_all.md", "Events (All Files)",
+        ["event_key", "event_type", "title_key", "description_key", "picture",
+         "is_triggered_only", "is_major", "fire_only_once", "hidden",
+         "namespace", "source_file"],
+        event_rows, "events/*.txt",
+    )
+    write_md(
+        OUT / "event_options_all.md", "Event Options (All Files)",
+        ["event_key", "option_name", "option_index", "ai_chance_factor",
+         "trigger_block", "effect_block"],
+        option_rows, "events/*.txt",
+    )
+    return len(event_rows), len(option_rows)
 
 
 # -- Phase 16: Espionage (La Résistance) ---------------------------------
@@ -3511,6 +3655,79 @@ def parse_country_starting_doctrines() -> int:
     return len(rows)
 
 
+# -- Phase 9: Starting Diplomatic State --------------------------------
+
+def parse_starting_diplomacy() -> Tuple[int, int, int]:
+    """Extract diplomatic relations and starting factions from history/countries/*.txt.
+
+    Returns (diplomatic_relation_count, faction_count, faction_member_count).
+    """
+    dirp = ROOT / "history" / "countries"
+    diplo_rows: List[List[str]] = []
+    faction_rows: List[List[str]] = []
+    member_rows: List[List[str]] = []
+
+    for fp in sorted(dirp.glob("*.txt")):
+        tag_m = re.match(r"^([A-Z0-9]+)", fp.name)
+        if not tag_m:
+            continue
+        tag = tag_m.group(1)
+        txt = strip_comments(fp.read_text(encoding="utf-8", errors="ignore"))
+
+        # -- give_guarantee --
+        for m in re.finditer(r"\bgive_guarantee\s*=\s*([A-Z]{3})", txt):
+            eff_date = _find_enclosing_date(txt, m.start())
+            dlc_src = _find_enclosing_dlc(txt, m.start())
+            diplo_rows.append([tag, m.group(1), "guarantee", "", "", eff_date, dlc_src, fp.name])
+
+        # -- set_autonomy blocks --
+        for m in re.finditer(r"\bset_autonomy\s*=\s*\{", txt):
+            block = extract_block(txt, m.start())
+            tgt = re.search(r"\btarget\s*=\s*([A-Z]{3})", block)
+            aut = re.search(r"\bautonomous_state\s*=\s*(\S+)", block)
+            fl = re.search(r"\bfreedom_level\s*=\s*([0-9.]+)", block)
+            if tgt:
+                eff_date = _find_enclosing_date(txt, m.start())
+                dlc_src = _find_enclosing_dlc(txt, m.start())
+                diplo_rows.append([
+                    tag, tgt.group(1), "autonomy",
+                    aut.group(1) if aut else "",
+                    fl.group(1) if fl else "",
+                    eff_date, dlc_src, fp.name,
+                ])
+
+        # -- puppet (simple form, typically in else blocks) --
+        for m in re.finditer(r"\bpuppet\s*=\s*([A-Z]{3})", txt):
+            eff_date = _find_enclosing_date(txt, m.start())
+            dlc_src = _find_enclosing_dlc(txt, m.start())
+            diplo_rows.append([tag, m.group(1), "puppet", "", "", eff_date, dlc_src, fp.name])
+
+        # -- create_faction_from_template --
+        for m in re.finditer(r"\bcreate_faction_from_template\s*=\s*(\S+)", txt):
+            eff_date = _find_enclosing_date(txt, m.start())
+            faction_rows.append([m.group(1), tag, eff_date, fp.name])
+
+        # -- add_to_faction  (only top-level simple TAG references) --
+        for m in re.finditer(r"\badd_to_faction\s*=\s*([A-Z]{3})\b", txt):
+            member_rows.append([tag, m.group(1), fp.name])
+
+    diplo_rows = dedup_rows(diplo_rows, [0, 1, 2, 5])
+    faction_rows = dedup_rows(faction_rows, [0, 1])
+    member_rows = dedup_rows(member_rows, [0, 1])
+
+    write_md(OUT / "diplomatic_relations.md", "Diplomatic Relations",
+        ["country_tag", "target_tag", "relation_type", "autonomy_type",
+         "freedom_level", "effective_date", "dlc_source", "source_file"],
+        diplo_rows, "history/countries/*.txt")
+    write_md(OUT / "starting_factions.md", "Starting Factions",
+        ["faction_template_key", "leader_tag", "effective_date", "source_file"],
+        faction_rows, "history/countries/*.txt")
+    write_md(OUT / "starting_faction_members.md", "Starting Faction Members",
+        ["leader_tag", "member_tag", "source_file"],
+        member_rows, "history/countries/*.txt")
+    return len(diplo_rows), len(faction_rows), len(member_rows)
+
+
 # -- Phase 24: Factions ------------------------------------------------
 
 def parse_faction_rule_groups() -> Tuple[int, int]:
@@ -4095,6 +4312,12 @@ def main() -> None:
     # -- Phase 15: Decisions --
     stats["decision_categories"] = parse_decision_categories_all()
     stats["decisions_all"] = parse_decisions_all()
+    stats["wargoal_types"] = parse_wargoal_types()
+
+    # -- Phase 10: Events --
+    ev_n, eo_n = parse_events_all()
+    stats["events_all"] = ev_n
+    stats["event_options_all"] = eo_n
 
     # -- Phase 16: Espionage --
     stats["operation_tokens"] = parse_operation_tokens_all()
@@ -4211,6 +4434,12 @@ def main() -> None:
 
     stats["subdoctrines"] = parse_subdoctrines()
     stats["country_starting_doctrines"] = parse_country_starting_doctrines()
+
+    # -- Phase 9: Starting Diplomatic State --
+    diplo_n, sf_n, sfm_n = parse_starting_diplomacy()
+    stats["diplomatic_relations"] = diplo_n
+    stats["starting_factions"] = sf_n
+    stats["starting_faction_members"] = sfm_n
 
     # -- Phase 24: Factions --
     frg_n, frgm_n = parse_faction_rule_groups()
