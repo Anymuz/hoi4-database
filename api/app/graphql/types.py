@@ -878,3 +878,28 @@ class Decision:
     # End of from_row class method.
 # End of Decision type.
 # ------------------------------------------------------
+
+# Ideology related types, use the api_ideology_detail view:
+# IdeologySubIdeology represents a sub-ideology nested under a top-level ideology.
+@strawberry.type
+class IdeologySubIdeology:
+    sub_ideology_key: str
+# End of IdeologySubIdeology type.
+
+# Ideology represents a top-level political ideology with its color and nested sub-ideologies.
+@strawberry.type
+class Ideology:
+    ideology_key: str
+    color_rgb: Optional[ColorRGB] = None
+    sub_ideologies: list[IdeologySubIdeology]
+
+    # Classmethod to convert from a database row into an Ideology object, handling nested color and sub_ideologies.
+    @classmethod
+    def from_row(cls, row):
+        d = dict(row)
+        d["color_rgb"] = ColorRGB(r=d.pop("color_r"), g=d.pop("color_g"), b=d.pop("color_b"))
+        d["sub_ideologies"] = [IdeologySubIdeology(**s) for s in (d.get("sub_ideologies") or [])]
+        return cls(**d)
+    # End of from_row class method.
+# End of Ideology type.
+# ------------------------------------------------------

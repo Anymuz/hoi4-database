@@ -13,6 +13,7 @@ from app.graphql.types import (
     EquipmentVariantUpgrade, Idea, Mio, Operation, Bop,
     Faction, SpecialProject, Annotation, Wargoal,
     DiplomaticRelation, StartingFaction, Event, Decision,
+    Ideology,
 )
 
 # Helper function to get the asyncpg pool from the FastAPI app context.
@@ -501,4 +502,15 @@ class Query:
                 )
             return [Decision.from_row(r) for r in rows]
     # End of decisions resolver.
+
+    # Ideologies - political ideology tree with sub-ideologies.
+    @strawberry.field
+    async def ideologies(self, info: Info) -> list[Ideology]:
+        pool = await get_pool(info)
+        async with pool.acquire() as conn:
+            rows = await conn.fetch(
+                "SELECT * FROM api_ideology_detail ORDER BY ideology_key"
+            )
+            return [Ideology.from_row(r) for r in rows]
+    # End of ideologies resolver.
 # End of Query class.

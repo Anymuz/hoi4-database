@@ -781,3 +781,26 @@ SELECT
     ), '[]'::jsonb) AS options
 FROM events e
 LEFT JOIN localisation lt ON lt.loc_key = e.title_key;
+
+-- ============================================================
+-- Slice D - Ideology Detail
+-- ============================================================
+
+-- api_ideology_detail: joins ideologies -> sub_ideologies into a single
+-- row per ideology with a JSONB array of nested sub_ideologies.
+CREATE OR REPLACE VIEW api_ideology_detail AS
+SELECT
+    i.ideology_key,
+    i.color_r,
+    i.color_g,
+    i.color_b,
+    COALESCE(
+        jsonb_agg(
+            jsonb_build_object('sub_ideology_key', si.sub_ideology_key)
+            ORDER BY si.sub_ideology_key
+        ) FILTER (WHERE si.sub_ideology_key IS NOT NULL),
+        '[]'::jsonb
+    ) AS sub_ideologies
+FROM ideologies i
+LEFT JOIN sub_ideologies si ON si.ideology_key = i.ideology_key
+GROUP BY i.ideology_key, i.color_r, i.color_g, i.color_b;
