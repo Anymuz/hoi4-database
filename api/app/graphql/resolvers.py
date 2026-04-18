@@ -13,7 +13,7 @@ from app.graphql.types import (
     EquipmentVariantUpgrade, Idea, Mio, Operation, Bop,
     Faction, SpecialProject, Annotation, Wargoal,
     DiplomaticRelation, StartingFaction, Event, Decision,
-    Ideology,
+    Ideology, GqlUnitType,
 )
 
 # Helper function to get the asyncpg pool from the FastAPI app context.
@@ -513,4 +513,25 @@ class Query:
             )
             return [Ideology.from_row(r) for r in rows]
     # End of ideologies resolver.
+
+    # Unit types - military unit definitions with combat stats.
+    @strawberry.field
+    async def unit_types(
+        self,
+        info: Info,
+        unit_group: Optional[str] = None,
+    ) -> list[GqlUnitType]:
+        pool = await get_pool(info)
+        async with pool.acquire() as conn:
+            if unit_group:
+                rows = await conn.fetch(
+                    "SELECT * FROM api_unit_type_detail WHERE unit_group = $1 ORDER BY unit_type_key",
+                    unit_group,
+                )
+            else:
+                rows = await conn.fetch(
+                    "SELECT * FROM api_unit_type_detail ORDER BY unit_type_key"
+                )
+            return [GqlUnitType.from_row(r) for r in rows]
+    # End of unit_types resolver.
 # End of Query class.

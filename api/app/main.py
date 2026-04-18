@@ -29,6 +29,7 @@ tags_metadata = [
     {"name": "Events",           "description": "Country events, news events, and other game events"},
     {"name": "Decisions",        "description": "Political and military decisions with scripted effects"},
     {"name": "Ideologies",       "description": "Political ideologies and sub-ideologies"},
+    {"name": "Unit Types",       "description": "Military unit type definitions and combat stats"},
     {"name": "Annotations",      "description": "User-created notes on game entities"},
 ]
 
@@ -56,7 +57,7 @@ async def health_check():
 # End of health_check endpoint.
 
 # Mount REST routers - each handles one domain under /api/v1/
-from app.routers import characters, countries, equipment, focuses, ideas, military, states, technologies, dlc, annotations, wargoals, diplomacy, events, decisions, ideologies
+from app.routers import characters, countries, equipment, focuses, ideas, military, states, technologies, dlc, annotations, wargoals, diplomacy, events, decisions, ideologies, unit_types
 
 app.include_router(countries.router)
 app.include_router(states.router)
@@ -73,6 +74,7 @@ app.include_router(wargoals.router)
 app.include_router(events.router)
 app.include_router(decisions.router)
 app.include_router(ideologies.router)
+app.include_router(unit_types.router)
 
 # Mount GraphQL endpoint - shares the same asyncpg pool as REST.
 from strawberry.fastapi import GraphQLRouter

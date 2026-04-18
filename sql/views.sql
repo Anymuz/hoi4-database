@@ -804,3 +804,29 @@ SELECT
 FROM ideologies i
 LEFT JOIN sub_ideologies si ON si.ideology_key = i.ideology_key
 GROUP BY i.ideology_key, i.color_r, i.color_g, i.color_b;
+
+-- ============================================================
+-- Slice E - Unit Type Detail
+-- ============================================================
+
+-- api_unit_type_detail: joins unit_types with localisation to get display
+-- names. Single table with optional loc join, no aggregation needed.
+CREATE OR REPLACE VIEW api_unit_type_detail AS
+SELECT
+    ut.unit_type_key,
+    l.loc_value         AS unit_type_name,
+    ut.abbreviation,
+    ut.unit_group,
+    ut.combat_width,
+    ut.max_strength,
+    ut.max_organisation,
+    ut.default_morale,
+    ut.manpower,
+    ut.training_time,
+    ut.suppression,
+    ut.weight,
+    ut.supply_consumption,
+    ut.source_file,
+    ut.dlc_source
+FROM unit_types ut
+LEFT JOIN localisation l ON l.loc_key = ut.unit_type_key;

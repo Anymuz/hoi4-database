@@ -903,3 +903,34 @@ class Ideology:
     # End of from_row class method.
 # End of Ideology type.
 # ------------------------------------------------------
+
+# Unit type related types, use the api_unit_type_detail view:
+# GqlUnitType represents a military unit type with combat stats and training data.
+@strawberry.type
+class GqlUnitType:
+    unit_type_key: str
+    unit_type_name: Optional[str] = None
+    abbreviation: Optional[str] = None
+    unit_group: Optional[str] = None
+    combat_width: Optional[float] = None
+    max_strength: Optional[float] = None
+    max_organisation: Optional[float] = None
+    default_morale: Optional[float] = None
+    manpower: Optional[int] = None
+    training_time: Optional[int] = None
+    suppression: Optional[float] = None
+    weight: Optional[float] = None
+    supply_consumption: Optional[float] = None
+    source_file: Optional[str] = None
+    dlc_source: Optional[str] = None
+
+    # Classmethod to convert from a database row into a GqlUnitType object, handling Decimal to float conversion.
+    @classmethod
+    def from_row(cls, row):
+        d = dict(row)
+        for k in ("combat_width", "max_strength", "max_organisation", "default_morale", "suppression", "weight", "supply_consumption"):
+            if d.get(k) is not None:
+                d[k] = float(d[k])
+        return cls(**d)
+    # End of from_row class method.
+# End of GqlUnitType type.
